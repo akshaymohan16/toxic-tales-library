@@ -53,7 +53,7 @@ def fish(d,x,y,s=1,color=TEAL):
     d.polygon([(x-20*s,y),(x-42*s,y-19*s),(x-42*s,y+19*s)],fill=color)
     d.ellipse((x+14*s,y-5*s,x+19*s,y),fill=BG)
 def rounded(d,box,fill='#15343e',outline=None,width=2,r=22):d.rounded_rectangle(box,r,fill,outline,width)
-def norm(s):return re.findall(r"[a-z0-9]+",s.lower().replace(''',"'"))
+def norm(s):return re.findall(r"[a-z0-9]+",s.lower())
 
 class Voice:
     def __init__(self):
