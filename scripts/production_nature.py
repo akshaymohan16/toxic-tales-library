@@ -194,7 +194,8 @@ class Visuals:
             alpha=int(220*min(1,q*8,(1-q)*8))
             d.ellipse((x-rad,y-rad,x+rad,y+rad),fill=rgba(ICE,alpha))
         im.paste(Image.alpha_composite(im.convert('RGBA'),layer).convert('RGB'))
-        self.type.text(im,'Water moves out',cx+r*.90,cy-r*1.12,23 if small else 27,ICE,weight=500,anchor='mm')
+        label_x,label_y=(cx+300,cy-240) if small else (cx+r*.90,cy-r*1.12)
+        self.type.text(im,'Water moves out',label_x,label_y,23 if small else 27,ICE,weight=500,anchor='mm')
 
     def trial(self,im,t=0,p=1,recovery=False):
         d=ImageDraw.Draw(im)
@@ -329,7 +330,7 @@ class Visuals:
             self.cell(canvas,540,880,160,1,True,True,1,False)
             self.water_outflow(canvas,540,880,160,1,True)
             self.type.text(canvas,'Ice outside cells',540,620,27,ICE,anchor='mm')
-            self.type.text(canvas,'Protective solutes inside',540,1110,27,AMBER,anchor='mm')
+            self.type.text(canvas,'Protective solutes inside',540,1150,27,AMBER,anchor='mm')
         elif kind=='glucose':
             self.type.text(canvas,'Urea',135,750,67,ICE,face='display')
             self.type.text(canvas,'builds up before freezing',135,842,29,MUTED)
