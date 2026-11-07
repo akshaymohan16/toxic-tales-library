@@ -4,7 +4,7 @@
   "timezone": "Europe/Vienna",
   "episode_ids": ["TT-002", "TT-003"],
   "slots": [
-    {"id": "TT-002-REEL", "date": "2026-11-07T12:38:00+01:00", "original_date": "2026-11-10T10:00:00+01:00", "format": "REEL", "status": "submitted_to_metricool", "metricool_id": "419869962", "metricool_uuid": "-3158597333632725768", "reason": "User requested the first Reel immediately on 7 November. This advances the existing Reel; it is not an additional post."},
+    {"id": "TT-002-REEL", "date": "2026-11-07T12:38:00+01:00", "original_date": "2026-11-10T10:00:00+01:00", "format": "REEL", "status": "published", "metricool_id": "419869962", "metricool_uuid": "-3158597333632725768", "public_url": "https://www.instagram.com/reel/DfcF7aYiuWU/", "reason": "User requested immediate publication on 7 November; Metricool subsequently returned PUBLISHED and publicUrl. This advances the existing Reel, not an additional post."},
     {"id": "TT-002-CAROUSEL", "date": "2026-11-12T10:00:00+01:00", "format": "CAROUSEL", "status": "awaiting_publisher_checks"},
     {"id": "TT-003-REEL", "date": "2026-11-14T10:00:00+01:00", "format": "REEL", "status": "awaiting_publisher_checks"}
   ],
@@ -13,7 +13,7 @@
   "verification_run": 42367577066,
   "verification_artifact": 13572616396,
   "verified_media_commit": "76328e2427c2b7c6f9a8570ebeb6939d4df5f5c9",
-  "schedule_status": "first_reel_submitted_by_explicit_user_request",
-  "quota_status": "one_confirmed_submission_reserved; older native-history coverage remains unconfirmed",
-  "idempotency_note": "ALWAYS reconcile automation/published.json before the source queue. TT-002-REEL has already been submitted for immediate auto-publishing. Do not submit it on 10 November, duplicate it, or create a replacement just to fill the old Tuesday slot. The two remaining posts retain their dates. A pending receipt is not proof of publication."
+  "schedule_status": "first_reel_confirmed_published; two_slots_awaiting_publisher_checks",
+  "quota_status": "one_confirmed_Metricool_publication; older_native_history_coverage_unconfirmed",
+  "idempotency_note": "Reconcile automation/published.json before the source queue. TT-002-REEL is already published. Do not submit it on 10 November, duplicate it, or create a replacement for the old Tuesday slot. The two remaining posts retain their dates. Count published TT-002-REEL once even if Metricool also returns it in a calendar query."
 }
