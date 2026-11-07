@@ -130,7 +130,16 @@ class Visuals:
         typ=shot['kind'];local=t-shot['start'];phase=max(0,min(1,local/max(.01,shot['end']-shot['start'])))
         natural=typ in ('nature','specimen','micro')
         if shot.get('asset'):
-            im=self.picture(shot['asset'],local+shot.get('offset',0),wide=False)
+            if typ=='specimen':
+                # Preserve the whole organism rather than crop a wide fish into a vertical torso.
+                with Image.open(self.assets[shot['asset']]) as original:
+                    source=original.convert('RGB')
+                im=ImageOps.fit(source,(W,H)).filter(ImageFilter.GaussianBlur(35))
+                im=Image.blend(im,Image.new('RGB',(W,H),'#071b23'),.86)
+                specimen=ImageOps.contain(source,(680,660))
+                im.paste(specimen,((W-specimen.width)//2,570-specimen.height//2))
+            else:
+                im=self.picture(shot['asset'],local+shot.get('offset',0),wide=False)
             if not natural:im=Image.blend(im,Image.new('RGB',(W,H),'#071b23'),.83)
         else:im=Image.new('RGB',(W,H),'#071b23')
         # Quiet dark margins retain phone legibility without shrinking the organism.
