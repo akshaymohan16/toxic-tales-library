@@ -8,11 +8,16 @@
       "metricool_id": "419869962",
       "metricool_uuid": "-3158597333632725768",
       "publication_date": "2026-11-07T12:38:00+01:00",
+      "publication_date_meaning": "Scheduled time; the provider did not return a separate exact actual-publication timestamp.",
       "timezone": "Europe/Vienna",
       "original_planned_date": "2026-11-10T10:00:00+01:00",
       "user_requested_immediate_publication": true,
-      "status": "scheduled_pending",
-      "provider_status_at_create": "PENDING",
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.instagram.com/reel/DfcF7aYiuWU/",
+      "published_confirmation_date": "2026-11-07",
+      "confirmation_source": "Metricool getScheduledPosts returned the matching ID/UUID, Instagram provider status PUBLISHED and publicUrl; this is positive evidence, not inference from disappearance from the queue.",
       "auto_publish": true,
       "draft": false,
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-3158597333632725768",
@@ -21,8 +26,8 @@
       "metricool_media_url": "https://static.metricool.com/planner/202611/7937614-file-14503219743493405572.mp4",
       "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-8703534166706542430.jpeg",
       "source_sha256": "219e8ee38a51b4e067b8d4dba0e68d8736a8a4dc523cbda42ca68b5ff2eab1af",
-      "submission_note": "User explicitly requested the first finished Reel now. Existing monthly schedule and ledger were empty; published-history queries returned no rows but history completeness remains unconfirmed. One live publishing test was submitted without any paid action. Provider imported the media and returned a confirmed pending receipt; this is not yet proof of publication.",
-      "duplicate_guard": "This is the same TT-002-REEL originally planned for 10 November. Do not submit it again on Tuesday or create an extra replacement solely because it was advanced by the user. Reconcile this receipt before any retry."
+      "submission_note": "User explicitly requested the first finished Reel now. Existing monthly schedule and ledger were empty; published-history queries returned no rows but older-history completeness remains unconfirmed. One live publishing test was submitted without any paid action and has now been confirmed published.",
+      "duplicate_guard": "This is the same TT-002-REEL originally planned for 10 November. NEVER submit it again on Tuesday, count it both as published and scheduled, or generate an extra replacement just because the user advanced it. The companion carousel is a distinct authorised format."
     }
   ]
 }
