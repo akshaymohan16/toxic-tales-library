@@ -4,17 +4,16 @@
   "timezone": "Europe/Vienna",
   "episode_ids": ["TT-002", "TT-003"],
   "slots": [
-    {"id": "TT-002-REEL", "date": "2026-11-10T10:00:00+01:00", "format": "REEL"},
-    {"id": "TT-002-CAROUSEL", "date": "2026-11-12T10:00:00+01:00", "format": "CAROUSEL"},
-    {"id": "TT-003-REEL", "date": "2026-11-14T10:00:00+01:00", "format": "REEL"}
+    {"id": "TT-002-REEL", "date": "2026-11-07T12:38:00+01:00", "original_date": "2026-11-10T10:00:00+01:00", "format": "REEL", "status": "submitted_to_metricool", "metricool_id": "419869962", "metricool_uuid": "-3158597333632725768", "reason": "User requested the first Reel immediately on 7 November. This advances the existing Reel; it is not an additional post."},
+    {"id": "TT-002-CAROUSEL", "date": "2026-11-12T10:00:00+01:00", "format": "CAROUSEL", "status": "awaiting_publisher_checks"},
+    {"id": "TT-003-REEL", "date": "2026-11-14T10:00:00+01:00", "format": "REEL", "status": "awaiting_publisher_checks"}
   ],
   "scientific_review": "completed; see evidence files",
   "render_and_live_media_review": "passed",
   "verification_run": 42367577066,
   "verification_artifact": 13572616396,
   "verified_media_commit": "76328e2427c2b7c6f9a8570ebeb6939d4df5f5c9",
-  "schedule_status": "held_not_submitted",
-  "quota_status": "history_coverage_unconfirmed",
-  "hold_reason": "Live media and scientific checks passed. Metricool returns an empty schedule and empty published-history results immediately after connection. Do not assume complete history; the daily publisher must reconcile fresh history automatically before scheduling.",
-  "idempotency_note": "The upcoming week's three slots are already authored and deployed. Do not generate duplicates on Sunday. Reuse this batch after quota reconciliation; do not shift past dates silently."
+  "schedule_status": "first_reel_submitted_by_explicit_user_request",
+  "quota_status": "one_confirmed_submission_reserved; older native-history coverage remains unconfirmed",
+  "idempotency_note": "ALWAYS reconcile automation/published.json before the source queue. TT-002-REEL has already been submitted for immediate auto-publishing. Do not submit it on 10 November, duplicate it, or create a replacement just to fill the old Tuesday slot. The two remaining posts retain their dates. A pending receipt is not proof of publication."
 }
