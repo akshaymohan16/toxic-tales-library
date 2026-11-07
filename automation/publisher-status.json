@@ -1,0 +1,17 @@
+{
+  "checked_on": "2026-11-07",
+  "target": "toxic_tales_eco",
+  "brand_confirmed": true,
+  "timezone_confirmed": "Europe/Vienna",
+  "deployment_and_media": "verified",
+  "scientific_candidates": 3,
+  "scheduled_posts_returned": 0,
+  "published_history_rows_returned": {"feed": 0, "reels": 0, "stories": 0},
+  "new_metricool_submissions": 0,
+  "decision": "HOLD_PENDING_HISTORY_RECONCILIATION",
+  "reason": "Fresh connection with empty historical feeds and only an all-zero connection-day aggregate. Coverage has not been established; no count is invented.",
+  "automatic_next_step": "Daily publisher rechecks the full calendar month's schedule, published feed/Reel history and available Stories history, reconciles the ledger and pending candidates, then schedules verified future slots only when capacity is established.",
+  "history_limitation": "Official Metricool guidance says pre-connection Stories cannot be backfilled and some Instagram connection types omit Story metrics. Never promise that an empty response proves those historical Stories did not exist. Do not silently wait for inherently unrecoverable history; distinguish that limit from initial sync and report a persistent actionable blocker honestly.",
+  "documentation": ["https://help.metricool.com/historical-data-available-5zavf", "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9"],
+  "routine_user_approval_required": false
+}

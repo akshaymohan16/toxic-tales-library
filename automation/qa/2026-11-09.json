@@ -1,0 +1,19 @@
+{
+  "batch_id": "2026-11-09",
+  "review_date": "2026-11-07",
+  "workflow_run_id": 42367577066,
+  "verification_artifact_id": 13572616396,
+  "deployed_commit": "76328e2427c2b7c6f9a8570ebeb6939d4df5f5c9",
+  "anonymous_check_timestamp": "2026-11-07T11:19:30.594214+00:00",
+  "anonymous_verification_passed": true,
+  "public_files_checked": 23,
+  "reels": [
+    {"episode": "TT-002", "duration_seconds": 44.877035, "dimensions": "1080x1920", "video_codec": "h264", "audio_codec": "aac", "mean_audio_db": -24.8, "sha256": "219e8ee38a51b4e067b8d4dba0e68d8736a8a4dc523cbda42ca68b5ff2eab1af"},
+    {"episode": "TT-003", "duration_seconds": 42.439887, "dimensions": "1080x1920", "video_codec": "h264", "audio_codec": "aac", "mean_audio_db": -25.0, "sha256": "d9199e52135e583bbdeee44421329cf044ba389586bda8f58820ab56d17bdbff"}
+  ],
+  "carousel": {"episode": "TT-002", "slides": 7, "dimensions": "1080x1350", "format": "JPEG"},
+  "visual_review": "Contact sheets from actual anonymous downloads were inspected. Text readable, no observed clipping or unsupported graphical measurements. Schematics, not experimental footage.",
+  "narration_review": "Spoken source text scientifically reviewed; same text supplies captions. Automated audio-presence/level checks passed. Offline synthetic voice, not a studio recording.",
+  "queue_checks": "Three distinct stable post IDs; captions below 2200 characters, with DOI, source-library links and material limits; seven ordered slides for carousel.",
+  "publication_status": "Not scheduled or published; separate monthly inventory gate remains unresolved."
+}

@@ -9,8 +9,12 @@
     {"id": "TT-003-REEL", "date": "2026-11-14T10:00:00+01:00", "format": "REEL"}
   ],
   "scientific_review": "completed; see evidence files",
-  "render_and_live_media_review": "pending",
-  "schedule_status": "not_submitted",
+  "render_and_live_media_review": "passed",
+  "verification_run": 42367577066,
+  "verification_artifact": 13572616396,
+  "verified_media_commit": "76328e2427c2b7c6f9a8570ebeb6939d4df5f5c9",
+  "schedule_status": "held_not_submitted",
   "quota_status": "history_coverage_unconfirmed",
-  "idempotency_note": "These three slots are already authored. The Sunday producer must not create duplicate stories or extra posts for the same publication week. Scheduling remains the publisher's job after all gates pass."
+  "hold_reason": "Live media and scientific checks passed. Metricool returns an empty schedule and empty published-history results immediately after connection. Do not assume complete history; the daily publisher must reconcile fresh history automatically before scheduling.",
+  "idempotency_note": "The upcoming week's three slots are already authored and deployed. Do not generate duplicates on Sunday. Reuse this batch after quota reconciliation; do not shift past dates silently."
 }
