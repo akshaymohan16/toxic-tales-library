@@ -2,18 +2,35 @@
   "batch_id": "2026-11-09",
   "created_on": "2026-11-07",
   "timezone": "Europe/Vienna",
-  "episode_ids": ["TT-002", "TT-003"],
+  "episode_ids": [
+    "TT-002",
+    "TT-003"
+  ],
   "slots": [
-    {"id": "TT-002-REEL", "date": "2026-11-07T12:38:00+01:00", "original_date": "2026-11-10T10:00:00+01:00", "format": "REEL", "status": "published", "metricool_id": "419869962", "metricool_uuid": "-3158597333632725768", "public_url": "https://www.instagram.com/reel/DfcF7aYiuWU/", "reason": "User requested immediate publication on 7 November; Metricool subsequently returned PUBLISHED and publicUrl. This advances the existing Reel, not an additional post."},
-    {"id": "TT-002-CAROUSEL", "date": "2026-11-12T10:00:00+01:00", "format": "CAROUSEL", "status": "awaiting_publisher_checks"},
-    {"id": "TT-003-REEL", "date": "2026-11-14T10:00:00+01:00", "format": "REEL", "status": "awaiting_publisher_checks"}
+    {
+      "id": "2026-11-10-NEW-REEL",
+      "date": "2026-11-10T10:00:00+01:00",
+      "format": "REEL",
+      "status": "assigned_to_sunday_producer",
+      "reason": "Renewed weekly instruction: new verified paper required; do not duplicate TT-002."
+    },
+    {
+      "id": "TT-002-CAROUSEL",
+      "date": "2026-11-12T10:00:00+01:00",
+      "format": "CAROUSEL",
+      "status": "awaiting_publisher_checks"
+    },
+    {
+      "id": "TT-003-REEL",
+      "date": "2026-11-14T10:00:00+01:00",
+      "format": "REEL",
+      "status": "awaiting_publisher_checks"
+    }
   ],
   "scientific_review": "completed; see evidence files",
-  "render_and_live_media_review": "passed",
-  "verification_run": 42367577066,
-  "verification_artifact": 13572616396,
-  "verified_media_commit": "76328e2427c2b7c6f9a8570ebeb6939d4df5f5c9",
-  "schedule_status": "first_reel_confirmed_published; two_slots_awaiting_publisher_checks",
-  "quota_status": "one_confirmed_Metricool_publication; older_native_history_coverage_unconfirmed",
-  "idempotency_note": "Reconcile automation/published.json before the source queue. TT-002-REEL is already published. Do not submit it on 10 November, duplicate it, or create a replacement for the old Tuesday slot. The two remaining posts retain their dates. Count published TT-002-REEL once even if Metricool also returns it in a calendar query."
+  "render_and_live_media_review": "First complete neural build passed; final caption and immutable-media release pending.",
+  "verification_run": 42381168970,
+  "schedule_status": "Rebuilt media integration in progress; producer resumed; new Tuesday paper assigned.",
+  "quota_status": "Authenticated planner counter verified 1/20 used; reserve future posts separately.",
+  "idempotency_note": "TT-002-REEL remains in published.json as a 7 November publication. Never repost it. Renewed 2-Reels-per-week request authorises a new distinct Tuesday paper. Retain Thursday carousel and Saturday TT-003."
 }

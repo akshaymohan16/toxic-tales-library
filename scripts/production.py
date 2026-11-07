@@ -96,6 +96,9 @@ class Voice:
                 timeline.append({**shot,'start':start,'end':end,'segment':i})
             audit.append({'segment':i,'script':s['speech'],'transcript':heard,'token_similarity':round(ratio,4),'duration':round(duration,3)})
             audios.append(audio);cursor+=duration
+        for a,b in zip(captions,captions[1:]):
+            a['end']=min(a['end'],b['start'])
+            if a['end']<=a['start']:raise ValueError('Invalid caption alignment')
         all_audio=np.concatenate(audios);sf.write(out/'narration.wav',all_audio,sr)
         return timeline,captions,audit,cursor
 
@@ -103,7 +106,8 @@ class Visuals:
     def __init__(self,ep,out):
         self.ep=ep;self.out=out;self.assets={};self.frames={}
         for a in ep['production']['assets']:
-            path=download(a['url'],CACHE/'assets'/a['filename'])
+            asset_key=hashlib.sha256(a['url'].encode()).hexdigest()[:12]+'-'+a['filename']
+            path=download(a['url'],CACHE/'assets'/asset_key)
             self.assets[a['id']]=path
     def picture(self,key,t=0,wide=False):
         p=self.assets[key]

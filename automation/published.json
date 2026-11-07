@@ -27,7 +27,7 @@
       "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-8703534166706542430.jpeg",
       "source_sha256": "219e8ee38a51b4e067b8d4dba0e68d8736a8a4dc523cbda42ca68b5ff2eab1af",
       "submission_note": "User explicitly requested the first finished Reel now. Existing monthly schedule and ledger were empty; published-history queries returned no rows but older-history completeness remains unconfirmed. One live publishing test was submitted without any paid action and has now been confirmed published.",
-      "duplicate_guard": "This is the same TT-002-REEL originally planned for 10 November. NEVER submit it again on Tuesday, count it both as published and scheduled, or generate an extra replacement just because the user advanced it. The companion carousel is a distinct authorised format."
+      "duplicate_guard": "TT-002-REEL is already published and must never be resubmitted. On 7 November the owner renewed the two-Reels-per-week requirement; Tuesday 10 November is now assigned a NEW distinct paper by the Sunday producer. Count this published item only once."
     }
   ]
 }
