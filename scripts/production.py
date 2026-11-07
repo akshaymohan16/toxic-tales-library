@@ -307,7 +307,7 @@ class Visuals:
             elif seg==9:headline('DRUG REMOVAL WAS NOT TESTED.',177,49,coral)
             elif seg==11:headline('WHAT ELSE IS HOLDING RECOVERY BACK?',177,47,lime)
         elif typ in ('nature','landscape'):
-            scene_title='A ROUTE INTO FRESH WATER.' if seg==2 else 'FROM TANKS TO THE WIDER WORLD.'
+            scene_title='A ROUTE INTO FRESH WATER.' if shot.get('segment',-1)==2 else 'FROM TANKS TO THE WIDER WORLD.'
             headline(shot.get('title',scene_title),177,48)
         elif typ=='limit':
             headline('WHAT THE STUDY CANNOT TELL US.',175,49)
