@@ -406,7 +406,8 @@
       {
         "speech": "These were winter-conditioned Alaskan frogs; not every frog can do this.",
         "captions": [
-          "These were winter-conditioned Alaskan frogs;",
+          "These were winter-conditioned",
+          "Alaskan frogs;",
           "not every frog",
           "can do this."
         ],
@@ -543,10 +544,10 @@
   },
   "editorial_review": {
     "standard": "story-first-v1",
-    "reviewed_at": "2026-11-07T18:25:05.618653+00:00",
+    "reviewed_at": "2026-11-07T18:29:51.505416+00:00",
     "reviewer": "tt005_editor",
     "decision": "pass",
-    "review_scope": "Independent pre-render review of the exact narration, evidence ledger, focal-paper methods/results/discussion, planned paired visuals and renderer source. USFWS source pages and original-image links independently checked for identification, dimensions, credit and Public Domain licensing. This is not encoded-film, auditory, final crop, carousel export or owner approval.",
+    "review_scope": "Independent pre-render review of the exact narration, evidence ledger, focal-paper methods/results/discussion, planned paired visuals and renderer source. USFWS source pages and original-image links independently checked for identification, dimensions, credit and Public Domain licensing. This is not encoded-film, auditory, final crop, carousel export or owner approval. Refreshed after the first actual-font build rejected an overlong caption: segment 7 is split into shorter phrases. Joined captions retain the exact unchanged narration, including the population qualifier and negation. No other episode content changed.",
     "checks": {
       "cold_viewer": {
         "decision": "pass",
@@ -561,7 +562,7 @@
       "visuals": {
         "decision": "pass",
         "finding": "The plan uses a correctly identified animal portrait, seasonal setting, molecular pathway, extracellular-ice concept, protocol sequence and small-cohort recovery display. Each visual has a distinct explanatory task; reference photographs are not represented as experimental footage.",
-        "basis": "The paired eight-part visual plan and isolated renderer were reviewed. Winter animation was corrected to show preparation before freezing. Final font layout, crops, pacing and encoded animation remain export checks, not claimed as viewed here."
+        "basis": "The paired eight-part visual plan and isolated renderer were reviewed. Winter animation was corrected to show preparation before freezing. Final font layout, crops, pacing and encoded animation remain export checks, not claimed as viewed here. The actual Manrope layout check rejected the combined winter-conditioned/Alaskan-frogs phrase; splitting that phrase preserves meaning and gives each caption at most two lines."
       },
       "payoff": {
         "decision": "pass",
@@ -579,6 +580,6 @@
         "basis": "The central explanation, actual survival cohort, terminal temperature and population/season limit all appear in the spoken story; the complete post and evidence ledger retain protocol and follow-up details."
       }
     },
-    "source_sha256": "7de05f58ef5a3543b758c0a7b9dbc6163d1146353a9bd20b6e4a3bfc22f2eaef"
+    "source_sha256": "1c24b08e2cebddb48e880c9738ebb5608dacc98cb3c6b363b2e1775580e4a9da"
   }
 }

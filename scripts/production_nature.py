@@ -134,9 +134,16 @@ class Visuals:
         d.line(pts2,fill=(105,187,182,70),width=3)
         d.ellipse((cx-r*.27,cy-r*.22,cx+r*.18,cy+r*.2),fill=(13,46,62,180),outline=(121,179,188,100),width=3)
         # Molecule positions are diagrammatic, never a measured number/concentration.
-        for i in range(34):
-            a=i*2.39996+t*.035;rr=r*(.23+.64*math.sqrt((i*.618033)%1))
-            x=cx+rr*math.cos(a);y=cy+rr*.85*math.sin(a)
+        rng=np.random.default_rng(5107);points=[]
+        while len(points)<34:
+            nx,ny=rng.uniform(-.8,.8,2)
+            if nx*nx+(ny/.92)**2>.8**2:continue
+            if ((nx+.045)/.33)**2+((ny+.01)/.29)**2<1:continue
+            if any((nx-px)**2+(ny-py)**2<.12**2 for px,py in points):continue
+            points.append((nx,ny))
+        for i,(nx,ny) in enumerate(points):
+            x=cx+r*(nx+.012*math.sin(t*.42+i*1.7))
+            y=cy+r*(ny+.012*math.cos(t*.37+i*2.3))
             rad=6 if protected else 4;col=AMBER if protected else '#8ccbd8'
             d.ellipse((x-rad,y-rad,x+rad,y+rad),fill=rgba(col,210))
         glow=layer.filter(ImageFilter.GaussianBlur(11))
