@@ -1,8 +1,8 @@
 {
   "id": "TT-003",
   "slug": "tt-003-recovery-with-pollution",
-  "title": "Fish removed. Recovery still lagged.",
-  "hook": "Fish removed. Recovery still lagged.",
+  "title": "The pressure left behind",
+  "hook": "When a predator disappears, what else can hold recovery back?",
   "doi": "10.1021/acs.est.4c02807",
   "paper_title": "Pharmaceutical Pollution Alters the Structure of Freshwater Communities and Hinders Their Recovery from a Fish Predator",
   "citation": "Michelangeli et al. (2024), Environ. Sci. Technol.",
@@ -23,7 +23,7 @@
     "limitations": true,
     "rights": true
   },
-  "review_note": "Full-text design, timeline, results and caveats checked on 2026-11-07; see evidence/tt-003.md. Quota and current live-media inspection remain required before scheduling.",
+  "review_note": "Re-reported as a complete ecological story after owner rejected the compressed experiment summary on 2026-11-07. Focal findings checked against original full text; context supported separately by published field and grazing studies.",
   "publication_enabled": true,
   "is_ai_generated": true,
   "batch_id": "2026-11-09",
@@ -32,7 +32,7 @@
       "id": "TT-003-REEL",
       "format": "REEL",
       "publication_date": "2026-11-14T10:00:00+01:00",
-      "caption": "TT-003-REEL | FISH REMOVED. RECOVERY STILL LAGGED.\n\nDoes removing one pressure guarantee recovery when another remains?\n\nResearchers created 12 outdoor freshwater tank communities, with four tanks per treatment. All received mosquitofish; some later received fluoxetine, an antidepressant, while others were solvent controls.\n\nAfter fish removal, zooplankton abundance rebounded less in the fluoxetine treatments than in controls. Important: drug dosing continued for the 21-day post-removal period. This was not evidence of permanent damage after pollution stopped.\n\nResponses varied between tanks and estimates were uncertain. The mechanism was not established. Nutrients were also added before fish introduction, so the initial zooplankton decline cannot be attributed solely to fish. These were simplified outdoor communities, not whole lakes.\n\nOriginal research: Michelangeli et al. (2024), Environmental Science & Technology.\nDOI: https://doi.org/10.1021/acs.est.4c02807\nResearch library: https://akshaymohan16.github.io/toxic-tales-library/#tt-003-recovery-with-pollution\n\nReference imagery: Robert Aguilar/SERC (CC BY 2.0); Alexander Klepnev (CC BY 4.0). Cropped/edited; not study footage. Credits and licence links: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-003.html\nSynthetic narration. Follow @toxic_tales_eco.\n\n#ToxicTales #Ecotoxicology #EcologicalRecovery #FreshwaterEcology #ScienceCommunication"
+      "caption": "TT-003-REEL | THE PRESSURE LEFT BEHIND\n\nRemove a predator, and its prey gets a chance to recover. But what happens when another pressure keeps arriving?\n\nZooplankton link microscopic food and fish. Some graze algae; their response matters beyond a count in a sample. Published field research has also detected antidepressants downstream of wastewater treatment plants.\n\nMichelangeli and colleagues tested recovery in 12 outdoor freshwater communities: four tanks per treatment. All received mosquitofish; some later received fluoxetine. After fish removal, zooplankton abundance rebounded less in the fluoxetine treatments than in controls.\n\nThe crucial distinction: drug dosing continued for all 21 days after fish removal. This was not a test of recovery after pollution stopped. Responses varied, the mechanism remained unresolved, and tank communities cannot establish what every lake will do. Initial nutrient additions and variation among tanks also complicate interpretation.\n\nThe restoration question is an inference to test: when one pressure is removed, what else might still hold recovery back?\n\nFocal study: Michelangeli et al. (2024), Environmental Science & Technology.\nhttps://doi.org/10.1021/acs.est.4c02807\nContext: Schultz et al. (2010), DOI 10.1021/es9022706; Ekvall et al. (2014), DOI 10.1371/journal.pone.0112956.\n\nFull sources, claim checks and limits:\nhttps://akshaymohan16.github.io/toxic-tales-library/sources/tt-003.html\n\nReference imagery: Robert Aguilar/SERC (CC BY 2.0), Alexander Klepnev (CC BY 4.0), cropped/edited. Licence links in source record. Conceptual animations are not study footage or numerical data. Synthetic narration.\n\n#ToxicTales #FreshwaterEcology #EcologicalRecovery #Ecotoxicology"
     }
   ],
   "slides": [],
@@ -57,6 +57,14 @@
       {
         "claim": "Responses were variable and the mechanism was unresolved.",
         "location": "Results uncertainty and Discussion; multiple candidate mechanisms considered."
+      },
+      {
+        "claim": "Antidepressants have been detected in streams downstream of wastewater treatment plants.",
+        "location": "Schultz et al. 2010 (10.1021/es9022706), primary USGS publication record: sampling upstream/downstream of two effluent outfalls; results and source-pathway conclusion."
+      },
+      {
+        "claim": "Zooplankton include algal grazers and are prey for fish, linking different levels of freshwater food webs.",
+        "location": "Ekvall et al. 2014 (10.1371/journal.pone.0112956), Introduction, field grazing experiment, Discussion. This is ecological context, not an algae or water-clarity result from Michelangeli et al."
       }
     ],
     "limitations": [
@@ -68,12 +76,13 @@
     "correction_check": "DOI/title searches and journal/PubMed records checked on 2026-11-07; no correction/retraction notice found."
   },
   "production": {
-    "cover_asset": "mosquitofish",
-    "cover_title": "FISH REMOVED. RECOVERY LAGGED.",
+    "cover_asset": "copepod",
+    "cover_title": "FISH GONE. POLLUTION REMAINS.",
     "critical_terms": [
       "fluoxetine",
-      "dosing continued",
-      "not a test"
+      "zooplankton",
+      "kept adding",
+      "drug was removed"
     ],
     "assets": [
       {
@@ -99,165 +108,294 @@
     ],
     "segments": [
       {
-        "speech": "Remove the fish. The food web should bounce back. Right?",
+        "speech": "Remove the fish, and the tiny animals they eat should have a chance to recover. But what if another pressure keeps arriving?",
         "captions": [
-          "Remove the fish.",
-          "The food web should bounce back.",
-          "Right?"
+          "Remove the fish,",
+          "and the tiny animals they eat",
+          "should have a chance to recover.",
+          "But what if another pressure",
+          "keeps arriving?"
         ],
         "shots": [
           {
             "kind": "specimen",
             "asset": "mosquitofish",
-            "title": "FISH GONE. PROBLEM SOLVED?",
-            "note": "Eastern mosquitofish / reference photograph"
+            "note": "Eastern mosquitofish • reference photograph",
+            "kicker": "THE RECOVERY QUESTION",
+            "start": 0,
+            "end": 0.25
+          },
+          {
+            "kind": "micro",
+            "asset": "copepod",
+            "note": "Copepod larva • reference microscopy",
+            "offset": 2,
+            "start": 0.25,
+            "end": 1
           }
         ]
       },
       {
-        "speech": "Not so fast when another pressure remains.",
+        "speech": "Those tiny animals are zooplankton. Many eat algae, and they are food for fish.",
         "captions": [
-          "Not so fast",
-          "when another pressure remains."
+          "Those tiny animals are zooplankton.",
+          "Many eat algae,",
+          "and they are food for fish."
         ],
         "shots": [
           {
             "kind": "micro",
             "asset": "copepod",
-            "title": "ANOTHER PRESSURE REMAINS",
-            "note": "Copepod larva / reference microscopy"
+            "note": "Copepod larva • reference microscopy",
+            "offset": 4,
+            "kicker": "ZOOPLANKTON",
+            "start": 0,
+            "end": 0.38
+          },
+          {
+            "kind": "foodweb",
+            "note": "Conceptual food web • not study data",
+            "start": 0.38,
+            "end": 1
           }
         ]
       },
       {
-        "speech": "Researchers built twelve outdoor tank communities. All received fish; some later received the antidepressant fluoxetine.",
+        "speech": "The second pressure can come through wastewater. Researchers have detected antidepressants in streams downstream of treatment plants.",
         "captions": [
-          "Researchers built twelve",
-          "outdoor tank communities.",
-          "All received fish;",
-          "some later received",
-          "the antidepressant fluoxetine."
+          "The second pressure can come",
+          "through wastewater.",
+          "Researchers have detected antidepressants",
+          "in streams downstream of treatment plants."
+        ],
+        "shots": [
+          {
+            "kind": "wastewater_route",
+            "note": "Conceptual route • removal varies by treatment",
+            "start": 0,
+            "end": 0.6
+          },
+          {
+            "kind": "micro",
+            "asset": "copepod",
+            "note": "Copepod larva • reference microscopy",
+            "offset": 7,
+            "kicker": "A SECOND PRESSURE",
+            "start": 0.6,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Could that pollution change what happens after a predator disappears?",
+        "captions": [
+          "Could that pollution change what happens",
+          "after a predator disappears?"
+        ],
+        "shots": [
+          {
+            "kind": "restoration_question",
+            "pressure_label": "Continuing exposure",
+            "note": "The question • conceptual illustration"
+          }
+        ]
+      },
+      {
+        "speech": "To test it, ecologists built twelve outdoor tank communities.",
+        "captions": [
+          "To test it, ecologists built",
+          "twelve outdoor tank communities."
         ],
         "shots": [
           {
             "kind": "tanks",
-            "title": "12 OUTDOOR COMMUNITIES",
-            "note": "Experimental design / schematic",
+            "note": "12 outdoor communities • 4 per treatment"
+          }
+        ]
+      },
+      {
+        "speech": "They added mosquitofish to all of them, and later added fluoxetine, an antidepressant, to some.",
+        "captions": [
+          "They added mosquitofish",
+          "to all of them,",
+          "and later added fluoxetine,",
+          "an antidepressant, to some."
+        ],
+        "shots": [
+          {
+            "kind": "specimen",
+            "asset": "mosquitofish",
+            "note": "Eastern mosquitofish • reference photograph",
             "start": 0,
-            "end": 0.48
+            "end": 0.4
           },
           {
             "kind": "timeline",
-            "title": "FISH FIRST. DRUG LATER.",
-            "note": "Study sequence / not to time scale",
-            "start": 0.48,
+            "note": "Fish first • fluoxetine introduced later",
+            "start": 0.4,
             "end": 1
           }
         ]
       },
       {
-        "speech": "After the fish were removed, tiny animals called zooplankton rebounded less in the drug-exposed tanks.",
+        "speech": "Then they removed the fish. Over the next three weeks, zooplankton numbers rebounded less in the drug-exposed tanks than in the controls.",
         "captions": [
-          "After the fish were removed,",
-          "tiny animals called zooplankton",
-          "rebounded less",
-          "in the drug-exposed tanks."
+          "Then they removed the fish.",
+          "Over the next three weeks,",
+          "zooplankton numbers rebounded less",
+          "in the drug-exposed tanks",
+          "than in the controls."
         ],
         "shots": [
           {
-            "kind": "micro",
-            "asset": "copepod",
-            "offset": 5,
-            "title": "ZOOPLANKTON",
-            "note": "Reference microscopy / not study footage",
+            "kind": "restoration_question",
+            "pressure_label": "Fluoxetine continued",
+            "note": "Fish removed • 21-day post-removal period",
             "start": 0,
-            "end": 0.45
+            "end": 0.4
           },
           {
-            "kind": "rebound",
-            "title": "A SMALLER REBOUND",
-            "note": "Qualitative comparison / not plotted data",
-            "start": 0.45,
+            "kind": "evidence_rebound",
+            "note": "Reported direction • not a numerical graph",
+            "start": 0.4,
             "end": 1
           }
         ]
       },
       {
-        "speech": "The crucial detail? Drug dosing continued throughout that recovery period.",
+        "speech": "But the researchers kept adding the drug throughout. So the animals had lost one pressure while another remained.",
         "captions": [
-          "The crucial detail?",
-          "Drug dosing continued",
-          "throughout that recovery period."
-        ],
-        "shots": [
-          {
-            "kind": "timeline",
-            "title": "THE DRUG REMAINED",
-            "note": "Fluoxetine continued after fish removal"
-          }
-        ]
-      },
-      {
-        "speech": "This was not a test of recovery after pollution stopped.",
-        "captions": [
-          "This was not a test of recovery after pollution stopped."
-        ],
-        "shots": [
-          {
-            "kind": "limit",
-            "title": "WHAT WAS NOT TESTED",
-            "items": [
-              "Recovery after drug removal",
-              "Permanent damage"
-            ]
-          }
-        ]
-      },
-      {
-        "speech": "Responses varied between tanks. The mechanism was unresolved, and tanks are not whole lakes.",
-        "captions": [
-          "Responses varied between tanks.",
-          "The mechanism was unresolved,",
-          "and tanks are not whole lakes."
-        ],
-        "shots": [
-          {
-            "kind": "limit",
-            "title": "KEEP THE LIMITS",
-            "items": [
-              "Variable tank responses",
-              "Mechanism unresolved",
-              "Simplified communities"
-            ]
-          }
-        ]
-      },
-      {
-        "speech": "Removing one pressure may not be enough. Real science. Dark twists. Follow Toxic Tales.",
-        "captions": [
-          "Removing one pressure",
-          "may not be enough.",
-          "Real science. Dark twists.",
-          "Follow Toxic Tales."
+          "But the researchers kept adding",
+          "the drug throughout.",
+          "So the animals had lost one pressure",
+          "while another remained."
         ],
         "shots": [
           {
             "kind": "micro",
             "asset": "copepod",
-            "offset": 11,
-            "title": "ONE PRESSURE CAN REMAIN",
-            "note": "Full paper and limits in the caption",
+            "note": "Copepod larva • reference microscopy",
+            "offset": 10,
+            "kicker": "DOSING CONTINUED",
             "start": 0,
             "end": 0.5
           },
           {
-            "kind": "closing",
+            "kind": "restoration_question",
+            "pressure_label": "Dosing continued",
+            "note": "Not recovery after chemical exposure stopped",
+            "start": 0.5,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "The pattern varied between tanks, and the study could not pinpoint why.",
+        "captions": [
+          "The pattern varied between tanks,",
+          "and the study could not pinpoint why."
+        ],
+        "shots": [
+          {
+            "kind": "micro",
+            "asset": "copepod",
+            "note": "Copepod larva • reference microscopy",
+            "offset": 13,
+            "kicker": "THE EXPLANATION IS STILL OPEN"
+          }
+        ]
+      },
+      {
+        "speech": "Nor did it test recovery after the drug was removed.",
+        "captions": [
+          "Nor did it test recovery after the drug was removed."
+        ],
+        "shots": [
+          {
+            "kind": "micro",
+            "asset": "copepod",
+            "note": "Copepod larva • reference microscopy",
+            "offset": 1,
+            "kicker": "WHAT WAS NOT TESTED"
+          }
+        ]
+      },
+      {
+        "speech": "These were small experimental communities. Whether the same pattern holds in lakes needs testing.",
+        "captions": [
+          "These were small experimental communities.",
+          "Whether the same pattern holds",
+          "in lakes needs testing."
+        ],
+        "shots": [
+          {
+            "kind": "specimen",
+            "asset": "mosquitofish",
+            "note": "Eastern mosquitofish • reference photograph",
+            "kicker": "TANK EVIDENCE • FIELD QUESTION"
+          }
+        ]
+      },
+      {
+        "speech": "It raises a question for restoration: when we remove one pressure, what else might still be holding recovery back?",
+        "captions": [
+          "It raises a question for restoration:",
+          "when we remove one pressure,",
+          "what else might still be",
+          "holding recovery back?"
+        ],
+        "shots": [
+          {
+            "kind": "micro",
+            "asset": "copepod",
+            "note": "Copepod larva • reference microscopy",
+            "offset": 6,
+            "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "story_close",
+            "takeaway": "What else is holding recovery back?",
+            "note": "Full paper, context and limits in the caption",
             "start": 0.5,
             "end": 1
           }
         ]
       }
-    ]
+    ],
+    "editorial_style": "science-journalism",
+    "cover_kicker": "THE PRESSURE LEFT BEHIND",
+    "takeaway": "What else is holding recovery back?"
+  },
+  "editorial_story": {
+    "question": "When a predator disappears, what else can hold recovery back?",
+    "why_it_matters": "Zooplankton link microscopic food and fish; wastewater provides a real-world route for another pressure. The story asks why removing one pressure may not deliver the same recovery while another continues.",
+    "narrative_arc": [
+      "Predator-removal puzzle",
+      "Introduce organisms and food web",
+      "Independently verified wastewater pathway",
+      "A focused experimental test",
+      "Smaller rebound",
+      "Continued dosing changes interpretation",
+      "Uncertainty and a bounded restoration question"
+    ],
+    "context_sources": [
+      {
+        "doi": "10.1021/es9022706",
+        "citation": "Schultz et al. (2010), Environmental Science & Technology",
+        "url": "https://www.usgs.gov/publications/antidepressant-pharmaceuticals-two-us-effluent-impacted-streams-occurrence-and-fate",
+        "scope": "Primary publication record and results summary: antidepressants downstream of two wastewater outfalls, not a worldwide uniform exposure claim."
+      },
+      {
+        "doi": "10.1371/journal.pone.0112956",
+        "citation": "Ekvall et al. (2014), PLOS ONE",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0112956",
+        "scope": "Full-text introduction, grazing experiment and discussion: fish predation/zooplankton grazing links; grazer identity matters. No algal outcome is claimed for the focal tanks."
+      }
+    ],
+    "closing_payoff": "Restoration implication framed as a question requiring field tests, not a proven universal rule.",
+    "reporting_mode": "Published-source explanatory journalism; no interviews, eyewitness reporting or researcher quotations claimed.",
+    "craft_record": "quality/SCIENCE_JOURNALISM.md"
   }
 }
 

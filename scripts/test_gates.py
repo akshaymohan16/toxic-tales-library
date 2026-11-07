@@ -15,6 +15,15 @@ class Gates(unittest.TestCase):
     def test_rights(self):
         ep=read(ROOT/'episodes/tt-002.json');ep['production']['assets'][0]['license_url']=''
         with self.assertRaises(AssertionError):validate(ep)
+    def test_journalism_requires_narrative_review(self):
+        m={'fingerprint':'story','files':{'movie.mp4':'hash'},'evidence_sha256':'source','editorial_style':'science-journalism'}
+        a={**m,'decision':'release','reviewed_contact_sheet':'export','scientific_review':'checked','visual_review':'checked','audio_review':'checked'}
+        self.assertFalse(release_ok(a,m))
+        a['narrative_review']='Question, ecological stakes, independently verified context and bounded payoff inspected in final export.'
+        self.assertTrue(release_ok(a,m))
+    def test_journalism_context_required(self):
+        ep=read(ROOT/'episodes/tt-003.json');ep['editorial_story']['context_sources']=[]
+        with self.assertRaises(AssertionError):validate(ep)
     def test_source(self):
         ep=read(ROOT/'episodes/tt-002.json');ep['evidence']['claims'][0]['location']=''
         with self.assertRaises(AssertionError):validate(ep)

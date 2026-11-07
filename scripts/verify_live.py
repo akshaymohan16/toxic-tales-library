@@ -65,7 +65,8 @@ try:
         a = next(s for s in info['streams'] if s['codec_type']=='audio')
         duration = float(info['format']['duration'])
         assert (v['width'],v['height']) == (1080,1920) and v['codec_name']=='h264'
-        assert a['codec_name']=='aac' and 20 <= duration <= 75
+        # Journalism films retain enough time for context, evidence and consequence.
+        assert a['codec_name']=='aac' and 20 <= duration <= 95
         level = subprocess.run(['ffmpeg','-hide_banner','-i',str(mp4),'-af','volumedetect','-vn','-f','null','-'],capture_output=True,text=True,check=True).stderr
         match = re.search(r'mean_volume: ([-0-9.]+) dB',level)
         assert match and float(match.group(1)) > -55, 'Audio missing or too quiet'

@@ -3,7 +3,9 @@
 import hashlib, html, json, os, re
 from datetime import datetime, timezone
 from pathlib import Path
-from production import ROOT, MEDIA, QA, CACHE, VERSION, Voice, render, sha, norm
+import production as story_renderer
+import production_v4 as legacy_renderer
+from production import ROOT, MEDIA, QA, CACHE, VERSION, sha, norm
 REPO='akshaymohan16/toxic-tales-library';SITE=ROOT/'site'
 def read(p,default=None):return json.loads(p.read_text(encoding='utf-8')) if p.exists() else default
 def write(p,obj):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(obj,indent=2,ensure_ascii=False),encoding='utf-8')
@@ -22,12 +24,18 @@ def validate(ep):
         for a,b in zip(s['shots'],s['shots'][1:]):assert a.get('end',1)==b.get('start',0),'Shot gap'
     assert len({s['kind'] for x in plan['segments'] for s in x['shots']})>=5
     assert plan['assets'] and all(a.get('creator') and a.get('license_url') and a.get('source_page') and a.get('changes') for a in plan['assets'])
+    if plan.get('editorial_style')=='science-journalism':
+        story=ep.get('editorial_story',{})
+        for key in ['question','why_it_matters','narrative_arc','context_sources','closing_payoff']:
+            assert story.get(key),'Missing journalism reporting element: '+key
+        assert len(story['context_sources'])>=2,'Context needs separately verified published sources'
     for p in ep['posts']:
         assert p['format'] in ['REEL','CAROUSEL'] and datetime.fromisoformat(p['publication_date']).tzinfo
         assert ep['doi'] in p['caption'] and len(p['caption'])<=2200
     if any(p['format']=='CAROUSEL' for p in ep['posts']):assert 5<=len(ep['slides'])<=8
 
 def release_ok(a,m):
+    if m.get('editorial_style')=='science-journalism' and not (a and a.get('narrative_review')):return False
     return bool(a and a.get('decision')=='release' and a.get('fingerprint')==m['fingerprint'] and a.get('files')==m['files'] and a.get('evidence_sha256')==m['evidence_sha256'] and all(a.get(k) for k in ['reviewed_contact_sheet','scientific_review','visual_review','audio_review']))
 
 def main():
@@ -36,19 +44,20 @@ def main():
     config=read(ROOT/'automation/config.json',{});approvals=read(ROOT/'quality/releases.json',{});cache=read(CACHE/'index.json',{})
     ledger=read(ROOT/'automation/published.json',{'posts':[]})
     receipts={p['post_id']:p for p in ledger.get('posts',[])}
-    papers=[];candidates=[];queue=[];voice=None;ids=set()
+    papers=[];candidates=[];queue=[];voices={};ids=set()
     for path in sorted((ROOT/'episodes').glob('*.json')):
         ep=read(path)
         if not ep.get('production'):continue
         validate(ep);evidence_path=ROOT/ep['evidence_file']
-        fp=hashlib.sha256(path.read_bytes()+evidence_path.read_bytes()+(ROOT/'scripts/production.py').read_bytes()+(ROOT/'requirements.txt').read_bytes()).hexdigest()
+        renderer=story_renderer if ep['production'].get('editorial_style')=='science-journalism' else legacy_renderer
+        fp=hashlib.sha256(path.read_bytes()+evidence_path.read_bytes()+Path(renderer.__file__).read_bytes()+(ROOT/'requirements.txt').read_bytes()).hexdigest()
         stem=ep['slug']+'-'+fp[:12]
         qa_path=QA/(ep['id'].lower()+'.json');m=read(qa_path,{})
         valid=cache.get(ep['id'])==fp and m.get('fingerprint')==fp and m.get('files') and all((SITE/p).exists() and sha(SITE/p)==h for p,h in m['files'].items())
         if not valid:
-            if voice is None:voice=Voice()
+            if renderer.VERSION not in voices:voices[renderer.VERSION]=renderer.Voice()
             out=CACHE/ep['id'];out.mkdir(parents=True,exist_ok=True)
-            m=render(ep,voice,out)
+            m=renderer.render(ep,voices[renderer.VERSION],out)
             files=[]
             originals=[MEDIA/(ep['slug']+'.mp4'),MEDIA/(ep['slug']+'_cover.jpg')]+[MEDIA/f'{ep["slug"]}_slide_{i+1:02}.jpg' for i in range(len(ep.get('slides',[])))]
             for original in originals:
