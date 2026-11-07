@@ -27,7 +27,7 @@
     "publication_scope": "TT-002-CAROUSEL only. Rebuilt Reel is available in source archive but TT-002-REEL is already published."
   },
   "TT-003": {
-    "decision": "release",
+    "decision": "rejected_by_owner",
     "reviewed_at": "2026-11-07",
     "reviewer": "Delegated Toxic Tales editor",
     "verification_run": 42382117062,
@@ -44,6 +44,7 @@
     "scientific_review": "Primary full text checked: twelve outdoor tanks; all received fish, some later fluoxetine; reduced zooplankton abundance rebound after fish removal with dosing continuing. The film explicitly says this is not recovery after pollution stopped. Mechanism unresolved, tank variability and tank-to-lake limit retained. No permanent damage or unique initial fish-causation claim. Source records and CC BY credits verified.",
     "visual_review": "Inspected actual encoded contact sheet, full-size caveat frame and final cover. Moving browser playback loaded successfully (38.33-second metadata, readyState 4) and showed readable result/subtitle frame. No caption overlaps. Eleven short scenes use reference fish imagery, real microscopy, experimental design, sequence and qualitative comparison. Conceptual comparison is labelled, not fabricated numerical data. The complete negative recovery-after-removal claim fits on screen.",
     "audio_review": "Final encoded audio ASR reviewed against script: 98.96% token similarity; fluoxetine, zooplankton and the continued-dosing/not-after-pollution-stopped qualification are preserved. Segment and critical-word tests passed. Integrated loudness -16.77 LUFS, true peak -5.47 dBTP, 38.33 seconds; pinned Kokoro voice. Human listening and comparison with original Instagram audio are not claimed.",
-    "publication_scope": "TT-003-REEL"
+    "publication_scope": "TT-003-REEL",
+    "rejection_reason": "Fails narrative quality: insufficient ecological context, real-world stakes and complete explanatory story."
   }
 }

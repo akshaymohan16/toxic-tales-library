@@ -26,10 +26,10 @@
   "bio_link_confirmed": false,
   "routine_human_approval_required": false,
   "autonomous_editorial_and_posting_authorisation_date": "2026-11-07",
-  "publishing_paused": false,
-  "production_pause_reason": null,
+  "publishing_paused": true,
+  "production_pause_reason": "User rejected experiment-summary storytelling. Rebuilding TT-003 as source-checked science journalism; Metricool Reel is a draft, recurring tasks temporarily paused during replacement.",
   "quality_gate": {
-    "status": "active_exact_file_release",
+    "status": "journalism_revision_in_progress",
     "standard": "quality/PRODUCTION_STANDARD.md",
     "decision_owner": "delegated_editor",
     "routine_human_approval_required": false,
