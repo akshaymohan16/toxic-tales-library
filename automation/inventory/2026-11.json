@@ -1,23 +1,31 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_on": "2026-11-07",
-  "connected_networks": ["instagram"],
-  "calendar_range": ["2026-11-01T00:00:00+01:00", "2026-11-30T23:59:59+01:00"],
-  "scheduled_observation": {"request_succeeded": true, "count": 0, "ids": []},
-  "published_observations": {
-    "through_date": "2026-11-07",
-    "feed_rows_returned": 0,
-    "reel_rows_returned": 0,
-    "story_rows_returned": 0,
-    "evolution_dates_returned": ["20261107"],
-    "aggregate_feed_reels_stories_returned": [0, 0, 0]
+  "observed_at": "2026-11-07T15:21:00+01:00",
+  "connected_networks": [
+    "instagram"
+  ],
+  "planner_counter": {
+    "used": 1,
+    "limit": 20,
+    "source": "Authenticated Metricool planner UI: You have posted 1 out of your 20 available posts in your plan this month.",
+    "url": "https://app.metricool.com/planner/calendar?blogId=7937614"
   },
-  "historical_coverage_confirmed": false,
-  "reason": "Connection was first established on 7 November. Empty detail results and one all-zero daily aggregate do not establish complete earlier-November published history. Retry/reconcile automatically; do not silently treat unavailable history as zero.",
-  "reserved_candidate_ids": ["TT-002-REEL", "TT-002-CAROUSEL", "TT-003-REEL"],
+  "scheduled_ids": [],
+  "published_ids": [
+    "419869962"
+  ],
+  "published_post_ids": [
+    "TT-002-REEL"
+  ],
+  "reserved_candidate_ids": [
+    "TT-002-CAROUSEL",
+    "TT-003-REEL"
+  ],
   "unresolved_submissions": [],
   "monthly_cap": 20,
-  "new_scheduling_allowed": false,
-  "next_action": "Publisher must retrieve fresh actual publication history and full-month scheduled posts, establish coverage, deduplicate and recalculate before each create. Do not require a manual user tally."
+  "planned_usage_with_current_candidates": 3,
+  "new_scheduling_allowed": true,
+  "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
+  "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9"
 }

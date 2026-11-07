@@ -5,30 +5,46 @@
   "timezone": "Europe/Vienna",
   "budget_eur": 0,
   "site_url": "https://akshaymohan16.github.io/toxic-tales-library/",
-  "target_weekly_posts": {"reels": 2, "carousel": 1},
-  "slots": {"tuesday": "REEL", "thursday": "CAROUSEL", "saturday": "REEL"},
+  "target_weekly_posts": {
+    "reels": 2,
+    "carousel": 1
+  },
+  "slots": {
+    "tuesday": "REEL",
+    "thursday": "CAROUSEL",
+    "saturday": "REEL"
+  },
   "default_local_publication_time": "10:00",
   "monthly_target_approximate": 13,
   "monthly_publication_cap": 20,
   "deployment_verified": true,
-  "deployment_evidence": {"workflow_run_id":42366441822,"media_commit":"ae1aeac2a3860cfbef7f0569bbef3a55a2f45aec","note":"Technical deployment only. Does not establish editorial or aesthetic approval."},
+  "deployment_evidence": {
+    "workflow_run_id": 42366441822,
+    "media_commit": "ae1aeac2a3860cfbef7f0569bbef3a55a2f45aec",
+    "note": "Technical deployment only. Does not establish editorial or aesthetic approval."
+  },
   "bio_link_confirmed": false,
   "routine_human_approval_required": false,
   "autonomous_editorial_and_posting_authorisation_date": "2026-11-07",
   "publishing_paused": true,
-  "production_pause_reason": "The posted generic format was rejected by the owner. The editor independently rejected Rebuild Preview v2 after inspecting actual frames, caption chunks and scene timing. No replacement currently meets the publishing standard.",
+  "production_pause_reason": "Final exact-file release pending; neural production and public media verification passed on run 42381168970. Caption and immutable-URL improvements are being deployed.",
   "quality_gate": {
-    "status": "v2_rejected_reference_comparison_incomplete",
-    "approved_benchmark_version": null,
-    "one_time_style_approval_required": false,
+    "status": "integration_render_passed_final_review_pending",
+    "standard": "quality/PRODUCTION_STANDARD.md",
     "decision_owner": "delegated_editor",
-    "owner_instruction": "Judge it yourself against the owner's earlier published Toxic Tales; at least as good, preferably better. Do not make the owner the creative director or require routine or one-time aesthetic sign-off.",
-    "minimum_reference": "Owner's pre-automation published Reels, NOT the failed TT-002 post, the new pilot cover, or assistant-generated drafts.",
-    "original_reference_playback_verified": false,
-    "technical_checks_are_not_aesthetic_review": true,
-    "blocked_fallbacks": ["direct eSpeak narration", "generic fish-and-waves slideshow", "Rebuild Preview v2", "publishing degraded media to meet a quota", "asserting original-video or auditory comparison from briefs, thumbnails or audio volume alone"],
-    "resume_rule": "No user taste-approval gate. Keep publishing paused until the editor has evidence that a finished replacement meets the original account standard, including actual original-video/audio comparison where claimed. Correct identified hook, visual pacing, repeated imagery, split-negation subtitles and misleading conceptual-data risks. Test the complete repeatable production path on two distinct stories, not only a voice sample. If required original media or listening capability is unavailable, report that specific access limitation honestly; do not invent a completed comparison or shift editorial judgement to the owner. Keep scientific, rights, audiovisual and technical reviews separate. Never silently substitute a lower-quality renderer."
+    "routine_human_approval_required": false,
+    "original_visual_reference_viewed": "https://www.instagram.com/toxic_tales_eco/reel/DKUQ1HUMjEB/",
+    "original_audio_comparison_claimed": false,
+    "exact_export_review_required": true,
+    "blocked_fallbacks": [
+      "direct eSpeak audio",
+      "generic slideshow",
+      "stale-file approval",
+      "unsupported claims",
+      "quota-filling degraded posts"
+    ],
+    "resume_rule": "Release exact-file hashes only after substantive scientific, visual and technical audio review plus current public-byte verification. Follow PRODUCTION_STANDARD; repair routine errors autonomously."
   },
-  "quota_policy": "Before each new schedule reconcile all observable published and queued content, including manually created posts, with stable IDs and uncertain reservations. Preserve monthly observations; never invent zero history or exceed 20. No upgrade.",
-  "publication_policy": "Quality hold remains in force. Owner has delegated quality decisions; no routine or one-time aesthetic approval is required. Resume only on evidence of original-account quality parity and repeatable production, alongside original-paper verification, public-media checks, duplicate checks, source references and capacity checks. Never claim link-in-bio until confirmed."
+  "quota_policy": "Use observed Metricool planner counter plus scheduled destination reservations and uncertain writes, at most 20/month. Reconcile all visible posts for duplicate detection. Missing newly connected analytics do not override a verified usage counter.",
+  "publication_policy": "Follow quality/PRODUCTION_STANDARD.md; two Reels and one carousel weekly without routine owner approval."
 }

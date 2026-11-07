@@ -40,22 +40,26 @@ def main():
         if not ep.get('production'):continue
         validate(ep);evidence_path=ROOT/ep['evidence_file']
         fp=hashlib.sha256(path.read_bytes()+evidence_path.read_bytes()+(ROOT/'scripts/production.py').read_bytes()+(ROOT/'requirements.txt').read_bytes()).hexdigest()
+        stem=ep['slug']+'-'+fp[:12]
         qa_path=QA/(ep['id'].lower()+'.json');m=read(qa_path,{})
         valid=cache.get(ep['id'])==fp and m.get('fingerprint')==fp and m.get('files') and all((SITE/p).exists() and sha(SITE/p)==h for p,h in m['files'].items())
         if not valid:
             if voice is None:voice=Voice()
             out=CACHE/ep['id'];out.mkdir(parents=True,exist_ok=True)
             m=render(ep,voice,out)
-            files=[MEDIA/(ep['slug']+'.mp4'),MEDIA/(ep['slug']+'_cover.jpg')]+[MEDIA/f'{ep["slug"]}_slide_{i+1:02}.jpg' for i in range(len(ep.get('slides',[])))]
+            files=[]
+            originals=[MEDIA/(ep['slug']+'.mp4'),MEDIA/(ep['slug']+'_cover.jpg')]+[MEDIA/f'{ep["slug"]}_slide_{i+1:02}.jpg' for i in range(len(ep.get('slides',[])))]
+            for original in originals:
+                target=original.with_name(original.name.replace(ep['slug'],stem,1));original.replace(target);files.append(target)
             m.update(fingerprint=fp,evidence_sha256=sha(evidence_path),files={p.relative_to(SITE).as_posix():sha(p) for p in files})
             write(qa_path,m);cache[ep['id']]=fp;write(CACHE/'index.json',cache)
-        media={'reel':f'media/{ep["slug"]}.mp4','cover':f'media/{ep["slug"]}_cover.jpg','slides':[f'media/{ep["slug"]}_slide_{i+1:02}.jpg' for i in range(len(ep.get('slides',[])))]}
+        media={'reel':f'media/{stem}.mp4','cover':f'media/{stem}_cover.jpg','slides':[f'media/{stem}_slide_{i+1:02}.jpg' for i in range(len(ep.get('slides',[])))]}
         entry={k:ep.get(k) for k in ('id','slug','title','hook','doi','paper_title','citation','summary','evidence_note','source_url','tags')}
         entry.update(media=media,evidence=ep['evidence'],credits=ep['production']['assets'],qa=f'qa/{ep["id"].lower()}.json',evidence_record=f'sources/{ep["id"].lower()}.html')
         papers.append(entry)
         rows=''.join('<li>'+html.escape(c['claim'])+' <em>('+html.escape(c['location'])+')</em></li>' for c in ep['evidence']['claims'])
-        credits=''.join('<li>'+html.escape(a['creator'])+' - <a href="'+html.escape(a['source_page'],quote=True)+'">Source</a> � <a href="'+html.escape(a['license_url'],quote=True)+'">'+html.escape(a['license'])+'</a>. '+html.escape(a['changes'])+'</li>' for a in ep['production']['assets'])
-        page='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>'+html.escape(ep['title'])+'</title><style>body{max-width:800px;margin:40px auto;padding:20px;font:18px/1.6 system-ui;background:#071c24;color:#fffdf2}a{color:#cefa4c}li{margin-bottom:16px}pre{white-space:pre-wrap;font:14px/1.6 system-ui}</style><a href="../">Toxic Tales research archive</a><h1>'+html.escape(ep['title'])+'</h1><p>'+html.escape(ep['citation'])+' � <a href="'+ep['source_url']+'">'+ep['doi']+'</a></p><h2>Claims and source locations</h2><ul>'+rows+'</ul><h2>Limits</h2><p>'+html.escape(ep['evidence_note'])+'</p><h2>Media credits</h2><p>Reference imagery and explanatory animation; not footage or raw data from this experiment. Narration is synthetic.</p><ul>'+credits+'</ul><h2>Verification record</h2><pre>'+html.escape(evidence_path.read_text(encoding='utf-8'))+'</pre>'
+        credits=''.join('<li>'+html.escape(a['creator'])+' — <a href="'+html.escape(a['source_page'],quote=True)+'">Source</a> · <a href="'+html.escape(a['license_url'],quote=True)+'">'+html.escape(a['license'])+'</a>. '+html.escape(a['changes'])+'</li>' for a in ep['production']['assets'])
+        page='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>'+html.escape(ep['title'])+'</title><style>body{max-width:800px;margin:40px auto;padding:20px;font:18px/1.6 system-ui;background:#071c24;color:#fffdf2}a{color:#cefa4c}li{margin-bottom:16px}pre{white-space:pre-wrap;font:14px/1.6 system-ui}</style><a href="../">Toxic Tales research archive</a><h1>'+html.escape(ep['title'])+'</h1><p>'+html.escape(ep['citation'])+' · <a href="'+ep['source_url']+'">'+ep['doi']+'</a></p><h2>Claims and source locations</h2><ul>'+rows+'</ul><h2>Limits</h2><p>'+html.escape(ep['evidence_note'])+'</p><h2>Media credits</h2><p>Reference imagery and explanatory animation; not footage or raw data from this experiment. Narration is synthetic.</p><ul>'+credits+'</ul><h2>Verification record</h2><pre>'+html.escape(evidence_path.read_text(encoding='utf-8'))+'</pre>'
         target=SITE/entry['evidence_record'];target.parent.mkdir(exist_ok=True);target.write_text(page,encoding='utf-8')
         approved=release_ok(approvals.get(ep['id']),m)
         for p in ep['posts']:

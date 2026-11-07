@@ -67,6 +67,7 @@ class Voice:
         import soundfile as sf
         audios=[];timeline=[];captions=[];audit=[];cursor=0
         for i,s in enumerate(ep['production']['segments']):
+            print(f'{ep["id"]}: synthesizing and aligning segment {i+1}',flush=True)
             audio,sr=self.tts.create(s['speech'],voice='af_heart',speed=1.07,lang='en-us')
             audio=np.pad(audio,(0,int(sr*.13)))
             wav=out/f'voice-{i:02}.wav';sf.write(wav,audio,sr)
@@ -157,10 +158,10 @@ class Visuals:
         elif typ=='timeline':
             items=['Fish added','Drug begins','Fish removed']
             for i,item in enumerate(items):
-                y=390+i*150;d.ellipse((77,y-14,105,y+14),fill=LIME if i==2 else TEAL)
+                y=390+i*150;d.ellipse((77,y-14,105,y+14),fill=LIME if phase>i/3 else '#3b6872')
                 if i<2:d.line((91,y+16,91,y+135),fill='#4c747b',width=4)
                 d.text((130,y),item,font=font(35),fill=WHITE,anchor='lm')
-            d.line((610,532,610,785),fill=RED,width=12)
+            d.line((610,532,610,532+int(253*min(1,phase*1.5))),fill=RED,width=12)
             label(im,'Drug dosing continues',810,31,RED)
         elif typ=='rebound':
             label(im,'After fish removal',350,33,TEAL)
@@ -170,7 +171,7 @@ class Visuals:
             label(im,'Zooplankton abundance',815,29)
         elif typ=='limit':
             for i,item in enumerate(shot['items']):
-                y=390+i*145;rounded(d,(58,y,662,y+115),outline=RED if i==0 else '#3b6872')
+                y=390+i*145;rounded(d,(58,y,662,y+115),outline=RED if i==min(len(shot['items'])-1,int(phase*len(shot['items']))) else '#3b6872')
                 label(im,item,y+25,32,width=550)
         elif typ=='closing':
             label(im,'REAL SCIENCE.',410,52,LIME);label(im,'DARK TWISTS.',490,52)
@@ -234,6 +235,24 @@ def render(ep,voice,out):
         for line in wrap(s['body'],30,610,False):
             d.text((52,y),line,font=font(30,False),fill=WHITE);y+=43
         if y>765:raise ValueError('Carousel text overflow')
+        if i in (0,len(ep['slides'])-1) and y<570:
+            with Image.open(vis.assets[ep['production']['cover_asset']]) as ref:
+                art=ImageOps.contain(ref.convert('RGB'),(590,180))
+            canvas.paste(art,((720-art.width)//2,590))
+        elif i==1 and y<610:
+            for col,color in enumerate([TEAL,LIME,RED]):
+                for row in range(4):
+                    x=155+col*205;yy=620+row*36
+                    rounded(d,(x-64,yy-13,x+64,yy+13),outline=color,r=7)
+                    fish(d,x,yy,.38,color)
+        elif i==2 and y<650:
+            for k in range(4):
+                x=120+k*160;rounded(d,(x-60,650,x+60,750),outline=TEAL,r=12)
+                fish(d,x,687,.6,LIME);d.text((x,725),f'Test {k+1}',font=font(19),fill=WHITE,anchor='mm')
+        elif i in (3,4,5) and y<620:
+            phrases={3:'No clear difference is not proof of equality.',4:'One trait is not an entire personality.',5:'Experimental tanks are not whole ecosystems.'}
+            rounded(d,(52,650,668,774),outline=TEAL)
+            label(canvas,phrases[i],670,29,TEAL,width=550)
         d.line((52,803,668,803),fill=TEAL,width=2)
         d.text((52,830),ep['doi'],font=font(22),fill=TEAL)
         canvas.resize((1080,1350),Image.Resampling.LANCZOS).save(MEDIA/f'{ep["slug"]}_slide_{i+1:02}.jpg',quality=95)
