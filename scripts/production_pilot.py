@@ -57,6 +57,32 @@ def fish(d,x,y,s=1,color=TEAL):
 def rounded(d,box,fill='#15343e',outline=None,width=2,r=22):d.rounded_rectangle(box,r,fill,outline,width)
 def norm(s):return re.findall(r"[a-z0-9]+",s.lower())
 
+NUMBER_TOKENS={word:str(i) for i,word in enumerate(
+    ('one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve'),1)}
+
+def critical_tokens(text):
+    """Only normalize punctuation/case and equivalent numbers; retain every word."""
+    return [NUMBER_TOKENS.get(token,token) for token in norm(text)]
+
+def require_critical_terms(transcript,terms):
+    heard=critical_tokens(transcript)
+    for term in terms:
+        expected=critical_tokens(term)
+        if not expected or not any(heard[i:i+len(expected)]==expected
+                                   for i in range(len(heard)-len(expected)+1)):
+            raise ValueError('Critical scientific term absent from final transcript: '+term)
+
+def validate_text_layout(ep):
+    """Fail before narration or rendering, using the same fonts and widths as frames."""
+    for segment in ep['production']['segments']:
+        for caption in segment['captions']:
+            if len(wrap(caption,45,608))>2:
+                raise ValueError('Use shorter caption phrases, max two lines: '+caption)
+        for shot in segment['shots']:
+            title=shot.get('title','')
+            if len(wrap(title,shot.get('title_size',50),610))>3:
+                raise ValueError('Headline too long: '+title)
+
 class Voice:
     def __init__(self):
         from kokoro_onnx import Kokoro
@@ -349,6 +375,7 @@ class Visuals:
 
 
 def render(ep,voice,out):
+    validate_text_layout(ep)
     timeline,captions,audit,duration=voice.make(ep,out)
     bounds=(35,80)
     if not bounds[0]<=duration<=bounds[1]:raise ValueError(f'Film duration outside {bounds}: {duration}')
@@ -375,8 +402,7 @@ def render(ep,voice,out):
     intended=' '.join(s['speech'] for s in ep['production']['segments'])
     similarity=difflib.SequenceMatcher(None,norm(intended),norm(transcript)).ratio()
     if similarity<.90:raise ValueError('Final encoded audio failed script comparison')
-    for term in ep['production']['critical_terms']:
-        if term.lower() not in transcript.lower():raise ValueError('Critical scientific term absent from final transcript: '+term)
+    require_critical_terms(transcript,ep['production']['critical_terms'])
     frames=[]
     for i,s in enumerate(timeline):
         name=f'{ep["id"].lower()}-shot-{i+1:02}.jpg';path=QA/name

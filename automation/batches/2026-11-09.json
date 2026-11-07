@@ -4,15 +4,15 @@
   "timezone": "Europe/Vienna",
   "episode_ids": [
     "TT-002",
-    "TT-003"
+    "TT-004"
   ],
   "slots": [
     {
       "id": "2026-11-10-NEW-REEL",
       "date": "2026-11-10T10:00:00+01:00",
       "format": "REEL",
-      "status": "assigned_to_sunday_producer",
-      "reason": "Renewed weekly instruction: new verified paper required; do not duplicate TT-002."
+      "status": "unfilled_owner_hold",
+      "reason": "New distinct paper required after explicit resumption; both recurring tasks remain paused."
     },
     {
       "id": "TT-002-CAROUSEL",
@@ -23,18 +23,35 @@
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=3228865276435317523"
     },
     {
+      "id": "TT-004-REEL",
+      "date": "2026-11-14T10:00:00+01:00",
+      "format": "REEL",
+      "status": "pilot_rendering_draft_pending_creation",
+      "publication_eligible": false,
+      "reason": "New complete pilot is being rendered; date is a held placeholder, not scheduling or publication authority. Exact pilot approval remains required."
+    }
+  ],
+  "scientific_review": "TT-004 source and pre-render editorial checks completed; final encoded review remains pending. Historical TT-003 is rejected.",
+  "render_and_live_media_review": "TT-004 render and current public-byte verification pending; do not reuse the prior TT-003 verification as evidence for TT-004.",
+  "schedule_status": "Both recurring tasks paused. Thursday carousel held; TT-004 replaces the retired Saturday pilot slot but its provider draft has not yet been created.",
+  "quota_status": "Authenticated planner counter verified 1/20 used; reserve future posts separately.",
+  "idempotency_note": "Never repost published TT-002-REEL. Never revive rejected TT-003-REEL. Reconcile the separate TT-004 identity before creating or updating its held draft; owner approval applies only to the exact new pilot.",
+  "retired_slots": [
+    {
       "id": "TT-003-REEL",
       "date": "2026-11-14T10:00:00+01:00",
       "format": "REEL",
-      "status": "draft_awaiting_owner_pilot_approval",
+      "status": "rejected_retired_draft",
       "metricool_id": "420062745",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=6027580248989713344"
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=6027580248989713344",
+      "historical_status": "draft_awaiting_owner_pilot_approval",
+      "publication_eligible": false,
+      "retirement_reason": "Owner rejected the unclear opening and the complete script; TT-004 is the new pilot. Approval of TT-004 must never revive TT-003."
     }
   ],
-  "scientific_review": "completed; see evidence files",
-  "render_and_live_media_review": "Complete visual pilot built and verified; owner approval is pending. Draft media replaced and read back; nothing new published.",
-  "verification_run": 42389865597,
-  "schedule_status": "Future posts held as drafts pending owner approval of visual pilot; Tuesday research assignment retained.",
-  "quota_status": "Authenticated planner counter verified 1/20 used; reserve future posts separately.",
-  "idempotency_note": "TT-002-REEL remains in published.json as a 7 November publication. Never repost it. Renewed 2-Reels-per-week request authorises a new distinct Tuesday paper. Retain Thursday carousel and Saturday TT-003."
+  "retired_episode_ids": [
+    "TT-003"
+  ],
+  "active_pilot_id": "TT-004",
+  "historical_verification_run": 42389865597
 }

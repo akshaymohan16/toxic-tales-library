@@ -1,6 +1,6 @@
 {
   "episode_id": "TT-003",
-  "decision": "awaiting_owner_approval",
+  "decision": "rejected_by_owner",
   "owner_approved": false,
   "reviewed_at": "2026-11-07",
   "reviewer": "Delegated Toxic Tales editor",
@@ -14,7 +14,7 @@
   },
   "duration_seconds": 64.125,
   "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-003-contact.jpg?pilot=97d6540a",
-  "preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot.html",
+  "preview_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-003-recovery-with-pollution-de6e3de79586.mp4",
   "research_url": "https://akshaymohan16.github.io/toxic-tales-library/sources/tt-003.html",
   "scientific_review": "Retains the verified focal paper and independent context-source checks in evidence/tt-003.md. Fish removed, fluoxetine continued throughout the following 21 days, smaller zooplankton abundance rebound, variability and unresolved mechanism, no drug-removal recovery test and no established whole-lake outcome. Reference copepod footage is not asserted to show study species or nauplii. Reference stream is explicitly not a pollution sampling site. Caption preserves additional nutrient/productivity limitations and all three paper references.",
   "narrative_review": "Complete ecological story with stronger opening: fish gone but another pressure remains; identifies zooplankton and food-web role, separately sourced wastewater pathway, central recovery question, focused experiment and discovery, continued-dosing interpretive turn, uncertainty and bounded restoration question. No invented interviews, feelings, field observations, mechanisms or result numbers. Owner judgement of hook and pacing remains pending.",
@@ -26,11 +26,14 @@
   "metricool_draft_id": "420062745",
   "metricool_uuid": "6027580248989713344",
   "approval_next_steps": [
-    "Wait for explicit owner approval in chat.",
-    "Preserve exact approved media URLs and hashes; approval belongs in this record and releases.json, not in the episode content.",
-    "If owner requests posting now, update this existing draft UUID using its freshly fetched numeric ID and imminent local publication time; never create a duplicate.",
-    "Confirm PUBLISHED plus public Instagram URL, save receipt, then report publication.",
-    "If immediate posting vacates Saturday 14 November, assign a new distinct-paper Reel to that slot for the Sunday producer; do not repost TT-003.",
-    "Resume recurring automation only after this owner hold is lifted, retaining two new Reels and one carousel per week and confirmed-publication notifications."
-  ]
+    "Never publish or revive this rejected TT-003 draft.",
+    "Retain its existing media hashes, citation and provider draft identifiers as history; no external draft deletion is authorised by this metadata update.",
+    "Use the separate TT-004 pilot record for the current review. Its approval does not apply to TT-003."
+  ],
+  "publication_eligible": false,
+  "retired_on": "2026-11-07",
+  "superseded_by_pilot": "TT-004",
+  "rejection_reason": "Owner rejected the unclear opening and the complete script; TT-004 is the new pilot. Approval of TT-004 must never revive TT-003.",
+  "review_status_note": "The retained reviews describe the historical export; the owner subsequently rejected it. They are not current approval.",
+  "preview_type": "archived_rejected_video"
 }

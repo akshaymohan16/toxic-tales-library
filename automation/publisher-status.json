@@ -3,33 +3,54 @@
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": "Europe/Vienna",
-  "deployment_and_media": "verified",
-  "release_commit": "97d6540a23ca5b813eb1f07d9e5512f4b4031fc1",
-  "verification_run": 42389865597,
+  "deployment_and_media": "TT-004 rendering; current exact-public-byte verification pending",
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
   "decision": "HOLD_OWNER_PILOT_APPROVAL",
-  "reason": "Completed visual pilot is integrated as an unpublished Metricool draft. Owner will approve before publication.",
+  "reason": "The owner approved the mandatory editorial approach and requested a new TT-004 pilot. The exact film, final encoded review and owner approval are pending; publishing remains paused.",
   "scheduled_posts_returned": 0,
   "published_provider_receipts": 1,
   "new_metricool_submissions": 0,
-  "scheduled_post_ids": [
-    "TT-002-CAROUSEL",
-    "TT-003-REEL"
-  ],
+  "scheduled_post_ids": [],
   "routine_user_approval_required": false,
-  "automatic_next_step": "Wait for owner approval of exact completed pilot. Do not self-resume. Both recurring tasks paused and future posts held as drafts.",
-  "review_limit": "No human listening or original Instagram audio parity claimed; technical audio checks and final ASR reviewed.",
+  "automatic_next_step": "Finish TT-004 render, independent final review, research archive and held draft. Await owner approval of exact finished pilot; do not self-resume.",
+  "review_limit": "Current TT-004 final encoded review and technical audio checks pending; no listening claim is made.",
   "quota": {
     "observed_used": 1,
     "scheduled_reservations": 2,
     "projected": 3,
-    "cap": 20
+    "cap": 20,
+    "note": "Historical observation before TT-004 draft creation. Reconcile current provider calendar and inventory before any new submission; rejected TT-003 is not eligible for publication."
   },
-  "resolved_hold": "Owner's narrative-quality revision completed; automatic workflow restored with new story requirements.",
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
   "updated_metricool_posts": 1,
   "journalism_standard": "quality/SCIENCE_JOURNALISM.md",
   "draft_posts_held": 2,
   "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot.html",
-  "pilot_record": "quality/pilots/tt-003.json"
+  "pilot_record": "quality/pilots/tt-004.json",
+  "historical_pilot_verification": {
+    "episode_id": "TT-003",
+    "release_commit": "97d6540a23ca5b813eb1f07d9e5512f4b4031fc1",
+    "verification_run": 42389865597,
+    "note": "Historical rejected pilot only; not evidence for current TT-004."
+  },
+  "historical_status_notes": {
+    "resolved_hold": "Owner's narrative-quality revision completed; automatic workflow restored with new story requirements.",
+    "prior_review_limit": "No human listening or original Instagram audio parity claimed; technical audio checks and final ASR reviewed.",
+    "quota_observation": {
+      "observed_used": 1,
+      "scheduled_reservations": 2,
+      "projected": 3,
+      "cap": 20,
+      "note": "Historical observation before TT-004 draft creation. Reconcile current provider calendar and inventory before any new submission; rejected TT-003 is not eligible for publication."
+    }
+  },
+  "held_post_ids": [
+    "TT-002-CAROUSEL"
+  ],
+  "retired_draft_post_ids": [
+    "TT-003-REEL"
+  ],
+  "pending_new_pilot_post_id": "TT-004-REEL",
+  "pilot_record_status": "pending_final_export_review",
+  "updated_at": "2026-11-07T17:05:47.988009+00:00"
 }

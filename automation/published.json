@@ -97,7 +97,7 @@
       "metricool_uuid": "6027580248989713344",
       "publication_date": "2026-11-14T10:00:00+01:00",
       "timezone": "Europe/Vienna",
-      "status": "draft_awaiting_owner_pilot_approval",
+      "status": "rejected_retired_draft",
       "provider_status": "PENDING",
       "auto_publish": false,
       "draft": true,
@@ -118,7 +118,7 @@
       "release_commit": "97d6540a23ca5b813eb1f07d9e5512f4b4031fc1",
       "public_verification_run": 42389865597,
       "receipt_saved_on": "2026-11-07",
-      "publication_confirmation": "Unpublished draft; awaiting owner approval of exact visual pilot.",
+      "publication_confirmation": "Unpublished rejected draft. It is retired from future publication; no provider deletion or publication occurred in this metadata update.",
       "schedule_readback_verified": true,
       "readback_date": "2026-11-07",
       "previous_revisions": [
@@ -152,11 +152,23 @@
           "release_fingerprint": "55c2001a3e7201dc71022ee4ef2e6393a94d4baefec5592579b29e34e3fb9d75",
           "status": "superseded_by_visual_pilot",
           "date": "2026-11-07"
+        },
+        {
+          "metricool_id": "420062745",
+          "status": "draft_awaiting_owner_pilot_approval",
+          "date": "2026-11-07",
+          "release_fingerprint": "de6e3de79586e0b1839f97649c2441c76db19ca84c00f7d868d33e761e89bbc8",
+          "reason": "Historical pilot state superseded by owner rejection."
         }
       ],
-      "release_record_note": "Approval and schedule receipt committed together immediately after release; media commit is the exact rendered version.",
-      "revision_reason": "Owner requested full science-journalism story. Existing post updated, preserving UUID and publication date; no duplicate created.",
-      "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot.html"
+      "release_record_note": "Exact historical export and provider identifiers retained for audit. Previous editorial review was rejected by the owner and is not a publication release.",
+      "revision_reason": "Owner rejected the unclear opening and the complete script; TT-004 is the new pilot. Approval of TT-004 must never revive TT-003.",
+      "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-003-recovery-with-pollution-de6e3de79586.mp4",
+      "publication_eligible": false,
+      "retired_on": "2026-11-07",
+      "superseded_by_pilot": "TT-004",
+      "retirement_reason": "Owner rejected the unclear opening and the complete script; TT-004 is the new pilot. Approval of TT-004 must never revive TT-003.",
+      "preview_type": "archived_rejected_video"
     }
   ]
 }

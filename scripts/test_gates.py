@@ -1,6 +1,7 @@
 import copy, unittest
 from build import release_ok, validate, ROOT, read
 from test_editorial_gate import EditorialGates
+from test_pilot_transcript import PilotTranscriptGates
 class Gates(unittest.TestCase):
     def test_exact_bytes(self):
         m={'fingerprint':'v4','files':{'movie.mp4':'hash'},'evidence_sha256':'source'}

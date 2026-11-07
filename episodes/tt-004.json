@@ -371,7 +371,8 @@
         "speech": "Very few made it through intact. But some still contained living embryos.",
         "captions": [
           "Very few made it through intact.",
-          "But some still contained living embryos."
+          "But some still contained",
+          "living embryos."
         ],
         "pause_after": 0.3,
         "shots": [
@@ -419,7 +420,8 @@
           "This experiment showed that",
           "some eggs can survive digestion.",
           "It did not show ducks",
-          "establishing a wild fish population."
+          "establishing a",
+          "wild fish population."
         ],
         "pause_after": 0.3,
         "shots": [
@@ -574,11 +576,11 @@
   },
   "editorial_review": {
     "standard": "story-first-v1",
-    "source_sha256": "eed8d61f2f1702fe19b046e20618e82f1a5179c568700f0d2e0de7d008546a24",
-    "reviewed_at": "2026-11-07T17:01:51.108942+00:00",
+    "source_sha256": "50a83d879a7a2bbcf427456e0f1bff13d498dd1144b8391864769e80e53e7d36",
+    "reviewed_at": "2026-11-07T17:06:59.453002+00:00",
     "reviewer": "pilot_independent_editor",
     "decision": "pass",
-    "review_scope": "Pre-render assessment of the exact episode, full focal paper, evidence record, eight-segment shot plan, current renderer source and preliminary illustration contact sheet. This does not approve encoded video or publishing. Final natural footage crops, transitions, captions, audio and cover still require inspection.",
+    "review_scope": "Pre-render assessment of the exact episode, full focal paper, evidence record, eight-segment shot plan, current renderer source and preliminary illustration contact sheet. Refreshed after caption-width corrections in segments 5 and 7: joined caption tokens exactly match the unchanged narration, including the full scientific negation. This does not approve encoded video or publishing. Final natural footage crops, transitions, captions, audio and cover still require inspection.",
     "checks": {
       "cold_viewer": {
         "decision": "pass",

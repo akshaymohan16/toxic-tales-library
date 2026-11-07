@@ -117,7 +117,7 @@ def main():
                 target=original.with_name(original.name.replace(ep['slug'],stem,1));original.replace(target);files.append(target)
             m.update(fingerprint=fp,evidence_sha256=sha(evidence_path),files={p.relative_to(SITE).as_posix():sha(p) for p in files})
             if editorial_source:
-                m.update(editorial_standard=STANDARD,editorial_source_sha256=editorial_source,pre_render_reviewer=ep['editorial_review']['reviewer'],script_author=ep.get('script_author','Toxic Tales production editor'))
+                m.update(editorial_standard=STANDARD,editorial_source_sha256=editorial_source,pre_render_reviewer=ep['editorial_review']['reviewer'],script_author=ep.get('script_author',ep['production'].get('script_author','Toxic Tales production editor')))
             write(qa_path,m);cache[ep['id']]=fp;write(CACHE/'index.json',cache)
         media={'reel':f'media/{stem}.mp4','cover':f'media/{stem}_cover.jpg','slides':[f'media/{stem}_slide_{i+1:02}.jpg' for i in range(len(ep.get('slides',[])))]}
         entry={k:ep.get(k) for k in ('id','slug','title','hook','doi','paper_title','citation','summary','evidence_note','source_url','tags')}
