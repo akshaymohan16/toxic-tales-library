@@ -1,0 +1,101 @@
+{
+  "episode_id": "TT-004",
+  "decision": "awaiting_owner_approval",
+  "owner_approved": false,
+  "publication_enabled": false,
+  "reviewed_at": "2026-11-07T17:34:59.725539+00:00",
+  "reviewer": "pilot_independent_editor",
+  "media_commit": "bae856975a24dd81ce61c53b3ee1d31840038aae",
+  "verification_run": 42396049419,
+  "fingerprint": "a70c13bde0d36f7cb62fc7d9ecef687af36728f180391931265041a5ce166223",
+  "files": {
+    "media/tt-004-fish-eggs-duck-gut-a70c13bde0d3.mp4": "3efdc77803ce516f59dea819cbac43361dfc0efd214438e48a5dda58286565d1",
+    "media/tt-004-fish-eggs-duck-gut-a70c13bde0d3_cover.jpg": "e9325d79575c2b86c52fa148bb291a974a0aad30980601288c0538c317219626"
+  },
+  "evidence_sha256": "5db8e7403c444f6f8afc31a0251c889da2406385edbce0449ec995433237cd19",
+  "duration_seconds": 40.9,
+  "preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot.html?review=bae85697",
+  "research_url": "https://akshaymohan16.github.io/toxic-tales-library/sources/tt-004.html",
+  "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-004-contact.jpg?review=bae85697",
+  "reviewed_boundary_frames": [
+    "qa/tt-004-opening-0s.jpg",
+    "qa/tt-004-opening-1s.jpg",
+    "qa/tt-004-final-frame.jpg"
+  ],
+  "scientific_review": "Full focal paper independently checked. Captive mallard feeding experiment with common and Prussian carp eggs; 18 intact eggs recovered, 12 living embryos, three hatches after incubation. Fungal incubation losses affected recovered and control embryos. Actual flight and wild population establishment were not demonstrated. Caption and research record retain these limits and source details.",
+  "narrative_review": "Final encoded transcript and ordered shots pass the six story-first checks. Concrete first sentence, dry-land barrier, digestion obstacle, decisive survival evidence and one conditional ecological payoff. The Reel contains the answer to its opening promise.",
+  "visual_review": "The corrected cover, first two inspected opening frames, caveat midpoint, closing midpoint and actual final frame retain a visible focal duck. Full-frame wildlife alternates with legible original diagrams that explain pond separation, gut passage, recovered eggs and hatching in water. Main headlines and captions fit; illustrations and reference footage are identified. Natural source footage remains visibly softer than the diagrams, which is an aesthetic limitation for owner review rather than a hidden claim of high-detail research footage.",
+  "audio_review": "Final encoded ASR and all eight segment transcripts were compared with narration: 100% normalized-token similarity, including all scientific qualifications. Caption timeline has no overlaps. Manifest reports -16.61 LUFS integrated loudness and -5.37 dBTP true peak. This is a transcript and technical check; listening, perceived voice quality and original-audio parity are not claimed.",
+  "listening_review_claimed": false,
+  "original_audio_comparison_claimed": false,
+  "publication_scope": "Unpublished TT-004 only. Exact owner approval is required before posting.",
+  "superseded_attempts": [
+    {
+      "fingerprint": "0054efa5e5b13e61b9ded5886bc816cad1137e0b51f2c1b1db47442ff72d3d1d",
+      "decision": "held_for_visual_revision",
+      "reason": "Independent review found poor cover framing and duck heads cropped from caveat/closing samples. Source offsets and focus were corrected; final a70c13 encoded frames and cover were then re-inspected."
+    }
+  ],
+  "final_editorial_review": {
+    "standard": "story-first-v1",
+    "reviewer": "pilot_independent_editor",
+    "reviewed_at": "2026-11-07T17:34:59.725539+00:00",
+    "decision": "pass",
+    "independent_from_script_author": true,
+    "reviewed_encoded_frames": true,
+    "source_sha256": "d1aecaba96647814ca2e747fdbd62aa174b59a923fe627f23e3d13a33d24eca1",
+    "fingerprint": "a70c13bde0d36f7cb62fc7d9ecef687af36728f180391931265041a5ce166223",
+    "files": {
+      "media/tt-004-fish-eggs-duck-gut-a70c13bde0d3.mp4": "3efdc77803ce516f59dea819cbac43361dfc0efd214438e48a5dda58286565d1",
+      "media/tt-004-fish-eggs-duck-gut-a70c13bde0d3_cover.jpg": "e9325d79575c2b86c52fa148bb291a974a0aad30980601288c0538c317219626"
+    },
+    "evidence_sha256": "5db8e7403c444f6f8afc31a0251c889da2406385edbce0449ec995433237cd19",
+    "inspection_scope": "Independently inspected the actual corrected encoded 12-shot contact sheet, full-size cover, opening frame at 0 seconds, opening frame at 1 second and actual final frame. Read the complete final encoded-audio ASR transcript, all segment transcripts, caption timeline and technical manifest. Local final MP4 and cover SHA-256 values were independently checked against the manifest. Continuous playback and listening were not available in this reviewer session and are not claimed. Parent separately reports successful browser playback and public-byte verification.",
+    "listening_review_claimed": false,
+    "continuous_playback_review_claimed": false,
+    "checks": {
+      "cold_viewer": {
+        "decision": "pass",
+        "finding": "At both 0 and 1 seconds the foreground mallard has an identifiable head, bill and body within the frame. The labelled fish-egg inset and first caption name the subject; the recorded opening transcript immediately connects fish eggs, being eaten and hatching.",
+        "basis": "Inspected final-tt-004-opening-0s.jpg and final-tt-004-opening-1s.jpg plus the first encoded shot in tt004-final-contact.jpg. The final cover explicitly reads FISH EGGS / EATEN BY A DUCK / STILL HATCHED and now retains the foreground duck."
+      },
+      "story": {
+        "decision": "pass",
+        "finding": "The encoded sequence communicates a complete ecological story: separate ponds create a barrier, a flying bird offers a possible route, digestion is the obstacle, and recovered eggs that later hatch provide evidence for one step of that route. The closing returns to the ecological possibility after stating the experiment's limit.",
+        "basis": "Reviewed all 12 encoded midpoint shots in their manifest order and the complete 40.9-second final transcript. Pond, passage, surviving-embryo and incubation images correspond to the narrated beats; the ending gives an answer within the film rather than sending viewers elsewhere for the payoff."
+      },
+      "visuals": {
+        "decision": "pass",
+        "finding": "The corrected cover, first two inspected opening frames, caveat midpoint, closing midpoint and actual final frame retain a visible focal duck. Full-frame wildlife alternates with legible original diagrams that explain pond separation, gut passage, recovered eggs and hatching in water. Main headlines and captions fit; illustrations and reference footage are identified. Natural source footage remains visibly softer than the diagrams, which is an aesthetic limitation for owner review rather than a hidden claim of high-detail research footage.",
+        "basis": "Directly inspected tt004-final-contact.jpg, tt004-final-cover.jpg, final-tt-004-opening-0s.jpg, final-tt-004-opening-1s.jpg and final-tt-004-final-frame.jpg. Compared against the earlier failed 0054efa5 crops. The final caption timeline contains no overlap; six-word phrases were split where necessary. This is an encoded-frame review, not a claim to have watched every transition continuously."
+      },
+      "payoff": {
+        "decision": "pass",
+        "finding": "The opening's survival-and-hatching promise is delivered visibly by the AFTER INCUBATION / BACK IN WATER / 3 HATCHED panel and verbally by three hatches. The single closing thought adds ecological meaning: a duck's meal could provide a fish's ride to a new pond.",
+        "basis": "Inspected incubation and possible-route encoded panels, ending midpoint and final frame. The final transcript says could, while the final headline retains a question mark and the route panel says POSSIBLE TRANSPORT. The ending does not claim a documented wild colonisation event."
+      },
+      "scope": {
+        "decision": "pass",
+        "finding": "The final film preserves the distinction between intact eggs, living embryos and subsequent hatching. Hatching is placed in water after incubation, with fungal losses identified. The decisive limit that the experiment did not demonstrate a new wild fish population is both spoken and displayed. No measured flight distance, natural success rate or invented protective mechanism is claimed.",
+        "basis": "Encoded count panel shows 18 intact eggs from approximately 8,000 fed; embryo panel identifies 12 living embryos; incubation panel shows three hatches and notes nine fungal losses. Final ASR exactly preserves the script tokens, including some, did not show and could. Compared these findings with the previously independently read full Lovas-Kiss et al. 2020 PNAS paper and current evidence record."
+      },
+      "retelling": {
+        "decision": "pass",
+        "finding": "Some developing fish eggs survived a duck's digestive tract and later hatched in water, suggesting a possible way for fish eggs to cross the dry land between ponds.",
+        "basis": "The encoded sequence supports that one-sentence retelling and supplies its essential boundary: survival was tested in captive ducks; actual transport to another pond and successful establishment of a new wild fish population were not demonstrated."
+      }
+    }
+  },
+  "metricool_draft_id": "420118848",
+  "metricool_uuid": "8432780738091634663",
+  "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=8432780738091634663",
+  "publication_eligible": false,
+  "approval_next_steps": [
+    "Wait for explicit owner approval of this exact pilot.",
+    "Record owner approval against the exact fingerprint and file hashes; do not edit the episode just to record approval.",
+    "Fetch the current Metricool numeric ID for this UUID, then update this existing draft if the owner requests posting now; do not create a duplicate.",
+    "Confirm provider PUBLISHED plus public Instagram URL and save the receipt before reporting publication.",
+    "Resume recurring tasks only when the current owner hold is lifted; keep two distinct-paper Reels plus one carousel weekly, publication notifications and all quality gates.",
+    "If posting immediately vacates the held November 14 slot, assign a new distinct-paper story; do not repost TT-004."
+  ]
+}

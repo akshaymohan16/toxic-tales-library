@@ -19,9 +19,9 @@
   "monthly_publication_cap": 20,
   "deployment_verified": true,
   "deployment_evidence": {
-    "workflow_run_id": 42385115239,
-    "media_commit": "f965de74d6395196f4aa0cfc8477801c27799827",
-    "note": "Corrected 66.25-second journalism export built, deployed and exact public bytes verified; current schedule uses this export."
+    "workflow_run_id": 42396049419,
+    "media_commit": "bae856975a24dd81ce61c53b3ee1d31840038aae",
+    "note": "TT-004 corrected export, paper record, references and anonymous public bytes verified; held as an unpublished draft."
   },
   "bio_link_confirmed": true,
   "routine_human_approval_required": false,
@@ -29,7 +29,7 @@
   "publishing_paused": true,
   "production_pause_reason": "New story-first TT-004 pilot requested. TT-003 was rejected; exact new pilot awaits owner approval.",
   "quality_gate": {
-    "status": "building_new_owner_review_pilot",
+    "status": "owner_review_ready",
     "standard": "quality/PRODUCTION_STANDARD.md",
     "decision_owner": "delegated_editor",
     "routine_human_approval_required": false,
@@ -44,7 +44,6 @@
       "quota-filling degraded posts"
     ],
     "resume_rule": "Exact pilot approval by owner plus current scientific/editorial/visual/audio review and public-byte verification; standards approval alone never resumes publishing.",
-    "released_on": "2026-11-07",
     "journalism_standard": "quality/SCIENCE_JOURNALISM.md",
     "editorial_standard": "story-first-v1",
     "mandatory_project_memory": "MEMORY.md",

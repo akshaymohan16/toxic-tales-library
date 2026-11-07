@@ -3,28 +3,29 @@
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": "Europe/Vienna",
-  "deployment_and_media": "TT-004 rendering; current exact-public-byte verification pending",
+  "deployment_and_media": "TT-004 corrected public export verified",
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
   "decision": "HOLD_OWNER_PILOT_APPROVAL",
-  "reason": "The owner approved the mandatory editorial approach and requested a new TT-004 pilot. The exact film, final encoded review and owner approval are pending; publishing remains paused.",
+  "reason": "Complete TT-004 pilot awaits owner approval; all publishing remains paused.",
   "scheduled_posts_returned": 0,
   "published_provider_receipts": 1,
-  "new_metricool_submissions": 0,
+  "new_metricool_submissions": 1,
   "scheduled_post_ids": [],
   "routine_user_approval_required": false,
-  "automatic_next_step": "Finish TT-004 render, independent final review, research archive and held draft. Await owner approval of exact finished pilot; do not self-resume.",
-  "review_limit": "Current TT-004 final encoded review and technical audio checks pending; no listening claim is made.",
+  "automatic_next_step": "Wait for owner approval of exact TT-004; do not self-resume.",
+  "review_limit": "Encoded frames, final transcript and technical audio reviewed; no listening or original-audio-parity claim.",
   "quota": {
     "observed_used": 1,
-    "scheduled_reservations": 2,
-    "projected": 3,
+    "active_draft_reservations": 2,
+    "retired_drafts": 1,
+    "projected_active_usage": 3,
     "cap": 20,
-    "note": "Historical observation before TT-004 draft creation. Reconcile current provider calendar and inventory before any new submission; rejected TT-003 is not eligible for publication."
+    "note": "Planner used counter is the earlier verified 1/20; current provider readback confirms one published Reel and three held drafts, of which TT-003 is retired."
   },
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
   "updated_metricool_posts": 1,
   "journalism_standard": "quality/SCIENCE_JOURNALISM.md",
-  "draft_posts_held": 2,
+  "draft_posts_held": 3,
   "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot.html",
   "pilot_record": "quality/pilots/tt-004.json",
   "historical_pilot_verification": {
@@ -45,12 +46,13 @@
     }
   },
   "held_post_ids": [
-    "TT-002-CAROUSEL"
+    "TT-002-CAROUSEL",
+    "TT-004-REEL"
   ],
   "retired_draft_post_ids": [
     "TT-003-REEL"
   ],
-  "pending_new_pilot_post_id": "TT-004-REEL",
-  "pilot_record_status": "pending_final_export_review",
-  "updated_at": "2026-11-07T17:05:47.988009+00:00"
+  "pending_new_pilot_post_id": null,
+  "pilot_record_status": "awaiting_owner_approval",
+  "updated_at": "2026-11-07T17:35:16.850565+00:00"
 }

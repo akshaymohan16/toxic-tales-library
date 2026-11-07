@@ -20,7 +20,7 @@
   ],
   "reserved_candidate_ids": [
     "TT-002-CAROUSEL",
-    "TT-003-REEL"
+    "TT-004-REEL"
   ],
   "unresolved_submissions": [],
   "monthly_cap": 20,
@@ -28,13 +28,18 @@
   "new_scheduling_allowed": false,
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
-  "scheduled_post_ids": [
-    "TT-002-CAROUSEL",
-    "TT-003-REEL"
-  ],
-  "calendar_reconciled_on": "2026-11-07",
+  "scheduled_post_ids": [],
+  "calendar_reconciled_on": "2026-11-07T17:35:16.850565+00:00",
   "draft_ids": [
     "420045577",
+    "420062745",
+    "420118848"
+  ],
+  "retired_draft_ids": [
     "420062745"
+  ],
+  "held_post_ids": [
+    "TT-002-CAROUSEL",
+    "TT-004-REEL"
   ]
 }
