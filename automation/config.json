@@ -19,17 +19,17 @@
   "monthly_publication_cap": 20,
   "deployment_verified": true,
   "deployment_evidence": {
-    "workflow_run_id": 42382117062,
-    "media_commit": "e07fc264e11df529be8b099262602b28dfdaf6fa",
-    "note": "Final media exact bytes verified; substantive editorial review in quality/releases.json. Publishing requires current release deployment verification."
+    "workflow_run_id": 42385115239,
+    "media_commit": "f965de74d6395196f4aa0cfc8477801c27799827",
+    "note": "Corrected 66.25-second journalism export built, deployed and exact public bytes verified; current schedule uses this export."
   },
   "bio_link_confirmed": false,
   "routine_human_approval_required": false,
   "autonomous_editorial_and_posting_authorisation_date": "2026-11-07",
-  "publishing_paused": true,
-  "production_pause_reason": "User rejected experiment-summary storytelling. Rebuilding TT-003 as source-checked science journalism; Metricool Reel is a draft, recurring tasks temporarily paused during replacement.",
+  "publishing_paused": false,
+  "production_pause_reason": null,
   "quality_gate": {
-    "status": "journalism_revision_in_progress",
+    "status": "active_science_journalism",
     "standard": "quality/PRODUCTION_STANDARD.md",
     "decision_owner": "delegated_editor",
     "routine_human_approval_required": false,
@@ -43,8 +43,9 @@
       "unsupported claims",
       "quota-filling degraded posts"
     ],
-    "resume_rule": "Release exact-file hashes only after substantive scientific, visual and technical audio review plus current public-byte verification. Follow PRODUCTION_STANDARD; repair routine errors autonomously.",
-    "released_on": "2026-11-07"
+    "resume_rule": "Release exact-file hashes after substantive scientific, narrative, visual and technical audio review plus public-byte verification. Repair routine failures autonomously; never fill a slot with a failed story.",
+    "released_on": "2026-11-07",
+    "journalism_standard": "quality/SCIENCE_JOURNALISM.md"
   },
   "quota_policy": "Use observed Metricool planner counter plus scheduled destination reservations and uncertain writes, at most 20/month. Reconcile all visible posts for duplicate detection. Missing newly connected analytics do not override a verified usage counter.",
   "publication_policy": "Follow quality/PRODUCTION_STANDARD.md; two Reels and one carousel weekly without routine owner approval."

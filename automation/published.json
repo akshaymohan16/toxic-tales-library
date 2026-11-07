@@ -85,33 +85,33 @@
       "episode_id": "TT-003",
       "format": "REEL",
       "doi": "10.1021/acs.est.4c02807",
-      "metricool_id": "420001608",
+      "metricool_id": "420018600",
       "metricool_uuid": "6027580248989713344",
       "publication_date": "2026-11-14T10:00:00+01:00",
       "timezone": "Europe/Vienna",
-      "status": "draft_under_revision",
+      "status": "scheduled",
       "provider_status": "PENDING",
-      "auto_publish": false,
-      "draft": true,
+      "auto_publish": true,
+      "draft": false,
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=6027580248989713344",
       "source_media_urls": [
-        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-003-recovery-with-pollution-20fde516bde5.mp4"
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-003-recovery-with-pollution-55c2001a3e72.mp4"
       ],
-      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-003-recovery-with-pollution-20fde516bde5_cover.jpg",
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-003-recovery-with-pollution-55c2001a3e72_cover.jpg",
       "metricool_media_urls": [
-        "https://static.metricool.com/planner/202611/7937614-file-8763782079002068603.mp4"
+        "https://static.metricool.com/planner/202611/7937614-file-17190053957081305733.mp4"
       ],
-      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-11254540340018006478.jpeg",
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-8749347330295442905.jpeg",
       "source_files_sha256": {
-        "media/tt-003-recovery-with-pollution-20fde516bde5.mp4": "8e2d95e7b0cddeac80707966876ede8d62b31ca285ad2a8f50935b1cfbafce76",
-        "media/tt-003-recovery-with-pollution-20fde516bde5_cover.jpg": "c6bc58b8ac049bbe2ecb91f303b63b2435b25c8c4154cd7395f909706e7a8fb6"
+        "media/tt-003-recovery-with-pollution-55c2001a3e72.mp4": "3e4706e0c591ffafb6c108347213e9442c753d4f61c3d5c7900eee27f8c5c5c2",
+        "media/tt-003-recovery-with-pollution-55c2001a3e72_cover.jpg": "99f44fd86e1cea21f141305fba18c7285cfbbfc8f4458c4bb12b992ff5bce535"
       },
-      "release_fingerprint": "20fde516bde50049d02d684b89f6ed8307bfc2a4ed1f10d7c44287be354c048a",
-      "release_commit": "788b338bcb61b5302e085ad07097a8a5fa0978b8",
-      "public_verification_run": 42382836366,
+      "release_fingerprint": "55c2001a3e7201dc71022ee4ef2e6393a94d4baefec5592579b29e34e3fb9d75",
+      "release_commit": "f965de74d6395196f4aa0cfc8477801c27799827",
+      "public_verification_run": 42385115239,
       "receipt_saved_on": "2026-11-07",
       "publication_confirmation": "Pending scheduled time. Receipt is not evidence of actual publication.",
-      "schedule_readback_verified": false,
+      "schedule_readback_verified": true,
       "readback_date": "2026-11-07",
       "previous_revisions": [
         {
@@ -126,8 +126,16 @@
           "release_fingerprint": "20fde516bde50049d02d684b89f6ed8307bfc2a4ed1f10d7c44287be354c048a",
           "status": "user_rejected_before_publication",
           "reason": "Experiment-and-results summary does not tell a full science-journalism story."
+        },
+        {
+          "metricool_id": "420001608",
+          "status": "draft_replaced",
+          "date": "2026-11-07",
+          "release_fingerprint": "20fde516bde50049d02d684b89f6ed8307bfc2a4ed1f10d7c44287be354c048a"
         }
-      ]
+      ],
+      "release_record_note": "Approval and schedule receipt committed together immediately after release; media commit is the exact rendered version.",
+      "revision_reason": "Owner requested full science-journalism story. Existing post updated, preserving UUID and publication date; no duplicate created."
     }
   ]
 }

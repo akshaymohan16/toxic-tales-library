@@ -4,14 +4,14 @@
   "brand_confirmed": true,
   "timezone_confirmed": "Europe/Vienna",
   "deployment_and_media": "verified",
-  "release_commit": "788b338bcb61b5302e085ad07097a8a5fa0978b8",
-  "verification_run": 42382836366,
+  "release_commit": "f965de74d6395196f4aa0cfc8477801c27799827",
+  "verification_run": 42385115239,
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
-  "decision": "ACTIVE_RELEASED_MEDIA_SCHEDULED",
-  "reason": "Full-paper records, rendered-frame/carousel/cover review, final-ASR/loudness checks, exact-file approvals and current public-byte verification completed. Actual planner counter established capacity.",
+  "decision": "ACTIVE_JOURNALISM_REEL_SCHEDULED",
+  "reason": "Replaced the owner-rejected summary with a 66.25-second ecological story. Independent context sources, narrative pivot, caveats and bounded ending reviewed; final frame/cover, transcript/loudness and public-byte checks passed. Existing Metricool post updated and read back.",
   "scheduled_posts_returned": 2,
   "published_provider_receipts": 1,
-  "new_metricool_submissions": 2,
+  "new_metricool_submissions": 0,
   "scheduled_post_ids": [
     "TT-002-CAROUSEL",
     "TT-003-REEL"
@@ -25,6 +25,8 @@
     "projected": 3,
     "cap": 20
   },
-  "resolved_hold": "Replaced the old HOLD_PENDING_HISTORY_RECONCILIATION after authenticated planner counter verification; empty analytics do not undo that positive evidence.",
-  "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed."
+  "resolved_hold": "Owner's narrative-quality revision completed; automatic workflow restored with new story requirements.",
+  "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
+  "updated_metricool_posts": 1,
+  "journalism_standard": "quality/SCIENCE_JOURNALISM.md"
 }
