@@ -1,8 +1,8 @@
 {
   "episode_id": "TT-004",
-  "decision": "awaiting_owner_approval",
-  "owner_approved": false,
-  "publication_enabled": false,
+  "decision": "release",
+  "owner_approved": true,
+  "publication_enabled": true,
   "reviewed_at": "2026-11-07T17:34:59.725539+00:00",
   "reviewer": "pilot_independent_editor",
   "media_commit": "bae856975a24dd81ce61c53b3ee1d31840038aae",
@@ -28,7 +28,7 @@
   "audio_review": "Final encoded ASR and all eight segment transcripts were compared with narration: 100% normalized-token similarity, including all scientific qualifications. Caption timeline has no overlaps. Manifest reports -16.61 LUFS integrated loudness and -5.37 dBTP true peak. This is a transcript and technical check; listening, perceived voice quality and original-audio parity are not claimed.",
   "listening_review_claimed": false,
   "original_audio_comparison_claimed": false,
-  "publication_scope": "Unpublished TT-004 only. Exact owner approval is required before posting.",
+  "publication_scope": "Exact TT-004 approved for immediate Instagram publication; standing automation authorization resumes with mandatory quality gates.",
   "superseded_attempts": [
     {
       "fingerprint": "0054efa5e5b13e61b9ded5886bc816cad1137e0b51f2c1b1db47442ff72d3d1d",
@@ -86,16 +86,19 @@
       }
     }
   },
-  "metricool_draft_id": "420118848",
   "metricool_uuid": "8432780738091634663",
   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=8432780738091634663",
-  "publication_eligible": false,
+  "publication_eligible": true,
   "approval_next_steps": [
-    "Wait for explicit owner approval of this exact pilot.",
-    "Record owner approval against the exact fingerprint and file hashes; do not edit the episode just to record approval.",
-    "Fetch the current Metricool numeric ID for this UUID, then update this existing draft if the owner requests posting now; do not create a duplicate.",
-    "Confirm provider PUBLISHED plus public Instagram URL and save the receipt before reporting publication.",
-    "Resume recurring tasks only when the current owner hold is lifted; keep two distinct-paper Reels plus one carousel weekly, publication notifications and all quality gates.",
-    "If posting immediately vacates the held November 14 slot, assign a new distinct-paper story; do not repost TT-004."
-  ]
+    "Exact approved pilot published and positive provider receipt saved. Do not resubmit.",
+    "Resume standing autonomous production and publication with all mandatory quality gates.",
+    "Produce new distinct-paper Reels for November 10 and 14; preserve the approved pilot and source record."
+  ],
+  "owner_approved_at": "2026-11-07T17:39:09.516815+00:00",
+  "owner_approval_text": "I like this one, you may publish it",
+  "previous_metricool_draft_id": "420118848",
+  "metricool_id": "420123422",
+  "publication_status": "published",
+  "public_url": "https://www.instagram.com/reel/DfcvkhGDsFb/",
+  "published_confirmed_at": "2026-11-07T17:44:33.983826+00:00"
 }

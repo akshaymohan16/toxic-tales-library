@@ -9,37 +9,40 @@
     "used": 1,
     "limit": 20,
     "source": "Authenticated Metricool planner UI: You have posted 1 out of your 20 available posts in your plan this month.",
-    "url": "https://app.metricool.com/planner/calendar?blogId=7937614"
+    "url": "https://app.metricool.com/planner/calendar?blogId=7937614",
+    "observation_status": "Historical 1/20 UI observation before TT-004 publication. Refresh before new scheduling; current provider receipts confirm at least two published items."
   },
   "scheduled_ids": [],
   "published_ids": [
-    "419869962"
+    "419869962",
+    "420123422"
   ],
   "published_post_ids": [
-    "TT-002-REEL"
+    "TT-002-REEL",
+    "TT-004-REEL"
   ],
   "reserved_candidate_ids": [
-    "TT-002-CAROUSEL",
-    "TT-004-REEL"
+    "TT-002-CAROUSEL"
   ],
   "unresolved_submissions": [],
   "monthly_cap": 20,
   "planned_usage_with_current_candidates": 3,
-  "new_scheduling_allowed": false,
+  "new_scheduling_allowed": true,
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [],
-  "calendar_reconciled_on": "2026-11-07T17:35:16.850565+00:00",
+  "calendar_reconciled_on": "2026-11-07T17:44:33.983826+00:00",
   "draft_ids": [
     "420045577",
-    "420062745",
-    "420118848"
+    "420062745"
   ],
   "retired_draft_ids": [
     "420062745"
   ],
   "held_post_ids": [
-    "TT-002-CAROUSEL",
-    "TT-004-REEL"
-  ]
+    "TT-002-CAROUSEL"
+  ],
+  "new_scheduling_conditions": "Current quality release, fresh planner counter/provider reconciliation and quota reservation required.",
+  "provider_confirmed_publications": 2,
+  "known_usage_lower_bound": 2
 }

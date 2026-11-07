@@ -21,15 +21,15 @@
   "deployment_evidence": {
     "workflow_run_id": 42396049419,
     "media_commit": "bae856975a24dd81ce61c53b3ee1d31840038aae",
-    "note": "TT-004 corrected export, paper record, references and anonymous public bytes verified; held as an unpublished draft."
+    "note": "Exact approved TT-004 media, research record, references and anonymous public bytes verified; Instagram publication positively confirmed on 7 November 2026."
   },
   "bio_link_confirmed": true,
   "routine_human_approval_required": false,
   "autonomous_editorial_and_posting_authorisation_date": "2026-11-07",
-  "publishing_paused": true,
-  "production_pause_reason": "New story-first TT-004 pilot requested. TT-003 was rejected; exact new pilot awaits owner approval.",
+  "publishing_paused": false,
+  "production_pause_reason": null,
   "quality_gate": {
-    "status": "owner_review_ready",
+    "status": "active_owner_approved_standard",
     "standard": "quality/PRODUCTION_STANDARD.md",
     "decision_owner": "delegated_editor",
     "routine_human_approval_required": false,
@@ -43,7 +43,7 @@
       "unsupported claims",
       "quota-filling degraded posts"
     ],
-    "resume_rule": "Exact pilot approval by owner plus current scientific/editorial/visual/audio review and public-byte verification; standards approval alone never resumes publishing.",
+    "resume_rule": "Owner approved exact TT-004 on 7 November 2026; historical pilot hold resolved. All current evidence/editorial/visual/audio/exact-file checks remain mandatory for future releases.",
     "journalism_standard": "quality/SCIENCE_JOURNALISM.md",
     "editorial_standard": "story-first-v1",
     "mandatory_project_memory": "MEMORY.md",
@@ -52,7 +52,7 @@
     "independent_final_export_review_required": true
   },
   "quota_policy": "Use observed Metricool planner counter plus scheduled destination reservations and uncertain writes, at most 20/month. Reconcile all visible posts for duplicate detection. Missing newly connected analytics do not override a verified usage counter.",
-  "publication_policy": "Owner-directed hold: do not publish until explicit approval of the exact new pilot. Future cadence remains two Reels plus one carousel weekly after resume authorization.",
+  "publication_policy": "Autonomous two distinct-paper Reels and one companion carousel weekly under mandatory evidence, editorial, visual, exact-file and deployment checks. Owner approved exact TT-004 on 7 November 2026; no routine owner approval required. New owner pauses remain binding.",
   "bio_link_verification": {
     "date": "2026-11-07",
     "instagram": "https://www.instagram.com/toxic_tales_eco/",
@@ -60,7 +60,7 @@
     "archive": "https://akshaymohan16.github.io/toxic-tales-library/",
     "observed_label": "Toxic Tales | Research behind the stories"
   },
-  "pilot_approval_required": true,
+  "pilot_approval_required": false,
   "notification_policy": {
     "event": "newly_confirmed_published_reel",
     "deduplicate_by": "post_id",
@@ -74,5 +74,8 @@
     "delivery_status": "ChatGPT result notification configured; push/email settings not inspected"
   },
   "active_pilot_id": "TT-004",
-  "editorial_workflow_approved_on": "2026-11-07"
+  "editorial_workflow_approved_on": "2026-11-07",
+  "approved_pilot_id": "TT-004",
+  "approved_pilot_fingerprint": "a70c13bde0d36f7cb62fc7d9ecef687af36728f180391931265041a5ce166223",
+  "owner_pilot_approved_at": "2026-11-07T17:39:09.516815+00:00"
 }

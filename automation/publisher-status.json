@@ -5,27 +5,28 @@
   "timezone_confirmed": "Europe/Vienna",
   "deployment_and_media": "TT-004 corrected public export verified",
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
-  "decision": "HOLD_OWNER_PILOT_APPROVAL",
-  "reason": "Complete TT-004 pilot awaits owner approval; all publishing remains paused.",
+  "decision": "ACTIVE_APPROVED_STANDARD",
+  "reason": "Owner approved exact TT-004 and provider confirmed publication. Standing production and publishing authorization resumes with all quality gates.",
   "scheduled_posts_returned": 0,
-  "published_provider_receipts": 1,
-  "new_metricool_submissions": 1,
+  "published_provider_receipts": 2,
+  "new_metricool_submissions": 0,
   "scheduled_post_ids": [],
   "routine_user_approval_required": false,
-  "automatic_next_step": "Wait for owner approval of exact TT-004; do not self-resume.",
+  "automatic_next_step": "Produce two new distinct-paper Reels for November 10 and 14 and a current-standard companion carousel for November 12. Never repost TT-004.",
   "review_limit": "Encoded frames, final transcript and technical audio reviewed; no listening or original-audio-parity claim.",
   "quota": {
-    "observed_used": 1,
-    "active_draft_reservations": 2,
+    "observed_used": 2,
+    "active_draft_reservations": 1,
     "retired_drafts": 1,
     "projected_active_usage": 3,
     "cap": 20,
-    "note": "Planner used counter is the earlier verified 1/20; current provider readback confirms one published Reel and three held drafts, of which TT-003 is retired."
+    "note": "Two confirmed publications plus one held carousel candidate. Refresh planner usage before future scheduling.",
+    "observation_basis": "Provider-confirmed lower bound; previous UI counter 1/20 is historical."
   },
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
   "updated_metricool_posts": 1,
   "journalism_standard": "quality/SCIENCE_JOURNALISM.md",
-  "draft_posts_held": 3,
+  "draft_posts_held": 2,
   "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot.html",
   "pilot_record": "quality/pilots/tt-004.json",
   "historical_pilot_verification": {
@@ -46,13 +47,41 @@
     }
   },
   "held_post_ids": [
-    "TT-002-CAROUSEL",
-    "TT-004-REEL"
+    "TT-002-CAROUSEL"
   ],
   "retired_draft_post_ids": [
     "TT-003-REEL"
   ],
   "pending_new_pilot_post_id": null,
-  "pilot_record_status": "awaiting_owner_approval",
-  "updated_at": "2026-11-07T17:35:16.850565+00:00"
+  "pilot_record_status": "approved_and_published",
+  "updated_at": "2026-11-07T17:44:33.983826+00:00",
+  "latest_publication": {
+    "post_id": "TT-004-REEL",
+    "metricool_id": "420123422",
+    "metricool_uuid": "8432780738091634663",
+    "provider_status": "PUBLISHED",
+    "public_url": "https://www.instagram.com/reel/DfcvkhGDsFb/",
+    "confirmed_at": "2026-11-07T17:44:33.983826+00:00"
+  },
+  "publication_notifications": {
+    "notified_post_ids": [
+      "TT-002-REEL",
+      "TT-004-REEL"
+    ],
+    "latest_delivery": "Current chat; live Reel link provided. Future ChatGPT result notifications configured; push/email settings unverified."
+  },
+  "recurring_tasks": {
+    "verified_at": "2026-11-07T17:45:14.828046+00:00",
+    "producer": {
+      "id": "6aeefcb926708191b092554230783da1",
+      "enabled": true,
+      "schedule": "Sunday 10:00 Europe/Vienna"
+    },
+    "publisher": {
+      "id": "Automation_991690d6af648191ac8037cfa96c92a0",
+      "enabled": true,
+      "schedule": "Daily 10:15 Europe/Vienna"
+    },
+    "verification": "Automation update and fresh peek both confirm enabled with revised approved-standard prompts. No past successful unattended run claimed."
+  }
 }

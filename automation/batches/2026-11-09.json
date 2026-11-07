@@ -3,42 +3,40 @@
   "created_on": "2026-11-07",
   "timezone": "Europe/Vienna",
   "episode_ids": [
-    "TT-002",
-    "TT-004"
+    "TT-002"
   ],
   "slots": [
     {
       "id": "2026-11-10-NEW-REEL",
       "date": "2026-11-10T10:00:00+01:00",
       "format": "REEL",
-      "status": "unfilled_owner_hold",
-      "reason": "New distinct paper required after explicit resumption; both recurring tasks remain paused."
+      "status": "assigned_to_sunday_producer",
+      "reason": "New distinct published paper required; the already published TT-004 is not a replacement for next week's two new Reels."
     },
     {
       "id": "TT-002-CAROUSEL",
       "date": "2026-11-12T10:00:00+01:00",
       "format": "CAROUSEL",
-      "status": "draft_awaiting_owner_pilot_approval",
+      "status": "held_pending_current_standard_review",
       "metricool_id": "420045577",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=3228865276435317523"
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=3228865276435317523",
+      "publication_eligible": false,
+      "reason": "Review/rebuild to current scientific and visual standards without changing frozen published TT-002 media, or replace using a new companion ID. TT-004 approval does not release this old carousel."
     },
     {
-      "id": "TT-004-REEL",
+      "id": "2026-11-14-NEW-REEL",
       "date": "2026-11-14T10:00:00+01:00",
       "format": "REEL",
-      "status": "draft_awaiting_owner_pilot_approval",
-      "publication_eligible": false,
-      "reason": "Complete new pilot draft read back; date is only a placeholder pending exact owner approval.",
-      "metricool_id": "420118848",
-      "metricool_uuid": "8432780738091634663",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=8432780738091634663"
+      "status": "assigned_to_sunday_producer",
+      "reason": "TT-004 was published on 7 November; create a NEW distinct-paper Reel for this vacated Saturday slot. Never repost TT-004.",
+      "publication_eligible": false
     }
   ],
   "scientific_review": "TT-004 focal paper, evidence and final narration reviewed; source claims retained within study limits.",
   "render_and_live_media_review": "Corrected TT-004 encoded export independently reviewed and exact public files verified.",
-  "schedule_status": "Both recurring tasks remain disabled. TT-004 and Thursday carousel are held drafts; TT-003 is retired.",
-  "quota_status": "Authenticated planner counter verified 1/20 used; reserve future posts separately.",
-  "idempotency_note": "Never repost published TT-002-REEL. Never revive rejected TT-003-REEL. Reconcile the separate TT-004 identity before creating or updating its held draft; owner approval applies only to the exact new pilot.",
+  "schedule_status": "Owner approved TT-004 and its publication is positively confirmed. Pilot hold resolved; recurring task enabled state must be verified separately. Two new next-week Reels required; old Thursday carousel remains under a quality-specific hold until reviewed/rebuilt/replaced.",
+  "quota_status": "Refresh current planner counter and provider receipts including the confirmed TT-004 publication; the earlier 1/20 observation is historical. Reserve eligible future destinations and stay <=20/month.",
+  "idempotency_note": "Never repost published TT-002-REEL or TT-004-REEL, and never revive rejected TT-003. TT-004 UUID 8432780738091634663 is confirmed published and must never be submitted or rescheduled. Keep the two next-week Reel papers distinct and use stable new identities for replacements.",
   "retired_slots": [
     {
       "id": "TT-003-REEL",
@@ -57,5 +55,24 @@
   ],
   "active_pilot_id": "TT-004",
   "historical_verification_run": 42389865597,
-  "verification_run": 42396049419
+  "verification_run": 42396049419,
+  "immediate_pilot_publication": {
+    "id": "TT-004-REEL",
+    "date": "2026-11-07T18:41:00+01:00",
+    "format": "REEL",
+    "status": "published",
+    "publication_eligible": false,
+    "reason": "Metricool positively confirmed PUBLISHED with a public Instagram URL. Existing UUID is consumed; this batch must never submit or reschedule it.",
+    "metricool_id": "420123422",
+    "metricool_uuid": "8432780738091634663",
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=8432780738091634663",
+    "former_placeholder_date": "2026-11-14T10:00:00+01:00",
+    "provider_status": "PUBLISHED",
+    "public_url": "https://www.instagram.com/reel/DfcvkhGDsFb/",
+    "publication_confirmed_at": "2026-11-07T18:43:30+01:00",
+    "confirmation_time_precision": "approximately"
+  },
+  "future_reel_episode_ids_pending": true,
+  "owner_approved_pilot_fingerprint": "a70c13bde0d36f7cb62fc7d9ecef687af36728f180391931265041a5ce166223",
+  "owner_approval_date": "2026-11-07"
 }
