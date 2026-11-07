@@ -1,0 +1,584 @@
+{
+  "id": "TT-005",
+  "slug": "tt-005-wood-frog-winter-survival",
+  "title": "The frog that survives ice inside its body",
+  "hook": "Ice can form inside a wood frog’s body. How do its living cells survive?",
+  "doi": "10.1371/journal.pone.0117234",
+  "paper_title": "Cryoprotectants and Extreme Freeze Tolerance in a Subarctic Population of the Wood Frog",
+  "citation": "Costanzo et al. (2015), PLOS ONE",
+  "bibliography": "Costanzo, J. P., Reynolds, A. M., do Amaral, M. C. F., Rosendale, A. J., & Lee, R. E., Jr. (2015). Cryoprotectants and Extreme Freeze Tolerance in a Subarctic Population of the Wood Frog. PLOS ONE, 10(2), e0117234. https://doi.org/10.1371/journal.pone.0117234",
+  "paper_metadata": {
+    "title": "Cryoprotectants and Extreme Freeze Tolerance in a Subarctic Population of the Wood Frog",
+    "authors": "Costanzo, Jon P.; Reynolds, Alice M.; do Amaral, M. Clara F.; Rosendale, Andrew J.; Lee, Richard E., Jr.",
+    "year": 2015,
+    "journal": "PLOS ONE",
+    "volume": "10",
+    "issue": "2",
+    "pages": "e0117234",
+    "doi": "10.1371/journal.pone.0117234",
+    "url": "https://doi.org/10.1371/journal.pone.0117234",
+    "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4331536/",
+    "publisher_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0117234",
+    "full_text_read": true,
+    "full_text_access_note": "Original main article read through PMC, including experimental methods, results, figures/tables and discussion. No supplementary-only result is used. Raw deposited data were not downloaded or reanalysed.",
+    "correction_doi": "10.1371/journal.pone.0124029",
+    "correction_note": "Publisher correction inspected. It restores Table 5 footnotes that were misplaced during typesetting; it does not change the survival result. No retraction notice was found in the inspected PMC/PLOS records and DOI/title searches on the review date. Recheck before release.",
+    "licence": "CC BY; retain attribution. No publisher figure is required by this pilot.",
+    "bibtex": "@article{Costanzo2015WoodFrog,\n  author = {Costanzo, Jon P. and Reynolds, Alice M. and do Amaral, M. Clara F. and Rosendale, Andrew J. and Lee, Jr., Richard E.},\n  title = {Cryoprotectants and Extreme Freeze Tolerance in a Subarctic Population of the Wood Frog},\n  journal = {PLOS ONE},\n  year = {2015},\n  volume = {10},\n  number = {2},\n  pages = {e0117234},\n  doi = {10.1371/journal.pone.0117234},\n  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC4331536/},\n  note = {Correction: doi:10.1371/journal.pone.0124029}\n}\n",
+    "ris": "TY  - JOUR\nAU  - Costanzo, Jon P.\nAU  - Reynolds, Alice M.\nAU  - do Amaral, M. Clara F.\nAU  - Rosendale, Andrew J.\nAU  - Lee, Richard E., Jr.\nPY  - 2015\nTI  - Cryoprotectants and Extreme Freeze Tolerance in a Subarctic Population of the Wood Frog\nJO  - PLOS ONE\nVL  - 10\nIS  - 2\nSP  - e0117234\nDO  - 10.1371/journal.pone.0117234\nUR  - https://pmc.ncbi.nlm.nih.gov/articles/PMC4331536/\nN1  - Correction: 10.1371/journal.pone.0124029 (Table 5 footnote placement).\nER  -\n"
+  },
+  "citation_files": {
+    "bibtex": "citations/tt-005.bib",
+    "ris": "citations/tt-005.ris"
+  },
+  "tags": [
+    "wood frog",
+    "winter survival",
+    "physiological ecology",
+    "freeze tolerance"
+  ],
+  "summary": "Winter-conditioned wood frogs from Interior Alaska combine seasonal preparation with a rapid response to freezing. Their protective chemistry includes urea accumulated beforehand and glucose mobilised from liver glycogen after freezing starts. In one laboratory survival trial, five frogs recovered after repeated freeze–thaw cycles ending at −8°C. The demonstration is specific to these animals and conditions.",
+  "evidence_note": "The five-animal survival result followed repeated freezing and thawing ending at -8 degrees Celsius. It does not demonstrate universal frog survival, nor survival of the separate -16 degrees Celsius biochemical group. Glucose and urea contribute to the adaptation; their sufficiency for whole-animal survival was not isolated in this study.",
+  "source_url": "https://doi.org/10.1371/journal.pone.0117234",
+  "review_status": "verified",
+  "checks": {
+    "full_text": true,
+    "design": true,
+    "findings": true,
+    "limitations": true,
+    "rights": true
+  },
+  "review_note": "Source reporting and pre-render story review are complete. Actual encoded-film composition, narration and carousel export require final review; this new visual pilot is held for owner approval.",
+  "publication_enabled": false,
+  "is_ai_generated": true,
+  "batch_id": "2026-11-08",
+  "pilot_status": "awaiting_owner_visual_pilot_approval",
+  "posts": [
+    {
+      "id": "TT-005-REEL",
+      "format": "REEL",
+      "publication_date": "2026-11-10T10:00:00+01:00",
+      "caption": "Ice inside a living frog? 🐸❄️\n\nWood frogs prepare for winter by accumulating protective compounds. Urea builds up before freezing; glucose is mobilised from liver glycogen as freezing begins. These substances help limit ice formation and cellular water loss. They do not prevent all body freezing.\n\nCostanzo and colleagues studied winter-conditioned wood frogs from Interior Alaska. All five frogs followed for survival recovered after repeated freeze–thaw cycles ending at −8°C, and remained healthy during seven weeks of monitoring.\n\nThe boundary matters: this was a small controlled test of a particular population in its winter-prepared state. It does not mean every frog can survive the same treatment. The paper’s −16°C groups were used for biochemical sampling, not this survival test.\n\nPaper: Costanzo et al. (2015), PLOS ONE 10(2):e0117234. DOI: 10.1371/journal.pone.0117234. Table 5 typesetting correction: 10.1371/journal.pone.0124029.\n\nResearch behind the Reel: link in bio → The frog that survives ice inside its body (TT-005). https://akshaymohan16.github.io/toxic-tales-library/sources/tt-005.html\n\nReference wildlife imagery and original conceptual illustrations are identified; they do not document the experiment. Synthetic narration. Full media credits accompany the research record.\n\n#Ecology #WoodFrog #AnimalAdaptations #WinterWildlife #ScienceCommunication #ToxicTales"
+    },
+    {
+      "id": "TT-005-CAROUSEL",
+      "format": "CAROUSEL",
+      "publication_date": "2026-11-12T10:00:00+01:00",
+      "caption": "Ice inside a living frog? 🐸❄️\n\nWood frogs prepare for winter by accumulating protective compounds. Urea builds up before freezing; glucose is mobilised from liver glycogen as freezing begins. These substances help limit ice formation and cellular water loss. They do not prevent all body freezing.\n\nCostanzo and colleagues studied winter-conditioned wood frogs from Interior Alaska. All five frogs followed for survival recovered after repeated freeze–thaw cycles ending at −8°C, and remained healthy during seven weeks of monitoring.\n\nThe boundary matters: this was a small controlled test of a particular population in its winter-prepared state. It does not mean every frog can survive the same treatment. The paper’s −16°C groups were used for biochemical sampling, not this survival test.\n\nPaper: Costanzo et al. (2015), PLOS ONE 10(2):e0117234. DOI: 10.1371/journal.pone.0117234. Table 5 typesetting correction: 10.1371/journal.pone.0124029.\n\nResearch behind this carousel: link in bio → The frog that survives ice inside its body (TT-005). https://akshaymohan16.github.io/toxic-tales-library/sources/tt-005.html\n\nReference wildlife imagery and original conceptual illustrations are identified; they do not document the experiment. Synthetic narration. Full media credits accompany the research record.\n\n#Ecology #WoodFrog #AnimalAdaptations #WinterWildlife #ScienceCommunication #ToxicTales"
+    }
+  ],
+  "slides": [
+    {
+      "headline": "Ice inside. Still alive.",
+      "body": "How wood frogs protect living cells through freezing.",
+      "visual_kind": "portrait",
+      "claim_ids": [
+        "C1",
+        "C5"
+      ],
+      "asset": "wood_frog_portrait"
+    },
+    {
+      "headline": "Prepare before the freeze.",
+      "body": "Urea builds up before freezing. When ice begins to form, liver glycogen supplies glucose.",
+      "visual_kind": "glucose",
+      "claim_ids": [
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "headline": "Protect the cell.",
+      "body": "Ice forms outside cells and draws water out. Protective solutes help limit ice formation and cellular water loss.",
+      "visual_kind": "cells",
+      "claim_ids": [
+        "C5"
+      ]
+    },
+    {
+      "headline": "The laboratory test.",
+      "body": "Three freeze–thaw cycles to −4°C. Then a final cooling to −8°C. Five frogs were followed for survival.",
+      "visual_kind": "experiment",
+      "claim_ids": [
+        "C6"
+      ]
+    },
+    {
+      "headline": "5 of 5 recovered.",
+      "body": "Normal behaviour at the first check, about 30 hours after thawing began. Healthy over seven more weeks.",
+      "visual_kind": "recovery",
+      "claim_ids": [
+        "C7"
+      ]
+    },
+    {
+      "headline": "The limits matter.",
+      "body": "Winter-conditioned Alaskan wood frogs in a controlled test. Not every frog, season or freezing condition. Read the paper and correction in our research archive.",
+      "visual_kind": "scope",
+      "claim_ids": [
+        "C8"
+      ]
+    }
+  ],
+  "evidence_file": "evidence/tt-005.md",
+  "evidence": {
+    "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4331536/",
+    "checked_at": "2026-11-07",
+    "design": "Laboratory study of wild-caught wood frogs from Interior Alaska after winter conditioning. Physiological responses were measured in groups exposed to different freezing protocols. Twelve frogs underwent three freeze-thaw cycles reaching -4 degrees Celsius followed by -8 degrees Celsius: seven were sampled biochemically and five were thawed and monitored for recovery and seven-week survival.",
+    "claims": [
+      {
+        "claim": "Wood frogs can survive partial body freezing.",
+        "location": "Costanzo et al. 2015: Results—Responses to Freezing; Survival of Freezing; species collection in Experimental Animals and Acclimatization Regimen."
+      },
+      {
+        "claim": "The focal study used winter-conditioned wood frogs collected in Interior Alaska.",
+        "location": "Costanzo et al. 2015: Experimental Animals and Acclimatization Regimen; Responses to Winter Conditioning; Preparations for Overwintering. Costanzo & Lee 2005 Introduction pp. 4079–4080 supports woodland/forest-duff setting."
+      },
+      {
+        "claim": "Urea accumulates in preparation for winter, before freezing.",
+        "location": "Costanzo et al. 2015: Results—Responses to Winter Conditioning, Table 3; Discussion—Urea and Glucose in Frozen Tissues."
+      },
+      {
+        "claim": "Liver glycogen supplies glucose after freezing begins.",
+        "location": "Costanzo et al. 2015: Discussion—Glycemic Response, especially opening paragraph; Results—Responses to Freezing, Figure 3."
+      },
+      {
+        "claim": "Dissolved protective solutes help limit ice formation and cellular water loss; the conceptual cell illustration places ice outside cells.",
+        "location": "Costanzo & Lee 2005 Introduction pp. 4079–4080; Discussion pp. 4085–4087 (extracellular ice, cell water loss and intracellular solute entry). Costanzo et al. 2015 Discussion—Organ Dehydration and Urea and Glucose in Frozen Tissues."
+      },
+      {
+        "claim": "The survival protocol used three freeze-thaw cycles reaching -4 degrees Celsius, then a final cooling to -8 degrees Celsius; five animals were thawed and followed.",
+        "location": "Costanzo et al. 2015: Methods—Freezing Experiment paragraphs 4–5: three cycles to −4°C, 4°C thaw intervals, final −8°C; five subjects thawed for monitoring."
+      },
+      {
+        "claim": "All five followed animals showed normal behaviour at the first check, about 30 hours after thawing began, and remained healthy through seven weeks.",
+        "location": "Costanzo et al. 2015: Results—Survival of Freezing: all five normal at first examination ~30 h after thaw initiation; healthy during a 7-week follow-up."
+      },
+      {
+        "claim": "This result concerns a small controlled test of winter-conditioned Alaskan wood frogs; it does not apply universally to frogs or freezing conditions.",
+        "location": "Costanzo et al. 2015: Experimental Animals and Acclimatization Regimen; Methods—Freezing Experiment; Introduction and Discussion on population variation; sample/setting restrict inference."
+      }
+    ],
+    "limitations": [
+      "The survival result belongs only to the five animals thawed and monitored after the repeated-freeze protocol ending at −8°C. Other experimental groups were euthanised for biochemical analysis.",
+      "The 2015 focal paper's −16°C group does not supply a survival outcome; avoid combining it with five-of-five survival.",
+      "Glucose and urea contribute to freeze tolerance; they do not abolish freezing or represent its complete mechanistic explanation.",
+      "Reference wildlife media cannot be represented as footage from the laboratory or as proof of freezing/recovery.",
+      "No human cryopreservation, resurrection, death, complete solid freezing or home freezing experiment claim."
+    ],
+    "correction_check": "Publisher correction inspected. It restores Table 5 footnotes that were misplaced during typesetting; it does not change the survival result. No retraction notice was found in the inspected PMC/PLOS records and DOI/title searches on the review date. Recheck before release.",
+    "access_note": "Original main article read through PMC, including experimental methods, results, figures/tables and discussion. No supplementary-only result is used. Raw deposited data were not downloaded or reanalysed.",
+    "numerical_ledger": {
+      "survival_cohort": 5,
+      "recovered": 5,
+      "follow_up_weeks": 7,
+      "first_check_hours_after_thaw_started_approx": 30,
+      "prior_cycles": 3,
+      "prior_cycle_minimum_celsius": -4,
+      "final_minimum_celsius": -8,
+      "final_hold_hours": 5,
+      "total_trial_days": 19,
+      "cumulative_frozen_days_estimated": 15
+    }
+  },
+  "production": {
+    "renderer": "nature-story-8",
+    "editorial_style": "science-journalism",
+    "editorial_standard": "story-first-v1",
+    "visual_standard": "nature-visuals-v1",
+    "script_author": "tt005_science",
+    "voice_speed": 0.96,
+    "cover_asset": "wood_frog_portrait",
+    "cover_focus": [
+      0.5,
+      0.5
+    ],
+    "cover_title": "Ice inside.\nStill alive.",
+    "takeaway": "Protect living cells while part of the body freezes.",
+    "critical_terms": [
+      "wood frog",
+      "urea",
+      "glucose",
+      "glycogen",
+      "minus eight",
+      "five frogs",
+      "seven weeks",
+      "not every frog"
+    ],
+    "assets": [
+      {
+        "id": "wood_frog_portrait",
+        "filename": "wood-frog-ken-sturm-usfws.jpg",
+        "url": "https://www.fws.gov/sites/default/files/2023-04/vernal%20pools%202010%20010.jpg",
+        "source_page": "https://www.fws.gov/media/wood-frog",
+        "creator": "Ken Sturm/USFWS",
+        "license": "Public Domain",
+        "license_url": "https://www.fws.gov/media/wood-frog",
+        "changes": "Cropped to vertical and carousel layouts, resized, and displayed with editorial camera movement, captions and narration. Reference wildlife photograph, not the experimental animals or footage of freezing.",
+        "source_dimensions": [
+          3888,
+          2592
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "identity_note": "USFWS identifies Rana sylvatica, a wood frog resting in mud and half-submerged in water at Canaan Valley National Wildlife Refuge. The source location is not presented as Alaska or the study site.",
+        "license_checked_at": "2026-11-07"
+      },
+      {
+        "id": "wood_frog_leaf_litter",
+        "filename": "wood-frog-necedah-gary-eslinger-usfws.jpg",
+        "url": "https://www.fws.gov/sites/default/files/2021-07/wood-frog-necedah-nwr-gary-eslinger-usfws.jpg",
+        "source_page": "https://www.fws.gov/media/wood-frog-hides-leaf-litter-forest-floor-necedah-national-wildlife-refuge-wisconsin",
+        "creator": "Gary Eslinger/USFWS",
+        "license": "Public Domain",
+        "license_url": "https://www.fws.gov/media/wood-frog-hides-leaf-litter-forest-floor-necedah-national-wildlife-refuge-wisconsin",
+        "changes": "Cropped to portrait, resized, and displayed with editorial camera movement and text. Reference wood-frog leaf-litter habitat photograph; not the Alaskan collection site, study animals or freezing footage.",
+        "source_dimensions": [
+          3504,
+          2336
+        ],
+        "focus": [
+          0.43,
+          0.5
+        ],
+        "identity_note": "USFWS identifies Lithobates sylvaticus, a wood frog in leaf litter at Necedah National Wildlife Refuge, Wisconsin. Parent independently viewed the original photograph. This setting is reference habitat only.",
+        "license_checked_at": "2026-11-07"
+      }
+    ],
+    "segments": [
+      {
+        "speech": "This wood frog can survive ice forming inside its body. How do its cells survive?",
+        "captions": [
+          "This wood frog can survive",
+          "ice forming inside its body.",
+          "How do its cells survive?"
+        ],
+        "pause_after": 0.25,
+        "shots": [
+          {
+            "kind": "portrait",
+            "title": "Ice inside.\nStill alive.",
+            "kicker": "THE WOOD FROG",
+            "start": 0,
+            "end": 1,
+            "asset": "wood_frog_portrait",
+            "focus": [
+              0.5,
+              0.5
+            ],
+            "note": "Reference photograph; not the study animals"
+          }
+        ]
+      },
+      {
+        "speech": "In Interior Alaska, winter survival starts before the first freeze.",
+        "captions": [
+          "In Interior Alaska,",
+          "winter survival starts",
+          "before the first freeze."
+        ],
+        "pause_after": 0.25,
+        "shots": [
+          {
+            "kind": "winter",
+            "title": "Winter starts before\nthe freeze.",
+            "kicker": "SEASONAL PREPARATION",
+            "start": 0,
+            "end": 1,
+            "note": "Reference leaf-litter photograph; not the study site",
+            "asset": "wood_frog_leaf_litter",
+            "focus": [
+              0.43,
+              0.5
+            ]
+          }
+        ]
+      },
+      {
+        "speech": "The frogs build up urea. Then, as freezing begins, their livers turn stored glycogen into glucose: sugar.",
+        "captions": [
+          "The frogs build up urea.",
+          "Then, as freezing begins,",
+          "their livers turn stored glycogen",
+          "into glucose: sugar."
+        ],
+        "pause_after": 0.25,
+        "shots": [
+          {
+            "kind": "glucose",
+            "title": "Urea first.\nGlucose next.",
+            "kicker": "PROTECTIVE CHEMISTRY",
+            "start": 0,
+            "end": 0.5,
+            "note": "Conceptual animation; not to scale"
+          },
+          {
+            "kind": "glucose",
+            "title": "From liver stores\nto glucose.",
+            "kicker": "PROTECTIVE CHEMISTRY",
+            "start": 0.5,
+            "end": 1,
+            "note": "Conceptual animation; not to scale"
+          }
+        ]
+      },
+      {
+        "speech": "Together, these substances limit ice formation and water loss from cells. They help the frog tolerate freezing, without stopping it completely.",
+        "captions": [
+          "Together, these substances limit",
+          "ice formation and water loss",
+          "from cells.",
+          "They help the frog",
+          "tolerate freezing,",
+          "without stopping it completely."
+        ],
+        "pause_after": 0.25,
+        "shots": [
+          {
+            "kind": "cells",
+            "title": "Tolerate ice.\nProtect cells.",
+            "kicker": "INSIDE THE BODY",
+            "start": 0,
+            "end": 0.5,
+            "note": "Conceptual animation; not to scale"
+          },
+          {
+            "kind": "cells",
+            "title": "Some ice remains.\nCells are protected.",
+            "kicker": "INSIDE THE BODY",
+            "start": 0.5,
+            "end": 1,
+            "note": "Conceptual animation; not to scale"
+          }
+        ]
+      },
+      {
+        "speech": "In one experiment, researchers repeatedly froze and thawed winter-prepared Alaskan wood frogs, finally reaching minus eight degrees Celsius.",
+        "captions": [
+          "In one experiment,",
+          "researchers repeatedly froze and thawed",
+          "winter-prepared Alaskan wood frogs,",
+          "finally reaching minus eight",
+          "degrees Celsius."
+        ],
+        "pause_after": 0.25,
+        "shots": [
+          {
+            "kind": "experiment",
+            "title": "A controlled\nfreeze-thaw test.",
+            "kicker": "THE EVIDENCE",
+            "start": 0,
+            "end": 0.5,
+            "note": "Conceptual animation; not to scale"
+          },
+          {
+            "kind": "experiment",
+            "title": "The final freeze:\nminus eight degrees.",
+            "kicker": "THE EVIDENCE",
+            "start": 0.5,
+            "end": 1,
+            "note": "Conceptual animation; not to scale"
+          }
+        ]
+      },
+      {
+        "speech": "All five frogs checked for survival recovered and stayed healthy for seven weeks.",
+        "captions": [
+          "All five frogs",
+          "checked for survival recovered",
+          "and stayed healthy",
+          "for seven weeks."
+        ],
+        "pause_after": 0.25,
+        "shots": [
+          {
+            "kind": "recovery",
+            "title": "Five frogs.\nFive survivors.",
+            "kicker": "AFTER THAWING",
+            "start": 0,
+            "end": 1,
+            "note": "Conceptual animation; not to scale"
+          }
+        ]
+      },
+      {
+        "speech": "These were winter-conditioned Alaskan frogs; not every frog can do this.",
+        "captions": [
+          "These were winter-conditioned Alaskan frogs;",
+          "not every frog",
+          "can do this."
+        ],
+        "pause_after": 0.25,
+        "shots": [
+          {
+            "kind": "scope",
+            "title": "An Alaskan\nadaptation.",
+            "kicker": "THE LIMITS",
+            "start": 0,
+            "end": 1,
+            "note": "Conceptual animation; not to scale"
+          }
+        ]
+      },
+      {
+        "speech": "Their winter strategy: protect living cells while part of the body freezes.",
+        "captions": [
+          "Their winter strategy:",
+          "protect living cells",
+          "while part of the body",
+          "freezes."
+        ],
+        "pause_after": 0.25,
+        "shots": [
+          {
+            "kind": "closing",
+            "title": "Winter survival,\nfrom within.",
+            "kicker": "THE SURVIVAL STRATEGY",
+            "start": 0,
+            "end": 1,
+            "asset": "wood_frog_portrait",
+            "focus": [
+              0.5,
+              0.5
+            ],
+            "note": "Reference photograph; not the study animals",
+            "inset_cell": true
+          }
+        ]
+      }
+    ]
+  },
+  "editorial_story": {
+    "audience": "Curious adults with no prior knowledge of freeze tolerance or cell physiology.",
+    "subject": "The wood frog and its capacity to survive partial body freezing.",
+    "setting": "Winter preparation in wood frogs from Interior Alaska, with a controlled laboratory study providing the evidence.",
+    "opening_context": "A visible, named wood frog introduces ice inside a living animal and immediately asks how its cells survive.",
+    "normal_expectation": "Freezing is normally a severe challenge for living tissue; the question is how cells persist while some body water freezes.",
+    "story_selection": "A concrete animal, a surprising survival problem and a visible scale change from frog to cell allow a compact explanatory story. The small survival cohort gives evidence without replacing the biological question.",
+    "question": "How can a wood frog survive ice forming inside its body?",
+    "why_it_matters": "Winter survival depends on preparation and cellular responses. This story reveals how an animal can tolerate an environmental extreme instead of avoiding it entirely.",
+    "narrative_arc": "Named animal and survival paradox; Alaskan winter context; preparation with urea; glucose mobilisation as freezing starts; cellular protection; controlled freeze-thaw evidence; population and season limits; return to winter survival.",
+    "closing_payoff": "Their winter strategy is to protect living cells while part of the body freezes.",
+    "decisive_limit": "The five-of-five survival result belongs to winter-conditioned Alaskan frogs in the repeated-freeze trial ending at -8 degrees Celsius; it is not a universal frog or -16 degrees survival claim.",
+    "context_sources": [
+      {
+        "citation": "Costanzo, J. P., & Lee, R. E., Jr. (2005). Cryoprotection by urea in a terrestrially hibernating frog. Journal of Experimental Biology, 208, 4079–4089.",
+        "doi": "10.1242/jeb.01859",
+        "url": "https://doi.org/10.1242/jeb.01859",
+        "full_text_url": "https://journals.biologists.com/jeb/article-pdf/208/21/4079/1253907/4079.pdf",
+        "access_note": "Publisher full PDF retrieved; relevant introduction, cell/tissue experimental methods and results, and discussion inspected. Supports the conceptual extracellular-ice/cell-water-loss explanation and terrestrial woodland context. No numerical result from this older study is displayed.",
+        "used_for": "Extracellular ice, dissolved intracellular cryoprotectants, reduced cellular dehydration and damage; woodland/forest-duff context.",
+        "scope": "Extracellular ice, dissolved intracellular cryoprotectants, reduced cellular dehydration and damage; woodland/forest-duff context."
+      },
+      {
+        "citation": "The PLOS ONE Staff (2015). Correction: Cryoprotectants and Extreme Freeze Tolerance in a Subarctic Population of the Wood Frog. PLOS ONE 10(4):e0124029.",
+        "url": "https://doi.org/10.1371/journal.pone.0124029",
+        "doi": "10.1371/journal.pone.0124029",
+        "scope": "Publisher correction inspected: Table 5 footnotes were misplaced during typesetting; the survival result is unchanged."
+      }
+    ],
+    "craft_record": "quality/SCIENCE_JOURNALISM.md",
+    "visual_craft_record": "quality/VISUAL_UPGRADE_2026-11.md",
+    "reporting_method": "Published-paper explanatory journalism with original conceptual animation and independently licensed reference photographs. No interviews, witnessed freezing or measured microscopy footage is implied.",
+    "visual_plan": [
+      {
+        "segment": 1,
+        "visual": "Sharp correctly identified brown wood-frog portrait with eye-level framing. A restrained blue frost motif may introduce the idea, but do not add photorealistic ice to reference footage or imply this source frog is freezing.",
+        "purpose": "Introduce a concrete visible organism and a surprising but bounded question.",
+        "source_or_concept": "Licensed USFWS wood-frog reference photograph; any cell inset is an original conceptual illustration.",
+        "accuracy_note": "Reference image, not a photograph of the experiment. Whole frog is not solid ice; no dead-to-alive animation."
+      },
+      {
+        "segment": 2,
+        "visual": "Licensed reference photograph of a wood frog in leaf litter establishes habitat while the narration explains seasonal preparation before freezing. The photograph is not presented as Alaska, the study site or experimental freezing.",
+        "purpose": "Establish preparation before freezing rather than jump directly into experimental methods.",
+        "source_or_concept": "Licensed USFWS wood-frog reference photograph; any cell inset is an original conceptual illustration.",
+        "accuracy_note": "No footage claimed to show the exact collection site or a measured field winter. No invented snow depth or date."
+      },
+      {
+        "segment": 3,
+        "visual": "Original two-step conceptual illustration: dissolved urea already present, then labelled liver glycogen converts to glucose as freezing begins; sugar moves along a schematic route into cellular fluid.",
+        "purpose": "Explain the temporal sequence of urea and glucose using a conceptual pathway.",
+        "source_or_concept": "Original conceptual illustration; C3, C4, C5 in the evidence ledger.",
+        "accuracy_note": "Conceptual route, not an anatomical map or a claim that sugar reaches every tissue equally. Do not show ordinary sugar cubes inside an animal as literal objects."
+      },
+      {
+        "segment": 4,
+        "visual": "Ice grows in extracellular space while a cell loses some water and retains dissolved solutes. Maintain visible fluid within the cell. End with ice still visibly present outside it.",
+        "purpose": "Show the distinction between tolerating extracellular ice and preventing all freezing.",
+        "source_or_concept": "Original conceptual illustration; C5 in the evidence ledger.",
+        "accuracy_note": "No ice inside the illustrated living cell, no sugar forcefield, and no all-or-none ice elimination. Mechanism simplified and labelled; scales and particle counts are not measured data."
+      },
+      {
+        "segment": 5,
+        "visual": "Original schematic experiment sequence: repeated freeze/thaw → final −8°C. Use sequential pictograms, not an invented measured temperature trace.",
+        "purpose": "Connect the explanation to the controlled protocol without inventing a measured temperature trace.",
+        "source_or_concept": "Original conceptual illustration; C6 in the evidence ledger.",
+        "accuracy_note": "If extra protocol detail is shown: three freeze/thaw cycles to −4°C, then final −8°C; trial 19 days, cumulative freezing 15 days estimated. Do not imply all 19 days were at −8°C."
+      },
+      {
+        "segment": 6,
+        "visual": "Five discrete recovery markers correspond to the five survival-test frogs, followed by the seven-week follow-up statement. These are schematic markers, not images of the actual animals.",
+        "purpose": "Make the five-animal survival cohort and seven-week follow-up legible.",
+        "source_or_concept": "Original conceptual illustration; C7 in the evidence ledger.",
+        "accuracy_note": "Do not count every frog in the biochemical experiment as a survival-test subject. No claim that recovery was instantaneous; first examination was approximately 30 hours after thawing began."
+      },
+      {
+        "segment": 7,
+        "visual": "A restrained typographic scope card explicitly names the small controlled study and winter-conditioned Alaskan animals.",
+        "purpose": "Keep the decisive population and winter-conditioning boundary inside the story.",
+        "source_or_concept": "Original conceptual illustration; C8 in the evidence ledger.",
+        "accuracy_note": "Preserve spoken not. Do not claim all wood-frog populations or all seasons share the same freezing limit."
+      },
+      {
+        "segment": 8,
+        "visual": "Finish on a visible wood frog, with a small conceptual cell inset connecting organism to its protective chemistry, and compact source credit.",
+        "purpose": "Return to the real animal with the cellular mechanism as the answer to the opening question.",
+        "source_or_concept": "Licensed USFWS wood-frog reference photograph; any cell inset is an original conceptual illustration.",
+        "accuracy_note": "This is a bounded synthesis, not a claim that glucose and urea are the entire adaptation or a recipe applicable to other species."
+      }
+    ]
+  },
+  "editorial_review": {
+    "standard": "story-first-v1",
+    "reviewed_at": "2026-11-07T18:25:05.618653+00:00",
+    "reviewer": "tt005_editor",
+    "decision": "pass",
+    "review_scope": "Independent pre-render review of the exact narration, evidence ledger, focal-paper methods/results/discussion, planned paired visuals and renderer source. USFWS source pages and original-image links independently checked for identification, dimensions, credit and Public Domain licensing. This is not encoded-film, auditory, final crop, carousel export or owner approval.",
+    "checks": {
+      "cold_viewer": {
+        "decision": "pass",
+        "finding": "The first sentence names the wood frog and states that ice can form inside its body; the immediate question is about living cells. This avoids unnamed animals, missing setting or reliance on a prior Reel.",
+        "basis": "Segment 1 narration and portrait; title names the wood frog and the first visual plan labels the photograph as reference imagery."
+      },
+      "story": {
+        "decision": "pass",
+        "finding": "The script explains a survival problem through seasonal preparation and cellular protection, then uses the experiment as evidence. It has one central question and a causal answer rather than a list of methods and results.",
+        "basis": "Segments 2-4 establish the winter setting and chemistry before segments 5-6 give the controlled test; segment 8 returns to the opening problem."
+      },
+      "visuals": {
+        "decision": "pass",
+        "finding": "The plan uses a correctly identified animal portrait, seasonal setting, molecular pathway, extracellular-ice concept, protocol sequence and small-cohort recovery display. Each visual has a distinct explanatory task; reference photographs are not represented as experimental footage.",
+        "basis": "The paired eight-part visual plan and isolated renderer were reviewed. Winter animation was corrected to show preparation before freezing. Final font layout, crops, pacing and encoded animation remain export checks, not claimed as viewed here."
+      },
+      "payoff": {
+        "decision": "pass",
+        "finding": "The Reel answers how cells can survive: protective solutes contribute to tolerating freezing, while some body water still becomes ice. The recovered cohort then supports the survival claim. The ending completes the explanation inside the Reel.",
+        "basis": "Segments 3-4 explain the mechanism, segment 6 supplies recovery evidence, and segment 8 states the bounded strategy without deferring the answer to a caption."
+      },
+      "scope": {
+        "decision": "pass",
+        "finding": "The five-animal result is accurately restricted to the cyclic protocol ending at -8 degrees Celsius. The script voices winter conditioning and Alaskan provenance; the caption separates the -16 degrees biochemical group and records the correction.",
+        "basis": "Independently inspected focal paper Methods: Freezing Experiment; Results: Survival of Freezing; Discussion: Organ Dehydration, Glycemic Response and Urea and Glucose in Frozen Tissues. The correction concerns Table 5 footnote placement. No resurrection, solid freezing or universal freeze-proof claim appears."
+      },
+      "retelling": {
+        "decision": "pass",
+        "finding": "Winter-prepared Alaskan wood frogs use protective chemistry that helps their cells survive while ice forms elsewhere in the body. In this small controlled trial, five frogs recovered after repeated freezing ending at -8 degrees Celsius.",
+        "basis": "The central explanation, actual survival cohort, terminal temperature and population/season limit all appear in the spoken story; the complete post and evidence ledger retain protocol and follow-up details."
+      }
+    },
+    "source_sha256": "7de05f58ef5a3543b758c0a7b9dbc6163d1146353a9bd20b6e4a3bfc22f2eaef"
+  }
+}

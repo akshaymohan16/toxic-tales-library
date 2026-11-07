@@ -73,7 +73,10 @@
     "daily_check_local_time": "10:15",
     "delivery_status": "ChatGPT result notification configured; push/email settings not inspected"
   },
-  "active_pilot_id": "TT-004",
+  "active_pilot_id": "TT-005",
+  "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
+  "visual_upgrade_standard": "nature-visuals-v1",
+  "new_pilot_review_hold": {"episode_id": "TT-005", "scope": "candidate_only", "reason": "New visual pilot requested for owner review; ordinary automation remains enabled."},
   "editorial_workflow_approved_on": "2026-11-07",
   "approved_pilot_id": "TT-004",
   "approved_pilot_fingerprint": "a70c13bde0d36f7cb62fc7d9ecef687af36728f180391931265041a5ce166223",

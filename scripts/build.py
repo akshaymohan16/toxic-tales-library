@@ -6,6 +6,7 @@ from pathlib import Path
 import production as story_renderer
 import production_v4 as legacy_renderer
 import production_pilot as pilot_renderer
+import production_nature as nature_renderer
 from editorial_gate import STANDARD, validate_pre_render, final_editorial_ok
 from production import ROOT, MEDIA, QA, CACHE, VERSION, sha, norm
 REPO='akshaymohan16/toxic-tales-library';SITE=ROOT/'site'
@@ -51,6 +52,12 @@ def pilot_page(ep,entry,manifest,config,receipts):
     links='<a class="button" href="'+esc(entry['evidence_record'],quote=True)+'">Research behind this Reel</a><a class="button secondary" href="'+esc(ep['evidence']['full_text_url'],quote=True)+'">Read the full paper</a>'
     if published:links+='<a class="button secondary" href="'+esc(receipt['public_url'],quote=True)+'">View on Instagram</a>'
     body='<nav><span class="brand">TOXIC TALES</span><a href="./">Research archive</a></nav><header class="hero"><span class="badge">'+state+'</span><h1>'+esc(ep['title'])+'</h1><p class="lede">'+esc(ep['hook'])+'</p><p class="muted">'+status_text+'</p></header><div class="pilot-grid"><section class="film" aria-label="Reel preview"><video controls playsinline preload="metadata" poster="'+esc(entry['media']['cover'],quote=True)+'"><source src="'+esc(entry['media']['reel'],quote=True)+'" type="video/mp4">Your browser does not support embedded video.</video><p class="muted">@toxic_tales_eco &middot; Vertical Reel &middot; Synthetic narration</p><a href="'+esc(entry['media']['reel'],quote=True)+'">Open the video file</a></section><div><section class="panel"><div class="eyebrow">The complete post</div><h2>Caption</h2><p class="muted">This is the exact text prepared for Instagram.</p><textarea class="caption" id="caption" readonly aria-label="Complete Instagram caption">'+esc(post['caption'])+'</textarea><div class="actions"><button class="button" id="copy-caption" type="button">Copy caption</button><span class="muted" id="copy-status" role="status" aria-live="polite"></span></div></section><section class="panel cover"><a href="'+esc(entry['media']['cover'],quote=True)+'"><img src="'+esc(entry['media']['cover'],quote=True)+'" alt="Reel cover: '+esc(ep['production'].get('cover_title',ep['title']),quote=True)+'"></a><div><h2>Cover</h2><p>The cover is supplied with the video and caption.</p><a href="'+esc(entry['media']['cover'],quote=True)+'">Open full-size cover</a></div></section><section class="panel"><h2>The paper behind it</h2><p>'+esc(ep['paper_title'])+'</p><p class="citation">'+esc(ep['citation'])+'<br><a href="'+esc(ep['source_url'],quote=True)+'">'+esc(ep['doi'])+'</a></p><p class="muted">The archive includes the study design, claim-by-claim checks, limitations, supporting papers and visual credits.</p><div class="actions">'+links+'</div></section></div></div><footer><p>Previewing or copying this post does not publish it. The original paper remains linked from the permanent research record.</p></footer>'
+    if entry['media']['slides']:
+        cards=''.join('<a href="'+esc(url,quote=True)+'"><img loading="lazy" src="'+esc(url,quote=True)+'" alt="Carousel page '+str(i+1)+'" style="width:100%;display:block;border-radius:8px"></a>' for i,url in enumerate(entry['media']['slides']))
+        carousel_post=next((p for p in ep['posts'] if p['format']=='CAROUSEL'),None)
+        carousel_caption='<details style="margin-top:24px"><summary>Complete carousel caption</summary><pre>'+esc(carousel_post['caption'])+'</pre></details>' if carousel_post else ''
+        gallery='<section class="panel"><div class="eyebrow">Matching companion post</div><h2>Carousel preview</h2><p class="muted">Open any page to inspect the full-size design.</p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px">'+cards+'</div>'+carousel_caption+'</section>'
+        body=body.replace('<footer>',gallery+'<footer>',1)
     script='''<script>document.getElementById('copy-caption').addEventListener('click',async()=>{const field=document.getElementById('caption'),status=document.getElementById('copy-status');try{await navigator.clipboard.writeText(field.value);status.textContent='Caption copied.';}catch(error){field.focus();field.select();status.textContent='Caption selected. Use your device copy command.';}});</script>'''
     return page_shell('Pilot preview — '+ep['title'],body,script)
 def validate(ep):
@@ -98,11 +105,14 @@ def main():
         if not ep.get('production'):continue
         validate(ep);evidence_path=ROOT/ep['evidence_file']
         editorial_source=validate_pre_render(ep,evidence_path.read_text(encoding='utf-8'))
-        renderer=pilot_renderer if ep['production'].get('renderer')=='ecology-story-7' else (story_renderer if ep['production'].get('editorial_style')=='science-journalism' else legacy_renderer)
+        renderer=nature_renderer if ep['production'].get('renderer')=='nature-story-8' else (pilot_renderer if ep['production'].get('renderer')=='ecology-story-7' else (story_renderer if ep['production'].get('editorial_style')=='science-journalism' else legacy_renderer))
         fingerprint_bytes=path.read_bytes()+evidence_path.read_bytes()+Path(renderer.__file__).read_bytes()+(ROOT/'requirements.txt').read_bytes()
         if editorial_source:
             for dependency in ['scripts/production.py','scripts/editorial_gate.py','quality/SCIENCE_JOURNALISM.md','quality/VISUAL_STANDARD.md','quality/PRODUCTION_STANDARD.md']:
                 fingerprint_bytes+=(ROOT/dependency).read_bytes()
+            if renderer is nature_renderer:
+                fingerprint_bytes+=(ROOT/'quality/VISUAL_UPGRADE_2026-11.md').read_bytes()
+                fingerprint_bytes+=(ROOT/'scripts/production_pilot.py').read_bytes()
         fp=hashlib.sha256(fingerprint_bytes).hexdigest()
         stem=ep['slug']+'-'+fp[:12]
         qa_path=QA/(ep['id'].lower()+'.json');m=read(qa_path,{})
@@ -131,6 +141,8 @@ def main():
         target=SITE/entry['evidence_record'];target.parent.mkdir(exist_ok=True);target.write_text(page,encoding='utf-8')
         if ep['id']==config.get('active_pilot_id','TT-003'):
             (SITE/'pilot.html').write_text(pilot_page(ep,entry,m,config,receipts),encoding='utf-8')
+        if ep['id'] in {'TT-004','TT-005'}:
+            (SITE/('pilot-'+ep['id'].lower()+'.html')).write_text(pilot_page(ep,entry,m,config,receipts),encoding='utf-8')
         approved=release_ok(approvals.get(ep['id']),m)
         for p in ep['posts']:
             assert p['id'] not in ids,'Duplicate post ID';ids.add(p['id'])

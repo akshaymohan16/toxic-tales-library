@@ -6,7 +6,7 @@
   "deployment_and_media": "TT-004 corrected public export verified",
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
   "decision": "ACTIVE_APPROVED_STANDARD",
-  "reason": "Owner approved exact TT-004 and provider confirmed publication. Standing production and publishing authorization resumes with all quality gates.",
+  "reason": "Owner explicitly requested resumption and full automation again; both task prompts now mandate the visual upgrade. New TT-005 is held for owner review without pausing ordinary production.",
   "scheduled_posts_returned": 0,
   "published_provider_receipts": 2,
   "new_metricool_submissions": 0,
@@ -27,8 +27,8 @@
   "updated_metricool_posts": 1,
   "journalism_standard": "quality/SCIENCE_JOURNALISM.md",
   "draft_posts_held": 2,
-  "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot.html",
-  "pilot_record": "quality/pilots/tt-004.json",
+  "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot-tt-005.html",
+  "pilot_record": "quality/pilots/tt-005.json",
   "historical_pilot_verification": {
     "episode_id": "TT-003",
     "release_commit": "97d6540a23ca5b813eb1f07d9e5512f4b4031fc1",
@@ -52,9 +52,10 @@
   "retired_draft_post_ids": [
     "TT-003-REEL"
   ],
-  "pending_new_pilot_post_id": null,
-  "pilot_record_status": "approved_and_published",
-  "updated_at": "2026-11-07T17:44:33.983826+00:00",
+  "pending_new_pilot_post_id": "TT-005-REEL",
+  "pilot_record_status": "new_visual_pilot_in_production_candidate_only_hold",
+  "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
+  "updated_at": "2026-11-07T18:20:33.739169+00:00",
   "latest_publication": {
     "post_id": "TT-004-REEL",
     "metricool_id": "420123422",
@@ -71,7 +72,7 @@
     "latest_delivery": "Current chat; live Reel link provided. Future ChatGPT result notifications configured; push/email settings unverified."
   },
   "recurring_tasks": {
-    "verified_at": "2026-11-07T17:45:14.828046+00:00",
+    "verified_at": "2026-11-07T18:20:33.739169+00:00",
     "producer": {
       "id": "6aeefcb926708191b092554230783da1",
       "enabled": true,
@@ -82,6 +83,6 @@
       "enabled": true,
       "schedule": "Daily 10:15 Europe/Vienna"
     },
-    "verification": "Automation update and fresh peek both confirm enabled with revised approved-standard prompts. No past successful unattended run claimed."
+    "verification": "Both existing tasks enabled; exact updated visual-upgrade prompts verified by fresh automation peek. No successful unattended run claimed."
   }
 }
