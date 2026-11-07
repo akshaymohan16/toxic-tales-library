@@ -2,7 +2,7 @@ name: Build and deploy Toxic Tales
 on:
   push:
     branches: [main]
-    paths: ['episodes/**', 'evidence/**', 'quality/releases.json', 'automation/config.json', 'scripts/**', 'site/**', '.github/workflows/publish-library.yml', 'requirements.txt']
+    paths: ['episodes/**', 'evidence/**', 'quality/releases.json', 'automation/config.json', 'automation/published.json', 'scripts/**', 'site/**', '.github/workflows/publish-library.yml', 'requirements.txt']
   workflow_dispatch:
 permissions:
   contents: read

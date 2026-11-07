@@ -34,6 +34,8 @@ def main():
     assert os.environ.get('GITHUB_REPOSITORY',REPO)==REPO,'Repository boundary'
     for d in [MEDIA,QA,CACHE]:d.mkdir(parents=True,exist_ok=True)
     config=read(ROOT/'automation/config.json',{});approvals=read(ROOT/'quality/releases.json',{});cache=read(CACHE/'index.json',{})
+    ledger=read(ROOT/'automation/published.json',{'posts':[]})
+    receipts={p['post_id']:p for p in ledger.get('posts',[])}
     papers=[];candidates=[];queue=[];voice=None;ids=set()
     for path in sorted((ROOT/'episodes').glob('*.json')):
         ep=read(path)
@@ -56,6 +58,7 @@ def main():
         media={'reel':f'media/{stem}.mp4','cover':f'media/{stem}_cover.jpg','slides':[f'media/{stem}_slide_{i+1:02}.jpg' for i in range(len(ep.get('slides',[])))]}
         entry={k:ep.get(k) for k in ('id','slug','title','hook','doi','paper_title','citation','summary','evidence_note','source_url','tags')}
         entry.update(media=media,evidence=ep['evidence'],credits=ep['production']['assets'],qa=f'qa/{ep["id"].lower()}.json',evidence_record=f'sources/{ep["id"].lower()}.html')
+        entry['publications']=[{'post_id':p['post_id'],'format':p.get('format'),'status':p.get('status'),'public_url':p.get('public_url'),'date':p.get('publication_date')} for p in receipts.values() if p.get('episode_id')==ep['id']]
         papers.append(entry)
         rows=''.join('<li>'+html.escape(c['claim'])+' <em>('+html.escape(c['location'])+')</em></li>' for c in ep['evidence']['claims'])
         credits=''.join('<li>'+html.escape(a['creator'])+' — <a href="'+html.escape(a['source_page'],quote=True)+'">Source</a> · <a href="'+html.escape(a['license_url'],quote=True)+'">'+html.escape(a['license'])+'</a>. '+html.escape(a['changes'])+'</li>' for a in ep['production']['assets'])
@@ -66,7 +69,7 @@ def main():
             assert p['id'] not in ids,'Duplicate post ID';ids.add(p['id'])
             item={**p,'episode_id':ep['id'],'doi':ep['doi'],'source_slug':ep['slug'],'cover':media['cover'],'media':[media['reel']] if p['format']=='REEL' else media['slides'],'fingerprint':fp,'media_sha256':m['files'],'qa':entry['qa'],'scientifically_reviewed':True,'is_ai_generated':True,'quality_released':approved}
             candidates.append(item)
-            if approved and not config.get('publishing_paused',True) and ep.get('publication_enabled') and p.get('status')!='published':queue.append(item)
+            if approved and not config.get('publishing_paused',True) and ep.get('publication_enabled') and p.get('status')!='published' and receipts.get(p['id'],{}).get('status') not in ('published','scheduled'):queue.append(item)
     assert sum(p.stat().st_size for p in SITE.rglob('*') if p.is_file())<900_000_000
     for name,obj in [('papers.json',papers),('candidates.json',candidates),('publish-queue.json',queue)]:write(SITE/name,obj)
     write(SITE/'health.json',{'repository':REPO,'commit':os.environ.get('GITHUB_SHA','local'),'built_at':datetime.now(timezone.utc).isoformat(),'renderer':VERSION,'episodes':len(papers),'queue_count':len(queue),'publishing_paused':config.get('publishing_paused',True),'note':'Deployment is not publication. Publisher must reconcile receipts.'})

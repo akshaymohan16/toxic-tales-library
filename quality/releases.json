@@ -1,1 +1,49 @@
-{}
+{
+  "TT-002": {
+    "decision": "release",
+    "reviewed_at": "2026-11-07",
+    "reviewer": "Delegated Toxic Tales editor",
+    "verification_run": 42382117062,
+    "media_commit": "e07fc264e11df529be8b099262602b28dfdaf6fa",
+    "listening_review_claimed": false,
+    "original_audio_comparison_claimed": false,
+    "fingerprint": "3107c7add56b0123b6365d75b1c015e8f1d564e748b77f500773226d64344a54",
+    "files": {
+      "media/tt-002-the-average-can-hide-3107c7add56b.mp4": "2eb0284ba27d1f6025a6eb62a56e248a4390ed676e5e5f7d4d82cc12b22ea105",
+      "media/tt-002-the-average-can-hide-3107c7add56b_cover.jpg": "000c2be05573f4a51101c1eeeea7809faa550bc0478ce49c276b92ee9cd85201",
+      "media/tt-002-the-average-can-hide-3107c7add56b_slide_01.jpg": "ad919abd3726c41946c3f6441036331fdc257945cc76253c3aa6909f87f3fbed",
+      "media/tt-002-the-average-can-hide-3107c7add56b_slide_02.jpg": "3ea1cf6927da63899a8259ea7616c8ff26062fe5a42150abdc459957fb5a1996",
+      "media/tt-002-the-average-can-hide-3107c7add56b_slide_03.jpg": "10d07323b5874c5dc4e0d0a3a718e0363befe5244f6fbc4f19809942703bca83",
+      "media/tt-002-the-average-can-hide-3107c7add56b_slide_04.jpg": "f7688b59d07ff071be1072fe66dfad713413ea77a2492a554f8ba39b316b6f2c",
+      "media/tt-002-the-average-can-hide-3107c7add56b_slide_05.jpg": "55267a61b31681348b1803c54c3540b0e501d5b2b23b22775671efbe0efa1010",
+      "media/tt-002-the-average-can-hide-3107c7add56b_slide_06.jpg": "e23d388e2179fbd4440552cb94d79e5dc3da2f315e3ee167ea85fc493c664db5",
+      "media/tt-002-the-average-can-hide-3107c7add56b_slide_07.jpg": "1669c3162e0aacfb832a10e5cefa7eafea62413c6cc7a36d02e5690361224d02"
+    },
+    "evidence_sha256": "eeb1faeac464500a9fdf098ee4dae9a59d3ffeae87d1aca1820dd897c8ad6576",
+    "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-002-contact.jpg?release=e07fc264",
+    "scientific_review": "Read primary paper and recorded source locations. Twelve independent mesocosms, four per treatment; 174 completed repeated trials are not tank replication. Reduced between-individual activity variation is distinguished from no clear mean difference. Risk-taking is explicitly excluded from this generalisation; no wild decline, entire-personality change or permanence claimed. All seven carousel pages preserve these limits. Source and reference-media rights checked.",
+    "visual_review": "Inspected actual encoded contact sheet, full-size negative-caveat frame, cover and every final carousel JPEG. Text is within margins; captions retain complete scientific negations and have no timing overlap. Nature footage, specimen photo, 12-tank design, repeated-trial animation and qualitative result cards serve specific explanations. Drawings and reference imagery are identified. New film is archive-only; previously published TT-002-REEL must not be reposted.",
+    "audio_review": "Final encoded audio ASR reviewed against narration: 96.6% token similarity, all material scientific claims and negations retained. ASR homophones in appearance and lesson/look do not alter scientific results; this is a transcription-based check, not a listening judgement. Segment checks passed. Integrated loudness -16.99 LUFS, true peak -5.42 dBTP, 33.25 seconds; pinned Kokoro voice. Actual human listening and original-audio parity are not claimed.",
+    "publication_scope": "TT-002-CAROUSEL only. Rebuilt Reel is available in source archive but TT-002-REEL is already published."
+  },
+  "TT-003": {
+    "decision": "release",
+    "reviewed_at": "2026-11-07",
+    "reviewer": "Delegated Toxic Tales editor",
+    "verification_run": 42382117062,
+    "media_commit": "e07fc264e11df529be8b099262602b28dfdaf6fa",
+    "listening_review_claimed": false,
+    "original_audio_comparison_claimed": false,
+    "fingerprint": "20fde516bde50049d02d684b89f6ed8307bfc2a4ed1f10d7c44287be354c048a",
+    "files": {
+      "media/tt-003-recovery-with-pollution-20fde516bde5.mp4": "8e2d95e7b0cddeac80707966876ede8d62b31ca285ad2a8f50935b1cfbafce76",
+      "media/tt-003-recovery-with-pollution-20fde516bde5_cover.jpg": "c6bc58b8ac049bbe2ecb91f303b63b2435b25c8c4154cd7395f909706e7a8fb6"
+    },
+    "evidence_sha256": "ebba9222edbbdbd652115402cfab6cc73d9be86262a29fae3c56084042417e7d",
+    "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-003-contact.jpg?release=e07fc264",
+    "scientific_review": "Primary full text checked: twelve outdoor tanks; all received fish, some later fluoxetine; reduced zooplankton abundance rebound after fish removal with dosing continuing. The film explicitly says this is not recovery after pollution stopped. Mechanism unresolved, tank variability and tank-to-lake limit retained. No permanent damage or unique initial fish-causation claim. Source records and CC BY credits verified.",
+    "visual_review": "Inspected actual encoded contact sheet, full-size caveat frame and final cover. Moving browser playback loaded successfully (38.33-second metadata, readyState 4) and showed readable result/subtitle frame. No caption overlaps. Eleven short scenes use reference fish imagery, real microscopy, experimental design, sequence and qualitative comparison. Conceptual comparison is labelled, not fabricated numerical data. The complete negative recovery-after-removal claim fits on screen.",
+    "audio_review": "Final encoded audio ASR reviewed against script: 98.96% token similarity; fluoxetine, zooplankton and the continued-dosing/not-after-pollution-stopped qualification are preserved. Segment and critical-word tests passed. Integrated loudness -16.77 LUFS, true peak -5.47 dBTP, 38.33 seconds; pinned Kokoro voice. Human listening and comparison with original Instagram audio are not claimed.",
+    "publication_scope": "TT-003-REEL"
+  }
+}
