@@ -1,0 +1,77 @@
+name: Retrieve original Toxic Tales benchmarks - NO PUBLISHING
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/benchmark-reference-check.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  retrieve-public-benchmarks:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Retrieve existing public originals only
+        run: |
+          python - <<'PY'
+          import json,html,urllib.request,urllib.error,hashlib
+          from datetime import datetime,timezone
+          from pathlib import Path
+          out=Path('benchmark-reference');out.mkdir()
+          report={'purpose':'Compare to the owner\'s earlier published Toxic Tales content, not our newly generated pilots. No login, cookies, credentials, bypass or publishing.','checked_at':datetime.now(timezone.utc).isoformat(),'attempts':[],'media':[]}
+          def request(url,headers=None,limit=2000000):
+              h={'User-Agent':'Mozilla/5.0'}
+              if headers:h.update(headers)
+              with urllib.request.urlopen(urllib.request.Request(url,headers=h),timeout=20) as r:
+                  data=r.read(limit+1)
+                  if len(data)>limit:raise ValueError('Bounded size limit')
+                  return data,r.status,r.headers.get_content_type()
+          def download(url,name,source,kind):
+              data,status,mime=request(url,limit=50000000)
+              if not (mime.startswith('image/') or mime.startswith('video/')):raise ValueError('Not media')
+              (out/name).write_bytes(data)
+              report['media'].append({'name':name,'source':source,'kind':kind,'mime':mime,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
+          url='https://www.instagram.com/api/v1/users/web_profile_info/?username=toxic_tales_eco'
+          try:
+              data,status,mime=request(url,{'X-IG-App-ID':'936619743392459'})
+              payload=json.loads(data);user=payload.get('data',{}).get('user',{})
+              if user.get('username')!='toxic_tales_eco':raise ValueError('No verified profile data')
+              report['attempts'].append({'source':'Instagram public profile','status':status,'outcome':'verified owner profile'})
+              edges=user.get('edge_owner_to_timeline_media',{}).get('edges',[])
+              count=0
+              for e in edges:
+                  n=e.get('node',{})
+                  if not n.get('is_video') or not n.get('video_url') or n.get('taken_at_timestamp',9999999999)>=1794009600:continue
+                  source='https://www.instagram.com/reel/'+n['shortcode']+'/'
+                  download(n['video_url'],f'original_reel_{count+1}.mp4',source,'original owner Reel')
+                  count+=1
+                  if count==3:break
+              report['attempts'][-1]['original_reels_downloaded']=count
+          except Exception as e:
+              report['attempts'].append({'source':'Instagram public profile','outcome':'unavailable','error':str(e)[:220]})
+          url='https://www.reddit.com/r/ecology/comments/1kdmc0l.json?raw_json=1'
+          try:
+              data,status,mime=request(url)
+              p=json.loads(data)[0]['data']['children'][0]['data']
+              if p.get('id')!='1kdmc0l' or 'Toxic Tales' not in p.get('selftext',''):raise ValueError('Unexpected reference post')
+              report['attempts'].append({'source':'Original outreach Reddit post','status':status,'outcome':'retrieved','title':p.get('title')})
+              ids=[a['media_id'] for a in p.get('gallery_data',{}).get('items',[])]
+              md=p.get('media_metadata',{})
+              for i,mid in enumerate(ids[:5]):
+                  item=md.get(mid,{})
+                  media=html.unescape(item.get('s',{}).get('u',''))
+                  if media:download(media,f'original_infographic_{i+1}.jpg','https://www.reddit.com/r/ecology/comments/1kdmc0l/','earlier owner infographic; NOT a Reel')
+          except Exception as e:
+              report['attempts'].append({'source':'Original outreach Reddit post','outcome':'unavailable','error':str(e)[:220]})
+          (out/'report.json').write_text(json.dumps(report,indent=2))
+          print(json.dumps(report,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: toxic-tales-original-benchmark-references
+          path: benchmark-reference
+          retention-days: 7
