@@ -11,21 +11,26 @@
     "source": "Authenticated Metricool planner UI: You have posted 1 out of your 20 available posts in your plan this month.",
     "url": "https://app.metricool.com/planner/calendar?blogId=7937614"
   },
-  "scheduled_ids": [],
+  "scheduled_ids": [
+    "419994151",
+    "419994528"
+  ],
   "published_ids": [
     "419869962"
   ],
   "published_post_ids": [
     "TT-002-REEL"
   ],
-  "reserved_candidate_ids": [
-    "TT-002-CAROUSEL",
-    "TT-003-REEL"
-  ],
+  "reserved_candidate_ids": [],
   "unresolved_submissions": [],
   "monthly_cap": 20,
   "planned_usage_with_current_candidates": 3,
   "new_scheduling_allowed": true,
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
-  "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9"
+  "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
+  "scheduled_post_ids": [
+    "TT-002-CAROUSEL",
+    "TT-003-REEL"
+  ],
+  "calendar_reconciled_on": "2026-11-07"
 }

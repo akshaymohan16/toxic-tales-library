@@ -4,14 +4,27 @@
   "brand_confirmed": true,
   "timezone_confirmed": "Europe/Vienna",
   "deployment_and_media": "verified",
-  "scientific_candidates": 3,
-  "scheduled_posts_returned": 0,
-  "published_history_rows_returned": {"feed": 0, "reels": 0, "stories": 0},
-  "new_metricool_submissions": 0,
-  "decision": "HOLD_PENDING_HISTORY_RECONCILIATION",
-  "reason": "Fresh connection with empty historical feeds and only an all-zero connection-day aggregate. Coverage has not been established; no count is invented.",
-  "automatic_next_step": "Daily publisher rechecks the full calendar month's schedule, published feed/Reel history and available Stories history, reconciles the ledger and pending candidates, then schedules verified future slots only when capacity is established.",
-  "history_limitation": "Official Metricool guidance says pre-connection Stories cannot be backfilled and some Instagram connection types omit Story metrics. Never promise that an empty response proves those historical Stories did not exist. Do not silently wait for inherently unrecoverable history; distinguish that limit from initial sync and report a persistent actionable blocker honestly.",
-  "documentation": ["https://help.metricool.com/historical-data-available-5zavf", "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9"],
-  "routine_user_approval_required": false
+  "release_commit": "788b338bcb61b5302e085ad07097a8a5fa0978b8",
+  "verification_run": 42382836366,
+  "quality_standard": "quality/PRODUCTION_STANDARD.md",
+  "decision": "ACTIVE_RELEASED_MEDIA_SCHEDULED",
+  "reason": "Full-paper records, rendered-frame/carousel/cover review, final-ASR/loudness checks, exact-file approvals and current public-byte verification completed. Actual planner counter established capacity.",
+  "scheduled_posts_returned": 2,
+  "published_provider_receipts": 1,
+  "new_metricool_submissions": 2,
+  "scheduled_post_ids": [
+    "TT-002-CAROUSEL",
+    "TT-003-REEL"
+  ],
+  "routine_user_approval_required": false,
+  "automatic_next_step": "Sunday producer prepares a NEW distinct paper for Tuesday 10 November and then future missing weekly slots. Daily publisher reconciles receipts, schedules released candidates, repairs routine failures and confirms actual publication after due times.",
+  "review_limit": "No human listening or original Instagram audio parity claimed; technical audio checks and final ASR reviewed.",
+  "quota": {
+    "observed_used": 1,
+    "scheduled_reservations": 2,
+    "projected": 3,
+    "cap": 20
+  },
+  "resolved_hold": "Replaced the old HOLD_PENDING_HISTORY_RECONCILIATION after authenticated planner counter verification; empty analytics do not undo that positive evidence.",
+  "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed."
 }

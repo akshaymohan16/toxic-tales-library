@@ -18,19 +18,23 @@
       "id": "TT-002-CAROUSEL",
       "date": "2026-11-12T10:00:00+01:00",
       "format": "CAROUSEL",
-      "status": "awaiting_publisher_checks"
+      "status": "scheduled",
+      "metricool_id": "419994151",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=3228865276435317523"
     },
     {
       "id": "TT-003-REEL",
       "date": "2026-11-14T10:00:00+01:00",
       "format": "REEL",
-      "status": "awaiting_publisher_checks"
+      "status": "scheduled",
+      "metricool_id": "419994528",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=6027580248989713344"
     }
   ],
   "scientific_review": "completed; see evidence files",
-  "render_and_live_media_review": "First complete neural build passed; final caption and immutable-media release pending.",
-  "verification_run": 42381168970,
-  "schedule_status": "Rebuilt media integration in progress; producer resumed; new Tuesday paper assigned.",
+  "render_and_live_media_review": "Released exact neural exports after scientific, visual and technical audio review; current public-byte verification passed.",
+  "verification_run": 42382836366,
+  "schedule_status": "Thursday carousel and Saturday Reel scheduled and read back with autoPublish true, draft false. New Tuesday paper remains assigned to Sunday producer.",
   "quota_status": "Authenticated planner counter verified 1/20 used; reserve future posts separately.",
   "idempotency_note": "TT-002-REEL remains in published.json as a 7 November publication. Never repost it. Renewed 2-Reels-per-week request authorises a new distinct Tuesday paper. Retain Thursday carousel and Saturday TT-003."
 }
