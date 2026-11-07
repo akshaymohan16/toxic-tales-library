@@ -1,0 +1,16 @@
+{
+  "batch_id": "2026-11-09",
+  "created_on": "2026-11-07",
+  "timezone": "Europe/Vienna",
+  "episode_ids": ["TT-002", "TT-003"],
+  "slots": [
+    {"id": "TT-002-REEL", "date": "2026-11-10T10:00:00+01:00", "format": "REEL"},
+    {"id": "TT-002-CAROUSEL", "date": "2026-11-12T10:00:00+01:00", "format": "CAROUSEL"},
+    {"id": "TT-003-REEL", "date": "2026-11-14T10:00:00+01:00", "format": "REEL"}
+  ],
+  "scientific_review": "completed; see evidence files",
+  "render_and_live_media_review": "pending",
+  "schedule_status": "not_submitted",
+  "quota_status": "history_coverage_unconfirmed",
+  "idempotency_note": "These three slots are already authored. The Sunday producer must not create duplicate stories or extra posts for the same publication week. Scheduling remains the publisher's job after all gates pass."
+}

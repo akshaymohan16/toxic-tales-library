@@ -1,0 +1,37 @@
+{
+  "id": "TT-003",
+  "slug": "tt-003-recovery-with-pollution",
+  "title": "Fish removed. Recovery still lagged.",
+  "hook": "Fish removed. Recovery still lagged.",
+  "doi": "10.1021/acs.est.4c02807",
+  "paper_title": "Pharmaceutical Pollution Alters the Structure of Freshwater Communities and Hinders Their Recovery from a Fish Predator",
+  "citation": "Michelangeli et al. (2024), Environ. Sci. Technol.",
+  "tags": ["recovery", "food webs", "pharmaceuticals", "freshwater"],
+  "summary": "In 12 outdoor mesocosms, zooplankton abundance rebounded less in fluoxetine-exposed treatments than in controls after fish removal. Fluoxetine dosing continued during this recovery period.",
+  "evidence_note": "Four tanks per treatment; responses varied and estimates were uncertain. The experiment did not establish the mechanism, test recovery after drug removal, or measure diversity loss. Nutrient addition confounded attribution of the initial zooplankton decline solely to fish.",
+  "source_url": "https://doi.org/10.1021/acs.est.4c02807",
+  "review_status": "verified",
+  "checks": {"full_text": true, "design": true, "findings": true, "limitations": true, "rights": true},
+  "review_note": "Full-text design, timeline, results and caveats checked on 2026-11-07; see evidence/tt-003.md. Quota and current live-media inspection remain required before scheduling.",
+  "publication_enabled": true,
+  "is_ai_generated": true,
+  "batch_id": "2026-11-09",
+  "posts": [
+    {
+      "id": "TT-003-REEL",
+      "format": "REEL",
+      "publication_date": "2026-11-14T10:00:00+01:00",
+      "caption": "TT-003-REEL | FISH REMOVED. RECOVERY STILL LAGGED.\n\nDoes removing one pressure guarantee recovery when another remains?\n\nResearchers created 12 outdoor freshwater tank communities, with four tanks per treatment. All received mosquitofish; some later received fluoxetine, an antidepressant, while others were solvent controls.\n\nAfter fish removal, zooplankton abundance rebounded less in the fluoxetine treatments than in controls. Important: drug dosing continued for the 21-day post-removal period. This was not evidence of permanent damage after pollution stopped.\n\nResponses varied between tanks and estimates were uncertain. The mechanism was not established. Nutrients were also added before fish introduction, so the initial zooplankton decline cannot be attributed solely to fish. These were simplified outdoor communities, not whole lakes.\n\nOriginal research: Michelangeli et al. (2024), Environmental Science & Technology.\nDOI: https://doi.org/10.1021/acs.est.4c02807\nResearch library: https://akshaymohan16.github.io/toxic-tales-library/#tt-003-recovery-with-pollution\n\nOriginal schematic illustrations and synthetic narration; not experimental footage. Follow @toxic_tales_eco.\n\n#ToxicTales #Ecotoxicology #EcologicalRecovery #FreshwaterEcology #ScienceCommunication"
+    }
+  ],
+  "scenes": [
+    {"kind": "fish", "headline": "FISH REMOVED. RECOVERY STILL LAGGED.", "speech": "Does removing a fish predator guarantee recovery when pollution remains?"},
+    {"kind": "river", "headline": "12 OUTDOOR TANK COMMUNITIES", "speech": "Researchers built twelve outdoor tank communities, with four tanks per treatment."},
+    {"kind": "fish", "headline": "FISH FIRST. DRUG EXPOSURE LATER.", "speech": "All received fish. Some later received fluoxetine, an antidepressant; others were controls."},
+    {"kind": "river", "headline": "A SMALLER REBOUND", "speech": "After fish removal, tiny aquatic animals called zooplankton rebounded less in the drug-exposed tanks."},
+    {"kind": "caveat", "headline": "THE POLLUTION CONTINUED", "speech": "Drug dosing continued. This was not a test of recovery after pollution ended."},
+    {"kind": "caveat", "headline": "THE LIMITS MATTER", "speech": "Responses varied between tanks. The mechanism was not established, and outdoor tanks are not whole lakes."},
+    {"kind": "end", "headline": "ONE PRESSURE REMOVED. ANOTHER REMAINS.", "speech": "Removing one pressure may not be enough. Follow Toxic Tales; find the original paper in our research library."}
+  ],
+  "slides": []
+}
