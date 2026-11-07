@@ -1,0 +1,86 @@
+name: Editorial rebuild v3 - no publication
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/editorial-rebuild-v3.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audio:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install free speech and transcription tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak-ng ffmpeg
+          python -m pip install 'kokoro-onnx==0.4.9' soundfile faster-whisper
+      - name: Generate checked scripts and align audible words
+        env:
+          OMP_NUM_THREADS: '2'
+        run: |
+          python - <<'PY'
+          import hashlib,json,time,urllib.request
+          from pathlib import Path
+          import numpy as np
+          import soundfile as sf
+          from kokoro_onnx import Kokoro
+          from faster_whisper import WhisperModel
+          out=Path('rebuild-v3');out.mkdir()
+          models=Path('models');models.mkdir()
+          files={'kokoro-v1.0.onnx':'7d5df8ecf7d4b1878015a32686053fd0eebe2bc377234608764cc0ef3636a6c5','voices-v1.0.bin':'bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d'}
+          for name,sha in files.items():
+              urllib.request.urlretrieve('https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/'+name,models/name)
+              if hashlib.sha256((models/name).read_bytes()).hexdigest()!=sha:raise RuntimeError('Unverified model bytes')
+          tts=Kokoro(str(models/'kokoro-v1.0.onnx'),str(models/'voices-v1.0.bin'))
+          stories={
+            'tt-002':[
+              'An antidepressant made these fish more alike.',
+              'Not in appearance. In how active they were.',
+              'Researchers raised guppy populations for two years, across twelve tanks: four per treatment.',
+              'Then they tested individual fish repeatedly.',
+              'With fluoxetine exposure, activity differed less from fish to fish. Yet average activity showed no clear difference.',
+              'That is a change an average alone could miss.',
+              'But risk-taking did not show the same pattern. This experiment did not demonstrate declining wild populations.',
+              'The lesson? Look beyond the average. Real science. Dark twists. Follow Toxic Tales.'
+            ],
+            'tt-003':[
+              'Remove the fish. The food web should bounce back. Right?',
+              'Not so fast when another pressure remains.',
+              'Researchers built twelve outdoor tank communities. All received fish; some later received the antidepressant fluoxetine.',
+              'After the fish were removed, tiny animals called zooplankton rebounded less in the drug-exposed tanks.',
+              'The crucial detail? Drug dosing continued throughout that recovery period.',
+              'This was not a test of recovery after pollution stopped.',
+              'Responses varied between tanks. The mechanism was unresolved, and tanks are not whole lakes.',
+              'Removing one pressure may not be enough. Real science. Dark twists. Follow Toxic Tales.'
+            ]}
+          asr=WhisperModel('small.en',device='cpu',compute_type='int8',cpu_threads=2)
+          for story,texts in stories.items():
+              folder=out/story;folder.mkdir();segments=[];pieces=[];clock=0
+              for i,text in enumerate(texts):
+                  audio,sr=tts.create(text,voice='af_heart',speed=1.07,lang='en-us')
+                  audio=np.asarray(audio,dtype=np.float32);p=folder/f'segment_{i:02}.wav';sf.write(p,audio,sr,subtype='PCM_16')
+                  speech=len(audio)/sr;pause=.14 if i not in [1,4,6] else .22
+                  transcript,_=asr.transcribe(str(p),language='en',word_timestamps=True,beam_size=5,condition_on_previous_text=False)
+                  words=[];recognised=[]
+                  for seg in transcript:
+                      recognised.append(seg.text)
+                      for w in seg.words or []:words.append({'word':w.word.strip(),'start':round(w.start,3),'end':round(w.end,3),'probability':round(w.probability,4)})
+                  segments.append({'index':i,'text':text,'asr_text':' '.join(recognised).strip(),'start':clock,'speech_duration':speech,'duration':speech+pause,'words':words})
+                  pieces.extend([audio,np.zeros(int(pause*sr),dtype=np.float32)]);clock+=speech+pause
+              sf.write(folder/'voice.wav',np.concatenate(pieces),sr,subtype='PCM_16')
+              (folder/'timing.json').write_text(json.dumps(segments,indent=2))
+              (folder/'transcript.txt').write_text('\n\n'.join(texts))
+              print(story,round(clock,2),'seconds')
+          (out/'provenance.json').write_text(json.dumps({'engine':'kokoro-onnx 0.4.9','model':'Kokoro v1.0','model_license':'Apache-2.0','runtime_license':'MIT','voice':'af_heart','speed':1.07,'checksums':files,'sample_rate':24000,'asr_check':'faster-whisper small.en word timestamps; transcription is an intelligibility check, not a listening claim','paid_services':False,'publication':False},indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: toxic-tales-v3-narration
+          path: rebuild-v3
+          retention-days: 7
