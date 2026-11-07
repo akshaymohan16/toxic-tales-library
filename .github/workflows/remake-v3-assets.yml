@@ -1,0 +1,83 @@
+name: Remake v3 assets - NO PUBLISHING
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/remake-v3-assets.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  prepare:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install free local narration tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak-ng ffmpeg
+          python -m pip install 'kokoro-onnx==0.4.9' soundfile pymupdf
+      - name: Prepare unpublished voice and reference media
+        env:
+          OMP_NUM_THREADS: '2'
+        run: |
+          python - <<'PY'
+          import json,urllib.request,hashlib,time
+          from pathlib import Path
+          import numpy as np, soundfile as sf, fitz
+          from kokoro_onnx import Kokoro
+          out=Path('remake-v3');out.mkdir(); models=Path('models');models.mkdir()
+          base='https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/'
+          for n in ['kokoro-v1.0.onnx','voices-v1.0.bin']:
+              urllib.request.urlretrieve(base+n,models/n)
+          tts=Kokoro(str(models/'kokoro-v1.0.onnx'),str(models/'voices-v1.0.bin'))
+          script=[
+          'An antidepressant made guppies behave more alike.',
+          'Specifically, in how active they were.',
+          'Researchers exposed guppy populations to fluoxetine for two years, using twelve tanks.',
+          'Then they tested each fish four times, tracking how far it swam.',
+          'Exposed populations showed smaller differences in activity between individual fish.',
+          'Yet average activity did not clearly change.',
+          'Risk-taking differences did not show the same pattern.',
+          'The study did not establish whether this would last after exposure ended.',
+          "That's why an average alone can miss part of pollution's impact.",
+          'Follow Toxic Tales. Read the original paper in the caption.'
+          ]
+          timing=[];clock=0.;pieces=[]
+          for i,text in enumerate(script):
+              audio,sr=tts.create(text,voice='af_heart',speed=1.00,lang='en-us')
+              audio=np.asarray(audio,dtype=np.float32)
+              sf.write(out/f'voice_{i:02}.wav',audio,sr,subtype='PCM_16')
+              speech=len(audio)/sr;duration=speech+.2
+              timing.append({'index':i,'text':text,'start':clock,'speech_duration':speech,'duration':duration})
+              pieces.extend([audio,np.zeros(int(.2*sr),dtype=np.float32)]);clock+=duration
+          sf.write(out/'narration.wav',np.concatenate(pieces),sr,subtype='PCM_16')
+          (out/'timing.json').write_text(json.dumps(timing,indent=2))
+          (out/'transcript.txt').write_text('\n\n'.join(script))
+          assets=[
+           {'file':'wild_guppies.jpg','url':'https://upload.wikimedia.org/wikipedia/commons/a/a2/Guppy_pho_0048.jpg','author':'Per Harald Olsen','license':'CC BY 3.0','license_url':'https://creativecommons.org/licenses/by/3.0/','source':'https://commons.wikimedia.org/wiki/File:Guppy_pho_0048.jpg'},
+           {'file':'guppy_pair.png','url':'https://upload.wikimedia.org/wikipedia/commons/1/19/Trinidadian_guppy_%28Poecilia_reticulata%29_male_and_female.png','author':'Amy E. Deacon, Hideyasu Shimadzu, Maria Dornelas, Indar W. Ramnarine and Anne E. Magurran','license':'CC BY 4.0','license_url':'https://creativecommons.org/licenses/by/4.0/','source':'https://commons.wikimedia.org/wiki/File:Trinidadian_guppy_(Poecilia_reticulata)_male_and_female.png'}]
+          for a in assets:
+              with urllib.request.urlopen(urllib.request.Request(a['url'],headers={'User-Agent':'ToxicTales-EditorialReview/1.0'}),timeout=60) as r:data=r.read()
+              (out/a['file']).write_bytes(data);a['sha256']=hashlib.sha256(data).hexdigest();a['use']='General species reference; not study fish. Cropping, background isolation and animation permitted with attribution.'
+          (out/'rights.json').write_text(json.dumps(assets,indent=2))
+          # Private QA crops only, never add the publisher PDF or these pages to the public site or finished video.
+          try:
+              url='https://www.michaelbertramlab.org/s/POLVERINO-Psychoactive-pollution-suppresses-individual-differences-in-fish-behaviour.pdf'
+              with urllib.request.urlopen(url,timeout=60) as r:data=r.read()
+              doc=fitz.open(stream=data,filetype='pdf')
+              for page in [2,4,5]:
+                  doc[page].get_pixmap(matrix=fitz.Matrix(1.5,1.5)).save(out/f'qa_paper_page_{page+1}.png')
+              (out/'qa_paper_text.txt').write_text('\n'.join(p.get_text() for p in doc))
+          except Exception as e:
+              (out/'qa_paper_fetch_error.txt').write_text(str(e))
+          (out/'report.json').write_text(json.dumps({'voice':'af_heart','engine':'kokoro-onnx 0.4.9','duration':clock,'sample_rate':sr,'publishing':False,'purpose':'Unpublished remake; does not enable any production or posting automation.'},indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: toxic-tales-remake-v3-assets
+          path: remake-v3
+          retention-days: 7
