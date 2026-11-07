@@ -76,9 +76,20 @@
   "active_pilot_id": "TT-005",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
   "visual_upgrade_standard": "nature-visuals-v1",
-  "new_pilot_review_hold": {"episode_id": "TT-005", "scope": "candidate_only", "reason": "New visual pilot requested for owner review; ordinary automation remains enabled."},
+  "new_pilot_review_hold": {
+    "episode_id": "TT-005",
+    "scope": "candidate_only",
+    "reason": "New visual pilot requested for owner review; ordinary automation remains enabled."
+  },
   "editorial_workflow_approved_on": "2026-11-07",
   "approved_pilot_id": "TT-004",
   "approved_pilot_fingerprint": "a70c13bde0d36f7cb62fc7d9ecef687af36728f180391931265041a5ce166223",
-  "owner_pilot_approved_at": "2026-11-07T17:39:09.516815+00:00"
+  "owner_pilot_approved_at": "2026-11-07T17:39:09.516815+00:00",
+  "visual_pilot_deployment": {
+    "episode_id": "TT-005",
+    "source_commit": "084bf0e6204bb5eaaf8b34f65a56d7bece84f9f9",
+    "workflow_run_id": 42402379631,
+    "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b",
+    "status": "verified_preview_awaiting_owner_review"
+  }
 }

@@ -74,3 +74,12 @@ The exact TT-004 pilot is owner-approved and confirmed published at https://www.
 Permanent research destination: Instagram bio -> https://linktr.ee/toxictaleseco -> https://akshaymohan16.github.io/toxic-tales-library . The chain was verified on 7 November 2026. Maintain the individual source page with citation, DOI, original full-text link, claim checks, limitations, context sources and asset credits. Do not redistribute publisher PDFs without rights.
 
 Notify once per positively confirmed published Reel with title, live Instagram link, DOI and research-record link. Scheduling is not publication; recorded notification output does not establish push/email delivery. Preserve duplicate/capacity checks and the 20-destination-post monthly ceiling.
+
+
+## TT-005 completed visual pilot - 7 November 2026
+
+The new wood-frog pilot is complete: 50.875 seconds at native 1080 x 1920, with Fraunces/Manrope typography, licensed USFWS reference photographs, original animated cell/process illustrations, a matching six-page carousel, complete captions and a permanent research record including the focal paper, 2005 supporting paper, correction, BibTeX and RIS. Preview: https://akshaymohan16.github.io/toxic-tales-library/pilot-tt-005.html?review=3048cc50e4ba . Research: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-005.html . Exact fingerprint: 3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b.
+
+All six independent final editorial checks pass after fixing actual-font caption overflow, dispersed-solute positioning and two carousel label collisions. Eight final public files were downloaded and their hashes verified; GitHub build, deploy and anonymous-media verification passed in run 42402379631. Browser playback reached the end. Audio claims are limited to transcript/critical-term and loudness/peak checks; no listening or VEED-audio parity is claimed. Full observations and identities are in quality/pilots/tt-005.json.
+
+TT-005 has NOT been posted or submitted to Metricool. It is the specifically requested visual pilot awaiting the owner's judgement; its candidate-only hold does not pause ordinary automation. Both existing tasks are enabled with the upgraded instructions. The next routine batch still needs two eligible distinct-paper Reels and one companion carousel; an unapproved pilot does not silently fill a weekly slot. Preserve TT-004's published media and avoid duplicates.

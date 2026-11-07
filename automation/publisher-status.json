@@ -3,7 +3,7 @@
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": "Europe/Vienna",
-  "deployment_and_media": "TT-004 corrected public export verified",
+  "deployment_and_media": "TT-005 final visual pilot public bytes verified; published TT-004 media preserved",
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
   "decision": "ACTIVE_APPROVED_STANDARD",
   "reason": "Owner explicitly requested resumption and full automation again; both task prompts now mandate the visual upgrade. New TT-005 is held for owner review without pausing ordinary production.",
@@ -27,7 +27,7 @@
   "updated_metricool_posts": 1,
   "journalism_standard": "quality/SCIENCE_JOURNALISM.md",
   "draft_posts_held": 2,
-  "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot-tt-005.html",
+  "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot-tt-005.html?review=3048cc50e4ba",
   "pilot_record": "quality/pilots/tt-005.json",
   "historical_pilot_verification": {
     "episode_id": "TT-003",
@@ -53,9 +53,9 @@
     "TT-003-REEL"
   ],
   "pending_new_pilot_post_id": "TT-005-REEL",
-  "pilot_record_status": "new_visual_pilot_in_production_candidate_only_hold",
+  "pilot_record_status": "awaiting_owner_visual_pilot_approval",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
-  "updated_at": "2026-11-07T18:20:33.739169+00:00",
+  "updated_at": "2026-11-07T18:46:58.643485+00:00",
   "latest_publication": {
     "post_id": "TT-004-REEL",
     "metricool_id": "420123422",
@@ -84,5 +84,15 @@
       "schedule": "Daily 10:15 Europe/Vienna"
     },
     "verification": "Both existing tasks enabled; exact updated visual-upgrade prompts verified by fresh automation peek. No successful unattended run claimed."
+  },
+  "new_visual_pilot": {
+    "id": "TT-005",
+    "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b",
+    "technical_and_editorial_review": "pass",
+    "owner_approval": null,
+    "publication": "not_submitted",
+    "duration_seconds": 50.875,
+    "research_record": "https://akshaymohan16.github.io/toxic-tales-library/sources/tt-005.html",
+    "verification_run": 42402379631
   }
 }
