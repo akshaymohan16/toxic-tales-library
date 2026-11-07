@@ -1,1 +1,5 @@
-Pillow>=10,<13
+Pillow==11.3.0
+numpy==2.2.6
+kokoro-onnx==0.4.9
+soundfile==0.13.1
+faster-whisper==1.2.1

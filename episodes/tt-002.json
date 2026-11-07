@@ -1,17 +1,28 @@
 {
   "id": "TT-002",
   "slug": "tt-002-the-average-can-hide",
-  "title": "The pollution an average can hide",
-  "hook": "What can an average hide?",
+  "title": "The fish became more alike",
+  "hook": "An antidepressant made these fish more alike.",
   "doi": "10.1098/rspb.2020.2294",
   "paper_title": "Psychoactive pollution suppresses individual differences in fish behaviour",
   "citation": "Polverino et al. (2021), Proc. R. Soc. B",
-  "tags": ["fish", "behaviour", "pharmaceuticals", "evidence"],
+  "tags": [
+    "fish",
+    "behaviour",
+    "pharmaceuticals",
+    "evidence"
+  ],
   "summary": "In a two-year experiment with replicated guppy populations, fluoxetine exposure reduced between-individual variation in activity without a clear treatment difference in mean activity. Variation in risk-taking did not show the same response.",
   "evidence_note": "Twelve mesocosm populations, four per treatment; individual fish were repeatedly tested. The finding concerns activity variation in this experiment, not the loss of all personality traits or demonstrated wild-population decline. Other traits and exposure designs can yield different outcomes.",
   "source_url": "https://doi.org/10.1098/rspb.2020.2294",
   "review_status": "verified",
-  "checks": {"full_text": true, "design": true, "findings": true, "limitations": true, "rights": true},
+  "checks": {
+    "full_text": true,
+    "design": true,
+    "findings": true,
+    "limitations": true,
+    "rights": true
+  },
   "review_note": "Full-text methods and results checked on 2026-11-07; traceable claim locations and contextual checks are in evidence/tt-002.md. Publication also requires current technical and account-quota checks.",
   "publication_enabled": true,
   "is_ai_generated": true,
@@ -21,7 +32,9 @@
       "id": "TT-002-REEL",
       "format": "REEL",
       "publication_date": "2026-11-10T10:00:00+01:00",
-      "caption": "TT-002-REEL | WHAT CAN AN AVERAGE HIDE?\n\nA group can change even when its average looks similar. In a two-year experiment, researchers maintained guppies in 12 large tanks: four separate populations per treatment, with no, low or higher fluoxetine exposure. Fluoxetine is an antidepressant.\n\nRepeated behavioural tests found less variation between individual fish in activity in exposed populations. Mean activity did not clearly differ between treatments.\n\nThe limit matters: variation in risk-taking did not show the same response. This is not evidence that every fish lost its personality, or that wild fish populations declined. Results can depend on the trait and exposure conditions.\n\nOriginal research: Polverino et al. (2021), Proceedings of the Royal Society B.\nDOI: https://doi.org/10.1098/rspb.2020.2294\nResearch library: https://akshaymohan16.github.io/toxic-tales-library/#tt-002-the-average-can-hide\n\nOriginal schematic illustrations and synthetic narration; not experimental footage. Follow @toxic_tales_eco for the science behind the story.\n\n#ToxicTales #Ecotoxicology #FishBehaviour #FreshwaterEcology #ScienceCommunication"
+      "caption": "TT-002-REEL | WHAT CAN AN AVERAGE HIDE?\n\nA group can change even when its average looks similar. In a two-year experiment, researchers maintained guppies in 12 large tanks: four separate populations per treatment, with no, low or higher fluoxetine exposure. Fluoxetine is an antidepressant.\n\nRepeated behavioural tests found less variation between individual fish in activity in exposed populations. Mean activity did not clearly differ between treatments.\n\nThe limit matters: variation in risk-taking did not show the same response. This is not evidence that every fish lost its personality, or that wild fish populations declined. Results can depend on the trait and exposure conditions.\n\nOriginal research: Polverino et al. (2021), Proceedings of the Royal Society B.\nDOI: https://doi.org/10.1098/rspb.2020.2294\nResearch library: https://akshaymohan16.github.io/toxic-tales-library/#tt-002-the-average-can-hide\n\nReference guppy imagery: 5snake5, CC0. Original explanatory animations and synthetic narration; not experimental footage. Follow @toxic_tales_eco for the science behind the story.\n\n#ToxicTales #Ecotoxicology #FishBehaviour #FreshwaterEcology #ScienceCommunication",
+      "status": "published",
+      "published_url": "https://www.instagram.com/reel/DfcF7aYiuWU/"
     },
     {
       "id": "TT-002-CAROUSEL",
@@ -30,22 +43,271 @@
       "caption": "TT-002-CAROUSEL | BEHIND THE STUDY: AVERAGES AND INDIVIDUALS\n\nThe average is not the whole story. This companion to TT-002 separates the treatment comparison, repeated measurements and study limits.\n\nTwelve independent guppy populations provided four tanks per treatment. Of 180 sampled fish, 174 completed all four behavioural trials. Fish were subsamples within exposure tanks, not 174 independent dose replicates.\n\nThe reported change was reduced between-individual activity variation, without a clear treatment difference in mean activity. Risk-taking variation did not show that same response. A non-significant mean difference is not proof that the true means are identical.\n\nThis two-year mesocosm result cannot establish the loss of all personality traits or a decline of wild populations.\n\nPolverino et al. (2021), Proceedings of the Royal Society B.\nDOI: https://doi.org/10.1098/rspb.2020.2294\nSources and limits: https://akshaymohan16.github.io/toxic-tales-library/#tt-002-the-average-can-hide\n\nOriginal explanatory slides; no research figures reproduced.\n\n#ToxicTales #ResearchMethods #Ecotoxicology #AnimalBehaviour #ScienceCommunication"
     }
   ],
-  "scenes": [
-    {"kind": "fish", "headline": "WHAT CAN AN AVERAGE HIDE?", "speech": "Pollution can change a group of fish without a clear change in average activity."},
-    {"kind": "river", "headline": "A TWO-YEAR EXPERIMENT", "speech": "Researchers raised guppy populations with or without the antidepressant fluoxetine for two years."},
-    {"kind": "river", "headline": "12 TANKS. REPEATED TESTS.", "speech": "Twelve tanks provided four populations per treatment. Scientists repeatedly measured how far individual fish swam."},
-    {"kind": "fish", "headline": "LESS DIFFERENCE BETWEEN FISH", "speech": "Exposed populations showed less variation between individuals in activity. Average activity did not clearly differ."},
-    {"kind": "caveat", "headline": "NOT EVERY PERSONALITY TRAIT", "speech": "That does not mean every fish lost its personality. Risk-taking variation did not show the same change."},
-    {"kind": "caveat", "headline": "EXPERIMENT, NOT WILD PROOF", "speech": "These were experimental populations, not evidence that wild fish populations were declining."},
-    {"kind": "end", "headline": "LOOK BEYOND THE AVERAGE", "speech": "Follow Toxic Tales. The original paper and its limitations are in our research library."}
-  ],
   "slides": [
-    {"headline": "THE AVERAGE IS NOT THE WHOLE STORY", "body": "Behind TT-002: a guppy experiment examined both the average activity of a population and the differences between individual fish."},
-    {"headline": "WHAT WAS REPLICATED?", "body": "Twelve large exposure tanks: four independent populations per treatment. Fish received no, low or higher fluoxetine exposure over two years."},
-    {"headline": "REPEATED FISH, NOT EXTRA TANKS", "body": "Of 180 sampled fish, 174 completed all four behavioural trials. Those repeated tests revealed individual differences. They did not create 174 independent exposure tanks."},
-    {"headline": "WHAT DID THE AVERAGE SHOW?", "body": "Mean activity did not clearly differ between treatments. A non-significant difference does not prove that the true means are identical."},
-    {"headline": "WHAT DID INDIVIDUALS REVEAL?", "body": "Between-individual variation in activity was lower in exposed populations. Risk-taking variation did not show the same pattern. One behavioural trait is not an animal's entire personality."},
-    {"headline": "WHAT REMAINS UNPROVEN?", "body": "The study did not demonstrate wild-population decline or show that the effects were permanent. Findings can depend on the trait, species and exposure conditions."},
-    {"headline": "FOLLOW THE EVIDENCE", "body": "Read the original study and the limits in our research library. DOI: 10.1098/rspb.2020.2294. Follow @toxic_tales_eco for research-backed stories."}
-  ]
+    {
+      "headline": "THE AVERAGE IS NOT THE WHOLE STORY",
+      "body": "Behind TT-002: a guppy experiment examined both the average activity of a population and the differences between individual fish."
+    },
+    {
+      "headline": "WHAT WAS REPLICATED?",
+      "body": "Twelve large exposure tanks: four independent populations per treatment. Fish received no, low or higher fluoxetine exposure over two years."
+    },
+    {
+      "headline": "REPEATED FISH, NOT EXTRA TANKS",
+      "body": "Of 180 sampled fish, 174 completed all four behavioural trials. Those repeated tests revealed individual differences. They did not create 174 independent exposure tanks."
+    },
+    {
+      "headline": "WHAT DID THE AVERAGE SHOW?",
+      "body": "Mean activity did not clearly differ between treatments. A non-significant difference does not prove that the true means are identical."
+    },
+    {
+      "headline": "WHAT DID INDIVIDUALS REVEAL?",
+      "body": "Between-individual variation in activity was lower in exposed populations. Risk-taking variation did not show the same pattern. One behavioural trait is not an animal's entire personality."
+    },
+    {
+      "headline": "WHAT REMAINS UNPROVEN?",
+      "body": "The study did not demonstrate wild-population decline or show that the effects were permanent. Findings can depend on the trait, species and exposure conditions."
+    },
+    {
+      "headline": "FOLLOW THE EVIDENCE",
+      "body": "Read the original study and the limits in our research library. DOI: 10.1098/rspb.2020.2294. Follow @toxic_tales_eco for research-backed stories."
+    }
+  ],
+  "evidence_file": "evidence/tt-002.md",
+  "evidence": {
+    "full_text_url": "https://www.michaelbertramlab.org/s/POLVERINO-Psychoactive-pollution-suppresses-individual-differences-in-fish-behaviour.pdf",
+    "checked_at": "2026-11-07",
+    "design": "Two years; 12 mesocosm populations, four per treatment. Repeated tests of individual fish; fish are subsamples, tanks are exposure replicates. Measured fluoxetine approximately 40 and 366 ng/L.",
+    "claims": [
+      {
+        "claim": "Exposed populations showed lower between-individual activity variation.",
+        "location": "Results 3(b), figure 2 and Discussion."
+      },
+      {
+        "claim": "Mean activity showed no clear treatment difference.",
+        "location": "Results 3(a), treatment effect p=0.275; not an equivalence test."
+      },
+      {
+        "claim": "Risk-taking variation did not show the same response.",
+        "location": "Results 3(b), risk-taking variance components."
+      },
+      {
+        "claim": "174 fish completed all four repeated behavioural trials.",
+        "location": "Methods 2(c), repeated behavioural assays; 180 sampled initially."
+      }
+    ],
+    "limitations": [
+      "Activity is one trait, not all personality.",
+      "Experimental populations do not establish wild population decline.",
+      "A non-significant mean comparison does not prove identical means."
+    ],
+    "correction_check": "Title and DOI searches on 2026-11-07 found no correction/retraction notice; repeat before future reuse."
+  },
+  "production": {
+    "cover_asset": "guppy",
+    "cover_title": "THE FISH BECAME MORE ALIKE",
+    "critical_terms": [
+      "fluoxetine",
+      "risk",
+      "average"
+    ],
+    "assets": [
+      {
+        "id": "guppy",
+        "filename": "guppy.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Poecilia_reticulata_-_Guppy%2C_male%2C_cobra-green_morph.jpg",
+        "creator": "5snake5",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Poecilia_reticulata_-_Guppy,_male,_cobra-green_morph.jpg",
+        "changes": "Cropped, resized and edited with labels; reference imagery, not animals or footage from this experiment."
+      },
+      {
+        "id": "guppy-film",
+        "filename": "guppy.ogv",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Feeding_of_Poecilia_reticulata.ogv",
+        "creator": "5snake5",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Feeding_of_Poecilia_reticulata.ogv",
+        "changes": "Cropped, resized and edited with labels; reference imagery, not animals or footage from this experiment."
+      }
+    ],
+    "segments": [
+      {
+        "speech": "An antidepressant made these fish more alike.",
+        "captions": [
+          "An antidepressant made",
+          "these fish more alike."
+        ],
+        "shots": [
+          {
+            "kind": "nature",
+            "asset": "guppy-film",
+            "title": "MORE ALIKE?",
+            "note": "Guppies / reference footage"
+          }
+        ]
+      },
+      {
+        "speech": "Not in appearance. In how active they were.",
+        "captions": [
+          "Not in appearance.",
+          "In how active they were."
+        ],
+        "shots": [
+          {
+            "kind": "specimen",
+            "asset": "guppy",
+            "title": "IN THEIR ACTIVITY",
+            "note": "Poecilia reticulata / reference photograph"
+          }
+        ]
+      },
+      {
+        "speech": "Researchers raised guppy populations for two years, across twelve tanks: four per treatment.",
+        "captions": [
+          "Researchers raised guppy populations",
+          "for two years,",
+          "across twelve tanks:",
+          "four per treatment."
+        ],
+        "shots": [
+          {
+            "kind": "tanks",
+            "title": "12 TANKS. TWO YEARS.",
+            "note": "Experimental design / schematic"
+          }
+        ]
+      },
+      {
+        "speech": "Then they tested individual fish repeatedly.",
+        "captions": [
+          "Then they tested",
+          "individual fish repeatedly."
+        ],
+        "shots": [
+          {
+            "kind": "tracking",
+            "title": "SAME FISH. FOUR TESTS.",
+            "note": "Illustration / not recorded swimming tracks"
+          }
+        ]
+      },
+      {
+        "speech": "With fluoxetine exposure, activity differed less from fish to fish. Yet average activity showed no clear difference.",
+        "captions": [
+          "With fluoxetine exposure,",
+          "activity differed less",
+          "from fish to fish.",
+          "Yet average activity showed",
+          "no clear difference."
+        ],
+        "shots": [
+          {
+            "kind": "result",
+            "title": "A CHANGE IN VARIATION",
+            "rows": [
+              [
+                "Between-fish differences",
+                "Smaller"
+              ],
+              [
+                "Average activity",
+                "No clear difference"
+              ]
+            ],
+            "start": 0,
+            "end": 0.6
+          },
+          {
+            "kind": "nature",
+            "asset": "guppy-film",
+            "offset": 7,
+            "title": "THE AVERAGE MISSED IT",
+            "note": "Reference footage / not the experiment",
+            "start": 0.6,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "That is a change an average alone could miss.",
+        "captions": [
+          "That is a change",
+          "an average alone could miss."
+        ],
+        "shots": [
+          {
+            "kind": "result",
+            "title": "LOOK AT BOTH",
+            "rows": [
+              [
+                "Average",
+                "One part of the story"
+              ],
+              [
+                "Individual differences",
+                "Another part"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "speech": "But risk-taking did not show the same pattern. This experiment did not demonstrate declining wild populations.",
+        "captions": [
+          "But risk-taking did not",
+          "show the same pattern.",
+          "This experiment did not demonstrate",
+          "declining wild populations."
+        ],
+        "shots": [
+          {
+            "kind": "limit",
+            "title": "ONE TRAIT, ONE STUDY",
+            "items": [
+              "Risk-taking: different result",
+              "No wild decline demonstrated"
+            ],
+            "start": 0,
+            "end": 0.55
+          },
+          {
+            "kind": "specimen",
+            "asset": "guppy",
+            "title": "KEEP THE LIMITS",
+            "note": "Reference photograph",
+            "start": 0.55,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "The lesson? Look beyond the average. Real science. Dark twists. Follow Toxic Tales.",
+        "captions": [
+          "The lesson? Look beyond the average.",
+          "Real science. Dark twists.",
+          "Follow Toxic Tales."
+        ],
+        "shots": [
+          {
+            "kind": "nature",
+            "asset": "guppy-film",
+            "offset": 12,
+            "title": "LOOK BEYOND THE AVERAGE",
+            "note": "Full paper and limits in the caption",
+            "start": 0,
+            "end": 0.45
+          },
+          {
+            "kind": "closing",
+            "start": 0.45,
+            "end": 1
+          }
+        ]
+      }
+    ]
+  }
 }
+

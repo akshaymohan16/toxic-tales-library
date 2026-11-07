@@ -6,12 +6,23 @@
   "doi": "10.1021/acs.est.4c02807",
   "paper_title": "Pharmaceutical Pollution Alters the Structure of Freshwater Communities and Hinders Their Recovery from a Fish Predator",
   "citation": "Michelangeli et al. (2024), Environ. Sci. Technol.",
-  "tags": ["recovery", "food webs", "pharmaceuticals", "freshwater"],
+  "tags": [
+    "recovery",
+    "food webs",
+    "pharmaceuticals",
+    "freshwater"
+  ],
   "summary": "In 12 outdoor mesocosms, zooplankton abundance rebounded less in fluoxetine-exposed treatments than in controls after fish removal. Fluoxetine dosing continued during this recovery period.",
   "evidence_note": "Four tanks per treatment; responses varied and estimates were uncertain. The experiment did not establish the mechanism, test recovery after drug removal, or measure diversity loss. Nutrient addition confounded attribution of the initial zooplankton decline solely to fish.",
   "source_url": "https://doi.org/10.1021/acs.est.4c02807",
   "review_status": "verified",
-  "checks": {"full_text": true, "design": true, "findings": true, "limitations": true, "rights": true},
+  "checks": {
+    "full_text": true,
+    "design": true,
+    "findings": true,
+    "limitations": true,
+    "rights": true
+  },
   "review_note": "Full-text design, timeline, results and caveats checked on 2026-11-07; see evidence/tt-003.md. Quota and current live-media inspection remain required before scheduling.",
   "publication_enabled": true,
   "is_ai_generated": true,
@@ -21,17 +32,234 @@
       "id": "TT-003-REEL",
       "format": "REEL",
       "publication_date": "2026-11-14T10:00:00+01:00",
-      "caption": "TT-003-REEL | FISH REMOVED. RECOVERY STILL LAGGED.\n\nDoes removing one pressure guarantee recovery when another remains?\n\nResearchers created 12 outdoor freshwater tank communities, with four tanks per treatment. All received mosquitofish; some later received fluoxetine, an antidepressant, while others were solvent controls.\n\nAfter fish removal, zooplankton abundance rebounded less in the fluoxetine treatments than in controls. Important: drug dosing continued for the 21-day post-removal period. This was not evidence of permanent damage after pollution stopped.\n\nResponses varied between tanks and estimates were uncertain. The mechanism was not established. Nutrients were also added before fish introduction, so the initial zooplankton decline cannot be attributed solely to fish. These were simplified outdoor communities, not whole lakes.\n\nOriginal research: Michelangeli et al. (2024), Environmental Science & Technology.\nDOI: https://doi.org/10.1021/acs.est.4c02807\nResearch library: https://akshaymohan16.github.io/toxic-tales-library/#tt-003-recovery-with-pollution\n\nOriginal schematic illustrations and synthetic narration; not experimental footage. Follow @toxic_tales_eco.\n\n#ToxicTales #Ecotoxicology #EcologicalRecovery #FreshwaterEcology #ScienceCommunication"
+      "caption": "TT-003-REEL | FISH REMOVED. RECOVERY STILL LAGGED.\n\nDoes removing one pressure guarantee recovery when another remains?\n\nResearchers created 12 outdoor freshwater tank communities, with four tanks per treatment. All received mosquitofish; some later received fluoxetine, an antidepressant, while others were solvent controls.\n\nAfter fish removal, zooplankton abundance rebounded less in the fluoxetine treatments than in controls. Important: drug dosing continued for the 21-day post-removal period. This was not evidence of permanent damage after pollution stopped.\n\nResponses varied between tanks and estimates were uncertain. The mechanism was not established. Nutrients were also added before fish introduction, so the initial zooplankton decline cannot be attributed solely to fish. These were simplified outdoor communities, not whole lakes.\n\nOriginal research: Michelangeli et al. (2024), Environmental Science & Technology.\nDOI: https://doi.org/10.1021/acs.est.4c02807\nResearch library: https://akshaymohan16.github.io/toxic-tales-library/#tt-003-recovery-with-pollution\n\nReference imagery: Robert Aguilar/SERC (CC BY 2.0); Alexander Klepnev (CC BY 4.0). Cropped/edited; not study footage. Credits and licence links: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-003.html\nSynthetic narration. Follow @toxic_tales_eco.\n\n#ToxicTales #Ecotoxicology #EcologicalRecovery #FreshwaterEcology #ScienceCommunication"
     }
   ],
-  "scenes": [
-    {"kind": "fish", "headline": "FISH REMOVED. RECOVERY STILL LAGGED.", "speech": "Does removing a fish predator guarantee recovery when pollution remains?"},
-    {"kind": "river", "headline": "12 OUTDOOR TANK COMMUNITIES", "speech": "Researchers built twelve outdoor tank communities, with four tanks per treatment."},
-    {"kind": "fish", "headline": "FISH FIRST. DRUG EXPOSURE LATER.", "speech": "All received fish. Some later received fluoxetine, an antidepressant; others were controls."},
-    {"kind": "river", "headline": "A SMALLER REBOUND", "speech": "After fish removal, tiny aquatic animals called zooplankton rebounded less in the drug-exposed tanks."},
-    {"kind": "caveat", "headline": "THE POLLUTION CONTINUED", "speech": "Drug dosing continued. This was not a test of recovery after pollution ended."},
-    {"kind": "caveat", "headline": "THE LIMITS MATTER", "speech": "Responses varied between tanks. The mechanism was not established, and outdoor tanks are not whole lakes."},
-    {"kind": "end", "headline": "ONE PRESSURE REMOVED. ANOTHER REMAINS.", "speech": "Removing one pressure may not be enough. Follow Toxic Tales; find the original paper in our research library."}
-  ],
-  "slides": []
+  "slides": [],
+  "evidence_file": "evidence/tt-003.md",
+  "evidence": {
+    "full_text_url": "https://pub.epsilon.slu.se/34834/1/michelangeli-m-et-al-20240826.pdf",
+    "checked_at": "2026-11-07",
+    "design": "Twelve 270-L outdoor communities, four per treatment. All received five male Gambusia holbrooki; solvent control and low/high fluoxetine treatments. Dosing continued for 21 days after fish removal. Measured means approximately 10 and 110 ng/L.",
+    "claims": [
+      {
+        "claim": "Zooplankton abundance rebounded less in exposed treatments following fish removal.",
+        "location": "Results: Changes in Zooplankton Abundance; recovery phase and corresponding figures."
+      },
+      {
+        "claim": "Fluoxetine dosing continued during the post-removal period.",
+        "location": "Methods: Experimental Design and Sampling, 113-day timeline; final 21-day recovery phase."
+      },
+      {
+        "claim": "The experiment used 12 outdoor mesocosms with four replicates per treatment.",
+        "location": "Methods: Experimental Setup and Experimental Design."
+      },
+      {
+        "claim": "Responses were variable and the mechanism was unresolved.",
+        "location": "Results uncertainty and Discussion; multiple candidate mechanisms considered."
+      }
+    ],
+    "limitations": [
+      "No drug-removal recovery test.",
+      "Not evidence of permanent damage or whole-lake response.",
+      "Nutrients were added before fish introduction, complicating attribution of initial decline.",
+      "All tanks received fish; no continuously fish-free control."
+    ],
+    "correction_check": "DOI/title searches and journal/PubMed records checked on 2026-11-07; no correction/retraction notice found."
+  },
+  "production": {
+    "cover_asset": "mosquitofish",
+    "cover_title": "FISH REMOVED. RECOVERY LAGGED.",
+    "critical_terms": [
+      "fluoxetine",
+      "dosing continued",
+      "not a test"
+    ],
+    "assets": [
+      {
+        "id": "mosquitofish",
+        "filename": "mosquitofish.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Gambusia_holbrooki_-_SERC.jpg",
+        "creator": "Robert Aguilar / Smithsonian Environmental Research Center",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Gambusia_holbrooki_-_SERC.jpg",
+        "changes": "Cropped, resized and edited with labels; reference imagery, not animals or footage from this experiment."
+      },
+      {
+        "id": "copepod",
+        "filename": "copepod.webm",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Copepod_Nauplius.webm",
+        "creator": "Alexander Klepnev",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Copepod_Nauplius.webm",
+        "changes": "Cropped, resized and edited with labels; reference imagery, not animals or footage from this experiment."
+      }
+    ],
+    "segments": [
+      {
+        "speech": "Remove the fish. The food web should bounce back. Right?",
+        "captions": [
+          "Remove the fish.",
+          "The food web should bounce back.",
+          "Right?"
+        ],
+        "shots": [
+          {
+            "kind": "specimen",
+            "asset": "mosquitofish",
+            "title": "FISH GONE. PROBLEM SOLVED?",
+            "note": "Eastern mosquitofish / reference photograph"
+          }
+        ]
+      },
+      {
+        "speech": "Not so fast when another pressure remains.",
+        "captions": [
+          "Not so fast",
+          "when another pressure remains."
+        ],
+        "shots": [
+          {
+            "kind": "micro",
+            "asset": "copepod",
+            "title": "ANOTHER PRESSURE REMAINS",
+            "note": "Copepod larva / reference microscopy"
+          }
+        ]
+      },
+      {
+        "speech": "Researchers built twelve outdoor tank communities. All received fish; some later received the antidepressant fluoxetine.",
+        "captions": [
+          "Researchers built twelve",
+          "outdoor tank communities.",
+          "All received fish;",
+          "some later received",
+          "the antidepressant fluoxetine."
+        ],
+        "shots": [
+          {
+            "kind": "tanks",
+            "title": "12 OUTDOOR COMMUNITIES",
+            "note": "Experimental design / schematic",
+            "start": 0,
+            "end": 0.48
+          },
+          {
+            "kind": "timeline",
+            "title": "FISH FIRST. DRUG LATER.",
+            "note": "Study sequence / not to time scale",
+            "start": 0.48,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "After the fish were removed, tiny animals called zooplankton rebounded less in the drug-exposed tanks.",
+        "captions": [
+          "After the fish were removed,",
+          "tiny animals called zooplankton",
+          "rebounded less",
+          "in the drug-exposed tanks."
+        ],
+        "shots": [
+          {
+            "kind": "micro",
+            "asset": "copepod",
+            "offset": 5,
+            "title": "ZOOPLANKTON",
+            "note": "Reference microscopy / not study footage",
+            "start": 0,
+            "end": 0.45
+          },
+          {
+            "kind": "rebound",
+            "title": "A SMALLER REBOUND",
+            "note": "Qualitative comparison / not plotted data",
+            "start": 0.45,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "The crucial detail? Drug dosing continued throughout that recovery period.",
+        "captions": [
+          "The crucial detail?",
+          "Drug dosing continued",
+          "throughout that recovery period."
+        ],
+        "shots": [
+          {
+            "kind": "timeline",
+            "title": "THE DRUG REMAINED",
+            "note": "Fluoxetine continued after fish removal"
+          }
+        ]
+      },
+      {
+        "speech": "This was not a test of recovery after pollution stopped.",
+        "captions": [
+          "This was not a test",
+          "of recovery after",
+          "pollution stopped."
+        ],
+        "shots": [
+          {
+            "kind": "limit",
+            "title": "WHAT WAS NOT TESTED",
+            "items": [
+              "Recovery after drug removal",
+              "Permanent damage"
+            ]
+          }
+        ]
+      },
+      {
+        "speech": "Responses varied between tanks. The mechanism was unresolved, and tanks are not whole lakes.",
+        "captions": [
+          "Responses varied between tanks.",
+          "The mechanism was unresolved,",
+          "and tanks are not whole lakes."
+        ],
+        "shots": [
+          {
+            "kind": "limit",
+            "title": "KEEP THE LIMITS",
+            "items": [
+              "Variable tank responses",
+              "Mechanism unresolved",
+              "Simplified communities"
+            ]
+          }
+        ]
+      },
+      {
+        "speech": "Removing one pressure may not be enough. Real science. Dark twists. Follow Toxic Tales.",
+        "captions": [
+          "Removing one pressure",
+          "may not be enough.",
+          "Real science. Dark twists.",
+          "Follow Toxic Tales."
+        ],
+        "shots": [
+          {
+            "kind": "micro",
+            "asset": "copepod",
+            "offset": 11,
+            "title": "ONE PRESSURE CAN REMAIN",
+            "note": "Full paper and limits in the caption",
+            "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "closing",
+            "start": 0.5,
+            "end": 1
+          }
+        ]
+      }
+    ]
+  }
 }
+

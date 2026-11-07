@@ -96,3 +96,4 @@ try:
 finally:
     (OUT/'report.json').write_text(json.dumps(report,indent=2))
     print(json.dumps({'passed':report['passed'],'commit':COMMIT,'checked_at':report['checked_at'],'public_files_verified':len(report['files'])}))
+
