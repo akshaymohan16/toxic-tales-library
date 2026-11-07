@@ -27,13 +27,13 @@
       "date": "2026-11-14T10:00:00+01:00",
       "format": "REEL",
       "status": "draft_awaiting_owner_pilot_approval",
-      "metricool_id": "420045654",
+      "metricool_id": "420062745",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=6027580248989713344"
     }
   ],
   "scientific_review": "completed; see evidence files",
-  "render_and_live_media_review": "TT-003 replaced by reviewed 66.25-second science-journalism export; exact bytes verified. Existing TT-002 carousel unchanged.",
-  "verification_run": 42385115239,
+  "render_and_live_media_review": "Complete visual pilot built and verified; owner approval is pending. Draft media replaced and read back; nothing new published.",
+  "verification_run": 42389865597,
   "schedule_status": "Future posts held as drafts pending owner approval of visual pilot; Tuesday research assignment retained.",
   "quota_status": "Authenticated planner counter verified 1/20 used; reserve future posts separately.",
   "idempotency_note": "TT-002-REEL remains in published.json as a 7 November publication. Never repost it. Renewed 2-Reels-per-week request authorises a new distinct Tuesday paper. Retain Thursday carousel and Saturday TT-003."

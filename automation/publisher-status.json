@@ -4,11 +4,11 @@
   "brand_confirmed": true,
   "timezone_confirmed": "Europe/Vienna",
   "deployment_and_media": "verified",
-  "release_commit": "f965de74d6395196f4aa0cfc8477801c27799827",
-  "verification_run": 42385115239,
+  "release_commit": "97d6540a23ca5b813eb1f07d9e5512f4b4031fc1",
+  "verification_run": 42389865597,
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
   "decision": "HOLD_OWNER_PILOT_APPROVAL",
-  "reason": "Owner requests a complete visual pilot and explicit approval before posting. Hold remains until owner approves the exact pilot.",
+  "reason": "Completed visual pilot is integrated as an unpublished Metricool draft. Owner will approve before publication.",
   "scheduled_posts_returned": 0,
   "published_provider_receipts": 1,
   "new_metricool_submissions": 0,
@@ -29,5 +29,7 @@
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
   "updated_metricool_posts": 1,
   "journalism_standard": "quality/SCIENCE_JOURNALISM.md",
-  "draft_posts_held": 2
+  "draft_posts_held": 2,
+  "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot.html",
+  "pilot_record": "quality/pilots/tt-003.json"
 }

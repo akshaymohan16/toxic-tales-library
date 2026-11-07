@@ -1,0 +1,36 @@
+{
+  "episode_id": "TT-003",
+  "decision": "awaiting_owner_approval",
+  "owner_approved": false,
+  "reviewed_at": "2026-11-07",
+  "reviewer": "Delegated Toxic Tales editor",
+  "media_commit": "97d6540a23ca5b813eb1f07d9e5512f4b4031fc1",
+  "verification_run": 42389865597,
+  "fingerprint": "de6e3de79586e0b1839f97649c2441c76db19ca84c00f7d868d33e761e89bbc8",
+  "evidence_sha256": "2e9572c68a4c9ff24f9d41e4d25dec2c3a7439bdcf6fee5cd9f561c37ccac2ba",
+  "files": {
+    "media/tt-003-recovery-with-pollution-de6e3de79586.mp4": "ef9802da9c598e63cb9648e3cc23fc52218d197354e676dfae713468cc82d19c",
+    "media/tt-003-recovery-with-pollution-de6e3de79586_cover.jpg": "eaf6567aff45e948c50ec9c2c50f58c1ad7e3707d368c4fbb11609a8b6d6fae3"
+  },
+  "duration_seconds": 64.125,
+  "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-003-contact.jpg?pilot=97d6540a",
+  "preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot.html",
+  "research_url": "https://akshaymohan16.github.io/toxic-tales-library/sources/tt-003.html",
+  "scientific_review": "Retains the verified focal paper and independent context-source checks in evidence/tt-003.md. Fish removed, fluoxetine continued throughout the following 21 days, smaller zooplankton abundance rebound, variability and unresolved mechanism, no drug-removal recovery test and no established whole-lake outcome. Reference copepod footage is not asserted to show study species or nauplii. Reference stream is explicitly not a pollution sampling site. Caption preserves additional nutrient/productivity limitations and all three paper references.",
+  "narrative_review": "Complete ecological story with stronger opening: fish gone but another pressure remains; identifies zooplankton and food-web role, separately sourced wastewater pathway, central recovery question, focused experiment and discovery, continued-dosing interpretive turn, uncertainty and bounded restoration question. No invented interviews, feelings, field observations, mechanisms or result numbers. Owner judgement of hook and pacing remains pending.",
+  "visual_review": "Viewed the owner's original VEED-style locust Reel, inspected new source videos, then actual encoded contact sheet and enlarged scenes. Replaced the damaging low-resolution pre-crop pipeline with native portrait footage and 24-fps decoding. Full-frame microscopy/stream imagery, outlined white italic captions, restrained lime emphasis and animated ecological relationships. Fixed Linux-font headline overlap after inspecting the first export; rechecked corrected pressure scene and both context/transfer scenes. Cover inspected and unchanged byte hash confirmed. Browser played final 1080x1920 export with readyState 4 at 64.125s. No blanket claim that subjective quality equals the owner's old work; that is the purpose of this pilot.",
+  "audio_review": "Final encoded ASR compared with script: 98.03% token similarity; all material qualifications retained. Minor transcription differences include twelve/12, mosquitofish/mosquito fish, and in/and lakes; segment transcript preserves intended lake sentence. No caption overlaps. Integrated loudness -16.66 LUFS, true peak -5.36 dBTP. This is technical/transcription review, not a listening judgement.",
+  "listening_review_claimed": false,
+  "original_audio_comparison_claimed": false,
+  "publication_scope": "Unpublished TT-003 pilot only; explicit owner approval required.",
+  "metricool_draft_id": "420062745",
+  "metricool_uuid": "6027580248989713344",
+  "approval_next_steps": [
+    "Wait for explicit owner approval in chat.",
+    "Preserve exact approved media URLs and hashes; approval belongs in this record and releases.json, not in the episode content.",
+    "If owner requests posting now, update this existing draft UUID using its freshly fetched numeric ID and imminent local publication time; never create a duplicate.",
+    "Confirm PUBLISHED plus public Instagram URL, save receipt, then report publication.",
+    "If immediate posting vacates Saturday 14 November, assign a new distinct-paper Reel to that slot for the Sunday producer; do not repost TT-003.",
+    "Resume recurring automation only after this owner hold is lifted, retaining two new Reels and one carousel per week and confirmed-publication notifications."
+  ]
+}
