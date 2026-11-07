@@ -1,0 +1,39 @@
+name: Historical Toxic Tales visual reference - no publishing
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/original-reference-check.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reference:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Retrieve public historical visual examples
+        run: |
+          python - <<'PY'
+          import json,urllib.request
+          from pathlib import Path
+          out=Path('original-references');out.mkdir()
+          log=[]
+          # Media links on the owner's public May 2025 Toxic Tales Reddit post.
+          for name,url in [('original_1.png','https://i.redd.it/dful292gfiye1.png'),('original_2.jpg','https://i.redd.it/wu9419kgfiye1.jpg'),('original_3.jpg','https://i.redd.it/36wycepgfiye1.jpg')]:
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 ToxicTales-Editorial-Reference'}),timeout=20) as r:
+                      data=r.read(15000000);typ=r.headers.get('Content-Type','')
+                  if not typ.startswith('image/'):raise ValueError(typ)
+                  (out/name).write_bytes(data);log.append({'file':name,'source':url,'status':'retrieved','purpose':'comparison only; not reuse in new Reel'})
+              except Exception as e:log.append({'file':name,'status':'unavailable','reason':str(e)[:180]})
+          (out/'source.json').write_text(json.dumps({'historical_post':'https://www.reddit.com/r/ecology/comments/1kdmc0l/','files':log,'video_audio_comparison':False},indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: toxic-tales-original-visual-references
+          path: original-references
+          retention-days: 7
