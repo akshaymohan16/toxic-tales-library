@@ -169,5 +169,212 @@
     "publication_status": "published",
     "public_url": "https://www.instagram.com/reel/DfcvkhGDsFb/",
     "published_confirmed_at": "2026-11-07T17:44:33.983826+00:00"
+  },
+  "TT-005": {
+    "episode_id": "TT-005",
+    "decision": "release",
+    "owner_approved": true,
+    "owner_approval": {
+      "approved": true,
+      "recorded_at": "2026-11-07T19:07:59.945Z",
+      "text": "Post the frog reel that you made, I like it, good job",
+      "scope": "Unchanged TT-005 REEL, cover and caption only; future branding applies to future exports. Carousel remains subject to ordinary checks and scheduling.",
+      "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b"
+    },
+    "reviewed_at": "2026-11-07T19:07:59.945Z",
+    "reviewer": "tt005_editor",
+    "media_commit": "084bf0e6204bb5eaaf8b34f65a56d7bece84f9f9",
+    "verification_run": 42402379631,
+    "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b",
+    "files": {
+      "media/tt-005-wood-frog-winter-survival-3048cc50e4ba.mp4": "8d89bd481e522ea513a10f3ee348a0b8e6f5da9c19cf63816e908e3bf1976c91",
+      "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_cover.jpg": "e8483fea17b02c5077bf67a377e1f80a5e2831898e6a2d914accb7bf32da995c",
+      "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_01.jpg": "971ed1c85523f9e0ba35a8707861ee0053610d8f183055878a1b312d8b537b12",
+      "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_02.jpg": "80fd9459356794a5dfc2cb18d29974deb03b22a98932f320ef781655143b0d6e",
+      "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_03.jpg": "7deab1849321833579f72967dbb38a824e7c4fe2bda7ccb6b721e4e82c4c50a7",
+      "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_04.jpg": "515ccc8ba0a9543fcb17b3349aba9a24f66254bbfb0739ff5f4e77e418858320",
+      "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_05.jpg": "fb375b00419a0d466123cedb65e14c8aff3ddd970a830494567f2b57ab1ca62b",
+      "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_06.jpg": "e152a82e33cce2600f061fc42cf2d77f81b161a3729f2a482967b180bd5ab6fe"
+    },
+    "evidence_sha256": "a2fb2e8c6b360afd285718a42dd45790fc2b169012cef0dbe6a5392da362da0e",
+    "duration_seconds": 50.875,
+    "final_editorial_review": {
+      "standard": "story-first-v1",
+      "reviewer": "tt005_editor",
+      "reviewed_at": "2026-11-07T18:46:13.098737+00:00",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "reviewed_encoded_frames": true,
+      "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b",
+      "source_sha256": "1c24b08e2cebddb48e880c9738ebb5608dacc98cb3c6b363b2e1775580e4a9da",
+      "evidence_sha256": "a2fb2e8c6b360afd285718a42dd45790fc2b169012cef0dbe6a5392da362da0e",
+      "files": {
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba.mp4": "8d89bd481e522ea513a10f3ee348a0b8e6f5da9c19cf63816e908e3bf1976c91",
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_cover.jpg": "e8483fea17b02c5077bf67a377e1f80a5e2831898e6a2d914accb7bf32da995c",
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_01.jpg": "971ed1c85523f9e0ba35a8707861ee0053610d8f183055878a1b312d8b537b12",
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_02.jpg": "80fd9459356794a5dfc2cb18d29974deb03b22a98932f320ef781655143b0d6e",
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_03.jpg": "7deab1849321833579f72967dbb38a824e7c4fe2bda7ccb6b721e4e82c4c50a7",
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_04.jpg": "515ccc8ba0a9543fcb17b3349aba9a24f66254bbfb0739ff5f4e77e418858320",
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_05.jpg": "fb375b00419a0d466123cedb65e14c8aff3ddd970a830494567f2b57ab1ca62b",
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_06.jpg": "e152a82e33cce2600f061fc42cf2d77f81b161a3729f2a482967b180bd5ab6fe"
+      },
+      "inspection_scope": {
+        "actual_video_file": "C:/Users/aksha/Downloads/tt-005-wood-frog-winter-survival-3048cc50e4ba.mp4",
+        "actual_encoded_frames": 34,
+        "opening_seconds": [
+          0,
+          1
+        ],
+        "every_shot_midpoint": true,
+        "every_internal_boundary_before_and_after": true,
+        "final_frame": true,
+        "full_size_cover": true,
+        "phone_scale_cover": true,
+        "profile_grid_crop": true,
+        "carousel_pages_inspected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "carousel_phone_width": 360,
+        "carousel_full_size_detail_inspected": [
+          3
+        ],
+        "independent_all_eight_file_sha256_match": true,
+        "comparison": "Previously inspected work/tt004-final-contact.jpg, representing the approved TT-004 export.",
+        "continuous_moving_playback_by_this_reviewer": false,
+        "listening_by_this_reviewer": false,
+        "limits": "This reviewer inspected decoded actual-frame samples, boundaries, final stills and all carousel pages. Pacing observations concern scene durations and sampled changes, not continuous playback or listening. Audio observations are limited to reported ASR, critical-term and measured loudness tests.",
+        "identity_refresh": "The corrected export changed only carousel page 3. The MP4, cover and other five carousel pages retain exactly the previously inspected bytes. Their completed image inspection is carried forward by independent SHA-256 comparison; no redundant playback or listening is claimed.",
+        "corrected_carousel_page_3_full_size_and_phone": true
+      },
+      "blockers": [],
+      "optional_improvements": [
+        "The side-profile leaf-litter photograph is more immediately recognisable than the top-down wet frog photograph. The current opening and cover nevertheless retain the frog head, eyes and short readable promise, so this is an editorial preference rather than a publication blocker.",
+        "A same-diagram cut resets some extracellular ice growth at the segment midpoint. This is clearly conceptual rather than a measured time series and does not change the claim; continuity could be smoother in future."
+      ],
+      "comparison_with_tt004": [
+        "The actual Fraunces headline and Manrope caption/label fonts create a clearer distinction between the story promise and spoken text than TT-004’s heavy all-capital headlines and italic captions.",
+        "TT-005 uses detailed native-HD photographs and restrained blue/amber scientific colour coding. TT-004 uses moving wildlife clips; this pilot exchanges some natural movement for close still photography and process animation, so it should not be described as universally superior.",
+        "The cell diagram visibly separates extracellular ice, a cell boundary, dispersed protective solutes and a directional water-loss arrow. It is more explanatory than a decorative frozen-frog effect, and no such fake freezing footage is used.",
+        "The companion carousel is deliberately designed, with its own text and hierarchy, rather than being screenshots from the film."
+      ],
+      "audio_technical_evidence": {
+        "final_asr_similarity": 0.9915966386554622,
+        "final_audio_transcript": "This wood frog can survive ice forming inside its body. How do its cells survive? In interior Alaska, winter survival starts before the first freeze. The frogs build up urea. Then, as freezing begins, their livers turn stored glycogen into glucose, sugar. Together, these substances limit ice formation and water loss from cells. They help the frog tolerate freezing without stopping it completely. In one experiment, researchers repeatedly froze and thawed, winter-prepared Alaskan wood frogs, finally reaching minus 8 degrees Celsius. All five frogs checked for survival, recovered, and stayed healthy for seven weeks. These were winter-conditioned Alaskan frogs. Not every frog can do this. Their winter strategy — protect living cells while part of the body freezes.",
+        "loudness": {
+          "input_i": "-16.73",
+          "input_tp": "-5.44",
+          "input_lra": "1.80"
+        },
+        "critical_terms": "Parent reports all mandatory terms passed; final transcript contains wood frog, urea, glycogen, glucose, minus eight, five frogs, seven weeks and the negation not every frog."
+      },
+      "checks": {
+        "cold_viewer": {
+          "decision": "pass",
+          "finding": "The encoded opening names the wood frog in its kicker and captions and states the ice-inside/still-alive promise immediately. The real frog remains visible and the captions do not cover its eyes.",
+          "basis": "Actual 0-second, 1-second and first-shot midpoint frames; full cover, 360-pixel cover and centre profile crop."
+        },
+        "story": {
+          "decision": "pass",
+          "finding": "The film proceeds from an identified organism and survival question to seasonal preparation, protective chemistry, a controlled test, recovery and the population/season limit. The methods provide evidence for the biological explanation.",
+          "basis": "All eleven actual shot midpoints, all ten before/after boundary pairs, exact 117-word script and encoded ASR transcript; duration 50.875 seconds."
+        },
+        "visuals": {
+          "decision": "pass",
+          "finding": "Actual Fraunces/Manrope hierarchy, captions, animal crops and film diagrams pass image inspection. All six carousel pages are legible; corrected page 3 now keeps both scientific labels clear of ice crystals.",
+          "basis": "Thirty-four previously decoded frames plus full cover, phone/profile views and all carousel pages. Seven final artifacts retain those exact inspected bytes. The sole changed artifact, page 3, was independently inspected again at full resolution and 360-pixel phone width; all eight new download hashes match the manifest."
+        },
+        "payoff": {
+          "decision": "pass",
+          "finding": "The encoded film supplies the answer within the story: protective chemistry helps living cells tolerate freezing while some body water still becomes ice. The five recoveries and seven-week follow-up give a concrete outcome before the return to the animal.",
+          "basis": "Actual cell, recovery and final frames; source-aligned spoken script and final transcript. No answer is withheld for a caption or later post."
+        },
+        "scope": {
+          "decision": "pass",
+          "finding": "The film retains Alaskan and winter-conditioned qualifications and the spoken negation. The protocol display says final -8 degrees Celsius, and the recovery result belongs to five monitored frogs. No -16 degrees survival, resurrection or frozen-solid claim appears.",
+          "basis": "Actual experiment/recovery/scope frames, split captions after the actual-font overflow fix, final ASR transcript, carousel pages 4-6 and primary-paper review completed before render."
+        },
+        "retelling": {
+          "decision": "pass",
+          "finding": "Winter-prepared Alaskan wood frogs use protective chemistry that helps cells survive while ice forms elsewhere in the body. Five monitored frogs recovered after a controlled series of freezes ending at -8 degrees Celsius. This does not make every frog freeze-proof.",
+          "basis": "The organism, mechanism, five-animal result and decisive limitation are present in the film and matching carousel; the paper and correction are linked in the complete post and archive."
+        }
+      },
+      "artifact_comparison": [
+        {
+          "file": "media/tt-005-wood-frog-winter-survival-3048cc50e4ba.mp4",
+          "sha256": "8d89bd481e522ea513a10f3ee348a0b8e6f5da9c19cf63816e908e3bf1976c91",
+          "same_bytes_as_prior_inspected_export": true
+        },
+        {
+          "file": "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_cover.jpg",
+          "sha256": "e8483fea17b02c5077bf67a377e1f80a5e2831898e6a2d914accb7bf32da995c",
+          "same_bytes_as_prior_inspected_export": true
+        },
+        {
+          "file": "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_01.jpg",
+          "sha256": "971ed1c85523f9e0ba35a8707861ee0053610d8f183055878a1b312d8b537b12",
+          "same_bytes_as_prior_inspected_export": true
+        },
+        {
+          "file": "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_02.jpg",
+          "sha256": "80fd9459356794a5dfc2cb18d29974deb03b22a98932f320ef781655143b0d6e",
+          "same_bytes_as_prior_inspected_export": true
+        },
+        {
+          "file": "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_03.jpg",
+          "sha256": "7deab1849321833579f72967dbb38a824e7c4fe2bda7ccb6b721e4e82c4c50a7",
+          "same_bytes_as_prior_inspected_export": false
+        },
+        {
+          "file": "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_04.jpg",
+          "sha256": "515ccc8ba0a9543fcb17b3349aba9a24f66254bbfb0739ff5f4e77e418858320",
+          "same_bytes_as_prior_inspected_export": true
+        },
+        {
+          "file": "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_05.jpg",
+          "sha256": "fb375b00419a0d466123cedb65e14c8aff3ddd970a830494567f2b57ab1ca62b",
+          "same_bytes_as_prior_inspected_export": true
+        },
+        {
+          "file": "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_06.jpg",
+          "sha256": "e152a82e33cce2600f061fc42cf2d77f81b161a3729f2a482967b180bd5ab6fe",
+          "same_bytes_as_prior_inspected_export": true
+        }
+      ],
+      "resolved_blockers": [
+        {
+          "artifact": "carousel page 3",
+          "prior_fingerprint": "71927cb4ef9055ef40364c53b0faf409acc5120428ea18123ef3f7ec04bc117c",
+          "fix": "Water moves out now sits above/right of the ice diagram in clear space; Protective solutes inside sits below the bottom crystal. Both are legible without intersecting ice at full size and 360-pixel phone width.",
+          "verified_new_sha256": "7deab1849321833579f72967dbb38a824e7c4fe2bda7ccb6b721e4e82c4c50a7"
+        }
+      ],
+      "publication_status": "This editorial image review does not publish the pilot or override its owner-review hold. Listening was not performed by this reviewer and is not claimed."
+    },
+    "scientific_review": "Independent primary-paper review and exact final editorial findings retained in the pilot record.",
+    "visual_review": "Exact encoded frames, boundaries, cover, phone/profile crops and carousel pages independently inspected; owner approved the unchanged Reel. Future branding is a separate renderer.",
+    "audio_review": "Final ASR and technical audio checks passed; no listening judgement claimed.",
+    "listening_review_claimed": false,
+    "publication_scope": "Exact approved TT-005-REEL only; already published. Carousel not released for immediate posting.",
+    "publication_eligible": false,
+    "publication_status": "published",
+    "public_url": "https://www.instagram.com/reel/Dfc5DEPHJCJ/",
+    "metricool_id": "420178205",
+    "metricool_uuid": "2386175407143797944",
+    "published_confirmed_at": "2026-11-07T19:07:59.945Z",
+    "preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot-tt-005.html?review=3048cc50e4ba",
+    "research_url": "https://akshaymohan16.github.io/toxic-tales-library/sources/tt-005.html",
+    "approval_next_steps": [
+      "Never repost this Reel.",
+      "Future Reels require actual logo/no-footer branding and exact-export review.",
+      "Companion carousel must pass separate ordinary release/scheduling checks."
+    ],
+    "reviewed_contact_sheet": "Exact encoded-frame, boundary, cover and carousel observations retained in quality/pilots/tt-005.json",
+    "narrative_review": "The film proceeds from an identified organism and survival question to seasonal preparation, protective chemistry, a controlled test, recovery and the population/season limit. The methods provide evidence for the biological explanation. The encoded film supplies the answer within the story: protective chemistry helps living cells tolerate freezing while some body water still becomes ice. The five recoveries and seven-week follow-up give a concrete outcome before the return to the animal."
   }
 }

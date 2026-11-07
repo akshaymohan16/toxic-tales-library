@@ -1,12 +1,18 @@
 {
   "episode_id": "TT-005",
-  "status": "awaiting_owner_visual_pilot_approval",
-  "updated_at": "2026-11-07T18:46:58.643485+00:00",
-  "decision": "hold_for_owner_review",
+  "status": "published_owner_approved",
+  "updated_at": "2026-11-07T19:07:59.945Z",
+  "decision": "release_reel",
   "routine_automation_paused": false,
-  "owner_approval": null,
-  "publication_enabled": false,
-  "instagram_publication_claimed": false,
+  "owner_approval": {
+    "approved": true,
+    "recorded_at": "2026-11-07T19:07:59.945Z",
+    "text": "Post the frog reel that you made, I like it, good job",
+    "scope": "Unchanged TT-005 REEL, cover and caption only; future branding applies to future exports. Carousel remains subject to ordinary checks and scheduling.",
+    "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b"
+  },
+  "publication_enabled": true,
+  "instagram_publication_claimed": true,
   "preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot-tt-005.html?review=3048cc50e4ba",
   "research_record_url": "https://akshaymohan16.github.io/toxic-tales-library/sources/tt-005.html",
   "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b",
@@ -230,5 +236,10 @@
     "continuous_listening_claimed": false,
     "note": "Playback completed in the browser. The film bytes are unchanged by the final carousel-only correction. Visual review used actual encoded frames and boundaries; no auditory-quality or original-VEED parity claim."
   },
-  "release_rule": "This requested pilot remains a candidate-only hold pending owner judgement. Other eligible stories continue through normal autonomous production and publishing. Never treat the placeholder publication dates as scheduled provider receipts."
+  "release_rule": "Exact owner-approved Reel published. Never repost. Frozen episode publication_enabled=false is historical candidate state and retained to preserve exact media identity. Carousel requires its own normal release and scheduling checks.",
+  "publication_status": "published",
+  "public_url": "https://www.instagram.com/reel/Dfc5DEPHJCJ/",
+  "metricool_id": "420178205",
+  "metricool_uuid": "2386175407143797944",
+  "published_confirmed_at": "2026-11-07T19:07:59.945Z"
 }

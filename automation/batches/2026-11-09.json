@@ -74,5 +74,11 @@
   },
   "future_reel_episode_ids_pending": true,
   "owner_approved_pilot_fingerprint": "a70c13bde0d36f7cb62fc7d9ecef687af36728f180391931265041a5ce166223",
-  "owner_approval_date": "2026-11-07"
+  "owner_approval_date": "2026-11-07",
+  "latest_immediate_publication": {
+    "post_id": "TT-005-REEL",
+    "date": "2026-11-07T20:02:00+01:00",
+    "public_url": "https://www.instagram.com/reel/Dfc5DEPHJCJ/",
+    "effect_on_weekly_slots": "None. November 10 and 14 need new distinct-paper Reels; do not reuse frog DOI as a new Reel."
+  }
 }

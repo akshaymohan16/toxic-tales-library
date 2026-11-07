@@ -6,21 +6,21 @@
   "deployment_and_media": "TT-005 final visual pilot public bytes verified; published TT-004 media preserved",
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
   "decision": "ACTIVE_APPROVED_STANDARD",
-  "reason": "Owner explicitly requested resumption and full automation again; both task prompts now mandate the visual upgrade. New TT-005 is held for owner review without pausing ordinary production.",
+  "reason": "Owner-approved exact TT-005 Reel positively confirmed published; ordinary production and publishing remain active with mandatory future branding.",
   "scheduled_posts_returned": 0,
-  "published_provider_receipts": 2,
-  "new_metricool_submissions": 0,
+  "published_provider_receipts": 3,
+  "new_metricool_submissions": 1,
   "scheduled_post_ids": [],
   "routine_user_approval_required": false,
   "automatic_next_step": "Produce two new distinct-paper Reels for November 10 and 14 and a current-standard companion carousel for November 12. Never repost TT-004.",
   "review_limit": "Encoded frames, final transcript and technical audio reviewed; no listening or original-audio-parity claim.",
   "quota": {
-    "observed_used": 2,
+    "observed_used": 3,
     "active_draft_reservations": 1,
     "retired_drafts": 1,
-    "projected_active_usage": 3,
+    "projected_active_usage": 4,
     "cap": 20,
-    "note": "Two confirmed publications plus one held carousel candidate. Refresh planner usage before future scheduling.",
+    "note": "Three provider-confirmed publications plus one held carousel candidate; retired TT-003 remains a draft. Historical UI counter is not fresh. Refresh before future scheduling.",
     "observation_basis": "Provider-confirmed lower bound; previous UI counter 1/20 is historical."
   },
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
@@ -52,27 +52,28 @@
   "retired_draft_post_ids": [
     "TT-003-REEL"
   ],
-  "pending_new_pilot_post_id": "TT-005-REEL",
-  "pilot_record_status": "awaiting_owner_visual_pilot_approval",
+  "pending_new_pilot_post_id": null,
+  "pilot_record_status": "published_owner_approved",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
-  "updated_at": "2026-11-07T18:46:58.643485+00:00",
+  "updated_at": "2026-11-07T19:07:59.945Z",
   "latest_publication": {
-    "post_id": "TT-004-REEL",
-    "metricool_id": "420123422",
-    "metricool_uuid": "8432780738091634663",
+    "post_id": "TT-005-REEL",
+    "metricool_id": "420178205",
+    "metricool_uuid": "2386175407143797944",
     "provider_status": "PUBLISHED",
-    "public_url": "https://www.instagram.com/reel/DfcvkhGDsFb/",
-    "confirmed_at": "2026-11-07T17:44:33.983826+00:00"
+    "public_url": "https://www.instagram.com/reel/Dfc5DEPHJCJ/",
+    "published_confirmed_at": "2026-11-07T19:07:59.945Z"
   },
   "publication_notifications": {
     "notified_post_ids": [
       "TT-002-REEL",
-      "TT-004-REEL"
+      "TT-004-REEL",
+      "TT-005-REEL"
     ],
     "latest_delivery": "Current chat; live Reel link provided. Future ChatGPT result notifications configured; push/email settings unverified."
   },
   "recurring_tasks": {
-    "verified_at": "2026-11-07T18:20:33.739169+00:00",
+    "verified_at": "2026-11-07T19:09:18.655365+00:00",
     "producer": {
       "id": "6aeefcb926708191b092554230783da1",
       "enabled": true,
@@ -83,16 +84,25 @@
       "enabled": true,
       "schedule": "Daily 10:15 Europe/Vienna"
     },
-    "verification": "Both existing tasks enabled; exact updated visual-upgrade prompts verified by fresh automation peek. No successful unattended run claimed."
+    "verification": "Both existing tasks read back enabled with exact updated future branding and confirmed TT-005 publication prompts. No successful unattended run claimed.",
+    "branding_prompts_exact_readback": true
   },
   "new_visual_pilot": {
     "id": "TT-005",
     "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b",
     "technical_and_editorial_review": "pass",
-    "owner_approval": null,
-    "publication": "not_submitted",
+    "owner_approval": {
+      "approved": true,
+      "recorded_at": "2026-11-07T19:07:59.945Z",
+      "text": "Post the frog reel that you made, I like it, good job",
+      "scope": "Unchanged TT-005 REEL, cover and caption only; future branding applies to future exports. Carousel remains subject to ordinary checks and scheduling.",
+      "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b"
+    },
+    "publication": "published",
     "duration_seconds": 50.875,
     "research_record": "https://akshaymohan16.github.io/toxic-tales-library/sources/tt-005.html",
-    "verification_run": 42402379631
-  }
+    "verification_run": 42402379631,
+    "public_url": "https://www.instagram.com/reel/Dfc5DEPHJCJ/"
+  },
+  "future_branding_standard": "quality/BRANDING_STANDARD.md"
 }

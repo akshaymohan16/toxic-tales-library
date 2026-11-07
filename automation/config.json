@@ -43,13 +43,14 @@
       "unsupported claims",
       "quota-filling degraded posts"
     ],
-    "resume_rule": "Owner approved exact TT-004 on 7 November 2026; historical pilot hold resolved. All current evidence/editorial/visual/audio/exact-file checks remain mandatory for future releases.",
+    "resume_rule": "TT-004 and exact TT-005 Reel approved and published. Future releases require all evidence/editorial/visual/audio/exact-file checks plus branding review; ordinary automation remains enabled.",
     "journalism_standard": "quality/SCIENCE_JOURNALISM.md",
     "editorial_standard": "story-first-v1",
     "mandatory_project_memory": "MEMORY.md",
     "mandatory_review_schema": "quality/EDITORIAL_REVIEW_SCHEMA.md",
     "pre_render_review_required": true,
-    "independent_final_export_review_required": true
+    "independent_final_export_review_required": true,
+    "branding_standard": "quality/BRANDING_STANDARD.md"
   },
   "quota_policy": "Use observed Metricool planner counter plus scheduled destination reservations and uncertain writes, at most 20/month. Reconcile all visible posts for duplicate detection. Missing newly connected analytics do not override a verified usage counter.",
   "publication_policy": "Autonomous two distinct-paper Reels and one companion carousel weekly under mandatory evidence, editorial, visual, exact-file and deployment checks. Owner approved exact TT-004 on 7 November 2026; no routine owner approval required. New owner pauses remain binding.",
@@ -76,20 +77,18 @@
   "active_pilot_id": "TT-005",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
   "visual_upgrade_standard": "nature-visuals-v1",
-  "new_pilot_review_hold": {
-    "episode_id": "TT-005",
-    "scope": "candidate_only",
-    "reason": "New visual pilot requested for owner review; ordinary automation remains enabled."
-  },
   "editorial_workflow_approved_on": "2026-11-07",
-  "approved_pilot_id": "TT-004",
-  "approved_pilot_fingerprint": "a70c13bde0d36f7cb62fc7d9ecef687af36728f180391931265041a5ce166223",
-  "owner_pilot_approved_at": "2026-11-07T17:39:09.516815+00:00",
+  "approved_pilot_id": "TT-005",
+  "approved_pilot_fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b",
+  "owner_pilot_approved_at": "2026-11-07T19:07:59.945Z",
   "visual_pilot_deployment": {
     "episode_id": "TT-005",
     "source_commit": "084bf0e6204bb5eaaf8b34f65a56d7bece84f9f9",
     "workflow_run_id": 42402379631,
     "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b",
-    "status": "verified_preview_awaiting_owner_review"
-  }
+    "status": "verified_and_published_owner_approved"
+  },
+  "branding_supplement": "quality/BRANDING_STANDARD.md",
+  "future_reel_renderer": "nature-branded-9",
+  "canonical_brand_asset": "assets/branding/toxic-tales-logo.json"
 }

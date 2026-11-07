@@ -233,10 +233,67 @@
       },
       "notified": true,
       "notified_at": "2026-11-07T17:44:33.983826+00:00"
+    },
+    {
+      "post_id": "TT-005-REEL",
+      "episode_id": "TT-005",
+      "format": "REEL",
+      "doi": "10.1371/journal.pone.0117234",
+      "metricool_id": "420178205",
+      "metricool_uuid": "2386175407143797944",
+      "publication_date": "2026-11-07T20:02:00+01:00",
+      "publication_date_meaning": "Scheduled time; provider did not supply separate exact publication timestamp.",
+      "timezone": "Europe/Vienna",
+      "original_planned_date": "2026-11-10T10:00:00+01:00",
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.instagram.com/reel/Dfc5DEPHJCJ/",
+      "published_confirmed_at": "2026-11-07T19:07:59.945Z",
+      "confirmation_source": "Fresh Metricool getScheduledPosts returned matching ID/UUID, Instagram PUBLISHED and public URL.",
+      "auto_publish": true,
+      "draft": false,
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=2386175407143797944",
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-005-wood-frog-winter-survival-3048cc50e4ba.mp4"
+      ],
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-005-wood-frog-winter-survival-3048cc50e4ba_cover.jpg",
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-16288469284416189696.mp4"
+      ],
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-8227246352838881922.jpeg",
+      "source_files_sha256": {
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba.mp4": "8d89bd481e522ea513a10f3ee348a0b8e6f5da9c19cf63816e908e3bf1976c91",
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_cover.jpg": "e8483fea17b02c5077bf67a377e1f80a5e2831898e6a2d914accb7bf32da995c"
+      },
+      "release_fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b",
+      "release_commit": "084bf0e6204bb5eaaf8b34f65a56d7bece84f9f9",
+      "public_verification_run": 42402379631,
+      "owner_approved": true,
+      "owner_approval": {
+        "approved": true,
+        "recorded_at": "2026-11-07T19:07:59.945Z",
+        "text": "Post the frog reel that you made, I like it, good job",
+        "scope": "Unchanged TT-005 REEL, cover and caption only; future branding applies to future exports. Carousel remains subject to ordinary checks and scheduling.",
+        "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b"
+      },
+      "user_requested_immediate_publication": true,
+      "publication_eligible": true,
+      "publication_confirmation": "Provider-confirmed published; exact approved caption verified on provider readback. Source MP4/cover previously exact-byte verified; no fresh Metricool-hosted download hash claimed.",
+      "duplicate_guard": "Already published. Never resubmit TT-005-REEL or this DOI as a new Reel. November 10 and 14 still require new distinct-paper stories.",
+      "publication_notification": {
+        "channel": "current_chat",
+        "status": "delivered",
+        "notified_at": "2026-11-07T19:07:59.945Z",
+        "public_url": "https://www.instagram.com/reel/Dfc5DEPHJCJ/"
+      },
+      "notified": true,
+      "notified_at": "2026-11-07T19:07:59.945Z"
     }
   ],
   "notified_post_ids": [
     "TT-002-REEL",
-    "TT-004-REEL"
+    "TT-004-REEL",
+    "TT-005-REEL"
   ]
 }

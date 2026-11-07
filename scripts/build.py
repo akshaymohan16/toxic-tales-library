@@ -7,9 +7,23 @@ import production as story_renderer
 import production_v4 as legacy_renderer
 import production_pilot as pilot_renderer
 import production_nature as nature_renderer
+import production_branded as branded_renderer
 from editorial_gate import STANDARD, validate_pre_render, final_editorial_ok
 from production import ROOT, MEDIA, QA, CACHE, VERSION, sha, norm
 REPO='akshaymohan16/toxic-tales-library';SITE=ROOT/'site'
+
+# These exact historical exports predate the prospective logo/clean-frame rule.
+# An edited source or rerender does not inherit an episode-ID-only exemption.
+FROZEN_BRANDING_EXPORTS = {
+    'TT-002': '3107c7add56b0123b6365d75b1c015e8f1d564e748b77f500773226d64344a54',
+    'TT-004': 'a70c13bde0d36f7cb62fc7d9ecef687af36728f180391931265041a5ce166223',
+    'TT-005': '3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b',
+}
+BRANDING_CHECKS = ('actual_logo', 'placement', 'clean_frames', 'captions_and_labels',
+                   'scientific_limits', 'provenance', 'reference_imagery')
+BRANDING_FRAME_CHECKS = ('reviewed_encoded_frames', 'reviewed_opening_frames',
+                         'reviewed_every_shot_and_transition', 'reviewed_final_frame',
+                         'reviewed_cover', 'reviewed_phone_scale')
 def read(p,default=None):return json.loads(p.read_text(encoding='utf-8')) if p.exists() else default
 def write(p,obj):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(obj,indent=2,ensure_ascii=False),encoding='utf-8')
 
@@ -88,8 +102,82 @@ def validate(ep):
         assert ep['doi'] in p['caption'] and len(p['caption'])<=2200
     if any(p['format']=='CAROUSEL' for p in ep['posts']):assert 5<=len(ep['slides'])<=8
 
-def release_ok(a,m):
+def select_renderer(ep):
+    plan=ep['production'];declared=plan.get('renderer')
+    has_reel=any(p.get('format')=='REEL' for p in ep.get('posts',[]))
+    if has_reel and ep.get('id') not in {*FROZEN_BRANDING_EXPORTS, 'TT-003'}:
+        assert declared==branded_renderer.DECLARED_RENDERER, 'Future Reels require nature-branded-9 and the actual logo'
+    if declared==branded_renderer.DECLARED_RENDERER:return branded_renderer
+    if declared=='nature-story-8':return nature_renderer
+    if declared=='ecology-story-7':return pilot_renderer
+    assert not declared, 'Unknown renderer: '+str(declared)
+    return story_renderer if plan.get('editorial_style')=='science-journalism' else legacy_renderer
+
+
+def render_fingerprint(path,evidence_path,renderer,editorial_source):
+    # Preserve the exact historical concatenation order for frozen renderers.
+    payload=Path(path).read_bytes()+Path(evidence_path).read_bytes()+Path(renderer.__file__).read_bytes()+(ROOT/'requirements.txt').read_bytes()
+    if editorial_source:
+        for dependency in ['scripts/production.py','scripts/editorial_gate.py','quality/SCIENCE_JOURNALISM.md','quality/VISUAL_STANDARD.md','quality/PRODUCTION_STANDARD.md']:
+            payload+=(ROOT/dependency).read_bytes()
+        if renderer in (nature_renderer,branded_renderer):
+            payload+=(ROOT/'quality/VISUAL_UPGRADE_2026-11.md').read_bytes()
+            payload+=(ROOT/'scripts/production_pilot.py').read_bytes()
+    if renderer is branded_renderer:
+        # Includes the inherited visual/encode implementation, brand bytes and
+        # new release logic; changes invalidate only future branded exports.
+        for dependency in ['scripts/production_nature.py','quality/BRANDING_STANDARD.md',
+                           'assets/branding/toxic-tales-logo.json','scripts/build.py']:
+            payload+=(ROOT/dependency).read_bytes()
+    return hashlib.sha256(payload).hexdigest()
+
+
+def branding_review_ok(release,manifest,episode=None):
+    required=(manifest.get('declared_renderer')==branded_renderer.DECLARED_RENDERER
+              or manifest.get('branding_review_required') is True)
+    if episode and any(p.get('format')=='REEL' for p in episode.get('posts',[])):
+        required=required or FROZEN_BRANDING_EXPORTS.get(episode.get('id'))!=manifest.get('fingerprint')
+    if not required:return True
+    if not isinstance(release,dict):return False
+    if (manifest.get('declared_renderer')!=branded_renderer.DECLARED_RENDERER
+            or manifest.get('renderer')!=branded_renderer.VERSION
+            or manifest.get('branding_standard')!=branded_renderer.BRANDING_STANDARD):return False
+    try:
+        _,expected=branded_renderer.load_brand_logo()
+    except (OSError,ValueError,TypeError):
+        return False
+    asset=manifest.get('brand_asset',{})
+    if not isinstance(asset,dict) or any(asset.get(k)!=expected.get(k) for k in
+            ('sha256','download_sha256','archived_asset','source_url','owner','permission','dimensions','display_box_xywh')):return False
+    layout=manifest.get('branding_layout',{})
+    if not isinstance(layout,dict):return False
+    if any(layout.get(k) is not False for k in ('production_footer','progress_bar','field_notes_or_episode_code')):return False
+    if (layout.get('logo_visible_from_opening') is not True
+            or layout.get('scientific_labels_and_speech_captions') is not True
+            or layout.get('logo_box_xywh')!=list(branded_renderer.LOGO_BOX)):return False
+    review=release.get('branding_review',{})
+    if not isinstance(review,dict):return False
+    if review.get('standard')!=branded_renderer.BRANDING_STANDARD or review.get('decision')!='pass':return False
+    def substantive(value):
+        return isinstance(value,str) and value.strip().lower() not in {'','pass','passed','checked','ok','okay','yes','tbd','todo','n/a','none','placeholder'}
+    if not all(substantive(review.get(k)) for k in ('reviewer','reviewed_at')):return False
+    if (review.get('independent_from_script_author') is not True
+            or review.get('reviewer')==manifest.get('script_author')):return False
+    if not all(review.get(k) is True for k in BRANDING_FRAME_CHECKS):return False
+    if review.get('logo_sha256')!=expected['sha256']:return False
+    if not all(manifest.get(k) and review.get(k)==manifest.get(k) for k in ('fingerprint','files','evidence_sha256')):return False
+    checks=review.get('checks',{})
+    if not isinstance(checks,dict):return False
+    for key in BRANDING_CHECKS:
+        check=checks.get(key,{})
+        if (not isinstance(check,dict) or check.get('decision')!='pass'
+                or not substantive(check.get('finding')) or not substantive(check.get('basis'))):return False
+    return True
+
+
+def release_ok(a,m,episode=None):
     if not final_editorial_ok(a,m):return False
+    if not branding_review_ok(a,m,episode):return False
     if m.get('editorial_style')=='science-journalism' and not (a and a.get('narrative_review')):return False
     return bool(a and a.get('decision')=='release' and a.get('fingerprint')==m['fingerprint'] and a.get('files')==m['files'] and a.get('evidence_sha256')==m['evidence_sha256'] and all(a.get(k) for k in ['reviewed_contact_sheet','scientific_review','visual_review','audio_review']))
 
@@ -105,15 +193,8 @@ def main():
         if not ep.get('production'):continue
         validate(ep);evidence_path=ROOT/ep['evidence_file']
         editorial_source=validate_pre_render(ep,evidence_path.read_text(encoding='utf-8'))
-        renderer=nature_renderer if ep['production'].get('renderer')=='nature-story-8' else (pilot_renderer if ep['production'].get('renderer')=='ecology-story-7' else (story_renderer if ep['production'].get('editorial_style')=='science-journalism' else legacy_renderer))
-        fingerprint_bytes=path.read_bytes()+evidence_path.read_bytes()+Path(renderer.__file__).read_bytes()+(ROOT/'requirements.txt').read_bytes()
-        if editorial_source:
-            for dependency in ['scripts/production.py','scripts/editorial_gate.py','quality/SCIENCE_JOURNALISM.md','quality/VISUAL_STANDARD.md','quality/PRODUCTION_STANDARD.md']:
-                fingerprint_bytes+=(ROOT/dependency).read_bytes()
-            if renderer is nature_renderer:
-                fingerprint_bytes+=(ROOT/'quality/VISUAL_UPGRADE_2026-11.md').read_bytes()
-                fingerprint_bytes+=(ROOT/'scripts/production_pilot.py').read_bytes()
-        fp=hashlib.sha256(fingerprint_bytes).hexdigest()
+        renderer=select_renderer(ep)
+        fp=render_fingerprint(path,evidence_path,renderer,editorial_source)
         stem=ep['slug']+'-'+fp[:12]
         qa_path=QA/(ep['id'].lower()+'.json');m=read(qa_path,{})
         valid=cache.get(ep['id'])==fp and m.get('fingerprint')==fp and m.get('files') and all((SITE/p).exists() and sha(SITE/p)==h for p,h in m['files'].items())
@@ -143,7 +224,7 @@ def main():
             (SITE/'pilot.html').write_text(pilot_page(ep,entry,m,config,receipts),encoding='utf-8')
         if ep['id'] in {'TT-004','TT-005'}:
             (SITE/('pilot-'+ep['id'].lower()+'.html')).write_text(pilot_page(ep,entry,m,config,receipts),encoding='utf-8')
-        approved=release_ok(approvals.get(ep['id']),m)
+        approved=release_ok(approvals.get(ep['id']),m,ep)
         for p in ep['posts']:
             assert p['id'] not in ids,'Duplicate post ID';ids.add(p['id'])
             item={**p,'episode_id':ep['id'],'doi':ep['doi'],'source_slug':ep['slug'],'cover':media['cover'],'media':[media['reel']] if p['format']=='REEL' else media['slides'],'fingerprint':fp,'media_sha256':m['files'],'qa':entry['qa'],'scientifically_reviewed':True,'is_ai_generated':True,'quality_released':approved}
