@@ -38,6 +38,8 @@ Producer/craft sources: The Open Notebook's [short science-video reporting](http
 
 ## Mandatory acceptance principles
 
+Pilot production checks added during TT-004: a midpoint contact sheet can miss a blurred first frame and a subject leaving the crop. Inspect the first frame, an early hook frame, shot boundaries and the final frame as well as each shot midpoint. Choose footage offsets and portrait framing from actual source frames. Check subtitle width using the production font before rendering; a word-count limit alone does not prevent overflow. Speech verification may normalize numbers such as three/3 and punctuation, but must preserve negation and uncertainty words.
+
 1. Select the ecological question, published evidence and usable visual material together. A good paper may be unsuitable for a Reel.
 2. The opening must make sense to a new viewer without a caption, earlier post or unexplained pronoun. Establish subject and situation while withholding the explanation or outcome.
 3. Use one central question. Each detail advances it. Establish enough normal context for the surprising finding to mean something.

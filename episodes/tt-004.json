@@ -90,43 +90,43 @@
     "claims": [
       {
         "claim": "Some developing carp eggs survived mallard gut passage and subsequently hatched after incubation in water.",
-        "location": "Results, p. 15398; methods, pp. 15397–15398. Demonstrated in captive feeding experiments with two carp species; not a claim about all fish eggs."
+        "location": "Results, p. 15398; methods, pp. 15397–15398."
       },
       {
         "claim": "Eight captive mallards, four male and four female, were each fed approximately 500 eggs in each of two separate species trials.",
-        "location": "Materials and Methods, p. 15397. Force-feeding; approximately 8,000 eggs total is derived as 8 × ~500 × 2 and must retain the approximation sign."
+        "location": "Materials and Methods, p. 15397."
       },
       {
         "claim": "Species: common carp (Cyprinus carpio), Prussian carp (Carassius gibelio), mallard (Anas platyrhynchos).",
-        "location": "Materials and Methods, p. 15397. Do not present unrelated fish, eggs or hatchlings as experimental organisms."
+        "location": "Materials and Methods, p. 15397."
       },
       {
         "claim": "18 intact eggs were recovered: 8 common carp and 10 Prussian carp.",
-        "location": "Results, p. 15398; Fig. 1. Recovered intact is different from living or hatched."
+        "location": "Results, p. 15398; Fig. 1."
       },
       {
         "claim": "12 recovered eggs contained living embryos: 8 common carp and 4 Prussian carp.",
-        "location": "Results, p. 15398. Movement within translucent eggs indicated viability."
+        "location": "Results, p. 15398."
       },
       {
         "claim": "3 recovered eggs hatched after incubation: 1 common carp and 2 Prussian carp.",
-        "location": "Results, p. 15398. Hatching was in water after recovery, not inside a bird or directly upon defecation."
+        "location": "Results, p. 15398."
       },
       {
         "claim": "Nine of the 12 living recovered embryos died from fungal infection during incubation; control eggs also suffered substantial fungal loss.",
-        "location": "Results, p. 15398. Counts from this protocol do not provide a clean estimate of hatching probability in the wild."
+        "location": "Results, p. 15398."
       },
       {
         "claim": "Most recovered eggs passed within one hour; one common carp egg passed after four to six hours and subsequently hatched.",
-        "location": "Results, p. 15398. Not needed in voiceover. No actual flight or dispersal distance was measured."
+        "location": "Results, p. 15398."
       },
       {
         "claim": "Survival through digestion provides a possible route for eggs between water bodies; successful establishment in a new wild population was not tested.",
-        "location": "Discussion, pp. 15398–15399; experimental design. Use could/might/possible for pond-to-pond movement and establishment implications."
+        "location": "Discussion, pp. 15398–15399; experimental design."
       },
       {
         "claim": "The experiment used actively developing eggs, rather than the resistant dormant eggs discussed in earlier killifish research.",
-        "location": "Abstract and Materials and Methods, p. 15397. Background archive only; no invented explanation of why the carp eggs survived."
+        "location": "Abstract and Materials and Methods, p. 15397."
       }
     ],
     "limitations": [
@@ -192,10 +192,10 @@
     "script_author": "new_pilot_science",
     "voice_speed": 0.93,
     "cover_asset": "mallard_4k_by",
-    "cover_offset": 4,
+    "cover_offset": 8,
     "cover_focus": [
-      0.45,
-      0.55
+      0.55,
+      0.5
     ],
     "cover_lines": [
       "FISH EGGS.",
@@ -276,9 +276,9 @@
           {
             "kind": "duck",
             "asset": "mallard_4k_by",
-            "offset": 0,
+            "offset": 3,
             "focus": [
-              0.55,
+              0.6,
               0.5
             ],
             "inset_egg": true,
@@ -354,9 +354,9 @@
           {
             "kind": "feeding",
             "asset": "mallard_4k_by",
-            "offset": 8,
+            "offset": 3,
             "focus": [
-              0.45,
+              0.6,
               0.5
             ],
             "title": "8 MALLARDS\n2 CARP SPECIES",
@@ -442,9 +442,9 @@
           {
             "kind": "scope",
             "asset": "mallard_4k_by",
-            "offset": 12,
+            "offset": 12.9,
             "focus": [
-              0.45,
+              0.33,
               0.5
             ],
             "title": "A NEW FISH POPULATION?\nNOT TESTED HERE.",
@@ -475,9 +475,9 @@
           {
             "kind": "closing",
             "asset": "mallard_4k_by",
-            "offset": 12,
+            "offset": 13,
             "focus": [
-              0.45,
+              0.31,
               0.5
             ],
             "title": "A FISH’S RIDE\nTO A NEW POND?",
@@ -576,11 +576,11 @@
   },
   "editorial_review": {
     "standard": "story-first-v1",
-    "source_sha256": "50a83d879a7a2bbcf427456e0f1bff13d498dd1144b8391864769e80e53e7d36",
-    "reviewed_at": "2026-11-07T17:06:59.453002+00:00",
+    "source_sha256": "d1aecaba96647814ca2e747fdbd62aa174b59a923fe627f23e3d13a33d24eca1",
+    "reviewed_at": "2026-11-07T17:22:27.943262+00:00",
     "reviewer": "pilot_independent_editor",
     "decision": "pass",
-    "review_scope": "Pre-render assessment of the exact episode, full focal paper, evidence record, eight-segment shot plan, current renderer source and preliminary illustration contact sheet. Refreshed after caption-width corrections in segments 5 and 7: joined caption tokens exactly match the unchanged narration, including the full scientific negation. This does not approve encoded video or publishing. Final natural footage crops, transitions, captions, audio and cover still require inspection.",
+    "review_scope": "Pre-render assessment of the exact episode, full focal paper, evidence record, eight-segment shot plan, current renderer source and preliminary illustration contact sheet. Refreshed after caption-width corrections, precise public source-location cleanup and duck framing changes. Joined captions preserve the unchanged narration and full negation. The first encoded version was independently held for poor cover and late duck crops. This revision changes source offsets/focus and cover_focus; its corrected encoded first/early/final frames and cover still require final inspection. No encoded-film or publication approval is claimed here.",
     "checks": {
       "cold_viewer": {
         "decision": "pass",

@@ -353,7 +353,7 @@ class Visuals:
         return im
 
     def pilot_cover(self):
-        im=self.picture(self.ep['production']['cover_asset'],self.ep['production'].get('cover_offset',4))
+        im=self.picture(self.ep['production']['cover_asset'],self.ep['production'].get('cover_offset',4),self.ep['production'].get('cover_focus'))
         layer=Image.new('RGBA',(W,H));d=ImageDraw.Draw(layer)
         for y in range(H):
             a=210*max(0,1-y/650)+230*max(0,(y-760)/520)
@@ -411,6 +411,15 @@ def render(ep,voice,out):
     grid=Image.new('RGB',(1080,640*math.ceil(len(frames)/3)),BG)
     for i,im in enumerate(frames):grid.paste(im,((i%3)*360,(i//3)*640))
     grid.save(QA/(ep['id'].lower()+'-contact.jpg'),quality=91)
+    boundary_frames=[]
+    for label,seek in [('opening-0s',0),('opening-1s',1)]:
+        name=f'{ep["id"].lower()}-{label}.jpg'
+        sh(['ffmpeg','-hide_banner','-loglevel','error','-y','-ss',str(seek),'-i',target,'-frames:v','1','-vf','scale=540:960',QA/name])
+        boundary_frames.append(f'qa/{name}')
+    name=f'{ep["id"].lower()}-final-frame.jpg'
+    # Decode and reverse only the final second so this is the final encoded frame.
+    sh(['ffmpeg','-hide_banner','-loglevel','error','-y','-sseof','-1','-i',target,'-vf','reverse,scale=540:960','-frames:v','1',QA/name])
+    boundary_frames.append(f'qa/{name}')
     if ep['production'].get('editorial_style')=='science-journalism':
         cover=vis.pilot_cover()
     else:
@@ -448,5 +457,6 @@ def render(ep,voice,out):
     manifest['editorial_style']=ep['production'].get('editorial_style','science-journalism')
     manifest['representation']='Reference wildlife footage and labelled original illustrations; no generated research footage.'
     manifest['declared_renderer']=ep['production'].get('renderer','ecology-story-7')
+    manifest['boundary_frame_checks']=boundary_frames
     manifest['voice']={'model':'Kokoro v1.0','voice':'af_heart','speed':float(ep['production'].get('voice_speed',1.00))}
     return manifest
