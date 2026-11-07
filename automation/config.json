@@ -23,13 +23,13 @@
     "media_commit": "f965de74d6395196f4aa0cfc8477801c27799827",
     "note": "Corrected 66.25-second journalism export built, deployed and exact public bytes verified; current schedule uses this export."
   },
-  "bio_link_confirmed": false,
+  "bio_link_confirmed": true,
   "routine_human_approval_required": false,
   "autonomous_editorial_and_posting_authorisation_date": "2026-11-07",
-  "publishing_paused": false,
-  "production_pause_reason": null,
+  "publishing_paused": true,
+  "production_pause_reason": "Owner requests a complete visual pilot and explicit approval before posting. Hold remains until owner approves the exact pilot.",
   "quality_gate": {
-    "status": "active_science_journalism",
+    "status": "awaiting_owner_pilot_review",
     "standard": "quality/PRODUCTION_STANDARD.md",
     "decision_owner": "delegated_editor",
     "routine_human_approval_required": false,
@@ -48,5 +48,25 @@
     "journalism_standard": "quality/SCIENCE_JOURNALISM.md"
   },
   "quota_policy": "Use observed Metricool planner counter plus scheduled destination reservations and uncertain writes, at most 20/month. Reconcile all visible posts for duplicate detection. Missing newly connected analytics do not override a verified usage counter.",
-  "publication_policy": "Follow quality/PRODUCTION_STANDARD.md; two Reels and one carousel weekly without routine owner approval."
+  "publication_policy": "Follow quality/PRODUCTION_STANDARD.md; two Reels and one carousel weekly without routine owner approval.",
+  "bio_link_verification": {
+    "date": "2026-11-07",
+    "instagram": "https://www.instagram.com/toxic_tales_eco/",
+    "linktree": "https://linktr.ee/toxictaleseco",
+    "archive": "https://akshaymohan16.github.io/toxic-tales-library/",
+    "observed_label": "Toxic Tales | Research behind the stories"
+  },
+  "pilot_approval_required": true,
+  "notification_policy": {
+    "event": "newly_confirmed_published_reel",
+    "deduplicate_by": "post_id",
+    "message_fields": [
+      "title",
+      "instagram_url",
+      "paper_doi",
+      "research_record_url"
+    ],
+    "daily_check_local_time": "10:15",
+    "delivery_status": "ChatGPT result notification configured; push/email settings not inspected"
+  }
 }

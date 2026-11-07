@@ -23,8 +23,8 @@
     "limitations": true,
     "rights": true
   },
-  "review_note": "Re-reported as a complete ecological story after owner rejected the compressed experiment summary on 2026-11-07. Focal findings checked against original full text; context supported separately by published field and grazing studies.",
-  "publication_enabled": true,
+  "review_note": "Re-reported as a complete ecological story after owner rejected the compressed experiment summary on 2026-11-07. Focal findings checked against original full text; context supported separately by published field and grazing studies. Visual pilot requested 7 November: owner will judge final video before publication.",
+  "publication_enabled": false,
   "is_ai_generated": true,
   "batch_id": "2026-11-09",
   "posts": [
@@ -32,7 +32,7 @@
       "id": "TT-003-REEL",
       "format": "REEL",
       "publication_date": "2026-11-14T10:00:00+01:00",
-      "caption": "TT-003-REEL | THE PRESSURE LEFT BEHIND\n\nRemove a predator, and its prey gets a chance to recover. But what happens when another pressure keeps arriving?\n\nZooplankton link microscopic food and fish. Some graze algae; their response matters beyond a count in a sample. Published field research has also detected antidepressants downstream of wastewater treatment plants.\n\nMichelangeli and colleagues tested recovery in 12 outdoor freshwater communities: four tanks per treatment. All received mosquitofish; some later received fluoxetine. After fish removal, zooplankton abundance rebounded less in the fluoxetine treatments than in controls.\n\nThe crucial distinction: drug dosing continued for all 21 days after fish removal. This was not a test of recovery after pollution stopped. Responses varied, the mechanism remained unresolved, and tank communities cannot establish what every lake will do. Initial nutrient additions and variation among tanks also complicate interpretation.\n\nThe restoration question is an inference to test: when one pressure is removed, what else might still hold recovery back?\n\nFocal study: Michelangeli et al. (2024), Environmental Science & Technology.\nhttps://doi.org/10.1021/acs.est.4c02807\nContext: Schultz et al. (2010), DOI 10.1021/es9022706; Ekvall et al. (2014), DOI 10.1371/journal.pone.0112956.\n\nFull sources, claim checks and limits:\nhttps://akshaymohan16.github.io/toxic-tales-library/sources/tt-003.html\n\nReference imagery: Robert Aguilar/SERC (CC BY 2.0), Alexander Klepnev (CC BY 4.0), cropped/edited. Licence links in source record. Conceptual animations are not study footage or numerical data. Synthetic narration.\n\n#ToxicTales #FreshwaterEcology #EcologicalRecovery #Ecotoxicology"
+      "caption": "TT-003-REEL | THE PRESSURE LEFT BEHIND\n\nRemove a predator, and its prey gets a chance to recover. But what happens when another pressure keeps arriving?\n\nZooplankton link microscopic food and fish. Some graze algae; their response matters beyond a count in a sample. Published field research has also detected antidepressants downstream of wastewater treatment plants.\n\nMichelangeli and colleagues tested recovery in 12 outdoor freshwater communities: four tanks per treatment. All received mosquitofish; some later received fluoxetine. After fish removal, zooplankton abundance rebounded less in the fluoxetine treatments than in controls.\n\nThe crucial distinction: drug dosing continued for all 21 days after fish removal. This was not a test of recovery after pollution stopped. Responses varied, the mechanism remained unresolved, and tank communities cannot establish what every lake will do. Initial nutrient additions and variation among tanks also complicate interpretation.\n\nThe restoration question is an inference to test: when one pressure is removed, what else might still hold recovery back?\n\nFocal study: Michelangeli et al. (2024), Environmental Science & Technology.\nhttps://doi.org/10.1021/acs.est.4c02807\nContext: Schultz et al. (2010), DOI 10.1021/es9022706; Ekvall et al. (2014), DOI 10.1371/journal.pone.0112956.\n\nFull sources, claim checks and limits:\nhttps://akshaymohan16.github.io/toxic-tales-library/sources/tt-003.html\n\nReference imagery: Robert Aguilar/SERC (CC BY 2.0); Tim Tim (VD fr) and Lukas Beck (CC BY 4.0), resized/edited. Stream footage is not the study site. Licence links in source record. Conceptual animations are not study footage or numerical data. Synthetic narration.\n\n#ToxicTales #FreshwaterEcology #EcologicalRecovery #Ecotoxicology"
     }
   ],
   "slides": [],
@@ -77,7 +77,7 @@
   },
   "production": {
     "cover_asset": "copepod",
-    "cover_title": "FISH GONE. POLLUTION REMAINS.",
+    "cover_title": "ONE THREAT GONE.\nANOTHER REMAINS.",
     "critical_terms": [
       "fluoxetine",
       "zooplankton",
@@ -97,24 +97,32 @@
       },
       {
         "id": "copepod",
-        "filename": "copepod.webm",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Copepod_Nauplius.webm",
-        "creator": "Alexander Klepnev",
+        "filename": "copepod-portrait.webm",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Cop%C3%A9pode.webm",
+        "creator": "Tim Tim (VD fr)",
         "license": "CC BY 4.0",
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
-        "source_page": "https://commons.wikimedia.org/wiki/File:Copepod_Nauplius.webm",
-        "changes": "Cropped, resized and edited with labels; reference imagery, not animals or footage from this experiment."
+        "source_page": "https://commons.wikimedia.org/wiki/File:Cop%C3%A9pode.webm",
+        "changes": "Resized and edited with captions; reference copepod microscopy, not study animals or footage. Original 2160 x 3840 portrait video."
+      },
+      {
+        "id": "stream",
+        "filename": "stream-portrait.webm",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Naturschutzgebiet_Kleiner_Wagenberg_lub_2025-04-14_mov02_Strenge.webm",
+        "creator": "Lukas Beck",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Naturschutzgebiet_Kleiner_Wagenberg_lub_2025-04-14_mov02_Strenge.webm",
+        "changes": "Resized and edited with captions. Reference footage of the Strenge stream in Germany, not the study site or evidence of pharmaceutical pollution at this location."
       }
     ],
     "segments": [
       {
-        "speech": "Remove the fish, and the tiny animals they eat should have a chance to recover. But what if another pressure keeps arriving?",
+        "speech": "The fish were gone. But for the tiny animals they ate, the pressure was not over.",
         "captions": [
-          "Remove the fish,",
-          "and the tiny animals they eat",
-          "should have a chance to recover.",
-          "But what if another pressure",
-          "keeps arriving?"
+          "The fish were gone.",
+          "But for the tiny animals they ate,",
+          "the pressure was not over."
         ],
         "shots": [
           {
@@ -128,7 +136,7 @@
           {
             "kind": "micro",
             "asset": "copepod",
-            "note": "Copepod larva • reference microscopy",
+            "note": "Copepod • reference microscopy",
             "offset": 2,
             "start": 0.25,
             "end": 1
@@ -146,7 +154,7 @@
           {
             "kind": "micro",
             "asset": "copepod",
-            "note": "Copepod larva • reference microscopy",
+            "note": "Copepod • reference microscopy",
             "offset": 4,
             "kicker": "ZOOPLANKTON",
             "start": 0,
@@ -176,11 +184,11 @@
             "end": 0.6
           },
           {
-            "kind": "micro",
-            "asset": "copepod",
-            "note": "Copepod larva • reference microscopy",
-            "offset": 7,
-            "kicker": "A SECOND PRESSURE",
+            "kind": "landscape",
+            "asset": "stream",
+            "offset": 2,
+            "kicker": "A ROUTE INTO FRESH WATER",
+            "note": "Reference stream • not a sampled pollution site",
             "start": 0.6,
             "end": 1
           }
@@ -273,7 +281,7 @@
           {
             "kind": "micro",
             "asset": "copepod",
-            "note": "Copepod larva • reference microscopy",
+            "note": "Copepod • reference microscopy",
             "offset": 10,
             "kicker": "DOSING CONTINUED",
             "start": 0,
@@ -298,7 +306,7 @@
           {
             "kind": "micro",
             "asset": "copepod",
-            "note": "Copepod larva • reference microscopy",
+            "note": "Copepod • reference microscopy",
             "offset": 13,
             "kicker": "THE EXPLANATION IS STILL OPEN"
           }
@@ -313,7 +321,7 @@
           {
             "kind": "micro",
             "asset": "copepod",
-            "note": "Copepod larva • reference microscopy",
+            "note": "Copepod • reference microscopy",
             "offset": 1,
             "kicker": "WHAT WAS NOT TESTED"
           }
@@ -328,10 +336,11 @@
         ],
         "shots": [
           {
-            "kind": "specimen",
-            "asset": "mosquitofish",
-            "note": "Eastern mosquitofish • reference photograph",
-            "kicker": "TANK EVIDENCE • FIELD QUESTION"
+            "kind": "landscape",
+            "asset": "stream",
+            "offset": 5,
+            "kicker": "FROM TANKS TO THE WIDER WORLD",
+            "note": "Reference stream • not the study site"
           }
         ]
       },
@@ -347,7 +356,7 @@
           {
             "kind": "micro",
             "asset": "copepod",
-            "note": "Copepod larva • reference microscopy",
+            "note": "Copepod • reference microscopy",
             "offset": 6,
             "start": 0,
             "end": 0.5
@@ -395,6 +404,7 @@
     "closing_payoff": "Restoration implication framed as a question requiring field tests, not a proven universal rule.",
     "reporting_mode": "Published-source explanatory journalism; no interviews, eyewitness reporting or researcher quotations claimed.",
     "craft_record": "quality/SCIENCE_JOURNALISM.md"
-  }
+  },
+  "pilot_status": "awaiting_owner_approval"
 }
 

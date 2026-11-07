@@ -7,9 +7,9 @@
   "release_commit": "f965de74d6395196f4aa0cfc8477801c27799827",
   "verification_run": 42385115239,
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
-  "decision": "ACTIVE_JOURNALISM_REEL_SCHEDULED",
-  "reason": "Replaced the owner-rejected summary with a 66.25-second ecological story. Independent context sources, narrative pivot, caveats and bounded ending reviewed; final frame/cover, transcript/loudness and public-byte checks passed. Existing Metricool post updated and read back.",
-  "scheduled_posts_returned": 2,
+  "decision": "HOLD_OWNER_PILOT_APPROVAL",
+  "reason": "Owner requests a complete visual pilot and explicit approval before posting. Hold remains until owner approves the exact pilot.",
+  "scheduled_posts_returned": 0,
   "published_provider_receipts": 1,
   "new_metricool_submissions": 0,
   "scheduled_post_ids": [
@@ -17,7 +17,7 @@
     "TT-003-REEL"
   ],
   "routine_user_approval_required": false,
-  "automatic_next_step": "Sunday producer prepares a NEW distinct paper for Tuesday 10 November and then future missing weekly slots. Daily publisher reconciles receipts, schedules released candidates, repairs routine failures and confirms actual publication after due times.",
+  "automatic_next_step": "Wait for owner approval of exact completed pilot. Do not self-resume. Both recurring tasks paused and future posts held as drafts.",
   "review_limit": "No human listening or original Instagram audio parity claimed; technical audio checks and final ASR reviewed.",
   "quota": {
     "observed_used": 1,
@@ -28,5 +28,6 @@
   "resolved_hold": "Owner's narrative-quality revision completed; automatic workflow restored with new story requirements.",
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
   "updated_metricool_posts": 1,
-  "journalism_standard": "quality/SCIENCE_JOURNALISM.md"
+  "journalism_standard": "quality/SCIENCE_JOURNALISM.md",
+  "draft_posts_held": 2
 }

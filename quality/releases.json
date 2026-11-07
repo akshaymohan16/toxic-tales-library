@@ -27,7 +27,7 @@
     "publication_scope": "TT-002-CAROUSEL only. Rebuilt Reel is available in source archive but TT-002-REEL is already published."
   },
   "TT-003": {
-    "decision": "release",
+    "decision": "awaiting_owner_pilot_approval",
     "reviewed_at": "2026-11-07",
     "reviewer": "Delegated Toxic Tales editor",
     "verification_run": 42385115239,
@@ -46,6 +46,7 @@
     "audio_review": "Final encoded transcript compared with source narration: 98.64% token similarity; all scientific claims, continued-dosing distinction and limiting statements retained. ASR renders mosquitofish as Mosquita fish, while the caption and specimen label use the correct species name. No caption overlaps. Integrated loudness -16.69 LUFS and true peak -5.44 dBTP. Kokoro af_heart narration, 66.25 seconds. These are transcript and technical checks; actual listening and parity with old Instagram audio are not claimed.",
     "narrative_review": "The complete 66-second story opens with a predator-removal recovery puzzle, identifies zooplankton and their food-web role early, introduces independently sourced wastewater context, then asks whether a second pressure changes recovery. The tank experiment answers that question in a bounded setting. Continued dosing is the narrative pivot: one pressure ended while another remained. Variability and unresolved mechanism prevent a false neat resolution; the ending returns to the restoration question and explicitly distinguishes experimental communities from lakes. Context supports the story rather than merely padding methods/results. No invented interviews, quotes, researcher emotions or universal management prescription.",
     "publication_scope": "TT-003-REEL",
-    "supersedes_rejected_fingerprint": "20fde516bde50049d02d684b89f6ed8307bfc2a4ed1f10d7c44287be354c048a"
+    "supersedes_rejected_fingerprint": "20fde516bde50049d02d684b89f6ed8307bfc2a4ed1f10d7c44287be354c048a",
+    "hold_reason": "New visual pilot requested; prior release does not authorize this export."
   }
 }

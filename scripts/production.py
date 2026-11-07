@@ -4,6 +4,7 @@ No paid APIs, direct eSpeak voice, generic fallback, or publishing credentials.
 """
 import difflib, hashlib, json, math, os, re, subprocess, time
 from pathlib import Path
+from functools import lru_cache
 from urllib.request import Request, urlopen
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps
@@ -12,7 +13,7 @@ ROOT=Path(__file__).resolve().parents[1]
 MEDIA=ROOT/'site/media'; QA=ROOT/'site/qa'; CACHE=ROOT/'render-cache'
 W,H,FPS=720,1280,24
 BG='#071c24'; WHITE='#fffdf2'; LIME='#cefa4c'; RED='#ff825f'; TEAL='#6bd6ce'
-VERSION='science-journalism-5.0'
+VERSION='science-journalism-pilot-6.0'
 FONTS=[Path('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'),Path('C:/Windows/Fonts/arial.ttf')]
 FONT=next((x for x in FONTS if x.exists()),FONTS[0])
 BOLD=FONT.with_name('DejaVuSans-Bold.ttf') if FONT.name.startswith('DejaVu') else FONT.with_name('arialbd.ttf')
@@ -21,6 +22,7 @@ ITALIC=FONT.with_name('DejaVuSans-BoldOblique.ttf') if FONT.name.startswith('Dej
 def sh(args):
     return subprocess.run([str(x) for x in args],check=True,capture_output=True,text=True)
 def sha(path): return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+@lru_cache(maxsize=160)
 def font(size,bold=True,italic=False): return ImageFont.truetype(str(ITALIC if italic else BOLD if bold else FONT),size)
 def download(url,path,expected=None):
     path=Path(path);path.parent.mkdir(parents=True,exist_ok=True)
@@ -113,12 +115,12 @@ class Visuals:
     def picture(self,key,t=0,wide=False):
         p=self.assets[key]
         if p.suffix.lower() in ('.webm','.ogv','.mp4'):
-            folder=self.out/('frames-'+key)
+            folder=self.out/('frames-'+key+'-v6-'+p.stem)
             if key not in self.frames:
                 folder.mkdir(exist_ok=True)
-                sh(['ffmpeg','-hide_banner','-loglevel','error','-y','-i',p,'-t','18','-vf','fps=12,scale=960:-2',folder/'%05d.jpg'])
+                sh(['ffmpeg','-hide_banner','-loglevel','error','-y','-i',p,'-t','18','-vf','fps=24,scale=-2:1280:flags=lanczos',folder/'%05d.jpg'])
                 self.frames[key]=sorted(folder.glob('*.jpg'))
-            fs=self.frames[key];p=fs[int(t*12)%len(fs)]
+            fs=self.frames[key];p=fs[int(t*24)%len(fs)]
         with Image.open(p) as original:src=original.convert('RGB')
         if wide:
             im=ImageOps.fit(src,(W,H)).filter(ImageFilter.GaussianBlur(22));im=Image.blend(im,Image.new('RGB',(W,H),BG),.65)
@@ -126,138 +128,238 @@ class Visuals:
         else:im=ImageOps.fit(src,(W,H),centering=(.5,.5))
         return im
     def story_frame(self,shot,t,caption='',progress=0):
-        """A narration-led film: organism imagery and explanatory sequences, not slides."""
+        """Full-frame reference footage, kinetic captions and explanatory animation."""
         typ=shot['kind'];local=t-shot['start'];phase=max(0,min(1,local/max(.01,shot['end']-shot['start'])))
-        natural=typ in ('nature','specimen','micro')
-        if shot.get('asset'):
-            if typ=='specimen':
-                # Preserve the whole organism rather than crop a wide fish into a vertical torso.
-                with Image.open(self.assets[shot['asset']]) as original:
-                    source=original.convert('RGB')
-                im=ImageOps.fit(source,(W,H)).filter(ImageFilter.GaussianBlur(35))
-                im=Image.blend(im,Image.new('RGB',(W,H),'#071b23'),.86)
-                specimen=ImageOps.contain(source,(680,660))
-                im.paste(specimen,((W-specimen.width)//2,570-specimen.height//2))
-            else:
-                im=self.picture(shot['asset'],local+shot.get('offset',0),wide=False)
-            if not natural:im=Image.blend(im,Image.new('RGB',(W,H),'#071b23'),.83)
-        else:im=Image.new('RGB',(W,H),'#071b23')
-        # Quiet dark margins retain phone legibility without shrinking the organism.
+        ease=1-(1-min(1,local/.45))**3
+        live=typ in ('nature','micro','landscape')
+        if live and shot.get('asset'):
+            im=self.picture(shot['asset'],local+shot.get('offset',0))
+        elif typ=='specimen' and shot.get('asset'):
+            # Landscape specimen remains whole; its black background meets the canvas.
+            im=Image.new('RGB',(W,H),'#020605')
+            with Image.open(self.assets[shot['asset']]) as source:
+                fg=ImageOps.contain(source.convert('RGB'),(int(690+18*math.sin(local*.35)),540))
+            im.paste(fg,((W-fg.width)//2,550-fg.height//2))
+        else:
+            if not hasattr(self,'backplate'):
+                yy,xx=np.mgrid[0:H,0:W];glow=np.exp(-(((xx-W*.55)/(W*.64))**2+((yy-H*.47)/(H*.37))**2)*2.5)
+                arr=np.zeros((H,W,3),dtype=np.uint8)
+                for k,(base,light) in enumerate(((2,5),(6,19),(5,17))):arr[:,:,k]=base+glow*light
+                self.backplate=Image.fromarray(arr)
+            im=self.backplate.copy()
         overlay=Image.new('RGBA',(W,H));od=ImageDraw.Draw(overlay)
         for y in range(H):
-            alpha=int(175*max(0,1-y/360)+225*max(0,(y-780)/500))
-            od.line((0,y,W,y),fill=(3,13,19,min(235,alpha)))
+            alpha=int(145*max(0,1-y/330)+170*max(0,(y-860)/420)) if live else 0
+            if alpha:od.line((0,y,W,y),fill=(0,4,3,alpha))
         im=Image.alpha_composite(im.convert('RGBA'),overlay).convert('RGB');d=ImageDraw.Draw(im)
-        d.text((48,76),'TOXIC TALES  /  ECOLOGY',font=font(18),fill=LIME)
-        if shot.get('kicker'):d.text((48,118),shot['kicker'].upper(),font=font(19),fill=TEAL)
-        if shot.get('title'):
-            label(im,shot['title'],172,43,width=610,center=False,stroke=2 if natural else 0)
+        white='#ffffff';lime='#c9ff36';cyan='#67e4da';coral='#ff997b'
+        # Restrained texture gives drawings movement without implying data.
+        if not live and typ!='specimen':
+            for k in range(22):
+                xx=(k*107+math.sin(k*2.1+local*.24)*20)%W
+                yy=250+(k*163-local*(7+k%4))%610
+                r=1+k%2
+                d.ellipse((xx-r,yy-r,xx+r,yy+r),fill='#254335')
 
-        def text_at(text,x,y,size=30,color=WHITE):
-            d.text((x,y),text,font=font(size),fill=color,anchor='mm',stroke_width=1,stroke_fill=BG)
-        def arrow(x1,y1,x2,y2,color=TEAL):
+        def text(txt,x,y,size=32,color=white,anchor='mm',italic=False):
+            d.text((x,y),txt,font=font(size,italic=italic),fill=color,anchor=anchor,
+                   stroke_width=1 if live else 0,stroke_fill='#020604')
+        def headline(txt,y=190,size=58,color=white,width=620):
+            for k,line in enumerate(wrap(txt,size,width)):
+                text(line,52,y+k*(size+5),size,color,'lt')
+        def small(txt,y=852,color='#c0d2cc'):
+            text(txt,360,y,19,color)
+        def arrow(a,b,color=cyan):
+            x1,y1=a;x2,y2=b
             d.line((x1,y1,x2,y2),fill=color,width=5)
-            ang=math.atan2(y2-y1,x2-x1);length=16
-            d.polygon([(x2,y2),(x2-length*math.cos(ang-.5),y2-length*math.sin(ang-.5)),(x2-length*math.cos(ang+.5),y2-length*math.sin(ang+.5))],fill=color)
-            q=(local*.40)%1;xx=x1+(x2-x1)*q;yy=y1+(y2-y1)*q
-            d.ellipse((xx-5,yy-5,xx+5,yy+5),fill=WHITE)
-        def algae(cx,cy):
-            for k in range(9):
-                a=k*2.399;radius=12+9*math.sqrt(k);xx=cx+radius*math.cos(a+local*.08);yy=cy+radius*.6*math.sin(a+local*.08)
-                d.ellipse((xx-10,yy-14,xx+10,yy+14),fill='#98ce58',outline=LIME,width=2)
-        def plankter(cx,cy,scale=1):
-            cy+=math.sin(local*2.0)*7
-            d.ellipse((cx-35*scale,cy-52*scale,cx+35*scale,cy+46*scale),fill='#246673',outline=TEAL,width=3)
-            d.ellipse((cx+5*scale,cy-34*scale,cx+13*scale,cy-26*scale),fill=WHITE)
-            for side in (-1,1):
-                d.line((cx,cy-40*scale,cx+side*50*scale,cy-75*scale,cx+side*70*scale,cy-67*scale),fill=TEAL,width=3)
-                for k in range(3):d.line((cx+side*25*scale,cy+k*12*scale,cx+side*(48+math.sin(local*5+k)*8)*scale,cy+(k*12+20)*scale),fill=TEAL,width=2)
-
-        if typ=='foodweb':
-            fish(d,250+math.sin(local)*13,350,1.6,TEAL);text_at('Fish',475,350,33)
-            plankter(250,570,1.0);text_at('Zooplankton',485,563,31)
-            algae(250,775);text_at('Algae',477,765,33,LIME)
-            arrow(250,716,250,642,LIME);arrow(250,484,250,409,TEAL)
-            text_at('Many graze algae',485,610,21,'#c7dfcb')
-        elif typ=='wastewater_route':
-            x=145
-            d.rectangle((x-42,310,x+42,370),fill='#28444d',outline=TEAL,width=3)
-            d.polygon([(x-57,310),(x,268),(x+57,310)],fill='#28444d',outline=TEAL)
-            d.rectangle((x-10,340,x+10,370),fill=TEAL)
-            text_at('Medicine use',446,328,33)
-            arrow(x,392,x,454)
-            d.rounded_rectangle((x-60,477,x+60,557),14,fill='#28444d',outline=TEAL,width=3)
-            d.line((x-48,514,x+48,514),fill=TEAL,width=4)
-            for xx in (x-36,x,x+36):d.line((xx,487,xx,545),fill='#547d85',width=2)
-            text_at('Wastewater',465,500,31);text_at('treatment',465,541,31)
-            arrow(x,581,x,652)
-            text_at('Some residues',455,616,23,RED)
-            for k in range(4):
-                pts=[(65+j*8,710+k*27+9*math.sin(j*.32+local+k)) for j in range(69)]
-                d.line(pts,fill=TEAL if k%2==0 else '#3a8396',width=4)
-            text_at('Freshwater',430,833,31)
-            # Only a subset takes the downstream route; no quantitative removal rate.
-            for k in range(3):
-                q=((local*.15+k/3)%1);yy=380+q*385
-                if k==1 and yy>550:continue
-                xx=x+math.sin(q*10+k)*11
-                d.ellipse((xx-6,yy-6,xx+6,yy+6),fill=RED)
-        elif typ=='restoration_question':
-            fish(d,405-590*min(1,phase*1.15),370,2,TEAL)
-            text_at('Fish removed',440,443,29,TEAL)
-            plankter(230,660,1.35);algae(472,690)
+            ang=math.atan2(y2-y1,x2-x1)
+            d.polygon([(x2,y2),(x2-16*math.cos(ang-.55),y2-16*math.sin(ang-.55)),
+                       (x2-16*math.cos(ang+.55),y2-16*math.sin(ang+.55))],fill=color)
+            q=(local*.32)%1;xx=x1+(x2-x1)*q;yy=y1+(y2-y1)*q
+            d.ellipse((xx-5,yy-5,xx+5,yy+5),fill=white)
+        def algae(cx,cy,s=1):
             for k in range(8):
-                xx=100+k*74+10*math.sin(local+k);yy=530+100*math.sin(k*1.8+local*.4)
-                d.ellipse((xx-6,yy-6,xx+6,yy+6),fill=RED)
-            text_at(shot.get('pressure_label','Fluoxetine continues'),360,808,31,RED)
-        elif typ=='evidence_rebound':
-            text_at('After fish removal',360,340,31,TEAL)
-            d.line((90,414,630,414),fill='#315967',width=2)
-            text_at('No fluoxetine',360,469,32,WHITE)
-            text_at('Stronger rebound',360,521,37,TEAL)
-            d.line((90,594,630,594),fill='#315967',width=2)
-            text_at('Fluoxetine continued',360,650,32,WHITE)
-            text_at('Smaller rebound',360,702,37,RED)
-            text_at('Zooplankton abundance',360,814,25,'#c9dadd')
-        elif typ=='tanks':
-            for col,(name,color) in enumerate([('Control',TEAL),('Low',LIME),('Higher',RED)]):
-                x=140+col*220;text_at(name,x,353,27,color)
-                for row in range(4):
-                    y=435+row*87;d.ellipse((x-74,y-29,x+74,y+29),fill='#163742',outline=color,width=2)
-                    fish(d,x+math.sin(local*1.6+row+col)*19,y,.55,color)
-            text_at('12 outdoor communities',360,820,28)
-        elif typ=='timeline':
-            for k,txt in enumerate(('Fish introduced','Fluoxetine begins','Fish removed')):
-                yy=380+k*145;d.ellipse((86,yy-11,108,yy+11),fill=TEAL)
-                if k<2:d.line((97,yy+14,97,yy+130),fill=TEAL,width=3)
-                d.text((135,yy),txt,font=font(32),fill=WHITE,anchor='lm')
-            d.line((625,525,625,760),fill=RED,width=7)
-            label(im,'Drug exposure continues',803,29,RED)
-        elif typ=='limit':
-            for k,item in enumerate(shot['items']):
-                yy=410+k*150;d.line((35,yy-14,35,yy+64),fill=RED,width=4)
-                label(im,item,yy,32,width=580,center=False)
-        elif typ=='story_close':
-            label(im,shot.get('takeaway',self.ep['production'].get('takeaway','Recovery depends on what remains.')),365,50,width=600)
-            d.line((52,714,668,714),fill=TEAL,width=2)
-            label(im,self.ep['citation'],752,21,TEAL,width=610,center=False)
-            label(im,self.ep['doi'],812,23,WHITE,width=610,center=False)
-        elif typ not in ('nature','specimen','micro'):
-            raise ValueError('Unsupported journalism scene: '+typ)
+                a=k*2.399+local*.15;r=(10+9*math.sqrt(k))*s
+                xx=cx+r*math.cos(a);yy=cy+r*.65*math.sin(a)
+                d.ellipse((xx-10*s,yy-15*s,xx+10*s,yy+15*s),fill='#315c27',outline=lime,width=2)
+                d.line((xx,yy-9*s,xx,yy+9*s),fill='#88ad49',width=1)
+        def plankter(cx,cy,s=1,color=cyan):
+            cy+=math.sin(local*1.8)*7
+            # Copepod-inspired schematic; never presented as a measured animal.
+            pts=[(cx,cy-77*s),(cx+33*s,cy-51*s),(cx+39*s,cy-14*s),
+                 (cx+24*s,cy+33*s),(cx+12*s,cy+70*s),(cx-12*s,cy+70*s),
+                 (cx-24*s,cy+33*s),(cx-39*s,cy-14*s),(cx-33*s,cy-51*s)]
+            d.polygon(pts,fill='#103f3d',outline=color,width=3)
+            for j in range(4):
+                yy=cy+(10+j*15)*s;hw=(24-j*4)*s
+                d.line((cx-hw,yy,cx+hw,yy),fill=color,width=2)
+            d.ellipse((cx-5*s,cy-51*s,cx+5*s,cy-41*s),fill=coral)
+            for side in (-1,1):
+                sway=math.sin(local*3)*8
+                d.line((cx+side*17*s,cy-52*s,cx+side*73*s,cy-99*s,
+                        cx+side*(112+sway)*s,cy-91*s),fill=color,width=3)
+                for j in range(3):
+                    yy=cy+(-20+j*19)*s
+                    d.line((cx+side*32*s,yy,cx+side*59*s,yy+22*s,
+                            cx+side*(79+math.sin(local*4+j)*7)*s,yy+15*s),fill=color,width=2)
+                d.line((cx+side*8*s,cy+70*s,cx+side*20*s,cy+100*s,
+                        cx+side*39*s,cy+112*s),fill=color,width=2)
+        def predator(cx,cy,s=1,color=cyan):
+            # The mosquitofish photograph carries the taxonomic identification.
+            fish(d,cx,cy,s,color)
+            d.polygon([(cx-6*s,cy-12*s),(cx-20*s,cy-29*s),(cx+10*s,cy-12*s)],fill='#2d7466')
+            d.polygon([(cx-5*s,cy+11*s),(cx-19*s,cy+26*s),(cx+11*s,cy+10*s)],fill='#2d7466')
+            d.arc((cx+8*s,cy-10*s,cx+21*s,cy+12*s),90,255,fill='#193a34',width=2)
+        def residues(cx=360,cy=545):
+            for k in range(9):
+                a=k*2.399+local*.32;r=150+25*math.sin(k)
+                xx=cx+r*math.cos(a);yy=cy+r*.77*math.sin(a)
+                d.ellipse((xx-5,yy-5,xx+5,yy+5),fill=coral)
 
-        if shot.get('note'):
-            label(im,shot['note'],873,18,'#d2dfe2',width=620,center=False,stroke=1)
+        text('TOXIC TALES',50,82,20,lime,'lt')
+        # Section labels stay secondary to the footage, not a duplicate subtitle.
+        if shot.get('kicker') and typ not in ('specimen','micro'):
+            text(shot['kicker'].upper(),50,117,16,'#a8c0b5','lt')
+        if typ=='specimen':
+            if shot.get('segment',0)==0:
+                headline('FISH GONE.',180,73,lime)
+                headline('WHAT NOW?',267,62)
+                # Motion cue follows the real specimen without masking its eye.
+                d.line((65,760,65+int(500*ease),760),fill=lime,width=4)
+                small('A recovery story with a second pressure',810)
+            else:
+                headline('THE PREDATOR',190,51,lime)
+                text('Eastern mosquitofish',360,752,34)
+        elif typ=='foodweb':
+            headline('SMALL ANIMALS. BIG CONNECTIONS.',173,49)
+            predator(220+math.sin(local)*9,393,2.1);text('FISH',480,393,34)
+            plankter(220,601,.93);text('ZOOPLANKTON',470,595,28,lime)
+            algae(220,806,1.1);text('ALGAE',480,802,34)
+            arrow((220,749),(220,700),lime);arrow((220,480),(220,442),cyan)
+            text('food',286,726,18,'#91bba7');text('food',286,463,18,'#91bba7')
+        elif typ=='wastewater_route':
+            headline('ANOTHER PRESSURE ENTERS THE WATER.',177,49)
+            # The route crosses one continuous landscape, rather than a stack of cards.
+            d.polygon([(70,470),(70,404),(116,370),(161,404),(161,470)],fill='#14352c',outline=cyan,width=3)
+            d.rectangle((105,433,124,470),fill=cyan);text('Homes',119,505,24)
+            d.line((161,450,235,450,235,553,330,553),fill='#456b59',width=14)
+            d.rectangle((330,485,554,619),fill='#15392f',outline=cyan,width=3)
+            for j in range(3):
+                yy=510+j*36;d.line((350,yy,531,yy),fill='#528d73',width=3)
+            text('Treatment',442,655,28)
+            d.line((554,562,632,562,632,728),fill='#456b59',width=13)
+            for j in range(5):
+                pts=[(25+k*9,755+j*22+6*math.sin(k*.28+local+j)) for k in range(76)]
+                d.line(pts,fill=cyan if j%2==0 else '#2b6958',width=3)
+            # A few symbolic residues; their number has no quantitative meaning.
+            for j in range(3):
+                q=(local*.28+j*.3)%1
+                xx=632 if q<.5 else 632-(q-.5)*700;yy=640+q*190 if q<.5 else 754+10*math.sin(q*9+j)
+                d.ellipse((xx-5,yy-5,xx+5,yy+5),fill=coral)
+            text('Some residues remain',360,887,24,coral)
+        elif typ=='restoration_question':
+            headline('ONE PRESSURE ENDS.',180,51,lime)
+            headline('ANOTHER STAYS.',243,51)
+            predator(430-800*min(1,phase*1.4),439,3.2)
+            if phase>.34:
+                d.line((76,437,187,437),fill='#3d6854',width=3)
+                text('fish removed',470,420,26,cyan)
+            plankter(360,652,1.42);residues(360,635)
+            text(shot.get('pressure_label','Continuing exposure'),360,853,31,coral)
+        elif typ=='evidence_rebound':
+            headline('THE REBOUND WAS SMALLER.',179,57)
+            # Equal-sized organism symbols deliberately avoid implying effect sizes.
+            plankter(155,500,.80,cyan);text('No fluoxetine',465,458,28,cyan)
+            text('Stronger',465,514,40);text('rebound',465,560,40)
+            plankter(155,749,.80,coral);text('Exposure continued',465,709,25,coral)
+            text('Smaller',465,760,40);text('rebound',465,806,40)
+        elif typ=='tanks':
+            headline('A SMALL WORLD, BUILT OUTDOORS.',175,51)
+            for col,(name,color) in enumerate([('CONTROL',cyan),('LOW',lime),('HIGHER',coral)]):
+                x=133+col*224;text(name,x,364,23,color)
+                for row in range(4):
+                    yy=444+row*99
+                    d.rounded_rectangle((x-77,yy-19,x+77,yy+34),10,fill='#15362e',outline=color,width=2)
+                    d.ellipse((x-77,yy-31,x+77,yy+12),fill='#1d483f',outline=color,width=2)
+                    d.arc((x-60,yy-23,x+60,yy+5),0,180,fill='#507264',width=2)
+                    predator(x+math.sin(local*1.4+row+col)*17,yy-7,.48,color)
+            text('12 tanks',360,870,42,lime)
+        elif typ=='timeline':
+            headline('THEN CAME FLUOXETINE.',175,51)
+            items=[('01','FISH INTRODUCED',cyan),('02','DRUG ADDED',coral),('03','FISH REMOVED',cyan)]
+            for j,(num,txt,color) in enumerate(items):
+                yy=400+j*174
+                text(num,87,yy,47,color)
+                text(txt,160,yy,29,white,'lm')
+                if j<2:d.line((87,yy+47,87,yy+119),fill='#365344',width=3)
+            d.line((642,571,642,803),fill=coral,width=7)
+            text('Dosing continues',455,867,26,coral)
+        elif typ=='micro':
+            seg=shot.get('segment',-1)
+            # High-resolution portrait microscopy fills the frame. It is reference footage.
+            if seg==0:headline('WHAT IF SOMETHING ELSE STAYS?',177,49)
+            elif seg==1:headline('MEET THE ZOOPLANKTON.',177,49,lime)
+            elif seg==2:headline('A SECOND PRESSURE',177,49)
+            elif seg==7:headline('THE DRUG KEPT COMING.',177,53,coral)
+            elif seg==8:headline('THE “WHY” IS STILL OPEN.',177,50)
+            elif seg==9:headline('DRUG REMOVAL WAS NOT TESTED.',177,49,coral)
+            elif seg==11:headline('WHAT ELSE IS HOLDING RECOVERY BACK?',177,47,lime)
+        elif typ in ('nature','landscape'):
+            headline(shot.get('title','FROM TANKS TO REAL LAKES?'),177,50)
+        elif typ=='limit':
+            headline('WHAT THE STUDY CANNOT TELL US.',175,49)
+            for j,item in enumerate(shot['items']):
+                yy=435+j*145
+                d.line((52,yy,52,yy+70),fill=coral,width=4)
+                for k,line in enumerate(wrap(item,32,560)):text(line,78,yy+k*41,32,white,'lt')
+        elif typ=='story_close':
+            headline('WHAT ELSE IS HOLDING RECOVERY BACK?',183,57,lime)
+            predator(560+math.sin(local)*13,505,1.8)
+            plankter(350,631,1.05);algae(144,755,1.1)
+            arrow((197,733),(277,676),lime);arrow((422,574),(498,527),cyan)
+            residues(350,631)
+            text('One pressure removed. Others may remain.',360,845,23)
+        else:raise ValueError('Unsupported journalism scene: '+typ)
+
+        # Bold outlined captions occupy the visual field like the owner's VEED references.
         if caption:
-            lines=wrap(caption,44,616)
-            if len(lines)>3:raise ValueError('Story caption exceeds 3 safe lines: '+caption)
-            cy=1025-(len(lines)-1)*26
-            box=Image.new('RGBA',(W,H));bd=ImageDraw.Draw(box)
-            bd.rounded_rectangle((33,cy-22,687,cy+len(lines)*56+12),15,fill=(2,12,18,210))
-            im=Image.alpha_composite(im.convert('RGBA'),box).convert('RGB');d=ImageDraw.Draw(im)
-            for k,line in enumerate(lines):d.text((360,cy+k*56),line,font=font(44),fill=WHITE,anchor='mt')
-        d.rectangle((48,1220,48+int(624*progress),1223),fill=TEAL)
+            lines=wrap(caption,46,610)
+            if len(lines)>3:raise ValueError('Pilot caption exceeds 3 lines: '+caption)
+            cp=getattr(self,'caption_phase',.5)
+            bounce=int(9*(1-min(1,cp*8))**2)
+            cy=1005-(len(lines)-1)*28+bounce
+            layer=Image.new('RGBA',(W,H));ld=ImageDraw.Draw(layer)
+            for yy in range(cy-45,min(H,cy+len(lines)*58+55)):
+                fade=max(0,1-abs(yy-(cy+len(lines)*27))/(len(lines)*30+65))
+                ld.line((0,yy,W,yy),fill=(0,4,2,int(92*fade)))
+            im=Image.alpha_composite(im.convert('RGBA'),layer).convert('RGB');d=ImageDraw.Draw(im)
+            for j,line in enumerate(lines):
+                # Phrase emphasis is typographic, not claimed word-level forced alignment.
+                color=lime if j==len(lines)-1 and any(w in line.lower() for w in ('pressure','recover','rebound','removed','remained','zooplankton')) else white
+                d.text((354,cy+j*58),line,font=font(46,italic=True),fill=color,
+                       anchor='mt',stroke_width=3,stroke_fill='#010603')
+        if shot.get('note'):
+            note=shot['note'].replace('•',' / ')
+            for j,line in enumerate(wrap(note,15,620,False)):
+                d.text((50,1161+j*20),line,font=font(15,False),fill='#d2ddd5',stroke_width=1,stroke_fill='#020604')
+        d.rectangle((50,1230,50+int(620*progress),1233),fill=lime)
         return im
 
+    def pilot_cover(self):
+        # The cover is designed as a standalone poster at native composition size.
+        im=self.picture(self.ep['production']['cover_asset'],t=7)
+        mask=Image.new('RGBA',(W,H));d=ImageDraw.Draw(mask)
+        for y in range(H):
+            alpha=int(210*max(0,1-y/600)+230*max(0,(y-745)/535))
+            d.line((0,y,W,y),fill=(0,5,3,min(240,alpha)))
+        im=Image.alpha_composite(im.convert('RGBA'),mask).convert('RGB');d=ImageDraw.Draw(im)
+        d.text((50,91),'TOXIC TALES',font=font(24),fill='#c9ff36')
+        for j,(txt,col) in enumerate([('FISH GONE.', '#ffffff'),('POLLUTION', '#c9ff36'),('STAYS.', '#c9ff36')]):
+            d.text((48,190+j*80),txt,font=font(65),fill=col,stroke_width=3,stroke_fill='#020604')
+        label(im,'Why recovery is not always a clean reset.',935,34,width=605,center=False,stroke=2)
+        label(im,self.ep['citation'],1085,19,'#d2ddd5',width=615,center=False)
+        label(im,self.ep['doi'],1130,21,'#c9ff36',width=615,center=False)
+        return im
     def frame(self,shot,t,caption='',progress=0):
         if self.ep['production'].get('editorial_style')=='science-journalism':
             return self.story_frame(shot,t,caption,progress)
@@ -336,7 +438,9 @@ def render(ep,voice,out):
     proc=subprocess.Popen(command,stdin=subprocess.PIPE)
     for i in range(math.ceil(duration*FPS)):
         t=i/FPS;shot=next((s for s in timeline if s['start']<=t<s['end']),timeline[-1])
-        caption=next((c['text'] for c in captions if c['start']<=t<c['end']),'')
+        active_caption=next((c for c in captions if c['start']<=t<c['end']),None)
+        caption=active_caption['text'] if active_caption else ''
+        vis.caption_phase=(t-active_caption['start'])/max(.01,active_caption['end']-active_caption['start']) if active_caption else 1
         proc.stdin.write(vis.frame(shot,t,caption,t/duration).tobytes())
     proc.stdin.close()
     if proc.wait()!=0:raise RuntimeError('Video encode failed')
@@ -362,16 +466,7 @@ def render(ep,voice,out):
     for i,im in enumerate(frames):grid.paste(im,((i%3)*360,(i//3)*640))
     grid.save(QA/(ep['id'].lower()+'-contact.jpg'),quality=91)
     if ep['production'].get('editorial_style')=='science-journalism':
-        cover=vis.picture(ep['production']['cover_asset'],t=5,wide=False)
-        shade=Image.new('RGBA',(W,H));sd=ImageDraw.Draw(shade)
-        for y in range(H):
-            alpha=int(205*max(0,1-y/690)+235*max(0,(y-700)/580))
-            sd.line((0,y,W,y),fill=(3,13,19,min(240,alpha)))
-        cover=Image.alpha_composite(cover.convert('RGBA'),shade).convert('RGB')
-        label(cover,ep['production'].get('cover_kicker','TOXIC TALES / ECOLOGY'),115,22,LIME,center=False)
-        label(cover,ep['production']['cover_title'],245,54,width=610,center=False,stroke=2)
-        label(cover,ep['citation'],980,22,TEAL,width=610,center=False)
-        label(cover,ep['doi'],1070,24,WHITE,center=False)
+        cover=vis.pilot_cover()
     else:
         cover=vis.picture(ep['production']['cover_asset'],wide=True)
         d=ImageDraw.Draw(cover);d.rectangle((0,0,W,270),fill=BG);d.rectangle((0,880,W,H),fill=BG)

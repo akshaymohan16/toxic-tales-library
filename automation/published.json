@@ -34,14 +34,14 @@
       "episode_id": "TT-002",
       "format": "CAROUSEL",
       "doi": "10.1098/rspb.2020.2294",
-      "metricool_id": "419994151",
+      "metricool_id": "420045577",
       "metricool_uuid": "3228865276435317523",
       "publication_date": "2026-11-12T10:00:00+01:00",
       "timezone": "Europe/Vienna",
-      "status": "scheduled",
+      "status": "draft_awaiting_owner_pilot_approval",
       "provider_status": "PENDING",
-      "auto_publish": true,
-      "draft": false,
+      "auto_publish": false,
+      "draft": true,
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=3228865276435317523",
       "source_media_urls": [
         "https://akshaymohan16.github.io/toxic-tales-library/media/tt-002-the-average-can-hide-3107c7add56b_slide_01.jpg",
@@ -78,21 +78,29 @@
       "receipt_saved_on": "2026-11-07",
       "publication_confirmation": "Pending scheduled time. Receipt is not evidence of actual publication.",
       "schedule_readback_verified": true,
-      "readback_date": "2026-11-07"
+      "readback_date": "2026-11-07",
+      "previous_revisions": [
+        {
+          "metricool_id": "419994151",
+          "status": "scheduled",
+          "date": "2026-11-07",
+          "reason": "Owner requests visual pilot approval before publication"
+        }
+      ]
     },
     {
       "post_id": "TT-003-REEL",
       "episode_id": "TT-003",
       "format": "REEL",
       "doi": "10.1021/acs.est.4c02807",
-      "metricool_id": "420018600",
+      "metricool_id": "420045654",
       "metricool_uuid": "6027580248989713344",
       "publication_date": "2026-11-14T10:00:00+01:00",
       "timezone": "Europe/Vienna",
-      "status": "scheduled",
+      "status": "draft_awaiting_owner_pilot_approval",
       "provider_status": "PENDING",
-      "auto_publish": true,
-      "draft": false,
+      "auto_publish": false,
+      "draft": true,
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=6027580248989713344",
       "source_media_urls": [
         "https://akshaymohan16.github.io/toxic-tales-library/media/tt-003-recovery-with-pollution-55c2001a3e72.mp4"
@@ -132,6 +140,12 @@
           "status": "draft_replaced",
           "date": "2026-11-07",
           "release_fingerprint": "20fde516bde50049d02d684b89f6ed8307bfc2a4ed1f10d7c44287be354c048a"
+        },
+        {
+          "metricool_id": "420018600",
+          "status": "scheduled",
+          "date": "2026-11-07",
+          "reason": "Owner requests visual pilot approval before publication"
         }
       ],
       "release_record_note": "Approval and schedule receipt committed together immediately after release; media commit is the exact rendered version.",
