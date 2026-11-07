@@ -11,18 +11,20 @@
   "monthly_target_approximate": 13,
   "monthly_publication_cap": 20,
   "deployment_verified": true,
-  "deployment_evidence": {
-    "workflow_run_id": 42366441822,
-    "media_commit": "ae1aeac2a3860cfbef7f0569bbef3a55a2f45aec",
-    "anonymous_downloads_verified_at": "2026-11-07T11:03:41+00:00",
-    "verification_artifact_id": 13572345810,
-    "public_files_verified": 12,
-    "video_and_carousel_contact_sheets_inspected": true,
-    "note": "Verify each subsequent deployed batch again; this is not evidence of Instagram scheduling or publication."
-  },
+  "deployment_evidence": {"workflow_run_id":42366441822,"media_commit":"ae1aeac2a3860cfbef7f0569bbef3a55a2f45aec","note":"Technical deployment only. Does not establish editorial or aesthetic approval."},
   "bio_link_confirmed": false,
   "routine_human_approval_required": false,
   "autonomous_editorial_and_posting_authorisation_date": "2026-11-07",
-  "quota_policy": "Before each new schedule, reconcile all published feed posts/Reels/Stories and all queued posts, including manually created content, plus pending or uncertain reservations. Preserve monthly observations, avoid double counting, stop when coverage is unknown or projected monthly total exceeds 20. No upgrade.",
-  "publication_policy": "User-authorised autonomous topic selection, scientific review, production and publishing. Require actual original-paper verification, deployed-media inspection, duplicate checks, source links and quota checks. Never claim link-in-bio until bio_link_confirmed. Never schedule the disabled deployment pilot."
+  "publishing_paused": true,
+  "production_pause_reason": "User rejected the posted Reel's visuals and narration on 7 November 2026. Automation must not reuse the generic static fish/wave template or direct eSpeak narration.",
+  "quality_gate": {
+    "status": "replacement_benchmark_required",
+    "approved_benchmark_version": null,
+    "one_time_style_approval_required": true,
+    "technical_checks_are_not_aesthetic_review": true,
+    "blocked_fallbacks": ["direct eSpeak narration", "generic fish-and-waves slideshow", "publishing degraded media to meet a quota"],
+    "resume_rule": "Keep both scheduled tasks disabled until the replacement full-video benchmark is explicitly accepted and its repeatable production path is tested. Approval concerns one template/voice standard, not weekly manual editing. A voice sample alone is not full-video acceptance. After approval, use the exact accepted narrator and template version; never silently substitute a cheaper or simpler renderer. If a component fails, hold the post and report the failure."
+  },
+  "quota_policy": "Before each new schedule reconcile all observable published and queued content, including manually created posts, with stable IDs and uncertain reservations. Preserve monthly observations; never invent zero history or exceed 20. No upgrade.",
+  "publication_policy": "Current quality hold overrides earlier autonomous authorisation. No new public posts until replacement benchmark acceptance. Continue to require original-paper verification, public-media checks, duplicate checks, source references and quota checks. Never claim link-in-bio until confirmed."
 }
