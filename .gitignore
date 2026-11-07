@@ -1,0 +1,7 @@
+site/media/
+site/papers.json
+site/publish-queue.json
+site/health.json
+__pycache__/
+*.pyc
+.env

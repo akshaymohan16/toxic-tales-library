@@ -1,0 +1,36 @@
+{
+  "id": "TT-001",
+  "slug": "tt-001-trout-methamphetamine",
+  "title": "Can pollution change a trout’s choice?",
+  "hook": "Can drug pollution change a trout's choice?",
+  "doi": "10.1242/jeb.242145",
+  "paper_title": "Methamphetamine pollution elicits addiction in wild fish",
+  "citation": "Horký et al. (2021), Journal of Experimental Biology",
+  "tags": ["freshwater", "fish", "behaviour", "wastewater"],
+  "summary": "After eight weeks of methamphetamine exposure, hatchery-reared brown trout showed greater preference for a drug-containing current than control fish in laboratory choice tests, particularly during early withdrawal.",
+  "evidence_note": "One holding tank per treatment confounds treatment with tank. This laboratory study does not demonstrate wild fish seeking polluted wastewater. The preference measure is not a percentage of individual fish choosing a drug.",
+  "source_url": "https://doi.org/10.1242/jeb.242145",
+  "review_status": "verified",
+  "checks": {"full_text": true, "design": true, "findings": true, "limitations": true, "rights": true},
+  "review_note": "Pilot evidence notes checked in the originating conversation. Included as a deployment test, not queued for Instagram. Generic renderer output is distinct from the earlier cinematic pilot.",
+  "publication_enabled": false,
+  "is_ai_generated": false,
+  "posts": [],
+  "scenes": [
+    {"kind": "fish", "headline": "DRUGS IN RIVER WATER?", "speech": "Could a drug in river water change a fish's choice?"},
+    {"kind": "river", "headline": "INVISIBLE POLLUTION", "speech": "Some human medicines and drugs reach streams through treated wastewater."},
+    {"kind": "fish", "headline": "8 WEEKS OF EXPOSURE", "speech": "Scientists exposed brown trout to one microgram of methamphetamine per litre for eight weeks."},
+    {"kind": "choice", "headline": "THEN, A CHOICE TEST", "speech": "Later, they tested whether fish preferred clean or methamphetamine containing water."},
+    {"kind": "result", "headline": "A DIFFERENT PREFERENCE", "speech": "Previously exposed fish showed a greater preference for the drug containing current than controls during early withdrawal."},
+    {"kind": "caveat", "headline": "LAB RESULTS, NOT WILD PROOF", "speech": "This was a laboratory study with only one exposure tank per treatment. It does not prove drug seeking in wild rivers."},
+    {"kind": "end", "headline": "THE SCIENCE IS LINKED", "speech": "Find the original paper in our research library, and follow Toxic Tales for more."}
+  ],
+  "slides": [
+    {"headline": "CAN POLLUTION CHANGE A FISH’S CHOICE?", "body": "Behind the study: a laboratory experiment with brown trout and methamphetamine. Swipe for the result and its limits."},
+    {"headline": "WHAT THE RESEARCHERS DID", "body": "Hatchery-reared brown trout received either clean water or a nominal methamphetamine concentration of 1 microgram per litre for eight weeks."},
+    {"headline": "A TWO-CURRENT CHOICE TEST", "body": "After exposure, fish were held in clean water. Researchers then tested their preference between a clean current and a drug-containing current."},
+    {"headline": "WHAT CHANGED?", "body": "Previously exposed fish showed greater preference for the drug-containing current than controls during early withdrawal. This is a relative treatment difference, not proof that every exposed fish preferred the drug."},
+    {"headline": "THE LIMITATION MATTERS", "body": "Only one holding tank was used per treatment. Tank effects and drug effects cannot be fully separated. The study also did not track wild fish seeking wastewater."},
+    {"headline": "READ THE ORIGINAL RESEARCH", "body": "Horký and colleagues, 2021. Journal of Experimental Biology. DOI: 10.1242/jeb.242145. Find this paper in the Toxic Tales source library. Follow @toxic_tales_eco."}
+  ]
+}

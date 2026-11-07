@@ -1,0 +1,15 @@
+{
+  "allowed_repository": "akshaymohan16/toxic-tales-library",
+  "instagram_handle": "toxic_tales_eco",
+  "metricool_brand_id": "7937614",
+  "timezone": "Europe/Vienna",
+  "budget_eur": 0,
+  "site_url": "https://akshaymohan16.github.io/toxic-tales-library/",
+  "target_weekly_posts": {"reels": 2, "carousel": 1},
+  "slots": {"tuesday": "REEL", "thursday": "CAROUSEL", "saturday": "REEL"},
+  "default_local_publication_time": "10:00",
+  "monthly_publication_cap": 20,
+  "deployment_verified": false,
+  "bio_link_confirmed": false,
+  "publication_policy": "User-authorised autonomous publishing only after scientific review, deployed-media inspection, duplicate checks and verification of every source link. Never claim link-in-bio until bio_link_confirmed. Never schedule the disabled deployment pilot."
+}

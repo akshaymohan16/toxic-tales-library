@@ -1,0 +1,59 @@
+name: Build and deploy Toxic Tales
+on:
+  push:
+    branches: [main]
+    paths: ['episodes/**', 'scripts/**', 'site/**', '.github/workflows/publish-library.yml', 'requirements.txt']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: toxic-tales-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/cache@v4
+        with:
+          path: site/media
+          key: toxic-tales-media-${{ runner.os }}-${{ hashFiles('scripts/**', 'episodes/**', 'requirements.txt') }}
+          restore-keys: toxic-tales-media-${{ runner.os }}-
+      - name: Install free offline tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak fonts-dejavu-core
+          python -m pip install -r requirements.txt
+      - name: Build reviewed stories and media
+        run: python scripts/build.py
+      - name: Save build even if Pages is not yet enabled
+        uses: actions/upload-artifact@v4
+        with:
+          name: toxic-tales-site-preview
+          path: site
+          include-hidden-files: true
+          retention-days: 7
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+  deploy:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check Pages is enabled
+        uses: actions/configure-pages@v5
+      - name: Deploy public source library
+        id: deployment
+        uses: actions/deploy-pages@v4
