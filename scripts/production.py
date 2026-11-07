@@ -165,8 +165,10 @@ class Visuals:
             d.text((x,y),txt,font=font(size,italic=italic),fill=color,anchor=anchor,
                    stroke_width=1 if live else 0,stroke_fill='#020604')
         def headline(txt,y=190,size=58,color=white,width=620):
-            for k,line in enumerate(wrap(txt,size,width)):
+            lines=wrap(txt,size,width)
+            for k,line in enumerate(lines):
                 text(line,52,y+k*(size+5),size,color,'lt')
+            return y+len(lines)*(size+5)
         def small(txt,y=852,color='#c0d2cc'):
             text(txt,360,y,19,color)
         def arrow(a,b,color=cyan):
@@ -258,8 +260,8 @@ class Visuals:
                 d.ellipse((xx-5,yy-5,xx+5,yy+5),fill=coral)
             text('Some residues remain',360,887,24,coral)
         elif typ=='restoration_question':
-            headline('ONE PRESSURE ENDS.',180,51,lime)
-            headline('ANOTHER STAYS.',243,51)
+            next_y=headline('ONE PRESSURE ENDS.',180,48,lime)
+            headline('ANOTHER STAYS.',next_y+10,48)
             predator(430-800*min(1,phase*1.4),439,3.2)
             if phase>.34:
                 d.line((76,437,187,437),fill='#3d6854',width=3)
@@ -305,7 +307,8 @@ class Visuals:
             elif seg==9:headline('DRUG REMOVAL WAS NOT TESTED.',177,49,coral)
             elif seg==11:headline('WHAT ELSE IS HOLDING RECOVERY BACK?',177,47,lime)
         elif typ in ('nature','landscape'):
-            headline(shot.get('title','FROM TANKS TO REAL LAKES?'),177,50)
+            scene_title='A ROUTE INTO FRESH WATER.' if seg==2 else 'FROM TANKS TO THE WIDER WORLD.'
+            headline(shot.get('title',scene_title),177,48)
         elif typ=='limit':
             headline('WHAT THE STUDY CANNOT TELL US.',175,49)
             for j,item in enumerate(shot['items']):
@@ -340,8 +343,8 @@ class Visuals:
                        anchor='mt',stroke_width=3,stroke_fill='#010603')
         if shot.get('note'):
             note=shot['note'].replace('•',' / ')
-            for j,line in enumerate(wrap(note,15,620,False)):
-                d.text((50,1161+j*20),line,font=font(15,False),fill='#d2ddd5',stroke_width=1,stroke_fill='#020604')
+            for j,line in enumerate(wrap(note,18,620,False)):
+                d.text((50,1155+j*23),line,font=font(18,False),fill='#edf4ef',stroke_width=1,stroke_fill='#020604')
         d.rectangle((50,1230,50+int(620*progress),1233),fill=lime)
         return im
 
