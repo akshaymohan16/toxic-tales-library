@@ -28,7 +28,7 @@
   },
   "TT-003": {
     "episode_id": "TT-003",
-    "decision": "awaiting_owner_approval",
+    "decision": "rejected_by_owner",
     "owner_approved": false,
     "reviewed_at": "2026-11-07",
     "reviewer": "Delegated Toxic Tales editor",
@@ -60,6 +60,8 @@
       "Confirm PUBLISHED plus public Instagram URL, save receipt, then report publication.",
       "If immediate posting vacates Saturday 14 November, assign a new distinct-paper Reel to that slot for the Sunday producer; do not repost TT-003.",
       "Resume recurring automation only after this owner hold is lifted, retaining two new Reels and one carousel per week and confirmed-publication notifications."
-    ]
+    ],
+    "rejection_reason": "Unclear opening and experiment/results summary; owner rejected whole script and requested story-first rebuild.",
+    "superseded_by_pilot": "TT-004"
   }
 }

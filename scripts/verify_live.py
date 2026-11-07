@@ -53,8 +53,13 @@ try:
             time.sleep(10)
     for p in ['index.html', 'papers.json', 'publish-queue.json']:
         get(p)
+    if (EXPECTED/'pilot.html').exists():get('pilot.html')
+    for citation in (EXPECTED/'citations').glob('*'):
+        if citation.suffix in ('.bib','.ris'):get(citation.relative_to(EXPECTED).as_posix())
     papers = json.loads((OUT/'papers.json').read_text())
     for ep in papers:
+        get(ep['evidence_record'])
+        get(ep['qa'])
         media = ep['media']
         cover = get(media['cover'])
         with Image.open(cover) as im:

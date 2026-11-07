@@ -1,5 +1,6 @@
 import copy, unittest
 from build import release_ok, validate, ROOT, read
+from test_editorial_gate import EditorialGates
 class Gates(unittest.TestCase):
     def test_exact_bytes(self):
         m={'fingerprint':'v4','files':{'movie.mp4':'hash'},'evidence_sha256':'source'}
@@ -20,7 +21,8 @@ class Gates(unittest.TestCase):
         a={**m,'decision':'release','reviewed_contact_sheet':'export','scientific_review':'checked','visual_review':'checked','audio_review':'checked'}
         self.assertFalse(release_ok(a,m))
         a['narrative_review']='Question, ecological stakes, independently verified context and bounded payoff inspected in final export.'
-        self.assertTrue(release_ok(a,m))
+        # A legacy nonempty review cannot release the rejected pilot under the new standard.
+        self.assertFalse(release_ok(a,m))
     def test_journalism_context_required(self):
         ep=read(ROOT/'episodes/tt-003.json');ep['editorial_story']['context_sources']=[]
         with self.assertRaises(AssertionError):validate(ep)

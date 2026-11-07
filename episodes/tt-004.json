@@ -1,0 +1,615 @@
+{
+  "id": "TT-004",
+  "slug": "tt-004-fish-eggs-duck-gut",
+  "title": "Fish eggs survived a duck's gut",
+  "hook": "Some fish eggs can survive being eaten by a duck—and still hatch.",
+  "doi": "10.1073/pnas.2004805117",
+  "paper_title": "Experimental evidence of dispersal of invasive cyprinid eggs inside migratory waterfowl",
+  "citation": "Lovas-Kiss et al. (2020), PNAS",
+  "bibliography": "Lovas-Kiss, Á., Vincze, O., Löki, V., Pallér-Kapusi, F., Halasi-Kovács, B., Kovács, G., Green, A. J., & Lukács, B. A. (2020). Experimental evidence of dispersal of invasive cyprinid eggs inside migratory waterfowl. Proceedings of the National Academy of Sciences, 117(27), 15397–15399. https://doi.org/10.1073/pnas.2004805117",
+  "paper_metadata": {
+    "title": "Experimental evidence of dispersal of invasive cyprinid eggs inside migratory waterfowl",
+    "authors": [
+      "Ádám Lovas-Kiss",
+      "Orsolya Vincze",
+      "Viktor Löki",
+      "Felícia Pallér-Kapusi",
+      "Béla Halasi-Kovács",
+      "Gyula Kovács",
+      "Andy J. Green",
+      "Balázs András Lukács"
+    ],
+    "year": 2020,
+    "journal": "Proceedings of the National Academy of Sciences",
+    "volume": "117",
+    "issue": "27",
+    "pages": "15397–15399",
+    "doi": "10.1073/pnas.2004805117",
+    "doi_url": "https://doi.org/10.1073/pnas.2004805117",
+    "pmid": "32571940",
+    "pmcid": "PMC7355035",
+    "online_date": "2020-06-22",
+    "issue_date": "2020-07-07",
+    "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7355035/",
+    "repository_pdf_url": "https://real.mtak.hu/114855/1/Lovas-Kiss%20et%20al.%202020-PNAS.pdf",
+    "metadata_url": "https://pubmed.ncbi.nlm.nih.gov/32571940/",
+    "bibliography": "Lovas-Kiss, Á., Vincze, O., Löki, V., Pallér-Kapusi, F., Halasi-Kovács, B., Kovács, G., Green, A. J., & Lukács, B. A. (2020). Experimental evidence of dispersal of invasive cyprinid eggs inside migratory waterfowl. Proceedings of the National Academy of Sciences, 117(27), 15397–15399. https://doi.org/10.1073/pnas.2004805117",
+    "access_status": {
+      "main_text": "All three pages read, including methods, results, discussion and figure caption.",
+      "supplement": "Dataset S1 XLS is listed by the publisher; retrieval returned HTTP 403. It was not read, and no claim depends on supplementary-only data.",
+      "publisher_supplement_url": "https://www.pnas.org/doi/suppl/10.1073/pnas.2004805117",
+      "integrity_check": "Targeted DOI/title correction and retraction searches and inspected PubMed/PMC records revealed no notice on 2026-11-07; recheck before publication."
+    },
+    "article_license": "CC BY-NC-ND 4.0",
+    "asset_policy": "Link to the paper. Use original diagrams and separately verified wildlife assets. Do not copy or adapt its figures or substitute the earlier killifish/swan experiment's footage for this carp/mallard experiment.",
+    "bibtex": "@article{LovasKiss2020FishEggs,\n  author = {Lovas-Kiss, Ádám and Vincze, Orsolya and Löki, Viktor and Pallér-Kapusi, Felícia and Halasi-Kovács, Béla and Kovács, Gyula and Green, Andy J. and Lukács, Balázs András},\n  title = {Experimental evidence of dispersal of invasive cyprinid eggs inside migratory waterfowl},\n  journal = {Proceedings of the National Academy of Sciences},\n  year = {2020},\n  volume = {117},\n  number = {27},\n  pages = {15397--15399},\n  doi = {10.1073/pnas.2004805117},\n  url = {https://doi.org/10.1073/pnas.2004805117},\n  pmid = {32571940},\n  pmcid = {PMC7355035}\n}\n",
+    "ris": "TY  - JOUR\nAU  - Lovas-Kiss, Ádám\nAU  - Vincze, Orsolya\nAU  - Löki, Viktor\nAU  - Pallér-Kapusi, Felícia\nAU  - Halasi-Kovács, Béla\nAU  - Kovács, Gyula\nAU  - Green, Andy J.\nAU  - Lukács, Balázs András\nTI  - Experimental evidence of dispersal of invasive cyprinid eggs inside migratory waterfowl\nJO  - Proceedings of the National Academy of Sciences\nPY  - 2020\nDA  - 2020/06/22\nVL  - 117\nIS  - 27\nSP  - 15397\nEP  - 15399\nDO  - 10.1073/pnas.2004805117\nUR  - https://doi.org/10.1073/pnas.2004805117\nAN  - PMID:32571940\nN1  - PMCID: PMC7355035. Pilot TT-004; main paper read, supplementary Dataset S1 not retrieved.\nER  -\n"
+  },
+  "citation_files": {
+    "bibtex": "citations/tt-004.bib",
+    "ris": "citations/tt-004.ris"
+  },
+  "tags": [
+    "freshwater",
+    "fish dispersal",
+    "mallards",
+    "carp",
+    "ecology"
+  ],
+  "summary": "Some fish eggs survived a journey through a mallard's digestive tract. In a captive experiment, researchers retrieved a small number of intact eggs from droppings; three later hatched after incubation in water. This reveals a possible way for eggs to cross the dry land between ponds, while leaving successful establishment in wild ponds untested.",
+  "evidence_note": "This captive experiment tested survival through digestion, not actual transport between ponds or establishment of a wild fish population. Roughly 8,000 eggs were fed; 18 intact eggs were recovered, 12 held living embryos, and 3 hatched after incubation in water. Fungal infection killed the other nine living recovered embryos and many controls.",
+  "source_url": "https://doi.org/10.1073/pnas.2004805117",
+  "review_status": "verified",
+  "checks": {
+    "full_text": true,
+    "design": true,
+    "findings": true,
+    "limitations": true,
+    "rights": true
+  },
+  "review_note": "Focal paper read in full and statements checked against its methods, results and discussion. Dataset S1 was inaccessible and is not represented as read. The current pilot remains subject to independent pre-render review, encoded-film review and explicit owner approval.",
+  "publication_enabled": false,
+  "is_ai_generated": true,
+  "batch_id": "2026-11-09",
+  "pilot_status": "awaiting_owner_approval",
+  "posts": [
+    {
+      "id": "TT-004-REEL",
+      "format": "REEL",
+      "publication_date": "2026-11-14T10:00:00+01:00",
+      "caption": "A duck's meal could be a fish's ride to a new pond. 🦆🐟\n\nDry land separates ponds, but ducks can cross it. Could fish eggs survive the journey inside a bird?\n\nIn a controlled study, eight mallards were force-fed roughly 8,000 common and Prussian carp eggs across two trials. Researchers recovered 18 intact eggs. Twelve held living embryos, and three hatched after incubation in water.\n\nThe result shows that some developing carp eggs can survive digestion. The experiment did not show ducks establishing fish populations in wild ponds. Fungal infection also killed many recovered and control embryos during incubation, so these counts are not a clean estimate of hatching success in nature.\n\nPaper: Lovas-Kiss et al. (2020), PNAS 117(27), 15397–15399. DOI: 10.1073/pnas.2004805117\n\nResearch behind the Reel (TT-004):\nhttps://akshaymohan16.github.io/toxic-tales-library/sources/tt-004.html\n\nMallard and pond-fish reference footage: NaIzletuSi ™, CC BY 3.0, via Wikimedia Commons; cropped and edited. Original explanatory illustrations; synthetic narration. Full credits and licence links in the research record.\n\n#FreshwaterEcology #Ecology #Fish #WeirdNature #ScienceCommunication #ToxicTales"
+    }
+  ],
+  "slides": [],
+  "evidence_file": "evidence/tt-004.md",
+  "evidence": {
+    "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7355035/",
+    "pdf_url": "https://real.mtak.hu/114855/1/Lovas-Kiss%20et%20al.%202020-PNAS.pdf",
+    "checked_at": "2026-11-07",
+    "design": "Two controlled feeding trials with the same eight captive mallards (four male, four female). Approximately 500 common carp eggs per bird in one trial and approximately 500 Prussian carp eggs per bird in the other. Eggs were force-fed; intact eggs retrieved from droppings were transferred into water and incubated. Fifty fertilised control eggs per species were incubated in parallel.",
+    "claims": [
+      {
+        "claim": "Some developing carp eggs survived mallard gut passage and subsequently hatched after incubation in water.",
+        "location": "Results, p. 15398; methods, pp. 15397–15398. Demonstrated in captive feeding experiments with two carp species; not a claim about all fish eggs."
+      },
+      {
+        "claim": "Eight captive mallards, four male and four female, were each fed approximately 500 eggs in each of two separate species trials.",
+        "location": "Materials and Methods, p. 15397. Force-feeding; approximately 8,000 eggs total is derived as 8 × ~500 × 2 and must retain the approximation sign."
+      },
+      {
+        "claim": "Species: common carp (Cyprinus carpio), Prussian carp (Carassius gibelio), mallard (Anas platyrhynchos).",
+        "location": "Materials and Methods, p. 15397. Do not present unrelated fish, eggs or hatchlings as experimental organisms."
+      },
+      {
+        "claim": "18 intact eggs were recovered: 8 common carp and 10 Prussian carp.",
+        "location": "Results, p. 15398; Fig. 1. Recovered intact is different from living or hatched."
+      },
+      {
+        "claim": "12 recovered eggs contained living embryos: 8 common carp and 4 Prussian carp.",
+        "location": "Results, p. 15398. Movement within translucent eggs indicated viability."
+      },
+      {
+        "claim": "3 recovered eggs hatched after incubation: 1 common carp and 2 Prussian carp.",
+        "location": "Results, p. 15398. Hatching was in water after recovery, not inside a bird or directly upon defecation."
+      },
+      {
+        "claim": "Nine of the 12 living recovered embryos died from fungal infection during incubation; control eggs also suffered substantial fungal loss.",
+        "location": "Results, p. 15398. Counts from this protocol do not provide a clean estimate of hatching probability in the wild."
+      },
+      {
+        "claim": "Most recovered eggs passed within one hour; one common carp egg passed after four to six hours and subsequently hatched.",
+        "location": "Results, p. 15398. Not needed in voiceover. No actual flight or dispersal distance was measured."
+      },
+      {
+        "claim": "Survival through digestion provides a possible route for eggs between water bodies; successful establishment in a new wild population was not tested.",
+        "location": "Discussion, pp. 15398–15399; experimental design. Use could/might/possible for pond-to-pond movement and establishment implications."
+      },
+      {
+        "claim": "The experiment used actively developing eggs, rather than the resistant dormant eggs discussed in earlier killifish research.",
+        "location": "Abstract and Materials and Methods, p. 15397. Background archive only; no invented explanation of why the carp eggs survived."
+      }
+    ],
+    "limitations": [
+      "No actual flight or transport between ponds was measured.",
+      "Successful establishment of a new wild fish population was not tested.",
+      "The mechanism allowing these developing eggs to survive digestion was not identified.",
+      "Results concern two carp species and captive mallards; they do not show that all fish eggs survive.",
+      "Approximately 8,000 fed eggs is an estimated denominator; not all fed eggs were fertilised.",
+      "Fungal infection during incubation killed nine living recovered embryos and many control embryos, complicating interpretation of the hatching count as a survival rate."
+    ],
+    "correction_check": "Targeted DOI/title correction and retraction searches and inspected PubMed/PMC records revealed no notice on 2026-11-07; recheck before publication.",
+    "supplement_status": "Dataset S1 XLS is listed by the publisher; retrieval returned HTTP 403. It was not read, and no claim depends on supplementary-only data.",
+    "numerical_ledger": {
+      "eggs_fed_approx": 8000,
+      "approximation_derivation": "8 ducks × approximately 500 eggs × 2 species trials",
+      "intact_recovered": 18,
+      "living_recovered": 12,
+      "hatched": 3,
+      "by_species": [
+        {
+          "species": "Cyprinus carpio",
+          "common_name": "common carp",
+          "intact": 8,
+          "living": 8,
+          "hatched": 1
+        },
+        {
+          "species": "Carassius gibelio",
+          "common_name": "Prussian carp",
+          "intact": 10,
+          "living": 4,
+          "hatched": 2
+        }
+      ],
+      "controls": {
+        "common_carp": {
+          "fertilised_eggs": 50,
+          "hatched": 0,
+          "fungal_deaths": 50
+        },
+        "prussian_carp": {
+          "fertilised_eggs": 50,
+          "hatched": 14,
+          "fungal_deaths": 36
+        }
+      },
+      "fertilisation_success": {
+        "common_carp": "100%",
+        "prussian_carp": "30%"
+      },
+      "count_cautions": [
+        "Do not call all roughly 8,000 fed eggs viable or fertilised.",
+        "Do not describe 0.2% as a hatching rate.",
+        "Do not infer that every unrecovered egg was killed by digestion.",
+        "Do not infer a precise natural hatching or colonisation rate."
+      ]
+    }
+  },
+  "production": {
+    "renderer": "ecology-story-7",
+    "editorial_style": "science-journalism",
+    "editorial_standard": "story-first-v1",
+    "script_author": "new_pilot_science",
+    "voice_speed": 0.93,
+    "cover_asset": "mallard_4k_by",
+    "cover_offset": 4,
+    "cover_focus": [
+      0.45,
+      0.55
+    ],
+    "cover_lines": [
+      "FISH EGGS.",
+      "EATEN BY A DUCK.",
+      "STILL HATCHED."
+    ],
+    "cover_title": "FISH EGGS.\nEATEN BY A DUCK.\nSTILL HATCHED.",
+    "critical_terms": [
+      "fish eggs",
+      "duck",
+      "digestion",
+      "eight mallards",
+      "living embryos",
+      "water and incubated",
+      "Three hatched",
+      "did not show",
+      "could"
+    ],
+    "takeaway": "A duck’s meal could be a fish’s ride to a new pond.",
+    "assets": [
+      {
+        "id": "mallard_4k_by",
+        "filename": "mallard_4k_by.webm",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/2022-09-09_LJUBLJANA_Prule_ANSERIFORMES_Anas_platyrhynchos_MLAKARICA.webm",
+        "creator": "NaIzletuSi ™",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "source_page": "https://commons.wikimedia.org/wiki/File:2022-09-09_LJUBLJANA_Prule_ANSERIFORMES_Anas_platyrhynchos_MLAKARICA.webm",
+        "original_source": "https://www.youtube.com/watch?v=FjXcPcw0mto",
+        "changes": "Cropped to portrait, resized, source audio removed, and edited with narration and captions. Reference wildlife footage, not study animals or the study site.",
+        "source_dimensions": [
+          3840,
+          2160
+        ],
+        "source_duration_seconds": 17.321,
+        "source_sha1": "439426d4a50aebd9221dca7d26580e2e6ab3cf6a",
+        "focus": [
+          0.45,
+          0.55
+        ],
+        "identity_note": "Mallard (Anas platyrhynchos); source metadata checked and raw footage viewed by parent.",
+        "license_checked_at": "2026-11-07"
+      },
+      {
+        "id": "tivoli_fish_by",
+        "filename": "tivoli_fish_by.webm",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2022-06-13_LJUBLJANA_Krajinski_park_Tivoli_PISCEC_Ribe.webm",
+        "creator": "NaIzletuSi ™",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "source_page": "https://commons.wikimedia.org/wiki/File:2022-06-13_LJUBLJANA_Krajinski_park_Tivoli_PISCEC_Ribe.webm",
+        "original_source": "https://www.youtube.com/watch?v=P3SQIUwRzbk",
+        "changes": "Cropped to portrait, resized, source audio removed, and edited with narration and captions. Reference wildlife footage, not study animals or the study site.",
+        "source_dimensions": [
+          1920,
+          1080
+        ],
+        "source_duration_seconds": 91,
+        "source_sha1": null,
+        "focus": [
+          0.7,
+          0.5
+        ],
+        "identity_note": "Pond fish reference imagery; raw footage viewed by parent. The study's species identities come from the paper, not this footage.",
+        "license_checked_at": "2026-11-07"
+      }
+    ],
+    "segments": [
+      {
+        "speech": "Some fish eggs can survive being eaten by a duck—and still hatch.",
+        "captions": [
+          "Some fish eggs can survive",
+          "being eaten by a duck—",
+          "and still hatch."
+        ],
+        "pause_after": 0.3,
+        "shots": [
+          {
+            "kind": "duck",
+            "asset": "mallard_4k_by",
+            "offset": 0,
+            "focus": [
+              0.55,
+              0.5
+            ],
+            "inset_egg": true,
+            "title": "EATEN. STILL HATCHED.",
+            "title_size": 46,
+            "note": "Mallard reference footage • fish egg illustration",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "For a carp, dry land is a barrier between ponds. A duck can fly across it.",
+        "captions": [
+          "For a carp, dry land",
+          "is a barrier between ponds.",
+          "A duck can fly across it."
+        ],
+        "pause_after": 0.3,
+        "shots": [
+          {
+            "kind": "pond",
+            "asset": "tivoli_fish_by",
+            "offset": 12,
+            "focus": [
+              0.7,
+              0.5
+            ],
+            "title": "PONDS CAN BE ISOLATED",
+            "title_size": 43,
+            "note": "Pond fish reference footage • not study animals",
+            "start": 0,
+            "end": 0.42
+          },
+          {
+            "kind": "question",
+            "title": "DRY LAND IS A BARRIER",
+            "title_size": 44,
+            "note": "Conceptual illustration • no particular pond is depicted",
+            "start": 0.42,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "But a lift inside a duck comes with a problem: digestion.",
+        "captions": [
+          "But a lift inside a duck",
+          "comes with a problem: digestion."
+        ],
+        "pause_after": 0.3,
+        "shots": [
+          {
+            "kind": "passage",
+            "title": "THE PROBLEM: DIGESTION",
+            "title_size": 45,
+            "note": "Conceptual illustration • no protective mechanism assumed",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Researchers fed eggs from two carp species to eight mallards, then searched the droppings.",
+        "captions": [
+          "Researchers fed eggs",
+          "from two carp species",
+          "to eight mallards,",
+          "then searched the droppings."
+        ],
+        "pause_after": 0.3,
+        "shots": [
+          {
+            "kind": "feeding",
+            "asset": "mallard_4k_by",
+            "offset": 8,
+            "focus": [
+              0.45,
+              0.5
+            ],
+            "title": "8 MALLARDS\n2 CARP SPECIES",
+            "title_size": 48,
+            "note": "Common + Prussian carp eggs • controlled feeding study\nReference footage, not the experiment",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Very few made it through intact. But some still contained living embryos.",
+        "captions": [
+          "Very few made it through intact.",
+          "But some still contained living embryos."
+        ],
+        "pause_after": 0.3,
+        "shots": [
+          {
+            "kind": "eggs",
+            "title": "VERY FEW MADE IT THROUGH",
+            "title_size": 43,
+            "show_denominator": true,
+            "note": "Observed counts • approximately 8,000 eggs fed",
+            "start": 0,
+            "end": 0.58
+          },
+          {
+            "kind": "embryos",
+            "title": "SOME WERE STILL ALIVE",
+            "title_size": 44,
+            "note": "12 living embryos recovered • illustration",
+            "start": 0.58,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "The recovered eggs were put into water and incubated. Three hatched into fish.",
+        "captions": [
+          "The recovered eggs were put",
+          "into water and incubated.",
+          "Three hatched into fish."
+        ],
+        "pause_after": 0.3,
+        "shots": [
+          {
+            "kind": "hatching",
+            "title": "AFTER INCUBATION",
+            "title_size": 48,
+            "note": "9 living embryos died from fungal infection during incubation\nIllustration • recovered eggs hatched in water",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "This experiment showed that some eggs can survive digestion. It did not show ducks establishing a wild fish population.",
+        "captions": [
+          "This experiment showed that",
+          "some eggs can survive digestion.",
+          "It did not show ducks",
+          "establishing a wild fish population."
+        ],
+        "pause_after": 0.3,
+        "shots": [
+          {
+            "kind": "scope",
+            "asset": "tivoli_fish_by",
+            "offset": 18,
+            "focus": [
+              0.7,
+              0.5
+            ],
+            "title": "SURVIVING DIGESTION",
+            "title_size": 46,
+            "note": "Demonstrated for some developing carp eggs\nPond fish reference footage",
+            "start": 0,
+            "end": 0.47
+          },
+          {
+            "kind": "scope",
+            "asset": "mallard_4k_by",
+            "offset": 12,
+            "focus": [
+              0.45,
+              0.5
+            ],
+            "title": "A NEW FISH POPULATION?\nNOT TESTED HERE.",
+            "title_size": 43,
+            "note": "The experiment did not test new wild populations\nMallard reference footage",
+            "start": 0.47,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Still, a duck’s meal could be a fish’s ride to a new pond.",
+        "captions": [
+          "Still, a duck’s meal could be",
+          "a fish’s ride",
+          "to a new pond."
+        ],
+        "pause_after": 0.3,
+        "shots": [
+          {
+            "kind": "connection",
+            "title": "A POSSIBLE RIDE",
+            "title_size": 48,
+            "note": "Possible route • no between-pond flight was measured",
+            "start": 0,
+            "end": 0.3
+          },
+          {
+            "kind": "closing",
+            "asset": "mallard_4k_by",
+            "offset": 12,
+            "focus": [
+              0.45,
+              0.5
+            ],
+            "title": "A FISH’S RIDE\nTO A NEW POND?",
+            "title_size": 48,
+            "note": "Full paper, evidence and limits: Research behind the Reel\nMallard reference footage",
+            "start": 0.3,
+            "end": 1
+          }
+        ]
+      }
+    ]
+  },
+  "editorial_story": {
+    "question": "Can developing fish eggs survive a trip through a duck, making a ride between ponds possible?",
+    "why_it_matters": "A familiar pond bird changes the way we imagine the connections between apparently separate freshwater habitats.",
+    "audience": "Curious non-specialists interested in freshwater ecology and surprising natural history.",
+    "subject": "Developing common carp and Prussian carp eggs, with mallards as a possible dispersal vector.",
+    "setting": "Separate freshwater ponds and the dry land between them; the evidence comes from a controlled captive experiment.",
+    "opening_context": "The first spoken line explicitly names fish eggs, a duck, ingestion and subsequent hatching; real duck footage and a labelled fish-egg inset anchor the subject immediately.",
+    "normal_expectation": "A carp cannot normally swim across the dry land separating ponds, while a duck can fly across it; digestion creates the obstacle for an egg travelling inside the bird.",
+    "story_selection": "Chosen for a concrete, self-contained surprise with a clear ecological obstacle, a testable causal route, rare observed survivors, and an ending that changes how isolated ponds can be imagined without claiming wild colonisation was proven.",
+    "decisive_limit": "The experiment demonstrated survival through digestion; it did not demonstrate fish establishing a population in another wild pond.",
+    "narrative_arc": [
+      "Fish eggs survived ingestion",
+      "Dry land separates ponds",
+      "Digestion is the cost of a possible ride",
+      "A focused test in eight mallards",
+      "Few eggs recovered, some alive",
+      "Three hatched after incubation",
+      "What was and was not demonstrated",
+      "Possible ride to a new pond"
+    ],
+    "context_sources": [],
+    "context_source_note": "All scientific claims used in this short film are supported by the focal paper. Optional historical sources appear in the evidence record with access limitations; no arbitrary context-paper quota is used.",
+    "closing_payoff": "A familiar duck's meal becomes a possible fish-egg connection between ponds; the closing statement remains conditional.",
+    "reporting_mode": "Published-source explanatory journalism; no interviews, eyewitness reporting, animal intentions, invented quotations or wild colonisation event.",
+    "craft_record": "quality/SCIENCE_JOURNALISM.md",
+    "visual_plan": [
+      {
+        "segment": 1,
+        "visual": "Full-frame moving mallards with a labelled original fish-egg inset.",
+        "purpose": "Name and show the animal immediately while the narration delivers the surprising survival result.",
+        "source_or_concept": "NaIzletuSi ™ mallard clip, CC BY 3.0; original labelled egg illustration.",
+        "accuracy_note": "Natural footage is illustrative, not the experiment. Egg is explicitly an illustration and does not hatch inside the bird."
+      },
+      {
+        "segment": 2,
+        "visual": "Close pond-fish footage gives way to two ponds separated by dry land.",
+        "purpose": "Make the setting and dispersal barrier visible before the procedure.",
+        "source_or_concept": "NaIzletuSi ™ Tivoli fish clip, CC BY 3.0; original pond diagram.",
+        "accuracy_note": "Reference fish footage is not asserted to show the study animals or a colonisation site. Diagram represents a general ecological possibility."
+      },
+      {
+        "segment": 3,
+        "visual": "Duck-and-egg passage diagram, with ingestion and droppings linked schematically.",
+        "purpose": "Explain digestion as the obstacle rather than presenting a second unanswered hook.",
+        "source_or_concept": "Original conceptual illustration.",
+        "accuracy_note": "No invented anatomical protection, egg coating or biochemical survival mechanism."
+      },
+      {
+        "segment": 4,
+        "visual": "Return to moving mallard footage with eight-mallard/two-carp-species title.",
+        "purpose": "Anchor the evidence in an understandable experimental test without lingering on methods.",
+        "source_or_concept": "NaIzletuSi ™ mallard footage; study design from methods p. 15397.",
+        "accuracy_note": "Reference footage is labelled; study used force-feeding, explained in caption and research record. Common and Prussian carp are named in the shot note."
+      },
+      {
+        "segment": 5,
+        "visual": "Eighteen original egg icons with the approximate fed denominator, then a single enlarged living embryo.",
+        "purpose": "Make rarity clear and reveal the turning point: some embryos were alive.",
+        "source_or_concept": "Observed counts from results p. 15398; original illustrations.",
+        "accuracy_note": "18 intact and 12 living are separate stages, not an invented survival-rate graphic. Approximately 8,000 is an estimate, not an exact viable-egg denominator."
+      },
+      {
+        "segment": 6,
+        "visual": "Recovered eggs in water transition to three schematic hatchlings, with after-incubation and fungal-loss notes.",
+        "purpose": "Deliver the finding as a visible consequence of survival while preserving the sequence.",
+        "source_or_concept": "Original illustration based on results p. 15398.",
+        "accuracy_note": "Hatching occurs after return to water and incubation. Nine living embryos died from fungus during incubation; no natural hatching probability is claimed."
+      },
+      {
+        "segment": 7,
+        "visual": "Moving pond-fish and mallard shots, with survival and untested wild establishment separately identified.",
+        "purpose": "Keep natural motion through the essential evidence boundary.",
+        "source_or_concept": "Both verified CC BY 3.0 wildlife clips; scope of focal experiment.",
+        "accuracy_note": "No new wild population is shown or claimed. Reference animals are not study individuals."
+      },
+      {
+        "segment": 8,
+        "visual": "Brief possible-route diagram followed by a sustained return to moving mallard footage.",
+        "purpose": "Connect the evidence back to ponds and let the memorable conditional ending land on the real animal.",
+        "source_or_concept": "Original conceptual transport diagram and NaIzletuSi ™ mallard footage.",
+        "accuracy_note": "The route is labelled possible. No measured flight, travel distance or observed colonisation is implied."
+      }
+    ]
+  },
+  "editorial_review": {
+    "standard": "story-first-v1",
+    "source_sha256": "eed8d61f2f1702fe19b046e20618e82f1a5179c568700f0d2e0de7d008546a24",
+    "reviewed_at": "2026-11-07T17:01:51.108942+00:00",
+    "reviewer": "pilot_independent_editor",
+    "decision": "pass",
+    "review_scope": "Pre-render assessment of the exact episode, full focal paper, evidence record, eight-segment shot plan, current renderer source and preliminary illustration contact sheet. This does not approve encoded video or publishing. Final natural footage crops, transitions, captions, audio and cover still require inspection.",
+    "checks": {
+      "cold_viewer": {
+        "decision": "pass",
+        "finding": "The opening identifies fish eggs, a duck, eating and hatching in its first sentence. A real mallard and labelled egg inset provide concrete subjects without requiring knowledge of a previous Reel.",
+        "basis": "Segment 1 speech and duck shot; cover names FISH EGGS before EATEN BY A DUCK and STILL HATCHED."
+      },
+      "story": {
+        "decision": "pass",
+        "finding": "A complete causal question connects separated ponds, a potential flying carrier, digestion as the obstacle, a controlled test, surviving embryos, and hatching in water. The methods and counts serve the ecological question rather than replace it.",
+        "basis": "Segments 2-3 establish the barrier and obstacle, 4-6 supply decisive evidence, and 7-8 distinguish demonstrated survival from possible transport. The redundant second hook and multiple repeated closing claims have been removed."
+      },
+      "visuals": {
+        "decision": "pass",
+        "finding": "The plan alternates moving wildlife with original explanations: full-frame duck opening, pond-fish context, passage diagram, real duck test context, count/embryo/incubation diagrams, and wildlife through the caveat and ending. Roughly half the planned narration-weighted screen time uses natural footage. Diagrams explain invisible steps and are explicitly illustrative.",
+        "basis": "Exact shots in all eight segments; verified provenance fields for two CC BY 3.0 reference clips; current renderer source shows after-incubation label and water-before-hatching sequence. Preliminary six-panel illustration contact sheet inspected. Final footage composition and animation pacing remain final-export checks, not claimed as viewed here."
+      },
+      "payoff": {
+        "decision": "pass",
+        "finding": "The opening promise is answered inside the Reel by three eggs hatching after recovery and incubation. The final conditional pond-transport line adds ecological meaning instead of deferring the answer to the caption.",
+        "basis": "Segment 6 states and illustrates three hatches; segment 7 bounds what was tested; segment 8 closes once with the possible ride to a new pond and a possible-route label."
+      },
+      "scope": {
+        "decision": "pass",
+        "finding": "Claims are correctly limited to some developing carp eggs in a captive mallard experiment. No actual inter-pond flight, natural colonisation rate, or new wild population is presented as measured. Intact eggs, living embryos and hatches are separate stages; fungal incubation losses are disclosed.",
+        "basis": "All three pages of Lovas-Kiss et al. 2020 PNAS checked independently. Eight birds, two species, approximately 8,000 fed eggs, 18 intact eggs, 12 living embryos and three hatches match the results. Segment 6 notes nine fungal losses, segment 7 voices the decisive limit, and the caption explains affected controls. No 3/8,000 natural survival rate or invented protection mechanism is used."
+      },
+      "retelling": {
+        "decision": "pass",
+        "finding": "Some fish eggs survived being eaten by ducks and later hatched, suggesting birds could help connect ponds that fish cannot reach by swimming across dry land.",
+        "basis": "The experiment proved survival through digestion and later hatching in water; it did not show a duck actually founding a fish population in another wild pond. Both the insight and this decisive limit are present in the spoken script."
+      }
+    }
+  }
+}

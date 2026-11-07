@@ -5,6 +5,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 import production as story_renderer
 import production_v4 as legacy_renderer
+import production_pilot as pilot_renderer
+from editorial_gate import STANDARD, validate_pre_render, final_editorial_ok
 from production import ROOT, MEDIA, QA, CACHE, VERSION, sha, norm
 REPO='akshaymohan16/toxic-tales-library';SITE=ROOT/'site'
 def read(p,default=None):return json.loads(p.read_text(encoding='utf-8')) if p.exists() else default
@@ -28,6 +30,14 @@ def research_page(ep,entry,evidence_text):
     body='<nav><span class="brand">TOXIC TALES</span><a href="../">Research archive</a></nav><header class="hero"><div class="eyebrow">Research behind the Reel &middot; '+esc(ep['id'])+'</div><h1>'+esc(ep['title'])+'</h1><p class="lede">'+esc(question)+'</p><p class="citation">'+esc(ep['paper_title'])+'<br>'+esc(ep['citation'])+'</p><div class="actions"><a class="button" href="'+esc(ep['evidence']['full_text_url'],quote=True)+'">Read the full paper</a><a class="button secondary" href="'+esc(ep['source_url'],quote=True)+'">DOI: '+esc(ep['doi'])+'</a></div></header>'
     body+='<div class="grid overview"><section class="panel"><h3>Why it matters</h3><p>'+esc(importance)+'</p></section><section class="panel"><h3>What the study found</h3><p>'+esc(ep['summary'])+'</p></section><section class="panel wide"><h3>What this does not establish</h3><p>'+esc(ep['evidence_note'])+'</p><ul>'+limits+'</ul></section></div>'
     body+='<section class="panel"><h2>Claims you can trace</h2><p class="muted">Each factual claim is tied to its location in the original research. Background evidence is listed separately.</p><ul>'+rows+'</ul></section>'
+    citation_links=[]
+    for ext in ['bib','ris']:
+        source=ROOT/'citations'/(ep['id'].lower()+'.'+ext)
+        if source.exists():
+            target=SITE/'citations'/source.name;target.parent.mkdir(exist_ok=True)
+            target.write_bytes(source.read_bytes())
+            citation_links.append('<a class="button secondary" href="../citations/'+source.name+'" download>'+('BibTeX' if ext=='bib' else 'RIS')+'</a>')
+    if citation_links:body+='<section class="panel"><h2>Save the reference</h2><div class="actions">'+''.join(citation_links)+'</div></section>'
     if contexts:body+='<section class="panel"><h2>Research that supplies the context</h2><ul>'+contexts+'</ul></section>'
     body+='<section class="panel"><h2>Visual sources and credits</h2><p class="muted">Reference imagery and explanatory animation are not footage or raw data from this experiment. Narration is synthetic.</p><ul>'+credits+'</ul></section><section class="panel"><details><summary>Complete verification record</summary><pre>'+esc(evidence_text)+'</pre></details></section><footer><p>Verified '+esc(ep['evidence']['checked_at'])+'. Paper links lead to the authors\' or publisher\'s source; this archive does not redistribute publisher PDFs.</p><a href="../">Return to Research Behind Toxic Tales</a></footer>'
     return page_shell(ep['title']+' — Research',body)
@@ -60,15 +70,19 @@ def validate(ep):
     assert plan['assets'] and all(a.get('creator') and a.get('license_url') and a.get('source_page') and a.get('changes') for a in plan['assets'])
     if plan.get('editorial_style')=='science-journalism':
         story=ep.get('editorial_story',{})
-        for key in ['question','why_it_matters','narrative_arc','context_sources','closing_payoff']:
+        for key in ['question','why_it_matters','narrative_arc','closing_payoff']:
             assert story.get(key),'Missing journalism reporting element: '+key
-        assert len(story['context_sources'])>=2,'Context needs separately verified published sources'
+        if plan.get('editorial_standard') != STANDARD:
+            assert len(story.get('context_sources',[]))>=2,'Context needs separately verified published sources'
+        else:
+            assert isinstance(story.get('context_sources'),list),'Context source list is required, and may be empty when all claims come from the focal paper'
     for p in ep['posts']:
         assert p['format'] in ['REEL','CAROUSEL'] and datetime.fromisoformat(p['publication_date']).tzinfo
         assert ep['doi'] in p['caption'] and len(p['caption'])<=2200
     if any(p['format']=='CAROUSEL' for p in ep['posts']):assert 5<=len(ep['slides'])<=8
 
 def release_ok(a,m):
+    if not final_editorial_ok(a,m):return False
     if m.get('editorial_style')=='science-journalism' and not (a and a.get('narrative_review')):return False
     return bool(a and a.get('decision')=='release' and a.get('fingerprint')==m['fingerprint'] and a.get('files')==m['files'] and a.get('evidence_sha256')==m['evidence_sha256'] and all(a.get(k) for k in ['reviewed_contact_sheet','scientific_review','visual_review','audio_review']))
 
@@ -83,8 +97,13 @@ def main():
         ep=read(path)
         if not ep.get('production'):continue
         validate(ep);evidence_path=ROOT/ep['evidence_file']
-        renderer=story_renderer if ep['production'].get('editorial_style')=='science-journalism' else legacy_renderer
-        fp=hashlib.sha256(path.read_bytes()+evidence_path.read_bytes()+Path(renderer.__file__).read_bytes()+(ROOT/'requirements.txt').read_bytes()).hexdigest()
+        editorial_source=validate_pre_render(ep,evidence_path.read_text(encoding='utf-8'))
+        renderer=pilot_renderer if ep['production'].get('renderer')=='ecology-story-7' else (story_renderer if ep['production'].get('editorial_style')=='science-journalism' else legacy_renderer)
+        fingerprint_bytes=path.read_bytes()+evidence_path.read_bytes()+Path(renderer.__file__).read_bytes()+(ROOT/'requirements.txt').read_bytes()
+        if editorial_source:
+            for dependency in ['scripts/production.py','scripts/editorial_gate.py','quality/SCIENCE_JOURNALISM.md','quality/VISUAL_STANDARD.md','quality/PRODUCTION_STANDARD.md']:
+                fingerprint_bytes+=(ROOT/dependency).read_bytes()
+        fp=hashlib.sha256(fingerprint_bytes).hexdigest()
         stem=ep['slug']+'-'+fp[:12]
         qa_path=QA/(ep['id'].lower()+'.json');m=read(qa_path,{})
         valid=cache.get(ep['id'])==fp and m.get('fingerprint')==fp and m.get('files') and all((SITE/p).exists() and sha(SITE/p)==h for p,h in m['files'].items())
@@ -97,18 +116,20 @@ def main():
             for original in originals:
                 target=original.with_name(original.name.replace(ep['slug'],stem,1));original.replace(target);files.append(target)
             m.update(fingerprint=fp,evidence_sha256=sha(evidence_path),files={p.relative_to(SITE).as_posix():sha(p) for p in files})
+            if editorial_source:
+                m.update(editorial_standard=STANDARD,editorial_source_sha256=editorial_source,pre_render_reviewer=ep['editorial_review']['reviewer'],script_author=ep.get('script_author','Toxic Tales production editor'))
             write(qa_path,m);cache[ep['id']]=fp;write(CACHE/'index.json',cache)
         media={'reel':f'media/{stem}.mp4','cover':f'media/{stem}_cover.jpg','slides':[f'media/{stem}_slide_{i+1:02}.jpg' for i in range(len(ep.get('slides',[])))]}
         entry={k:ep.get(k) for k in ('id','slug','title','hook','doi','paper_title','citation','summary','evidence_note','source_url','tags')}
         entry.update(media=media,evidence=ep['evidence'],credits=ep['production']['assets'],qa=f'qa/{ep["id"].lower()}.json',evidence_record=f'sources/{ep["id"].lower()}.html')
         entry['publications']=[{'post_id':p['post_id'],'format':p.get('format'),'status':p.get('status'),'public_url':p.get('public_url'),'date':p.get('publication_date')} for p in receipts.values() if p.get('episode_id')==ep['id']]
-        if ep['id']=='TT-003':
+        if ep['id']==config.get('active_pilot_id','TT-003'):
             entry['preview_url']='pilot.html'
             entry['pilot_unpublished']=not any(p.get('status')=='published' and p.get('public_url') for p in entry['publications'] if p.get('format')=='REEL')
         papers.append(entry)
         page=research_page(ep,entry,evidence_path.read_text(encoding='utf-8'))
         target=SITE/entry['evidence_record'];target.parent.mkdir(exist_ok=True);target.write_text(page,encoding='utf-8')
-        if ep['id']=='TT-003':
+        if ep['id']==config.get('active_pilot_id','TT-003'):
             (SITE/'pilot.html').write_text(pilot_page(ep,entry,m,config,receipts),encoding='utf-8')
         approved=release_ok(approvals.get(ep['id']),m)
         for p in ep['posts']:
