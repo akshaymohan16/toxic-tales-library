@@ -156,3 +156,215 @@ def render(ep, voice, out):
                                    'scientific_labels_and_speech_captions': True},
                   branding_review_required=True, branding_review_claimed=False)
     return result
+
+
+
+# -- SOURCE-SPECIFIC ECOLOGY STORY SCENES -----------------------------
+# New ecology subjects can share the pinned voice, typography and official
+# logo without reusing wood-frog figures. The old published nature-8 export
+# remains untouched. These are concept illustrations, never measured figures.
+import copy
+import math
+import subprocess
+from PIL import ImageOps, ImageFilter
+
+_SOURCE_INIT = Visuals.__init__
+_SOURCE_DIAGRAM = Visuals.diagram
+
+def _subject_init(self, ep, out, preview=False):
+    clips = [a for a in ep['production']['assets'] if a.get('media_type') == 'video/webm']
+    if clips:
+        visual_copy = copy.deepcopy(ep)
+        visual_copy['production']['assets'] = [
+            a for a in ep['production']['assets'] if a not in clips
+        ]
+    else:
+        visual_copy = ep
+    _SOURCE_INIT(self, visual_copy, out, preview)
+    self.ep = ep
+    self.study_video_paths = {}
+    if clips:
+        for a in clips:
+            if preview:
+                raise ValueError('Real study footage is required even for preview')
+            source = nature.download(a['url'], nature.CACHE / 'assets' /
+                                     (hashlib.sha256(a['url'].encode()).hexdigest()[:12] + '-' + a['filename']),
+                                     a.get('sha256'))
+            self.assets[a['id']] = source
+            folder = Path(out) / ('frames_' + a['id'])
+            folder.mkdir(parents=True, exist_ok=True)
+            frames = sorted(folder.glob('frame_*.jpg'))
+            if len(frames) < 10:
+                for old in frames: old.unlink()
+                subprocess.run([
+                    'ffmpeg', '-hide_banner', '-loglevel', 'error', '-y',
+                    '-i', str(source), '-vf', 'fps=8,scale=1280:720',
+                    '-q:v', '3', str(folder / 'frame_%04d.jpg')
+                ], check=True)
+                frames = sorted(folder.glob('frame_*.jpg'))
+            if not frames:
+                raise ValueError('No actual frames extracted from licensed study footage')
+            self.study_video_paths[a['id']] = frames
+
+def _arrow(d, x1, y1, x2, y2, colour, thick=6):
+    d.line((x1,y1,x2,y2), fill=colour, width=thick)
+    direction = math.atan2(y2-y1,x2-x1)
+    a=direction+2.55; b=direction-2.55
+    d.polygon([(x2,y2),
+               (x2+23*math.cos(a),y2+23*math.sin(a)),
+               (x2+23*math.cos(b),y2+23*math.sin(b))], fill=colour)
+
+def _spider(d, x, y, z=1):
+    # Explicitly simplified diagram icon; body and 8 legs, not anatomical data.
+    d.ellipse((x-23*z,y-33*z,x+23*z,y+13*z), fill='#634b38',
+              outline='#ddb487',width=max(2,int(3*z)))
+    d.ellipse((x-15*z,y+3*z,x+15*z,y+30*z), fill='#a8774d')
+    for side in (-1,1):
+        for i in range(4):
+            a = (i-1.5)*.40
+            x0=x+side*18*z; y0=y+2*z+i*5*z
+            x1=x+side*(38+17*i)*z; y1=y-12*z+i*10*z
+            x2=x+side*(72+16*i)*z; y2=y+(-19+26*i)*z
+            d.line([(x0,y0),(x1,y1),(x2,y2)],
+                   fill='#d8c19c',width=max(2,int(4*z)))
+    d.ellipse((x-9*z,y+19*z,x-5*z,y+23*z),fill='#091f29')
+    d.ellipse((x+5*z,y+19*z,x+9*z,y+23*z),fill='#091f29')
+
+def _bee(d, x, y, z=1):
+    # Simple bee silhouette for explanatory diagrams. Not a depiction of a trial.
+    d.ellipse((x-52*z,y-30*z,x+48*z,y+30*z), fill='#e9b65b',outline='#13191a',width=max(2,int(4*z)))
+    for xx in (-24,15):
+        d.rectangle((x+(xx-9)*z,y-27*z,x+(xx+5)*z,y+27*z), fill='#262628')
+    d.ellipse((x+35*z,y-22*z,x+63*z,y+22*z),fill='#24272c')
+    d.ellipse((x-10*z,y-53*z,x+35*z,y-15*z),
+              fill='#b3d6db',outline='#d4eff4',width=max(2,int(2*z)))
+    for side in (-1,1):
+        for i in range(3):
+            y0=y-9*z+i*11*z
+            d.line((x-15*z,y0,x+(-46+i*8)*z,y+(35+i*7)*z),
+                   fill='#242629',width=max(2,int(3*z)))
+    for k in (-1,1):
+        d.line((x+51*z,y-12*z,x+67*z,y+(-23+12*k)*z),
+               fill='#202a29',width=max(2,int(2*z)))
+
+def _water_bell(self, image, t, p, filled=1):
+    from PIL import ImageDraw
+    layer=Image.new('RGBA',image.size)
+    d=ImageDraw.Draw(layer)
+    # Water and emergent stems are general conceptual habitat, no measurements.
+    d.rectangle((0,640,1080,1390),fill=(7,58,66,105))
+    for x in (220,790):
+        d.line((x,1390,x-38,790),fill=(70,136,108,210),width=18)
+        for j in range(3):
+            y=900+j*125
+            d.ellipse((x-120,y-30,x+36,y+33),fill=(49,111,93,165))
+    # An open-bottom, silk-supported air pocket.
+    width=340*filled
+    d.ellipse((540-width,765,540+width,1380),fill=(168,231,228,48),
+              outline=(186,248,244,245),width=7)
+    d.rectangle((540-width-6,1100,540+width+6,1390),fill=(9,45,54,25))
+    for j in range(11):
+        xx=540-width+j*width*2/10
+        d.line((xx,970,xx+18*math.sin(j),1290),fill=(165,240,221,55),width=2)
+    image.paste(Image.alpha_composite(image.convert('RGBA'),layer).convert('RGB'))
+    _spider(ImageDraw.Draw(image),540,1080,1.22)
+
+def _subject_diagram(self, kind, t, p, shot=None):
+    shot=shot or {}
+    if kind not in {'spider_bell','spider_oxygen','spider_probe','spider_gas',
+                    'spider_scope','bee_rolling','bee_path','bee_choice',
+                    'bee_age','bee_scope','bee_video'}:
+        return _SOURCE_DIAGRAM(self,kind,t,p,shot)
+    image=self.background.copy()
+    d=ImageDraw.Draw(image)
+    if kind.startswith('spider_'):
+        if kind == 'spider_bell':
+            _water_bell(self,image,t,p)
+            self.type.text(image,'Silk-supported air bell',540,1350,35,nature.ICE,anchor='mm')
+        elif kind == 'spider_oxygen':
+            _water_bell(self,image,t,p)
+            d=ImageDraw.Draw(image)
+            for j in range(4):
+                y=890+j*105
+                _arrow(d,165,y,318,y+12,nature.ICE,6)
+                _arrow(d,920,y,755,y+12,nature.ICE,6)
+            self.type.text(image,'Dissolved oxygen',540,700,37,nature.ICE,anchor='mm')
+            self.type.text(image,'enters the bell',540,1380,32,nature.PAPER,anchor='mm')
+        elif kind == 'spider_probe':
+            _water_bell(self,image,t,p)
+            d=ImageDraw.Draw(image)
+            d.line((870,680,670,940),fill='#d8e5db',width=14)
+            d.ellipse((657,928,683,954),fill=nature.AMBER)
+            self.type.text(image,'Oxygen-sensitive probe',540,695,36,nature.ICE,anchor='mm')
+            self.type.text(image,'In a controlled aquarium',540,1400,32,nature.MUTED,anchor='mm')
+        elif kind == 'spider_gas':
+            # Deliberately qualitative, not a timed measured series.
+            _water_bell(self,image,t,p,filled=.78-.22*p)
+            self.type.text(image,'Some gas escapes over time',540,680,35,nature.ICE,anchor='mm')
+            self.type.text(image,'Surface air still needed',540,1405,38,nature.AMBER,anchor='mm')
+        elif kind == 'spider_scope':
+            self.type.text(image,'LABORATORY CONDITIONS',540,700,29,nature.ICE,anchor='mm')
+            self.type.block(image,'Warm, still water\nResting spiders',540,800,69,
+                            nature.PAPER,width=900,face='display',anchor='mt',max_lines=3)
+            self.type.block(image,'Active and wild conditions\nwere not fully tested.',540,1110,38,
+                            nature.MUTED,width=850,anchor='mt',max_lines=3)
+    elif kind == 'bee_video':
+        key=shot.get('asset')
+        frames=self.study_video_paths.get(key)
+        if not frames:
+            raise ValueError('Required actual study video not decoded: '+str(key))
+        idx=int((max(0,t)+float(shot.get('offset',0))) * 8) % len(frames)
+        with Image.open(frames[idx]) as source:
+            still=source.convert('RGB')
+        background=ImageOps.fit(still,(1080,1920),Image.Resampling.LANCZOS)
+        background=background.filter(ImageFilter.GaussianBlur(42)).convert('RGBA')
+        shade=Image.new('RGBA',(1080,1920),(2,16,19,130))
+        image=Image.alpha_composite(background,shade).convert('RGB')
+        # Explanatory wide inset: the authentic horizontal research footage
+        # is intentionally not misrepresented as portrait footage in nature.
+        shot_image=ImageOps.fit(still,(1030,710),Image.Resampling.LANCZOS,
+                                centering=(.48,.52))
+        image.paste(shot_image,(25,720))
+        self.type.text(image,'Actual study footage',540,677,32,nature.ICE,anchor='mm')
+    elif kind == 'bee_rolling':
+        ball_x=500+int(55*math.sin(t*.6))
+        d.ellipse((ball_x-118,920,ball_x+118,1156),fill='#c99856',outline='#edc685',width=5)
+        _bee(d,ball_x-64,860,1.6)
+        self.type.text(image,'A movable wooden ball',540,1230,38,nature.PAPER,anchor='mm')
+        self.type.text(image,'No food inside the ball',540,1300,28,nature.MUTED,anchor='mm')
+    elif kind == 'bee_path':
+        d.rounded_rectangle((140,735,940,1320),radius=35,outline='#80afae',width=6)
+        d.rounded_rectangle((190,790,890,945),radius=25,fill='#153e45')
+        self.type.text(image,'NEST',540,863,44,nature.PAPER,anchor='mm')
+        _arrow(d,540,960,540,1140,nature.ICE,9)
+        self.type.text(image,'CLEAR ROUTE TO FOOD',540,1190,33,nature.MINT,anchor='mm')
+        for side in (-1,1):
+            for i in range(3):
+                x=540+side*(180+30*(i%2)); y=1003+72*i
+                d.ellipse((x-33,y-33,x+33,y+33),fill='#d2a36f')
+        self.type.text(image,'Balls off the main route',540,1390,29,nature.MUTED,anchor='mm')
+    elif kind == 'bee_choice':
+        for x,colour,txt in [(275,'#777eb5','Chamber A'),(810,'#edc65e','Chamber B')]:
+            d.rounded_rectangle((x-215,805,x+205,1235),radius=28,
+                                fill='#21383e',outline=colour,width=8)
+            d.ellipse((x-90,910,x+90,1090),fill=colour)
+            self.type.text(image,txt,x,1170,30,nature.PAPER,anchor='mm')
+        _arrow(d,450,1300,660,1300,nature.MINT,9)
+        self.type.text(image,'Previously linked to rolling',540,1390,33,
+                       nature.ICE,anchor='mm')
+    elif kind == 'bee_age':
+        _bee(d,310,930,1.5);_bee(d,790,930,1.5)
+        self.type.text(image,'Younger',310,1130,49,nature.MINT,anchor='mm')
+        self.type.text(image,'Older',790,1130,49,nature.ICE,anchor='mm')
+        self.type.text(image,'More frequent rolling\namong younger bees',540,1275,36,
+                       nature.PAPER,anchor='mm')
+    elif kind == 'bee_scope':
+        _bee(d,540,915,1.5)
+        self.type.block(image,'Play-like behaviour\nin a lab study',540,1110,55,
+                        nature.PAPER,width=900,face='display',anchor='mt',max_lines=3)
+        self.type.text(image,'Not a direct measure of bee feelings',540,1380,32,
+                       nature.AMBER,anchor='mm')
+    return image
+
+Visuals.__init__ = _subject_init
+Visuals.diagram = _subject_diagram
