@@ -10,10 +10,11 @@
     "limit": 20,
     "source": "Authenticated Metricool planner UI: You have posted 1 out of your 20 available posts in your plan this month.",
     "url": "https://app.metricool.com/planner/calendar?blogId=7937614",
-    "observation_status": "Historical UI observation from 7 Nov before subsequent two more published Reels; cannot treat used=1 as fresh or as current usage. At least 3 provider PUBLISHED receipts, one autoPublish carousel and one held draft reservation; return to planner for authoritative current counter."
+    "observation_status": "Historical planner UI 1/20 at 7 Nov 15:21; latest full-month Metricool calendar now confirms three PUBLISHED and two autoPublish pending; one held draft and one rejected draft. Fresh authoritative UI counter not retrievable through connector; do not quote 1/20 as current."
   },
   "scheduled_ids": [
-    "420683055"
+    "420683055",
+    "420702555"
   ],
   "published_ids": [
     "419869962",
@@ -30,12 +31,13 @@
   ],
   "unresolved_submissions": [],
   "monthly_cap": 20,
-  "planned_usage_with_current_candidates": 5,
+  "planned_usage_with_current_candidates": 7,
   "new_scheduling_allowed": true,
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [
-    "TT-005-CAROUSEL"
+    "TT-005-CAROUSEL",
+    "TT-006-REEL"
   ],
   "calendar_reconciled_on": "2026-11-08",
   "draft_ids": [
@@ -53,7 +55,6 @@
   "known_usage_lower_bound": 3,
   "last_calendar_readback": "2026-11-08",
   "pending_release_ids": [
-    "TT-006-REEL",
     "TT-007-REEL"
   ]
 }

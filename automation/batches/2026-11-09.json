@@ -13,11 +13,15 @@
       "id": "TT-006-REEL",
       "date": "2026-11-10T10:00:00+01:00",
       "format": "REEL",
-      "status": "exact_export_released_pending_live_queue_and_provider_schedule",
+      "status": "scheduled_provider_pending",
       "publication_eligible": true,
       "release_fingerprint": "1f3f7409d378551a66e995f435f561114f170945882954f5e4e7f6fab70067cd",
       "release_record": "quality/releases.json",
-      "reason": "New distinct-paper story and brand QA complete; must verify newest deployed queue and provider calendar before scheduling; not yet posted or scheduled."
+      "reason": "Provider schedule read back at exact 10 Nov 10:00 Europe/Vienna with autoPublish true, draft false, reviewed MP4/cover and plain caption; publication itself must be verified after due time.",
+      "metricool_id": "420702555",
+      "metricool_uuid": "-5193152553705388348",
+      "provider_status": "PENDING",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-5193152553705388348"
     },
     {
       "id": "TT-005-CAROUSEL",
@@ -42,7 +46,7 @@
   ],
   "scientific_review": "TT-004 focal paper, evidence and final narration reviewed; source claims retained within study limits.",
   "render_and_live_media_review": "Corrected TT-004 encoded export independently reviewed and exact public files verified.",
-  "schedule_status": "Thursday TT005 carousel scheduled with positive planner receipt. Tuesday TT006 exact-export release recorded but not yet provider scheduled. Saturday TT007 awaiting native final review.",
+  "schedule_status": "TT006 Tue 10 Nov and TT005 carousel Thu 12 Nov are scheduled and provider-readback verified; TT007 Sat 14 Nov exact-export released, scheduling next after full-month duplicate/cap check.",
   "quota_status": "Refresh current planner counter and provider receipts including the confirmed TT-004 publication; the earlier 1/20 observation is historical. Reserve eligible future destinations and stay <=20/month.",
   "idempotency_note": "Never repost published TT-002-REEL or TT-004-REEL, and never revive rejected TT-003. TT-004 UUID 8432780738091634663 is confirmed published and must never be submitted or rescheduled. Keep the two next-week Reel papers distinct and use stable new identities for replacements.",
   "retired_slots": [
