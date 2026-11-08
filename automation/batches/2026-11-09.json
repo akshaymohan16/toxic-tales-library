@@ -39,14 +39,18 @@
       "id": "TT-007-REEL",
       "date": "2026-11-14T10:00:00+01:00",
       "format": "REEL",
-      "status": "render_repair_and_independent_qa_in_progress",
-      "publication_eligible": false,
-      "reason": "New distinct paper, licensed actual study footage and rebuilt shot times; must pass full native encode/ASR/branding/public-byte review before any provider scheduling."
+      "status": "scheduled_provider_pending",
+      "publication_eligible": true,
+      "reason": "Exact 14 Nov 10:00 Vienna autoPublish=true, draft=false provider calendar readback. Complete independent exact export and public media verification; not yet posted.",
+      "metricool_id": "420703487",
+      "metricool_uuid": "-6872348896682359981",
+      "provider_status": "PENDING",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6872348896682359981"
     }
   ],
   "scientific_review": "TT-004 focal paper, evidence and final narration reviewed; source claims retained within study limits.",
   "render_and_live_media_review": "Corrected TT-004 encoded export independently reviewed and exact public files verified.",
-  "schedule_status": "TT006 Tue 10 Nov and TT005 carousel Thu 12 Nov are scheduled and provider-readback verified; TT007 Sat 14 Nov exact-export released, scheduling next after full-month duplicate/cap check.",
+  "schedule_status": "All three slots provider-confirmed scheduled with autoPublish true: TT006 REEL Tue 10 Nov, TT005 CAROUSEL Thu 12 Nov, TT007 REEL Sat 14 Nov, each 10:00 Europe/Vienna. PENDING until publication; daily publisher must confirm live URL. Held TT002 carousel and rejected TT003 remain drafts.",
   "quota_status": "Refresh current planner counter and provider receipts including the confirmed TT-004 publication; the earlier 1/20 observation is historical. Reserve eligible future destinations and stay <=20/month.",
   "idempotency_note": "Never repost published TT-002-REEL or TT-004-REEL, and never revive rejected TT-003. TT-004 UUID 8432780738091634663 is confirmed published and must never be submitted or rescheduled. Keep the two next-week Reel papers distinct and use stable new identities for replacements.",
   "retired_slots": [

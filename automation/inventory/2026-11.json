@@ -10,11 +10,12 @@
     "limit": 20,
     "source": "Authenticated Metricool planner UI: You have posted 1 out of your 20 available posts in your plan this month.",
     "url": "https://app.metricool.com/planner/calendar?blogId=7937614",
-    "observation_status": "Historical planner UI 1/20 at 7 Nov 15:21; latest full-month Metricool calendar now confirms three PUBLISHED and two autoPublish pending; one held draft and one rejected draft. Fresh authoritative UI counter not retrievable through connector; do not quote 1/20 as current."
+    "observation_status": "Historical UI counter 1/20 was observed before three publications; not current. Full calendar independently confirms 3 PUBLISHED plus 3 autoPublish PENDING, one held draft, one retired draft; conservative seven reservations within 20 cap. Refresh actual planner UI counter before more releases."
   },
   "scheduled_ids": [
     "420683055",
-    "420702555"
+    "420702555",
+    "420703487"
   ],
   "published_ids": [
     "419869962",
@@ -37,7 +38,8 @@
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [
     "TT-005-CAROUSEL",
-    "TT-006-REEL"
+    "TT-006-REEL",
+    "TT-007-REEL"
   ],
   "calendar_reconciled_on": "2026-11-08",
   "draft_ids": [
@@ -54,7 +56,5 @@
   "provider_confirmed_publications": 3,
   "known_usage_lower_bound": 3,
   "last_calendar_readback": "2026-11-08",
-  "pending_release_ids": [
-    "TT-007-REEL"
-  ]
+  "pending_release_ids": []
 }
