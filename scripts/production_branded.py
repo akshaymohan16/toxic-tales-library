@@ -155,6 +155,15 @@ def render(ep, voice, out):
                                    'field_notes_or_episode_code': False,
                                    'scientific_labels_and_speech_captions': True},
                   branding_review_required=True, branding_review_claimed=False)
+    if any(a.get('media_type') == 'video/webm' for a in ep['production']['assets']):
+        result['representation'] = ('Actual credited CC BY 4.0 supplementary laboratory study footage '
+                'in accurately framed horizontal inserts; CC0 species-reference stills, and '
+                'new source-specific explanatory diagrams. No invented experimental footage or '
+                'quantitative data are implied.')
+    else:
+        result['representation'] = ('Identified and legally reusable species-reference photographs, '
+                'not the focal laboratory test; original source-specific conceptual '
+                'air-bell and oxygen-exchange diagrams, not measured graph data.')
     return result
 
 
@@ -316,15 +325,16 @@ def _subject_diagram(self, kind, t, p, shot=None):
         idx=int((max(0,t)+float(shot.get('offset',0))) * 8) % len(frames)
         with Image.open(frames[idx]) as source:
             still=source.convert('RGB')
-        background=ImageOps.fit(still,(1080,1920),Image.Resampling.LANCZOS)
-        background=background.filter(ImageFilter.GaussianBlur(42)).convert('RGBA')
-        shade=Image.new('RGBA',(1080,1920),(2,16,19,130))
-        image=Image.alpha_composite(background,shade).convert('RGB')
-        # Explanatory wide inset: the authentic horizontal research footage
-        # is intentionally not misrepresented as portrait footage in nature.
+        # Keep a deep-teal branded background rather than letting the white
+        # lab tabletop become a distracting grey blurred full-screen wash.
+        image=self.background.copy()
+        # Horizontal original research footage remains genuinely framed:
+        # stretching/cropping it to fake portrait native detail would be worse.
         shot_image=ImageOps.fit(still,(1030,710),Image.Resampling.LANCZOS,
                                 centering=(.48,.52))
         image.paste(shot_image,(25,720))
+        ImageDraw.Draw(image).rounded_rectangle((21,716,1059,1434),
+                         radius=14,outline='#a3d3cb',width=3)
         self.type.text(image,'Actual study footage',540,677,32,nature.ICE,anchor='mm')
     elif kind == 'bee_rolling':
         ball_x=500+int(55*math.sin(t*.6))
