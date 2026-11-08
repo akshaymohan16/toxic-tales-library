@@ -99,6 +99,8 @@ class ReadinessTests(unittest.TestCase):
     def test_sunday_preproduction_suppressed(self):
         t = datetime.fromisoformat("2026-11-15T12:00:00+01:00")
         self.assertIsNone(target_week(t))
+        self.save("automation/publisher-status.json",
+                  {"updated_at": "2026-11-15T10:15:00+01:00"})
         self.assertTrue(audit(self.root, t)["ok"])
 
 
