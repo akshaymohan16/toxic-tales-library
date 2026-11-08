@@ -161,9 +161,18 @@
             "title": "A bee rolls\na wooden ball",
             "kicker": "ACTUAL LAB FOOTAGE",
             "start": 0,
-            "end": 1,
+            "end": 0.54,
             "asset": "bee_study_video",
             "offset": 0
+          },
+          {
+            "kind": "bee_video",
+            "title": "No nectar\ninside the ball",
+            "kicker": "ACTUAL LAB FOOTAGE",
+            "start": 0.54,
+            "end": 1,
+            "asset": "bee_study_video",
+            "offset": 9
           }
         ]
       },
@@ -182,6 +191,13 @@
             "title": "A clear route\nto food",
             "kicker": "THE QUESTION",
             "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "bee_path",
+            "title": "Balls beside\nthe route",
+            "kicker": "THE QUESTION",
+            "start": 0.5,
             "end": 1
           }
         ]
@@ -240,6 +256,13 @@
             "title": "Younger bees\nrolled more",
             "kicker": "A SEPARATE AGE TEST",
             "start": 0,
+            "end": 0.52
+          },
+          {
+            "kind": "bee_age",
+            "title": "A separate\nage comparison",
+            "kicker": "A SEPARATE AGE TEST",
+            "start": 0.52,
             "end": 1
           }
         ]
@@ -256,9 +279,16 @@
         "shots": [
           {
             "kind": "bee_choice",
-            "title": "A learned\npreference",
+            "title": "Colour linked\nto rolling",
             "kicker": "A REWARDING PATTERN",
             "start": 0,
+            "end": 0.52
+          },
+          {
+            "kind": "bee_choice",
+            "title": "A preference\nafter rolling",
+            "kicker": "A REWARDING PATTERN",
+            "start": 0.52,
             "end": 1
           }
         ]
@@ -294,9 +324,16 @@
         "shots": [
           {
             "kind": "bee_scope",
-            "title": "What can\nwe really say?",
+            "title": "No direct measure\nof bee feelings",
             "kicker": "THE LIMIT",
             "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "bee_scope",
+            "title": "Wild bee play\nnot yet tested",
+            "kicker": "THE LIMIT",
+            "start": 0.5,
             "end": 1
           }
         ]
@@ -449,8 +486,8 @@
       },
       "visuals": {
         "decision": "pass",
-        "finding": "Authentic licensed footage is paired with original path, rolling, age and colour-chamber diagrams; species reference photo occurs only at closing, not as evidence of rolling.",
-        "basis": "Nine detailed paired storyboard entries, original Supplementary Video S1 licence and two Commons species images; actual final encoded frames are not yet claimed inspected."
+        "finding": "The plan alternates genuine research footage with purpose-built route, rolling, age and colour-choice scenes. Longer narration beats now have two distinct topic-specific shots, making the 8-second per-shot export limit feasible; a real post-encode review remains mandatory.",
+        "basis": "Nine paired visual plans and fourteen actual shot declarations; CC BY original Supplementary Video S1 with unique offsets, separate lab evidence and species reference. The export remains a future check, not a claimed viewing."
       },
       "payoff": {
         "decision": "pass",
@@ -468,6 +505,6 @@
         "basis": "The evidence does not directly prove bees feel pleasure or establish that wild bees behave this way."
       }
     },
-    "source_sha256": "d5be10e7aa07eaece1083dd86ec4cc1a5e107368478fbe80f4ed9003dbb332d1"
+    "source_sha256": "2be3fde40c4b0b7a5d128c3d570d4e5518d5076778204d314ee5123aa63390b3"
   }
 }
