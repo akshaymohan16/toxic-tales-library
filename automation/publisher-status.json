@@ -6,27 +6,38 @@
   "deployment_and_media": "TT-005 final visual pilot public bytes verified; published TT-004 media preserved",
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
   "decision": "ACTIVE_APPROVED_STANDARD",
-  "reason": "Three posts reserved/quality released with exact media; independent twice-daily watchdog deployed and daily/sunday task prompts strengthened. Unattended next-week production unproven until 15 Nov.",
-  "scheduled_posts_returned": 3,
+  "reason": "YouTube connected and weekly Tuesday extension configured. First exact TT006 Short scheduled with full provider readback and hosted SHA match; all IG unchanged. Actual future publication remains pending.",
+  "scheduled_posts_returned": 4,
   "published_provider_receipts": 3,
-  "new_metricool_submissions": 0,
+  "new_metricool_submissions": 1,
   "scheduled_post_ids": [
     "TT-006-REEL",
     "TT-005-CAROUSEL",
-    "TT-007-REEL"
+    "TT-007-REEL",
+    "TT-006-YOUTUBE-SHORT"
   ],
   "routine_user_approval_required": false,
-  "automatic_next_step": "Sunday 15 Nov: research, produce and schedule distinct-paper 17 Nov Reel, 19 Nov companion carousel, 21 Nov Reel. Monday 16 Nov strict 3-post readiness; daily publisher cross-checks actual Metricool and corrects/alerts as required.",
+  "automatic_next_step": "Daily existing publisher verifies both platforms independently after due dates. Sunday Nov15 creates next3 IG+1 Tuesday YT destinations; Monday verifies4 receipts.",
   "review_limit": "Encoded frames, final transcript and technical audio reviewed; no listening or original-audio-parity claim.",
   "quota": {
     "observed_used": 3,
-    "observation_basis": "Latest 3 PUBLISHED provider receipts; real Metricool free planner UI counter not refreshed",
-    "active_scheduled": 3,
+    "observed_at": "2026-11-08T15:48:27+00:00",
+    "month": "2026-11",
+    "observation_basis": "Metricool planner counter",
+    "observed_published_post_ids": [
+      "instagram:TT-002-REEL",
+      "instagram:TT-004-REEL",
+      "instagram:TT-005-REEL"
+    ],
+    "active_scheduled": 4,
     "held_draft_reservations": 1,
     "retired_drafts": 1,
-    "conservative_reservations": 7,
     "cap": 20,
-    "note": "Do not equate three known PUBLISHED receipts with authoritative Metricool UI quota. Recheck full month and UI before scheduling more."
+    "remaining_instagram_month_slots": 9,
+    "remaining_tuesday_youtube_slots": 3,
+    "projected_month_destinations": 15,
+    "conservative_projection_including_held_draft": 16,
+    "note": "Observed counter plus all remaining planned Instagram and Tuesday YouTube destinations. Already-published baseline IDs are not counted twice; unknown writes reserve capacity."
   },
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
   "updated_metricool_posts": 0,
@@ -60,7 +71,7 @@
   "pending_new_pilot_post_id": null,
   "pilot_record_status": "published_owner_approved",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
-  "updated_at": "2026-11-08T13:13:33.892Z",
+  "updated_at": "2026-11-08T15:56:05.378060+00:00",
   "latest_publication": {
     "post_id": "TT-005-REEL",
     "metricool_id": "420178205",
@@ -114,9 +125,10 @@
   "scheduled_provider_ids": [
     "420702555",
     "420683055",
-    "420703487"
+    "420703487",
+    "420844339"
   ],
-  "provider_receipts_status": "Fresh actual Metricool full-month check on 8 Nov: 3 published earlier plus Tue 10 Nov TT006 Reel, Thu 12 Nov TT005 carousel and Sat 14 Nov TT007 Reel all scheduled at 10:00 Vienna autoPublish true/draft false/PENDING. Two other drafts remain held and rejected.",
+  "provider_receipts_status": "Fresh actual month readback:3 existing IG published,3 unchanged IG scheduled,1 new YT Short scheduled. Two held/rejected drafts unchanged.",
   "next_batch": {
     "week_start": "2026-11-16",
     "slots": [
@@ -126,7 +138,8 @@
     ],
     "state": "not_yet_due_for_production",
     "producer_due": "Sunday 2026-11-15 10:00 Europe/Vienna",
-    "hard_readiness_due": "Monday 2026-11-16 before end of day Europe/Vienna"
+    "hard_readiness_due": "Monday 2026-11-16 before end of day Europe/Vienna",
+    "youtube_slot": "2026-11-17T10:00:00+01:00"
   },
   "watchdog": {
     "workflow": ".github/workflows/readiness-watchdog.yml",
@@ -144,5 +157,9 @@
     "repo_issue_alert_delivery": "GitHub issue notification depends on user's GitHub notification settings"
   },
   "storage": "GitHub workflow 42482770601 successful with compact SHA-manifest verification and ~257 MiB artifacts vs former ~617 MiB. Historical duplicate artifact housekeeping workflow 42483693420 success: 51 redundant old archives totaling 6,834,278,226 bytes pruned; one latest legacy QA retained and live public media untouched.",
-  "issue_status": "No current unapproved extra post scheduled; TT002 carousel held, TT003 rejected; remaining reliability proof is 15/16 Nov unattended creation and Monday provider readback."
+  "issue_status": "No current unapproved extra post scheduled; TT002 carousel held, TT003 rejected; remaining reliability proof is 15/16 Nov unattended creation and Monday provider readback.",
+  "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+  "youtube_channel_name": "Toxic Tales",
+  "youtube_connection_verified": true,
+  "new_task_created": false
 }

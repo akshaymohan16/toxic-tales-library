@@ -17,6 +17,28 @@
   "default_local_publication_time": "10:00",
   "monthly_target_approximate": 13,
   "monthly_publication_cap": 20,
+  "youtube": {
+    "enabled": true,
+    "channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+    "channel_url": "https://www.youtube.com/channel/UCDvftxMMdtGSntm-ezcPfCg",
+    "weekly_shorts": 1,
+    "source_slot": "tuesday",
+    "local_publication_time": "10:00",
+    "format": "SHORT",
+    "made_for_kids": false,
+    "audience_basis": "General-audience science journalism, not directed to children; reassess each exact release.",
+    "privacy": "PUBLIC",
+    "separate_provider_receipt": true,
+    "preserve_instagram_reservations": true,
+    "existing_tasks_only": true,
+    "channel_connection_verified_on": "2026-11-08"
+  },
+  "target_weekly_destination_posts": {
+    "instagram": 3,
+    "youtube": 1,
+    "total": 4
+  },
+  "monthly_destination_posts_normal_range": [16, 19],
   "deployment_verified": true,
   "deployment_evidence": {
     "workflow_run_id": 42396049419,
@@ -52,8 +74,8 @@
     "independent_final_export_review_required": true,
     "branding_standard": "quality/BRANDING_STANDARD.md"
   },
-  "quota_policy": "Use observed Metricool planner counter plus scheduled destination reservations and uncertain writes, at most 20/month. Reconcile all visible posts for duplicate detection. Missing newly connected analytics do not override a verified usage counter.",
-  "publication_policy": "Autonomous two distinct-paper Reels and one companion carousel weekly under mandatory evidence, editorial, visual, exact-file and deployment checks. Owner approved exact TT-004 on 7 November 2026; no routine owner approval required. New owner pauses remain binding.",
+  "quota_policy": "Hard cap 20 destination publications per calendar month across all networks. Use a fresh Metricool planner counter; never add already-published ledger rows to that counter again. Add scheduled destinations, held reservations and uncertain writes, plus every still-unfilled Tue/Thu/Sat Instagram slot through month end before admitting YouTube. One cross-post consumes another destination publication even when it shares a planner item. Unknown outcome blocks retry until reconciled. Never upgrade, start a trial, or consume Instagram's reserved capacity. Missing newly connected analytics is not zero usage or publication failure.",
+  "publication_policy": "Autonomous two distinct-paper Instagram Reels Tuesday/Saturday and one Instagram companion carousel Thursday, plus the exact Tuesday Reel once on YouTube as a Short, all 10:00 Europe/Vienna. Existing Sunday producer and daily publisher only. All evidence/editorial/visual/audio/rights/exact-file/deployment checks remain mandatory; YouTube also needs reviewed platform title/description/citations, audience, privacy, verified channel, separate provider receipt and live publication check. No routine owner approval required. Never revive TT-003 or alter scheduled Instagram media to add YouTube. New owner pauses remain binding.",
   "bio_link_verification": {
     "date": "2026-11-07",
     "instagram": "https://www.instagram.com/toxic_tales_eco/",
@@ -64,10 +86,11 @@
   "pilot_approval_required": false,
   "notification_policy": {
     "event": "newly_confirmed_published_reel",
-    "deduplicate_by": "post_id",
+    "deduplicate_by": "platform_and_post_id",
     "message_fields": [
       "title",
       "instagram_url",
+      "youtube_url",
       "paper_doi",
       "research_record_url"
     ],

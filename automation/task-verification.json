@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-11-08T16:00:38.324Z",
+  "method": "Reopened saved hosted task editors; compared full rendered instructions after whitespace normalization; active Pause controls present",
+  "tasks": [
+    {
+      "id": "6aeefcb926708191b092554230783da1",
+      "name": "Produce Toxic Tales weekly",
+      "active": true,
+      "schedule_unchanged": true,
+      "visible_schedule": "Sundays at 10:00 AM Germany Time",
+      "instruction_readback_verified": true
+    },
+    {
+      "id": "Automation_991690d6af648191ac8037cfa96c92a0",
+      "name": "Publish Toxic Tales queue",
+      "active": true,
+      "schedule_unchanged": true,
+      "visible_schedule": "Daily / Monitoring",
+      "instruction_check_time": "10:15 Europe/Vienna",
+      "instruction_readback_verified": true
+    },
+    {
+      "id": "6af077085e1c8191af8325f3be864402",
+      "name": "Toxic Tales first unattended run",
+      "active": true,
+      "schedule_unchanged": true,
+      "visible_schedule": "Daily / Monitoring",
+      "instruction_readback_verified": true,
+      "scope": "Read-only report on 15 November run; now checks four destination receipts; original self-disable preserved"
+    }
+  ],
+  "new_tasks_created": 0,
+  "full_original_instructions_retained": true,
+  "policy": "automation/YOUTUBE_POLICY.md"
+}

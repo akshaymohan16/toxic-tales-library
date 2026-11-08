@@ -48,12 +48,27 @@
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6872348896682359981",
       "release_fingerprint": "828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db",
       "release_record": "quality/releases.json"
+    },
+    {
+      "id": "TT-006-YOUTUBE-SHORT",
+      "platform": "youtube",
+      "source_post_id": "TT-006-REEL",
+      "date": "2026-11-10T10:00:00+01:00",
+      "format": "SHORT",
+      "status": "scheduled_provider_pending",
+      "publication_eligible": true,
+      "release_fingerprint": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
+      "platform_review": "automation/youtube/TT-006.json",
+      "metricool_id": "420844339",
+      "metricool_uuid": "4422280930322105807",
+      "provider_status": "PENDING",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=4422280930322105807"
     }
   ],
   "scientific_review": "TT006 diving-bell spider physiological laboratory original paper (2011), TT007 bumblebee ball rolling laboratory original paper (2022), TT005 frog companion source (2015). Claims, scope, visual provenance and licensed media recorded in evidence files and final release.",
   "render_and_live_media_review": "TT006/TT007 brand-compliant exact encoded exports independently reviewed with current source hashes, public Pages exact media bytes verified; TT005 companion 6 exact 1080x1350 slides reviewed. Reference audio parity and continuous listening not claimed.",
-  "schedule_status": "All three slots provider-confirmed scheduled with autoPublish true: TT006 REEL Tue 10 Nov, TT005 CAROUSEL Thu 12 Nov, TT007 REEL Sat 14 Nov, each 10:00 Europe/Vienna. PENDING until publication; daily publisher must confirm live URL. Held TT002 carousel and rejected TT003 remain drafts.",
-  "quota_status": "Three PUBLISHED plus three autoPublish PENDING, one separate held draft; avoid treating old 1/20 planner UI observation as current counter. Provider full calendar reconciled 8 Nov; current authoritative quota UI not independently refreshed.",
+  "schedule_status": "All three original Instagram destinations unchanged; one additional YouTube-only Tuesday Short scheduled Nov10 10:00 Vienna with verified exact media, settings and independent receipt. All four are PENDING, not yet published.",
+  "quota_status": "Live planner counter3/20 on Nov8 15:48 UTC. Reserve remaining9 IG +3 Tuesday YT = projected15; retained held draft adds one conservative reservation. No paid changes.",
   "idempotency_note": "Never repost published TT-002-REEL or TT-004-REEL, and never revive rejected TT-003. TT-004 UUID 8432780738091634663 is confirmed published and must never be submitted or rescheduled. Keep the two next-week Reel papers distinct and use stable new identities for replacements.",
   "retired_slots": [
     {

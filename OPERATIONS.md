@@ -1,3 +1,12 @@
+## Authorized weekly YouTube extension — 8 November 2026
+
+The owner explicitly authorized ONE weekly video on both Instagram and YouTube with full routine automation. Apply automation/YOUTUBE_POLICY.md as the current destination, quota, receipt and recovery contract. Scope now includes the verified Toxic Tales YouTube channel UCDvftxMMdtGSntm-ezcPfCg on Metricool brand 7937614; no other repository, brand or channel is authorized.
+
+Preserve both weekly Instagram Reels and the Thursday carousel at 10:00 Europe/Vienna. Additionally publish only Tuesday's exact approved Reel as a YouTube Short at 10:00, using a separate provider item and platform-specific reviewed metadata. Never touch rejected TT-003 or backfill earlier published Reels. The existing Sunday producer and daily publisher remain the only posting tasks. Routine owner approval is not required.
+
+Successful weekly readiness now means four destination receipts: three Instagram plus one Tuesday YouTube. The shared hard limit stays 20 destination publications per calendar month, reserving the entire remaining Instagram month before admitting YouTube. A legitimate quota/account block must be recorded and repaired where possible; it is not READY. Keep Instagram intact during YouTube recovery. Scheduled, provider-published and live-verified are separate states.
+
+
 ## Current unattended-operations control — 8 November 2026
 
 The owner's latest instruction is full hands-off routine Toxic Tales production and autopublishing at zero additional cost. The **two existing** ChatGPT tasks remain enabled with their original schedules: Sunday producer 10:00 and daily publisher 10:15 Europe/Vienna; do not create another posting loop. The permanent recovery runbook is automation/HANDS_OFF_RUNBOOK.md. Only the Toxic Tales repository akshaymohan16/toxic-tales-library, Instagram @toxic_tales_eco and Metricool brand 7937614 are authorised. Never touch Asellus Consortium.

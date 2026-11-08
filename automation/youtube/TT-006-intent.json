@@ -1,0 +1,15 @@
+{
+  "post_id": "TT-006-YOUTUBE-SHORT",
+  "platform": "youtube",
+  "source_post_id": "TT-006-REEL",
+  "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+  "scheduled_for": "2026-11-10T10:00:00+01:00",
+  "status": "scheduled_receipt_verified",
+  "observed_monthly_used": 3,
+  "projected_month_total_including_remaining_instagram_and_tuesday_youtube": 15,
+  "created_at": "2026-11-08 15:51:00 UTC",
+  "metricool_id": "420844339",
+  "metricool_uuid": "4422280930322105807",
+  "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=4422280930322105807",
+  "resolved_at": "2026-11-08T15:56:05.378060+00:00"
+}

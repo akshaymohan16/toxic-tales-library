@@ -23,10 +23,18 @@
       "format": "REEL",
       "status": "different_paper_pending",
       "topic_policy": "Different original published paper from Tuesday and all previous Reels"
+    },
+    {
+      "date": "2026-11-17T10:00:00+01:00",
+      "platform": "youtube",
+      "format": "SHORT",
+      "source_slot": "tuesday",
+      "status": "awaiting_reviewed_tuesday_reel",
+      "topic_policy": "Same exact approved Tuesday Reel, independent YouTube metadata/rights review, no new paper or rerender required."
     }
   ],
   "quality_policy": "Full original paper and correction check, claim-level evidence, independent final encoded story/branding/visual and narration verification, exact public media hashes, fresh provider monthly quota and duplicate validation. Never publish unreviewed content merely to satisfy a date.",
-  "required_success": "Three real Metricool PENDING provider reservations with exact dates, handle, unique UUID, autoPublish true and draft false, all backed by current quality/releases.json and publication ledger; then only PUBLISHED/liveURL is final confirmation.",
+  "required_success": "Four real Metricool destination reservations: three unchanged IG slots plus one Tuesday YouTube Short on the pinned channel, with exact releases and per-platform reviewed metadata/receipts. Only PUBLISHED plus live verification proves actual publication.",
   "failed_sunday_rule": "Sunday task must actually produce/recover or persist an actionable blocker; Monday daily publisher must fill missing slots. GitHub watchdog must FAIL with a durable issue when missing metadata persists; its lack of Metricool API means ChatGPT daily provider checks are mandatory.",
   "held_do_not_touch": [
     "TT-002-CAROUSEL",
