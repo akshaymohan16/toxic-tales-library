@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: read
+  issues: write
 
 concurrency:
   group: toxic-tales-ledger-watchdog
@@ -35,3 +36,30 @@ jobs:
       - name: Fail closed if required posts or positive publication receipts are missing
         if: github.event_name != 'push'
         run: python automation/verify_readiness.py
+      - name: Create or refresh one actionable weekly readiness incident
+        if: failure() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          week=$(TZ=Europe/Vienna date +%G-W%V)
+          title="Toxic Tales readiness: $week"
+          body="Automated ledger-readiness check failed. This may mean missing Tue/Thu/Sat posts, overdue positive publication receipts, stale daily publisher heartbeat, a source/release identity mismatch, or a failed test. Inspect: https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID . This GitHub check has no live Metricool access. The EXISTING ChatGPT daily publisher must read this issue, check the actual provider calendar, fix the missing work or record a specific authenticated-provider blocker. Do not duplicate posts or lower science/branding standards."
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --json number,title --jq ".[] | select(.title == \"$title\") | .number" | head -n 1)
+          if [ -z "$existing" ]; then
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body"
+          else
+            gh issue edit "$existing" --repo "$GITHUB_REPOSITORY" --body "$body"
+          fi
+      - name: Close a recovered readiness incident after actual receipt reconciliation
+        if: success() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          weekday=$(TZ=Europe/Vienna date +%u)
+          if [ "$weekday" = "7" ]; then exit 0; fi
+          week=$(TZ=Europe/Vienna date +%G-W%V)
+          title="Toxic Tales readiness: $week"
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --json number,title --jq ".[] | select(.title == \"$title\") | .number" | head -n 1)
+          if [ -n "$existing" ]; then
+            gh issue close "$existing" --repo "$GITHUB_REPOSITORY" --comment "Ledger readiness check recovered; actual Metricool publication is separately confirmed by the daily publisher."
+          fi

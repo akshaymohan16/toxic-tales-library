@@ -1,0 +1,40 @@
+{
+  "batch_id": "2026-11-16",
+  "created_on": "2026-11-08",
+  "timezone": "Europe/Vienna",
+  "production_day": "2026-11-15T10:00:00+01:00",
+  "monday_hard_readiness_date": "2026-11-16",
+  "status": "unprepared_future_week_assigned_to_existing_sunday_producer",
+  "slots": [
+    {
+      "date": "2026-11-17T10:00:00+01:00",
+      "format": "REEL",
+      "status": "topic_and_full_paper_pending",
+      "topic_policy": "New distinct peer-reviewed ecology paper, not an already-published TT DOI"
+    },
+    {
+      "date": "2026-11-19T10:00:00+01:00",
+      "format": "CAROUSEL",
+      "status": "companion_paper_and_slides_pending",
+      "topic_policy": "Genuine companion to a verified Reel, licensed images and current visual review"
+    },
+    {
+      "date": "2026-11-21T10:00:00+01:00",
+      "format": "REEL",
+      "status": "different_paper_pending",
+      "topic_policy": "Different original published paper from Tuesday and all previous Reels"
+    }
+  ],
+  "quality_policy": "Full original paper and correction check, claim-level evidence, independent final encoded story/branding/visual and narration verification, exact public media hashes, fresh provider monthly quota and duplicate validation. Never publish unreviewed content merely to satisfy a date.",
+  "required_success": "Three real Metricool PENDING provider reservations with exact dates, handle, unique UUID, autoPublish true and draft false, all backed by current quality/releases.json and publication ledger; then only PUBLISHED/liveURL is final confirmation.",
+  "failed_sunday_rule": "Sunday task must actually produce/recover or persist an actionable blocker; Monday daily publisher must fill missing slots. GitHub watchdog must FAIL with a durable issue when missing metadata persists; its lack of Metricool API means ChatGPT daily provider checks are mandatory.",
+  "held_do_not_touch": [
+    "TT-002-CAROUSEL",
+    "TT-003-REEL"
+  ],
+  "existing_tasks": [
+    "6aeefcb926708191b092554230783da1",
+    "Automation_991690d6af648191ac8037cfa96c92a0"
+  ],
+  "new_task_created": false
+}
