@@ -1,3 +1,5 @@
+> HISTORICAL RESET SNAPSHOT, 7 NOV 2026. The statement below that both tasks remain paused is superseded by the owner-directed 8 November resumption. Both original tasks are currently enabled and all 10/12/14 Nov posts are provider-scheduled. The authoritative current operations are in OPERATIONS.md and automation/HANDS_OFF_RUNBOOK.md; do not treat this archived review as a live pause order.
+
 # Quality reset — 7 November 2026
 
 The owner rejected the first posted automated Reel. The editor independently rejected Rebuild Preview v2. Both scheduled tasks remain paused. Technical validity and accurate science do not make an aesthetically poor video acceptable. The earlier posted Reel has not been removed by this repair.

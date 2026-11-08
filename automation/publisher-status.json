@@ -60,7 +60,7 @@
   "pending_new_pilot_post_id": null,
   "pilot_record_status": "published_owner_approved",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
-  "updated_at": "2026-11-08T13:02:24.956Z",
+  "updated_at": "2026-11-08T13:13:33.892Z",
   "latest_publication": {
     "post_id": "TT-005-REEL",
     "metricool_id": "420178205",
@@ -116,7 +116,7 @@
     "420683055",
     "420703487"
   ],
-  "provider_receipts_status": "Metricool full calendar independently returned exactly three approved active scheduled PENDING autoPublish non-draft: 10/12/14 Nov 10:00 Europe/Vienna. Last real provider check Nov 8. This is NOT publication.",
+  "provider_receipts_status": "Fresh actual Metricool full-month check on 8 Nov: 3 published earlier plus Tue 10 Nov TT006 Reel, Thu 12 Nov TT005 carousel and Sat 14 Nov TT007 Reel all scheduled at 10:00 Vienna autoPublish true/draft false/PENDING. Two other drafts remain held and rejected.",
   "next_batch": {
     "week_start": "2026-11-16",
     "slots": [
@@ -136,9 +136,13 @@
       "08:35",
       "12:20"
     ],
-    "status": "installed, tests pass; future unattended cron and repair cycle not yet observed",
-    "last_smoke_run": 42482777303
+    "status": "Installed, three successive GitHub push test runs passed, actual Sunday's real ledger smoke audit passed; scheduled cron/failure-issue trigger to be tested on first future deadline",
+    "last_smoke_run": 42483555450,
+    "scheduled_issue_alerts": true,
+    "after_state_changes": true,
+    "issue_prefix": "Toxic Tales readiness: ",
+    "repo_issue_alert_delivery": "GitHub issue notification depends on user's GitHub notification settings"
   },
-  "storage": "Compact SHA manifest + small QA artifacts replaces redundant full-site preview; latest workflow must pass before declaring storage optimization verified.",
+  "storage": "GitHub workflow 42482770601 successful with compact SHA-manifest verification and ~257 MiB artifacts vs former ~617 MiB. Historical duplicate artifact housekeeping workflow 42483693420 success: 51 redundant old archives totaling 6,834,278,226 bytes pruned; one latest legacy QA retained and live public media untouched.",
   "issue_status": "No current unapproved extra post scheduled; TT002 carousel held, TT003 rejected; remaining reliability proof is 15/16 Nov unattended creation and Monday provider readback."
 }
