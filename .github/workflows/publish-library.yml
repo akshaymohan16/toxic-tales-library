@@ -57,7 +57,7 @@ jobs:
               'files': files,
           }
           (root / 'site-hashes.json').write_text(
-              json.dumps(manifest, indent=2, sort_keys=True) + '\\n',
+              json.dumps(manifest, indent=2, sort_keys=True) + chr(10),
               encoding='utf-8')
           print('Recorded', len(files), 'public files with SHA256; no duplicate MP4 artifacts')
           PY
