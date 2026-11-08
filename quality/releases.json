@@ -376,5 +376,134 @@
     ],
     "reviewed_contact_sheet": "Exact encoded-frame, boundary, cover and carousel observations retained in quality/pilots/tt-005.json",
     "narrative_review": "The film proceeds from an identified organism and survival question to seasonal preparation, protective chemistry, a controlled test, recovery and the population/season limit. The methods provide evidence for the biological explanation. The encoded film supplies the answer within the story: protective chemistry helps living cells tolerate freezing while some body water still becomes ice. The five recoveries and seven-week follow-up give a concrete outcome before the return to the animal."
+  },
+  "TT-006": {
+    "episode_id": "TT-006",
+    "decision": "release",
+    "publication_enabled": true,
+    "reviewer": "TT006 separate exact-export QA editorial pass",
+    "reviewed_at": "2026-11-08T13:10:00+01:00",
+    "fingerprint": "1f3f7409d378551a66e995f435f561114f170945882954f5e4e7f6fab70067cd",
+    "evidence_sha256": "1c5b5cca782a1f7586a3103c15009f525e4e3126869636447b620a052793c8ea",
+    "files": {
+      "media/tt-006-diving-bell-spider-oxygen-1f3f7409d378.mp4": "fe57081f7ad36af35532450dee52978c747fcdf175d519d2ceeabaaae4d454e5",
+      "media/tt-006-diving-bell-spider-oxygen-1f3f7409d378_cover.jpg": "332ae3063461fe2c684764ca9e051e0b7b48b2332d12facef50f99fe50a50404"
+    },
+    "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-006-contact.jpg?sha=c354fcfb",
+    "source_commit": "c354fcfb634f74cf6c46beb49aacf8004ce63993",
+    "verification_run": 42476492383,
+    "duration_seconds": 53.875,
+    "scientific_review": "Read original Seymour & Hetz 2011 Journal of Experimental Biology pp.2175–2181; this is a resting spider physical-gill lab observation with oxygen diffusion across bell-water interface; one can not infer continuous air-free life or supply at all activity levels. Nitrogen loss requires eventual surfacing; all numbers/caveats checked against source locations.",
+    "visual_review": "Spider portraits remain visible and species-correct in the first, third and closing shots. The water-plants/air-bell drawing is conceptual; reciprocal oxygen arrows visibly cross the air-water boundary; optode probe and shrinking air bell are separate ideas. Main captions and titles are legible at 360px contact size, with no observed collisions or cropped critical words. All images are reference or original diagrams, never represented as measured footage.",
+    "audio_review": "Final MP4 H264 1080×1920, AAC narration Kokoro af_heart. Final encoded ASR ratio 0.9966555 (voice word 'spiders' after 'resting' was missed by the recognizer in one phrase; the resting-spider result is repeated unambiguously). Final loudness input -16.69 LUFS, true peak -5.35 dBTP; scientific critical terms retained. No direct audio listening claimed.",
+    "narrative_review": "The final nine-shot sequence follows one physical question: bell constructed from surface air, finite oxygen, entry of dissolved oxygen from water, laboratory measurement, resting demand, nitrogen escape, applicability limit and a return to the bell. It is a connected explanation rather than an experiment abstract.",
+    "final_editorial_review": {
+      "standard": "story-first-v1",
+      "reviewer": "TT006 separate exact-export QA editorial pass",
+      "reviewed_at": "2026-11-08T13:10:00+01:00",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "reviewed_encoded_frames": true,
+      "source_sha256": "3728996c83f1dd518ca38addc335f1609c26c9c69b8c1ea8ad972df829f96e3f",
+      "fingerprint": "1f3f7409d378551a66e995f435f561114f170945882954f5e4e7f6fab70067cd",
+      "files": {
+        "media/tt-006-diving-bell-spider-oxygen-1f3f7409d378.mp4": "fe57081f7ad36af35532450dee52978c747fcdf175d519d2ceeabaaae4d454e5",
+        "media/tt-006-diving-bell-spider-oxygen-1f3f7409d378_cover.jpg": "332ae3063461fe2c684764ca9e051e0b7b48b2332d12facef50f99fe50a50404"
+      },
+      "evidence_sha256": "1c5b5cca782a1f7586a3103c15009f525e4e3126869636447b620a052793c8ea",
+      "inspection_scope": "Actual GitHub Actions public-site-preview build 42476492383 downloaded (225 MB ZIP); extracted exact mp4, cover, generated 9-shot contact, 16 boundary frames, 0s/1s openings and final frame. Reviewed each, full ASR and loudness/peak plus H264/AAC properties. Did not listen to audio or continuously watch original movement, and no audio parity with owner's earlier content is claimed. This is a separate post-encoding editorial pass, not a substitute for real-world audience evaluation.",
+      "listening_review_claimed": false,
+      "continuous_playback_review_claimed": false,
+      "checks": {
+        "cold_viewer": {
+          "decision": "pass",
+          "finding": "At decoded 0 and 1 seconds, an identifiable water spider is seen alongside its silvery air dome. The named spider and visible underwater air pocket match the immediate spoken how-can-it-breathe question; the opening is not an unexplained event.",
+          "basis": "Reviewed actual qa/tt-006-opening-0s.jpg and opening-1s.jpg, the real bykovskii reference portrait, first 6.32-second encoded midpoint and cover."
+        },
+        "story": {
+          "decision": "pass",
+          "finding": "The final nine-shot sequence follows one physical question: bell constructed from surface air, finite oxygen, entry of dissolved oxygen from water, laboratory measurement, resting demand, nitrogen escape, applicability limit and a return to the bell. It is a connected explanation rather than an experiment abstract.",
+          "basis": "Checked exported nine-shot contact sheet, all sixteen pre/post shot boundaries, 53.875-second timeline and complete actual MP4 audio ASR transcript."
+        },
+        "visuals": {
+          "decision": "pass",
+          "finding": "Spider portraits remain visible and species-correct in the first, third and closing shots. The water-plants/air-bell drawing is conceptual; reciprocal oxygen arrows visibly cross the air-water boundary; optode probe and shrinking air bell are separate ideas. Main captions and titles are legible at 360px contact size, with no observed collisions or cropped critical words. All images are reference or original diagrams, never represented as measured footage.",
+          "basis": "Inspected full contact sheet (9 midpoints), 0/1-second frames, 16 shot-boundary frames, actual last frame and full-size 1080x1920 cover. No uninterrupted playback or listening claimed."
+        },
+        "payoff": {
+          "decision": "pass",
+          "finding": "The ending delivers the answer promised at the start: surrounding water supplies some dissolved oxygen to the bell, supporting a resting spider; the video has already acknowledged the nitrogen-loss limit.",
+          "basis": "Actual closing shot and final frame, full final transcript, oxygen-transfer frames and gas-shrink sequence (shots 4,6,7,9)."
+        },
+        "scope": {
+          "decision": "pass",
+          "finding": "The encoded film explicitly says resting spiders, warm aquarium water, nitrogen leaks, eventual air replacement, and that active spiders in all ponds/seasons were not shown. It does not promise unlimited underwater breathing, and no invented percentages, oxygen charts or measured time series appear.",
+          "basis": "Original Seymour & Hetz full journal paper pp.2175–2181 cross-checked against final ASR text, individual labelled diagrams and spoken boundaries at 35.9–47.5 seconds."
+        },
+        "retelling": {
+          "decision": "pass",
+          "finding": "A diving bell spider carries surface air underwater, but its silk-supported bell also takes in dissolved oxygen from surrounding water, which can help a resting spider remain underwater.",
+          "basis": "The measured physiological result is restricted to laboratory warm-water and resting spiders; the chamber shrinks and needs surface-air replenishment."
+        }
+      }
+    },
+    "branding_review": {
+      "standard": "toxic-tales-branding-v1",
+      "reviewer": "TT006 separate exact-export branding QA pass",
+      "reviewed_at": "2026-11-08T13:10:00+01:00",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "logo_sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+      "fingerprint": "1f3f7409d378551a66e995f435f561114f170945882954f5e4e7f6fab70067cd",
+      "files": {
+        "media/tt-006-diving-bell-spider-oxygen-1f3f7409d378.mp4": "fe57081f7ad36af35532450dee52978c747fcdf175d519d2ceeabaaae4d454e5",
+        "media/tt-006-diving-bell-spider-oxygen-1f3f7409d378_cover.jpg": "332ae3063461fe2c684764ca9e051e0b7b48b2332d12facef50f99fe50a50404"
+      },
+      "evidence_sha256": "1c5b5cca782a1f7586a3103c15009f525e4e3126869636447b620a052793c8ea",
+      "reviewed_encoded_frames": true,
+      "reviewed_opening_frames": true,
+      "reviewed_every_shot_and_transition": true,
+      "reviewed_final_frame": true,
+      "reviewed_cover": true,
+      "reviewed_phone_scale": true,
+      "checks": {
+        "actual_logo": {
+          "decision": "pass",
+          "finding": "The recognisable circular green flask/plant/Asellus Toxic Tales mark is visibly present from the first frame through every sampled shot and the cover; no text-only substitute.",
+          "basis": "Pinned 240x240 asset SHA-256 1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742; actual 0/1s, nine midpoints, sixteen boundaries, cover, final frame inspected."
+        },
+        "placement": {
+          "decision": "pass",
+          "finding": "Logo sits at the upper left on the dark vignette and remains separate from the spider, oxygen diagrams, headline and captions at full and contact-sheet sizes.",
+          "basis": "Actual opening, every shot, boundary contact and full cover; logo box (82,72,140,140) inside 1080×1920 frame."
+        },
+        "clean_frames": {
+          "decision": "pass",
+          "finding": "No historical recurring bottom source/method/species-note footer or decorative progress bar; no Field notes episode code appears. The frame leaves the lower line clean.",
+          "basis": "Actual nine-portrait contact at 360px, 16 shot boundaries and final frame compared against legacy TT-005 footer design; branded render source code frame method."
+        },
+        "captions_and_labels": {
+          "decision": "pass",
+          "finding": "Speech captions use a large readable sans-serif over dark panels, keeping the surrounding scientific labels legible. The labels 'Dissolved oxygen', 'Oxygen-sensitive probe' and study-limit terms do explanatory work rather than supply decorative production metadata.",
+          "basis": "Reviewed actual first and final frame, contact and before/after shot boundaries; final ASR token similarity 0.9966555 and no caption overlap reported."
+        },
+        "scientific_limits": {
+          "decision": "pass",
+          "finding": "Resting demand, warm aquarium testing, nitrogen escape, and wild/active caveat remain spoken within the final film rather than being removed with footer clutter.",
+          "basis": "Actual ASR transcript and last three encoded midpoints, compared with source study and evidence/tt-006.md."
+        },
+        "provenance": {
+          "decision": "pass",
+          "finding": "Post caption includes stable TT006 ID, correct DOI, archive URL, reference-photo authors and CC BY 4.0, crop/colour changes, conceptual figure and neural speech disclosures. Archive includes full original paper/claim locations and source/rights links.",
+          "basis": "Reviewed the exact TT-006 post caption and evidence/tt-006.md paired with generated sources/tt-006.html from deployed site; no false bio-link claim."
+        },
+        "reference_imagery": {
+          "decision": "pass",
+          "finding": "All three animal images are licensed external species reference photographs, not optical-probe study footage; the optode apparatus and gas-exchange process are unmistakable conceptual illustrations. Narration does not describe a research recording as if it were shown.",
+          "basis": "Inspected real spider portraits, probe illustration and bubble-flow shots plus explicit caption and media provenance."
+        }
+      }
+    },
+    "release_note": "Byte-bound release for exact TT006 fingerprint after post-export photo/logo/audio/caveat review. Source changes or new files automatically invalidate this release; publication still requires fresh calendar/quota and live media verification."
   }
 }
