@@ -40,13 +40,33 @@ jobs:
         env:
           OMP_NUM_THREADS: '2'
         run: python scripts/build.py
-      - name: Save build even if Pages is not yet enabled
+      - name: Create exact-byte site hash manifest without copying large videos
+        run: |
+          python - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          root = Path('site')
+          files = {
+              p.relative_to(root).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+              for p in sorted(root.rglob('*'))
+              if p.is_file() and p.name != 'site-hashes.json'
+          }
+          manifest = {
+              'repository': os.environ['GITHUB_REPOSITORY'],
+              'commit': os.environ['GITHUB_SHA'],
+              'files': files,
+          }
+          (root / 'site-hashes.json').write_text(
+              json.dumps(manifest, indent=2, sort_keys=True) + '\\n',
+              encoding='utf-8')
+          print('Recorded', len(files), 'public files with SHA256; no duplicate MP4 artifacts')
+          PY
+      - name: Save only compact expected deployed file hashes
         uses: actions/upload-artifact@v4
         with:
-          name: toxic-tales-site-preview
-          path: site
-          include-hidden-files: true
-          retention-days: 30
+          name: toxic-tales-site-manifest
+          path: site/site-hashes.json
+          retention-days: 7
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
@@ -78,7 +98,7 @@ jobs:
           python-version: '3.11'
       - uses: actions/download-artifact@v4
         with:
-          name: toxic-tales-site-preview
+          name: toxic-tales-site-manifest
           path: expected-site
       - name: Install free validation tools
         run: |
@@ -87,11 +107,15 @@ jobs:
           python -m pip install Pillow==11.3.0
       - name: Verify anonymous downloads and exact media
         run: python scripts/verify_live.py
-      - name: Save public-media QA evidence
+      - name: Save only QA findings and phone-size contact sheets
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: toxic-tales-live-verification
-          path: verification
-          retention-days: 30
+          path: |
+            verification/report.json
+            verification/*_video_contact.jpg
+            verification/*_carousel_contact.jpg
+          if-no-files-found: error
+          retention-days: 7
 

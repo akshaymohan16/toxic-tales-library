@@ -11,11 +11,16 @@ REPO = 'akshaymohan16/toxic-tales-library'
 BASE = 'https://akshaymohan16.github.io/toxic-tales-library/'
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = ROOT / 'expected-site'
+MANIFEST = json.loads((EXPECTED/'site-hashes.json').read_text(encoding='utf-8'))
 OUT = ROOT / 'verification'
 OUT.mkdir(exist_ok=True)
 if os.environ.get('GITHUB_REPOSITORY') != REPO:
     raise SystemExit('Repository boundary violation')
 COMMIT = os.environ['GITHUB_SHA']
+if MANIFEST.get('repository') != REPO or MANIFEST.get('commit') != COMMIT:
+    raise SystemExit('Expected manifest belongs to a different repository or commit')
+if not isinstance(MANIFEST.get('files'), dict) or not MANIFEST['files']:
+    raise SystemExit('Missing site-file hash map')
 report = {'repository': REPO, 'commit': COMMIT, 'checked_at': datetime.now(timezone.utc).isoformat(), 'anonymous': True, 'files': [], 'passed': False}
 
 def get(path):
@@ -30,9 +35,15 @@ def get(path):
         if len(data) > 100_000_000:
             raise RuntimeError('Oversized public file')
         mime = r.headers.get_content_type()
-    expected = EXPECTED / path
-    if not expected.is_file() or hashlib.sha256(data).digest() != hashlib.sha256(expected.read_bytes()).digest():
-        raise RuntimeError('Live/build mismatch: ' + path)
+    # Compare actual public bytes to the exact build's small SHA-256 manifest.
+    # The manifest itself must be an exact public copy of the workflow artifact.
+    if path == 'site-hashes.json':
+        if data != (EXPECTED / 'site-hashes.json').read_bytes():
+            raise RuntimeError('Live site manifest is not the expected deployed version')
+    else:
+        digest = MANIFEST['files'].get(path)
+        if not digest or hashlib.sha256(data).hexdigest() != digest:
+            raise RuntimeError('Live/build mismatch: ' + path)
     target.write_bytes(data)
     report['files'].append({'path': path, 'url': urljoin(BASE,path), 'status': 200, 'bytes': len(data), 'content_type': mime, 'sha256': hashlib.sha256(data).hexdigest()})
     return target
@@ -51,11 +62,12 @@ try:
             if attempt == 7:
                 raise
             time.sleep(10)
-    for p in ['index.html', 'papers.json', 'publish-queue.json']:
+    for p in ['site-hashes.json', 'index.html', 'papers.json', 'publish-queue.json']:
         get(p)
-    if (EXPECTED/'pilot.html').exists():get('pilot.html')
-    for citation in (EXPECTED/'citations').glob('*'):
-        if citation.suffix in ('.bib','.ris'):get(citation.relative_to(EXPECTED).as_posix())
+    if 'pilot.html' in MANIFEST['files']:get('pilot.html')
+    for citation in sorted(MANIFEST['files']):
+        if citation.startswith('citations/') and citation.endswith(('.bib','.ris')):
+            get(citation)
     papers = json.loads((OUT/'papers.json').read_text())
     for ep in papers:
         get(ep['evidence_record'])
