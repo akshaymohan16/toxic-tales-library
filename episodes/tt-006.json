@@ -1,0 +1,456 @@
+{
+  "id": "TT-006",
+  "slug": "tt-006-diving-bell-spider-oxygen",
+  "title": "The spider that builds an underwater lung",
+  "hook": "An underwater spider builds an air bell. But how does it keep breathing?",
+  "doi": "10.1242/jeb.056093",
+  "paper_title": "The diving bell and the spider: the physical gill of Argyroneta aquatica",
+  "citation": "Seymour & Hetz (2011), Journal of Experimental Biology 214:2175–2181",
+  "tags": [
+    "freshwater ecology",
+    "spider",
+    "oxygen",
+    "animal physiology",
+    "physical gill"
+  ],
+  "summary": "The diving bell spider makes a silk-supported air chamber underwater. Seymour and Hetz measured gas exchange and showed that oxygen diffusing from water into bells can meet resting spider demand under their aquarium conditions. Nitrogen loss eventually makes air renewal necessary.",
+  "evidence_note": "This is a small aquatic-physiology laboratory study of resting spiders and bell gas exchange. The bell's long-term renewal and active/wild limits remain; this is not a claim that spiders never surface.",
+  "source_url": "https://doi.org/10.1242/jeb.056093",
+  "review_status": "verified_full_text",
+  "publication_enabled": true,
+  "is_ai_generated": true,
+  "batch_id": "2026-11-09",
+  "slides": [],
+  "evidence_file": "evidence/tt-006.md",
+  "checks": {
+    "full_text": true,
+    "design": true,
+    "findings": true,
+    "limitations": true,
+    "rights": true
+  },
+  "evidence": {
+    "full_text_url": "https://journals.biologists.com/jeb/article-pdf/214/13/2175/1436566/2175.pdf",
+    "checked_at": "2026-11-08",
+    "design": "Physiological laboratory measurements of field-collected Argyroneta aquatica building air bells; bell volume and oxygen partial pressures measured with micro-optodes, compared with respirometry of resting spiders. Fourteen empty bells from eleven spiders were measured for conductance. Warm roughly 25°C still water; no wild trial.",
+    "claims": [
+      {
+        "claim": "The freshwater spider builds an underwater silk-supported diving bell and adds surface-collected air.",
+        "location": "Original Introduction pp.2175–2176, Results pp.2177–2178 and Fig.1."
+      },
+      {
+        "claim": "Oxygen from surrounding water diffuses into the bell; oxygen partial pressure and bell conductance were measured.",
+        "location": "Original Summary p.2175; Methods pp.2176–2177; Results pp.2178–2179 Fig.2."
+      },
+      {
+        "claim": "Many studied bells satisfied resting spiders' oxygen requirements under warm aquarium conditions.",
+        "location": "Original Discussion p.2179: Effectiveness of the physical gill; Conclusions p.2181."
+      },
+      {
+        "claim": "The bell slowly loses nitrogen and must eventually receive more surface air.",
+        "location": "Original Discussion pp.2180–2181 and Conclusions p.2181; model Fig.6."
+      },
+      {
+        "claim": "Active-spider needs and general wild settings were not established in the study.",
+        "location": "Original Discussion p.2179, explicit limits on metabolic rate during activity and broods."
+      }
+    ],
+    "limitations": [
+      "Resting metabolic rates were investigated; active and wild oxygen needs were not established.",
+      "A few small bells did not meet resting oxygen demand; no claim that all bells are self-sufficient.",
+      "More-than-one-day renewal estimates rely partly on a gas transfer model, not a directly documented wild dive.",
+      "Reference photos are independent natural history images, not the studied spiders; diagrams are qualitative."
+    ],
+    "correction_check": "DOI-specific searches for correction/retraction on 2026-11-08 did not identify an indexed notice; recheck at release.",
+    "access_note": "Full original journal PDF pp.2175–2181 reviewed, including original graphs and explicit Discussion limitations."
+  },
+  "production": {
+    "renderer": "nature-branded-9",
+    "editorial_style": "science-journalism",
+    "editorial_standard": "story-first-v1",
+    "visual_standard": "nature-visuals-v1",
+    "branding_standard": "toxic-tales-branding-v1",
+    "script_author": "TT006 narrative desk",
+    "voice_speed": 1,
+    "cover_asset": "spider_bubble",
+    "cover_focus": [
+      0.5,
+      0.53
+    ],
+    "cover_kicker": "DIVING BELL SPIDER",
+    "cover_title": "A spider's\nunderwater\nair home",
+    "cover_subtitle": "How the bell keeps breathing",
+    "takeaway": "A silk air bell draws some oxygen from water, supporting a resting spider, but still needs replenishment.",
+    "critical_terms": [
+      "diving bell spider",
+      "oxygen",
+      "nitrogen",
+      "resting spider",
+      "physical gill"
+    ],
+    "assets": [
+      {
+        "id": "spider_bubble",
+        "filename": "argyroneta-with-bubble.jpeg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Argyroneta_aquatica_female_with_bubble.jpeg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Argyroneta_aquatica_female_with_bubble.jpeg",
+        "creator": "bykovskii",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Original correctly identified underwater female and air bubble, cropped, colour graded and panned for 1080 portrait. Reference wildlife photo, not the focal experiment.",
+        "focus": [
+          0.5,
+          0.55
+        ],
+        "source_dimensions": [
+          1536,
+          2048
+        ]
+      },
+      {
+        "id": "spider_asellus",
+        "filename": "argyroneta-asellus.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Waterspider_%28Argyroneta_aquatica%29_and_freshwater_crustacean_%28Asellus_aquaticus%29.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Waterspider_(Argyroneta_aquatica)_and_freshwater_crustacean_(Asellus_aquaticus).jpg",
+        "creator": "Lennart Lennuk",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Source habitat wildlife photograph of a water spider near Asellus, Estonia; cropped and editorially graded. Not the Seymour–Hetz study animal, and no consumption event is claimed.",
+        "focus": [
+          0.5,
+          0.34
+        ],
+        "source_dimensions": [
+          3220,
+          4830
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "speech": "This diving bell spider lives underwater inside a chamber of air it builds. But how can it breathe there?",
+        "captions": [
+          "This diving bell spider lives",
+          "underwater inside a chamber of air",
+          "it builds. But how can it",
+          "breathe there?"
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "portrait",
+            "title": "A spider's\nair home",
+            "kicker": "THE DIVING BELL SPIDER",
+            "start": 0,
+            "end": 1,
+            "asset": "spider_bubble",
+            "focus": [
+              0.5,
+              0.56
+            ]
+          }
+        ]
+      },
+      {
+        "speech": "It spins silk among water plants, then brings bubbles down from the surface to fill its bell.",
+        "captions": [
+          "It spins silk among water plants,",
+          "then brings bubbles down from the",
+          "surface to fill its bell."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "spider_bell",
+            "title": "A bell built\nunderwater",
+            "kicker": "HOW IT WORKS",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "The spider needs oxygen. A single trapped pocket of air would not last forever on its own.",
+        "captions": [
+          "The spider needs oxygen. A single",
+          "trapped pocket of air would not",
+          "last forever on its own."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "nature",
+            "title": "Air is\nnot endless",
+            "kicker": "THE BREATHING PROBLEM",
+            "start": 0,
+            "end": 1,
+            "asset": "spider_asellus",
+            "focus": [
+              0.5,
+              0.32
+            ]
+          }
+        ]
+      },
+      {
+        "speech": "Here is the surprise: oxygen dissolved in the surrounding water diffuses into the bell through its surface.",
+        "captions": [
+          "Here is the surprise: oxygen",
+          "dissolved in the surrounding water",
+          "diffuses into the bell through its",
+          "surface."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "spider_oxygen",
+            "title": "Oxygen enters\nfrom the water",
+            "kicker": "THE UNEXPECTED SUPPLY",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Scientists measured oxygen inside and outside these bells, alongside the needs of resting spiders.",
+        "captions": [
+          "Scientists measured oxygen inside",
+          "and outside these bells, alongside",
+          "the needs of resting spiders."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "spider_probe",
+            "title": "Measuring\nthe oxygen",
+            "kicker": "THE ORIGINAL STUDY",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "In warm aquarium water, many bells took in enough oxygen to support a spider at rest.",
+        "captions": [
+          "In warm aquarium water, many bells",
+          "took in enough oxygen to support",
+          "a spider at rest."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "spider_oxygen",
+            "title": "Enough for\nresting spiders",
+            "kicker": "WHAT THEY FOUND",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "But other gas, especially nitrogen, leaks away. The bell shrinks, and air must eventually be replaced.",
+        "captions": [
+          "But other gas, especially nitrogen,",
+          "leaks away. The bell shrinks, and",
+          "air must eventually be replaced."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "spider_gas",
+            "title": "The bell\nstill shrinks",
+            "kicker": "THE IMPORTANT CATCH",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "This does not prove the bell supplies an active spider in every pond or every season.",
+        "captions": [
+          "This does not prove the bell",
+          "supplies an active spider in every",
+          "pond or every season."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "spider_scope",
+            "title": "What this\ncannot prove",
+            "kicker": "STUDY LIMIT",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "It is a physical gill for a resting spider. The water helps keep its tiny underwater home breathable.",
+        "captions": [
+          "It is a physical gill for",
+          "a resting spider. The water helps",
+          "keep its tiny underwater home",
+          "breathable."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "closing",
+            "title": "Water helps\nthe bell breathe",
+            "kicker": "THE PAYOFF",
+            "start": 0,
+            "end": 1,
+            "asset": "spider_bubble",
+            "focus": [
+              0.5,
+              0.57
+            ]
+          }
+        ]
+      }
+    ],
+    "logo": {
+      "asset": "assets/branding/toxic-tales-logo.json",
+      "sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+      "placement": "At upper left in every frame and cover, never covering animal or captions",
+      "forbid": [
+        "footer",
+        "progress bar",
+        "field notes"
+      ],
+      "credits_in_caption": true
+    }
+  },
+  "editorial_story": {
+    "audience": "Curious non-specialist adults encountering an unfamiliar aquatic spider.",
+    "subject": "The air-breathing freshwater diving bell spider Argyroneta aquatica.",
+    "setting": "Freshwater vegetation and the separate warm laboratory aquaria that supplied measured gas-exchange evidence.",
+    "opening_context": "The opening photo and first sentence identify the spider underwater and the air chamber; the mystery is how the gas stays breathable.",
+    "normal_expectation": "An isolated bubble has finite oxygen and a spider needs oxygen, so it appears that frequent surfacing should be required.",
+    "story_selection": "A visually identifiable spider and clear physically plausible diffusive exchange give a compact surprising mechanism, avoiding an abstract methods recap.",
+    "decisive_limit": "Dissolved oxygen in the water can maintain resting spider metabolism in tested conditions, not an indefinite supply to active or all wild spiders; nitrogen leakage still requires renewal.",
+    "question": "Why does a diving bell spider's underwater chamber remain breathable longer than a simple trapped air pocket?",
+    "why_it_matters": "Shows how an air-breathing freshwater animal can exploit an interface with dissolved oxygen, and why physical context changes breathing ecology.",
+    "narrative_arc": "Named spider and underwater air room; construction of the bell; finite-air puzzle; dissolved oxygen entering from water; original optode study; resting-supply evidence; nitrogen loss; laboratory scope; return to spider.",
+    "closing_payoff": "The water outside the bubble helps resupply oxygen to the air inside, but an air trip is still eventually needed.",
+    "context_sources": [
+      {
+        "citation": "Seymour & Hetz (2011), original full text, including its cited prior aquarium observations",
+        "url": "https://doi.org/10.1242/jeb.056093",
+        "scope": "All spoken study-specific ecology; no unrelated contextual mechanisms added."
+      }
+    ],
+    "reporting_method": "Original full-text physiological ecology review; separately licensed organism reference photographs and original diagrams; no interviews or invented experiment footage.",
+    "visual_plan": [
+      {
+        "segment": 1,
+        "visual": "Recognisable underwater spider and air pocket before explaining the problem.",
+        "purpose": "Name the living animal and make the surprise visible.",
+        "source_or_concept": "bykovskii CC BY 4.0 reference underwater female; no study-footage claim.",
+        "accuracy_note": "No suggestion that this particular photo recorded the oxygen measurements."
+      },
+      {
+        "segment": 2,
+        "visual": "Illustrated plant-anchored silk bell and simplified spider.",
+        "purpose": "Explain the physical room in which air is stored.",
+        "source_or_concept": "Original qualitative underwater bell illustration.",
+        "accuracy_note": "Not to scale and no molecular values; surface is an air-water interface."
+      },
+      {
+        "segment": 3,
+        "visual": "Second verified spider photograph near Asellus, not a predation vignette.",
+        "purpose": "Reinforce the animal underwater and pose the limit of a finite air store.",
+        "source_or_concept": "Lennart Lennuk CC BY 4.0 wildlife reference.",
+        "accuracy_note": "Do not claim spider consumed Asellus or that photo is the study setup."
+      },
+      {
+        "segment": 4,
+        "visual": "Air dome with arrows entering from dissolved oxygen in surrounding water.",
+        "purpose": "Make the actual gas transfer causal mechanism intelligible.",
+        "source_or_concept": "Original simplified arrow-based illustration grounded in Seymour–Hetz Discussion.",
+        "accuracy_note": "Arrow counts and speeds are illustrative; do not copy published plots or claim oxygen comes from silk."
+      },
+      {
+        "segment": 5,
+        "visual": "Oxygen optode entering a bell in a conceptual chamber.",
+        "purpose": "Distinguish a measured physiological result from a guess.",
+        "source_or_concept": "Original conceptual micro-optode scene; Methods pp.2176–2177.",
+        "accuracy_note": "Not a recreation of recorded apparatus position or real experimental footage."
+      },
+      {
+        "segment": 6,
+        "visual": "Repeat the physical-gill diagram with readable resting-supply headline.",
+        "purpose": "Connect measurement to finding, not universal oxygen supply.",
+        "source_or_concept": "Original qualitative illustration, focal Discussion p.2179.",
+        "accuracy_note": "Only resting requirements in studied warm aquarium conditions; some small bells were exceptions."
+      },
+      {
+        "segment": 7,
+        "visual": "Bell surface visibly contracts with clear message that air renewal is still needed.",
+        "purpose": "Show the nitrogen loss that bounds the mechanism.",
+        "source_or_concept": "Original shrinking-bell conceptual animation; Discussion pp.2180–2181.",
+        "accuracy_note": "No precise timed contraction, rate or claim of lifelong independent supply."
+      },
+      {
+        "segment": 8,
+        "visual": "Text and cartoon for warm aquarium, resting animals, contrasting unknown activity.",
+        "purpose": "Integrate the decisive active/wild boundary verbally and visually.",
+        "source_or_concept": "Original scope card, no data graph.",
+        "accuracy_note": "Do not generalise to all activity, wild ponds or winter."
+      },
+      {
+        "segment": 9,
+        "visual": "Return to same identified underwater spider with air bubble.",
+        "purpose": "Deliver the original question's answer with an organism, not just a number.",
+        "source_or_concept": "bykovskii licensed reference, caption retains source.",
+        "accuracy_note": "A possible physical gill in resting conditions; not a biological anatomical gill."
+      }
+    ]
+  },
+  "posts": [
+    {
+      "id": "TT-006-REEL",
+      "format": "REEL",
+      "publication_date": "2026-11-10T10:00:00+01:00",
+      "caption": "How does a spider breathe underwater?\n\nThe diving bell spider (*Argyroneta aquatica*) builds a web-supported pocket of air under freshwater. It replenishes the pocket from the surface, but the remarkable part is what happens between those trips: oxygen dissolved in the surrounding water can diffuse into the bell. That makes the air-water boundary a **physical gill**.\n\nSeymour and Hetz measured oxygen and gas conductance in laboratory diving bells. Many bells supplied enough oxygen for resting spiders in warm, still aquarium water. But nitrogen leaves the chamber, so it gradually shrinks and the spider still needs fresh air eventually. These tests do not establish oxygen supply during all activity or in every natural habitat.\n\nTT-006 | Seymour & Hetz (2011), Journal of Experimental Biology, DOI: 10.1242/jeb.056093\nFull source, methods, limitations and media credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-006.html\n\nReal spider reference photographs (not the experiment): bykovskii and Lennart Lennuk, CC BY 4.0, cropped/graded; source/licence links on research page. Gas-transfer and measurement sequences are original conceptual illustrations, not recorded data. Synthetic narration. Official Toxic Tales logo.\n\n#ToxicTales #FreshwaterEcology #WaterSpider #AnimalPhysiology #ScienceCommunication"
+    }
+  ],
+  "editorial_review": {
+    "standard": "story-first-v1",
+    "reviewed_at": "2026-11-08T12:17:00+01:00",
+    "reviewer": "TT006 evidence and cold-viewer editorial pass",
+    "decision": "pass",
+    "checks": {
+      "cold_viewer": {
+        "decision": "pass",
+        "finding": "Opening names the diving bell spider, its underwater air chamber and the oxygen question before any unexplained event; first licensed species portrait directly anchors the hook.",
+        "basis": "Spoken segment 1, spider_bubble portrait and cover_title, bykovskii verified species photo."
+      },
+      "story": {
+        "decision": "pass",
+        "finding": "Segments 1–3 establish a physical supply problem; segment 4 explains transfer; optode measurement then resting finding supply evidence; nitrogen loss and activity caveat prevent a false magical scuba ending.",
+        "basis": "Nine linked narration segments mapped to Seymour & Hetz 2011 Discussion pp.2179–2181."
+      },
+      "visuals": {
+        "decision": "pass",
+        "finding": "Each scene identifies the correctly named spider, models the silk air bell, indicates diffusive oxygen, shows optode measurement, shrinking gas and the actual studied scope; no frog-specific diagram or invented data curve is requested.",
+        "basis": "Nine paired visual_plan entries and distinct source-specific diagram kinds in scripts/production_branded.py; final encoded crops and frame checks are still required."
+      },
+      "payoff": {
+        "decision": "pass",
+        "finding": "The Reel explicitly answers why the air bell works: dissolved water oxygen enters through the boundary, supporting a resting spider, but surfacing remains necessary eventually.",
+        "basis": "Opening segment 1 question compared with spoken segments 4, 6, 7 and 9."
+      },
+      "scope": {
+        "decision": "pass",
+        "finding": "The supporting study concerns laboratory resting requirements; the story gives nitrogen depletion and activity/wild uncertainty as decisive spoken caveats instead of relegating them to the caption.",
+        "basis": "Original Conclusions p.2181 and Discussion p.2179; spoken segments 6–8."
+      },
+      "retelling": {
+        "decision": "pass",
+        "finding": "An underwater spider's air bell draws dissolved oxygen from water, helping resting spiders stay submerged.",
+        "basis": "Air loss still forces future replenishment, and the focal lab study cannot establish supply to active spiders or every habitat."
+      }
+    },
+    "source_sha256": "3728996c83f1dd518ca38addc335f1609c26c9c69b8c1ea8ad972df829f96e3f"
+  }
+}
