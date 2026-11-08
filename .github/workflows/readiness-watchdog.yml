@@ -1,0 +1,37 @@
+name: Toxic Tales autonomous schedule watchdog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/readiness-watchdog.yml'
+      - 'automation/verify_readiness.py'
+      - 'automation/test_verify_readiness.py'
+  schedule:
+    # UTC triggers. All scheduling comparisons use Europe/Vienna with DST.
+    - cron: '35 8 * * *'
+    - cron: '20 12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: toxic-tales-ledger-watchdog
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test scheduling and failure cases
+        run: python -m unittest discover -s automation -p 'test_verify_readiness.py' -v
+      - name: Fail closed if required posts or positive publication receipts are missing
+        if: github.event_name != 'push'
+        run: python automation/verify_readiness.py
