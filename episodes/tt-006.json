@@ -411,12 +411,12 @@
       "id": "TT-006-REEL",
       "format": "REEL",
       "publication_date": "2026-11-10T10:00:00+01:00",
-      "caption": "How does a spider breathe underwater?\n\nThe diving bell spider (*Argyroneta aquatica*) builds a web-supported pocket of air under freshwater. It replenishes the pocket from the surface, but the remarkable part is what happens between those trips: oxygen dissolved in the surrounding water can diffuse into the bell. That makes the air-water boundary a **physical gill**.\n\nSeymour and Hetz measured oxygen and gas conductance in laboratory diving bells. Many bells supplied enough oxygen for resting spiders in warm, still aquarium water. But nitrogen leaves the chamber, so it gradually shrinks and the spider still needs fresh air eventually. These tests do not establish oxygen supply during all activity or in every natural habitat.\n\nTT-006 | Seymour & Hetz (2011), Journal of Experimental Biology, DOI: 10.1242/jeb.056093\nFull source, methods, limitations and media credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-006.html\n\nReal spider reference photographs (not the experiment): bykovskii and Lennart Lennuk, CC BY 4.0, cropped/graded; source/licence links on research page. Gas-transfer and measurement sequences are original conceptual illustrations, not recorded data. Synthetic narration. Official Toxic Tales logo.\n\n#ToxicTales #FreshwaterEcology #WaterSpider #AnimalPhysiology #ScienceCommunication"
+      "caption": "How does a spider breathe underwater?\n\nThe diving bell spider (*Argyroneta aquatica*) builds a web-supported pocket of air under freshwater. It replenishes the pocket from the surface, but the remarkable part is what happens between those trips: oxygen dissolved in the surrounding water can diffuse into the bell. That makes the air-water boundary a physical gill.\n\nSeymour and Hetz measured oxygen and gas conductance in laboratory diving bells. Many bells supplied enough oxygen for resting spiders in warm, still aquarium water. But nitrogen leaves the chamber, so it gradually shrinks and the spider still needs fresh air eventually. These tests do not establish oxygen supply during all activity or in every natural habitat.\n\nTT-006 | Seymour & Hetz (2011), Journal of Experimental Biology, DOI: 10.1242/jeb.056093\nFull source, methods, limitations and media credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-006.html\n\nReal spider reference photographs (not the experiment): bykovskii and Lennart Lennuk, CC BY 4.0, cropped/graded; source/licence links on research page. Gas-transfer and measurement sequences are original conceptual illustrations, not recorded data. Synthetic narration. Official Toxic Tales logo.\n\n#ToxicTales #FreshwaterEcology #WaterSpider #AnimalPhysiology #ScienceCommunication"
     }
   ],
   "editorial_review": {
     "standard": "story-first-v1",
-    "reviewed_at": "2026-11-08T12:17:00+01:00",
+    "reviewed_at": "2026-11-08T13:15:00+01:00",
     "reviewer": "TT006 evidence and cold-viewer editorial pass",
     "decision": "pass",
     "checks": {
@@ -451,6 +451,7 @@
         "basis": "Air loss still forces future replenishment, and the focal lab study cannot establish supply to active spiders or every habitat."
       }
     },
-    "source_sha256": "3728996c83f1dd518ca38addc335f1609c26c9c69b8c1ea8ad972df829f96e3f"
+    "source_sha256": "6dec916122c8a936e896d7777ddb13f584553f6f144fba189d6d24301ba470bb",
+    "review_scope": "Pre-render science and paired visual review refreshed after plain Instagram caption typography normalization only; the spoken script, claims, asset choices and storyboard are unchanged."
   }
 }

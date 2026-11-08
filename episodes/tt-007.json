@@ -465,12 +465,12 @@
       "id": "TT-007-REEL",
       "format": "REEL",
       "publication_date": "2026-11-14T10:00:00+01:00",
-      "caption": "Do bumblebees play? Look at these rolling balls.\n\nIn a laboratory, *Bombus terrestris* repeatedly manipulated small wooden balls, even though no nectar or pollen reward was attached. Researchers provided a clear route to food, so bees did not need to move the objects to feed. Younger bees rolled balls more often than older bees in a separate test. In another experiment, a chamber colour previously associated with rolling influenced their later choices, even when the balls were absent.\n\nThese findings support interpreting the behaviour as **play-like** or intrinsically rewarding. They do NOT directly establish how a bee feels, whether the activity improves future skills, or how often wild bees do this.\n\nTT-007 | Galpayage Dona et al. (2022), Animal Behaviour 194:239–251. DOI: 10.1016/j.anbehav.2022.08.013\nMethods, evidence and full visual credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-007.html\n\nOriginal experimental footage: Galpayage Dona and colleagues, CC BY 4.0, edited from Supplementary Video S1; natural-history photos Marco Almbauer and Aethonatic, CC0, reference only. Figure animations are original explanatory concepts, not recorded measurements. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Bumblebees #InsectBehaviour #AnimalPlay #Ecology #ScienceCommunication"
+      "caption": "Do bumblebees play? Look at these rolling balls.\n\nIn a laboratory, *Bombus terrestris* repeatedly manipulated small wooden balls, even though no nectar or pollen reward was attached. Researchers provided a clear route to food, so bees did not need to move the objects to feed. Younger bees rolled balls more often than older bees in a separate test. In another experiment, a chamber colour previously associated with rolling influenced their later choices, even when the balls were absent.\n\nThese findings support interpreting the behaviour as play-like or intrinsically rewarding. They do NOT directly establish how a bee feels, whether the activity improves future skills, or how often wild bees do this.\n\nTT-007 | Galpayage Dona et al. (2022), Animal Behaviour 194:239–251. DOI: 10.1016/j.anbehav.2022.08.013\nMethods, evidence and full visual credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-007.html\n\nOriginal experimental footage: Galpayage Dona and colleagues, CC BY 4.0, edited from Supplementary Video S1; natural-history photos Marco Almbauer and Aethonatic, CC0, reference only. Figure animations are original explanatory concepts, not recorded measurements. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Bumblebees #InsectBehaviour #AnimalPlay #Ecology #ScienceCommunication"
     }
   ],
   "editorial_review": {
     "standard": "story-first-v1",
-    "reviewed_at": "2026-11-08T12:17:00+01:00",
+    "reviewed_at": "2026-11-08T13:15:00+01:00",
     "reviewer": "TT007 evidence and cold-viewer editorial pass",
     "decision": "pass",
     "checks": {
@@ -505,6 +505,7 @@
         "basis": "The evidence does not directly prove bees feel pleasure or establish that wild bees behave this way."
       }
     },
-    "source_sha256": "649f529a635e0963944ebcf2b58898b51866aeaa47852d622c7b2cb4b6a46dcd"
+    "source_sha256": "185ddd66c4c57284aabfe712f28116c234c867c60dd955c899b64f71c65df6a9",
+    "review_scope": "Pre-render science and paired visual review refreshed after plain Instagram caption typography normalization only; the spoken script, claims, asset choices and storyboard are unchanged."
   }
 }
