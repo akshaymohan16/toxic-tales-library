@@ -89,7 +89,7 @@
       "bumblebee",
       "wooden ball",
       "no nectar",
-      "younger bees",
+      "young bees",
       "wild bees"
     ],
     "assets": [
@@ -497,7 +497,7 @@
       "scope": {
         "decision": "pass",
         "finding": "Distinct experiments and unrewarded settings are kept separate; repeated actions are not treated as independent bee numbers, and a spoken laboratory/feelings caveat prevents over-generalisation.",
-        "basis": "Original Methods and Results pp.241–246; Discussion pp.249–251."
+        "basis": "Original Methods and Results pp.241–246; Discussion pp.249–251. The critical phrase is precisely 'young bees' as spoken, not a synonym that ASR must guess."
       },
       "retelling": {
         "decision": "pass",
@@ -505,6 +505,6 @@
         "basis": "The evidence does not directly prove bees feel pleasure or establish that wild bees behave this way."
       }
     },
-    "source_sha256": "2be3fde40c4b0b7a5d128c3d570d4e5518d5076778204d314ee5123aa63390b3"
+    "source_sha256": "649f529a635e0963944ebcf2b58898b51866aeaa47852d622c7b2cb4b6a46dcd"
   }
 }
