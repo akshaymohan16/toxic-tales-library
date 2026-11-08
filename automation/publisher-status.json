@@ -1,30 +1,35 @@
 {
-  "checked_on": "2026-11-07",
+  "checked_on": "2026-11-08",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": "Europe/Vienna",
   "deployment_and_media": "TT-005 final visual pilot public bytes verified; published TT-004 media preserved",
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
   "decision": "ACTIVE_APPROVED_STANDARD",
-  "reason": "Owner-approved exact TT-005 Reel positively confirmed published; ordinary production and publishing remain active with mandatory future branding.",
-  "scheduled_posts_returned": 0,
+  "reason": "Three posts reserved/quality released with exact media; independent twice-daily watchdog deployed and daily/sunday task prompts strengthened. Unattended next-week production unproven until 15 Nov.",
+  "scheduled_posts_returned": 3,
   "published_provider_receipts": 3,
-  "new_metricool_submissions": 1,
-  "scheduled_post_ids": [],
+  "new_metricool_submissions": 0,
+  "scheduled_post_ids": [
+    "TT-006-REEL",
+    "TT-005-CAROUSEL",
+    "TT-007-REEL"
+  ],
   "routine_user_approval_required": false,
-  "automatic_next_step": "Produce two new distinct-paper Reels for November 10 and 14 and a current-standard companion carousel for November 12. Never repost TT-004.",
+  "automatic_next_step": "Sunday 15 Nov: research, produce and schedule distinct-paper 17 Nov Reel, 19 Nov companion carousel, 21 Nov Reel. Monday 16 Nov strict 3-post readiness; daily publisher cross-checks actual Metricool and corrects/alerts as required.",
   "review_limit": "Encoded frames, final transcript and technical audio reviewed; no listening or original-audio-parity claim.",
   "quota": {
     "observed_used": 3,
-    "active_draft_reservations": 1,
+    "observation_basis": "Latest 3 PUBLISHED provider receipts; real Metricool free planner UI counter not refreshed",
+    "active_scheduled": 3,
+    "held_draft_reservations": 1,
     "retired_drafts": 1,
-    "projected_active_usage": 4,
+    "conservative_reservations": 7,
     "cap": 20,
-    "note": "Three provider-confirmed publications plus one held carousel candidate; retired TT-003 remains a draft. Historical UI counter is not fresh. Refresh before future scheduling.",
-    "observation_basis": "Provider-confirmed lower bound; previous UI counter 1/20 is historical."
+    "note": "Do not equate three known PUBLISHED receipts with authoritative Metricool UI quota. Recheck full month and UI before scheduling more."
   },
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
-  "updated_metricool_posts": 1,
+  "updated_metricool_posts": 0,
   "journalism_standard": "quality/SCIENCE_JOURNALISM.md",
   "draft_posts_held": 2,
   "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot-tt-005.html?review=3048cc50e4ba",
@@ -55,7 +60,7 @@
   "pending_new_pilot_post_id": null,
   "pilot_record_status": "published_owner_approved",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
-  "updated_at": "2026-11-07T19:07:59.945Z",
+  "updated_at": "2026-11-08T13:02:24.956Z",
   "latest_publication": {
     "post_id": "TT-005-REEL",
     "metricool_id": "420178205",
@@ -70,7 +75,8 @@
       "TT-004-REEL",
       "TT-005-REEL"
     ],
-    "latest_delivery": "Current chat; live Reel link provided. Future ChatGPT result notifications configured; push/email settings unverified."
+    "latest_delivery": "Current chat; live Reel link provided. Future ChatGPT result notifications configured; push/email settings unverified.",
+    "delivery_status": "ChatGPT task push/email settings unknown; owner notification emitted only for positively confirmed PUBLISHED, never merely scheduled."
   },
   "recurring_tasks": {
     "verified_at": "2026-11-07T19:09:18.655365+00:00",
@@ -104,5 +110,35 @@
     "verification_run": 42402379631,
     "public_url": "https://www.instagram.com/reel/Dfc5DEPHJCJ/"
   },
-  "future_branding_standard": "quality/BRANDING_STANDARD.md"
+  "future_branding_standard": "quality/BRANDING_STANDARD.md",
+  "scheduled_provider_ids": [
+    "420702555",
+    "420683055",
+    "420703487"
+  ],
+  "provider_receipts_status": "Metricool full calendar independently returned exactly three approved active scheduled PENDING autoPublish non-draft: 10/12/14 Nov 10:00 Europe/Vienna. Last real provider check Nov 8. This is NOT publication.",
+  "next_batch": {
+    "week_start": "2026-11-16",
+    "slots": [
+      "2026-11-17T10:00:00+01:00",
+      "2026-11-19T10:00:00+01:00",
+      "2026-11-21T10:00:00+01:00"
+    ],
+    "state": "not_yet_due_for_production",
+    "producer_due": "Sunday 2026-11-15 10:00 Europe/Vienna",
+    "hard_readiness_due": "Monday 2026-11-16 before end of day Europe/Vienna"
+  },
+  "watchdog": {
+    "workflow": ".github/workflows/readiness-watchdog.yml",
+    "script": "automation/verify_readiness.py",
+    "scope": "GitHub repo ledger receipts only; live Metricool checks by existing daily publisher",
+    "schedule_utc": [
+      "08:35",
+      "12:20"
+    ],
+    "status": "installed, tests pass; future unattended cron and repair cycle not yet observed",
+    "last_smoke_run": 42482777303
+  },
+  "storage": "Compact SHA manifest + small QA artifacts replaces redundant full-site preview; latest workflow must pass before declaring storage optimization verified.",
+  "issue_status": "No current unapproved extra post scheduled; TT002 carousel held, TT003 rejected; remaining reliability proof is 15/16 Nov unattended creation and Monday provider readback."
 }

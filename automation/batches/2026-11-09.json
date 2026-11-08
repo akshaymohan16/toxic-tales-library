@@ -15,7 +15,7 @@
       "format": "REEL",
       "status": "scheduled_provider_pending",
       "publication_eligible": true,
-      "release_fingerprint": "1f3f7409d378551a66e995f435f561114f170945882954f5e4e7f6fab70067cd",
+      "release_fingerprint": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
       "release_record": "quality/releases.json",
       "reason": "Provider schedule read back at exact 10 Nov 10:00 Europe/Vienna with autoPublish true, draft false, reviewed MP4/cover and plain caption; publication itself must be verified after due time.",
       "metricool_id": "420702555",
@@ -45,13 +45,15 @@
       "metricool_id": "420703487",
       "metricool_uuid": "-6872348896682359981",
       "provider_status": "PENDING",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6872348896682359981"
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6872348896682359981",
+      "release_fingerprint": "828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db",
+      "release_record": "quality/releases.json"
     }
   ],
-  "scientific_review": "TT-004 focal paper, evidence and final narration reviewed; source claims retained within study limits.",
-  "render_and_live_media_review": "Corrected TT-004 encoded export independently reviewed and exact public files verified.",
+  "scientific_review": "TT006 diving-bell spider physiological laboratory original paper (2011), TT007 bumblebee ball rolling laboratory original paper (2022), TT005 frog companion source (2015). Claims, scope, visual provenance and licensed media recorded in evidence files and final release.",
+  "render_and_live_media_review": "TT006/TT007 brand-compliant exact encoded exports independently reviewed with current source hashes, public Pages exact media bytes verified; TT005 companion 6 exact 1080x1350 slides reviewed. Reference audio parity and continuous listening not claimed.",
   "schedule_status": "All three slots provider-confirmed scheduled with autoPublish true: TT006 REEL Tue 10 Nov, TT005 CAROUSEL Thu 12 Nov, TT007 REEL Sat 14 Nov, each 10:00 Europe/Vienna. PENDING until publication; daily publisher must confirm live URL. Held TT002 carousel and rejected TT003 remain drafts.",
-  "quota_status": "Refresh current planner counter and provider receipts including the confirmed TT-004 publication; the earlier 1/20 observation is historical. Reserve eligible future destinations and stay <=20/month.",
+  "quota_status": "Three PUBLISHED plus three autoPublish PENDING, one separate held draft; avoid treating old 1/20 planner UI observation as current counter. Provider full calendar reconciled 8 Nov; current authoritative quota UI not independently refreshed.",
   "idempotency_note": "Never repost published TT-002-REEL or TT-004-REEL, and never revive rejected TT-003. TT-004 UUID 8432780738091634663 is confirmed published and must never be submitted or rescheduled. Keep the two next-week Reel papers distinct and use stable new identities for replacements.",
   "retired_slots": [
     {
@@ -112,5 +114,11 @@
       "reason": "Do not publish or revive rejected TT003."
     }
   ],
-  "latest_review_update": "2026-11-08; spider exact-release qa and Thursday carousel provider scheduling. Bumblebee pending final render/release. Current planner cap usage counter remains historical; use receipt lower-bound and reconfirm before submitting another post."
+  "latest_review_update": "2026-11-08: both TT006 and TT007 exact MP4/cover, final editorial and branding records released; source media deployment and public-byte QA passed in workflow 42480206394; 10/12/14 provider schedules independently read back PENDING, autoPublish true, draft false.",
+  "latest_live_verification_run": 42480784890,
+  "final_release_run": 42480206394,
+  "final_release_fingerprints": {
+    "TT-006": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
+    "TT-007": "828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db"
+  }
 }

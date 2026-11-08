@@ -1,19 +1,89 @@
 {
   "batch_id": "2026-11-09",
-  "review_date": "2026-11-07",
-  "workflow_run_id": 42367577066,
-  "verification_artifact_id": 13572616396,
-  "deployed_commit": "76328e2427c2b7c6f9a8570ebeb6939d4df5f5c9",
-  "anonymous_check_timestamp": "2026-11-07T11:19:30.594214+00:00",
-  "anonymous_verification_passed": true,
-  "public_files_checked": 23,
-  "reels": [
-    {"episode": "TT-002", "duration_seconds": 44.877035, "dimensions": "1080x1920", "video_codec": "h264", "audio_codec": "aac", "mean_audio_db": -24.8, "sha256": "219e8ee38a51b4e067b8d4dba0e68d8736a8a4dc523cbda42ca68b5ff2eab1af"},
-    {"episode": "TT-003", "duration_seconds": 42.439887, "dimensions": "1080x1920", "video_codec": "h264", "audio_codec": "aac", "mean_audio_db": -25.0, "sha256": "d9199e52135e583bbdeee44421329cf044ba389586bda8f58820ab56d17bdbff"}
+  "review_date": "2026-11-08",
+  "workflow_run_id": 42480784890,
+  "latest_final_release_run": 42480206394,
+  "public_byte_verification": "passed",
+  "status": "ALL_3_POSTS_AUTO_SCHEDULED_PENDING_PUBLICATION",
+  "provider": "Metricool brand 7937614; Instagram toxic_tales_eco; Europe/Vienna",
+  "scheduled": [
+    {
+      "id": "TT-006-REEL",
+      "due": "2026-11-10T10:00:00+01:00",
+      "provider_id": "420702555",
+      "provider_uuid": "-5193152553705388348",
+      "fingerprint": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
+      "format": "REEL",
+      "autoPublish": true,
+      "draft": false,
+      "provider_status": "PENDING"
+    },
+    {
+      "id": "TT-005-CAROUSEL",
+      "due": "2026-11-12T10:00:00+01:00",
+      "provider_id": "420683055",
+      "provider_uuid": "-7609883982228992318",
+      "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b",
+      "format": "CAROUSEL",
+      "slides": 6,
+      "autoPublish": true,
+      "draft": false,
+      "provider_status": "PENDING"
+    },
+    {
+      "id": "TT-007-REEL",
+      "due": "2026-11-14T10:00:00+01:00",
+      "provider_id": "420703487",
+      "provider_uuid": "-6872348896682359981",
+      "fingerprint": "828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db",
+      "format": "REEL",
+      "autoPublish": true,
+      "draft": false,
+      "provider_status": "PENDING"
+    }
   ],
-  "carousel": {"episode": "TT-002", "slides": 7, "dimensions": "1080x1350", "format": "JPEG"},
-  "visual_review": "Contact sheets from actual anonymous downloads were inspected. Text readable, no observed clipping or unsupported graphical measurements. Schematics, not experimental footage.",
-  "narration_review": "Spoken source text scientifically reviewed; same text supplies captions. Automated audio-presence/level checks passed. Offline synthetic voice, not a studio recording.",
-  "queue_checks": "Three distinct stable post IDs; captions below 2200 characters, with DOI, source-library links and material limits; seven ordered slides for carousel.",
-  "publication_status": "Not scheduled or published; separate monthly inventory gate remains unresolved."
+  "source_review": "Full paper evidence location, separated phenomena and limits in evidence/tt-006.md, evidence/tt-007.md and existing TT005 claim files; actual final QA is in quality/releases.json.",
+  "independent_final_review_scope": "Verified encoded final frames, visual boundaries, output transcripts, source/cover hashes, brand/logo and sampling; continuous audio listening and video watch parity not separately verified.",
+  "late_publish_rule": "PENDING is not PUBLISHED. After each due date require provider PUBLISHED and publicUrl to mark ledger posted.",
+  "next_week": "17/19/21 Nov must be produced on Sunday 15 Nov, three verified live provider slots by Monday 16 Nov.",
+  "historical_qa_snapshot": {
+    "batch_id": "2026-11-09",
+    "review_date": "2026-11-07",
+    "workflow_run_id": 42367577066,
+    "verification_artifact_id": 13572616396,
+    "deployed_commit": "76328e2427c2b7c6f9a8570ebeb6939d4df5f5c9",
+    "anonymous_check_timestamp": "2026-11-07T11:19:30.594214+00:00",
+    "anonymous_verification_passed": true,
+    "public_files_checked": 23,
+    "reels": [
+      {
+        "episode": "TT-002",
+        "duration_seconds": 44.877035,
+        "dimensions": "1080x1920",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "mean_audio_db": -24.8,
+        "sha256": "219e8ee38a51b4e067b8d4dba0e68d8736a8a4dc523cbda42ca68b5ff2eab1af"
+      },
+      {
+        "episode": "TT-003",
+        "duration_seconds": 42.439887,
+        "dimensions": "1080x1920",
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "mean_audio_db": -25,
+        "sha256": "d9199e52135e583bbdeee44421329cf044ba389586bda8f58820ab56d17bdbff"
+      }
+    ],
+    "carousel": {
+      "episode": "TT-002",
+      "slides": 7,
+      "dimensions": "1080x1350",
+      "format": "JPEG"
+    },
+    "visual_review": "Contact sheets from actual anonymous downloads were inspected. Text readable, no observed clipping or unsupported graphical measurements. Schematics, not experimental footage.",
+    "narration_review": "Spoken source text scientifically reviewed; same text supplies captions. Automated audio-presence/level checks passed. Offline synthetic voice, not a studio recording.",
+    "queue_checks": "Three distinct stable post IDs; captions below 2200 characters, with DOI, source-library links and material limits; seven ordered slides for carousel.",
+    "publication_status": "Not scheduled or published; separate monthly inventory gate remains unresolved."
+  }
 }
