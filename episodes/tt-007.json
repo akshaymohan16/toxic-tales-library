@@ -1,0 +1,473 @@
+{
+  "id": "TT-007",
+  "slug": "tt-007-bumblebees-play-with-balls",
+  "title": "The bumblebees that rolled balls without a treat",
+  "hook": "Bumblebees rolled wooden balls for no food reward. Could this be play?",
+  "doi": "10.1016/j.anbehav.2022.08.013",
+  "paper_title": "Do bumble bees play?",
+  "citation": "Galpayage Dona et al. (2022), Animal Behaviour 194:239–251",
+  "tags": [
+    "bumblebees",
+    "insect behaviour",
+    "animal play",
+    "scientific inference"
+  ],
+  "summary": "Three experiments found repeated voluntary ball rolling by Bombus terrestris in the absence of food incentives. Younger bees rolled more often, and a conditioned chamber choice suggested the activity could be rewarding. The experiments do not directly prove enjoyment or wild prevalence.",
+  "evidence_note": "The experiments took place with commercially reared bees in laboratory arenas. A behavioral definition of play and conditioned preference are informative but are not direct measures of subjective positive affect.",
+  "source_url": "https://doi.org/10.1016/j.anbehav.2022.08.013",
+  "review_status": "verified_full_text",
+  "publication_enabled": true,
+  "is_ai_generated": true,
+  "batch_id": "2026-11-09",
+  "slides": [],
+  "evidence_file": "evidence/tt-007.md",
+  "checks": {
+    "full_text": true,
+    "design": true,
+    "findings": true,
+    "limitations": true,
+    "rights": true
+  },
+  "evidence": {
+    "full_text_url": "https://www.houstonnativebees.org/wp-content/uploads/2023/01/Study.Do-Bumblebees-Play.2022.pdf",
+    "checked_at": "2026-11-08",
+    "design": "Three separate laboratory behavioural experiments with Bombus terrestris audax. Experiment 1 followed 45 tagged bees (910 total ball actions) using a clear route to food and side areas with mobile/immobile wooden balls. Experiment 2 separately compared young versus older individuals; Experiment 3 used 42 females from four colonies in conditioned colour-chamber preference tests.",
+    "claims": [
+      {
+        "claim": "Tagged bumblebees manipulated and rolled unrewarded inedible wooden balls in laboratory conditions.",
+        "location": "Galpayage Dona et al. 2022 Methods and Results: Experiment 1 pp.240–244, Fig.2 and Supplementary Video S1."
+      },
+      {
+        "claim": "The arena provided unobstructed access to feeders, with movable and immobile balls off the main route.",
+        "location": "Original Methods pp.241–242 and Fig.1."
+      },
+      {
+        "claim": "Forty-five bees made 910 ball-rolling actions in Experiment 1; actions are repeated observations rather than independent bees.",
+        "location": "Original Results: Experiment 1, p.243."
+      },
+      {
+        "claim": "Younger bees rolled more often in a separate comparison controlling for first exposure age.",
+        "location": "Original Experiment 2 Results p.245, Fig.8; sample/age details in Methods pp.242–243."
+      },
+      {
+        "claim": "Colour-chamber conditioning suggested rolling itself was rewarding without food; a colour bias existed.",
+        "location": "Original Experiment 3 Methods pp.243–244 and Results p.246; Fig.10; GLM p=0.026."
+      },
+      {
+        "claim": "Authors interpret rolling as play-like; feelings, future benefits and occurrence in wild populations remain untested.",
+        "location": "Original Discussion pp.246–251, especially final interpretation and captive enrichment caveat."
+      }
+    ],
+    "limitations": [
+      "The focal work was carried out with laboratory colonies rather than wild behavioural observations.",
+      "Repeated rolling of 910 actions in Experiment 1 does not imply 910 independent bees.",
+      "Colour preference is indirect evidence of reward and does not directly reveal enjoyment or conscious emotions.",
+      "Different experiments used different cohorts; no direct claim of training transfer to wild bees.",
+      "Reference natural-history photographs are not experimental subjects, while labelled study footage is the original published supplementary video."
+    ],
+    "correction_check": "Search of title/DOI for correction/retraction notices on 2026-11-08 yielded no linked correction or retraction; this must be checked again before release.",
+    "access_note": "Read original open access full article, 2022 Animal Behaviour 194:239–251, including all three experiments, tables/figures, statistical caveats, and Discussion; supplementary video licencing and Commons description verified."
+  },
+  "production": {
+    "renderer": "nature-branded-9",
+    "editorial_style": "science-journalism",
+    "editorial_standard": "story-first-v1",
+    "visual_standard": "nature-visuals-v1",
+    "branding_standard": "toxic-tales-branding-v1",
+    "script_author": "TT007 narrative desk",
+    "voice_speed": 1.04,
+    "cover_asset": "bee_head_photo",
+    "cover_focus": [
+      0.5,
+      0.5
+    ],
+    "cover_kicker": "BUMBLEBEES IN A LAB STUDY",
+    "cover_title": "Do bees\nplay?",
+    "cover_subtitle": "Rolling a ball, without a treat",
+    "takeaway": "In a laboratory, bee ball rolling met play-like behavioural criteria; reward and age patterns are clues, not proof of feelings.",
+    "critical_terms": [
+      "bumblebee",
+      "wooden ball",
+      "no nectar",
+      "younger bees",
+      "wild bees"
+    ],
+    "assets": [
+      {
+        "id": "bee_study_video",
+        "filename": "bombus-terrestris-ball.webm",
+        "media_type": "video/webm",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Bombus_terrestris_rolling_ball.webm",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bombus_terrestris_rolling_ball.webm",
+        "creator": "H. S. Galpayage Dona, C. Solvi, A. Kowalewska, K. Mäkelä, H. MaBouDi & L. Chittka",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "21-second original published supplementary video S1, extracted study frames at 8fps for truthful short laboratory sequences, resized and cropped into explanatory portrait layout; credited as actual controlled experiment footage.",
+        "source_dimensions": [
+          1280,
+          720
+        ],
+        "source_duration_seconds": 20.687
+      },
+      {
+        "id": "bee_head_photo",
+        "filename": "bombus-terrestris-head.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Bombus_terrestris_head_in_detail.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bombus_terrestris_head_in_detail.jpg",
+        "creator": "Marco Almbauer",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "High-resolution real Bombus terrestris head reference photograph; portrait crop, colour grade and short camera movement; not the bees used in the ball rolling study.",
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "source_dimensions": [
+          3548,
+          2474
+        ]
+      },
+      {
+        "id": "bee_flower",
+        "filename": "bombus-terrestris-flower-2026.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Bombus_terrestris_-_5_June_2026.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Bombus_terrestris_-_5_June_2026.jpg",
+        "creator": "Aethonatic",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Wild Bombus terrestris foraging on a shrub reference photograph; cropped/graded for ending; explicitly not the laboratory study animals or a ball-rolling scene.",
+        "focus": [
+          0.53,
+          0.5
+        ],
+        "source_dimensions": [
+          2683,
+          1791
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "speech": "This bumblebee is rolling a wooden ball. There is no nectar inside. So why does it keep rolling?",
+        "captions": [
+          "This bumblebee is rolling a wooden",
+          "ball. There is no nectar inside.",
+          "So why does it keep rolling?"
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "bee_video",
+            "title": "A bee rolls\na wooden ball",
+            "kicker": "ACTUAL LAB FOOTAGE",
+            "start": 0,
+            "end": 1,
+            "asset": "bee_study_video",
+            "offset": 0
+          }
+        ]
+      },
+      {
+        "speech": "In a laboratory, researchers gave bees a clear route to food, with wooden balls placed off to the sides.",
+        "captions": [
+          "In a laboratory, researchers gave",
+          "bees a clear route to food,",
+          "with wooden balls placed off to",
+          "the sides."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "bee_path",
+            "title": "A clear route\nto food",
+            "kicker": "THE QUESTION",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "The bees could walk straight past. But many stopped, climbed onto movable balls, and rolled them anyway.",
+        "captions": [
+          "The bees could walk straight past.",
+          "But many stopped, climbed onto",
+          "movable balls, and rolled them",
+          "anyway."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "bee_video",
+            "title": "They rolled\nballs anyway",
+            "kicker": "CAUGHT ON CAMERA",
+            "start": 0,
+            "end": 1,
+            "asset": "bee_study_video",
+            "offset": 5
+          }
+        ]
+      },
+      {
+        "speech": "Some rolled again and again, even after feeding. The balls offered no sugar or pollen reward.",
+        "captions": [
+          "Some rolled again and again, even",
+          "after feeding. The balls offered no",
+          "sugar or pollen reward."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "bee_rolling",
+            "title": "No food prize.\nStill rolling.",
+            "kicker": "THE SURPRISE",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "In a separate test, young bees rolled more often than older bees that were equally new to the balls.",
+        "captions": [
+          "In a separate test, young bees",
+          "rolled more often than older bees",
+          "that were equally new to the",
+          "balls."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "bee_age",
+            "title": "Younger bees\nrolled more",
+            "kicker": "A SEPARATE AGE TEST",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Another test offered different coloured chambers. Bees later chose more often the colour linked to earlier ball rolling.",
+        "captions": [
+          "Another test offered different",
+          "coloured chambers. Bees later chose",
+          "more often the colour linked to",
+          "earlier ball rolling."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "bee_choice",
+            "title": "A learned\npreference",
+            "kicker": "A REWARDING PATTERN",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "That suggests the activity itself was rewarding, even without an edible prize.",
+        "captions": [
+          "That suggests the activity itself",
+          "was rewarding, even without an",
+          "edible prize."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "bee_rolling",
+            "title": "The activity\nwas the reward?",
+            "kicker": "THE INTERPRETATION",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "The researchers called it play-like behaviour. Yet a laboratory test cannot directly reveal how bees feel, or how often wild bees do this.",
+        "captions": [
+          "The researchers called it play-like",
+          "behaviour. Yet a laboratory test",
+          "cannot directly reveal how bees",
+          "feel, or how often wild bees",
+          "do this."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "bee_scope",
+            "title": "What can\nwe really say?",
+            "kicker": "THE LIMIT",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "An insect rolling a ball may be showing us that play has more forms than we usually notice.",
+        "captions": [
+          "An insect rolling a ball may",
+          "be showing us that play has",
+          "more forms than we usually notice."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "closing",
+            "title": "A different\nkind of play?",
+            "kicker": "THE ECOLOGICAL QUESTION",
+            "start": 0,
+            "end": 1,
+            "asset": "bee_flower",
+            "focus": [
+              0.53,
+              0.53
+            ]
+          }
+        ]
+      }
+    ],
+    "logo": {
+      "asset": "assets/branding/toxic-tales-logo.json",
+      "sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+      "placement": "Official green flask/plant/Asellus logo visible from first frame at upper left within phone-safe area; does not obscure footage or captions",
+      "forbid": [
+        "footer",
+        "progress bar",
+        "field notes"
+      ],
+      "credits_in_caption": true
+    }
+  },
+  "editorial_story": {
+    "audience": "Curious adults who may know bumblebees as pollinators but not as spontaneous object manipulators.",
+    "subject": "Laboratory Bombus terrestris audax bumblebees filmed repeatedly rolling wooden balls without direct food rewards.",
+    "setting": "A controlled laboratory with a clear route from the nest to food and mobile balls away from that route, plus separate age and chamber tests.",
+    "opening_context": "Actual primary experiment video and first spoken line explicitly show a bumblebee rolling a wooden ball without nectar; no unexplained setting or pronoun.",
+    "normal_expectation": "Bee object handling is usually linked to nectar, pollen, nest maintenance or an experimenter-provided reward; here no such reward was attached to balls.",
+    "story_selection": "The original CC BY experiment video immediately establishes the observed action, which can be explained with three simple scientifically accurate conceptual diagrams and a bounded interpretation.",
+    "decisive_limit": "The observed voluntary rolling and conditioned-place preference are operational evidence for play-like behaviour in a laboratory, not direct proof of feelings or prevalence in wild bees.",
+    "question": "Why would a bumblebee repeatedly roll an inedible ball when it receives no nectar or pollen from the activity?",
+    "why_it_matters": "Illustrates a careful way to study complex behaviour in insects without assuming that familiar animal categories map directly to subjective experience.",
+    "narrative_arc": "Real lab footage and no-treat puzzle; clear route-to-food control; repeated rolling evidence; absence of a food reward; younger-bee pattern; conditioned-chamber evidence; reward inference; spoken laboratory/emotion limitation; return to a real bee.",
+    "closing_payoff": "Unrewarded ball rolling meets operational play-like criteria, inviting investigation of insect behaviour rather than proving joy.",
+    "context_sources": [
+      {
+        "citation": "Galpayage Dona et al. (2022), original article and licensed Supplementary Video S1",
+        "url": "https://doi.org/10.1016/j.anbehav.2022.08.013",
+        "scope": "All spoken behaviours and controls are directly tested in the focal paper; no broad anecdote or speculative brain claim is added."
+      }
+    ],
+    "reporting_method": "Full original article read; CC BY original experimental footage and CC0 natural-history species photographs independently source-identified; no invented animal experience.",
+    "visual_plan": [
+      {
+        "segment": 1,
+        "visual": "Original study footage shows a correctly identified bumblebee manipulating a small ball.",
+        "purpose": "Make the actor and unusual action immediately unmistakable.",
+        "source_or_concept": "Actual 2022 supplementary research video CC BY 4.0, not unrelated nature stock.",
+        "accuracy_note": "It is the experimental animal video, not a wild field observation; footage is slowed by the published source."
+      },
+      {
+        "segment": 2,
+        "visual": "Diagram of clear nest-to-food route with mobile balls placed in side areas.",
+        "purpose": "Show why rolling was voluntary rather than needed to reach a feeder.",
+        "source_or_concept": "Original schematic based on study Fig.1 and experiment 1 Methods.",
+        "accuracy_note": "Avoid reproducing journal figure and avoid implying exactly scaled arena geometry or measured ball counts."
+      },
+      {
+        "segment": 3,
+        "visual": "Further exact study frames show a bee manipulating movable coloured balls.",
+        "purpose": "Demonstrate repeated engagement after the question, not pretend a static photo was the study.",
+        "source_or_concept": "Real 2022 supplemental study footage; licence CC BY 4.0.",
+        "accuracy_note": "Footage does not prove every video bee behaved the same, no added reward visible."
+      },
+      {
+        "segment": 4,
+        "visual": "Original animateable bee icon and wooden ball; no nectar marked.",
+        "purpose": "Clarify balls were not food and interactions recurred.",
+        "source_or_concept": "Original conceptual diagram; experiment 1 pp.243–244.",
+        "accuracy_note": "Icons are not measured individuals or actual footage, labels retain lab-specific scope."
+      },
+      {
+        "segment": 5,
+        "visual": "Two schematic age groups, with young group's more frequent rolling named verbally.",
+        "purpose": "Explain independent age comparison, separating novelty from age.",
+        "source_or_concept": "Original qualitative comparison; experiment 2 pp.244–245 Fig.8.",
+        "accuracy_note": "No fabricated bar heights, sample sizes, fractions or mechanistic age explanation."
+      },
+      {
+        "segment": 6,
+        "visual": "Blue/yellow coloured chambers with arrow indicating conditioned choice.",
+        "purpose": "Translate evidence for the rewarding interpretation without equating it to speech or feelings.",
+        "source_or_concept": "Original schematic inspired by study's own experimental description, not copied Fig.3–4.",
+        "accuracy_note": "No invented exact probability or claim all bees preferred one colour; initial colour bias noted in evidence."
+      },
+      {
+        "segment": 7,
+        "visual": "Return to the bee icon rolling a ball without food.",
+        "purpose": "State the inference in accessible terms and reinforce the experimental reward contrast.",
+        "source_or_concept": "Original conceptual ball rolling, connected to experiment 3 Results p.246.",
+        "accuracy_note": "Evidence supports rewarding pattern, not a direct test of pleasurable subjective experience."
+      },
+      {
+        "segment": 8,
+        "visual": "Species-specific bee icon and boundary statement about laboratory tests and animal experience.",
+        "purpose": "Keep the decisive interpretive uncertainty inside the film.",
+        "source_or_concept": "Original visual scope text and lab-vs-wild distinction grounded in paper Discussion.",
+        "accuracy_note": "Do not claim this proves wild insect play, feelings or general cognition mechanisms."
+      },
+      {
+        "segment": 9,
+        "visual": "Correctly identified bumblebee wild photograph returns to recognisable insect.",
+        "purpose": "Close the opening promise without conflating laboratory evidence and wild frequency.",
+        "source_or_concept": "CC0 Aethonatic species reference, photographed in 2026; not lab study.",
+        "accuracy_note": "Spoken ending is tentative; image is contextual and does not imply a wild bee rolled an artificial ball."
+      }
+    ]
+  },
+  "posts": [
+    {
+      "id": "TT-007-REEL",
+      "format": "REEL",
+      "publication_date": "2026-11-14T10:00:00+01:00",
+      "caption": "Do bumblebees play? Look at these rolling balls.\n\nIn a laboratory, *Bombus terrestris* repeatedly manipulated small wooden balls, even though no nectar or pollen reward was attached. Researchers provided a clear route to food, so bees did not need to move the objects to feed. Younger bees rolled balls more often than older bees in a separate test. In another experiment, a chamber colour previously associated with rolling influenced their later choices, even when the balls were absent.\n\nThese findings support interpreting the behaviour as **play-like** or intrinsically rewarding. They do NOT directly establish how a bee feels, whether the activity improves future skills, or how often wild bees do this.\n\nTT-007 | Galpayage Dona et al. (2022), Animal Behaviour 194:239–251. DOI: 10.1016/j.anbehav.2022.08.013\nMethods, evidence and full visual credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-007.html\n\nOriginal experimental footage: Galpayage Dona and colleagues, CC BY 4.0, edited from Supplementary Video S1; natural-history photos Marco Almbauer and Aethonatic, CC0, reference only. Figure animations are original explanatory concepts, not recorded measurements. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Bumblebees #InsectBehaviour #AnimalPlay #Ecology #ScienceCommunication"
+    }
+  ],
+  "editorial_review": {
+    "standard": "story-first-v1",
+    "reviewed_at": "2026-11-08T12:17:00+01:00",
+    "reviewer": "TT007 evidence and cold-viewer editorial pass",
+    "decision": "pass",
+    "checks": {
+      "cold_viewer": {
+        "decision": "pass",
+        "finding": "First image is actual controlled bumblebee ball-rolling footage, immediately named by the narrator and followed by a plain no-nectar question.",
+        "basis": "Segment 1, verified Commons CC BY study video and the first spoken line."
+      },
+      "story": {
+        "decision": "pass",
+        "finding": "The central question stays why rolling happened without food; pathway choice and repetition rule out immediate rewards, younger age and conditioned preference strengthen but do not settle inference; lab limit closes the narrative.",
+        "basis": "Nine narration beats tied to all three distinct Galpayage Dona et al. experiments, pp.241–246."
+      },
+      "visuals": {
+        "decision": "pass",
+        "finding": "Authentic licensed footage is paired with original path, rolling, age and colour-chamber diagrams; species reference photo occurs only at closing, not as evidence of rolling.",
+        "basis": "Nine detailed paired storyboard entries, original Supplementary Video S1 licence and two Commons species images; actual final encoded frames are not yet claimed inspected."
+      },
+      "payoff": {
+        "decision": "pass",
+        "finding": "The Reel answers that rolling met operational play-like criteria and might be rewarding without claiming a direct emotional report from a bee.",
+        "basis": "Opening ball-roll mystery compared with segments 6–9, including the explicit limit."
+      },
+      "scope": {
+        "decision": "pass",
+        "finding": "Distinct experiments and unrewarded settings are kept separate; repeated actions are not treated as independent bee numbers, and a spoken laboratory/feelings caveat prevents over-generalisation.",
+        "basis": "Original Methods and Results pp.241–246; Discussion pp.249–251."
+      },
+      "retelling": {
+        "decision": "pass",
+        "finding": "Lab bumblebees rolled inedible balls repeatedly, and several controls plus colour preference suggest an internally rewarding, play-like behaviour.",
+        "basis": "The evidence does not directly prove bees feel pleasure or establish that wild bees behave this way."
+      }
+    },
+    "source_sha256": "d5be10e7aa07eaece1083dd86ec4cc1a5e107368478fbe80f4ed9003dbb332d1"
+  }
+}
