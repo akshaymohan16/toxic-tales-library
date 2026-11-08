@@ -7,6 +7,11 @@ on:
       - '.github/workflows/readiness-watchdog.yml'
       - 'automation/verify_readiness.py'
       - 'automation/test_verify_readiness.py'
+      - 'automation/published.json'
+      - 'automation/publisher-status.json'
+      - 'automation/config.json'
+      - 'automation/batches/**'
+      - 'quality/releases.json'
   schedule:
     # UTC triggers. All scheduling comparisons use Europe/Vienna with DST.
     - cron: '35 8 * * *'
@@ -34,7 +39,6 @@ jobs:
       - name: Test scheduling and failure cases
         run: python -m unittest discover -s automation -p 'test_verify_readiness.py' -v
       - name: Fail closed if required posts or positive publication receipts are missing
-        if: github.event_name != 'push'
         run: python automation/verify_readiness.py
       - name: Create or refresh one actionable weekly readiness incident
         if: failure() && github.event_name == 'schedule'
