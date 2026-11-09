@@ -8,8 +8,10 @@
   "observed_monthly_used": 3,
   "projected_month_total_including_remaining_instagram_and_tuesday_youtube": 15,
   "created_at": "2026-11-08 15:51:00 UTC",
-  "metricool_id": "420844339",
+  "metricool_id": "421493849",
   "metricool_uuid": "4422280930322105807",
   "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=4422280930322105807",
-  "resolved_at": "2026-11-08T15:56:05.378060+00:00"
+  "resolved_at": "2026-11-08T15:56:05.378060+00:00",
+  "media_replaced_at": "2026-11-09T08:28:58.049309+00:00",
+  "media_replacement": "automation/motion-replacement-2026-11-09.json"
 }

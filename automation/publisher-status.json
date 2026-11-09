@@ -1,15 +1,15 @@
 {
-  "checked_on": "2026-11-08",
+  "checked_on": "2026-11-09",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": "Europe/Vienna",
   "deployment_and_media": "TT-005 final visual pilot public bytes verified; published TT-004 media preserved",
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
-  "decision": "ACTIVE_APPROVED_STANDARD",
-  "reason": "YouTube connected and weekly Tuesday extension configured. First exact TT006 Short scheduled with full provider readback and hosted SHA match; all IG unchanged. Actual future publication remains pending.",
-  "scheduled_posts_returned": 4,
+  "decision": "Existing scheduled video media replaced after independent exact-file release",
+  "reason": "All3 original video UUIDs/time slots retained and exact Metricool copies verified; other6 calendar records unchanged.",
+  "scheduled_posts_returned": 9,
   "published_provider_receipts": 3,
-  "new_metricool_submissions": 1,
+  "new_metricool_submissions": 0,
   "scheduled_post_ids": [
     "TT-006-REEL",
     "TT-005-CAROUSEL",
@@ -21,7 +21,7 @@
   "review_limit": "Encoded frames, final transcript and technical audio reviewed; no listening or original-audio-parity claim.",
   "quota": {
     "observed_used": 3,
-    "observed_at": "2026-11-08T15:48:27+00:00",
+    "observed_at": "2026-11-09T08:22:57.080Z",
     "month": "2026-11",
     "observation_basis": "Metricool planner counter",
     "observed_published_post_ids": [
@@ -40,7 +40,7 @@
     "note": "Observed counter plus all remaining planned Instagram and Tuesday YouTube destinations. Already-published baseline IDs are not counted twice; unknown writes reserve capacity."
   },
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
-  "updated_metricool_posts": 0,
+  "updated_metricool_posts": 3,
   "journalism_standard": "quality/SCIENCE_JOURNALISM.md",
   "draft_posts_held": 2,
   "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot-tt-005.html?review=3048cc50e4ba",
@@ -71,7 +71,7 @@
   "pending_new_pilot_post_id": null,
   "pilot_record_status": "published_owner_approved",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
-  "updated_at": "2026-11-08T15:56:05.378060+00:00",
+  "updated_at": "2026-11-09T08:28:58.049309+00:00",
   "latest_publication": {
     "post_id": "TT-005-REEL",
     "metricool_id": "420178205",
@@ -102,7 +102,16 @@
       "schedule": "Daily 10:15 Europe/Vienna"
     },
     "verification": "Both existing tasks read back enabled with exact updated future branding and confirmed TT-005 publication prompts. No successful unattended run claimed.",
-    "branding_prompts_exact_readback": true
+    "branding_prompts_exact_readback": true,
+    "scheduled_media_replacement_handoff": {
+      "checked_at": "2026-11-09T08:03:11.744Z",
+      "producer_prompt_readback_verified": true,
+      "publisher_prompt_readback_verified": true,
+      "active": true,
+      "task_schedule_controls_changed": false,
+      "new_tasks": 0,
+      "scope": "Owner-authorized replacement of pending TT006/TT007 media and linked Tuesday Short; original UUIDs and slots retained."
+    }
   },
   "new_visual_pilot": {
     "id": "TT-005",
@@ -123,12 +132,12 @@
   },
   "future_branding_standard": "quality/BRANDING_STANDARD.md",
   "scheduled_provider_ids": [
-    "420702555",
     "420683055",
-    "420703487",
-    "420844339"
+    "421493009",
+    "421493462",
+    "421493849"
   ],
-  "provider_receipts_status": "Fresh actual month readback:3 existing IG published,3 unchanged IG scheduled,1 new YT Short scheduled. Two held/rejected drafts unchanged.",
+  "provider_receipts_status": "Four future destinations PENDING with autoPublish=true/draft=false; this is not evidence of publication.",
   "next_batch": {
     "week_start": "2026-11-16",
     "slots": [
@@ -161,5 +170,7 @@
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_channel_name": "Toxic Tales",
   "youtube_connection_verified": true,
-  "new_task_created": false
+  "new_task_created": false,
+  "verification_actor": "Owner-directed scheduled-media replacement run",
+  "last_media_replacement": "automation/motion-replacement-2026-11-09.json"
 }

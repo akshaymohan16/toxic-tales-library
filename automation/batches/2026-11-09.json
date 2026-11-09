@@ -15,10 +15,10 @@
       "format": "REEL",
       "status": "scheduled_provider_pending",
       "publication_eligible": true,
-      "release_fingerprint": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
+      "release_fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df",
       "release_record": "quality/releases.json",
-      "reason": "Provider schedule read back at exact 10 Nov 10:00 Europe/Vienna with autoPublish true, draft false, reviewed MP4/cover and plain caption; publication itself must be verified after due time.",
-      "metricool_id": "420702555",
+      "reason": "Owner-authorized motion media replacement verified on the original UUID and time; exact Metricool video/cover hashes match fresh independent release. Not yet published.",
+      "metricool_id": "421493009",
       "metricool_uuid": "-5193152553705388348",
       "provider_status": "PENDING",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-5193152553705388348"
@@ -41,12 +41,12 @@
       "format": "REEL",
       "status": "scheduled_provider_pending",
       "publication_eligible": true,
-      "reason": "Exact 14 Nov 10:00 Vienna autoPublish=true, draft=false provider calendar readback. Complete independent exact export and public media verification; not yet posted.",
-      "metricool_id": "420703487",
+      "reason": "Owner-authorized motion media replacement verified on the original UUID and time; exact Metricool video/cover hashes match fresh independent release. Not yet published.",
+      "metricool_id": "421493462",
       "metricool_uuid": "-6872348896682359981",
       "provider_status": "PENDING",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6872348896682359981",
-      "release_fingerprint": "828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db",
+      "release_fingerprint": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1",
       "release_record": "quality/releases.json"
     },
     {
@@ -57,18 +57,19 @@
       "format": "SHORT",
       "status": "scheduled_provider_pending",
       "publication_eligible": true,
-      "release_fingerprint": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
+      "release_fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df",
       "platform_review": "automation/youtube/TT-006.json",
-      "metricool_id": "420844339",
+      "metricool_id": "421493849",
       "metricool_uuid": "4422280930322105807",
       "provider_status": "PENDING",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=4422280930322105807"
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=4422280930322105807",
+      "reason": "Owner-authorized motion media replacement verified on the original UUID and time; exact Metricool video/cover hashes match fresh independent release. Not yet published."
     }
   ],
   "scientific_review": "TT006 diving-bell spider physiological laboratory original paper (2011), TT007 bumblebee ball rolling laboratory original paper (2022), TT005 frog companion source (2015). Claims, scope, visual provenance and licensed media recorded in evidence files and final release.",
-  "render_and_live_media_review": "TT006/TT007 brand-compliant exact encoded exports independently reviewed with current source hashes, public Pages exact media bytes verified; TT005 companion 6 exact 1080x1350 slides reviewed. Reference audio parity and continuous listening not claimed.",
-  "schedule_status": "All three original Instagram destinations unchanged; one additional YouTube-only Tuesday Short scheduled Nov10 10:00 Vienna with verified exact media, settings and independent receipt. All four are PENDING, not yet published.",
-  "quota_status": "Live planner counter3/20 on Nov8 15:48 UTC. Reserve remaining9 IG +3 Tuesday YT = projected15; retained held draft adds one conservative reservation. No paid changes.",
+  "render_and_live_media_review": "All23 motion shots, transitions, openings/final frames, covers, captions, source scope and ASR/loudness reviewed. Both exact Pages exports and all3 Metricool video/cover copies verified; no human listening claim. TT005 carousel unchanged.",
+  "schedule_status": "Four existing destinations remain PENDING at original times: three Instagram plus the Tuesday YouTube Short. Existing3 video UUIDs now use approved motion files; no new posts.",
+  "quota_status": "Live planner counter3/20 on9Nov; all remaining Instagram and Tuesday YouTube slots project15 destinations,16 including held carousel. Replacements add zero destinations.",
   "idempotency_note": "Never repost published TT-002-REEL or TT-004-REEL, and never revive rejected TT-003. TT-004 UUID 8432780738091634663 is confirmed published and must never be submitted or rescheduled. Keep the two next-week Reel papers distinct and use stable new identities for replacements.",
   "retired_slots": [
     {
@@ -129,11 +130,11 @@
       "reason": "Do not publish or revive rejected TT003."
     }
   ],
-  "latest_review_update": "2026-11-08: both TT006 and TT007 exact MP4/cover, final editorial and branding records released; source media deployment and public-byte QA passed in workflow 42480206394; 10/12/14 provider schedules independently read back PENDING, autoPublish true, draft false.",
-  "latest_live_verification_run": 42480784890,
-  "final_release_run": 42480206394,
+  "latest_review_update": "2026-11-09T08:28:58.049309+00:00: TT006/TT007 exact motion exports independently released and all3 existing video destinations updated/read back; Thursday carousel unchanged.",
+  "latest_live_verification_run": 42585216267,
+  "final_release_run": 42585216267,
   "final_release_fingerprints": {
-    "TT-006": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
-    "TT-007": "828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db"
+    "TT-006": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df",
+    "TT-007": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1"
   }
 }

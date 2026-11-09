@@ -1,21 +1,23 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-07T15:21:00+01:00",
+  "observed_at": "2026-11-09T08:22:57.080Z",
   "connected_networks": [
-    "instagram"
+    "instagram",
+    "youtube"
   ],
   "planner_counter": {
-    "used": 1,
+    "used": 3,
     "limit": 20,
-    "source": "Authenticated Metricool planner UI: You have posted 1 out of your 20 available posts in your plan this month.",
+    "source": "Authenticated Metricool planner UI: You have posted3 out of your20 available posts in your plan this month.",
     "url": "https://app.metricool.com/planner/calendar?blogId=7937614",
-    "observation_status": "Historical UI counter 1/20 was observed before three publications; not current. Full calendar independently confirms 3 PUBLISHED plus 3 autoPublish PENDING, one held draft, one retired draft; conservative seven reservations within 20 cap. Refresh actual planner UI counter before more releases."
+    "observation_status": "Current9Nov UI observation reconciled with3 published destinations and4 pending reservations; reserve all remaining Instagram and Tuesday YouTube slots. Replacement adds zero destinations."
   },
   "scheduled_ids": [
     "420683055",
-    "420702555",
-    "420703487"
+    "421493009",
+    "421493462",
+    "421493849"
   ],
   "published_ids": [
     "419869962",
@@ -32,16 +34,17 @@
   ],
   "unresolved_submissions": [],
   "monthly_cap": 20,
-  "planned_usage_with_current_candidates": 7,
+  "planned_usage_with_current_candidates": 16,
   "new_scheduling_allowed": true,
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [
     "TT-005-CAROUSEL",
     "TT-006-REEL",
-    "TT-007-REEL"
+    "TT-007-REEL",
+    "TT-006-YOUTUBE-SHORT"
   ],
-  "calendar_reconciled_on": "2026-11-08",
+  "calendar_reconciled_on": "2026-11-09T08:28:58.049309+00:00",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -55,6 +58,6 @@
   "new_scheduling_conditions": "Current exact-file quality release and live public-byte verification required; check brand/calendar/receipt and fresh planner quota. No repeat of already PUBLISHED Reels.",
   "provider_confirmed_publications": 3,
   "known_usage_lower_bound": 3,
-  "last_calendar_readback": "2026-11-08",
+  "last_calendar_readback": "2026-11-09T08:28:58.049309+00:00",
   "pending_release_ids": []
 }
