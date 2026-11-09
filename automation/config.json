@@ -112,6 +112,8 @@
     "status": "verified_and_published_owner_approved"
   },
   "branding_supplement": "quality/BRANDING_STANDARD.md",
-  "future_reel_renderer": "nature-branded-9",
+  "future_reel_renderer": "nature-motion-10",
+  "motion_supplement": "quality/MOTION_STANDARD.md",
+  "production_entrypoint": "scripts/build_motion.py",
   "canonical_brand_asset": "assets/branding/toxic-tales-logo.json"
 }

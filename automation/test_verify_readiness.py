@@ -1,11 +1,13 @@
 """Deterministic tests for future week, overdue, duplicates and missing QA."""
+import copy
+import hashlib
 import json
 import tempfile
 import unittest
 from datetime import datetime
 from pathlib import Path
 from automation.verify_readiness import (audit, target_week, month_budget, ZONE,
-                                        YOUTUBE_CHANNEL, metadata_digest)
+                                        YOUTUBE_CHANNEL, metadata_digest, release_check)
 
 DATES = ["2026-11-17T10:00:00+01:00", "2026-11-19T10:00:00+01:00",
          "2026-11-21T10:00:00+01:00"]
@@ -347,6 +349,99 @@ class YouTubeReadinessTests(ReadinessTests):
                       "observed_published_post_ids": [],
                       "month": "2026-11", "observation_basis": "Metricool planner counter"}})
         self.assertTrue(self.check("2026-11-15T12:00:00+01:00")["ok"])
+
+
+class MotionReadinessTests(ReadinessTests):
+    def setUp(self):
+        super().setUp()
+        # Use the same canonical hash helpers as the rendering pipeline; the
+        # watchdog itself intentionally requires only Python's standard library.
+        from scripts.editorial_gate import editorial_source_sha256
+        from scripts.motion_spec import motion_spec_sha256
+        episode = json.loads((self.root / "episodes/tt-101.json").read_text())
+        evidence = self.root / episode["evidence_file"]
+        evidence_sha = hashlib.sha256(evidence.read_bytes()).hexdigest()
+        episode["script_author"] = "test script author"
+        episode["production"].update(renderer="nature-motion-10",
+            editorial_style="science-journalism", editorial_standard="story-first-v1",
+            motion={"schema_version": 1, "evidence_sha256": evidence_sha})
+        self.save("episodes/tt-101.json", episode)
+        self.save("assets/branding/toxic-tales-logo.json", {"sha256": "approved-logo-sha"})
+        releases = json.loads((self.root / "quality/releases.json").read_text())
+        release = releases["TT-101"]
+        release["evidence_sha256"] = evidence_sha
+        source_sha = editorial_source_sha256(episode, evidence.read_text(encoding="utf-8"))
+        identity = {key: copy.deepcopy(release[key]) for key in
+                    ("fingerprint", "files", "evidence_sha256")}
+        for key, standard in (("final_editorial_review", "story-first-v1"),
+                               ("branding_review", "toxic-tales-branding-v1"),
+                               ("motion_review", "toxic-tales-motion-v1")):
+            release[key] = {**identity, "standard": standard, "decision": "pass",
+                            "reviewer": "independent final export reviewer",
+                            "reviewed_at": "2026-11-16T09:00:00+01:00",
+                            "independent_from_script_author": True,
+                            "reviewed_encoded_frames": True}
+        release["final_editorial_review"]["source_sha256"] = source_sha
+        release["branding_review"].update(logo_sha256="approved-logo-sha",
+            **{key: True for key in ("reviewed_opening_frames", "reviewed_every_shot_and_transition",
+                    "reviewed_final_frame", "reviewed_cover", "reviewed_phone_scale")})
+        release["motion_review"].update(source_sha256=source_sha,
+            motion_spec_sha256=motion_spec_sha256(episode),
+            reviewed_every_shot_and_transition=True, reviewed_phone_scale=True,
+            checks={key: {"decision": "pass", "finding": "Specific rendered observation",
+                           "basis": "Exact encoded frame and original evidence record"}
+                    for key in ("kinetic_text", "transitions", "ecological_motion",
+                                "camera_motion", "evidence_bound_data", "caption_sync")})
+        self.save("quality/releases.json", releases)
+
+    def test_motion_receipts_pass_for_both_reel_and_short(self):
+        self.assertTrue(self.check()["ok"], self.check()["errors"])
+        releases = json.loads((self.root / "quality/releases.json").read_text())
+        receipt = self.readposts()[0]
+        for fmt in ("REEL", "SHORT"):
+            errors = []
+            release_check(self.root, {**receipt, "format": fmt}, releases, errors)
+            self.assertEqual(errors, [])
+
+    def test_motion_missing_stale_and_nonindependent_reviews_fail(self):
+        releases = json.loads((self.root / "quality/releases.json").read_text())
+        for review in ("final_editorial_review", "branding_review", "motion_review"):
+            for key, value in (("decision", "hold"), ("files", {}),
+                               ("fingerprint", "stale"), ("evidence_sha256", "stale"),
+                               ("independent_from_script_author", False),
+                               ("reviewer", "test script author")):
+                altered = copy.deepcopy(releases)
+                altered["TT-101"][review][key] = value
+                self.save("quality/releases.json", altered)
+                with self.subTest(review=review, field=key):
+                    self.assertIn("motion film lacks current", " ".join(self.check()["errors"]))
+        for key in ("source_sha256", "motion_spec_sha256"):
+            altered = copy.deepcopy(releases)
+            altered["TT-101"]["motion_review"][key] = "stale"
+            self.save("quality/releases.json", altered)
+            with self.subTest(motion_identity=key):
+                self.assertFalse(self.check()["ok"])
+
+    def test_motion_changed_source_evidence_logo_or_missing_observations_fail(self):
+        source = self.root / "episodes/tt-101.json"
+        episode = json.loads(source.read_text())
+        changed = copy.deepcopy(episode)
+        changed["production"]["new_claim"] = "Unreviewed source edit"
+        self.save("episodes/tt-101.json", changed)
+        self.assertFalse(self.check()["ok"])
+        self.save("episodes/tt-101.json", episode)
+        evidence = self.root / episode["evidence_file"]
+        original = evidence.read_bytes()
+        evidence.write_bytes(original + b"changed evidence")
+        self.assertFalse(self.check()["ok"])
+        evidence.write_bytes(original)
+        self.save("assets/branding/toxic-tales-logo.json", {"sha256": "different-logo"})
+        self.assertFalse(self.check()["ok"])
+        self.save("assets/branding/toxic-tales-logo.json", {"sha256": "approved-logo-sha"})
+        releases = json.loads((self.root / "quality/releases.json").read_text())
+        releases["TT-101"]["motion_review"]["checks"]["evidence_bound_data"]["finding"] = "pass"
+        self.save("quality/releases.json", releases)
+        self.assertFalse(self.check()["ok"])
 
 
 class MonthlyBudgetTests(unittest.TestCase):

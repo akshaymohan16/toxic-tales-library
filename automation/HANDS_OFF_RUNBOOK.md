@@ -1,3 +1,7 @@
+## Authorized motion upgrade — 9 November 2026
+
+For newly produced compatible films, read quality/MOTION_STANDARD.md and use nature-motion-10 through scripts/build_motion.py. This prospectively supersedes the older nature-branded-9 renderer instruction; every science, brand, audio, source, exact-file and publication gate still applies. Pin asset bytes and evidence before source review; require the additional independent motion review. Preserve all existing episode sources/releases/media and scheduled provider items. The isolated quality/motion-preview/ fixture is never a production episode or a post. The two existing producer/publisher tasks remain solely responsible; no new task, schedule, duplicate post, paid service or quota change is authorized. Keep three weekly Instagram slots, the Tuesday YouTube Short and the shared 20-destination monthly cap.
+
 ## Authorized weekly YouTube extension — 8 November 2026
 
 The owner explicitly authorized ONE weekly video on both Instagram and YouTube with full routine automation. Apply automation/YOUTUBE_POLICY.md as the current destination, quota, receipt and recovery contract. Scope now includes the verified Toxic Tales YouTube channel UCDvftxMMdtGSntm-ezcPfCg on Metricool brand 7937614; no other repository, brand or channel is authorized.

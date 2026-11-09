@@ -6,6 +6,7 @@ authenticated-provider receipts, not the real-time provider state. The existing
 ChatGPT daily publisher must independently fetch Metricool and update records.
 """
 import argparse
+import copy
 import hashlib
 import json
 import os
@@ -283,10 +284,85 @@ def release_check(root, receipt, releases, errors):
             if signed.get(name) != digest:
                 errors.append(pid + ": exact media hash mismatch: " + name)
     if (receipt.get("format") in {"REEL", "SHORT"} and
-            ep.get("production", {}).get("renderer") == "nature-branded-9"):
+            ep.get("production", {}).get("renderer") in {"nature-branded-9", "nature-motion-10"}):
         if (release.get("final_editorial_review", {}).get("decision") != "pass"
                 or release.get("branding_review", {}).get("decision") != "pass"):
             errors.append(pid + ": future film lacks final editorial/brand review")
+        if ep["production"]["renderer"] == "nature-motion-10":
+            if not motion_release_identity_ok(root, ep, release):
+                errors.append(pid + ": motion film lacks current independent exact-file reviews")
+
+
+def motion_release_identity_ok(root, episode, release):
+    """Read-only, stdlib-only receipt check; the build remains the render gate.
+
+    Match the canonical source and motion identities used by editorial_gate and
+    motion_spec without importing image, neural voice or rendering dependencies
+    into the lightweight watchdog. These records do not prove visual quality.
+    """
+    def digest(value):
+        return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True,
+                            separators=(",", ":"), allow_nan=False).encode()).hexdigest()
+
+    placeholders = {"", "pass", "passed", "checked", "ok", "okay", "yes", "tbd",
+                    "todo", "n/a", "none", "placeholder"}
+    def text(value):
+        return isinstance(value, str) and value.strip().lower() not in placeholders
+
+    try:
+        evidence_path = (root / episode["evidence_file"]).resolve()
+        if not evidence_path.is_relative_to((root / "evidence").resolve()):
+            return False
+        evidence_sha = hashlib.sha256(evidence_path.read_bytes()).hexdigest()
+        if release.get("evidence_sha256") != evidence_sha:
+            return False
+        production = episode["production"]
+        if production.get("motion", {}).get("evidence_sha256") != evidence_sha:
+            return False
+        source = copy.deepcopy(episode)
+        source.pop("editorial_review", None)
+        source_sha = digest({"standard": "story-first-v1", "episode": source,
+                             "evidence_text": evidence_path.read_text(encoding="utf-8")})
+        spec_sha = digest({"standard": "toxic-tales-motion-v1", "doi": episode["doi"],
+                           "production": production})
+        author = episode.get("script_author", production.get("script_author", "Toxic Tales production editor"))
+        for field, standard in (("final_editorial_review", "story-first-v1"),
+                                ("branding_review", "toxic-tales-branding-v1"),
+                                ("motion_review", "toxic-tales-motion-v1")):
+            review = release.get(field, {})
+            if (review.get("decision") != "pass" or review.get("standard") != standard
+                    or review.get("independent_from_script_author") is not True
+                    or review.get("reviewer") == author
+                    or not all(text(review.get(k)) for k in ("reviewer", "reviewed_at"))
+                    or review.get("reviewed_encoded_frames") is not True):
+                return False
+            if any(not release.get(k) or review.get(k) != release[k]
+                   for k in ("fingerprint", "files", "evidence_sha256")):
+                return False
+        if release["final_editorial_review"].get("source_sha256") != source_sha:
+            return False
+        branding = release["branding_review"]
+        logo = read(root, "assets/branding/toxic-tales-logo.json", {})
+        if not logo.get("sha256") or branding.get("logo_sha256") != logo["sha256"]:
+            return False
+        if not all(branding.get(k) is True for k in ("reviewed_opening_frames",
+                "reviewed_every_shot_and_transition", "reviewed_final_frame",
+                "reviewed_cover", "reviewed_phone_scale")):
+            return False
+        motion = release["motion_review"]
+        if (motion.get("source_sha256") != source_sha or motion.get("motion_spec_sha256") != spec_sha
+                or motion.get("reviewed_every_shot_and_transition") is not True
+                or motion.get("reviewed_phone_scale") is not True):
+            return False
+        for key in ("kinetic_text", "transitions", "ecological_motion", "camera_motion",
+                    "evidence_bound_data", "caption_sync"):
+            check = motion.get("checks", {}).get(key, {})
+            if (check.get("decision") != "pass" or not text(check.get("finding"))
+                    or not text(check.get("basis"))):
+                return False
+        return True
+    except (OSError, ValueError, KeyError, TypeError, AttributeError):
+        return False
 
 
 def audit(root, now):
