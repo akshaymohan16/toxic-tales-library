@@ -47,6 +47,83 @@ FROZEN_LEGACY = {
         'bdb2b0f9136d444f244113284fc2dbfe41ac9e7836ec1307635dcf5fcb76abea'),
 }
 
+# The owner explicitly requested replacing these two still-scheduled films on
+# 9 November. This exception is limited to visual treatment of the same story;
+# old source/release/QA records and every old media byte remain archived.
+REPLACEMENT_RECORD = 'quality/motion-replacements-2026-11-09.json'
+REPLACEMENT_ARCHIVE = 'quality/history/pre-motion-2026-11-09'
+REPLACEMENT_IDS = frozenset({'TT-006', 'TT-007'})
+ARCHIVE_HASHES = {
+    'tt-006-episode.json': '76bee1be2b4e0277cf4c19b81f1875ea6ea2216baa9a2634d1a3500db8acf98a',
+    'tt-006-evidence.md': '1c5b5cca782a1f7586a3103c15009f525e4e3126869636447b620a052793c8ea',
+    'tt-006-qa.json': '99b4b7e5c8bd4bc81ab0df19fc9f3541f3391b9efd48c1ea25f73b163bd954b0',
+    'tt-006-release.json': '8c393fee440a5ab185648d4845bb5a1baa93b170be55b0e0d7647b71df4b7e8b',
+    'tt-007-episode.json': '5935ad89e2522892f86832731e425bc85c3ffcbf6475dbad186aca483b08bc10',
+    'tt-007-evidence.md': '7853e9a54b1b1e006b0c43178d12a84dbced821c7112d30b396f8f7da4f05fa2',
+    'tt-007-qa.json': 'ce86982e563841a8478d16adca79ac0127573892e3c69f20728c85df2fd40016',
+    'tt-007-release.json': 'edf63fd16eb28d4095730c5e5275a7ff6e8da7971e334195bc0b4cc315acb7ae',
+}
+
+
+def authorized_replacements(root):
+    record = build.read(root / REPLACEMENT_RECORD, {})
+    if not record:
+        return frozenset()
+    if (record.get('schema_version') != 1
+            or record.get('repository') != build.REPO
+            or record.get('authorized_on') != '2026-11-09'
+            or record.get('authorized_by') != 'owner'
+            or record.get('source_commit') != 'c1e8b613e62a6abf180e25f4791c5fbfec5feea5'
+            or record.get('target_renderer') != 'nature-motion-10'
+            or record.get('episode_ids') != sorted(REPLACEMENT_IDS)
+            or record.get('preserve_post_identity_and_time') is not True
+            or record.get('archive') != REPLACEMENT_ARCHIVE):
+        raise ValueError('Invalid scoped motion replacement authorization')
+    return REPLACEMENT_IDS
+
+
+def historical_story(root, episode_id, releases=None):
+    """Return exact historical source/release, including owner-approved migrations."""
+    root = Path(root)
+    if episode_id not in authorized_replacements(root):
+        path = root / 'episodes' / (episode_id.lower() + '.json')
+        episode = build.read(path)
+        release_map = releases if releases is not None else build.read(root / 'quality/releases.json')
+        return path, episode, root / episode['evidence_file'], release_map.get(episode_id), None
+    prefix = episode_id.lower() + '-'
+    paths = {}
+    for suffix in ('episode.json', 'evidence.md', 'release.json', 'qa.json'):
+        name = prefix + suffix
+        path = _safe_path(root, REPLACEMENT_ARCHIVE + '/' + name, 'quality')
+        if not path.is_file() or build.sha(path) != ARCHIVE_HASHES[name]:
+            raise ValueError('Historical motion archive changed: ' + name)
+        paths[suffix] = path
+    return (paths['episode.json'], build.read(paths['episode.json']),
+            paths['evidence.md'], build.read(paths['release.json']),
+            build.read(paths['qa.json']))
+
+
+def _same_replacement_story(current, historical):
+    for key in ('id', 'slug', 'doi', 'evidence_file', 'evidence', 'slides'):
+        if current.get(key) != historical.get(key):
+            raise ValueError('Motion replacement changed original story/schedule: ' + key)
+    def post_identity(episode):
+        posts = episode.get('posts')
+        if not isinstance(posts, list) or not all(isinstance(post, dict) for post in posts):
+            raise ValueError('Motion replacement changed original story/schedule: posts')
+        # A reviewed caption may update animation/data/asset disclosures. Every
+        # identity, format, time and other posting field must remain unchanged.
+        return [{key: value for key, value in post.items() if key != 'caption'} for post in posts]
+    if post_identity(current) != post_identity(historical):
+        raise ValueError('Motion replacement changed original story/schedule: posts')
+    if current.get('production', {}).get('renderer') != 'nature-motion-10':
+        raise ValueError('Authorized replacement must use nature-motion-10')
+    old = historical['production']['segments']
+    new = current['production'].get('segments', [])
+    if len(old) != len(new) or any(a.get(key) != b.get(key)
+            for a, b in zip(old, new) for key in ('speech', 'captions')):
+        raise ValueError('Motion replacement changed approved narration or captions')
+
 
 def _release_identity(release):
     fields = {key: release.get(key) for key in ('fingerprint', 'evidence_sha256', 'files')}
@@ -67,26 +144,38 @@ def _verified_legacy_sources(root, releases):
     missing = sorted(set(FROZEN_LEGACY) - episodes.keys())
     if missing:
         raise ValueError('Missing frozen legacy episode: ' + ', '.join(missing))
+    replacements = authorized_replacements(root)
     verified = []
     for episode_id, (declared_renderer, expected_fingerprint, expected_identity) in FROZEN_LEGACY.items():
         path, episode = episodes[episode_id]
         if path.name != episode_id.lower() + '.json':
             raise ValueError('Renamed frozen legacy episode: ' + episode_id)
+        archived_manifest = None
+        if episode_id in replacements:
+            current = episode
+            path, episode, evidence_path, release, archived_manifest = historical_story(root, episode_id)
+            _same_replacement_story(current, episode)
+            live_evidence = _safe_path(root, current['evidence_file'], 'evidence')
+            if not live_evidence.is_file() or build.sha(live_evidence) != build.sha(evidence_path):
+                raise ValueError('Motion replacement changed original evidence bytes: ' + episode_id)
+        else:
+            release = releases.get(episode_id)
+            evidence_path = _safe_path(root, episode['evidence_file'], 'evidence')
         production = episode.get('production')
         if not isinstance(production, dict) or production.get('renderer') != declared_renderer:
             raise ValueError('Frozen legacy renderer changed: ' + episode_id)
-        release = releases.get(episode_id)
         if not isinstance(release, dict) or not SHA256.fullmatch(str(release.get('fingerprint', ''))):
             raise ValueError('No exact legacy release identity for ' + episode_id)
         if release['fingerprint'] != expected_fingerprint or _release_identity(release) != expected_identity:
             raise ValueError('Pinned legacy release identity changed: ' + episode_id)
-        evidence_path = _safe_path(root, episode['evidence_file'], 'evidence')
         source_sha = validate_pre_render(episode, evidence_path.read_text(encoding='utf-8'))
         renderer = build.select_renderer(episode)
         fingerprint = build.render_fingerprint(path, evidence_path, renderer, source_sha)
         if fingerprint != expected_fingerprint or build.sha(evidence_path) != release.get('evidence_sha256'):
             raise ValueError('Legacy source changed; refusing to rerender ' + episode_id)
-        verified.append((episode_id, release, renderer, source_sha, fingerprint))
+        if archived_manifest is not None and not _manifest_ok(archived_manifest, release, renderer, source_sha):
+            raise ValueError('Historical motion QA identity changed: ' + episode_id)
+        verified.append((episode_id, release, renderer, source_sha, fingerprint, archived_manifest))
     return verified
 
 
@@ -175,7 +264,7 @@ def preserve_legacy_releases(root=None):
     observations = {}
     with tempfile.TemporaryDirectory(prefix='preserve-', dir=cache) as temporary:
         stage = Path(temporary)
-        for episode_id, release, renderer, source_sha, fingerprint in verified:
+        for episode_id, release, renderer, source_sha, fingerprint, archived_manifest in verified:
             files = release.get('files')
             if not isinstance(files, dict) or not files:
                 raise ValueError('Legacy exact-file inventory missing for ' + episode_id)
@@ -188,7 +277,7 @@ def preserve_legacy_releases(root=None):
             qa_relative = 'qa/' + episode_id.lower() + '.json'
             qa_path = _safe_path(site, qa_relative, 'qa')
             try:
-                manifest = build.read(qa_path, {})
+                manifest = archived_manifest if archived_manifest is not None else build.read(qa_path, {})
             except (ValueError, OSError):
                 manifest = {}
             if not _manifest_ok(manifest, release, renderer, source_sha):
@@ -207,6 +296,12 @@ def preserve_legacy_releases(root=None):
                 if build.sha(downloaded) != expected:
                     raise ValueError('Public legacy media hash mismatch: ' + relative)
                 staged.append((downloaded, destination))
+            if archived_manifest is not None:
+                # A replacement owns the current QA paths and cache entry. Its
+                # old QA JSON is pinned in history; keep restoring old media,
+                # but never clobber new QA/frames or force a repeat render.
+                preserved.append(episode_id)
+                continue
             references = manifest.get('boundary_frame_checks', [])
             if not isinstance(references, list):
                 raise ValueError('Malformed ancillary QA references for ' + episode_id)

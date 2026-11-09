@@ -60,6 +60,87 @@ class PreserveReleases(unittest.TestCase):
         self.assertFalse((self.root / 'render-cache').exists())
         self.assertFalse((self.root / 'site').exists())
 
+    def prepare_authorized_replacement(self):
+        old = json.loads((self.root / 'episodes/tt-006.json').read_text())
+        old.update(slug='same-story', doi='10.1234/same-study', posts=[
+            {'id': 'TT-006-REEL', 'date': '2026-11-10T10:00:00+01:00'}])
+        old['production']['segments'] = [{'speech': 'The verified original story.',
+                                         'captions': ['The verified original story.']}]
+        current = copy.deepcopy(old)
+        current['production']['renderer'] = 'nature-motion-10'
+        self.save('episodes/tt-006.json', current)
+        folder = preserve.REPLACEMENT_ARCHIVE + '/tt-006-'
+        self.save(folder + 'episode.json', old)
+        self.save(folder + 'release.json', self.release)
+        self.save(folder + 'qa.json', self.manifest)
+        (self.root / (folder + 'evidence.md')).write_bytes(self.evidence)
+        hashes = {path.name: hashlib.sha256(path.read_bytes()).hexdigest()
+                  for path in (self.root / preserve.REPLACEMENT_ARCHIVE).iterdir()}
+        patch.object(preserve, 'ARCHIVE_HASHES', hashes).start()
+        patch.object(preserve, 'authorized_replacements', return_value=frozenset({'TT-006'})).start()
+        return current
+
+    def test_authorized_replacement_restores_old_media_without_clobbering_new_qa_or_cache(self):
+        self.prepare_authorized_replacement()
+        new_qa = {'renderer': 'nature-motion-10.0', 'fingerprint': 'd' * 64}
+        new_index = {'TT-006': 'd' * 64}
+        self.save('site/qa/tt-006.json', new_qa)
+        self.save('render-cache/index.json', new_index)
+        with patch.object(preserve, '_download', side_effect=self.download) as download:
+            result = preserve.preserve_legacy_releases(self.root)
+            self.assertEqual(result, {'preserved_episodes': ['TT-006'], 'restored_files': 1})
+            self.assertEqual(download.call_args.args[0], 'media/old.mp4')
+        self.assertEqual(json.loads((self.root / 'site/qa/tt-006.json').read_text()), new_qa)
+        self.assertEqual(json.loads((self.root / 'render-cache/index.json').read_text()), new_index)
+        self.assertEqual((self.root / 'site/media/old.mp4').read_bytes(), self.media)
+        with patch.object(preserve, '_download', side_effect=AssertionError('unexpected network')):
+            self.assertEqual(preserve.preserve_legacy_releases(self.root)['restored_files'], 0)
+
+    def test_authorized_replacement_cannot_mutate_the_historical_archive(self):
+        self.prepare_authorized_replacement()
+        for path in sorted((self.root / preserve.REPLACEMENT_ARCHIVE).iterdir()):
+            before = path.read_bytes()
+            path.write_bytes(before + b' ')
+            with self.subTest(file=path.name):
+                self.reject_without_writes('Historical motion archive changed')
+            path.write_bytes(before)
+
+    def test_visual_replacement_cannot_change_live_evidence_even_with_a_new_motion_hash(self):
+        current = self.prepare_authorized_replacement()
+        changed = self.evidence + b' changed scientific statement'
+        (self.root / 'evidence/tt-006.md').write_bytes(changed)
+        current['production']['motion'] = {
+            'schema_version': 1, 'evidence_sha256': hashlib.sha256(changed).hexdigest()}
+        self.save('episodes/tt-006.json', current)
+        self.reject_without_writes('changed original evidence bytes')
+
+    def test_authorized_motion_cannot_change_story_narration_or_scheduled_identity(self):
+        current = self.prepare_authorized_replacement()
+        for key in ('id', 'slug', 'doi', 'evidence_file', 'evidence', 'slides', 'posts'):
+            changed = copy.deepcopy(current)
+            changed[key] = 'changed'
+            self.save('episodes/tt-006.json', changed)
+            with self.subTest(field=key):
+                self.reject_without_writes('identity|Missing frozen|changed original story')
+        for key in ('speech', 'captions'):
+            changed = copy.deepcopy(current)
+            changed['production']['segments'][0][key] = 'changed'
+            self.save('episodes/tt-006.json', changed)
+            with self.subTest(field=key):
+                self.reject_without_writes('changed approved narration')
+        current['production']['renderer'] = 'nature-branded-9'
+        self.save('episodes/tt-006.json', current)
+        self.reject_without_writes('must use nature-motion-10')
+
+    def test_authorization_record_cannot_expand_to_another_episode(self):
+        self.save(preserve.REPLACEMENT_RECORD, {
+            'schema_version': 1, 'repository': preserve.build.REPO,
+            'authorized_on': '2026-11-09', 'authorized_by': 'owner',
+            'source_commit': 'c1e8b613e62a6abf180e25f4791c5fbfec5feea5',
+            'target_renderer': 'nature-motion-10', 'episode_ids': ['TT-005', 'TT-006'],
+            'preserve_post_identity_and_time': True, 'archive': preserve.REPLACEMENT_ARCHIVE})
+        self.reject_without_writes('Invalid scoped motion replacement authorization')
+
     def test_frozen_episode_cannot_convert_to_motion_or_lose_production(self):
         path = self.root / 'episodes/tt-006.json'
         episode = json.loads(path.read_text())

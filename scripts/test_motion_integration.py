@@ -6,6 +6,7 @@ from unittest.mock import patch
 
 import build
 import build_motion
+from preserve_releases import historical_story
 from editorial_gate import validate_pre_render
 from test_branding_gate import branded_release
 
@@ -100,16 +101,15 @@ class MotionIntegration(unittest.TestCase):
             releases = build.read(build.ROOT / 'quality/releases.json')
             for episode_id, expected in BASELINE.items():
                 with self.subTest(episode=episode_id):
-                    path = build.ROOT / ('episodes/' + episode_id.lower() + '.json')
-                    episode = build.read(path)
-                    evidence = build.ROOT / episode['evidence_file']
+                    path, episode, evidence, historical_release, _ = historical_story(
+                        build.ROOT, episode_id, releases)
                     source = validate_pre_render(episode, evidence.read_text(encoding='utf-8'))
                     renderer = build_motion.select_renderer(episode)
                     self.assertIs(renderer, build.select_renderer(episode))
                     actual = build_motion.render_fingerprint(path, evidence, renderer, source)
                     self.assertEqual(actual, expected)
-                    self.assertEqual(releases[episode_id]['fingerprint'], expected)
-                    manifest = copy.deepcopy(releases[episode_id])
+                    self.assertEqual(historical_release['fingerprint'], expected)
+                    manifest = copy.deepcopy(historical_release)
                     manifest.update(editorial_style=episode['production'].get('editorial_style'),
                                     editorial_standard=episode['production'].get('editorial_standard'),
                                     editorial_source_sha256=source,
@@ -125,9 +125,9 @@ class MotionIntegration(unittest.TestCase):
                                             'production_footer': False, 'progress_bar': False,
                                             'field_notes_or_episode_code': False,
                                             'scientific_labels_and_speech_captions': True})
-                    self.assertEqual(build_motion.release_ok(releases[episode_id], manifest, episode),
-                                     build.release_ok(releases[episode_id], manifest, episode))
-                    self.assertEqual(build_motion.release_ok(releases[episode_id], manifest, episode),
+                    self.assertEqual(build_motion.release_ok(historical_release, manifest, episode),
+                                     build.release_ok(historical_release, manifest, episode))
+                    self.assertEqual(build_motion.release_ok(historical_release, manifest, episode),
                                      episode_id in {'TT-004', 'TT-005', 'TT-006', 'TT-007'})
 
     def test_motion_selection_is_explicit_and_validated(self):

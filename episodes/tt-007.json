@@ -69,7 +69,7 @@
     "access_note": "Read original open access full article, 2022 Animal Behaviour 194:239–251, including all three experiments, tables/figures, statistical caveats, and Discussion; supplementary video licencing and Commons description verified."
   },
   "production": {
-    "renderer": "nature-branded-9",
+    "renderer": "nature-motion-10",
     "editorial_style": "science-journalism",
     "editorial_standard": "story-first-v1",
     "visual_standard": "nature-visuals-v1",
@@ -107,7 +107,8 @@
           1280,
           720
         ],
-        "source_duration_seconds": 20.687
+        "source_duration_seconds": 20.687,
+        "sha256": "feeac2c143cfbf5b9d77034980881892dfad328f88dbc5c8e4e541c3992c0949"
       },
       {
         "id": "bee_head_photo",
@@ -125,7 +126,8 @@
         "source_dimensions": [
           3548,
           2474
-        ]
+        ],
+        "sha256": "30be7891f1df9d6833d0b2ccbd3ba8a0b22031180dbb3a580d9bc297d05aa2b2"
       },
       {
         "id": "bee_flower",
@@ -143,7 +145,8 @@
         "source_dimensions": [
           2683,
           1791
-        ]
+        ],
+        "sha256": "d244492e53eb58bbade416c326cdb36372075745a47e5d24719aec713e1c3f0a"
       }
     ],
     "segments": [
@@ -252,11 +255,22 @@
         "pause_after": 0.2,
         "shots": [
           {
-            "kind": "bee_age",
+            "kind": "evidence_count",
             "title": "Younger bees\nrolled more",
             "kicker": "A SEPARATE AGE TEST",
             "start": 0,
-            "end": 0.52
+            "end": 0.52,
+            "motion": {
+              "metric": {
+                "label": "Young bees that rolled",
+                "value": 11,
+                "total": 13,
+                "unit": "bees",
+                "claim_index": 3,
+                "source_quote": "Younger bees rolled balls more often than older bees in a separate age/novelty test (11/13 young versus 14/33 older rolled, greater actions per bee)",
+                "scope": "Young cohort only; separate laboratory age test"
+              }
+            }
           },
           {
             "kind": "bee_age",
@@ -331,7 +345,7 @@
           },
           {
             "kind": "bee_scope",
-            "title": "Wild bee play\nnot yet tested",
+            "title": "Wild bee play\nnot tested here",
             "kicker": "THE LIMIT",
             "start": 0.5,
             "end": 1
@@ -372,6 +386,10 @@
         "field notes"
       ],
       "credits_in_caption": true
+    },
+    "motion": {
+      "schema_version": 1,
+      "evidence_sha256": "7853e9a54b1b1e006b0c43178d12a84dbced821c7112d30b396f8f7da4f05fa2"
     }
   },
   "editorial_story": {
@@ -425,10 +443,10 @@
       },
       {
         "segment": 5,
-        "visual": "Two schematic age groups, with young group's more frequent rolling named verbally.",
-        "purpose": "Explain independent age comparison, separating novelty from age.",
-        "source_or_concept": "Original qualitative comparison; experiment 2 pp.244–245 Fig.8.",
-        "accuracy_note": "No fabricated bar heights, sample sizes, fractions or mechanistic age explanation."
+        "visual": "Reveal the fixed count of 11 of 13 young bees that rolled in the separate age experiment, followed by a qualitative younger-versus-older comparison.",
+        "purpose": "Explain the independent age comparison without treating the changing emphasis as a time series or extrapolating from the young cohort.",
+        "source_or_concept": "Original Experiment 2 Methods pp.242-243 and Results p.244, with Fig.8 on p.247; count is directly reported as 11/13, compared with 14/33 older bees.",
+        "accuracy_note": "The numeral remains fixed, the scene labels the young cohort and separate laboratory test, and highlighted dots are a reveal only. No interpolated rate, invented sample size or mechanistic age explanation."
       },
       {
         "segment": 6,
@@ -465,47 +483,46 @@
       "id": "TT-007-REEL",
       "format": "REEL",
       "publication_date": "2026-11-14T10:00:00+01:00",
-      "caption": "Do bumblebees play? Look at these rolling balls.\n\nIn a laboratory, *Bombus terrestris* repeatedly manipulated small wooden balls, even though no nectar or pollen reward was attached. Researchers provided a clear route to food, so bees did not need to move the objects to feed. Younger bees rolled balls more often than older bees in a separate test. In another experiment, a chamber colour previously associated with rolling influenced their later choices, even when the balls were absent.\n\nThese findings support interpreting the behaviour as play-like or intrinsically rewarding. They do NOT directly establish how a bee feels, whether the activity improves future skills, or how often wild bees do this.\n\nTT-007 | Galpayage Dona et al. (2022), Animal Behaviour 194:239–251. DOI: 10.1016/j.anbehav.2022.08.013\nMethods, evidence and full visual credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-007.html\n\nOriginal experimental footage: Galpayage Dona and colleagues, CC BY 4.0, edited from Supplementary Video S1; natural-history photos Marco Almbauer and Aethonatic, CC0, reference only. Figure animations are original explanatory concepts, not recorded measurements. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Bumblebees #InsectBehaviour #AnimalPlay #Ecology #ScienceCommunication"
+      "caption": "Do bumblebees play? Look at these rolling balls.\n\nIn a laboratory, *Bombus terrestris* repeatedly manipulated small wooden balls, even though no nectar or pollen reward was attached. Researchers provided a clear route to food, so bees did not need to move the objects to feed. Younger bees rolled balls more often than older bees in a separate test. In another experiment, a chamber colour previously associated with rolling influenced their later choices, even when the balls were absent.\n\nThese findings support interpreting the behaviour as play-like or intrinsically rewarding. They do NOT directly establish how a bee feels, whether the activity improves future skills, or how often wild bees do this.\n\nTT-007 | Galpayage Dona et al. (2022), Animal Behaviour 194:239–251. DOI: 10.1016/j.anbehav.2022.08.013\nMethods, evidence and full visual credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-007.html\n\nOriginal experimental footage: Galpayage Dona and colleagues, CC BY 4.0, edited from Supplementary Video S1; natural-history photos Marco Almbauer and Aethonatic, CC0, reference only. Conceptual diagrams are original illustrations. The 11-of-13 young-bee count comes from the paper's separate laboratory age test; its animation reveals that fixed result, not a measured time series. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Bumblebees #InsectBehaviour #AnimalPlay #Ecology #ScienceCommunication"
     }
   ],
   "editorial_review": {
     "standard": "story-first-v1",
-    "reviewed_at": "2026-11-08T13:15:00+01:00",
-    "reviewer": "TT007 evidence and cold-viewer editorial pass",
     "decision": "pass",
+    "reviewer": "Codex independent replacement editor / replacement_review",
+    "reviewed_at": "2026-11-09T07:57:18.406038+00:00",
+    "source_sha256": "085fb98723dbd80cbc2f6962771a192cceea0d74c81eba52b5f5f5a29e9863e3",
     "checks": {
       "cold_viewer": {
         "decision": "pass",
-        "finding": "First image is actual controlled bumblebee ball-rolling footage, immediately named by the narrator and followed by a plain no-nectar question.",
-        "basis": "Segment 1, verified Commons CC BY study video and the first spoken line."
+        "finding": "The first image and sentence identify a bumblebee, its wooden ball and the no-nectar puzzle; the opening does not depend on prior episode knowledge.",
+        "basis": "Read every narration and caption chunk and compared the declared opening with primary Supplementary Video S1 provenance and the existing motion preview opening."
       },
       "story": {
         "decision": "pass",
-        "finding": "The central question stays why rolling happened without food; pathway choice and repetition rule out immediate rewards, younger age and conditioned preference strengthen but do not settle inference; lab limit closes the narrative.",
-        "basis": "Nine narration beats tied to all three distinct Galpayage Dona et al. experiments, pp.241–246."
+        "finding": "The connected sequence moves from a concrete action through the unobstructed-food control, repetition and separate tests to a bounded interpretation.",
+        "basis": "Read all nine narration segments, their paired visual plan and original article Methods/Results; the updated shot title narrows the wild-bee statement to this study."
       },
       "visuals": {
         "decision": "pass",
-        "finding": "The plan alternates genuine research footage with purpose-built route, rolling, age and colour-choice scenes. Longer narration beats now have two distinct topic-specific shots, making the 8-second per-shot export limit feasible; a real post-encode review remains mandatory.",
-        "basis": "Nine paired visual plans and fourteen actual shot declarations; CC BY original Supplementary Video S1 with unique offsets, separate lab evidence and species reference. The export remains a future check, not a claimed viewing."
+        "finding": "The plan distinguishes actual study footage, conceptual diagrams and a fixed sourced count. The 11-of-13 scene names the young cohort and disclaims a time series.",
+        "basis": "Original Experiment 2 Results explicitly report 11/13 young bees; all three media assets have pinned SHA-256 values and source/licence pages independently checked on 9 November 2026."
       },
       "payoff": {
         "decision": "pass",
-        "finding": "The Reel answers that rolling met operational play-like criteria and might be rewarding without claiming a direct emotional report from a bee.",
-        "basis": "Opening ball-roll mystery compared with segments 6–9, including the explicit limit."
+        "finding": "The answer remains play-like behaviour as an operational interpretation; the ending raises a question rather than claiming demonstrated insect enjoyment.",
+        "basis": "The final spoken interpretation and limitation remain unchanged from the approved scientific story and are consistent with the original Discussion."
       },
       "scope": {
         "decision": "pass",
-        "finding": "Distinct experiments and unrewarded settings are kept separate; repeated actions are not treated as independent bee numbers, and a spoken laboratory/feelings caveat prevents over-generalisation.",
-        "basis": "Original Methods and Results pp.241–246; Discussion pp.249–251. The critical phrase is precisely 'young bees' as spoken, not a synonym that ASR must guess."
+        "finding": "Laboratory observations are not presented as wild prevalence or direct access to feelings. Separate age and chamber tests are not collapsed into one cohort.",
+        "basis": "Compared the spoken caveat, fixed-count scope, metadata disclosure and article experimental designs; DOI correction searches found no linked notice, without claiming a guarantee of absence."
       },
       "retelling": {
         "decision": "pass",
-        "finding": "Lab bumblebees rolled inedible balls repeatedly, and several controls plus colour preference suggest an internally rewarding, play-like behaviour.",
-        "basis": "The evidence does not directly prove bees feel pleasure or establish that wild bees behave this way."
+        "finding": "A viewer can retell the main point: bees voluntarily rolled balls without food rewards, and the tests offer evidence for play-like activity with explicit limits.",
+        "basis": "The opening question, repeated-action evidence, no-food contrast and final caution form a self-contained narrative; no required answer is deferred to a caption or later post."
       }
-    },
-    "source_sha256": "185ddd66c4c57284aabfe712f28116c234c867c60dd955c899b64f71c65df6a9",
-    "review_scope": "Pre-render science and paired visual review refreshed after plain Instagram caption typography normalization only; the spoken script, claims, asset choices and storyboard are unchanged."
+    }
   }
 }

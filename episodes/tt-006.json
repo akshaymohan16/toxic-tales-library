@@ -65,7 +65,7 @@
     "access_note": "Full original journal PDF pp.2175–2181 reviewed, including original graphs and explicit Discussion limitations."
   },
   "production": {
-    "renderer": "nature-branded-9",
+    "renderer": "nature-motion-10",
     "editorial_style": "science-journalism",
     "editorial_standard": "story-first-v1",
     "visual_standard": "nature-visuals-v1",
@@ -105,7 +105,8 @@
         "source_dimensions": [
           1536,
           2048
-        ]
+        ],
+        "sha256": "221ca2145808694361452cc7c837029194805cadbee19647dbb08b94d0292c3d"
       },
       {
         "id": "spider_asellus",
@@ -123,7 +124,8 @@
         "source_dimensions": [
           3220,
           4830
-        ]
+        ],
+        "sha256": "3a497732f30bb2440c0276c6ec0d70dc2bbc79a8891b0e002707666d37a000ba"
       }
     ],
     "segments": [
@@ -318,6 +320,10 @@
         "field notes"
       ],
       "credits_in_caption": true
+    },
+    "motion": {
+      "schema_version": 1,
+      "evidence_sha256": "1c5b5cca782a1f7586a3103c15009f525e4e3126869636447b620a052793c8ea"
     }
   },
   "editorial_story": {
@@ -416,8 +422,8 @@
   ],
   "editorial_review": {
     "standard": "story-first-v1",
-    "reviewed_at": "2026-11-08T13:15:00+01:00",
-    "reviewer": "TT006 evidence and cold-viewer editorial pass",
+    "reviewed_at": "2026-11-09T07:56:07.332707+00:00",
+    "reviewer": "TT006 independent source and motion-plan review, 9 November 2026",
     "decision": "pass",
     "checks": {
       "cold_viewer": {
@@ -432,8 +438,8 @@
       },
       "visuals": {
         "decision": "pass",
-        "finding": "Each scene identifies the correctly named spider, models the silk air bell, indicates diffusive oxygen, shows optode measurement, shrinking gas and the actual studied scope; no frog-specific diagram or invented data curve is requested.",
-        "basis": "Nine paired visual_plan entries and distinct source-specific diagram kinds in scripts/production_branded.py; final encoded crops and frame checks are still required."
+        "finding": "The nine shots retain the approved organism, oxygen-transfer, optode, renewal and scope sequence. The motion compositor adds staggered kinetic titles, a continuous artwork-only wipe, bounded camera crops on the two photographs and qualitative oxygen particles. Nitrogen-loss contraction carries no numeric rate; speech captions and the logo remain fixed layers.",
+        "basis": "Read scripts/production_motion.py Visuals.artwork/transition/headline/diagram and inherited spider-specific scenes; compared every episode shot with its paired visual_plan and original paper Methods/Discussion. Actual encoded frames, caption alignment and final sound still require separate final-export review."
       },
       "payoff": {
         "decision": "pass",
@@ -442,8 +448,8 @@
       },
       "scope": {
         "decision": "pass",
-        "finding": "The supporting study concerns laboratory resting requirements; the story gives nitrogen depletion and activity/wild uncertainty as decisive spoken caveats instead of relegating them to the caption.",
-        "basis": "Original Conclusions p.2181 and Discussion p.2179; spoken segments 6–8."
+        "finding": "The unchanged spoken account restricts oxygen supply to resting spiders and the tested warm aquarium conditions; air replenishment and untested active/wild settings remain explicit. No count, oxygen concentration, rate, timed dive or numerical gas trace is added by the motion plan.",
+        "basis": "Re-read original journal full text pages 2175-2181 on 9 November, especially Methods 2176-2177, Discussion 2179-2181, model Fig.6 and Conclusions; checked segments 6-8 and motion-spec receipt with zero quantitative metrics."
       },
       "retelling": {
         "decision": "pass",
@@ -451,7 +457,7 @@
         "basis": "Air loss still forces future replenishment, and the focal lab study cannot establish supply to active spiders or every habitat."
       }
     },
-    "source_sha256": "6dec916122c8a936e896d7777ddb13f584553f6f144fba189d6d24301ba470bb",
-    "review_scope": "Pre-render science and paired visual review refreshed after plain Instagram caption typography normalization only; the spoken script, claims, asset choices and storyboard are unchanged."
+    "source_sha256": "9694ea7ccfb7e3d7e74c6298971993cc6c5ef13ecc3d0a9c22f1913f720ec1b0",
+    "review_scope": "Fresh pre-render source and motion-plan review for the owner-authorized replacement of the scheduled TT-006 video. Original narration, captions, story, evidence, post ID/date/caption and slug retained. Both licensed assets were downloaded anew, matched to previously reviewed bytes and SHA-pinned. This is not an encoded-output or publication release."
   }
 }

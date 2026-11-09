@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "repository": "akshaymohan16/toxic-tales-library",
+  "authorized_on": "2026-11-09",
+  "authorized_by": "owner",
+  "authorization": "I want the 2 to be replaced with the better animation style videos as well",
+  "source_commit": "c1e8b613e62a6abf180e25f4791c5fbfec5feea5",
+  "episode_ids": ["TT-006", "TT-007"],
+  "target_renderer": "nature-motion-10",
+  "preserve_post_identity_and_time": true,
+  "archive": "quality/history/pre-motion-2026-11-09",
+  "scope": "Replace the existing scheduled 10 November and 14 November Instagram Reel media after fresh exact-export review, and use the same new Tuesday video in its existing linked YouTube Short. Keep provider UUIDs, publication times, monthly capacity and all other posts unchanged.",
+  "release_policy": "This is scoped production authorization, not an exact-media release. New motion exports require fresh independent science/editorial/branding/motion/audio checks and verified public media before changing provider posts.",
+  "historical_qa_note": "Original QA manifests remain byte-exact in this archive. Their unversioned ancillary image paths are historical references; the exact original MP4 and cover remain preserved at fingerprinted media URLs. Current QA paths belong to the newly reviewed motion exports."
+}

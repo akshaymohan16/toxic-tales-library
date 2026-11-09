@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "repository": "akshaymohan16/toxic-tales-library",
+  "owner_authorized_on": "2026-11-09",
+  "owner_instruction": "I want the 2 to be replaced with the better animation style videos as well",
+  "status": "preparing_reviewed_replacements",
+  "base_commit": "c1e8b613e62a6abf180e25f4791c5fbfec5feea5",
+  "new_posts_allowed": false,
+  "originals_archived_at": "quality/history/pre-motion-2026-11-09/",
+  "targets": [
+    {
+      "post_id": "TT-006-REEL",
+      "metricool_uuid": "-5193152553705388348",
+      "original_metricool_id": "420702555",
+      "publication_date": {
+        "dateTime": "2026-11-10T10:00:00",
+        "timezone": "Europe/Vienna"
+      },
+      "original_media": [
+        "https://static.metricool.com/planner/202611/7937614-file-7041497825826372728.mp4"
+      ],
+      "original_cover": "https://static.metricool.com/planner/202611/7937614-file-562503526555367785.jpeg",
+      "provider_status": "PENDING"
+    },
+    {
+      "post_id": "TT-007-REEL",
+      "metricool_uuid": "-6872348896682359981",
+      "original_metricool_id": "420703487",
+      "publication_date": {
+        "dateTime": "2026-11-14T10:00:00",
+        "timezone": "Europe/Vienna"
+      },
+      "original_media": [
+        "https://static.metricool.com/planner/202611/7937614-file-6134241904496776178.mp4"
+      ],
+      "original_cover": "https://static.metricool.com/planner/202611/7937614-file-10393480036313352400.jpeg",
+      "provider_status": "PENDING"
+    },
+    {
+      "post_id": "TT-006-YOUTUBE-SHORT",
+      "metricool_uuid": "4422280930322105807",
+      "original_metricool_id": "420844339",
+      "publication_date": {
+        "dateTime": "2026-11-10T10:00:00",
+        "timezone": "Europe/Vienna"
+      },
+      "original_media": [
+        "https://static.metricool.com/planner/202611/7937614-file-1479431808781019617.mp4"
+      ],
+      "original_cover": "https://static.metricool.com/planner/202611/7937614-file-14326156854470616673.jpeg",
+      "provider_status": "PENDING"
+    }
+  ],
+  "instructions": "Existing tasks must reconcile this intent and live provider receipts. While in progress do not perform a competing replacement, create any post or revert media. Exact new release and public-byte verification required before update; UUIDs and times remain fixed."
+}

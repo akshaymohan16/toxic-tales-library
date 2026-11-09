@@ -10,6 +10,7 @@ import build
 import build_motion
 import production_motion as motion
 from editorial_gate import validate_pre_render
+from preserve_releases import historical_story
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -26,12 +27,10 @@ def prepare(episode_path, output_dir):
     original_path = ROOT / 'episodes' / (ep['id'].lower() + '.json')
     if not original_path.resolve().is_relative_to(ROOT / 'episodes'):
         raise ValueError('Invalid preview episode identity')
-    original = json.loads(original_path.read_text(encoding='utf-8'))
+    original_path, original, evidence, approved, _ = historical_story(ROOT, ep['id'])
     if ep.get('slug') != original.get('slug'):
         raise ValueError('Preview must retain the approved story slug')
-    releases = json.loads((ROOT / 'quality/releases.json').read_text(encoding='utf-8'))
-    approved = releases.get(ep['id'], {})
-    evidence = ROOT / original['evidence_file']
+    approved = approved or {}
     original_source = validate_pre_render(original, evidence.read_text(encoding='utf-8'))
     original_fp = build.render_fingerprint(original_path, evidence, build.select_renderer(original), original_source)
     if approved.get('decision') != 'release' or approved.get('fingerprint') != original_fp:
