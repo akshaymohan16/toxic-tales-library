@@ -6,6 +6,8 @@ No release decision, post, provider receipt or publishing schedule is changed.
 Ancillary QA JPEGs have no signed historical hash: their source, readability
 and newly observed hashes are recorded separately from exact released media.
 """
+import hashlib
+import json
 import re
 import tempfile
 from pathlib import Path, PurePosixPath
@@ -20,6 +22,72 @@ from editorial_gate import validate_pre_render
 SITE_URL = 'https://akshaymohan16.github.io/toxic-tales-library/'
 SHA256 = re.compile(r'[0-9a-f]{64}')
 MAX_MEDIA_BYTES = 250_000_000
+
+# Frozen identities from main 1333e10, independent of mutable episode/release
+# declarations. The digest covers fingerprint, evidence hash and exact media
+# inventory only; review decisions and publication receipts can still evolve.
+FROZEN_LEGACY = {
+    'TT-002': (None,
+        '3107c7add56b0123b6365d75b1c015e8f1d564e748b77f500773226d64344a54',
+        'b30e154b5bd0265d84da7383598c241060126baf92df4f3647137d7765d18dd5'),
+    'TT-003': (None,
+        'de6e3de79586e0b1839f97649c2441c76db19ca84c00f7d868d33e761e89bbc8',
+        '1aec6618067c4ed878b12074e9814a3f80288721d91e0ef818ae7feb3a5e279b'),
+    'TT-004': ('ecology-story-7',
+        'a70c13bde0d36f7cb62fc7d9ecef687af36728f180391931265041a5ce166223',
+        'bee7b20793ae66adaa9dde4bcde43a64918ee4a121cd3504f37f65c60e52fa75'),
+    'TT-005': ('nature-story-8',
+        '3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b',
+        'ba1274b24f3d3285a8444b494c384e3dc3f3175749f88eeac8d3301d0c4d9dee'),
+    'TT-006': ('nature-branded-9',
+        'd34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6',
+        'e83ad4940843119daa9d9b5d671e9d0f6b59104c189888d38fefe3cd78858de8'),
+    'TT-007': ('nature-branded-9',
+        '828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db',
+        'bdb2b0f9136d444f244113284fc2dbfe41ac9e7836ec1307635dcf5fcb76abea'),
+}
+
+
+def _release_identity(release):
+    fields = {key: release.get(key) for key in ('fingerprint', 'evidence_sha256', 'files')}
+    return hashlib.sha256(json.dumps(fields, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
+
+
+def _verified_legacy_sources(root, releases):
+    """Validate the complete frozen history before any cache writes/downloads."""
+    episodes = {}
+    for path in sorted((root / 'episodes').glob('*.json')):
+        episode = build.read(path)
+        episode_id = episode.get('id') if isinstance(episode, dict) else None
+        if not isinstance(episode_id, str) or not re.fullmatch(r'TT-\d{3,}', episode_id):
+            raise ValueError('Unsafe production episode identity')
+        if episode_id in episodes:
+            raise ValueError('Duplicate production episode identity: ' + episode_id)
+        episodes[episode_id] = (path, episode)
+    missing = sorted(set(FROZEN_LEGACY) - episodes.keys())
+    if missing:
+        raise ValueError('Missing frozen legacy episode: ' + ', '.join(missing))
+    verified = []
+    for episode_id, (declared_renderer, expected_fingerprint, expected_identity) in FROZEN_LEGACY.items():
+        path, episode = episodes[episode_id]
+        if path.name != episode_id.lower() + '.json':
+            raise ValueError('Renamed frozen legacy episode: ' + episode_id)
+        production = episode.get('production')
+        if not isinstance(production, dict) or production.get('renderer') != declared_renderer:
+            raise ValueError('Frozen legacy renderer changed: ' + episode_id)
+        release = releases.get(episode_id)
+        if not isinstance(release, dict) or not SHA256.fullmatch(str(release.get('fingerprint', ''))):
+            raise ValueError('No exact legacy release identity for ' + episode_id)
+        if release['fingerprint'] != expected_fingerprint or _release_identity(release) != expected_identity:
+            raise ValueError('Pinned legacy release identity changed: ' + episode_id)
+        evidence_path = _safe_path(root, episode['evidence_file'], 'evidence')
+        source_sha = validate_pre_render(episode, evidence_path.read_text(encoding='utf-8'))
+        renderer = build.select_renderer(episode)
+        fingerprint = build.render_fingerprint(path, evidence_path, renderer, source_sha)
+        if fingerprint != expected_fingerprint or build.sha(evidence_path) != release.get('evidence_sha256'):
+            raise ValueError('Legacy source changed; refusing to rerender ' + episode_id)
+        verified.append((episode_id, release, renderer, source_sha, fingerprint))
+    return verified
 
 
 class _NoRedirect(HTTPRedirectHandler):
@@ -101,28 +169,13 @@ def preserve_legacy_releases(root=None):
     qa_observations = build.read(cache / 'legacy-qa-observations.json', {})
     if not isinstance(index, dict) or not isinstance(releases, dict):
         raise ValueError('Malformed legacy cache or release records')
+    verified = _verified_legacy_sources(root, releases)
     cache.mkdir(parents=True, exist_ok=True)
     staged, preserved, updated_index = [], [], dict(index)
     observations = {}
     with tempfile.TemporaryDirectory(prefix='preserve-', dir=cache) as temporary:
         stage = Path(temporary)
-        for path in sorted((root / 'episodes').glob('*.json')):
-            episode = build.read(path)
-            if not episode.get('production') or episode['production'].get('renderer') == 'nature-motion-10':
-                continue
-            episode_id = episode['id']
-            if not re.fullmatch(r'TT-\d{3,}', episode_id):
-                raise ValueError('Unsafe legacy episode identity')
-            release = releases.get(episode_id)
-            if not isinstance(release, dict) or not SHA256.fullmatch(str(release.get('fingerprint', ''))):
-                raise ValueError('No exact legacy release identity for ' + episode_id)
-            evidence_path = _safe_path(root, episode['evidence_file'], 'evidence')
-            source_sha = validate_pre_render(episode, evidence_path.read_text(encoding='utf-8'))
-            renderer = build.select_renderer(episode)
-            fingerprint = build.render_fingerprint(path, evidence_path, renderer, source_sha)
-            if (fingerprint != release['fingerprint']
-                    or build.sha(evidence_path) != release.get('evidence_sha256')):
-                raise ValueError('Legacy source changed; refusing to rerender ' + episode_id)
+        for episode_id, release, renderer, source_sha, fingerprint in verified:
             files = release.get('files')
             if not isinstance(files, dict) or not files:
                 raise ValueError('Legacy exact-file inventory missing for ' + episode_id)

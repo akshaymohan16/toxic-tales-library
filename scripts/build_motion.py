@@ -1,6 +1,6 @@
 """Prospective motion entry point; the reviewed legacy build stays byte-exact.
 
-Only an explicitly declared nature-motion-10 episode enters the new renderer.
+Every new production episode must explicitly declare nature-motion-10.
 The existing build, source, publication and exact-output gates run unchanged.
 New motion exports additionally need their own independent, exact-file review.
 Importing this module does not modify build or any frozen renderer globals.
@@ -17,6 +17,10 @@ from preserve_releases import preserve_legacy_releases
 
 
 MOTION_STANDARD = 'toxic-tales-motion-v1'
+# These identities preserve existing exports, not a permission to remake them.
+# The main preflight additionally verifies their exact source/release hashes.
+FROZEN_LEGACY_EPISODES = frozenset({'TT-002', 'TT-003', 'TT-004',
+                                   'TT-005', 'TT-006', 'TT-007'})
 MOTION_CHECKS = ('kinetic_text', 'transitions', 'ecological_motion',
                  'camera_motion', 'evidence_bound_data', 'caption_sync')
 MOTION_FRAME_CHECKS = ('reviewed_encoded_frames',
@@ -32,6 +36,9 @@ def select_renderer(ep):
     if ep.get('production', {}).get('renderer') == motion_renderer.DECLARED_RENDERER:
         validate_motion_spec(ep)
         return motion_renderer
+    if ep.get('id') not in FROZEN_LEGACY_EPISODES:
+        raise ValueError('New production episodes require nature-motion-10; '
+                         'legacy renderers are reserved for exact archived exports')
     return build.select_renderer(ep)
 
 
@@ -117,6 +124,11 @@ def release_ok(release, manifest, episode=None):
                        or (episode or {}).get('production', {}).get('renderer')
                        == motion_renderer.DECLARED_RENDERER)
     if not motion_declared:
+        # A missing episode or removed video-post entry cannot turn a future
+        # film into legacy history. Companion carousels keep their format while
+        # sharing the new episode's motion renderer and exact release checks.
+        if (episode or {}).get('id') not in FROZEN_LEGACY_EPISODES:
+            return False
         return build.release_ok(release, manifest, episode)
     if not motion_review_ok(release, manifest, episode):
         return False

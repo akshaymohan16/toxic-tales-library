@@ -1,4 +1,5 @@
 """No renderer may regenerate an existing export when the cache is cold."""
+import copy
 import hashlib
 import io
 import json
@@ -28,6 +29,8 @@ class PreserveReleases(unittest.TestCase):
         self.release = {'decision': 'release', 'fingerprint': self.fp,
                         'evidence_sha256': hashlib.sha256(self.evidence).hexdigest(),
                         'files': {'media/old.mp4': hashlib.sha256(self.media).hexdigest()}}
+        self.frozen = {'TT-006': ('nature-branded-9', self.fp, preserve._release_identity(self.release))}
+        patch.object(preserve, 'FROZEN_LEGACY', self.frozen).start()
         self.save('quality/releases.json', {'TT-006': self.release})
         self.manifest = {**self.release, 'renderer': 'nature-branded-9.0',
                          'editorial_source_sha256': self.source}
@@ -48,6 +51,67 @@ class PreserveReleases(unittest.TestCase):
 
     def download(self, name, target, maximum):
         target.write_bytes(self.remote[name])
+
+    def reject_without_writes(self, message):
+        with patch.object(preserve, '_download') as download:
+            with self.assertRaisesRegex(ValueError, message):
+                preserve.preserve_legacy_releases(self.root)
+            download.assert_not_called()
+        self.assertFalse((self.root / 'render-cache').exists())
+        self.assertFalse((self.root / 'site').exists())
+
+    def test_frozen_episode_cannot_convert_to_motion_or_lose_production(self):
+        path = self.root / 'episodes/tt-006.json'
+        episode = json.loads(path.read_text())
+        for production in ({'renderer': 'nature-motion-10'}, {'renderer': 'nature-story-8'}, None):
+            changed = {**episode, 'production': production}
+            self.save('episodes/tt-006.json', changed)
+            with self.subTest(production=production):
+                self.reject_without_writes('Frozen legacy renderer changed')
+
+    def test_missing_renamed_relabelled_and_duplicate_frozen_ids_are_rejected(self):
+        path = self.root / 'episodes/tt-006.json'
+        episode = json.loads(path.read_text())
+        path.unlink()
+        self.reject_without_writes('Missing frozen legacy episode')
+        self.save('episodes/renamed.json', episode)
+        self.reject_without_writes('Renamed frozen legacy episode')
+        self.save('episodes/tt-006.json', episode)
+        self.reject_without_writes('Duplicate production episode identity')
+        (self.root / 'episodes/renamed.json').unlink()
+        self.save('episodes/tt-006.json', {**episode, 'id': 'TT-008'})
+        self.reject_without_writes('Missing frozen legacy episode')
+
+    def test_mutating_source_release_and_qa_together_cannot_replace_frozen_identity(self):
+        for key, replacement in (('fingerprint', 'c' * 64), ('evidence_sha256', 'c' * 64),
+                                 ('files', {'media/replacement.mp4': 'c' * 64})):
+            changed = {**self.release, key: replacement}
+            self.save('quality/releases.json', {'TT-006': changed})
+            self.save('site/qa/tt-006.json', {**self.manifest, key: replacement})
+            self.fingerprint.return_value = changed['fingerprint']
+            before = (self.root / 'site/qa/tt-006.json').read_bytes()
+            with self.subTest(field=key), patch.object(preserve, '_download') as download:
+                with self.assertRaisesRegex(ValueError, 'Pinned legacy release identity changed'):
+                    preserve.preserve_legacy_releases(self.root)
+                download.assert_not_called()
+            self.assertFalse((self.root / 'render-cache').exists())
+            self.assertEqual((self.root / 'site/qa/tt-006.json').read_bytes(), before)
+
+    def test_all_frozen_sources_validate_before_first_archive_download(self):
+        self.frozen['TT-007'] = self.frozen['TT-006']
+        self.save('quality/releases.json', {'TT-006': self.release, 'TT-007': self.release})
+        self.save('episodes/tt-007.json', {'id': 'TT-007', 'evidence_file': 'evidence/tt-006.md',
+                                        'production': {'renderer': 'nature-branded-9'}})
+        self.fingerprint.side_effect = lambda path, *args: self.fp if path.stem == 'tt-006' else 'c' * 64
+        self.reject_without_writes('Legacy source changed')
+
+    def test_new_motion_episode_is_not_treated_as_a_historical_export(self):
+        self.save('episodes/tt-008.json', {'id': 'TT-008', 'evidence_file': 'evidence/future.md',
+                                        'production': {'renderer': 'nature-motion-10'}})
+        with patch.object(preserve, '_download', side_effect=self.download):
+            self.assertEqual(preserve.preserve_legacy_releases(self.root),
+                             {'preserved_episodes': ['TT-006'], 'restored_files': 2})
+        self.fingerprint.assert_called_once()
 
     def test_cold_restore_exact_bytes_then_warm_cache_needs_no_network(self):
         release_bytes = (self.root / 'quality/releases.json').read_bytes()
@@ -102,6 +166,15 @@ class PreserveReleases(unittest.TestCase):
                 preserve.preserve_legacy_releases(self.root)
             self.assertEqual(json.loads((self.root / 'quality/releases.json').read_text())['TT-006']['decision'], decision)
 
+    def test_publication_receipts_and_review_status_are_outside_the_media_identity_pin(self):
+        changed = copy.deepcopy(self.release)
+        changed.update(publication_receipt={'provider_id': 'existing-post'},
+                       visual_review={'decision': 'hold', 'finding': 'Existing review retained'})
+        self.save('quality/releases.json', {'TT-006': changed})
+        with patch.object(preserve, '_download', side_effect=self.download):
+            preserve.preserve_legacy_releases(self.root)
+        self.assertEqual(json.loads((self.root / 'quality/releases.json').read_text())['TT-006'], changed)
+
     def test_unsafe_paths_and_external_redirects_are_rejected(self):
         for path in ('../media/a.mp4', 'media/../a.mp4', 'media\\a.mp4',
                      'https://example.org/a.mp4', 'media/a.mp4?download=1'):
@@ -154,6 +227,31 @@ class PreserveReleases(unittest.TestCase):
                     preserve.preserve_legacy_releases(self.root)
             self.assertFalse((self.root / 'site/media/old.mp4').exists())
             self.assertFalse((self.root / 'render-cache/index.json').exists())
+
+
+class RealProductionHistory(unittest.TestCase):
+    def test_all_six_historical_sources_and_media_identities_match_pins(self):
+        self.assertEqual(set(preserve.FROZEN_LEGACY), {f'TT-{number:03d}' for number in range(2, 8)})
+        original = Path.read_bytes
+        with patch.object(Path, 'read_bytes', lambda path: original(path).replace(b'\r\n', b'\n')):
+            releases = preserve.build.read(preserve.build.ROOT / 'quality/releases.json')
+            verified = preserve._verified_legacy_sources(preserve.build.ROOT, releases)
+        self.assertEqual([entry[0] for entry in verified], sorted(preserve.FROZEN_LEGACY))
+
+    def test_frozen_approved_story_still_supports_standalone_nonpublishing_preview(self):
+        import preview_motion
+        original = Path.read_bytes
+        with tempfile.TemporaryDirectory() as temporary, patch.object(
+                Path, 'read_bytes', lambda path: original(path).replace(b'\r\n', b'\n')):
+            episode, output, source, fingerprint = preview_motion.prepare(
+                preserve.build.ROOT / 'quality/motion-preview/tt-007.json', Path(temporary) / 'preview')
+            self.assertEqual(episode['id'], 'TT-007')
+            self.assertEqual(episode['production']['renderer'], 'nature-motion-10')
+            self.assertIs(episode['publication_enabled'], False)
+            self.assertEqual(episode['posts'], [])
+            self.assertEqual(fingerprint, preserve.FROZEN_LEGACY['TT-007'][1])
+            self.assertTrue(source)
+            self.assertFalse(output.exists())
 
 
 if __name__ == '__main__':

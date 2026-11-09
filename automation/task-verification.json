@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-08T16:00:38.324Z",
-  "method": "Reopened saved hosted task editors; compared full rendered instructions after whitespace normalization; active Pause controls present",
+  "checked_at": "2026-11-09T07:31:47.656Z",
+  "method": "Reopened the two saved hosted task editors and compared every instruction word after whitespace normalization; active Pause controls observed; task identities verified in page URLs. Edited instructions only.",
   "tasks": [
     {
       "id": "6aeefcb926708191b092554230783da1",
@@ -8,7 +8,10 @@
       "active": true,
       "schedule_unchanged": true,
       "visible_schedule": "Sundays at 10:00 AM Germany Time",
-      "instruction_readback_verified": true
+      "instruction_readback_verified": true,
+      "checked_at": "2026-11-09T07:31:47.656Z",
+      "motion_instructions_verified": true,
+      "normalized_prompt_sha256": "d410ebfc4ef377c8d79c93f44b236f5f281ea9b82c216f645f2b6b2721083974"
     },
     {
       "id": "Automation_991690d6af648191ac8037cfa96c92a0",
@@ -17,7 +20,10 @@
       "schedule_unchanged": true,
       "visible_schedule": "Daily / Monitoring",
       "instruction_check_time": "10:15 Europe/Vienna",
-      "instruction_readback_verified": true
+      "instruction_readback_verified": true,
+      "checked_at": "2026-11-09T07:31:47.656Z",
+      "motion_instructions_verified": true,
+      "normalized_prompt_sha256": "72b29857f8776f3ad347d5b4062df4d2f2799751a505e97785970b14bbd08d36"
     },
     {
       "id": "6af077085e1c8191af8325f3be864402",
@@ -26,10 +32,16 @@
       "schedule_unchanged": true,
       "visible_schedule": "Daily / Monitoring",
       "instruction_readback_verified": true,
-      "scope": "Read-only report on 15 November run; now checks four destination receipts; original self-disable preserved"
+      "scope": "Read-only report on 15 November run; now checks four destination receipts; original self-disable preserved",
+      "checked_at": "2026-11-08T16:00:38.324Z",
+      "not_modified_or_prompt_reverified_in_motion_update": true
     }
   ],
   "new_tasks_created": 0,
   "full_original_instructions_retained": true,
-  "policy": "automation/YOUTUBE_POLICY.md"
+  "policy": "quality/MOTION_STANDARD.md",
+  "provider_posts_modified": 0,
+  "scheduling_controls_modified": false,
+  "publisher_timing_observation": "UI exposes Daily / Monitoring with Central European Time; 10:15 Europe/Vienna remains in saved instructions, not a separately visible clock control.",
+  "future_execution_proven": false
 }

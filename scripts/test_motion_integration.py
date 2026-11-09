@@ -51,6 +51,41 @@ def motion_release():
 
 
 class MotionIntegration(unittest.TestCase):
+    def test_new_episodes_cannot_fall_back_to_legacy_renderers(self):
+        episode, _, _ = branded_release()
+        for episode_id in ('TT-001', 'TT-008', 'TT-999', None):
+            episode['id'] = episode_id
+            for renderer in ('nature-branded-9', 'nature-story-8', 'ecology-story-7',
+                             None, 'invented-renderer'):
+                episode['production']['renderer'] = renderer
+                for posts in ([{'format': 'REEL'}], [{'format': 'SHORT'}],
+                              [{'format': 'CAROUSEL'}], []):
+                    episode['posts'] = posts
+                    with self.subTest(id=episode_id, renderer=renderer, posts=posts):
+                        with self.assertRaisesRegex(ValueError, 'New production episodes require nature-motion-10'):
+                            build_motion.select_renderer(episode)
+
+    def test_new_legacy_release_is_rejected_even_when_old_gates_pass(self):
+        episode, manifest, release = branded_release()
+        episode['id'] = 'TT-008'
+        self.assertTrue(build.release_ok(release, manifest, episode))
+        for posts in ([{'format': 'REEL'}], [{'format': 'SHORT'}],
+                      [{'format': 'CAROUSEL'}], []):
+            episode['posts'] = posts
+            with self.subTest(posts=posts):
+                self.assertFalse(build_motion.release_ok(release, manifest, episode))
+        self.assertFalse(build_motion.release_ok(release, manifest, None))
+        self.assertFalse(build_motion.release_ok(release, manifest, {}))
+
+    def test_new_episode_with_motion_and_all_reviews_remains_eligible(self):
+        episode, manifest, release = motion_release()
+        episode['id'] = 'TT-008'
+        with patch.object(build_motion, 'validate_motion_spec', return_value=RECEIPT):
+            self.assertIs(build_motion.select_renderer(episode), build_motion.motion_renderer)
+            self.assertTrue(build_motion.release_ok(release, manifest, episode))
+            release.pop('motion_review')
+            self.assertFalse(build_motion.release_ok(release, manifest, episode))
+
     def test_failed_preservation_preflight_cannot_start_build(self):
         with patch.object(build_motion, 'preserve_legacy_releases', side_effect=ValueError('unverified archive')):
             with patch.object(build_motion.types, 'FunctionType') as pipeline:

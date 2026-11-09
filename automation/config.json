@@ -38,7 +38,10 @@
     "youtube": 1,
     "total": 4
   },
-  "monthly_destination_posts_normal_range": [16, 19],
+  "monthly_destination_posts_normal_range": [
+    16,
+    19
+  ],
   "deployment_verified": true,
   "deployment_evidence": {
     "workflow_run_id": 42396049419,
@@ -115,5 +118,6 @@
   "future_reel_renderer": "nature-motion-10",
   "motion_supplement": "quality/MOTION_STANDARD.md",
   "production_entrypoint": "scripts/build_motion.py",
-  "canonical_brand_asset": "assets/branding/toxic-tales-logo.json"
+  "canonical_brand_asset": "assets/branding/toxic-tales-logo.json",
+  "future_reel_renderer_required": true
 }
