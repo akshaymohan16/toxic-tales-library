@@ -23,7 +23,7 @@
     "observed_used": 3,
     "observed_at": "2026-11-09T08:22:57.080Z",
     "month": "2026-11",
-    "observation_basis": "Same-day authenticated Metricool planner UI observation at 2026-11-09T08:22:57.080Z, carried forward; current provider calendar independently rechecked.",
+    "observation_basis": "Metricool planner counter",
     "observed_published_post_ids": [
       "instagram:TT-002-REEL",
       "instagram:TT-004-REEL",
@@ -38,7 +38,8 @@
     "projected_month_destinations": 15,
     "conservative_projection_including_held_draft": 16,
     "note": "Observed counter plus all remaining planned Instagram and Tuesday YouTube destinations. Already-published baseline IDs are not counted twice; unknown writes reserve capacity.",
-    "verified_in_this_run": false
+    "verified_in_this_run": false,
+    "observation_detail": "Authenticated same-day planner counter read at 2026-11-09T08:22:57.080Z; reused in this publisher check without claiming a second UI observation. Current whole-month calendar independently reconciled."
   },
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
   "updated_metricool_posts": 0,
@@ -72,7 +73,7 @@
   "pending_new_pilot_post_id": null,
   "pilot_record_status": "published_owner_approved",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
-  "updated_at": "2026-11-09T09:30:20.714Z",
+  "updated_at": "2026-11-09T09:31:11.556Z",
   "latest_publication": {
     "post_id": "TT-005-REEL",
     "metricool_id": "420178205",
@@ -170,14 +171,14 @@
     "issue_prefix": "Toxic Tales readiness: ",
     "repo_issue_alert_delivery": "GitHub issue notification depends on user's GitHub notification settings",
     "last_checked_at": "2026-11-09T09:30:20.714Z",
-    "latest_run_id": 42586439364,
-    "latest_run_result": "success",
-    "prior_run_id": 42585216281,
-    "prior_result": "failed_before_updated_ledger_then_recovered_by_latest_success",
+    "latest_run_id": 42593942242,
+    "latest_run_result": "failure_due_to_noncanonical_observation_basis_in_prior_heartbeat; corrected now",
+    "prior_run_id": 42586439364,
+    "prior_result": "success",
     "open_readiness_issues": 0
   },
   "storage": "GitHub workflow 42482770601 successful with compact SHA-manifest verification and ~257 MiB artifacts vs former ~617 MiB. Historical duplicate artifact housekeeping workflow 42483693420 success: 51 redundant old archives totaling 6,834,278,226 bytes pruned; one latest legacy QA retained and live public media untouched.",
-  "issue_status": "No open Toxic Tales readiness issue returned by repository-scoped issue search; latest watchdog audit succeeded.",
+  "issue_status": "Latest watchdog failed from heartbeat quota observation_basis value changed by this publisher; repaired field to required canonical value. Live scheduled reservations remain confirmed, no owner action needed.",
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_channel_name": "Toxic Tales",
   "youtube_connection_verified": true,
