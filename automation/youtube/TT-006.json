@@ -5,11 +5,12 @@
   "privacy": "PUBLIC",
   "is_ai_generated": true,
   "review_decision": "pass",
-  "reviewed_release_fingerprint": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
-  "source_video_sha256": "be7ccc16374b8e1951669da564f8c65de9a495550549e4b56c08aaf7ddaccb60",
+  "reviewed_release_fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df",
+  "source_video_sha256": "4611a09a346314cb2f81b2696180e4c0334429adf9f500c39e6037a0e919f847",
   "rights_review_decision": "pass",
   "audience_review": "Episode explicitly targets curious non-specialist adults; general scientific reporting, not child-directed.",
-  "review_basis": "Independent existing-source metadata review: episodes/tt-006.json, evidence/tt-006.md, quality/releases.json and branding standard. Two actually used CC BY 4.0 photographs credited with license/adaptation details. Existing exact film review retained; no new listening claim.",
-  "reviewed_at": "2026-11-08T15:48:27Z",
-  "metadata_sha256": "ebf239f733de4a2295fdee656925cffdfc570bbebcd0eb9cf25bb918480a3f4d"
+  "review_basis": "Fresh review against the exact motion export 4611a09a346314cb2f81b2696180e4c0334429adf9f500c39e6037a0e919f847, current source hash 9694ea7ccfb7e3d7e74c6298971993cc6c5ef13ecc3d0a9c22f1913f720ec1b0 and original Seymour/Hetz paper pp.2175-2181. Unchanged title/description correctly state resting spiders, warm still aquarium water, nitrogen loss and limits. Both actually used CC BY 4.0 photographs retain creator/source/licence/adaptation credits; conceptual diagrams and synthetic narration are disclosed. Original logo permission and OFL fonts remain valid. Audience/privacy and synthetic-media settings remain unchanged. Exact caption/ASR and encoded-frame review passed; no direct listening claimed.",
+  "reviewed_at": "2026-11-09T08:18:01.862031Z",
+  "metadata_sha256": "df8eab9b31aa20c78f893b5c21f14a7a1eeef4ca307169f5a5a999c1ff8fa033",
+  "reviewer": "Codex independent exact-export review / replacement_review"
 }

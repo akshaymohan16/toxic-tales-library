@@ -378,88 +378,88 @@
     "narrative_review": "The film proceeds from an identified organism and survival question to seasonal preparation, protective chemistry, a controlled test, recovery and the population/season limit. The methods provide evidence for the biological explanation. The encoded film supplies the answer within the story: protective chemistry helps living cells tolerate freezing while some body water still becomes ice. The five recoveries and seven-week follow-up give a concrete outcome before the return to the animal."
   },
   "TT-006": {
+    "fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df",
+    "files": {
+      "media/tt-006-diving-bell-spider-oxygen-6f32e96cb564.mp4": "4611a09a346314cb2f81b2696180e4c0334429adf9f500c39e6037a0e919f847",
+      "media/tt-006-diving-bell-spider-oxygen-6f32e96cb564_cover.jpg": "2a68f1bbeb377d7265fd5176fb788a0e9e2e4054e530908b14670b1ea9e6f58e"
+    },
+    "evidence_sha256": "1c5b5cca782a1f7586a3103c15009f525e4e3126869636447b620a052793c8ea",
     "episode_id": "TT-006",
     "decision": "release",
     "publication_enabled": true,
-    "reviewer": "TT-006 separate final encoded-export QA desk",
-    "reviewed_at": "2026-11-08T12:25:41.310Z",
-    "fingerprint": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
-    "evidence_sha256": "1c5b5cca782a1f7586a3103c15009f525e4e3126869636447b620a052793c8ea",
-    "files": {
-      "media/tt-006-diving-bell-spider-oxygen-d34a246d6540.mp4": "be7ccc16374b8e1951669da564f8c65de9a495550549e4b56c08aaf7ddaccb60",
-      "media/tt-006-diving-bell-spider-oxygen-d34a246d6540_cover.jpg": "332ae3063461fe2c684764ca9e051e0b7b48b2332d12facef50f99fe50a50404"
-    },
-    "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-006-contact.jpg?review=97e61989",
-    "source_commit": "c354fcfb634f74cf6c46beb49aacf8004ce63993",
-    "verification_run": 42479311271,
+    "publication_eligible": true,
+    "reviewer": "Codex independent exact-export review / replacement_review",
+    "reviewed_at": "2026-11-09T08:18:01.862031Z",
+    "source_commit": "8031742e670141d9d5deb532d2109c08382b172a",
+    "media_commit": "8031742e670141d9d5deb532d2109c08382b172a",
+    "verification_run": 42583051613,
     "duration_seconds": 53.875,
-    "scientific_review": "The original Seymour and Hetz (2011) original article was read across pp.2175–2181; measured warm-water bell gas conductance and respirometry support a resting, not indefinite active, physical-gill interpretation. Nitrogen escape limits duration. Full provenance and source locations in evidence/tt-006.md.",
-    "visual_review": "Real licensed spider bubble portraits and nine labelled diagrams at full portrait size; relative to the earlier grey/slide pipeline the new 1080 composition and small logo preserve subject visibility; figure arrows, optode and active-limit slides inspect well at 360px.",
-    "audio_review": "Final H.264 1080×1920 53.875s with AAC Kokoro af_heart, integrated loudness -16.69 LUFS and -5.48 dBTP; ASR 99.67% normalized similarity. One ASR omission around 'resting spiders' is not scientific reversal because later matched 'resting spider' evidence and negation persist. Listening not performed.",
-    "narrative_review": "Sequence runs from bell building and finite trapped air to dissolved oxygen diffusion, instrument measurements, resting demand, nitrogen leakage and limits, finishing with a conditional answer.",
+    "source_sha256": "9694ea7ccfb7e3d7e74c6298971993cc6c5ef13ecc3d0a9c22f1913f720ec1b0",
+    "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-006-contact.jpg?review=8031742",
+    "scientific_review": "Read Seymour and Hetz (2011), pp.2175-2181, including methods, results and discussion. Warm stagnant aquarium oxygen measurements and resting respirometry support a physical gill for many resting spiders, not unlimited active-animal oxygen supply. Fourteen empty bells came from eleven spiders; the film invents no sample count or rate. Nitrogen loss and later surface-air replacement remain explicit. Real wildlife photographs are reference images, not experiment records.",
+    "visual_review": "Independently viewed actual encoded 0.18-second transition, 0.7-second settled and middle samples for every shot, plus the 0/1-second openings, final frame, contact sheet and cover. Individual 540-pixel-wide frames and 270/360-pixel-wide grid panels were inspected. This is encoded-frame sampling, not continuous moving-playback review.",
+    "audio_review": "Inspected all nine segment scripts/ASR transcripts, the final encoded ASR transcript, all 30 caption timings and final-file loudness report. Segment ASR is exact; final normalized similarity is 0.9966555. Final ASR omits the word spiders after resting in the measurement sentence; that segment ASR and its caption include the word, and later resting-spider and active/wild-limit phrases remain intact. This is an ASR discrepancy, not proof of a missing spoken word. Final-file measured input loudness is -16.69 LUFS, true peak -5.35 dBTP. No direct audio listening or perceptual pronunciation certification was performed.",
+    "narrative_review": "The exported nine-shot story shows a real spider and air chamber, finite air, water-to-bell oxygen transfer, a measurement probe, the resting result, shrinkage, the laboratory limit and a conditional physical-gill payoff. The organism and question remain understandable without prior context.",
     "final_editorial_review": {
-      "standard": "story-first-v1",
-      "reviewer": "TT-006 separate final encoded-export QA desk",
-      "reviewed_at": "2026-11-08T12:25:41.310Z",
-      "decision": "pass",
-      "independent_from_script_author": true,
-      "reviewed_encoded_frames": true,
-      "source_sha256": "6dec916122c8a936e896d7777ddb13f584553f6f144fba189d6d24301ba470bb",
-      "fingerprint": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
+      "fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df",
       "files": {
-        "media/tt-006-diving-bell-spider-oxygen-d34a246d6540.mp4": "be7ccc16374b8e1951669da564f8c65de9a495550549e4b56c08aaf7ddaccb60",
-        "media/tt-006-diving-bell-spider-oxygen-d34a246d6540_cover.jpg": "332ae3063461fe2c684764ca9e051e0b7b48b2332d12facef50f99fe50a50404"
+        "media/tt-006-diving-bell-spider-oxygen-6f32e96cb564.mp4": "4611a09a346314cb2f81b2696180e4c0334429adf9f500c39e6037a0e919f847",
+        "media/tt-006-diving-bell-spider-oxygen-6f32e96cb564_cover.jpg": "2a68f1bbeb377d7265fd5176fb788a0e9e2e4054e530908b14670b1ea9e6f58e"
       },
       "evidence_sha256": "1c5b5cca782a1f7586a3103c15009f525e4e3126869636447b620a052793c8ea",
-      "inspection_scope": "Actual final MP4/cover SHA-256 checked byte for byte in 42479311271 downloaded public-preview artifact, plus actual 9-shot contact, 0/1-second opening, 16 before/after boundaries and last frame. Final files identical in bytes to the independently inspected high-contrast 424789 export; only episode caption was normalized to plain Instagram punctuation. Final ASR token similarity 99.67%, no silent or narration absence. Full continuous audio listening unavailable; no listening or creator-video parity claimed.",
-      "listening_review_claimed": false,
-      "continuous_playback_review_claimed": false,
+      "reviewer": "Codex independent exact-export review / replacement_review",
+      "reviewed_at": "2026-11-09T08:18:01.862031Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "standard": "story-first-v1",
+      "reviewed_encoded_frames": true,
+      "source_sha256": "9694ea7ccfb7e3d7e74c6298971993cc6c5ef13ecc3d0a9c22f1913f720ec1b0",
       "checks": {
         "cold_viewer": {
           "decision": "pass",
-          "finding": "At 0 and 1 s, identifiable diving bell spider and silver air chamber clearly align with the immediate underwater breathing question.",
-          "basis": "Actual opening 0s/1s and first shot midpoint; source reference photograph; narration starts with named spider."
+          "finding": "The first frame identifies the diving bell spider and visibly presents its underwater air pocket; narration asks how it can breathe there.",
+          "basis": "Opening 0s/1s and shot 1 encoded samples; licensed bykovskii photograph, title, narration and caption agree."
         },
         "story": {
           "decision": "pass",
-          "finding": "Sequence runs from bell building and finite trapped air to dissolved oxygen diffusion, instrument measurements, resting demand, nitrogen leakage and limits, finishing with a conditional answer.",
-          "basis": "Real 9-shot contact; transcript and nine actual shot timings compared to paper pp.2175–2181."
+          "finding": "The breathing problem leads to diffusion, an instrument measurement, the resting result and the shrinking-bell catch in a causal sequence.",
+          "basis": "All nine encoded shots, complete narration and caption sequence; original paper pp.2176-2181."
         },
         "visuals": {
           "decision": "pass",
-          "finding": "Two reference spider photographs and original bell, oxygen-entry, optode and gas-loss diagrams remain distinguishable; full source diagram arrows indicate direction qualitatively, not manufactured measurements. Printed captions fit at 360px.",
-          "basis": "Actual last-build contact and 16 boundary pairs, cover and phone-scale 360px views."
+          "finding": "Camera movement preserves the real spider and bubble; moving arrows and probe illustrate the mechanism without posing as measured trajectories.",
+          "basis": "Shots 1-7 transition/settled/middle samples; no axis, numerical rate or simulated experiment is displayed."
         },
         "payoff": {
           "decision": "pass",
-          "finding": "Closing answers how the air chamber stays breathable longer: oxygen comes from the water across the air bell while nitrogen loss still requires replenishment.",
-          "basis": "Shot 4 oxygen transfer, shot 7 gas depletion, final 9th source still and last spoken sentence."
+          "finding": "The final physical-gill answer is conditional on a resting spider and does not promise permanent underwater survival.",
+          "basis": "Shots 6-9 captions and final photograph/title, compared with the discussion on resting demand and nitrogen loss."
         },
         "scope": {
           "decision": "pass",
-          "finding": "Spoken water temperature context is warm laboratory aquaria; results apply to resting needs, not universal active or wild demand. The spoken caveat has not been displaced into a footer.",
-          "basis": "Paper Methods/Results/Discussion plus actual final transcript and 'what this cannot prove' frame."
+          "finding": "Warm still water, resting spiders, nitrogen loss and untested active/wild conditions are retained in speech and legible labels.",
+          "basis": "Shot 8 settled and middle frames plus full final ASR; original article results/discussion pp.2178-2181."
         },
         "retelling": {
           "decision": "pass",
-          "finding": "A freshwater spider builds an underwater bubble; dissolved oxygen from surrounding water helps support a resting spider, but the air chamber needs occasional replacement.",
-          "basis": "Summary supported by every encoded beat, and bounded by spoken nitrogen/active/wild limitations."
+          "finding": "A viewer can retell that the spider builds an air home, oxygen enters from surrounding water, and the bell still shrinks and needs replenishment.",
+          "basis": "Independent cross-check of the opening question, oxygen diagram, shrinking bell and final conditional payoff."
         }
       }
     },
     "branding_review": {
-      "standard": "toxic-tales-branding-v1",
-      "reviewer": "TT-006 separate branded-export QA desk",
-      "reviewed_at": "2026-11-08T12:25:41.310Z",
-      "decision": "pass",
-      "independent_from_script_author": true,
-      "logo_sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
-      "fingerprint": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
+      "fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df",
       "files": {
-        "media/tt-006-diving-bell-spider-oxygen-d34a246d6540.mp4": "be7ccc16374b8e1951669da564f8c65de9a495550549e4b56c08aaf7ddaccb60",
-        "media/tt-006-diving-bell-spider-oxygen-d34a246d6540_cover.jpg": "332ae3063461fe2c684764ca9e051e0b7b48b2332d12facef50f99fe50a50404"
+        "media/tt-006-diving-bell-spider-oxygen-6f32e96cb564.mp4": "4611a09a346314cb2f81b2696180e4c0334429adf9f500c39e6037a0e919f847",
+        "media/tt-006-diving-bell-spider-oxygen-6f32e96cb564_cover.jpg": "2a68f1bbeb377d7265fd5176fb788a0e9e2e4054e530908b14670b1ea9e6f58e"
       },
       "evidence_sha256": "1c5b5cca782a1f7586a3103c15009f525e4e3126869636447b620a052793c8ea",
+      "reviewer": "Codex independent exact-export review / replacement_review",
+      "reviewed_at": "2026-11-09T08:18:01.862031Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "standard": "toxic-tales-branding-v1",
+      "logo_sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
       "reviewed_encoded_frames": true,
       "reviewed_opening_frames": true,
       "reviewed_every_shot_and_transition": true,
@@ -469,131 +469,180 @@
       "checks": {
         "actual_logo": {
           "decision": "pass",
-          "finding": "Real green flask/plant/Asellus logo appears top left in 0/1s opening, every midpoint/boundary and exact cover; matches 240px pinned brand master.",
-          "basis": "Inspect actual opening frames, every shot and 1080px cover; pinned brand master SHA256."
+          "finding": "The original green Toxic Tales flask logo is visible from the first encoded frame and retained through the ending and cover.",
+          "basis": "Opening 0/1s, all shot grids, final frame and cover; archived logo SHA-256 1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742."
         },
         "placement": {
           "decision": "pass",
-          "finding": "Small logo is readable against dark background and does not cover spider eye, visual arrows, scientific labels or spoken subtitles.",
-          "basis": "Upper-left asset box 82,72,140,140 verified against 360px and 1080px actual frames."
+          "finding": "Logo stays in the upper-left safe area and does not cover the organism, core graphic, title or speech captions.",
+          "basis": "Full-size opening/final frames and all narrow phone-scale shot panels; declared display box [82,72,140,140]."
         },
         "clean_frames": {
           "decision": "pass",
-          "finding": "No permanent bottom production fine-print, source/method footer, progress bar, Field notes or episode code in final source-specific frames.",
-          "basis": "All source-derived encoded shots and 26/16 before-after boundary frames, final shot."
+          "finding": "No production footer, progress bar, field-note label, episode code or debug overlay appears in the film.",
+          "basis": "All encoded shot/transition samples and final frame. The small source/scope labels are meaningful scientific explanation, not production chrome."
         },
         "captions_and_labels": {
           "decision": "pass",
-          "finding": "Manrope speech captions are phone-readable with no two-line overflow. Oxygen flow, optode and gas loss labels are scientific explanation rather than microtext.",
-          "basis": "Actual 360px contact thumbnails, boundary frames, ASR and phone-scale visual inspection."
+          "finding": "Speech captions form one stable, high-contrast layer; titles and useful figure labels are readable and do not collide in settled frames.",
+          "basis": "All actual shot samples and opening/final frames; independent caption bounds/order/token checks."
         },
         "scientific_limits": {
           "decision": "pass",
-          "finding": "Resting demand, nitrogen escape, eventual replenishment and caveat about active spiders remain spoken with clear corresponding panels.",
-          "basis": "Original full-text evidence, actual voice transcript, material limits in final shots."
+          "finding": "Resting spiders, warm still aquarium water, bell shrinkage and limited wild/active generalisation remain legible and spoken.",
+          "basis": "Read Seymour and Hetz (2011), pp.2175-2181, including methods, results and discussion. Warm stagnant aquarium oxygen measurements and resting respirometry support a physical gill for many resting spiders, not unlimited active-animal oxygen supply. Fourteen empty bells came from eleven spiders; the film invents no sample count or rate. Nitrogen loss and later surface-air replacement remain explicit. Real wildlife photographs are reference images, not experiment records."
         },
         "provenance": {
           "decision": "pass",
-          "finding": "Final plain-text Instagram caption includes stable TT-006, paper DOI, research archive, CC BY authors, changes, reference-versus-experiment and synthetic narration disclosures.",
-          "basis": "Complete plain Instagram post text, evidence/<episode>.md, generated sources/<episode>.html; research/full licence links."
+          "finding": "Two actual CC BY 4.0 wildlife photographs by bykovskii and Lennart Lennuk retain creator, source-page, licence and crop/grade attribution; diagram animation is original conceptual work. Archived logo is owner-authorized and pinned fonts are SIL OFL 1.1.",
+          "basis": "Primary source/licence pages checked independently on 9 November 2026; manifest asset/font receipts, episode credits and pinned hashes match the reviewed source."
         },
         "reference_imagery": {
           "decision": "pass",
-          "finding": "Wild spider stills never masquerade as research micro-optode footage; the stylised instruments and gas bubbles are self-evidently conceptual, and archival source details disambiguate.",
-          "basis": "Original assets' source pages, study classification, actual encoded footage and diagrams."
+          "finding": "Both spider photographs are accurately identified reference wildlife; the artwork probe and arrows are not labelled as recorded experimental data.",
+          "basis": "Compared encoded frames with episode visual plan, manifest asset provenance and original full paper."
         }
       }
     },
-    "release_note": "Exact exported bytes and source hashes after cleaned caption were independently assessed in a separate final editorial/branding QA pass. Must pass current published Pages byte verification, duplicate, rights, account, quota and provider readback before scheduling. No listening claim.",
-    "publication_eligible": true,
-    "media_commit": "97e6198957e3a14a793b39dfdeb0b542e44cc7dc",
+    "motion_review": {
+      "fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df",
+      "files": {
+        "media/tt-006-diving-bell-spider-oxygen-6f32e96cb564.mp4": "4611a09a346314cb2f81b2696180e4c0334429adf9f500c39e6037a0e919f847",
+        "media/tt-006-diving-bell-spider-oxygen-6f32e96cb564_cover.jpg": "2a68f1bbeb377d7265fd5176fb788a0e9e2e4054e530908b14670b1ea9e6f58e"
+      },
+      "evidence_sha256": "1c5b5cca782a1f7586a3103c15009f525e4e3126869636447b620a052793c8ea",
+      "reviewer": "Codex independent exact-export review / replacement_review",
+      "reviewed_at": "2026-11-09T08:18:01.862031Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "standard": "toxic-tales-motion-v1",
+      "source_sha256": "9694ea7ccfb7e3d7e74c6298971993cc6c5ef13ecc3d0a9c22f1913f720ec1b0",
+      "motion_spec_sha256": "6792ffb40f34ca786edc51a4dfc234e8ad0622883c64c46fe611b71787261160",
+      "reviewed_encoded_frames": true,
+      "reviewed_every_shot_and_transition": true,
+      "reviewed_phone_scale": true,
+      "moving_playback_review_claimed": false,
+      "review_method": "Independently viewed actual encoded 0.18-second transition, 0.7-second settled and middle samples for every shot, plus the 0/1-second openings, final frame, contact sheet and cover. Individual 540-pixel-wide frames and 270/360-pixel-wide grid panels were inspected. This is encoded-frame sampling, not continuous moving-playback review.",
+      "checks": {
+        "kinetic_text": {
+          "decision": "pass",
+          "finding": "Headlines enter with subtle line opacity/position changes and settle clearly above the illustration; the caption layer stays separate.",
+          "basis": "Opening 0/1s plus transition/settled/middle samples of all nine titles."
+        },
+        "transitions": {
+          "decision": "pass",
+          "finding": "Feathered artwork wipes resolve without obscuring the stationary logo or doubling speech captions. Brief partially revealed nonnumeric labels are transition states, not stable misinformation.",
+          "basis": "All eight shot changes sampled at 0.18s and after settlement, including probe-to-oxygen, gas-loss and final-photo transitions."
+        },
+        "ecological_motion": {
+          "decision": "pass",
+          "finding": "Moving oxygen arrows, gently changing plants, the entering probe and decreasing bell shape are legible conceptual explanations.",
+          "basis": "Shots 2 and 4-7 sampled over time; directions and shrinkage match qualitative paper mechanisms, without claimed rates."
+        },
+        "camera_motion": {
+          "decision": "pass",
+          "finding": "The bounded crop/push keeps the spider, air bubble and final photo subject visible throughout sampled times.",
+          "basis": "Shots 1, 3 and 9 opening/settled/middle/final samples; manifest reference-photo share 0.3407."
+        },
+        "evidence_bound_data": {
+          "decision": "pass",
+          "finding": "No numeric metric is introduced. Oxygen transfer and shrinking are qualitative, and resting/warm-water limits accompany the finding.",
+          "basis": "Empty motion.metrics receipt, source-bound motion hash, original study pp.2178-2181 and actual shots 4-8."
+        },
+        "caption_sync": {
+          "decision": "pass",
+          "finding": "All 30 caption chunks reproduce narration tokens in order, fit within final duration and do not overlap; no second caption layer appears through transitions.",
+          "basis": "Independent token/time checks on exact manifest, segment/final ASR inspection and all shot samples; final caption ends at 53.6307s before 53.875s video end."
+        }
+      }
+    },
     "listening_review_claimed": false,
-    "source_sha256": "6dec916122c8a936e896d7777ddb13f584553f6f144fba189d6d24301ba470bb"
+    "moving_playback_review_claimed": false,
+    "release_note": "Fresh independent review of the exact Linux motion replacement, not inherited approval of the previous film. Authorized replacement must retain existing provider post IDs, dates and destinations. Publishing still requires exact public bytes and current provider readback; this record itself does not schedule a post. No listening or continuous-playback claim."
   },
   "TT-007": {
+    "fingerprint": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1",
+    "files": {
+      "media/tt-007-bumblebees-play-with-balls-5e2a2773aacd.mp4": "0718599755be4c84f573fa025077cd99ce39bf19ccfb070c2c3ac771b9bccb21",
+      "media/tt-007-bumblebees-play-with-balls-5e2a2773aacd_cover.jpg": "e135568b0dca854ba3c6ae22ecd426387d2999f2d7b9647c832d755c12b2c934"
+    },
+    "evidence_sha256": "7853e9a54b1b1e006b0c43178d12a84dbced821c7112d30b396f8f7da4f05fa2",
     "episode_id": "TT-007",
     "decision": "release",
     "publication_enabled": true,
     "publication_eligible": true,
-    "reviewer": "TT-007 separate final encoded-export QA desk",
-    "reviewed_at": "2026-11-08T12:25:41.310Z",
-    "media_commit": "97e6198957e3a14a793b39dfdeb0b542e44cc7dc",
-    "verification_run": 42479311271,
-    "fingerprint": "828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db",
-    "evidence_sha256": "7853e9a54b1b1e006b0c43178d12a84dbced821c7112d30b396f8f7da4f05fa2",
-    "files": {
-      "media/tt-007-bumblebees-play-with-balls-828b394d3351.mp4": "3f8245a5dec4bec9b30e6f514ba46e8657bf91835a7036d19bfe989f7604a495",
-      "media/tt-007-bumblebees-play-with-balls-828b394d3351_cover.jpg": "38d68de52a9711a5979df7baac1dff23698f1762fad2d2d342b7bc577c8d9f9c"
-    },
+    "reviewer": "Codex independent exact-export review / replacement_review",
+    "reviewed_at": "2026-11-09T08:18:01.862031Z",
+    "source_commit": "8031742e670141d9d5deb532d2109c08382b172a",
+    "media_commit": "8031742e670141d9d5deb532d2109c08382b172a",
+    "verification_run": 42583051613,
     "duration_seconds": 56.416667,
-    "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-007-contact.jpg?review=97e61989",
-    "scientific_review": "Read original Galpayage Dona et al. 2022 Animal Behaviour 194 pp.239–251, distinct experiments 1–3 and limitations; no food reward, 910 actions from 45 bees not independent individuals, age-dependent trend and colour association support a play-like operational interpretation, not a direct emotional measurement or wild prevalence.",
-    "visual_review": "Final real primary footage is clearly identified and placed in a dark-designed landscape insert, not blown up to fake portrait video. Conceptual foraging-route, age-group and conditioned-colour figures convey one idea each; final reference bee fills the frame. Original 1080 macro cover legible with actual logo.",
-    "audio_review": "Final 56.4167s H264/AAC neural voice, integrated -16.75 LUFS and -5.32 dBTP, 98.14% normalized ASR similarity. Exact matched phrases bumblebee, wooden ball, no nectar, young bees, wild bees, cannot directly reveal. An ASR punctuation comma in 'An insect rolling a ball' is nonmaterial. No direct audio listening performed.",
-    "narrative_review": "Nine scientific beats connect a mystery (rolling without reward) to the unobstructed food route, observed repeated ball rolling, separate age test, separate colour association, rewarding interpretation and explicit laboratory/feelings limit before an organism-based payoff.",
+    "source_sha256": "085fb98723dbd80cbc2f6962771a192cceea0d74c81eba52b5f5f5a29e9863e3",
+    "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-007-contact.jpg?review=8031742",
+    "scientific_review": "Read Galpayage Dona et al. (2022), Animal Behaviour 194:239-251, including all three experiments and limitations. Repeated ball rolling without a food reward, the separate age/novelty comparison and the separate colour-association test support the cautious play-like interpretation. The displayed 11 of 13 is the young cohort from Experiment 2, not the 45-bee first experiment or the 910 repeated actions. Count is printed on p.244 and Fig.8 is on p.247; the frozen evidence provenance locator says p.245, a retained locator error explicitly resolved by this full-text review. Feelings and wild prevalence remain unmeasured here.",
+    "visual_review": "Independently viewed actual encoded 0.18-second transition, 0.7-second settled and middle samples for every shot, plus the 0/1-second openings, final frame, contact sheet and cover. Individual 540-pixel-wide frames and 270/360-pixel-wide grid panels were inspected. This is encoded-frame sampling, not continuous moving-playback review.",
+    "audio_review": "Inspected all nine segment scripts/ASR transcripts, the final encoded ASR transcript, all 33 caption timings and final-file loudness report. Final normalized similarity is 0.9813665; differences are British/US spellings and punctuation, including movable/moveable and a comma after rolling. No reversed negation or altered number was identified. Final-file measured input loudness is -16.76 LUFS, true peak -5.43 dBTP. No direct audio listening or perceptual pronunciation certification was performed.",
+    "narrative_review": "The exported fourteen shots move from real study footage of ball rolling without nectar, to the unobstructed food route, repeated unrewarded rolling, a separate age test, colour-linked choice, a rewarding-activity interpretation and explicit laboratory/feelings limits. The final question remains tentative.",
     "final_editorial_review": {
-      "standard": "story-first-v1",
-      "reviewer": "TT-007 separate final encoded-export QA desk",
-      "reviewed_at": "2026-11-08T12:25:41.310Z",
-      "decision": "pass",
-      "independent_from_script_author": true,
-      "reviewed_encoded_frames": true,
-      "source_sha256": "185ddd66c4c57284aabfe712f28116c234c867c60dd955c899b64f71c65df6a9",
-      "fingerprint": "828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db",
+      "fingerprint": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1",
       "files": {
-        "media/tt-007-bumblebees-play-with-balls-828b394d3351.mp4": "3f8245a5dec4bec9b30e6f514ba46e8657bf91835a7036d19bfe989f7604a495",
-        "media/tt-007-bumblebees-play-with-balls-828b394d3351_cover.jpg": "38d68de52a9711a5979df7baac1dff23698f1762fad2d2d342b7bc577c8d9f9c"
+        "media/tt-007-bumblebees-play-with-balls-5e2a2773aacd.mp4": "0718599755be4c84f573fa025077cd99ce39bf19ccfb070c2c3ac771b9bccb21",
+        "media/tt-007-bumblebees-play-with-balls-5e2a2773aacd_cover.jpg": "e135568b0dca854ba3c6ae22ecd426387d2999f2d7b9647c832d755c12b2c934"
       },
       "evidence_sha256": "7853e9a54b1b1e006b0c43178d12a84dbced821c7112d30b396f8f7da4f05fa2",
-      "inspection_scope": "Final H264/AAC 1080x1920 MP4 and cover SHA-256 independently verified from 42479311271 exact preview artifact; verified both retained identical image/video bytes of high-contrast 424789 review after caption-only cleanup. Viewed actual 14 midpoints, all 26 internal pre/post shot transitions, opening at 0 and 1 s, actual final frame and full 1080 cover, including phone-scale frame. Read final 56.4167s source-aligned ASR and loudness. Neither continuous audio listening nor listening parity with owner work is claimed.",
-      "listening_review_claimed": false,
-      "continuous_playback_review_claimed": false,
+      "reviewer": "Codex independent exact-export review / replacement_review",
+      "reviewed_at": "2026-11-09T08:18:01.862031Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "standard": "story-first-v1",
+      "reviewed_encoded_frames": true,
+      "source_sha256": "085fb98723dbd80cbc2f6962771a192cceea0d74c81eba52b5f5f5a29e9863e3",
       "checks": {
         "cold_viewer": {
           "decision": "pass",
-          "finding": "At encoded frame 0 a real research bumblebee is visible moving near coloured balls in the original study footage; the opening spoken line explicitly names its rolling and lack of nectar, with a clear title and labelled actual study footage.",
-          "basis": "Actual opening 0s/1s, original source video and first caption in finished export."
+          "finding": "Actual study footage, the bee-and-ball title and the no-nectar question establish the organism, action and mystery immediately.",
+          "basis": "Opening 0s/1s and shots 1-2 encoded samples; footage is the paper supplement S1 under CC BY 4.0."
         },
         "story": {
           "decision": "pass",
-          "finding": "Nine scientific beats connect a mystery (rolling without reward) to the unobstructed food route, observed repeated ball rolling, separate age test, separate colour association, rewarding interpretation and explicit laboratory/feelings limit before an organism-based payoff.",
-          "basis": "Review 14 encoded midpoints/26 shot boundaries + full output ASR and three separate original experiments."
+          "finding": "Observed rolling is followed by the unobstructed route, repeated behaviour, separate age and colour tests, then the interpretation and limit.",
+          "basis": "All fourteen encoded shots and all nine narration segments, checked against separate Experiments 1-3."
         },
         "visuals": {
           "decision": "pass",
-          "finding": "Three shots use correctly credited actual CC BY study footage, presented wide rather than falsely stretched; rest includes accurate original route/choice/age/ball schematics and a species-correct closing CC0 macro. New dark-green background eliminates the washed-out grey wash. Some conceptual panels have minimal movement, but convey a distinct necessary experimental comparison.",
-          "basis": "Actual 14-portrait contact and phone-sized frame, full 1080 cover, exact video SHA matched to inspected 424789 review."
+          "finding": "Real experimental footage remains visibly distinct from original diagrams. The count has eleven highlighted individuals among thirteen outlined units once the reveal settles.",
+          "basis": "Shots 1-6, count shot 7 at 0.7s and midpoint, age shot 8 and colour shots 9-10; intact fixed numeral 11 of 13 throughout visible count frames."
         },
         "payoff": {
           "decision": "pass",
-          "finding": "The end gives an answer within this Reel: unrewarded ball rolling is play-like by operational criteria and may itself be rewarding, rather than an untested implication deferred elsewhere.",
-          "basis": "Last three conceptual/animal shots, final video frame and exact spoken interpretation."
+          "finding": "The final question offers play as a cautious interpretation rather than proving human-like happiness or routine wild play.",
+          "basis": "Shots 11-14 titles, captioned cannot-directly-reveal statement and final question mark."
         },
         "scope": {
           "decision": "pass",
-          "finding": "The film keeps 'young bees' and chamber-colour tests separate and ends with the explicit scientific caveat that lab behaviour cannot directly reveal bee feelings or prevalence in the wild.",
-          "basis": "Final ASR and separate scope frames checked against original Methods/Discussion and evidence source."
+          "finding": "The count explicitly labels young cohort only, separate laboratory age test; feelings and wild activity are not measured in this paper.",
+          "basis": "Count title/labels and shots 12-13; full article pp.242-244, 247 and 249. Wild title says not tested here, avoiding a universal claim about all literature."
         },
         "retelling": {
           "decision": "pass",
-          "finding": "Lab bumblebees rolled inedible wooden balls even with unrestricted access to food; an age trend and conditioned colour choice suggest play-like and rewarding behaviour, not proven subjective joy.",
-          "basis": "Narration/visual sequence supports one concise story and explicit feelings/wild limits."
+          "finding": "A viewer can retell that captive bees roll balls without food, young bees rolled more in a different test, and play-like does not establish feelings or wild prevalence.",
+          "basis": "Independent comparison of the actual evidence sequence and closing caveat with full-paper methods/results."
         }
       }
     },
     "branding_review": {
-      "standard": "toxic-tales-branding-v1",
-      "reviewer": "TT-007 separate branded-export QA desk",
-      "reviewed_at": "2026-11-08T12:25:41.310Z",
-      "decision": "pass",
-      "independent_from_script_author": true,
-      "logo_sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
-      "fingerprint": "828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db",
+      "fingerprint": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1",
       "files": {
-        "media/tt-007-bumblebees-play-with-balls-828b394d3351.mp4": "3f8245a5dec4bec9b30e6f514ba46e8657bf91835a7036d19bfe989f7604a495",
-        "media/tt-007-bumblebees-play-with-balls-828b394d3351_cover.jpg": "38d68de52a9711a5979df7baac1dff23698f1762fad2d2d342b7bc577c8d9f9c"
+        "media/tt-007-bumblebees-play-with-balls-5e2a2773aacd.mp4": "0718599755be4c84f573fa025077cd99ce39bf19ccfb070c2c3ac771b9bccb21",
+        "media/tt-007-bumblebees-play-with-balls-5e2a2773aacd_cover.jpg": "e135568b0dca854ba3c6ae22ecd426387d2999f2d7b9647c832d755c12b2c934"
       },
       "evidence_sha256": "7853e9a54b1b1e006b0c43178d12a84dbced821c7112d30b396f8f7da4f05fa2",
+      "reviewer": "Codex independent exact-export review / replacement_review",
+      "reviewed_at": "2026-11-09T08:18:01.862031Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "standard": "toxic-tales-branding-v1",
+      "logo_sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
       "reviewed_encoded_frames": true,
       "reviewed_opening_frames": true,
       "reviewed_every_shot_and_transition": true,
@@ -603,43 +652,95 @@
       "checks": {
         "actual_logo": {
           "decision": "pass",
-          "finding": "Exact Toxic Tales circular mark is consistently visible in all 14 actual encoded midpoints, first two frames, all boundaries, final photo and cover.",
-          "basis": "Inspect actual opening frames, every shot and 1080px cover; pinned brand master SHA256."
+          "finding": "The original green Toxic Tales flask logo is visible from the first encoded frame and retained through the ending and cover.",
+          "basis": "Opening 0/1s, all shot grids, final frame and cover; archived logo SHA-256 1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742."
         },
         "placement": {
           "decision": "pass",
-          "finding": "Upper-left logo stays against dark or shaded background, away from the study bee, lab balls, comparison diagrams, captions and reference-photo subject.",
-          "basis": "Upper-left asset box 82,72,140,140 verified against 360px and 1080px actual frames."
+          "finding": "Logo stays in the upper-left safe area and does not cover the organism, core graphic, title or speech captions.",
+          "basis": "Full-size opening/final frames and all narrow phone-scale shot panels; declared display box [82,72,140,140]."
         },
         "clean_frames": {
           "decision": "pass",
-          "finding": "New frame layout has no fine-print bottom production notice, progress indicator or Field notes. 'Actual study footage' label is brief, large and scientifically important to clarify the rare genuine trial footage.",
-          "basis": "All source-derived encoded shots and 26/16 before-after boundary frames, final shot."
+          "finding": "No production footer, progress bar, field-note label, episode code or debug overlay appears in the film.",
+          "basis": "All encoded shot/transition samples and final frame. The small source/scope labels are meaningful scientific explanation, not production chrome."
         },
         "captions_and_labels": {
           "decision": "pass",
-          "finding": "Final white Manrope captions are large and readable against dark panels at 360px, no clipping; coloured route/age/chamber distinctions are qualitative and not invented data.",
-          "basis": "Actual 360px contact thumbnails, boundary frames, ASR and phone-scale visual inspection."
+          "finding": "Speech captions form one stable, high-contrast layer; titles and useful figure labels are readable and do not collide in settled frames.",
+          "basis": "All actual shot samples and opening/final frames; independent caption bounds/order/token checks."
         },
         "scientific_limits": {
           "decision": "pass",
-          "finding": "Spoken outcome is play-like, interpreted as rewarding; decisive qualifiers 'laboratory' and cannot directly reveal feelings or wild incidence persist in final caption/voice.",
-          "basis": "Original full-text evidence, actual voice transcript, material limits in final shots."
+          "finding": "Separate age-test scope, no food reward, play-like wording, no direct feelings measure and wild play not tested here remain visible and spoken.",
+          "basis": "Read Galpayage Dona et al. (2022), Animal Behaviour 194:239-251, including all three experiments and limitations. Repeated ball rolling without a food reward, the separate age/novelty comparison and the separate colour-association test support the cautious play-like interpretation. The displayed 11 of 13 is the young cohort from Experiment 2, not the 45-bee first experiment or the 910 repeated actions. Count is printed on p.244 and Fig.8 is on p.247; the frozen evidence provenance locator says p.245, a retained locator error explicitly resolved by this full-text review. Feelings and wild prevalence remain unmeasured here."
         },
         "provenance": {
           "decision": "pass",
-          "finding": "Publication caption includes DOI, actual full text archive, CC BY 4.0 original study video from authors, CC0 reference stills, edits and synthetic narration, and clarifies concepts are not raw study data.",
-          "basis": "Complete plain Instagram post text, evidence/<episode>.md, generated sources/<episode>.html; research/full licence links."
+          "finding": "Actual supplement S1 footage credits the six paper authors under CC BY 4.0, with extraction/crop changes disclosed; Marco Almbauer head and Aethonatic flower references are CC0 1.0. Archived logo and SIL OFL 1.1 fonts retain their receipts.",
+          "basis": "Primary source/licence pages checked independently on 9 November 2026; manifest asset/font receipts, episode credits and pinned hashes match the reviewed source."
         },
         "reference_imagery": {
           "decision": "pass",
-          "finding": "The bee rolling inserts are genuine published supplementary study video; the ending bee-on-flower photo is only a wildlife reference and diagrams are conspicuously conceptual, never claimed as observed recorded results.",
-          "basis": "Original assets' source pages, study classification, actual encoded footage and diagrams."
+          "finding": "Actual study footage is expressly labelled. Head cover and flower ending are real species references, not study subjects or wild ball-rolling evidence.",
+          "basis": "Compared encoded frames with episode visual plan, manifest asset provenance and original full paper."
+        }
+      }
+    },
+    "motion_review": {
+      "fingerprint": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1",
+      "files": {
+        "media/tt-007-bumblebees-play-with-balls-5e2a2773aacd.mp4": "0718599755be4c84f573fa025077cd99ce39bf19ccfb070c2c3ac771b9bccb21",
+        "media/tt-007-bumblebees-play-with-balls-5e2a2773aacd_cover.jpg": "e135568b0dca854ba3c6ae22ecd426387d2999f2d7b9647c832d755c12b2c934"
+      },
+      "evidence_sha256": "7853e9a54b1b1e006b0c43178d12a84dbced821c7112d30b396f8f7da4f05fa2",
+      "reviewer": "Codex independent exact-export review / replacement_review",
+      "reviewed_at": "2026-11-09T08:18:01.862031Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "standard": "toxic-tales-motion-v1",
+      "source_sha256": "085fb98723dbd80cbc2f6962771a192cceea0d74c81eba52b5f5f5a29e9863e3",
+      "motion_spec_sha256": "ab559786a2e51b98cd9ac0d7a228181e2a03c9cafde27c078146434cb626a892",
+      "reviewed_encoded_frames": true,
+      "reviewed_every_shot_and_transition": true,
+      "reviewed_phone_scale": true,
+      "moving_playback_review_claimed": false,
+      "review_method": "Independently viewed actual encoded 0.18-second transition, 0.7-second settled and middle samples for every shot, plus the 0/1-second openings, final frame, contact sheet and cover. Individual 540-pixel-wide frames and 270/360-pixel-wide grid panels were inspected. This is encoded-frame sampling, not continuous moving-playback review.",
+      "checks": {
+        "kinetic_text": {
+          "decision": "pass",
+          "finding": "Headlines have restrained staggered entrances and settle with sufficient contrast; fixed data numerals remain whole and legible.",
+          "basis": "Opening 0/1s and all fourteen transition/settled/middle shot samples, including the 11-of-13 count."
+        },
+        "transitions": {
+          "decision": "pass",
+          "finding": "The count enters and exits through a neutral fade, so neither numerator nor denominator is sliced or joined with another scene. Other wipes keep one stable logo and caption layer.",
+          "basis": "Shot 7 at 24.40s is neutral; 24.92s and 25.72s show intact count; shot 8 at 27.40s has only the age comparison. Remaining shot-change samples inspect cleanly."
+        },
+        "ecological_motion": {
+          "decision": "pass",
+          "finding": "Actual laboratory movement is retained in the licensed study clips. Original bee/ball rotation and swaying diagram elements are clearly illustrative, without invented behavioural timing.",
+          "basis": "Shots 1-2/5 use supplement footage; changing ball spokes and bee poses in shots 6/11, age and choice diagram samples are conceptual."
+        },
+        "camera_motion": {
+          "decision": "pass",
+          "finding": "The final licensed flower photograph pans gently while retaining the bee; the laboratory video keeps its honest landscape insert.",
+          "basis": "Final shot settled/middle/final frames and actual footage frames; manifest reference-photo share 0.1019."
+        },
+        "evidence_bound_data": {
+          "decision": "pass",
+          "finding": "The fixed result is eleven young bees of thirteen, not an animated time series. Denominator, cohort and separate-test labels persist; no 910-actions/animal-count conflation occurs.",
+          "basis": "Original Experiment 2 result p.244 and Fig.8 p.247; count receipt, exact 11/13 graphic and visible Animated reveal - not a time series label."
+        },
+        "caption_sync": {
+          "decision": "pass",
+          "finding": "All 33 caption chunks reproduce narration tokens in order, remain within final duration and do not overlap; science qualifiers remain readable while illustrations change.",
+          "basis": "Independent token/time checks, all segment/final ASR and encoded shot samples; final caption ends at 56.0867s before 56.4167s video end."
         }
       }
     },
     "listening_review_claimed": false,
-    "release_note": "Exact exported bytes and source hashes after cleaned caption were independently assessed in a separate final editorial/branding QA pass. Must pass current published Pages byte verification, duplicate, rights, account, quota and provider readback before scheduling. No listening claim.",
-    "source_sha256": "185ddd66c4c57284aabfe712f28116c234c867c60dd955c899b64f71c65df6a9"
+    "moving_playback_review_claimed": false,
+    "release_note": "Fresh independent review of the exact Linux motion replacement, not inherited approval of the previous film. Authorized replacement must retain existing provider post IDs, dates and destinations. Publishing still requires exact public bytes and current provider readback; this record itself does not schedule a post. No listening or continuous-playback claim."
   }
 }

@@ -43,5 +43,14 @@
   "provider_posts_modified": 0,
   "scheduling_controls_modified": false,
   "publisher_timing_observation": "UI exposes Daily / Monitoring with Central European Time; 10:15 Europe/Vienna remains in saved instructions, not a separately visible clock control.",
-  "future_execution_proven": false
+  "future_execution_proven": false,
+  "scheduled_media_replacement_handoff": {
+    "checked_at": "2026-11-09T08:03:11.744Z",
+    "producer_prompt_readback_verified": true,
+    "publisher_prompt_readback_verified": true,
+    "active": true,
+    "task_schedule_controls_changed": false,
+    "new_tasks": 0,
+    "scope": "Owner-authorized replacement of pending TT006/TT007 media and linked Tuesday Short; original UUIDs and slots retained."
+  }
 }
