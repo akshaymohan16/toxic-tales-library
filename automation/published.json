@@ -594,23 +594,22 @@
       "provider_readback": {
         "id": 421493849,
         "uuid": "4422280930322105807",
-        "text": "How does a spider breathe underwater?\n\nThe diving bell spider (Argyroneta aquatica) builds a silk-supported pocket of air among freshwater plants. Oxygen dissolved in the surrounding water can diffuse into this bell, helping it act as a physical gill.\n\nSeymour and Hetz measured oxygen and gas exchange in laboratory diving bells. Many bells supplied enough oxygen for resting spiders in warm, still aquarium water. But nitrogen escapes, the chamber shrinks, and the spider eventually needs fresh surface air. These results do not establish oxygen supply for every active spider or every natural habitat.\n\nTT-006 | Original research:\nSeymour, R. S. & Hetz, S. K. (2011). The diving bell and the spider: the physical gill of Argyroneta aquatica. Journal of Experimental Biology 214:2175–2181.\nhttps://doi.org/10.1242/jeb.056093\n\nFull sources, methods, limitations and media credits:\nhttps://akshaymohan16.github.io/toxic-tales-library/sources/tt-006.html\n\nVisual credits:\n• Underwater female with air bubble — bykovskii, CC BY 4.0:\nhttps://commons.wikimedia.org/wiki/File:Argyroneta_aquatica_female_with_bubble.jpeg\n• Water spider and freshwater crustacean — Lennart Lennuk, CC BY 4.0:\nhttps://commons.wikimedia.org/wiki/File:Waterspider_(Argyroneta_aquatica)_and_freshwater_crustacean_(Asellus_aquaticus).jpg\nLicence for both: https://creativecommons.org/licenses/by/4.0/\nPhotographs cropped, colour graded and animated for portrait presentation. They are wildlife reference images, not photographs of the experiment. Gas-transfer and measurement sequences are original conceptual illustrations, not recorded measurements. Synthetic narration. Official Toxic Tales logo.\n\n#ToxicTales #FreshwaterEcology #DivingBellSpider #Science #Shorts",
-        "firstCommentText": "",
-        "media": [
-          "https://static.metricool.com/planner/202611/7937614-file-7730075875026868133.mp4"
-        ],
-        "autoPublish": true,
-        "draft": false,
         "publicationDate": {
           "dateTime": "2026-11-10T10:00:00",
           "timezone": "Europe/Vienna"
         },
+        "text": "How does a spider breathe underwater?\n\nThe diving bell spider (Argyroneta aquatica) builds a silk-supported pocket of air among freshwater plants. Oxygen dissolved in the surrounding water can diffuse into this bell, helping it act as a physical gill.\n\nSeymour and Hetz measured oxygen and gas exchange in laboratory diving bells. Many bells supplied enough oxygen for resting spiders in warm, still aquarium water. But nitrogen escapes, the chamber shrinks, and the spider eventually needs fresh surface air. These results do not establish oxygen supply for every active spider or every natural habitat.\n\nTT-006 | Original research:\nSeymour, R. S. & Hetz, S. K. (2011). The diving bell and the spider: the physical gill of Argyroneta aquatica. Journal of Experimental Biology 214:2175–2181.\nhttps://doi.org/10.1242/jeb.056093\n\nFull sources, methods, limitations and media credits:\nhttps://akshaymohan16.github.io/toxic-tales-library/sources/tt-006.html\n\nVisual credits:\n• Underwater female with air bubble — bykovskii, CC BY 4.0:\nhttps://commons.wikimedia.org/wiki/File:Argyroneta_aquatica_female_with_bubble.jpeg\n• Water spider and freshwater crustacean — Lennart Lennuk, CC BY 4.0:\nhttps://commons.wikimedia.org/wiki/File:Waterspider_(Argyroneta_aquatica)_and_freshwater_crustacean_(Asellus_aquaticus).jpg\nLicence for both: https://creativecommons.org/licenses/by/4.0/\nPhotographs cropped, colour graded and animated for portrait presentation. They are wildlife reference images, not photographs of the experiment. Gas-transfer and measurement sequences are original conceptual illustrations, not recorded measurements. Synthetic narration. Official Toxic Tales logo.\n\n#ToxicTales #FreshwaterEcology #DivingBellSpider #Science #Shorts",
         "providers": [
           {
             "network": "youtube",
-            "status": "PENDING",
-            "detailedStatus": "Pending"
+            "id": "X333C5Dcxxo",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/X333C5Dcxxo",
+            "detailedStatus": "Published"
           }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202611/7937614-file-7730075875026868133.mp4"
         ],
         "youtubeData": {
           "title": "How a Diving Bell Spider Breathes Underwater | Toxic Tales",
@@ -620,16 +619,10 @@
           "isAiGeneratedContent": true,
           "notifySubscribers": true
         },
-        "instagramData": {
-          "autoPublish": true,
-          "isAiGenerated": false
-        },
-        "mediaAltText": [
-          null
-        ],
-        "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-7583590252245201324.jpeg"
+        "autoPublish": true,
+        "draft": false
       },
-      "provider_readback_checked_at": "2026-11-09T08:26:13.704Z",
+      "provider_readback_checked_at": "2026-11-10T09:13:49.656Z",
       "schedule_readback_verified": true,
       "publication_eligible": true,
       "receipt_saved_on": "2026-11-09T08:28:58.049309+00:00",
