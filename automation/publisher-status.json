@@ -39,7 +39,7 @@
     "conservative_projection_including_held_draft": 16,
     "note": "Observed counter plus all remaining planned Instagram and Tuesday YouTube destinations. Already-published baseline IDs are not counted twice; unknown writes reserve capacity.",
     "verified_in_this_run": false,
-    "observation_detail": "Authenticated Metricool UI counter3/20 observed 9 Nov before 10 Nov publications. Two further provider PUBLISHED receipts now establish at least5 November destinations. Counter not freshly read by accessible connector; no new destinations scheduled. Conservative existing projection16/20 includes held draft.",
+    "observation_detail": "Planner UI counter 3/20 last actually observed 9 Nov, before Tuesday publications. Five independent PUBLISHED provider receipts now confirm a lower bound of 5 November used; no new scheduling this run. Existing conservative 16/20 month projection with pending and held reservations remains inside cap, but is not a new authenticated counter read.",
     "confirmed_published_lower_bound": 5
   },
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
@@ -74,7 +74,7 @@
   "pending_new_pilot_post_id": null,
   "pilot_record_status": "published_owner_approved",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
-  "updated_at": "2026-11-10T09:11:39.506Z",
+  "updated_at": "2026-11-10T09:17:08.521Z",
   "latest_publication": {
     "post_id": "TT-005-REEL",
     "metricool_id": "420178205",
@@ -88,9 +88,10 @@
       "TT-002-REEL",
       "TT-004-REEL",
       "TT-005-REEL",
-      "TT-006-REEL"
+      "TT-006-REEL",
+      "TT-006-YOUTUBE-SHORT"
     ],
-    "latest_delivery": "TT-006-REEL owner notification prepared in this automation result. First TT-006 YouTube Short notification held pending independently accessible public page/channel/title check.",
+    "latest_delivery": "One automation-result notification reporting both newly confirmed videos is emitted this run. Push/email receipt not independently confirmed.",
     "delivery_status": "ChatGPT task push/email settings unknown; owner notification emitted only for positively confirmed PUBLISHED, never merely scheduled."
   },
   "recurring_tasks": {
@@ -141,7 +142,7 @@
     "421493462",
     "421493849"
   ],
-  "provider_receipts_status": "10 November 2026 fresh full-month Metricool readback: TT-006 Instagram Reel provider PUBLISHED https://www.instagram.com/reel/Dfji4yhnB6c/ and linked YouTube Short provider PUBLISHED https://www.youtube.com/shorts/X333C5Dcxxo on the correct original UUIDs. Thursday TT-005 carousel and Saturday TT-007 Reel remain PENDING autoPublish=true/draft=false. Public YouTube page itself could not be independently loaded to verify live channel/content, so first-Short notification remains pending; Instagram newly published Reel notification recorded. No duplicate posting attempted.",
+  "provider_receipts_status": "As of 2026-11-10T09:17:08.521Z Metricool positively confirms TT-006 Instagram Reel PUBLISHED at https://www.instagram.com/reel/Dfji4yhnB6c/ and the original linked TT-006 YouTube Short PUBLISHED at https://www.youtube.com/shorts/X333C5Dcxxo. Separate public video oEmbed and channel page verified the title and channel UCDvftxMMdtGSntm-ezcPfCg (one-time QA 42789107581). Both deduplicated publication notifications recorded. TT-005 companion carousel and TT-007 Saturday Reel are PENDING on original UUIDs; no duplicate submissions.",
   "next_batch": {
     "week_start": "2026-11-16",
     "slots": [
@@ -172,15 +173,15 @@
     "after_state_changes": true,
     "issue_prefix": "Toxic Tales readiness: ",
     "repo_issue_alert_delivery": "GitHub issue notification depends on user's GitHub notification settings",
-    "last_checked_at": "2026-11-10T08:57:29.601Z",
-    "latest_run_id": 42712494849,
+    "last_checked_at": "2026-11-10T09:17:08.521Z",
+    "latest_run_id": 42789275558,
     "latest_run_result": "success",
     "prior_run_id": 42593942242,
     "prior_result": "failure_caused_by_changed_quota_basis_in_intermediate_heartbeat; corrected and next run 42594057697 passed",
     "open_readiness_issues": 0
   },
   "storage": "GitHub workflow 42482770601 successful with compact SHA-manifest verification and ~257 MiB artifacts vs former ~617 MiB. Historical duplicate artifact housekeeping workflow 42483693420 success: 51 redundant old archives totaling 6,834,278,226 bytes pruned; one latest legacy QA retained and live public media untouched.",
-  "issue_status": "No open Toxic Tales readiness issues; latest observed scheduled watchdog 42712494849 success (2026-11-09T22:30Z).",
+  "issue_status": "No open Toxic Tales readiness issues. Latest watchdog run 42789275558 passed after the first YouTube Short's independent public oEmbed/channel verification and exact provider receipt were recorded.",
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_channel_name": "Toxic Tales",
   "youtube_connection_verified": true,
@@ -188,7 +189,7 @@
   "verification_actor": "Owner-directed scheduled-media replacement run",
   "last_media_replacement": "automation/motion-replacement-2026-11-09.json",
   "provider_readback": {
-    "checked_at": "2026-11-10T09:11:39.506Z",
+    "checked_at": "2026-11-10T09:17:08.521Z",
     "brand_id": "7937614",
     "instagram_handle": "toxic_tales_eco",
     "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
@@ -266,5 +267,14 @@
     "new_video_exports_current": true,
     "do_not_revert_to_original": true
   },
-  "new_actionable_blocker": null
+  "new_actionable_blocker": null,
+  "first_youtube_live_verification": {
+    "post_id": "TT-006-YOUTUBE-SHORT",
+    "video_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
+    "channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+    "qa_workflow_run": 42789107581,
+    "result": "pass",
+    "checked_at": "2026-11-10T09:17:08.521Z",
+    "notice_recorded": true
+  }
 }
