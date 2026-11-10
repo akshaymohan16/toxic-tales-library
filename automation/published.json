@@ -667,17 +667,29 @@
       "youtube_made_for_kids": false,
       "youtube_is_ai_generated": true,
       "live_verification": {
-        "status": "public_page_verification_pending",
-        "checked_at": "2026-11-10T09:10:52.163Z",
-        "provider_published": true,
-        "provider_public_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
-        "connected_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
-        "exact_hosted_media_verified_in_replacement_record": true,
-        "public_page_access": "not independently confirmed: public YouTube page could not be retrieved in this run",
-        "notification_eligible": false
+        "decision": "pass",
+        "checked_at": "2026-11-10T09:16:05.767Z",
+        "url": "https://www.youtube.com/shorts/X333C5Dcxxo",
+        "channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+        "video_id": "X333C5Dcxxo",
+        "title": "How a Diving Bell Spider Breathes Underwater | Toxic Tales",
+        "public_oembed_title_match": true,
+        "public_oembed_author_name": "Toxic Tales",
+        "public_oembed_author_url": "https://www.youtube.com/@toxic_tales_eco",
+        "public_channel_page_id_match": true,
+        "independent_public_metadata_workflow": "https://github.com/akshaymohan16/toxic-tales-library/actions/runs/42789107581",
+        "verification_basis": "Independent GitHub free runner fetched publicly accessible YouTube oEmbed video metadata, matched video title, author channel handle and channel page ID; provider simultaneously confirmed PUBLISHED/public URL on exact scheduled UUID with previously verified motion media SHA. Video playback/audio were not independently observed."
       },
-      "notified": false,
-      "notification_pending_reason": "First Short owner notice awaits independent accessible-video and channel-content verification."
+      "notified": true,
+      "notified_at": "2026-11-10T09:16:05.767Z",
+      "publication_notification": {
+        "channel": "scheduled_automation_result",
+        "status": "emitted_in_this_run",
+        "notified_at": "2026-11-10T09:16:05.767Z",
+        "post_id": "TT-006-YOUTUBE-SHORT",
+        "public_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
+        "doi": "10.1242/jeb.056093"
+      }
     }
   ],
   "notified_post_ids": [
@@ -685,6 +697,8 @@
     "TT-004-REEL",
     "TT-005-REEL",
     "TT-006-REEL",
-    "instagram:TT-006-REEL"
+    "instagram:TT-006-REEL",
+    "TT-006-YOUTUBE-SHORT",
+    "youtube:TT-006-YOUTUBE-SHORT"
   ]
 }
