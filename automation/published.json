@@ -345,8 +345,8 @@
       "metricool_uuid": "-5193152553705388348",
       "publication_date": "2026-11-10T10:00:00+01:00",
       "timezone": "Europe/Vienna",
-      "status": "scheduled",
-      "provider_status": "PENDING",
+      "status": "published",
+      "provider_status": "PUBLISHED",
       "auto_publish": true,
       "draft": false,
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-5193152553705388348",
@@ -430,7 +430,22 @@
           null
         ],
         "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-17429599029430546809.jpeg"
-      }
+      },
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.instagram.com/reel/Dfji4yhnB6c/",
+      "published_confirmed_at": "2026-11-10T09:10:52.163Z",
+      "confirmation_source": "Fresh Metricool full-month readback confirms original UUID/numeric ID, expected motion-file hosted URL, provider PUBLISHED and publicUrl. Scheduled time is not an observed exact publication timestamp.",
+      "scheduled_time_is_not_actual_post_time": true,
+      "publication_notification": {
+        "channel": "scheduled_automation_result",
+        "status": "emitted_in_this_run",
+        "notified_at": "2026-11-10T09:10:52.163Z",
+        "post_id": "TT-006-REEL",
+        "public_url": "https://www.instagram.com/reel/Dfji4yhnB6c/",
+        "doi": "10.1242/jeb.056093"
+      },
+      "notified": true,
+      "notified_at": "2026-11-10T09:10:52.163Z"
     },
     {
       "post_id": "TT-007-REEL",
@@ -551,8 +566,8 @@
       "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
       "metricool_id": "421493849",
       "metricool_uuid": "4422280930322105807",
-      "status": "scheduled",
-      "provider_status": "PENDING",
+      "status": "published",
+      "provider_status": "PUBLISHED",
       "auto_publish": true,
       "draft": false,
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=4422280930322105807",
@@ -647,12 +662,36 @@
           "reason": "Explicit owner request for better animation; original UUID/time retained"
         }
       ],
-      "replacement_authorization": "automation/motion-replacement-2026-11-09.json"
+      "replacement_authorization": "automation/motion-replacement-2026-11-09.json",
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
+      "published_confirmed_at": "2026-11-10T09:10:52.163Z",
+      "confirmation_source": "Fresh Metricool full-month readback confirms original UUID/numeric ID, expected motion-file hosted URL, provider PUBLISHED and publicUrl. Scheduled time is not an observed exact publication timestamp.",
+      "scheduled_time_is_not_actual_post_time": true,
+      "youtube_video_id": "X333C5Dcxxo",
+      "youtube_title": "How a Diving Bell Spider Breathes Underwater | Toxic Tales",
+      "youtube_privacy": "public",
+      "youtube_made_for_kids": false,
+      "youtube_is_ai_generated": true,
+      "live_verification": {
+        "status": "public_page_verification_pending",
+        "checked_at": "2026-11-10T09:10:52.163Z",
+        "provider_published": true,
+        "provider_public_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
+        "connected_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+        "exact_hosted_media_verified_in_replacement_record": true,
+        "public_page_access": "not independently confirmed: public YouTube page could not be retrieved in this run",
+        "notification_eligible": false
+      },
+      "notified": false,
+      "notification_pending_reason": "First Short owner notice awaits independent accessible-video and channel-content verification."
     }
   ],
   "notified_post_ids": [
     "TT-002-REEL",
     "TT-004-REEL",
-    "TT-005-REEL"
+    "TT-005-REEL",
+    "TT-006-REEL",
+    "instagram:TT-006-REEL"
   ]
 }
