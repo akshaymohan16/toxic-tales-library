@@ -52,6 +52,34 @@ jobs:
               result['decision']='unverified'
               result['error']=type(e).__name__+': '+str(e)[:1500]
               traceback.print_exc()
+          if not ok:
+              try:
+                  import urllib.request,urllib.parse
+                  endpoint='https://www.youtube.com/oembed?url='+urllib.parse.quote(url,safe='')+'&format=json'
+                  headers={'User-Agent':'Mozilla/5.0 (compatible; ToxicTalesQA/1.0)'}
+                  with urllib.request.urlopen(urllib.request.Request(endpoint,headers=headers),timeout=12) as resp:
+                      oembed=json.load(resp)
+                  public_title=oembed.get('title')
+                  author_url=oembed.get('author_url','')
+                  verified_author_channel=channel in author_url
+                  channel_html_check='not_needed' if verified_author_channel else 'not_checked'
+                  if not verified_author_channel and author_url.startswith('https://www.youtube.com/'):
+                      try:
+                          with urllib.request.urlopen(urllib.request.Request(author_url,headers=headers),timeout=12) as resp:
+                              channel_html=resp.read(1200000).decode('utf-8','replace')
+                          verified_author_channel=channel in channel_html
+                          channel_html_check='matched_channel_id' if verified_author_channel else 'channel_id_not_found'
+                      except Exception as e:
+                          channel_html_check=type(e).__name__+': '+str(e)[:300]
+                  result['oembed']={'title':public_title,'author_name':oembed.get('author_name'),
+                      'author_url':author_url,'type':oembed.get('type'),
+                      'channel_page_check':channel_html_check,'channel_match':verified_author_channel}
+                  if public_title==title and verified_author_channel and oembed.get('type')=='video':
+                      ok=True
+                      result['decision']='pass_via_public_oembed_and_channel'
+              except Exception as e:
+                  result['oembed_error']=type(e).__name__+': '+str(e)[:900]
+          result['success']=ok
           Path('youtube-public-inspection.json').write_text(json.dumps(result,indent=2))
           print(json.dumps(result,indent=2))
           if not ok: raise SystemExit(1)
