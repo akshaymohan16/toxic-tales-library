@@ -5,7 +5,7 @@
   "timezone_confirmed": "Europe/Vienna",
   "deployment_and_media": "Latest repository build/deploy/exact-public-file verification 42586439514 succeeded on 46d403d656cc899e6ac25e6fb605a97b1b740cfd; owner-authorized motion replacement completed with provider-hosted video and cover hashes verified in automation/motion-replacement-2026-11-09.json.",
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
-  "decision": "CURRENT_WEEK_FOUR_DESTINATIONS_VERIFIED_PENDING",
+  "decision": "CURRENT_WEEK_FOUR_DESTINATIONS_VERIFIED_TWO_PUBLISHED_TWO_PENDING",
   "reason": "Independent live Metricool full-November readback: four future auto-publish destinations retain their exact original UUIDs and local times, three video items use the reviewed motion replacement, Thursday six-slide carousel is unchanged. Provider statuses remain PENDING before due dates. No new live publications or user-action blocker.",
   "scheduled_posts_returned": 9,
   "published_provider_receipts": 3,
@@ -39,7 +39,8 @@
     "conservative_projection_including_held_draft": 16,
     "note": "Observed counter plus all remaining planned Instagram and Tuesday YouTube destinations. Already-published baseline IDs are not counted twice; unknown writes reserve capacity.",
     "verified_in_this_run": false,
-    "observation_detail": "Most recent authenticated Metricool planner usage 3/20 at 2026-11-09T08:22:57.080Z. Not refreshed in this 10 November run; no new scheduling performed. Projected 16/20 with all remaining week reservations and held draft. Do not infer usage from analytics."
+    "observation_detail": "Authenticated Metricool UI counter3/20 observed 9 Nov before 10 Nov publications. Two further provider PUBLISHED receipts now establish at least5 November destinations. Counter not freshly read by accessible connector; no new destinations scheduled. Conservative existing projection16/20 includes held draft.",
+    "confirmed_published_lower_bound": 5
   },
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
   "updated_metricool_posts": 0,
@@ -73,7 +74,7 @@
   "pending_new_pilot_post_id": null,
   "pilot_record_status": "published_owner_approved",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
-  "updated_at": "2026-11-10T08:57:29.601Z",
+  "updated_at": "2026-11-10T09:11:39.506Z",
   "latest_publication": {
     "post_id": "TT-005-REEL",
     "metricool_id": "420178205",
@@ -86,9 +87,10 @@
     "notified_post_ids": [
       "TT-002-REEL",
       "TT-004-REEL",
-      "TT-005-REEL"
+      "TT-005-REEL",
+      "TT-006-REEL"
     ],
-    "latest_delivery": "Current chat; live Reel link provided. Future ChatGPT result notifications configured; push/email settings unverified.",
+    "latest_delivery": "TT-006-REEL owner notification prepared in this automation result. First TT-006 YouTube Short notification held pending independently accessible public page/channel/title check.",
     "delivery_status": "ChatGPT task push/email settings unknown; owner notification emitted only for positively confirmed PUBLISHED, never merely scheduled."
   },
   "recurring_tasks": {
@@ -139,7 +141,7 @@
     "421493462",
     "421493849"
   ],
-  "provider_receipts_status": "2026-11-10 before 10:00 Europe/Vienna: both TT-006 destination posts remain provider PENDING on original UUIDs; no positive PUBLISHED status or public URL. TT-005 carousel Thursday and TT-007 Reel Saturday remain PENDING, autoPublish=true, draft=false. Do not report publication or retry existing reservations.",
+  "provider_receipts_status": "10 November 2026 fresh full-month Metricool readback: TT-006 Instagram Reel provider PUBLISHED https://www.instagram.com/reel/Dfji4yhnB6c/ and linked YouTube Short provider PUBLISHED https://www.youtube.com/shorts/X333C5Dcxxo on the correct original UUIDs. Thursday TT-005 carousel and Saturday TT-007 Reel remain PENDING autoPublish=true/draft=false. Public YouTube page itself could not be independently loaded to verify live channel/content, so first-Short notification remains pending; Instagram newly published Reel notification recorded. No duplicate posting attempted.",
   "next_batch": {
     "week_start": "2026-11-16",
     "slots": [
@@ -153,8 +155,8 @@
     "youtube_slot": "2026-11-17T10:00:00+01:00",
     "current_week_fully_reserved": true,
     "current_week_destinations_verified": 4,
-    "current_week_provider_status": "PENDING",
-    "next_publication_due": "2026-11-10T10:00:00+01:00"
+    "current_week_provider_status": "TWO_PUBLISHED_TWO_PENDING",
+    "next_publication_due": "2026-11-12T10:00:00+01:00"
   },
   "watchdog": {
     "workflow": ".github/workflows/readiness-watchdog.yml",
@@ -186,65 +188,65 @@
   "verification_actor": "Owner-directed scheduled-media replacement run",
   "last_media_replacement": "automation/motion-replacement-2026-11-09.json",
   "provider_readback": {
-    "checked_at": "2026-11-10T08:57:29.601Z",
+    "checked_at": "2026-11-10T09:11:39.506Z",
     "brand_id": "7937614",
     "instagram_handle": "toxic_tales_eco",
     "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
     "calendar_window": "2026-11-01 through 2026-11-30 Europe/Vienna",
     "all_calendar_entries": 9,
-    "provider_published_receipts": 3,
+    "provider_published_receipts": 5,
     "scheduled": [
       {
         "post_id": "TT-006-REEL",
         "id": "421493009",
         "uuid": "-5193152553705388348",
+        "date": "2026-11-10T10:00:00+01:00",
         "network": "instagram",
-        "status": "PENDING",
-        "public_url": null,
+        "format": "REEL",
+        "provider_status": "PUBLISHED",
+        "public_url": "https://www.instagram.com/reel/Dfji4yhnB6c/",
         "autoPublish": true,
         "draft": false,
-        "date": "2026-11-10T10:00:00",
-        "provider_status": "PENDING",
-        "format": "REEL"
+        "fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df"
       },
       {
         "post_id": "TT-006-YOUTUBE-SHORT",
         "id": "421493849",
         "uuid": "4422280930322105807",
+        "date": "2026-11-10T10:00:00+01:00",
         "network": "youtube",
-        "status": "PENDING",
-        "public_url": null,
+        "format": "short",
+        "provider_status": "PUBLISHED",
+        "public_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
         "autoPublish": true,
         "draft": false,
-        "date": "2026-11-10T10:00:00",
-        "provider_status": "PENDING",
-        "format": "short"
+        "fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df"
       },
       {
         "post_id": "TT-005-CAROUSEL",
         "id": "420683055",
         "uuid": "-7609883982228992318",
+        "date": "2026-11-12T10:00:00+01:00",
         "network": "instagram",
-        "status": "PENDING",
+        "format": "POST",
+        "provider_status": "PENDING",
         "public_url": null,
         "autoPublish": true,
         "draft": false,
-        "date": "2026-11-12T10:00:00",
-        "provider_status": "PENDING",
-        "format": "POST"
+        "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b"
       },
       {
         "post_id": "TT-007-REEL",
         "id": "421493462",
         "uuid": "-6872348896682359981",
+        "date": "2026-11-14T10:00:00+01:00",
         "network": "instagram",
-        "status": "PENDING",
+        "format": "REEL",
+        "provider_status": "PENDING",
         "public_url": null,
         "autoPublish": true,
         "draft": false,
-        "date": "2026-11-14T10:00:00",
-        "provider_status": "PENDING",
-        "format": "REEL"
+        "fingerprint": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1"
       }
     ],
     "held_legacy_drafts": [
