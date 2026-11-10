@@ -1,0 +1,65 @@
+name: One-time public first Short verification
+on:
+  push:
+    paths:
+      - '.github/workflows/verify-first-youtube-short.yml'
+permissions:
+  contents: read
+jobs:
+  inspect-public-short:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install free public metadata inspector
+        run: python -m pip install --disable-pip-version-check yt-dlp
+      - name: Verify accessible YouTube Short identity and content
+        run: |
+          python - <<'PY'
+          import json,datetime,traceback
+          from pathlib import Path
+          import yt_dlp
+          video='X333C5Dcxxo'
+          channel='UCDvftxMMdtGSntm-ezcPfCg'
+          title='How a Diving Bell Spider Breathes Underwater | Toxic Tales'
+          doi='10.1242/jeb.056093'
+          url='https://www.youtube.com/shorts/'+video
+          result={'video_id':video,'url':url,'expected_channel_id':channel,'expected_title':title,
+                  'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+                  'tool':'yt-dlp','yt_dlp_version':yt_dlp.version.__version__}
+          ok=False
+          try:
+              opts={'quiet':True,'no_warnings':True,'skip_download':True,'noplaylist':True,
+                    'extract_flat':False,'socket_timeout':20,'retries':1,
+                    'extractor_retries':1,'ignoreerrors':False}
+              with yt_dlp.YoutubeDL(opts) as dl:
+                  info=dl.extract_info(url,download=False)
+              keys=['id','title','channel_id','channel','channel_url','uploader','uploader_id',
+                    'webpage_url','availability','live_status','description','duration']
+              result['observed']={k:info.get(k) for k in keys}
+              result['observed']['description']=str(info.get('description',''))[:5000]
+              checks={'video_id':info.get('id')==video,
+                      'channel_id':info.get('channel_id')==channel,
+                      'title':info.get('title')==title,
+                      'doi_in_description':doi in str(info.get('description','')),
+                      'public_not_private':info.get('availability') not in ['private','needs_auth']}
+              result['checks']=checks
+              ok=all(checks.values())
+              result['decision']='pass' if ok else 'fail'
+          except Exception as e:
+              result['decision']='unverified'
+              result['error']=type(e).__name__+': '+str(e)[:1500]
+              traceback.print_exc()
+          Path('youtube-public-inspection.json').write_text(json.dumps(result,indent=2))
+          print(json.dumps(result,indent=2))
+          if not ok: raise SystemExit(1)
+          PY
+      - name: Retain evidence on success or failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: first-toxic-tales-short-public-inspection
+          path: youtube-public-inspection.json
+          retention-days: 14
