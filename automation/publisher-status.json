@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-11-09",
+  "checked_on": "2026-11-10",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": "Europe/Vienna",
@@ -39,7 +39,7 @@
     "conservative_projection_including_held_draft": 16,
     "note": "Observed counter plus all remaining planned Instagram and Tuesday YouTube destinations. Already-published baseline IDs are not counted twice; unknown writes reserve capacity.",
     "verified_in_this_run": false,
-    "observation_detail": "Authenticated same-day planner counter read at 2026-11-09T08:22:57.080Z; reused in this publisher check without claiming a second UI observation. Current whole-month calendar independently reconciled."
+    "observation_detail": "Most recent authenticated Metricool planner usage 3/20 at 2026-11-09T08:22:57.080Z. Not refreshed in this 10 November run; no new scheduling performed. Projected 16/20 with all remaining week reservations and held draft. Do not infer usage from analytics."
   },
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
   "updated_metricool_posts": 0,
@@ -73,7 +73,7 @@
   "pending_new_pilot_post_id": null,
   "pilot_record_status": "published_owner_approved",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
-  "updated_at": "2026-11-09T09:32:04.284Z",
+  "updated_at": "2026-11-10T08:57:29.601Z",
   "latest_publication": {
     "post_id": "TT-005-REEL",
     "metricool_id": "420178205",
@@ -139,7 +139,7 @@
     "421493462",
     "421493849"
   ],
-  "provider_receipts_status": "2026-11-09 fresh calendar: TT-006 IG, TT-007 IG, TT-006 YouTube Short, TT-005 carousel all PENDING, autoPublish=true, draft=false. Both 10 November destinations are due tomorrow; no positive new publication receipt.",
+  "provider_receipts_status": "2026-11-10 before 10:00 Europe/Vienna: both TT-006 destination posts remain provider PENDING on original UUIDs; no positive PUBLISHED status or public URL. TT-005 carousel Thursday and TT-007 Reel Saturday remain PENDING, autoPublish=true, draft=false. Do not report publication or retry existing reservations.",
   "next_batch": {
     "week_start": "2026-11-16",
     "slots": [
@@ -170,15 +170,15 @@
     "after_state_changes": true,
     "issue_prefix": "Toxic Tales readiness: ",
     "repo_issue_alert_delivery": "GitHub issue notification depends on user's GitHub notification settings",
-    "last_checked_at": "2026-11-09T09:32:04.284Z",
-    "latest_run_id": 42594057697,
+    "last_checked_at": "2026-11-10T08:57:29.601Z",
+    "latest_run_id": 42712494849,
     "latest_run_result": "success",
     "prior_run_id": 42593942242,
     "prior_result": "failure_caused_by_changed_quota_basis_in_intermediate_heartbeat; corrected and next run 42594057697 passed",
     "open_readiness_issues": 0
   },
   "storage": "GitHub workflow 42482770601 successful with compact SHA-manifest verification and ~257 MiB artifacts vs former ~617 MiB. Historical duplicate artifact housekeeping workflow 42483693420 success: 51 redundant old archives totaling 6,834,278,226 bytes pruned; one latest legacy QA retained and live public media untouched.",
-  "issue_status": "No open readiness issues; current watchdog 42594057697 passed. Brief intermediate quota-field heartbeat error was repaired without changing provider posts.",
+  "issue_status": "No open Toxic Tales readiness issues; latest observed scheduled watchdog 42712494849 success (2026-11-09T22:30Z).",
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_channel_name": "Toxic Tales",
   "youtube_connection_verified": true,
@@ -186,7 +186,7 @@
   "verification_actor": "Owner-directed scheduled-media replacement run",
   "last_media_replacement": "automation/motion-replacement-2026-11-09.json",
   "provider_readback": {
-    "checked_at": "2026-11-09T09:30:20.714Z",
+    "checked_at": "2026-11-10T08:57:29.601Z",
     "brand_id": "7937614",
     "instagram_handle": "toxic_tales_eco",
     "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
@@ -198,53 +198,53 @@
         "post_id": "TT-006-REEL",
         "id": "421493009",
         "uuid": "-5193152553705388348",
-        "date": "2026-11-10T10:00:00+01:00",
         "network": "instagram",
-        "format": "REEL",
-        "provider_status": "PENDING",
+        "status": "PENDING",
+        "public_url": null,
         "autoPublish": true,
         "draft": false,
-        "fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df"
+        "date": "2026-11-10T10:00:00",
+        "provider_status": "PENDING",
+        "format": "REEL"
       },
       {
         "post_id": "TT-006-YOUTUBE-SHORT",
         "id": "421493849",
         "uuid": "4422280930322105807",
-        "date": "2026-11-10T10:00:00+01:00",
         "network": "youtube",
-        "format": "short",
-        "provider_status": "PENDING",
+        "status": "PENDING",
+        "public_url": null,
         "autoPublish": true,
         "draft": false,
-        "privacy": "public",
-        "madeForKids": false,
-        "isAiGeneratedContent": true,
-        "metadata_verified": true,
-        "fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df"
+        "date": "2026-11-10T10:00:00",
+        "provider_status": "PENDING",
+        "format": "short"
       },
       {
         "post_id": "TT-005-CAROUSEL",
         "id": "420683055",
         "uuid": "-7609883982228992318",
-        "date": "2026-11-12T10:00:00+01:00",
         "network": "instagram",
-        "format": "POST",
-        "slides": 6,
-        "provider_status": "PENDING",
+        "status": "PENDING",
+        "public_url": null,
         "autoPublish": true,
-        "draft": false
+        "draft": false,
+        "date": "2026-11-12T10:00:00",
+        "provider_status": "PENDING",
+        "format": "POST"
       },
       {
         "post_id": "TT-007-REEL",
         "id": "421493462",
         "uuid": "-6872348896682359981",
-        "date": "2026-11-14T10:00:00+01:00",
         "network": "instagram",
-        "format": "REEL",
-        "provider_status": "PENDING",
+        "status": "PENDING",
+        "public_url": null,
         "autoPublish": true,
         "draft": false,
-        "fingerprint": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1"
+        "date": "2026-11-14T10:00:00",
+        "provider_status": "PENDING",
+        "format": "REEL"
       }
     ],
     "held_legacy_drafts": [
