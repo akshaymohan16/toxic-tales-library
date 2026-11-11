@@ -11,23 +11,25 @@
     "limit": 20,
     "source": "Authenticated Metricool planner UI: You have posted3 out of your20 available posts in your plan this month.",
     "url": "https://app.metricool.com/planner/calendar?blogId=7937614",
-    "observation_status": "Current9Nov UI observation reconciled with3 published destinations and4 pending reservations; reserve all remaining Instagram and Tuesday YouTube slots. Replacement adds zero destinations."
+    "observation_status": "Historical observed 3/20 on 9 November. Stale for watchdog (>42h) on 11 November; cannot refresh from Metricool connector calendar. New scheduling held until verified authenticated plan meter."
   },
   "scheduled_ids": [
     "420683055",
-    "421493009",
-    "421493462",
-    "421493849"
+    "421493462"
   ],
   "published_ids": [
     "419869962",
     "420123422",
-    "420178205"
+    "420178205",
+    "421493009",
+    "421493849"
   ],
   "published_post_ids": [
     "TT-002-REEL",
     "TT-004-REEL",
-    "TT-005-REEL"
+    "TT-005-REEL",
+    "TT-006-REEL",
+    "TT-006-YOUTUBE-SHORT"
   ],
   "reserved_candidate_ids": [
     "TT-002-CAROUSEL"
@@ -35,16 +37,14 @@
   "unresolved_submissions": [],
   "monthly_cap": 20,
   "planned_usage_with_current_candidates": 16,
-  "new_scheduling_allowed": true,
+  "new_scheduling_allowed": false,
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [
     "TT-005-CAROUSEL",
-    "TT-006-REEL",
-    "TT-007-REEL",
-    "TT-006-YOUTUBE-SHORT"
+    "TT-007-REEL"
   ],
-  "calendar_reconciled_on": "2026-11-09T08:28:58.049309+00:00",
+  "calendar_reconciled_on": "2026-11-11T09:43:22.131Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -55,9 +55,10 @@
   "held_post_ids": [
     "TT-002-CAROUSEL"
   ],
-  "new_scheduling_conditions": "Current exact-file quality release and live public-byte verification required; check brand/calendar/receipt and fresh planner quota. No repeat of already PUBLISHED Reels.",
-  "provider_confirmed_publications": 3,
-  "known_usage_lower_bound": 3,
-  "last_calendar_readback": "2026-11-09T08:28:58.049309+00:00",
-  "pending_release_ids": []
+  "new_scheduling_conditions": "Fresh authenticated Metricool planner quota observation required before any new future destination reservation; status and original-UUID media of existing scheduled publications remain intact. Read current full provider calendar and released media before any write.",
+  "provider_confirmed_publications": 5,
+  "known_usage_lower_bound": 5,
+  "last_calendar_readback": "2026-11-11T09:43:22.131Z",
+  "pending_release_ids": [],
+  "quota_refresh_blocked_since": "2026-11-11T09:43:22.131Z"
 }

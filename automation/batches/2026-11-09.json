@@ -13,15 +13,17 @@
       "id": "TT-006-REEL",
       "date": "2026-11-10T10:00:00+01:00",
       "format": "REEL",
-      "status": "scheduled_provider_pending",
-      "publication_eligible": true,
+      "status": "published",
+      "publication_eligible": false,
       "release_fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df",
       "release_record": "quality/releases.json",
-      "reason": "Owner-authorized motion media replacement verified on the original UUID and time; exact Metricool video/cover hashes match fresh independent release. Not yet published.",
+      "reason": "Already PUBLISHED on 10 November 2026 on original UUID; media-replacement exact release remains current. Never submit or reschedule.",
       "metricool_id": "421493009",
       "metricool_uuid": "-5193152553705388348",
-      "provider_status": "PENDING",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-5193152553705388348"
+      "provider_status": "PUBLISHED",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-5193152553705388348",
+      "public_url": "https://www.instagram.com/reel/Dfji4yhnB6c/",
+      "provider_rechecked_at": "2026-11-11T09:43:22.131Z"
     },
     {
       "id": "TT-005-CAROUSEL",
@@ -33,7 +35,8 @@
       "publication_eligible": false,
       "provider_status": "PENDING",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-7609883982228992318",
-      "reason": "Final 6-slide carousel independently inspected and exact bytes preserved. Separate from already published TT-005 Reel; one Thursday scheduled post with autoPublish."
+      "reason": "Final 6-slide carousel independently inspected and exact bytes preserved. Separate from already published TT-005 Reel; one Thursday scheduled post with autoPublish.",
+      "provider_rechecked_at": "2026-11-11T09:43:22.131Z"
     },
     {
       "id": "TT-007-REEL",
@@ -47,7 +50,8 @@
       "provider_status": "PENDING",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6872348896682359981",
       "release_fingerprint": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1",
-      "release_record": "quality/releases.json"
+      "release_record": "quality/releases.json",
+      "provider_rechecked_at": "2026-11-11T09:43:22.131Z"
     },
     {
       "id": "TT-006-YOUTUBE-SHORT",
@@ -55,21 +59,23 @@
       "source_post_id": "TT-006-REEL",
       "date": "2026-11-10T10:00:00+01:00",
       "format": "SHORT",
-      "status": "scheduled_provider_pending",
-      "publication_eligible": true,
+      "status": "published",
+      "publication_eligible": false,
       "release_fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df",
       "platform_review": "automation/youtube/TT-006.json",
       "metricool_id": "421493849",
       "metricool_uuid": "4422280930322105807",
-      "provider_status": "PENDING",
+      "provider_status": "PUBLISHED",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=4422280930322105807",
-      "reason": "Owner-authorized motion media replacement verified on the original UUID and time; exact Metricool video/cover hashes match fresh independent release. Not yet published."
+      "reason": "Already PUBLISHED on 10 November 2026 on original UUID; media-replacement exact release remains current. Never submit or reschedule.",
+      "public_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
+      "provider_rechecked_at": "2026-11-11T09:43:22.131Z"
     }
   ],
   "scientific_review": "TT006 diving-bell spider physiological laboratory original paper (2011), TT007 bumblebee ball rolling laboratory original paper (2022), TT005 frog companion source (2015). Claims, scope, visual provenance and licensed media recorded in evidence files and final release.",
   "render_and_live_media_review": "All23 motion shots, transitions, openings/final frames, covers, captions, source scope and ASR/loudness reviewed. Both exact Pages exports and all3 Metricool video/cover copies verified; no human listening claim. TT005 carousel unchanged.",
-  "schedule_status": "Four existing destinations remain PENDING at original times: three Instagram plus the Tuesday YouTube Short. Existing3 video UUIDs now use approved motion files; no new posts.",
-  "quota_status": "Live planner counter3/20 on9Nov; all remaining Instagram and Tuesday YouTube slots project15 destinations,16 including held carousel. Replacements add zero destinations.",
+  "schedule_status": "TT-006 Instagram Reel and linked YouTube Short positively PUBLISHED on original UUIDs with verified URLs. TT-005 Thursday carousel and TT-007 Saturday Reel remain autoPublish PENDING on original UUIDs; rejected and held drafts untouched. No duplicate provider changes.",
+  "quota_status": "9 November authenticated planner counter 3/20 is now stale for 42-hour watchdog; 11 November provider readback proves five publications and two pending. Forecast 15/20 (16 including held draft) is NOT new plan-meter observation; any future scheduling requires fresh authenticated meter.",
   "idempotency_note": "Never repost published TT-002-REEL or TT-004-REEL, and never revive rejected TT-003. TT-004 UUID 8432780738091634663 is confirmed published and must never be submitted or rescheduled. Keep the two next-week Reel papers distinct and use stable new identities for replacements.",
   "retired_slots": [
     {
@@ -136,5 +142,22 @@
   "final_release_fingerprints": {
     "TT-006": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df",
     "TT-007": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1"
-  }
+  },
+  "provider_reconciled_on": "2026-11-11T09:43:22.131Z",
+  "publication_verifications": [
+    {
+      "id": "TT-006-REEL",
+      "provider_status": "PUBLISHED",
+      "url": "https://www.instagram.com/reel/Dfji4yhnB6c/",
+      "verified_at": "2026-11-11T09:43:22.131Z",
+      "notified": true
+    },
+    {
+      "id": "TT-006-YOUTUBE-SHORT",
+      "provider_status": "PUBLISHED",
+      "url": "https://www.youtube.com/shorts/X333C5Dcxxo",
+      "verified_at": "2026-11-11T09:43:22.131Z",
+      "notified": true
+    }
+  ]
 }

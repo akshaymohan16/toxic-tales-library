@@ -1,23 +1,21 @@
 {
-  "checked_on": "2026-11-10",
+  "checked_on": "2026-11-11",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": "Europe/Vienna",
   "deployment_and_media": "Latest repository build/deploy/exact-public-file verification 42586439514 succeeded on 46d403d656cc899e6ac25e6fb605a97b1b740cfd; owner-authorized motion replacement completed with provider-hosted video and cover hashes verified in automation/motion-replacement-2026-11-09.json.",
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
   "decision": "CURRENT_WEEK_FOUR_DESTINATIONS_VERIFIED_TWO_PUBLISHED_TWO_PENDING",
-  "reason": "Independent live Metricool full-November readback: four future auto-publish destinations retain their exact original UUIDs and local times, three video items use the reviewed motion replacement, Thursday six-slide carousel is unchanged. Provider statuses remain PENDING before due dates. No new live publications or user-action blocker.",
+  "reason": "Live Metricool November calendar checked: TT-006 Instagram and linked YouTube published with public URLs and previously verified exact motion media; Thursday frog carousel and Saturday bumblebee Reel remain PENDING on original UUIDs. No new submissions, publication or notifications. Next-week publication preparation is not yet due; current authenticated planner usage meter cannot be refreshed through the connector.",
   "scheduled_posts_returned": 9,
-  "published_provider_receipts": 3,
+  "published_provider_receipts": 5,
   "new_metricool_submissions": 0,
   "scheduled_post_ids": [
-    "TT-006-REEL",
     "TT-005-CAROUSEL",
-    "TT-007-REEL",
-    "TT-006-YOUTUBE-SHORT"
+    "TT-007-REEL"
   ],
   "routine_user_approval_required": false,
-  "automatic_next_step": "On Tuesday 10 November after 10:00 Europe/Vienna, check TT-006 Instagram and YouTube separately; on positive PUBLISHED require live URL, correct YouTube channel/content/title and exact release, then persist and notify once per platform. Never retry while provider PENDING. Thursday and Saturday retain existing reservations. Producer prepares next week on 15 November.",
+  "automatic_next_step": "Verify existing TT-005 carousel after Thursday 12 Nov 10:00 Vienna and TT-007 Reel after Saturday 14 Nov 10:00 Vienna, using PUBLISHED plus live URLs. Do not resubmit PENDING. Sunday 15 Nov producer prepares next week's four destinations; a fresh authenticated Metricool planner meter is required before creating any new reservations.",
   "review_limit": "Encoded frames, final transcript and technical audio reviewed; no listening or original-audio-parity claim.",
   "quota": {
     "observed_used": 3,
@@ -29,17 +27,17 @@
       "instagram:TT-004-REEL",
       "instagram:TT-005-REEL"
     ],
-    "active_scheduled": 4,
+    "active_scheduled": 2,
     "held_draft_reservations": 1,
     "retired_drafts": 1,
     "cap": 20,
-    "remaining_instagram_month_slots": 9,
-    "remaining_tuesday_youtube_slots": 3,
+    "remaining_instagram_month_slots": 8,
+    "remaining_tuesday_youtube_slots": 2,
     "projected_month_destinations": 15,
     "conservative_projection_including_held_draft": 16,
-    "note": "Observed counter plus all remaining planned Instagram and Tuesday YouTube destinations. Already-published baseline IDs are not counted twice; unknown writes reserve capacity.",
+    "note": "Older planner counter is retained truthfully; 3 observed baseline plus 2 newly confirmed publications, 2 remaining November committed posts, six later Instagram and two later YouTube slots projects 15 (16 including one held draft). This is a conservative forecast, NOT a fresh plan-meter reading.",
     "verified_in_this_run": false,
-    "observation_detail": "Planner UI counter 3/20 last actually observed 9 Nov, before Tuesday publications. Five independent PUBLISHED provider receipts now confirm a lower bound of 5 November used; no new scheduling this run. Existing conservative 16/20 month projection with pending and held reservations remains inside cap, but is not a new authenticated counter read.",
+    "observation_detail": "Authenticated Metricool planner usage 3/20 last actually observed 9 Nov 2026 08:22:57Z; current 11 Nov provider calendar positively confirms 5 published destinations. The connector does not expose the live plan counter and its prior observation is now over 42 hours old. New scheduling must remain fail-closed until a fresh authenticated meter observation. Calendar receipts are not a substitution.",
     "confirmed_published_lower_bound": 5
   },
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
@@ -74,14 +72,16 @@
   "pending_new_pilot_post_id": null,
   "pilot_record_status": "published_owner_approved",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
-  "updated_at": "2026-11-10T09:17:08.521Z",
+  "updated_at": "2026-11-11T09:43:22.131Z",
   "latest_publication": {
-    "post_id": "TT-005-REEL",
-    "metricool_id": "420178205",
-    "metricool_uuid": "2386175407143797944",
+    "post_id": "TT-006-YOUTUBE-SHORT",
+    "metricool_id": "421493849",
+    "metricool_uuid": "4422280930322105807",
     "provider_status": "PUBLISHED",
-    "public_url": "https://www.instagram.com/reel/Dfc5DEPHJCJ/",
-    "published_confirmed_at": "2026-11-07T19:07:59.945Z"
+    "public_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
+    "published_confirmed_at": "2026-11-10T09:16:05.767Z",
+    "live_verified": true,
+    "related_instagram_url": "https://www.instagram.com/reel/Dfji4yhnB6c/"
   },
   "publication_notifications": {
     "notified_post_ids": [
@@ -95,7 +95,7 @@
     "delivery_status": "ChatGPT task push/email settings unknown; owner notification emitted only for positively confirmed PUBLISHED, never merely scheduled."
   },
   "recurring_tasks": {
-    "verified_at": "2026-11-09T09:30:20.714Z",
+    "verified_at": "2026-11-11T09:43:22.131Z",
     "producer": {
       "id": "6aeefcb926708191b092554230783da1",
       "enabled": true,
@@ -106,7 +106,7 @@
       "enabled": true,
       "schedule": "Daily 10:15 Europe/Vienna"
     },
-    "verification": "Current task state readback confirms both existing tasks enabled and unchanged; latest publisher run may report in progress while this check is executing.",
+    "verification": "Live readback: original Sunday 10:00 producer and daily 10:15 publisher remain enabled; no added task or posting loop.",
     "branding_prompts_exact_readback": true,
     "scheduled_media_replacement_handoff": {
       "checked_at": "2026-11-09T08:03:11.744Z",
@@ -142,7 +142,7 @@
     "421493462",
     "421493849"
   ],
-  "provider_receipts_status": "As of 2026-11-10T09:17:08.521Z Metricool positively confirms TT-006 Instagram Reel PUBLISHED at https://www.instagram.com/reel/Dfji4yhnB6c/ and the original linked TT-006 YouTube Short PUBLISHED at https://www.youtube.com/shorts/X333C5Dcxxo. Separate public video oEmbed and channel page verified the title and channel UCDvftxMMdtGSntm-ezcPfCg (one-time QA 42789107581). Both deduplicated publication notifications recorded. TT-005 companion carousel and TT-007 Saturday Reel are PENDING on original UUIDs; no duplicate submissions.",
+  "provider_receipts_status": "Fresh 2026-11-11T09:43:22.131Z Metricool readback shows 5 PUBLISHED destination receipts (including TT006 Instagram and Youtube), 2 original-UUID PENDING future autoPublish destinations (TT005 carousel and TT007 Reel), and 2 held/unpublished legacy drafts. No new posts or user notifications; public YouTube channel verified in recorded QA run 42789107581.",
   "next_batch": {
     "week_start": "2026-11-16",
     "slots": [
@@ -150,7 +150,7 @@
       "2026-11-19T10:00:00+01:00",
       "2026-11-21T10:00:00+01:00"
     ],
-    "state": "next_week_production_not_yet_due",
+    "state": "next_week_production_not_yet_due; quota_meter_refresh_required_before_new_scheduling",
     "producer_due": "Sunday 2026-11-15 10:00 Europe/Vienna",
     "hard_readiness_due": "Monday 2026-11-16 before end of day Europe/Vienna",
     "youtube_slot": "2026-11-17T10:00:00+01:00",
@@ -167,21 +167,21 @@
       "08:35",
       "12:20"
     ],
-    "status": "Installed, three successive GitHub push test runs passed, actual Sunday's real ledger smoke audit passed; scheduled cron/failure-issue trigger to be tested on first future deadline",
+    "status": "Last observed scheduled watchdog 10 Nov 19:51Z succeeded; direct plan meter was last observed 9 Nov 08:22Z and has crossed the readiness verifier's 42-hour freshness guard as of this run. This check does not pretend provider calendar counts are a fresh plan counter.",
     "last_smoke_run": 42483555450,
     "scheduled_issue_alerts": true,
     "after_state_changes": true,
     "issue_prefix": "Toxic Tales readiness: ",
     "repo_issue_alert_delivery": "GitHub issue notification depends on user's GitHub notification settings",
-    "last_checked_at": "2026-11-10T09:17:08.521Z",
-    "latest_run_id": 42789275558,
+    "last_checked_at": "2026-11-11T09:43:22.131Z",
+    "latest_run_id": 42889460572,
     "latest_run_result": "success",
     "prior_run_id": 42593942242,
     "prior_result": "failure_caused_by_changed_quota_basis_in_intermediate_heartbeat; corrected and next run 42594057697 passed",
     "open_readiness_issues": 0
   },
   "storage": "GitHub workflow 42482770601 successful with compact SHA-manifest verification and ~257 MiB artifacts vs former ~617 MiB. Historical duplicate artifact housekeeping workflow 42483693420 success: 51 redundant old archives totaling 6,834,278,226 bytes pruned; one latest legacy QA retained and live public media untouched.",
-  "issue_status": "No open Toxic Tales readiness issues. Latest watchdog run 42789275558 passed after the first YouTube Short's independent public oEmbed/channel verification and exact provider receipt were recorded.",
+  "issue_status": "No open Toxic Tales readiness issue in this repository during fresh 11 November check; newest scheduled 10 November watchdog succeeded. Quota freshness will be assessed by subsequent independent runs.",
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_channel_name": "Toxic Tales",
   "youtube_connection_verified": true,
@@ -189,7 +189,7 @@
   "verification_actor": "Owner-directed scheduled-media replacement run",
   "last_media_replacement": "automation/motion-replacement-2026-11-09.json",
   "provider_readback": {
-    "checked_at": "2026-11-10T09:17:08.521Z",
+    "checked_at": "2026-11-11T09:43:22.131Z",
     "brand_id": "7937614",
     "instagram_handle": "toxic_tales_eco",
     "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
@@ -257,7 +257,7 @@
     "new_publications": 0,
     "created_posts": 0,
     "updated_posts": 0,
-    "prepublication_receipts_only": true
+    "prepublication_receipts_only": false
   },
   "replacement_status": {
     "ledger_path": "automation/motion-replacement-2026-11-09.json",
@@ -267,7 +267,13 @@
     "new_video_exports_current": true,
     "do_not_revert_to_original": true
   },
-  "new_actionable_blocker": null,
+  "new_actionable_blocker": {
+    "type": "authenticated_metricool_plan_meter_not_exposed_by_connector",
+    "detected_at": "2026-11-11T09:43:22.131Z",
+    "level": "future_new_scheduling_hold",
+    "impact": "Existing 12/14 November provider reservations are intact; new Sunday producer reservations for 17/19/21 November must wait for an actual authenticated current plan usage counter, and the 42-hour GitHub watchdog quota-age gate can now fail.",
+    "required_resolution": "Refresh planner usage counter through authenticated Metricool UI or a connected tool that exposes it. Do not renew observed_at by inference, calendar counts or analytics."
+  },
   "first_youtube_live_verification": {
     "post_id": "TT-006-YOUTUBE-SHORT",
     "video_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
