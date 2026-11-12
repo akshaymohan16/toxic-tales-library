@@ -11,10 +11,9 @@
     "limit": 20,
     "source": "Authenticated Metricool planner UI: You have posted3 out of your20 available posts in your plan this month.",
     "url": "https://app.metricool.com/planner/calendar?blogId=7937614",
-    "observation_status": "Historical observed 3/20 on 9 November. Stale for watchdog (>42h) on 11 November; cannot refresh from Metricool connector calendar. New scheduling held until verified authenticated plan meter."
+    "observation_status": "Historical authenticated 3/20 observed 9 Nov; 12 Nov full provider calendar now confirms 6 published destinations, but this is not an authenticated updated plan-meter count. New scheduling held."
   },
   "scheduled_ids": [
-    "420683055",
     "421493462"
   ],
   "published_ids": [
@@ -22,14 +21,16 @@
     "420123422",
     "420178205",
     "421493009",
-    "421493849"
+    "421493849",
+    "420683055"
   ],
   "published_post_ids": [
     "TT-002-REEL",
     "TT-004-REEL",
     "TT-005-REEL",
     "TT-006-REEL",
-    "TT-006-YOUTUBE-SHORT"
+    "TT-006-YOUTUBE-SHORT",
+    "TT-005-CAROUSEL"
   ],
   "reserved_candidate_ids": [
     "TT-002-CAROUSEL"
@@ -41,10 +42,9 @@
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [
-    "TT-005-CAROUSEL",
     "TT-007-REEL"
   ],
-  "calendar_reconciled_on": "2026-11-11T09:43:22.131Z",
+  "calendar_reconciled_on": "2026-11-12T09:13:23.510Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -55,10 +55,10 @@
   "held_post_ids": [
     "TT-002-CAROUSEL"
   ],
-  "new_scheduling_conditions": "Fresh authenticated Metricool planner quota observation required before any new future destination reservation; status and original-UUID media of existing scheduled publications remain intact. Read current full provider calendar and released media before any write.",
-  "provider_confirmed_publications": 5,
-  "known_usage_lower_bound": 5,
-  "last_calendar_readback": "2026-11-11T09:43:22.131Z",
+  "new_scheduling_conditions": "Fresh authenticated Metricool planner meter still required; exact 2026-11-12 TT-005 carousel published receipt does not refresh monthly quota meter.",
+  "provider_confirmed_publications": 6,
+  "known_usage_lower_bound": 6,
+  "last_calendar_readback": "2026-11-12T09:13:23.510Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": "2026-11-11T09:43:22.131Z"
 }

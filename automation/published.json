@@ -299,8 +299,8 @@
       "metricool_uuid": "-7609883982228992318",
       "publication_date": "2026-11-12T10:00:00+01:00",
       "timezone": "Europe/Vienna",
-      "status": "scheduled",
-      "provider_status": "PENDING",
+      "status": "published",
+      "provider_status": "PUBLISHED",
       "auto_publish": true,
       "draft": false,
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-7609883982228992318",
@@ -333,8 +333,22 @@
       "public_verification_run": 42402379631,
       "schedule_readback_verified": true,
       "receipt_saved_on": "2026-11-08",
-      "publication_confirmation": "Only scheduled, provider PENDING, not published. Exact previously owner-reviewed 6 carousel slides inspected at 360px and hashes verified. Standalone Thursday carousel approved under delegated normal workflow; TT-002 old draft remains held and unpublished.",
-      "duplicate_guard": "TT-005-REEL was separately published on 7 November and must never be repeated; TT-005-CAROUSEL is an intentional different format, publish once on Thursday."
+      "publication_confirmation": "Positive PUBLISHED and public URL. This is the original released six-slide Thursday companion; do not repost.",
+      "duplicate_guard": "TT-005-REEL was separately published on 7 November and must never be repeated; TT-005-CAROUSEL is an intentional different format, publish once on Thursday.",
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.instagram.com/p/DfosskjCpxx/",
+      "publication_eligible": false,
+      "published_confirmed_at": "2026-11-12T09:13:23.510Z",
+      "confirmation_source": "Fresh Metricool full November readback: original ID 420683055 / UUID -7609883982228992318, Instagram PUBLISHED and direct public URL; six hosted carousel images unchanged and autoPublish=true, draft=false.",
+      "publication_notification": {
+        "channel": "automation_result",
+        "status": "reported_in_this_run",
+        "post_id": "TT-005-CAROUSEL",
+        "public_url": "https://www.instagram.com/p/DfosskjCpxx/",
+        "notified_at": "2026-11-12T09:13:23.510Z"
+      },
+      "notified": true,
+      "notified_at": "2026-11-12T09:13:23.510Z"
     },
     {
       "post_id": "TT-006-REEL",
@@ -699,6 +713,8 @@
     "TT-006-REEL",
     "instagram:TT-006-REEL",
     "TT-006-YOUTUBE-SHORT",
-    "youtube:TT-006-YOUTUBE-SHORT"
+    "youtube:TT-006-YOUTUBE-SHORT",
+    "TT-005-CAROUSEL",
+    "instagram:TT-005-CAROUSEL"
   ]
 }
