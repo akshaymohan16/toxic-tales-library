@@ -1,12 +1,12 @@
 {
-  "checked_on": "2026-11-11",
+  "checked_on": "2026-11-12",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": "Europe/Vienna",
   "deployment_and_media": "Latest repository build/deploy/exact-public-file verification 42586439514 succeeded on 46d403d656cc899e6ac25e6fb605a97b1b740cfd; owner-authorized motion replacement completed with provider-hosted video and cover hashes verified in automation/motion-replacement-2026-11-09.json.",
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
-  "decision": "CURRENT_WEEK_FOUR_DESTINATIONS_VERIFIED_TWO_PUBLISHED_TWO_PENDING",
-  "reason": "Live Metricool November calendar checked: TT-006 Instagram and linked YouTube published with public URLs and previously verified exact motion media; Thursday frog carousel and Saturday bumblebee Reel remain PENDING on original UUIDs. No new submissions, publication or notifications. Next-week publication preparation is not yet due; current authenticated planner usage meter cannot be refreshed through the connector.",
+  "decision": "THURSDAY_CAROUSEL_PROVIDER_PROCESSING_NO_DUPLICATE",
+  "reason": "Metricool shows TT-005-CAROUSEL PUBLISHING on its original UUID after 2026-11-12 10:00 Vienna slot. No public URL yet; submission is already in progress, so no repost/reschedule or premature success claim. TT-007 remains pending.",
   "scheduled_posts_returned": 9,
   "published_provider_receipts": 5,
   "new_metricool_submissions": 0,
@@ -15,7 +15,7 @@
     "TT-007-REEL"
   ],
   "routine_user_approval_required": false,
-  "automatic_next_step": "Verify existing TT-005 carousel after Thursday 12 Nov 10:00 Vienna and TT-007 Reel after Saturday 14 Nov 10:00 Vienna, using PUBLISHED plus live URLs. Do not resubmit PENDING. Sunday 15 Nov producer prepares next week's four destinations; a fresh authenticated Metricool planner meter is required before creating any new reservations.",
+  "automatic_next_step": "Do not resubmit TT005 carousel in PUBLISHING state. Check again after provider processing grace for PUBLISHED plus public URL. Saturday TT007 stays scheduled. Refresh live authenticated plan meter before any new next-week reservations.",
   "review_limit": "Encoded frames, final transcript and technical audio reviewed; no listening or original-audio-parity claim.",
   "quota": {
     "observed_used": 3,
@@ -37,7 +37,7 @@
     "conservative_projection_including_held_draft": 16,
     "note": "Older planner counter is retained truthfully; 3 observed baseline plus 2 newly confirmed publications, 2 remaining November committed posts, six later Instagram and two later YouTube slots projects 15 (16 including one held draft). This is a conservative forecast, NOT a fresh plan-meter reading.",
     "verified_in_this_run": false,
-    "observation_detail": "Authenticated Metricool planner usage 3/20 last actually observed 9 Nov 2026 08:22:57Z; current 11 Nov provider calendar positively confirms 5 published destinations. The connector does not expose the live plan counter and its prior observation is now over 42 hours old. New scheduling must remain fail-closed until a fresh authenticated meter observation. Calendar receipts are not a substitution.",
+    "observation_detail": "Historical actual 3/20 plan meter from 2026-11-09T08:22:57.080Z remains stale. Current full provider calendar shows 5 positively published destinations; these receipts do not prove the live planner free-plan counter. Hold new scheduling until authenticated refresh.",
     "confirmed_published_lower_bound": 5
   },
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
@@ -72,7 +72,7 @@
   "pending_new_pilot_post_id": null,
   "pilot_record_status": "published_owner_approved",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
-  "updated_at": "2026-11-11T09:43:22.131Z",
+  "updated_at": "2026-11-12T09:09:59.949Z",
   "latest_publication": {
     "post_id": "TT-006-YOUTUBE-SHORT",
     "metricool_id": "421493849",
@@ -142,7 +142,7 @@
     "421493462",
     "421493849"
   ],
-  "provider_receipts_status": "Fresh 2026-11-11T09:43:22.131Z Metricool readback shows 5 PUBLISHED destination receipts (including TT006 Instagram and Youtube), 2 original-UUID PENDING future autoPublish destinations (TT005 carousel and TT007 Reel), and 2 held/unpublished legacy drafts. No new posts or user notifications; public YouTube channel verified in recorded QA run 42789107581.",
+  "provider_receipts_status": "Fresh 2026-11-12T09:09:59.949Z Metricool readback shows 5 PUBLISHED, TT005 carousel PUBLISHING, Saturday bee PENDING. No duplicate submission.",
   "next_batch": {
     "week_start": "2026-11-16",
     "slots": [
@@ -150,14 +150,14 @@
       "2026-11-19T10:00:00+01:00",
       "2026-11-21T10:00:00+01:00"
     ],
-    "state": "next_week_production_not_yet_due; quota_meter_refresh_required_before_new_scheduling",
+    "state": "unprepared_future_week_assigned_to_existing_sunday_producer; verified quota meter refresh required before new scheduling",
     "producer_due": "Sunday 2026-11-15 10:00 Europe/Vienna",
     "hard_readiness_due": "Monday 2026-11-16 before end of day Europe/Vienna",
     "youtube_slot": "2026-11-17T10:00:00+01:00",
     "current_week_fully_reserved": true,
     "current_week_destinations_verified": 4,
-    "current_week_provider_status": "TWO_PUBLISHED_TWO_PENDING",
-    "next_publication_due": "2026-11-12T10:00:00+01:00"
+    "current_week_provider_status": "TWO_PUBLISHED_ONE_PROCESSING_ONE_PENDING",
+    "next_publication_due": "2026-11-14T10:00:00+01:00"
   },
   "watchdog": {
     "workflow": ".github/workflows/readiness-watchdog.yml",
@@ -173,15 +173,15 @@
     "after_state_changes": true,
     "issue_prefix": "Toxic Tales readiness: ",
     "repo_issue_alert_delivery": "GitHub issue notification depends on user's GitHub notification settings",
-    "last_checked_at": "2026-11-11T09:43:22.131Z",
-    "latest_run_id": 42889460572,
-    "latest_run_result": "success",
+    "last_checked_at": "2026-11-12T09:09:59.949Z",
+    "latest_run_id": 43089921832,
+    "latest_run_result": "failure: fresh monthly authenticated Metricool planner counter observation required",
     "prior_run_id": 42593942242,
     "prior_result": "failure_caused_by_changed_quota_basis_in_intermediate_heartbeat; corrected and next run 42594057697 passed",
-    "open_readiness_issues": 0
+    "open_readiness_issues": 1
   },
   "storage": "GitHub workflow 42482770601 successful with compact SHA-manifest verification and ~257 MiB artifacts vs former ~617 MiB. Historical duplicate artifact housekeeping workflow 42483693420 success: 51 redundant old archives totaling 6,834,278,226 bytes pruned; one latest legacy QA retained and live public media untouched.",
-  "issue_status": "No open Toxic Tales readiness issue in this repository during fresh 11 November check; newest scheduled 10 November watchdog succeeded. Quota freshness will be assessed by subsequent independent runs.",
+  "issue_status": "Open readiness issue #1 (2026-W46) remains; latest watchdog failed only because the last authenticated Metricool plan meter observation is older than 42 hours. Existing reservations are intact. Do not close until refreshed meter and successful watchdog audit.",
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_channel_name": "Toxic Tales",
   "youtube_connection_verified": true,
@@ -189,7 +189,7 @@
   "verification_actor": "Owner-directed scheduled-media replacement run",
   "last_media_replacement": "automation/motion-replacement-2026-11-09.json",
   "provider_readback": {
-    "checked_at": "2026-11-11T09:43:22.131Z",
+    "checked_at": "2026-11-12T09:09:59.949Z",
     "brand_id": "7937614",
     "instagram_handle": "toxic_tales_eco",
     "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
@@ -201,53 +201,49 @@
         "post_id": "TT-006-REEL",
         "id": "421493009",
         "uuid": "-5193152553705388348",
-        "date": "2026-11-10T10:00:00+01:00",
+        "date": "2026-11-10T10:00:00",
         "network": "instagram",
         "format": "REEL",
         "provider_status": "PUBLISHED",
         "public_url": "https://www.instagram.com/reel/Dfji4yhnB6c/",
         "autoPublish": true,
-        "draft": false,
-        "fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df"
+        "draft": false
       },
       {
         "post_id": "TT-006-YOUTUBE-SHORT",
         "id": "421493849",
         "uuid": "4422280930322105807",
-        "date": "2026-11-10T10:00:00+01:00",
+        "date": "2026-11-10T10:00:00",
         "network": "youtube",
         "format": "short",
         "provider_status": "PUBLISHED",
         "public_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
         "autoPublish": true,
-        "draft": false,
-        "fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df"
+        "draft": false
       },
       {
         "post_id": "TT-005-CAROUSEL",
         "id": "420683055",
         "uuid": "-7609883982228992318",
-        "date": "2026-11-12T10:00:00+01:00",
+        "date": "2026-11-12T10:00:00",
         "network": "instagram",
         "format": "POST",
-        "provider_status": "PENDING",
+        "provider_status": "PUBLISHING",
         "public_url": null,
         "autoPublish": true,
-        "draft": false,
-        "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b"
+        "draft": false
       },
       {
         "post_id": "TT-007-REEL",
         "id": "421493462",
         "uuid": "-6872348896682359981",
-        "date": "2026-11-14T10:00:00+01:00",
+        "date": "2026-11-14T10:00:00",
         "network": "instagram",
         "format": "REEL",
         "provider_status": "PENDING",
         "public_url": null,
         "autoPublish": true,
-        "draft": false,
-        "fingerprint": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1"
+        "draft": false
       }
     ],
     "held_legacy_drafts": [
@@ -257,7 +253,7 @@
     "new_publications": 0,
     "created_posts": 0,
     "updated_posts": 0,
-    "prepublication_receipts_only": false
+    "prepublication_receipts_only": true
   },
   "replacement_status": {
     "ledger_path": "automation/motion-replacement-2026-11-09.json",
@@ -270,8 +266,8 @@
   "new_actionable_blocker": {
     "type": "authenticated_metricool_plan_meter_not_exposed_by_connector",
     "detected_at": "2026-11-11T09:43:22.131Z",
-    "level": "future_new_scheduling_hold",
-    "impact": "Existing 12/14 November provider reservations are intact; new Sunday producer reservations for 17/19/21 November must wait for an actual authenticated current plan usage counter, and the 42-hour GitHub watchdog quota-age gate can now fail.",
+    "level": "existing_reported_future_new_scheduling_hold",
+    "impact": "Existing Thursday TT005 carousel is PUBLISHING and Saturday TT007 retains original pending UUID; next-week new reservations for 17/19/21 November remain blocked by stale authenticated plan meter. No re-notification of unchanged blocker.",
     "required_resolution": "Refresh planner usage counter through authenticated Metricool UI or a connected tool that exposes it. Do not renew observed_at by inference, calendar counts or analytics."
   },
   "first_youtube_live_verification": {
