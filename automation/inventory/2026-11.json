@@ -11,7 +11,7 @@
     "limit": 20,
     "source": "Authenticated Metricool planner UI: You have posted3 out of your20 available posts in your plan this month.",
     "url": "https://app.metricool.com/planner/calendar?blogId=7937614",
-    "observation_status": "Historical authenticated 3/20 observed 9 Nov; 12 Nov full provider calendar now confirms 6 published destinations, but this is not an authenticated updated plan-meter count. New scheduling held."
+    "observation_status": "Historical authenticated 3/20 from 9 Nov. Full provider calendar on 13 Nov confirms 6 published destinations but does not expose a fresh plan-usage counter. New scheduling blocked."
   },
   "scheduled_ids": [
     "421493462"
@@ -44,7 +44,7 @@
   "scheduled_post_ids": [
     "TT-007-REEL"
   ],
-  "calendar_reconciled_on": "2026-11-12T09:13:23.510Z",
+  "calendar_reconciled_on": "2026-11-13T09:12:46.859Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -55,10 +55,10 @@
   "held_post_ids": [
     "TT-002-CAROUSEL"
   ],
-  "new_scheduling_conditions": "Fresh authenticated Metricool planner meter still required; exact 2026-11-12 TT-005 carousel published receipt does not refresh monthly quota meter.",
+  "new_scheduling_conditions": "Authenticated Metricool plan meter fresh observation is required. Full provider calendar read 13 Nov confirms 6 published, Saturday TT-007 pending and two held drafts; cannot substitute this for current 20-post plan meter.",
   "provider_confirmed_publications": 6,
   "known_usage_lower_bound": 6,
-  "last_calendar_readback": "2026-11-12T09:13:23.510Z",
+  "last_calendar_readback": "2026-11-13T09:12:46.859Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": "2026-11-11T09:43:22.131Z"
 }
