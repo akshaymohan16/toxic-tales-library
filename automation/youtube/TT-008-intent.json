@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "post_id": "TT-008-YOUTUBE-SHORT",
+  "episode_id": "TT-008",
+  "platform": "youtube",
+  "format": "SHORT",
+  "brand_id": "7937614",
+  "scheduled_for": "2026-11-13T14:10:00+01:00",
+  "timezone": "Europe/Vienna",
+  "created_at": "2026-11-13T13:02:50.355Z",
+  "owner_run_id": "root-today-tt008-2026-11-13T12:21:54.046Z",
+  "status": "prepared_for_immediate_owner_requested_publication",
+  "source_video_sha256": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb",
+  "source_cover_sha256": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d",
+  "source_media_urls": [
+    "https://akshaymohan16.github.io/toxic-tales-library/media/tt-008-archerfish-human-faces-1056e28596f7.mp4"
+  ],
+  "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg",
+  "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+  "doi": "10.1038/srep27523",
+  "source_commit": "28180e8a63f88873076c932387e9bb6fc751c971",
+  "source_verification_run": 43428008007,
+  "projected_month_destinations": 16,
+  "note": "Owner explicitly requested publication now after export passed independent review; supersedes proposed 18:00 slot. Exact reviewed episode/media unchanged. No provider write yet.",
+  "source_publication_date": "2026-11-13T18:00:00+01:00",
+  "latest_owner_instruction_at": "2026-11-13T13:07:29.674Z"
+}

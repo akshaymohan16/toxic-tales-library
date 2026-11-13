@@ -742,5 +742,265 @@
     "listening_review_claimed": false,
     "moving_playback_review_claimed": false,
     "release_note": "Fresh independent review of the exact Linux motion replacement, not inherited approval of the previous film. Authorized replacement must retain existing provider post IDs, dates and destinations. Publishing still requires exact public bytes and current provider readback; this record itself does not schedule a post. No listening or continuous-playback claim."
+  },
+  "TT-008": {
+    "fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+    "files": {
+      "media/tt-008-archerfish-human-faces-1056e28596f7.mp4": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb",
+      "media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d"
+    },
+    "evidence_sha256": "f5b140fd78d29362d49632b1f0f2539a64cbd509bfd10bc29b013a516ba2c872",
+    "episode_id": "TT-008",
+    "decision": "release",
+    "publication_enabled": true,
+    "publication_eligible": true,
+    "reviewer": "Independent exact-export science and editorial reviewer / runbook_review",
+    "reviewed_at": "2026-11-13T13:00:37.449955Z",
+    "source_commit": "9a5ff6dcca977b869279bb7a3f83d41944c32b1f",
+    "media_commit": "28180e8a63f88873076c932387e9bb6fc751c971",
+    "verification_run": 43428008007,
+    "duration_seconds": 55.125,
+    "source_sha256": "92cb33ab294a88ccf99b8c523b68c16a1fe3873dd5433fbbf86c24439e73244b",
+    "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-008-contact.jpg?release=28180e8a63f8",
+    "scientific_review": "Independently read Newport, Wallis, Reshitnyk and Siebeck (2016), Scientific Reports 6:27523, full Methods, Results, Discussion and figures at PMC4895153. Experiment 1 used four fish, a familiar unrewarded face paired with a novel alternative from a pool of 44, and only two faces per trial. Experiment 2 used four different fish and 18 novel alternatives with grayscale, brightness normalization and oval masking. Hair and clothing were removed from stimuli in both experiments; the actual encoded conceptual faces have no hair. Above-chance discrimination is reported without invented percentages. Small samples, still frontal images, unresolved exact cues, and no owner-recognition test remain explicit. The separate 2018 hunting photograph is labelled reference imagery and is not evidence from the 2016 face experiment.",
+    "visual_review": "Viewed the actual downloaded export contact sheet with all 14 midpoints; all 13 transitions immediately before and after; all 14 shots at +0.18s and +0.70s; openings at 0s and 1s; final encoded frame; and the actual cover. Inspected 360px contact panels and 540px frame panels assembled without changing their content. The photo retains the fish, water jet and target. Two faces, familiar nonrewarded choice, new alternatives, second-cohort controls and the narrow conclusion are readable. Brief artwork overlap during the 0.36s wipe settles by +0.70s, while the logo and speech captions remain single layers. No persistent clipping, title/caption collision, fabricated chart, production footer, progress bar or debug overlay was seen.",
+    "audio_review": "Reviewed all nine segment ASR records and the final encoded-audio transcript against the narration. Final token similarity is 0.9714285714285714; differences are numeric forms forty-four/44 and eighteen/18 and colour/color, recognise/recognize. All scientific numbers, the two-face trial design and the not-show-owner-recognition negation are preserved. Final loudness is -16.70 LUFS with -5.43 dBTP and 1.80 LU loudness range; duration 55.125s. Thirty-one caption chunks reproduce the narration token sequence exactly and do not overlap or exceed the video. Pinned Kokoro af_heart narration is recorded in the manifest. This is a transcription and measurement review; perceptual listening and original-audio comparison are not claimed.",
+    "narrative_review": "The fish-and-water-jet opening establishes the organism and an unusual response, followed by the two-face choice, learning, replacement of the rewarded face, above-chance result, separate controlled test, and a visible limitation before the narrow visual-learning payoff. The headline question is answered by learned discrimination of face images, without claiming recognition of individual people or owners.",
+    "final_editorial_review": {
+      "fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+      "files": {
+        "media/tt-008-archerfish-human-faces-1056e28596f7.mp4": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb",
+        "media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d"
+      },
+      "evidence_sha256": "f5b140fd78d29362d49632b1f0f2539a64cbd509bfd10bc29b013a516ba2c872",
+      "reviewer": "Independent exact-export science and editorial reviewer / runbook_review",
+      "reviewed_at": "2026-11-13T13:00:37.449955Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "reviewed_encoded_frames": true,
+      "standard": "story-first-v1",
+      "source_sha256": "92cb33ab294a88ccf99b8c523b68c16a1fe3873dd5433fbbf86c24439e73244b",
+      "checks": {
+        "cold_viewer": {
+          "decision": "pass",
+          "finding": "The archerfish photograph, water jet and opening title immediately establish the animal and its unusual way of answering a test.",
+          "basis": "Actual encoded 0s/1s and shot 1 samples; shot 2 explicitly marks the hunting diagram conceptual; reference labels appear on the photo and cover."
+        },
+        "story": {
+          "decision": "pass",
+          "finding": "The sequence explains the choice task before the transfer result, then introduces four different fish and the controls before stating the result and limits.",
+          "basis": "All 14 encoded midpoint and settled samples, nine script segments, final ASR, and primary-paper Experiments 1 and 2."
+        },
+        "visuals": {
+          "decision": "pass",
+          "finding": "The left familiar nonrewarded face remains recognizable while the right alternative changes. Exactly two faces are shown. Hairless original diagrams avoid suggesting removed hairstyle cues.",
+          "basis": "Encoded shots 3-7 plus transition/settled pairs; shots 8-9 have grayscale and three named controls; every task graphic is labelled as an illustration rather than original stimuli."
+        },
+        "payoff": {
+          "decision": "pass",
+          "finding": "The conclusion is that a fish can learn fine distinctions between human face images, with animal vision as the broader interest.",
+          "basis": "Encoded shots 10, 13 and 14; actual final transcript and closing frame. No human-like identity, consciousness or owner-recognition result is asserted."
+        },
+        "scope": {
+          "decision": "pass",
+          "finding": "Two faces per trial, four different fish for the second test, small laboratory groups and still images are retained; recognizing owners is expressly not tested.",
+          "basis": "Encoded shot 7 kicker, shot 8 kicker and shots 11-12 headings/labels; final ASR; Newport et al. full-text Methods and Discussion."
+        },
+        "retelling": {
+          "decision": "pass",
+          "finding": "A viewer can retell that trained archerfish choose between face images by spitting, avoid one learned face among changing alternatives, and can succeed after several simple cues are controlled.",
+          "basis": "Independent comparison of the complete actual evidence sequence with the original paper; the final limit prevents retelling the finding as recognizing owners."
+        }
+      }
+    },
+    "branding_review": {
+      "fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+      "files": {
+        "media/tt-008-archerfish-human-faces-1056e28596f7.mp4": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb",
+        "media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d"
+      },
+      "evidence_sha256": "f5b140fd78d29362d49632b1f0f2539a64cbd509bfd10bc29b013a516ba2c872",
+      "reviewer": "Independent exact-export science and editorial reviewer / runbook_review",
+      "reviewed_at": "2026-11-13T13:00:37.449955Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "reviewed_encoded_frames": true,
+      "standard": "toxic-tales-branding-v1",
+      "logo_sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+      "reviewed_opening_frames": true,
+      "reviewed_every_shot_and_transition": true,
+      "reviewed_final_frame": true,
+      "reviewed_cover": true,
+      "reviewed_phone_scale": true,
+      "checks": {
+        "actual_logo": {
+          "decision": "pass",
+          "finding": "The original green Toxic Tales flask logo is present at the opening, throughout the sampled scenes, at the final frame and on the cover.",
+          "basis": "All actual encoded frame sets and actual cover; manifest and archived brand asset identify SHA-256 1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742."
+        },
+        "placement": {
+          "decision": "pass",
+          "finding": "The logo stays in the upper-left safe region, above the kicker and title, without covering the fish or core task illustration.",
+          "basis": "Opening/final/cover inspection and all 14 shots at phone scale; declared native display box [82,72,140,140]."
+        },
+        "clean_frames": {
+          "decision": "pass",
+          "finding": "No production footer, progress bar, field-note label, episode code or debugging overlay appears in the reviewed film frames.",
+          "basis": "Opening, every shot and transition sample, final frame and cover. Small reference/task/conceptual labels explain scientific provenance and scope."
+        },
+        "captions_and_labels": {
+          "decision": "pass",
+          "finding": "White speech captions sit on one dark high-contrast layer, separate from headlines and graphics. Settled labels are legible and within margins.",
+          "basis": "All 31 caption records checked for exact text order, time bounds and nonoverlap, with actual 360px/540px panels; short wipe overlap affects artwork only and is gone by +0.70s."
+        },
+        "scientific_limits": {
+          "decision": "pass",
+          "finding": "The small laboratory experiments, two images per trial, separate four-fish control cohort and absence of an owner-recognition test are visible and preserved in the final audio transcript.",
+          "basis": "Newport et al. DOI 10.1038/srep27523 full-text Methods/Results/Discussion; shots 7-12 and final transcript. Feature labels also state exact cues remain unresolved."
+        },
+        "provenance": {
+          "decision": "pass",
+          "finding": "The only third-party science photograph credits Reichenthal, Ben-Tov and Segev (2018), Figure 1A under CC BY 4.0, with crop changes and separate-study origin disclosed. Owner logo and Manrope/Fraunces OFL font receipts are retained.",
+          "basis": "Independently checked the primary Frontiers article DOI 10.3389/fncir.2018.00018, Figure 1 caption, Animals methods and CC BY notice; original image/crop inspected; manifest source/download SHA and crop [117,59,529,793] match. Episode/source archive and YouTube description provide credits."
+        },
+        "reference_imagery": {
+          "decision": "pass",
+          "finding": "The cover and opening/closing photographs visibly say reference photo. The hunt, face task, controls and feature labels are identified as conceptual illustrations, not recorded experimental behaviour.",
+          "basis": "Actual cover and encoded shots 1-14; separate 2018 source photo compared with the 2016 focal study. No original face-test footage or stimuli are claimed."
+        }
+      }
+    },
+    "motion_review": {
+      "fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+      "files": {
+        "media/tt-008-archerfish-human-faces-1056e28596f7.mp4": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb",
+        "media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d"
+      },
+      "evidence_sha256": "f5b140fd78d29362d49632b1f0f2539a64cbd509bfd10bc29b013a516ba2c872",
+      "reviewer": "Independent exact-export science and editorial reviewer / runbook_review",
+      "reviewed_at": "2026-11-13T13:00:37.449955Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "reviewed_encoded_frames": true,
+      "standard": "toxic-tales-motion-v1",
+      "source_sha256": "92cb33ab294a88ccf99b8c523b68c16a1fe3873dd5433fbbf86c24439e73244b",
+      "motion_spec_sha256": "019225e920c1c8b81609ea82e41839f67a91ce0edb1a1f7c3dfead4cb10585d6",
+      "reviewed_every_shot_and_transition": true,
+      "reviewed_phone_scale": true,
+      "moving_playback_review_claimed": false,
+      "review_method": "Independently viewed every encoded shot midpoint; before/after samples at all 13 transitions; +0.18s and +0.70s samples for all 14 shots; 0s/1s openings; final encoded frame; and actual cover. Contact sheet panels were 360px wide and additional frame panels 540px wide. This is discrete encoded-frame inspection, not continuous playback or listening.",
+      "checks": {
+        "kinetic_text": {
+          "decision": "pass",
+          "finding": "Headlines enter with restrained opacity/position changes and settle at full contrast, keeping meaningful phrases together.",
+          "basis": "Opening 0s/1s and all 14 shots at +0.18s, +0.70s and midpoint. The owner-recognition negation is intact in settled title and captions."
+        },
+        "transitions": {
+          "decision": "pass",
+          "finding": "The short feathered artwork wipes preserve one logo and one caption layer. Some adjacent artwork/labels overlap during the wipe at +0.18s, but all settle cleanly by +0.70s without persistent clipping or mixed claims.",
+          "basis": "All 13 immediate before/after boundary pairs plus each following +0.18s/+0.70s sample; no numeric chart is animated or sliced."
+        },
+        "ecological_motion": {
+          "decision": "pass",
+          "finding": "Changing fish positions, water-jet extensions and splash marks illustrate hunting and choosing a target; they are explicitly conceptual rather than measured behavioural sequences.",
+          "basis": "Changing encoded samples in shots 2-7 and small fish groups in shots 11-12; illustrative labels and manifest measured_time_series=false."
+        },
+        "camera_motion": {
+          "decision": "pass",
+          "finding": "Bounded reframing of the licensed still retains the fish, water surface, jet and above-water target; reference-photo labels prevent interpreting the still movement as recorded behaviour.",
+          "basis": "Opening 0s/1s, first-shot settled/midpoint samples and final-shot settled/midpoint/final frames; actual cover; manifest reference-photo share 0.1238."
+        },
+        "evidence_bound_data": {
+          "decision": "pass",
+          "finding": "The reel uses a qualitative above-chance result and a two-image choice task without inventing success percentages, time series or a quantified feature mechanism.",
+          "basis": "All encoded scientific panels; final ASR preserves 44 and 18 alternative pools and separate four-fish cohorts; primary Experiments 1 and 2; manifest has no metrics and animation timing represents no measurement."
+        },
+        "caption_sync": {
+          "decision": "pass",
+          "finding": "All 31 caption chunks reproduce the script token sequence, remain ordered and nonoverlapping, and end before the encoded video. The negation and numerical pool sizes survive the final audio transcript.",
+          "basis": "Independent token/time checks and all segment/final ASR. Last caption ends 54.857333333333344s before the 55.125s video end. Frame samples align with the surrounding story; no perceptual listening judgment is claimed."
+        }
+      }
+    },
+    "listening_review_claimed": false,
+    "moving_playback_review_claimed": false,
+    "original_audio_comparison_claimed": false,
+    "encoded_review_index_sha256": "7fe623a7dea8d96c720275772eda64a4f105a54a727ecf277df473e377b0b88b",
+    "inspected_frame_paths": [
+      "qa/tt-008-contact.jpg",
+      "qa/tt-008-shot-01.jpg",
+      "qa/tt-008-shot-02.jpg",
+      "qa/tt-008-boundary-01-before.jpg",
+      "qa/tt-008-boundary-01-after.jpg",
+      "qa/tt-008-shot-03.jpg",
+      "qa/tt-008-boundary-02-before.jpg",
+      "qa/tt-008-boundary-02-after.jpg",
+      "qa/tt-008-shot-04.jpg",
+      "qa/tt-008-boundary-03-before.jpg",
+      "qa/tt-008-boundary-03-after.jpg",
+      "qa/tt-008-shot-05.jpg",
+      "qa/tt-008-boundary-04-before.jpg",
+      "qa/tt-008-boundary-04-after.jpg",
+      "qa/tt-008-shot-06.jpg",
+      "qa/tt-008-boundary-05-before.jpg",
+      "qa/tt-008-boundary-05-after.jpg",
+      "qa/tt-008-shot-07.jpg",
+      "qa/tt-008-boundary-06-before.jpg",
+      "qa/tt-008-boundary-06-after.jpg",
+      "qa/tt-008-shot-08.jpg",
+      "qa/tt-008-boundary-07-before.jpg",
+      "qa/tt-008-boundary-07-after.jpg",
+      "qa/tt-008-shot-09.jpg",
+      "qa/tt-008-boundary-08-before.jpg",
+      "qa/tt-008-boundary-08-after.jpg",
+      "qa/tt-008-shot-10.jpg",
+      "qa/tt-008-boundary-09-before.jpg",
+      "qa/tt-008-boundary-09-after.jpg",
+      "qa/tt-008-shot-11.jpg",
+      "qa/tt-008-boundary-10-before.jpg",
+      "qa/tt-008-boundary-10-after.jpg",
+      "qa/tt-008-shot-12.jpg",
+      "qa/tt-008-boundary-11-before.jpg",
+      "qa/tt-008-boundary-11-after.jpg",
+      "qa/tt-008-shot-13.jpg",
+      "qa/tt-008-boundary-12-before.jpg",
+      "qa/tt-008-boundary-12-after.jpg",
+      "qa/tt-008-shot-14.jpg",
+      "qa/tt-008-boundary-13-before.jpg",
+      "qa/tt-008-boundary-13-after.jpg",
+      "qa/tt-008-opening-0s.jpg",
+      "qa/tt-008-opening-1s.jpg",
+      "qa/tt-008-final-frame.jpg",
+      "qa/tt-008-review-shot-01-plus-018.jpg",
+      "qa/tt-008-review-shot-01-plus-070.jpg",
+      "qa/tt-008-review-shot-02-plus-018.jpg",
+      "qa/tt-008-review-shot-02-plus-070.jpg",
+      "qa/tt-008-review-shot-03-plus-018.jpg",
+      "qa/tt-008-review-shot-03-plus-070.jpg",
+      "qa/tt-008-review-shot-04-plus-018.jpg",
+      "qa/tt-008-review-shot-04-plus-070.jpg",
+      "qa/tt-008-review-shot-05-plus-018.jpg",
+      "qa/tt-008-review-shot-05-plus-070.jpg",
+      "qa/tt-008-review-shot-06-plus-018.jpg",
+      "qa/tt-008-review-shot-06-plus-070.jpg",
+      "qa/tt-008-review-shot-07-plus-018.jpg",
+      "qa/tt-008-review-shot-07-plus-070.jpg",
+      "qa/tt-008-review-shot-08-plus-018.jpg",
+      "qa/tt-008-review-shot-08-plus-070.jpg",
+      "qa/tt-008-review-shot-09-plus-018.jpg",
+      "qa/tt-008-review-shot-09-plus-070.jpg",
+      "qa/tt-008-review-shot-10-plus-018.jpg",
+      "qa/tt-008-review-shot-10-plus-070.jpg",
+      "qa/tt-008-review-shot-11-plus-018.jpg",
+      "qa/tt-008-review-shot-11-plus-070.jpg",
+      "qa/tt-008-review-shot-12-plus-018.jpg",
+      "qa/tt-008-review-shot-12-plus-070.jpg",
+      "qa/tt-008-review-shot-13-plus-018.jpg",
+      "qa/tt-008-review-shot-13-plus-070.jpg",
+      "qa/tt-008-review-shot-14-plus-018.jpg",
+      "qa/tt-008-review-shot-14-plus-070.jpg",
+      "media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg"
+    ],
+    "release_note": "Independent science/story/branding/motion review is complete for these exact encoded bytes only. MP4 and cover hashes were recomputed from the downloaded public files and match the manifest. Review uses actual encoded frame sampling, transcript comparison and loudness measurements; no continuous playback, listening or source-audio parity is claimed. Provider account, schedule, public-byte readiness and eventual platform publication must be independently reconciled by the publishing workflow."
   }
 }

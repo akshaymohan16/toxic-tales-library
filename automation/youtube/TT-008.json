@@ -1,0 +1,18 @@
+{
+  "title": "The fish that spat its answer | Toxic Tales #Shorts",
+  "description": "A fish that spits its answer: can archerfish tell human faces apart?\n\nIn two laboratory experiments, separate groups of four Toxotes chatareus learned which face image earned food and which to avoid. During testing, the familiar unrewarded face was paired with one new face at a time, drawn from a pool of 44 images in the first experiment. The fish discriminated above chance.\n\nFour different fish also succeeded with 18 novel faces after colour, mean brightness and the outer head outline were standardized. Only TWO faces appeared per trial. The results show learned image discrimination; they do not demonstrate that fish recognise their owners or use the same cues as humans.\n\nTT-008 | Newport, Wallis, Reshitnyk & Siebeck (2016), Scientific Reports 6:27523. https://doi.org/10.1038/srep27523\nPaper, methods, limitations and full credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-008.html\n\nArcherfish reference photograph: Reichenthal, Ben-Tov & Segev (2018), Front. Neural Circuits 12:18, Fig.1A, CC BY 4.0, cropped; from a separate study: https://doi.org/10.3389/fncir.2018.00018 . Licence: https://creativecommons.org/licenses/by/4.0/ . Original conceptual task illustrations, not actual face-test footage or stimuli. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Archerfish #AnimalBehaviour #FishCognition #Ecology #ScienceCommunication",
+  "made_for_kids": false,
+  "privacy": "PUBLIC",
+  "is_ai_generated": true,
+  "review_decision": "pass",
+  "reviewed_release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+  "source_video_sha256": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb",
+  "rights_review_decision": "pass",
+  "audience_review": "General science reporting for curious adults. This explanation of a laboratory vision experiment, its transfer design and inference limits is not directed to children.",
+  "review_basis": "Independent review against the focal 2016 full paper, current locked TT-008 episode, actual encoded export and final release. Title and description preserve separate four-fish cohorts, two faces per trial, pools of 44 and 18 alternatives, the controlled second experiment and the owner-recognition limit. The primary Frontiers 2018 source identifies Reichenthal, Ben-Tov and Segev and a CC BY licence for the reference photograph; Figure 1A and the Toxotes chatareus identification were independently checked. Cropping/reframing and separate-study provenance are disclosed, with clickable source DOI and CC BY 4.0 licence links in the description. The licence permits redistribution/adaptation to both destinations with attribution. Original conceptual illustrations, owner-authorized brand logo, synthetic Kokoro narration and pinned OFL fonts are documented in the episode, manifest and archive. These metadata are bound to the reviewed video SHA-256 and release fingerprint; no new or changed export is authorized. No listening or continuous playback is claimed.",
+  "reviewed_at": "2026-11-13T13:00:37.449955Z",
+  "reviewer": "Independent exact-export science and editorial reviewer / runbook_review",
+  "listening_review_claimed": false,
+  "moving_playback_review_claimed": false,
+  "metadata_sha256": "4e33719b2c83eb43c6cb9f14ee1729447910a1672ba793239980322a560dc6b6"
+}

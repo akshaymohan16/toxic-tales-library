@@ -3,14 +3,43 @@
   "claims": {
     "production:2026-11-13": {
       "owner_run_id": "root-today-tt008-2026-11-13T12:21:54.046Z",
-      "phase": "research_and_production",
+      "phase": "review_passed_immediate_publication",
       "claimed_at": "2026-11-13T12:21:54.046Z",
       "expires_at": "2026-11-13T16:21:54.046Z",
       "episode_id": "TT-008",
       "doi": "10.1038/srep27523",
-      "publication_date": "2026-11-13T18:00:00+01:00",
+      "publication_date": "2026-11-13T14:10:00+01:00",
       "status": "active",
-      "reason": "Owner requested one new Reel today while preserving Tuesday bumblebee."
+      "reason": "Owner requested one new Reel today while preserving Tuesday bumblebee.",
+      "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810"
+    },
+    "submission:instagram:2026-11-13T14:10:Europe/Vienna": {
+      "owner_run_id": "root-today-tt008-2026-11-13T12:21:54.046Z",
+      "phase": "immediate_publication_authorized",
+      "claimed_at": "2026-11-13T13:07:29.674Z",
+      "expires_at": "2026-11-13T13:37:30.559Z",
+      "episode_id": "TT-008",
+      "post_id": "TT-008-REEL",
+      "platform": "instagram",
+      "publication_date": "2026-11-13T14:10:00+01:00",
+      "doi": "10.1038/srep27523",
+      "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+      "status": "active",
+      "intent": "automation/instagram/TT-008-intent.json"
+    },
+    "submission:youtube:2026-11-13T14:10:Europe/Vienna": {
+      "owner_run_id": "root-today-tt008-2026-11-13T12:21:54.046Z",
+      "phase": "immediate_publication_authorized",
+      "claimed_at": "2026-11-13T13:07:29.674Z",
+      "expires_at": "2026-11-13T13:37:30.559Z",
+      "episode_id": "TT-008",
+      "post_id": "TT-008-YOUTUBE-SHORT",
+      "platform": "youtube",
+      "publication_date": "2026-11-13T14:10:00+01:00",
+      "doi": "10.1038/srep27523",
+      "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+      "status": "active",
+      "intent": "automation/youtube/TT-008-intent.json"
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
