@@ -156,5 +156,24 @@
       "reason": "Latest owner request: once ready, publish now on both platforms; Tuesday bumblebee and regular automation unchanged. Original source timestamp retained only to preserve reviewed export identity.",
       "source_publication_date": "2026-11-13T18:00:00+01:00"
     }
-  ]
+  ],
+  "paper_access": {
+    "policy": "automation/PAPER_ACCESS_POLICY.md",
+    "routine_owner_approval_required": false,
+    "primary_study_source": "PMC/Europe PMC open-access full text",
+    "preferred_format": "complete HTML or JATS XML",
+    "retrieval_workflow": ".github/workflows/fetch-open-papers.yml",
+    "retrieval_request": "automation/paper-retrieval-request.json",
+    "cache_directory": "research/fulltext",
+    "public_cache_licences": [
+      "CC BY",
+      "CC0"
+    ],
+    "max_papers_per_request": 20,
+    "on_inaccessible_candidate": "record reason and select another eligible paper autonomously",
+    "preserve_existing_releases": true,
+    "download_is_not_review": true,
+    "platform_permission_controls_unchanged": true,
+    "authorized_on": "2026-11-13"
+  }
 }

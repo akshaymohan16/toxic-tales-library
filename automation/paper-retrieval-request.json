@@ -1,0 +1,14 @@
+{
+  "repository": "akshaymohan16/toxic-tales-library",
+  "request_id": "paper-access-check-2026-11-13",
+  "papers": [
+    {
+      "pmcid": "PMC4895153",
+      "expected_doi": "10.1038/srep27523"
+    },
+    {
+      "pmcid": "PMC2719796",
+      "expected_doi": "10.1371/journal.pone.0006573"
+    }
+  ]
+}

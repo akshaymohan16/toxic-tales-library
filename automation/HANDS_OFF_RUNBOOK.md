@@ -15,6 +15,10 @@ Sunday 10:00: create and schedule the upcoming week's missing videos.
 Monday: check and recover missing destinations; report first-run readiness after the Monday 18:15 check.
 Daily 10:15 and 18:15: reconcile live provider state, recover routine failures, record a fresh heartbeat, issue deduplicated result notifications.
 
+## Autonomous paper access
+
+Read automation/PAPER_ACCESS_POLICY.md before selecting a new study. Routine lawful full-text reading and retrieval is authorized without owner approval. New studies use verified PMC/Europe PMC open-access full text; keep the approved bumblebee unchanged. Use complete HTML/JATS or the official-API cloud cache workflow, without local PDF downloads. Inspect actual retrieval results, read the full paper and necessary supplements, and skip inaccessible candidates. A cache result grants no scientific or media-rights approval. App-level permission controls still apply.
+
 ## Idempotent production
 Resolve the next Tuesday/Friday slots from the current ledger and LIVE Metricool calendar before selecting papers. An existing approved video reserved for both destinations counts toward that week's two videos. Produce ONLY missing distinct-paper videos, not two additional videos on top of an occupied slot. Resume incomplete production before starting another candidate. Preserve existing reviewed media and successful provider reservations. Maintain one reserve week when practical, without extra publications or quota overruns.
 

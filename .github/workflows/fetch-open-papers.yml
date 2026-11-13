@@ -1,0 +1,41 @@
+name: Retrieve open research full text
+on:
+  push:
+    branches: [main]
+    paths: ['automation/paper-retrieval-request.json']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: toxic-tales-open-paper-cache
+  cancel-in-progress: false
+jobs:
+  tests:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test article identity, licence and cache boundaries
+        run: python -m unittest discover -s automation -p test_fetch_open_papers.py -v
+  retrieve:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    needs: tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Retrieve available licensed full text through official APIs
+        run: python automation/fetch_open_papers.py --output "$RUNNER_TEMP/toxic-tales-open-papers"
+      - name: Commit only validated research cache and retrieval report
+        run: python automation/fetch_open_papers.py --output "$RUNNER_TEMP/toxic-tales-open-papers" --persist
