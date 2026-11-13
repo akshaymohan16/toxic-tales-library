@@ -40,12 +40,21 @@ jobs:
         run: |
           python -m unittest discover -s automation -p 'test_enforce_reels_only.py' -v
           python automation/enforce_reels_only.py
+      - name: Restore exact approved exports before rendering
+        run: python scripts/preserve_current_releases.py
       - name: Build reviewed stories and media
         env:
           OMP_NUM_THREADS: '2'
         run: python scripts/build_current.py
-      - name: Package exact encoded frames for the new film review
-        run: python scripts/package_review.py --episode TT-008
+      - name: Package exact encoded frames for current film reviews
+        run: python scripts/package_review.py --current
+      - name: Save compact encoded review packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: toxic-tales-review-packages
+          path: site/qa/*-review.zip
+          if-no-files-found: warn
+          retention-days: 7
       - name: Exclude retired posts and carousels from publication queue
         run: python automation/enforce_reels_only.py --sanitize-queue
       - name: Add confirmed social links and accurate visual provenance

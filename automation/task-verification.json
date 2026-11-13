@@ -1,5 +1,5 @@
 {
-  "verified_at": "2026-11-13T12:38:54.762Z",
+  "verified_at": "2026-11-13T13:17:15.198Z",
   "tasks": [
     {
       "id": "6aeefcb926708191b092554230783da1",
@@ -7,10 +7,10 @@
       "enabled": true,
       "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Vienna:20261108T100000\nRRULE:FREQ=WEEKLY;BYDAY=SU;BYHOUR=10;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
       "next_run_time": "2026-11-15T10:00:00+01:00",
-      "updated_at": "2026-11-13T12:34:55.577189+00:00",
+      "updated_at": "2026-11-13T13:11:21.049804+00:00",
       "environment_selection": "inherited",
       "environments": null,
-      "prompt_source_commit": "9a5ff6dcca977b869279bb7a3f83d41944c32b1f"
+      "prompt_source_commit": "60602cbd3e261c20db537f307b2a159039de506e"
     },
     {
       "id": "Automation_991690d6af648191ac8037cfa96c92a0",
@@ -18,10 +18,10 @@
       "enabled": true,
       "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Vienna:20261113T181500\nRRULE:FREQ=DAILY;BYHOUR=10,18;BYMINUTE=15;BYSECOND=0\nEND:VEVENT",
       "next_run_time": "2026-11-13T18:15:00+01:00",
-      "updated_at": "2026-11-13T12:34:58.283918+00:00",
+      "updated_at": "2026-11-13T13:11:23.259620+00:00",
       "environment_selection": "inherited",
       "environments": null,
-      "prompt_source_commit": "9a5ff6dcca977b869279bb7a3f83d41944c32b1f"
+      "prompt_source_commit": "60602cbd3e261c20db537f307b2a159039de506e"
     },
     {
       "id": "6af077085e1c8191af8325f3be864402",
@@ -39,5 +39,12 @@
   "notification_settings_verified": false,
   "verification_basis": "Automation update responses confirmed saved prompt, enabled state and preserved schedule; not proof of future execution or push/email delivery.",
   "first_run_audit_deadline": "2026-11-16T19:00:00+01:00",
-  "current_update": "Exact Friday TT-008 exception and current renderer dispatch saved to both existing tasks; schedules unchanged."
+  "current_update": "Owner requested immediate publication; both existing task prompts now reconcile TT008 at 14:10 Europe/Vienna with no 18:00 duplicate. Sunday production and Tuesday/Friday 10:00 cadence preserved.",
+  "immediate_publication": {
+    "episode_id": "TT-008",
+    "date": "2026-11-13T14:10:00+01:00",
+    "instagram": "https://www.instagram.com/reel/DfrtQD-EZiG/",
+    "youtube": "https://www.youtube.com/shorts/le2mS8MHcpo",
+    "live_verified": true
+  }
 }

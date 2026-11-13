@@ -1,7 +1,7 @@
 """Compact exact-export review material; never a publication approval.
 
-This additive helper owns only TT-008 review outputs. It leaves every source,
-release, encoded video and original renderer QA file unchanged.
+This additive helper owns only review outputs for new production episodes. It
+leaves every source, release, encoded video and original renderer QA unchanged.
 """
 import argparse
 import hashlib
@@ -16,11 +16,13 @@ from pathlib import Path, PurePosixPath
 
 from PIL import Image
 
+import build_current as current
+import preserve_current_releases as preserve_current
 from editorial_gate import editorial_source_sha256
 from motion_spec import motion_spec_sha256
 
 ROOT = Path(__file__).resolve().parents[1]
-EPISODE = 'TT-008'
+FROZEN_EPISODES = current.frozen_motion.FROZEN_LEGACY_EPISODES
 MAX_PACKAGE_BYTES = 50_000_000
 
 
@@ -48,8 +50,17 @@ def number(value):
     return type(value) in (int, float) and math.isfinite(value)
 
 
-def review_output(qa, name):
-    if not re.fullmatch(r'tt-008-review(?:-shot-\d{2}-plus-(?:018|070)\.jpg|-index\.json|\.zip|\.html)', name):
+def episode_stem(episode_id):
+    if (not isinstance(episode_id, str) or not re.fullmatch(r'TT-\d{3,}', episode_id)
+            or episode_id in FROZEN_EPISODES):
+        raise ValueError('Review outputs are scoped to canonical nonfrozen episode IDs')
+    return episode_id.lower()
+
+
+def review_output(qa, name, episode_id):
+    stem = episode_stem(episode_id)
+    pattern = re.escape(stem) + r'-review(?:-shot-\d{2,3}-plus-(?:018|070)\.jpg|-index\.json|\.zip|\.html)'
+    if not re.fullmatch(pattern, name):
         raise ValueError('Output is outside scoped review filenames')
     target = qa / name
     if target.is_symlink() or target.resolve() != target.absolute():
@@ -71,27 +82,41 @@ def verified_image(path, dimensions=None):
         image.verify()
 
 
-def package_review(root=ROOT, episode_id=EPISODE):
-    if episode_id != EPISODE:
-        raise ValueError('This additive review package is scoped only to TT-008')
+def released(root, episode_id):
+    path = contained(root, 'quality/releases.json')
+    releases = json.loads(path.read_text(encoding='utf-8')) if path.is_file() else {}
+    return releases.get(episode_id, {}).get('decision') == 'release'
+
+
+def package_review(root=ROOT, episode_id='TT-008'):
+    stem = episode_stem(episode_id)
     root = Path(root).resolve()
-    stem = episode_id.lower()
+    if released(root, episode_id):
+        result = dict(preserve_current.verify_released_local(root, episode_id))
+        result.update(episode=episode_id, status='retained exact released review bytes')
+        return result
     site = contained(root, 'site')
     qa = contained(site, 'qa')
     episode_path = contained(root, 'episodes/' + stem + '.json')
     episode = json.loads(episode_path.read_text(encoding='utf-8'))
     manifest_path = contained(site, 'qa/' + stem + '.json')
     manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
-    if (episode.get('id') != EPISODE or episode.get('doi') != '10.1038/srep27523'
-            or episode.get('production', {}).get('scene_family') != 'archerfish-face-2016'
-            or manifest.get('scene_family') != 'archerfish-face-2016'
-            or manifest.get('scene_doi') != episode['doi']
+    if episode.get('id') != episode_id or not episode.get('production'):
+        raise ValueError('Review source identity or production is missing')
+    renderer = current.select_renderer(episode)
+    receipt = renderer.validate_motion_spec(episode)
+    if (episode['production'].get('renderer') != renderer.DECLARED_RENDERER
+            or manifest.get('declared_renderer') != renderer.DECLARED_RENDERER
+            or manifest.get('renderer') != renderer.VERSION
+            or manifest.get('motion') != receipt
+            or manifest.get('scene_family') != receipt.get('scene_family')
+            or manifest.get('scene_doi') != receipt.get('scene_doi')
             or manifest.get('technical_passed') is not True):
         raise ValueError('Review source and encoded manifest identities do not match')
     fingerprint = manifest.get('fingerprint', '')
     slug = episode.get('slug', '')
     if (not re.fullmatch(r'[0-9a-f]{64}', fingerprint)
-            or not re.fullmatch(r'tt-008-[a-z0-9-]+', slug)):
+            or not re.fullmatch(re.escape(stem) + r'-[a-z0-9-]+', slug)):
         raise ValueError('Invalid exact-export identity')
     evidence_path = contained(root, episode['evidence_file'])
     if not evidence_path.is_relative_to((root / 'evidence').resolve()):
@@ -200,13 +225,13 @@ def package_review(root=ROOT, episode_id=EPISODE):
                          html.escape(label) + '</figcaption></figure>')
         page = ('<!doctype html><html lang="en"><meta charset="utf-8">'
                 '<meta name="viewport" content="width=device-width, initial-scale=1">'
-                '<title>TT-008 encoded export review</title><style>'
+                '<title>' + episode_id + ' encoded export review</title><style>'
                 'body{font:16px system-ui;background:#071c22;color:#edf4ed;margin:24px}'
                 'a{color:#ade8d0}nav{display:flex;gap:22px;flex-wrap:wrap}'
                 '.frames{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}'
                 'figure{margin:0}img{max-width:100%;height:auto}figcaption{padding:8px 0}'
                 'video{display:block;max-height:75vh;max-width:100%;margin:20px 0}'
-                '</style><h1>TT-008 encoded export review</h1>'
+                '</style><h1>' + episode_id + ' encoded export review</h1>'
                 '<p>Exact encoded frames and source manifest. This page does not grant publication approval.</p>'
                 '<nav><a href="' + stem + '-review.zip" download>Download review ZIP</a>'
                 '<a href="../' + html.escape(video_rel) + '" download>Download original MP4</a>'
@@ -219,20 +244,39 @@ def package_review(root=ROOT, episode_id=EPISODE):
         page_path.write_text(page, encoding='utf-8')
         for record in generated:
             name = PurePosixPath(record['path']).name
-            (staging / name).replace(review_output(qa, name))
+            (staging / name).replace(review_output(qa, name, episode_id))
         for path in (index_path, archive, page_path):
-            path.replace(review_output(qa, path.name))
+            path.replace(review_output(qa, path.name, episode_id))
     return {'episode': episode_id, 'archive': 'qa/' + stem + '-review.zip',
             'page': 'qa/' + stem + '-review.html', 'frames': len(records),
             'video_sha256': files[video_rel]}
 
 
+def package_current(root=ROOT):
+    root = Path(root).resolve()
+    results = []
+    for source in sorted(contained(root, 'episodes').glob('*.json')):
+        episode = json.loads(source.read_text(encoding='utf-8'))
+        episode_id = episode.get('id')
+        if not episode.get('production') or episode_id in FROZEN_EPISODES:
+            continue
+        stem = episode_stem(episode_id)
+        if source.resolve() != contained(root, 'episodes/' + stem + '.json'):
+            raise ValueError('Production episode source filename does not match its ID')
+        if released(root, episode_id) or contained(root, 'site/qa/' + stem + '.json').is_file():
+            results.append(package_review(root, episode_id))
+    return results
+
+
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--episode', required=True)
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument('--episode')
+    mode.add_argument('--current', action='store_true')
     parser.add_argument('--root', type=Path, default=ROOT)
     args = parser.parse_args()
-    print(json.dumps(package_review(args.root, args.episode), indent=2))
+    result = package_current(args.root) if args.current else package_review(args.root, args.episode)
+    print(json.dumps(result, indent=2))
 
 
 if __name__ == '__main__':
