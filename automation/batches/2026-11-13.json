@@ -1,0 +1,42 @@
+{
+  "batch_id": "2026-11-13-one-off",
+  "created_on": "2026-11-13",
+  "updated_at": "2026-11-13T13:13:56.763Z",
+  "timezone": "Europe/Vienna",
+  "episode_ids": [
+    "TT-008"
+  ],
+  "status": "published_both_platforms",
+  "kind": "owner_authorized_one_off",
+  "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+  "release_record": "quality/releases.json",
+  "public_verification_run": 43430953217,
+  "regular_next_week_batch": "2026-11-16",
+  "note": "Additional explicitly requested video; does not replace either regular next-week video.",
+  "slots": [
+    {
+      "date": "2026-11-13T14:10:00+01:00",
+      "post_id": "TT-008-REEL",
+      "platform": "instagram",
+      "format": "REEL",
+      "status": "published",
+      "metricool_id": "426945585",
+      "metricool_uuid": "3555893508354493617",
+      "provider_status": "PUBLISHED",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=3555893508354493617",
+      "public_url": "https://www.instagram.com/reel/DfrtQD-EZiG/"
+    },
+    {
+      "date": "2026-11-13T14:10:00+01:00",
+      "post_id": "TT-008-YOUTUBE-SHORT",
+      "platform": "youtube",
+      "format": "SHORT",
+      "status": "published",
+      "metricool_id": "426946098",
+      "metricool_uuid": "-6895101637645415437",
+      "provider_status": "PUBLISHED",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6895101637645415437",
+      "public_url": "https://www.youtube.com/shorts/le2mS8MHcpo"
+    }
+  ]
+}

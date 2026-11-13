@@ -1,6 +1,32 @@
 {
   "schema_version": 1,
-  "creation_events": [],
+  "creation_events": [
+    {
+      "key": "TT-008:1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+      "episode_id": "TT-008",
+      "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+      "status": "reported_in_chat",
+      "prepared_at": "2026-11-13T13:09:51.295Z",
+      "notified_at": "2026-11-13T13:09:51.295Z",
+      "title": "The fish that spat its answer",
+      "doi": "10.1038/srep27523",
+      "message": "Created The fish that spat its answer: a 55-second Reel explaining how trained archerfish distinguished human face images, with small-study and owner-recognition limits. Accepted on Instagram and YouTube for 2026-11-13 14:10 Europe/Vienna. Preview: https://akshaymohan16.github.io/toxic-tales-library/media/tt-008-archerfish-human-faces-1056e28596f7.mp4 ; research: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-008.html ; DOI10.1038/srep27523. Publication is still being checked.",
+      "preview_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-008-archerfish-human-faces-1056e28596f7.mp4",
+      "research_record_url": "https://akshaymohan16.github.io/toxic-tales-library/sources/tt-008.html",
+      "scheduled_dates": [
+        "2026-11-13T14:10:00+01:00"
+      ],
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "provider_uuids": {
+        "instagram": "3555893508354493617",
+        "youtube": "-6895101637645415437"
+      },
+      "delivery_status": "Chat report only; push/email delivery unverified"
+    }
+  ],
   "publication_events": [
     {
       "key": "instagram:-3158597333632725768",
@@ -37,6 +63,30 @@
       "post_id": "TT-006-YOUTUBE-SHORT",
       "status": "historically_reported",
       "notified_at": "2026-11-10T09:16:05.767Z"
+    },
+    {
+      "key": "instagram:3555893508354493617",
+      "platform": "instagram",
+      "uuid": "3555893508354493617",
+      "post_id": "TT-008-REEL",
+      "episode_id": "TT-008",
+      "status": "reported_in_chat",
+      "notified_at": "2026-11-13T13:13:56.762Z",
+      "public_url": "https://www.instagram.com/reel/DfrtQD-EZiG/",
+      "verification": "Metricool PUBLISHED plus actual live page, correct account/title/DOI as applicable",
+      "delivery_status": "Reported in this chat; push/email receipt not claimed"
+    },
+    {
+      "key": "youtube:-6895101637645415437",
+      "platform": "youtube",
+      "uuid": "-6895101637645415437",
+      "post_id": "TT-008-YOUTUBE-SHORT",
+      "episode_id": "TT-008",
+      "status": "reported_in_chat",
+      "notified_at": "2026-11-13T13:13:56.762Z",
+      "public_url": "https://www.youtube.com/shorts/le2mS8MHcpo",
+      "verification": "Metricool PUBLISHED plus actual live page, correct account/title/DOI as applicable",
+      "delivery_status": "Reported in this chat; push/email receipt not claimed"
     }
   ],
   "delivery": "ChatGPT task result notifications; device/email delivery unverified"

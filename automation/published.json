@@ -838,6 +838,229 @@
       },
       "publication_confirmation": "Future scheduled reservation only. Require positive PUBLISHED and live URL after due time.",
       "duplicate_guard": "Exact Tuesday TT007 video already reserved on this YouTube UUID; never create a second copy."
+    },
+    {
+      "post_id": "TT-008-REEL",
+      "episode_id": "TT-008",
+      "platform": "instagram",
+      "format": "REEL",
+      "doi": "10.1038/srep27523",
+      "publication_date": "2026-11-13T14:10:00+01:00",
+      "timezone": "Europe/Vienna",
+      "metricool_id": "426945585",
+      "metricool_uuid": "3555893508354493617",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=3555893508354493617",
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "auto_publish": true,
+      "draft": false,
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-008-archerfish-human-faces-1056e28596f7.mp4"
+      ],
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg",
+      "source_files_sha256": {
+        "media/tt-008-archerfish-human-faces-1056e28596f7.mp4": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb",
+        "media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d"
+      },
+      "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+      "release_commit": "f8f101d6dbfc821536015af5704b756740529b31",
+      "public_verification_run": 43430953217,
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-4909512262506062715.mp4"
+      ],
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-4474475958381322205.jpeg",
+      "metricool_media_sha256": {
+        "https://static.metricool.com/planner/202611/7937614-file-4909512262506062715.mp4": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb"
+      },
+      "metricool_cover_sha256": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d",
+      "metricool_hosted_bytes_verified": true,
+      "exact_bytes_reverified_at": "2026-11-13T13:10:28.847503+00:00",
+      "provider_readback": {
+        "id": 426945585,
+        "publicationDate": {
+          "dateTime": "2026-11-13T14:10:00",
+          "timezone": "Europe/Vienna"
+        },
+        "creationDate": {
+          "dateTime": "2026-11-13T14:08:00",
+          "timezone": "Europe/Vienna"
+        },
+        "text": "A fish that spits its answer: can archerfish tell human faces apart?\n\nIn two laboratory experiments, separate groups of four Toxotes chatareus learned which face image earned food and which to avoid. During testing, the familiar unrewarded face was paired with one new face at a time, drawn from a pool of 44 images in the first experiment. The fish discriminated above chance.\n\nFour different fish also succeeded with 18 novel faces after colour, mean brightness and the outer head outline were standardized. Only TWO faces appeared per trial. The results show learned image discrimination; they do not demonstrate that fish recognise their owners or use the same cues as humans.\n\nTT-008 | Newport, Wallis, Reshitnyk & Siebeck (2016), Scientific Reports 6:27523. DOI: 10.1038/srep27523\nPaper, methods, limitations and full credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-008.html\n\nArcherfish reference photograph: Reichenthal, Ben-Tov & Segev (2018), Front. Neural Circuits 12:18, Fig.1A, CC BY 4.0, cropped; from a separate study (10.3389/fncir.2018.00018). Original conceptual task illustrations, not actual face-test footage or stimuli. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Archerfish #AnimalBehaviour #FishCognition #Ecology #ScienceCommunication",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/DfrtQD-EZiG/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/DfrtQD-EZiG/",
+            "detailedStatus": "Published"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202611/7937614-file-4909512262506062715.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-4474475958381322205.jpeg",
+        "imageVariants": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "REEL",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "3555893508354493617",
+        "brandTags": []
+      },
+      "provider_readback_checked_at": "2026-11-13T13:13:56.763Z",
+      "schedule_readback_verified": true,
+      "publication_eligible": false,
+      "receipt_saved_on": "2026-11-13T13:13:56.763Z",
+      "owner_authorization": "automation/config.json#owner_authorized_one_off_slots",
+      "publication_confirmation": "Provider PUBLISHED and separate live verification confirmed.",
+      "duplicate_guard": "This platform UUID already owns the exact TT-008 one-off; never create another copy.",
+      "public_url": "https://www.instagram.com/reel/DfrtQD-EZiG/",
+      "live_verification": {
+        "decision": "pass",
+        "url": "https://www.instagram.com/reel/DfrtQD-EZiG/",
+        "checked_at": "2026-11-13T13:13:56.762Z",
+        "verification_basis": "Opened the exact provider public URL in the browser (canonical redirect /reels/DfrtQD-EZiG/). The live Reel shows @toxic_tales_eco, the complete TT-008 archerfish caption and DOI10.1038/srep27523, matching the reviewed post. Metricool exact UUID3555893508354493617 independently reports PUBLISHED."
+      },
+      "publication_confirmed_at": "2026-11-13T13:13:56.762Z"
+    },
+    {
+      "post_id": "TT-008-YOUTUBE-SHORT",
+      "episode_id": "TT-008",
+      "platform": "youtube",
+      "format": "SHORT",
+      "doi": "10.1038/srep27523",
+      "publication_date": "2026-11-13T14:10:00+01:00",
+      "timezone": "Europe/Vienna",
+      "metricool_id": "426946098",
+      "metricool_uuid": "-6895101637645415437",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6895101637645415437",
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "auto_publish": true,
+      "draft": false,
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-008-archerfish-human-faces-1056e28596f7.mp4"
+      ],
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg",
+      "source_files_sha256": {
+        "media/tt-008-archerfish-human-faces-1056e28596f7.mp4": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb",
+        "media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d"
+      },
+      "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+      "release_commit": "f8f101d6dbfc821536015af5704b756740529b31",
+      "public_verification_run": 43430953217,
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-1565384995539305417.mp4"
+      ],
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-2376352421099764662.jpeg",
+      "metricool_media_sha256": {
+        "https://static.metricool.com/planner/202611/7937614-file-1565384995539305417.mp4": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb"
+      },
+      "metricool_cover_sha256": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d",
+      "metricool_hosted_bytes_verified": true,
+      "exact_bytes_reverified_at": "2026-11-13T13:10:28.847503+00:00",
+      "provider_readback": {
+        "id": 426946098,
+        "publicationDate": {
+          "dateTime": "2026-11-13T14:10:00",
+          "timezone": "Europe/Vienna"
+        },
+        "creationDate": {
+          "dateTime": "2026-11-13T14:08:00",
+          "timezone": "Europe/Vienna"
+        },
+        "text": "A fish that spits its answer: can archerfish tell human faces apart?\n\nIn two laboratory experiments, separate groups of four Toxotes chatareus learned which face image earned food and which to avoid. During testing, the familiar unrewarded face was paired with one new face at a time, drawn from a pool of 44 images in the first experiment. The fish discriminated above chance.\n\nFour different fish also succeeded with 18 novel faces after colour, mean brightness and the outer head outline were standardized. Only TWO faces appeared per trial. The results show learned image discrimination; they do not demonstrate that fish recognise their owners or use the same cues as humans.\n\nTT-008 | Newport, Wallis, Reshitnyk & Siebeck (2016), Scientific Reports 6:27523. https://doi.org/10.1038/srep27523\nPaper, methods, limitations and full credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-008.html\n\nArcherfish reference photograph: Reichenthal, Ben-Tov & Segev (2018), Front. Neural Circuits 12:18, Fig.1A, CC BY 4.0, cropped; from a separate study: https://doi.org/10.3389/fncir.2018.00018 . Licence: https://creativecommons.org/licenses/by/4.0/ . Original conceptual task illustrations, not actual face-test footage or stimuli. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Archerfish #AnimalBehaviour #FishCognition #Ecology #ScienceCommunication",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "le2mS8MHcpo",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/le2mS8MHcpo",
+            "detailedStatus": "Published"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202611/7937614-file-1565384995539305417.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-2376352421099764662.jpeg",
+        "imageVariants": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "The fish that spat its answer | Toxic Tales #Shorts",
+          "type": "short",
+          "privacy": "public",
+          "madeForKids": false,
+          "isAiGeneratedContent": true,
+          "notifySubscribers": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-6895101637645415437",
+        "brandTags": []
+      },
+      "provider_readback_checked_at": "2026-11-13T13:13:56.763Z",
+      "schedule_readback_verified": true,
+      "publication_eligible": false,
+      "receipt_saved_on": "2026-11-13T13:13:56.763Z",
+      "owner_authorization": "automation/config.json#owner_authorized_one_off_slots",
+      "publication_confirmation": "Provider PUBLISHED and separate live verification confirmed.",
+      "duplicate_guard": "This platform UUID already owns the exact TT-008 one-off; never create another copy.",
+      "public_url": "https://www.youtube.com/shorts/le2mS8MHcpo",
+      "live_verification": {
+        "decision": "pass",
+        "url": "https://www.youtube.com/shorts/le2mS8MHcpo",
+        "channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+        "checked_at": "2026-11-13T13:12:50.412Z",
+        "verification_basis": "Opened the actual public YouTube Short in browser: URL le2mS8MHcpo, page title The fish that spat its answer | Toxic Tales #Shorts and visible channel @toxic_tales_eco. This handle matches the connected Metricool brand whose verified YouTube channel ID is UCDvftxMMdtGSntm-ezcPfCg; provider UUID -6895101637645415437 reports PUBLISHED for this exact video."
+      },
+      "publication_confirmed_at": "2026-11-13T13:12:50.412Z",
+      "source_post_id": "TT-008-REEL",
+      "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+      "youtube": {
+        "title": "The fish that spat its answer | Toxic Tales #Shorts",
+        "description": "A fish that spits its answer: can archerfish tell human faces apart?\n\nIn two laboratory experiments, separate groups of four Toxotes chatareus learned which face image earned food and which to avoid. During testing, the familiar unrewarded face was paired with one new face at a time, drawn from a pool of 44 images in the first experiment. The fish discriminated above chance.\n\nFour different fish also succeeded with 18 novel faces after colour, mean brightness and the outer head outline were standardized. Only TWO faces appeared per trial. The results show learned image discrimination; they do not demonstrate that fish recognise their owners or use the same cues as humans.\n\nTT-008 | Newport, Wallis, Reshitnyk & Siebeck (2016), Scientific Reports 6:27523. https://doi.org/10.1038/srep27523\nPaper, methods, limitations and full credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-008.html\n\nArcherfish reference photograph: Reichenthal, Ben-Tov & Segev (2018), Front. Neural Circuits 12:18, Fig.1A, CC BY 4.0, cropped; from a separate study: https://doi.org/10.3389/fncir.2018.00018 . Licence: https://creativecommons.org/licenses/by/4.0/ . Original conceptual task illustrations, not actual face-test footage or stimuli. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Archerfish #AnimalBehaviour #FishCognition #Ecology #ScienceCommunication",
+        "made_for_kids": false,
+        "privacy": "PUBLIC",
+        "is_ai_generated": true,
+        "review_decision": "pass",
+        "reviewed_release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+        "source_video_sha256": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb",
+        "rights_review_decision": "pass",
+        "audience_review": "General science reporting for curious adults. This explanation of a laboratory vision experiment, its transfer design and inference limits is not directed to children.",
+        "review_basis": "Independent review against the focal 2016 full paper, current locked TT-008 episode, actual encoded export and final release. Title and description preserve separate four-fish cohorts, two faces per trial, pools of 44 and 18 alternatives, the controlled second experiment and the owner-recognition limit. The primary Frontiers 2018 source identifies Reichenthal, Ben-Tov and Segev and a CC BY licence for the reference photograph; Figure 1A and the Toxotes chatareus identification were independently checked. Cropping/reframing and separate-study provenance are disclosed, with clickable source DOI and CC BY 4.0 licence links in the description. The licence permits redistribution/adaptation to both destinations with attribution. Original conceptual illustrations, owner-authorized brand logo, synthetic Kokoro narration and pinned OFL fonts are documented in the episode, manifest and archive. These metadata are bound to the reviewed video SHA-256 and release fingerprint; no new or changed export is authorized. No listening or continuous playback is claimed.",
+        "reviewed_at": "2026-11-13T13:00:37.449955Z",
+        "reviewer": "Independent exact-export science and editorial reviewer / runbook_review",
+        "listening_review_claimed": false,
+        "moving_playback_review_claimed": false,
+        "metadata_sha256": "4e33719b2c83eb43c6cb9f14ee1729447910a1672ba793239980322a560dc6b6"
+      }
     }
   ],
   "notified_post_ids": [

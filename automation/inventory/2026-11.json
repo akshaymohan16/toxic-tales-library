@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-13T11:49:09.201Z",
+  "observed_at": "2026-11-13T13:13:56.763Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -21,22 +21,26 @@
     "419869962",
     "420123422",
     "420178205",
+    "420683055",
     "421493009",
     "421493849",
-    "420683055"
+    "426945585",
+    "426946098"
   ],
   "published_post_ids": [
     "TT-002-REEL",
     "TT-004-REEL",
     "TT-005-REEL",
+    "TT-005-CAROUSEL",
     "TT-006-REEL",
     "TT-006-YOUTUBE-SHORT",
-    "TT-005-CAROUSEL"
+    "TT-008-REEL",
+    "TT-008-YOUTUBE-SHORT"
   ],
   "reserved_candidate_ids": [],
   "unresolved_submissions": [],
   "monthly_cap": 20,
-  "planned_usage_with_current_candidates": 14,
+  "planned_usage_with_current_candidates": 16,
   "new_scheduling_allowed": true,
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
@@ -44,7 +48,7 @@
     "TT-007-REEL",
     "TT-007-YOUTUBE-SHORT"
   ],
-  "calendar_reconciled_on": "2026-11-13T11:49:09.201Z",
+  "calendar_reconciled_on": "2026-11-13T13:12:51.238Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -55,16 +59,16 @@
   ],
   "held_post_ids": [],
   "new_scheduling_conditions": "All release/rights/deployment and duplicate checks plus fresh full-month calendar reconciliation and <=20 projected destinations",
-  "provider_confirmed_publications": 6,
-  "known_usage_lower_bound": 6,
-  "last_calendar_readback": "2026-11-13T11:49:09.201Z",
+  "provider_confirmed_publications": 8,
+  "known_usage_lower_bound": 8,
+  "last_calendar_readback": "2026-11-13T13:12:51.238Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
-    "observed_used": 6,
-    "observed_at": "2026-11-13T11:49:09.201Z",
-    "calendar_checked_at": "2026-11-13T11:49:09.201Z",
+    "observed_used": 8,
+    "observed_at": "2026-11-13T13:13:56.763Z",
+    "calendar_checked_at": "2026-11-13T13:12:51.238Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -80,10 +84,12 @@
     },
     "published_destination_keys": [
       "instagram:-3158597333632725768",
-      "instagram:8432780738091634663",
-      "instagram:2386175407143797944",
-      "instagram:-7609883982228992318",
       "instagram:-5193152553705388348",
+      "instagram:-7609883982228992318",
+      "instagram:2386175407143797944",
+      "instagram:3555893508354493617",
+      "instagram:8432780738091634663",
+      "youtube:-6895101637645415437",
       "youtube:4422280930322105807"
     ],
     "observed_published_post_ids": [
@@ -92,11 +98,15 @@
       "instagram:TT-005-REEL",
       "instagram:TT-005-CAROUSEL",
       "instagram:TT-006-REEL",
-      "youtube:TT-006-YOUTUBE-SHORT"
+      "youtube:TT-006-YOUTUBE-SHORT",
+      "instagram:TT-008-REEL",
+      "youtube:TT-008-YOUTUBE-SHORT"
     ],
     "cap": 20,
-    "projected_month_destinations": 14,
+    "projected_month_destinations": 16,
     "remaining_planned_destination_slots": 8,
-    "verified_in_this_run": true
+    "verified_in_this_run": true,
+    "remaining_regular_destination_slots": 8,
+    "owner_authorized_one_off_destination_slots": 2
   }
 }

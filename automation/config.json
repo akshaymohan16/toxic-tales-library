@@ -141,18 +141,20 @@
       "post_id": "TT-008-REEL",
       "platform": "instagram",
       "format": "REEL",
-      "publication_date": "2026-11-13T18:00:00+01:00",
-      "authorized_at": "2026-11-13T13:20:50+01:00",
-      "reason": "Owner explicitly requested a new Reel today; Tuesday bumblebee unchanged"
+      "publication_date": "2026-11-13T14:10:00+01:00",
+      "authorized_at": "2026-11-13T13:06:04+00:00",
+      "reason": "Latest owner request: once ready, publish now on both platforms; Tuesday bumblebee and regular automation unchanged. Original source timestamp retained only to preserve reviewed export identity.",
+      "source_publication_date": "2026-11-13T18:00:00+01:00"
     },
     {
       "episode_id": "TT-008",
       "post_id": "TT-008-YOUTUBE-SHORT",
       "platform": "youtube",
       "format": "SHORT",
-      "publication_date": "2026-11-13T18:00:00+01:00",
-      "authorized_at": "2026-11-13T13:20:50+01:00",
-      "reason": "Owner explicitly requested a new Reel today; Tuesday bumblebee unchanged"
+      "publication_date": "2026-11-13T14:10:00+01:00",
+      "authorized_at": "2026-11-13T13:06:04+00:00",
+      "reason": "Latest owner request: once ready, publish now on both platforms; Tuesday bumblebee and regular automation unchanged. Original source timestamp retained only to preserve reviewed export identity.",
+      "source_publication_date": "2026-11-13T18:00:00+01:00"
     }
   ]
 }

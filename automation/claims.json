@@ -3,19 +3,32 @@
   "claims": {
     "production:2026-11-13": {
       "owner_run_id": "root-today-tt008-2026-11-13T12:21:54.046Z",
-      "phase": "review_passed_immediate_publication",
+      "phase": "both_destination_receipts_verified",
       "claimed_at": "2026-11-13T12:21:54.046Z",
       "expires_at": "2026-11-13T16:21:54.046Z",
       "episode_id": "TT-008",
       "doi": "10.1038/srep27523",
       "publication_date": "2026-11-13T14:10:00+01:00",
-      "status": "active",
+      "status": "completed",
       "reason": "Owner requested one new Reel today while preserving Tuesday bumblebee.",
-      "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810"
+      "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+      "completed_at": "2026-11-13T13:13:56.763Z",
+      "provider_receipts": [
+        {
+          "platform": "instagram",
+          "metricool_id": "426945585",
+          "metricool_uuid": "3555893508354493617"
+        },
+        {
+          "platform": "youtube",
+          "metricool_id": "426946098",
+          "metricool_uuid": "-6895101637645415437"
+        }
+      ]
     },
     "submission:instagram:2026-11-13T14:10:Europe/Vienna": {
       "owner_run_id": "root-today-tt008-2026-11-13T12:21:54.046Z",
-      "phase": "immediate_publication_authorized",
+      "phase": "both_destination_receipts_verified",
       "claimed_at": "2026-11-13T13:07:29.674Z",
       "expires_at": "2026-11-13T13:37:30.559Z",
       "episode_id": "TT-008",
@@ -24,12 +37,25 @@
       "publication_date": "2026-11-13T14:10:00+01:00",
       "doi": "10.1038/srep27523",
       "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
-      "status": "active",
-      "intent": "automation/instagram/TT-008-intent.json"
+      "status": "completed",
+      "intent": "automation/instagram/TT-008-intent.json",
+      "completed_at": "2026-11-13T13:13:56.763Z",
+      "provider_receipts": [
+        {
+          "platform": "instagram",
+          "metricool_id": "426945585",
+          "metricool_uuid": "3555893508354493617"
+        },
+        {
+          "platform": "youtube",
+          "metricool_id": "426946098",
+          "metricool_uuid": "-6895101637645415437"
+        }
+      ]
     },
     "submission:youtube:2026-11-13T14:10:Europe/Vienna": {
       "owner_run_id": "root-today-tt008-2026-11-13T12:21:54.046Z",
-      "phase": "immediate_publication_authorized",
+      "phase": "both_destination_receipts_verified",
       "claimed_at": "2026-11-13T13:07:29.674Z",
       "expires_at": "2026-11-13T13:37:30.559Z",
       "episode_id": "TT-008",
@@ -38,8 +64,21 @@
       "publication_date": "2026-11-13T14:10:00+01:00",
       "doi": "10.1038/srep27523",
       "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
-      "status": "active",
-      "intent": "automation/youtube/TT-008-intent.json"
+      "status": "completed",
+      "intent": "automation/youtube/TT-008-intent.json",
+      "completed_at": "2026-11-13T13:13:56.763Z",
+      "provider_receipts": [
+        {
+          "platform": "instagram",
+          "metricool_id": "426945585",
+          "metricool_uuid": "3555893508354493617"
+        },
+        {
+          "platform": "youtube",
+          "metricool_id": "426946098",
+          "metricool_uuid": "-6895101637645415437"
+        }
+      ]
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."

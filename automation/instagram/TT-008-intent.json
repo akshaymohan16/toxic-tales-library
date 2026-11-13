@@ -9,7 +9,7 @@
   "timezone": "Europe/Vienna",
   "created_at": "2026-11-13T13:02:50.355Z",
   "owner_run_id": "root-today-tt008-2026-11-13T12:21:54.046Z",
-  "status": "scheduled_receipt_verified",
+  "status": "published_receipt_verified",
   "source_video_sha256": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb",
   "source_cover_sha256": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d",
   "source_media_urls": [
@@ -24,7 +24,7 @@
   "note": "Owner explicitly requested publication now after export passed independent review; supersedes proposed 18:00 slot. Exact reviewed episode/media unchanged. No provider write yet.",
   "source_publication_date": "2026-11-13T18:00:00+01:00",
   "latest_owner_instruction_at": "2026-11-13T13:07:29.674Z",
-  "metricool_id": 426945585,
+  "metricool_id": "426945585",
   "metricool_uuid": "3555893508354493617",
   "provider_readback": {
     "id": 426945585,
@@ -68,9 +68,10 @@
     },
     "hasNotReadNotes": false,
     "uuid": "3555893508354493617",
-    "creatorUserMail": "akshaymohank21@gmail.com",
-    "creatorUserId": 6223629,
     "brandTags": []
   },
-  "last_reconciled_at": "2026-11-13T13:08:36.430Z"
+  "last_reconciled_at": "2026-11-13T13:13:56.763Z",
+  "resolved_at": "2026-11-13T13:13:56.763Z",
+  "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=3555893508354493617",
+  "observed_monthly_used": 8
 }

@@ -44,16 +44,18 @@
       "id": "TT-007-REEL",
       "date": "2026-11-14T10:00:00+01:00",
       "format": "REEL",
-      "status": "scheduled_provider_pending",
-      "publication_eligible": true,
-      "reason": "Owner-authorized motion media replacement verified on the original UUID and time; exact Metricool video/cover hashes match fresh independent release. Not yet published.",
+      "status": "moved_to_next_batch",
+      "publication_eligible": false,
+      "reason": "Already moved and verified on 13 November; current active receipt is in the November 16 batch and ledger.",
       "metricool_id": "421493462",
       "metricool_uuid": "-6872348896682359981",
       "provider_status": "PENDING",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6872348896682359981",
       "release_fingerprint": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1",
       "release_record": "quality/releases.json",
-      "provider_rechecked_at": "2026-11-11T09:43:22.131Z"
+      "provider_rechecked_at": "2026-11-11T09:43:22.131Z",
+      "moved_to_batch": "2026-11-16",
+      "moved_to_date": "2026-11-17T10:00:00+01:00"
     },
     {
       "id": "TT-006-YOUTUBE-SHORT",
@@ -76,8 +78,8 @@
   ],
   "scientific_review": "TT006 diving-bell spider physiological laboratory original paper (2011), TT007 bumblebee ball rolling laboratory original paper (2022), TT005 frog companion source (2015). Claims, scope, visual provenance and licensed media recorded in evidence files and final release.",
   "render_and_live_media_review": "All23 motion shots, transitions, openings/final frames, covers, captions, source scope and ASR/loudness reviewed. Both exact Pages exports and all3 Metricool video/cover copies verified; no human listening claim. TT005 carousel unchanged.",
-  "schedule_status": "Tuesday TT-006 Instagram and YouTube and Thursday TT-005 carousel positively PUBLISHED. Saturday TT-007 remains autoPublish PENDING on its original UUID. Two old drafts stay held; no duplicates.",
-  "quota_status": "9 November authenticated planner counter 3/20 is now stale for 42-hour watchdog; 11 November provider readback proves five publications and two pending. Forecast 15/20 (16 including held draft) is NOT new plan-meter observation; any future scheduling requires fresh authenticated meter.",
+  "schedule_status": "Historical published records retained. TT-007 moved to Tuesday 17 November in batch 2026-11-16. Today's TT-008 is tracked separately in batch 2026-11-13.",
+  "quota_status": "Historical counts are retained in historical_summaries. Current provider reconciliation and quota are in automation/publisher-status.json and inventory/2026-11.json.",
   "idempotency_note": "Never repost published TT-002-REEL or TT-004-REEL, and never revive rejected TT-003. TT-004 UUID 8432780738091634663 is confirmed published and must never be submitted or rescheduled. Keep the two next-week Reel papers distinct and use stable new identities for replacements.",
   "retired_slots": [
     {
@@ -168,5 +170,31 @@
       "verified_at": "2026-11-12T09:13:23.510Z",
       "notified": true
     }
-  ]
+  ],
+  "slot_history": [
+    {
+      "recorded_at": "2026-11-13T13:13:56.763Z",
+      "event": "reconcile_previously_moved_slot",
+      "previous_record": {
+        "id": "TT-007-REEL",
+        "date": "2026-11-14T10:00:00+01:00",
+        "format": "REEL",
+        "status": "scheduled_provider_pending",
+        "publication_eligible": true,
+        "reason": "Owner-authorized motion media replacement verified on the original UUID and time; exact Metricool video/cover hashes match fresh independent release. Not yet published.",
+        "metricool_id": "421493462",
+        "metricool_uuid": "-6872348896682359981",
+        "provider_status": "PENDING",
+        "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6872348896682359981",
+        "release_fingerprint": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1",
+        "release_record": "quality/releases.json",
+        "provider_rechecked_at": "2026-11-11T09:43:22.131Z"
+      }
+    }
+  ],
+  "historical_summaries": {
+    "schedule_status": "Tuesday TT-006 Instagram and YouTube and Thursday TT-005 carousel positively PUBLISHED. Saturday TT-007 remains autoPublish PENDING on its original UUID. Two old drafts stay held; no duplicates.",
+    "quota_status": "9 November authenticated planner counter 3/20 is now stale for 42-hour watchdog; 11 November provider readback proves five publications and two pending. Forecast 15/20 (16 including held draft) is NOT new plan-meter observation; any future scheduling requires fresh authenticated meter."
+  },
+  "active_schedule_reconciled_at": "2026-11-13T13:13:56.763Z"
 }

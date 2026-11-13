@@ -54,7 +54,7 @@ def validate_one_off_slots(config):
     records = (config or {}).get("owner_authorized_one_off_slots", [])
     if not isinstance(records, list):
         raise ValueError("Owner-authorized one-off slots must be a list")
-    result, identities, occupied, pairs = [], set(), set(), {}
+    result, identities, occupied, pairs, source_dates = [], set(), set(), {}, {}
     for record in records:
         if not isinstance(record, dict):
             raise ValueError("Invalid owner-authorized one-off record")
@@ -67,6 +67,8 @@ def validate_one_off_slots(config):
             raise ValueError("One-off post identity/format does not match its destination")
         due = publication_time(record.get("publication_date"))
         authorized = publication_time(record.get("authorized_at"))
+        source_due = (publication_time(record["source_publication_date"])
+                      if "source_publication_date" in record else None)
         if authorized >= due or not isinstance(record.get("reason"), str) or not record["reason"].strip():
             raise ValueError("One-off slot needs a prior authorization timestamp and reason")
         identity, slot = (episode_id, network), (network, due)
@@ -74,9 +76,12 @@ def validate_one_off_slots(config):
             raise ValueError("Duplicate one-off post identity or destination slot")
         identities.add(identity); occupied.add(slot)
         pairs.setdefault((episode_id, due), set()).add(network)
-        result.append({**record, "due": due})
+        source_dates.setdefault((episode_id, due), set()).add(source_due)
+        result.append({**record, "due": due, "source_due": source_due})
     if any(networks != {"instagram", "youtube"} for networks in pairs.values()):
         raise ValueError("An owner-authorized one-off video requires both destinations at the same time")
+    if any(len(dates) != 1 for dates in source_dates.values()):
+        raise ValueError("Paired one-off destinations must preserve the same source date")
     return result
 
 
@@ -95,6 +100,22 @@ def authorized_one_off_slot(post, config=None, episode_id=None):
         expected = (record["episode_id"], record["post_id"], record["platform"], record["format"])
         if identity == expected and due == record["due"]:
             return due
+    return None
+
+
+def authorized_preserved_source_slot(post, config=None, episode_id=None):
+    """Permit an exact unchanged source date only; never authorize submission."""
+    records = validate_one_off_slots(config)
+    try:
+        source_due = publication_time(post.get("publication_date"))
+    except ValueError:
+        return None
+    identity = (episode_id or post.get("episode_id"), post.get("post_id", post.get("id")),
+                post.get("platform", "instagram"), post.get("format"))
+    for record in records:
+        expected = (record["episode_id"], record["post_id"], record["platform"], record["format"])
+        if identity == expected and source_due == record["source_due"]:
+            return source_due
     return None
 
 
@@ -120,6 +141,8 @@ def validate_episode(episode, first_slot, config=None):
         if post.get("format") != "REEL":
             raise ValueError(f"{episode.get('id')}: new source posts must be Reels")
         exception = authorized_one_off_slot(post, config, episode.get("id"))
+        if exception is None:
+            exception = authorized_preserved_source_slot(post, config, episode.get("id"))
         if exception is None and local_slot(post.get("publication_date")) < first_slot:
             raise ValueError(f"{episode.get('id')}: historical backfill is disabled")
 

@@ -119,6 +119,38 @@ class ReelsPolicyTest(unittest.TestCase):
 
 
 class OwnerAuthorizedOneOffTests(unittest.TestCase):
+    def test_preserved_source_date_does_not_authorize_the_old_submission_time(self):
+        config = one_off_config()
+        actual = "2026-11-13T14:10:00+01:00"
+        now = datetime.fromisoformat("2026-11-13T14:06:00+01:00")
+        for record in config["owner_authorized_one_off_slots"]:
+            record["source_publication_date"] = ONE_OFF_DATE
+            record["publication_date"] = actual
+        post = candidate(publication_date=ONE_OFF_DATE)
+        episode = {"id": "TT-008", "production": {"renderer": "nature-motion-10"}, "posts": [post]}
+        before = copy.deepcopy(episode)
+        validate_episode(episode, FIRST, config)
+        self.assertEqual(episode, before)
+        self.assertIsNone(authorized_one_off_slot(post, config))
+        self.assertEqual(sanitize_queue([post], {"posts": []}, FIRST, now, config)[0], [])
+        receipt = {"post_id": post["id"], "status": "ready", "publication_date": actual}
+        kept, _ = sanitize_queue([post], {"posts": [receipt]}, FIRST, now, config)
+        self.assertEqual([item["publication_date"] for item in kept], [actual])
+        self.assertEqual(authorized_one_off_slot({**post, "publication_date": actual}, config).isoformat(), actual)
+        for changes in ({"id": "TT-009-REEL"}, {"platform": "youtube"},
+                        {"publication_date": "2026-11-13T18:01:00+01:00"}):
+            with self.subTest(changes=changes), self.assertRaises(ValueError):
+                validate_episode({**episode, "posts": [{**post, **changes}]}, FIRST, config)
+        with self.assertRaises(ValueError):
+            validate_episode({**episode, "id": "TT-009"}, FIRST, config)
+
+    def test_source_date_override_requires_valid_paired_configuration(self):
+        for value in (None, "not-a-date", "2026-11-13T18:00:00", ONE_OFF_DATE):
+            config = one_off_config()
+            config["owner_authorized_one_off_slots"][0]["source_publication_date"] = value
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                validate_one_off_slots(config)
+
     def test_exact_authorized_video_passes_source_and_queue_before_due(self):
         config = one_off_config()
         post = candidate(publication_date=ONE_OFF_DATE)
