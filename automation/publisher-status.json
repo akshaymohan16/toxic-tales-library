@@ -1,12 +1,12 @@
 {
-  "checked_on": "2026-11-12",
+  "checked_on": "2026-11-13",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": "Europe/Vienna",
-  "deployment_and_media": "Latest repository build/deploy/exact-public-file verification 42586439514 succeeded on 46d403d656cc899e6ac25e6fb605a97b1b740cfd; owner-authorized motion replacement completed with provider-hosted video and cover hashes verified in automation/motion-replacement-2026-11-09.json.",
+  "deployment_and_media": "Most recent build, deploy and exact-public-media verification workflow 43189574251 succeeded (commit 013ca3ea97c666daec44005af94f45120c34f723); owner-approved motion replacements remain byte-frozen, provider media URLs match known receipts.",
   "quality_standard": "quality/PRODUCTION_STANDARD.md",
-  "decision": "THURSDAY_CAROUSEL_POSITIVELY_PUBLISHED_SATURDAY_REEL_PENDING",
-  "reason": "The original TT-005 six-slide carousel is now PUBLISHED on Instagram at its original scheduled 10:00 Europe/Vienna slot, with direct provider public URL and same six media URLs. Saturday TT-007 remains PENDING on original UUID. New scheduling still blocked by stale authenticated planner meter.",
+  "decision": "CURRENT_WEEK_SIX_PUBLISHED_ONE_SATURDAY_PENDING_NEXT_WEEK_QUOTA_HOLD",
+  "reason": "Fresh 13 November Metricool calendar: 6 PUBLISHED with public URLs, 1 still-PENDING pre-due Saturday TT-007 Reel with original UUID, 2 held/rejected drafts; no accidental duplicate or provider mutation. Authenticated Metricool plan usage counter still last observed 3/20 on 9 November; next week's new scheduling remains blocked without fresh meter.",
   "scheduled_posts_returned": 9,
   "published_provider_receipts": 6,
   "new_metricool_submissions": 0,
@@ -14,7 +14,7 @@
     "TT-007-REEL"
   ],
   "routine_user_approval_required": false,
-  "automatic_next_step": "Do not touch published TT-005 carousel or TT-006 destinations. After Saturday 14 Nov 10:00 Europe/Vienna verify TT-007 on its existing UUID. Existing Sunday producer is assigned to next week's four slots; require fresh authenticated plan meter before new reservations.",
+  "automatic_next_step": "Tomorrow 14 Nov after the 10:00 Vienna slot, verify TT-007 positive provider PUBLISHED and public Instagram URL; do not resubmit while PENDING before due. Sunday 15 Nov producer prepares 17/19/21 Nov four-destination batch; new scheduling is held until fresh authenticated Metricool planner 20-post usage reading.",
   "review_limit": "Encoded frames, final transcript and technical audio reviewed; no listening or original-audio-parity claim.",
   "quota": {
     "observed_used": 3,
@@ -34,9 +34,9 @@
     "remaining_tuesday_youtube_slots": 2,
     "projected_month_destinations": 15,
     "conservative_projection_including_held_draft": 16,
-    "note": "Older planner counter is retained truthfully; 3 observed baseline plus 2 newly confirmed publications, 2 remaining November committed posts, six later Instagram and two later YouTube slots projects 15 (16 including one held draft). This is a conservative forecast, NOT a fresh plan-meter reading.",
+    "note": "9 Nov authenticated 3/20 snapshot retained; as of 13 Nov there are six provider-confirmed publications and one Saturday scheduled, plus six remaining month Instagram slots and two remaining Tuesday YouTube slots; conservative projection 15 (16 with held carousel). This is not a current authenticated plan meter.",
     "verified_in_this_run": false,
-    "observation_detail": "The last authenticated 3/20 plan usage meter observation remains from 9 Nov 2026 08:22:57Z. Fresh 12 Nov provider readback confirms 6 published destinations and one future scheduled Instagram destination. Do not turn provider receipts into a fictitious refreshed plan-meter value.",
+    "observation_detail": "13 Nov live Metricool full-month calendar confirms 6 published destinations, 1 auto-scheduled and 2 drafts. The 9 Nov 3/20 planner meter has not been refreshed; provider counts must not be misreported as an authenticated meter observation.",
     "confirmed_published_lower_bound": 6
   },
   "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
@@ -71,7 +71,7 @@
   "pending_new_pilot_post_id": null,
   "pilot_record_status": "published_owner_approved",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
-  "updated_at": "2026-11-12T09:13:23.510Z",
+  "updated_at": "2026-11-13T09:12:46.859Z",
   "latest_publication": {
     "post_id": "TT-005-CAROUSEL",
     "metricool_id": "420683055",
@@ -143,7 +143,7 @@
     "421493462",
     "421493849"
   ],
-  "provider_receipts_status": "Full 12 Nov calendar: 6 PUBLISHED destinations, Saturday bee PENDING; the unchanged TT005 companion carousel is positively PUBLISHED with live URL.",
+  "provider_receipts_status": "13 Nov full Metricool calendar: 6 PUBLISHED Instagram/YouTube destinations; TT-007-REEL PENDING, autoPublish=true, draft=false, 14 Nov 10:00 Europe/Vienna, same UUID -6872348896682359981 and hosted video; TT-002-CAROUSEL and rejected TT-003-REEL remain nonpublishing drafts. All other published URLs unchanged.",
   "next_batch": {
     "week_start": "2026-11-16",
     "slots": [
@@ -158,7 +158,9 @@
     "current_week_fully_reserved": true,
     "current_week_destinations_verified": 4,
     "current_week_provider_status": "THREE_PUBLISHED_ONE_PENDING",
-    "next_publication_due": "2026-11-14T10:00:00+01:00"
+    "next_publication_due": "2026-11-14T10:00:00+01:00",
+    "status": "unprepared_future_week_assigned_to_existing_sunday_producer; NEW SCHEDULING HELD BY STALE AUTHENTICATED METRICOOL PLAN METER",
+    "checked_at": "2026-11-13T09:12:46.859Z"
   },
   "watchdog": {
     "workflow": ".github/workflows/readiness-watchdog.yml",
@@ -168,26 +170,26 @@
       "08:35",
       "12:20"
     ],
-    "status": "Last observed scheduled watchdog 10 Nov 19:51Z succeeded; direct plan meter was last observed 9 Nov 08:22Z and has crossed the readiness verifier's 42-hour freshness guard as of this run. This check does not pretend provider calendar counts are a fresh plan counter.",
+    "status": "13 Nov verified latest 12 Nov 20:07 UTC watchdog run 43297111436: sole failure is stale authenticated Metricool plan meter. Do not bypass quota freshness or close issue #1. Last build/deploy/exact-public-media 43189574251 success.",
     "last_smoke_run": 42483555450,
     "scheduled_issue_alerts": true,
     "after_state_changes": true,
     "issue_prefix": "Toxic Tales readiness: ",
     "repo_issue_alert_delivery": "GitHub issue notification depends on user's GitHub notification settings",
-    "last_checked_at": "2026-11-12T09:13:23.510Z",
-    "latest_run_id": 43089921832,
-    "latest_run_result": "failure: Fresh monthly Metricool planner counter observation required",
+    "last_checked_at": "2026-11-13T09:12:46.859Z",
+    "latest_run_id": 43297111436,
+    "latest_run_result": "failure: Fresh monthly Metricool planner counter observation required (confirmed in actual GitHub job logs); all other readiness errors absent",
     "prior_run_id": 42593942242,
     "prior_result": "failure_caused_by_changed_quota_basis_in_intermediate_heartbeat; corrected and next run 42594057697 passed",
     "open_readiness_issues": 1
   },
   "storage": "GitHub workflow 42482770601 successful with compact SHA-manifest verification and ~257 MiB artifacts vs former ~617 MiB. Historical duplicate artifact housekeeping workflow 42483693420 success: 51 redundant old archives totaling 6,834,278,226 bytes pruned; one latest legacy QA retained and live public media untouched.",
-  "issue_status": "Issue #1 open: only fresh authenticated Metricool plan meter is missing. Latest GitHub watchdog 43089921832 failed on exactly that error. Do not close before actual refreshed counter and successful audit.",
+  "issue_status": "Read GitHub issue #1 (2026-W46): remains open because authenticated Metricool planner meter has not been refreshed. Sole latest watchdog failure verified in job logs, not provider publication failure.",
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_channel_name": "Toxic Tales",
   "youtube_connection_verified": true,
   "new_task_created": false,
-  "verification_actor": "Owner-directed scheduled-media replacement run",
+  "verification_actor": "Existing daily Toxic Tales publisher; live GitHub and Metricool readback",
   "last_media_replacement": "automation/motion-replacement-2026-11-09.json",
   "provider_readback": {
     "checked_at": "2026-11-12T09:13:23.510Z",
@@ -250,7 +252,10 @@
     "new_publications": 1,
     "created_posts": 0,
     "updated_posts": 0,
-    "prepublication_receipts_only": false
+    "prepublication_receipts_only": false,
+    "last_checked_at": "2026-11-13T09:12:46.859Z",
+    "timezone": "Europe/Vienna",
+    "published_provider_receipts": 6
   },
   "replacement_status": {
     "ledger_path": "automation/motion-replacement-2026-11-09.json",
@@ -263,8 +268,8 @@
   "new_actionable_blocker": {
     "type": "authenticated_metricool_plan_meter_not_exposed_by_connector",
     "detected_at": "2026-11-11T09:43:22.131Z",
-    "level": "existing_reported_future_new_scheduling_hold",
-    "impact": "Existing Thursday TT005 carousel is PUBLISHING and Saturday TT007 retains original pending UUID; next-week new reservations for 17/19/21 November remain blocked by stale authenticated plan meter. No re-notification of unchanged blocker.",
+    "level": "previously_reported_unchanged_future_new_scheduling_hold",
+    "impact": "Fresh 13 Nov calendar confirms current-week six published and Saturday pending; new 17/19/21 Nov Instagram/YouTube reservations remain blocked by stale authenticated plan meter. This is the same previously reported blocker, not a new notification.",
     "required_resolution": "Refresh planner usage counter through authenticated Metricool UI or a connected tool that exposes it. Do not renew observed_at by inference, calendar counts or analytics."
   },
   "first_youtube_live_verification": {
