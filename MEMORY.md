@@ -1,3 +1,6 @@
+# Current owner policy — 13 November 2026
+Read automation/REELS_ONLY_POLICY.md first. Two videos/week, each on Instagram and YouTube Shorts, Tuesday and Friday 10:00 Europe/Vienna. No new carousels. This overrides historical cadence/approval/quota-meter wording below; scientific and exact-export safeguards stay mandatory. Sunday producer 10:00; publisher daily 10:15 and 18:15. Website archive and creation/publication alerts are automatic. Routine owner approval is not required.
+
 ## Authorized weekly YouTube extension — 8 November 2026
 
 The owner explicitly authorized ONE weekly video on both Instagram and YouTube with full routine automation. Apply automation/YOUTUBE_POLICY.md as the current destination, quota, receipt and recovery contract. Scope now includes the verified Toxic Tales YouTube channel UCDvftxMMdtGSntm-ezcPfCg on Metricool brand 7937614; no other repository, brand or channel is authorized.
@@ -116,3 +119,4 @@ At pilot handoff, TT-005 had not been posted or submitted to Metricool. The owne
 The unchanged owner-approved frog Reel is positively confirmed PUBLISHED: https://www.instagram.com/reel/Dfc5DEPHJCJ/ (Metricool ID 420178205, UUID 2386175407143797944; publication slot 20:02 Europe/Vienna on 7 November 2026). The exact caption was confirmed on provider readback. Never repost it. The archive retains the paper and correction at https://akshaymohan16.github.io/toxic-tales-library/sources/tt-005.html . Its carousel was not published by this Reel-only instruction.
 
 Both existing task prompts were updated and read back enabled with the mandatory future branding supplement, actual logo requirement, no recurring tiny footer/progress bar, complete research provenance and exact-export review. The canonical archived profile logo is assets/branding/toxic-tales-logo.json, 240 x 240 original JPEG, SHA-256 1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742. New renderer nature-branded-9 preserves frozen approved exports. A static phone layout proof is not final-export approval for a future film.
+

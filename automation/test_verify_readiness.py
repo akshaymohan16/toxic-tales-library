@@ -7,10 +7,10 @@ import unittest
 from datetime import datetime
 from pathlib import Path
 from automation.verify_readiness import (audit, target_week, month_budget, ZONE,
-                                        YOUTUBE_CHANNEL, metadata_digest, release_check)
+                                        YOUTUBE_CHANNEL, metadata_digest, release_check,
+                                        quota_observation)
 
-DATES = ["2026-11-17T10:00:00+01:00", "2026-11-19T10:00:00+01:00",
-         "2026-11-21T10:00:00+01:00"]
+DATES = ["2026-11-17T10:00:00+01:00", "2026-11-20T10:00:00+01:00"]
 
 
 class ReadinessTests(unittest.TestCase):
@@ -41,8 +41,7 @@ class ReadinessTests(unittest.TestCase):
         self.save("quality/releases.json", releases)
         self.save("automation/published.json", {"posts": [
             self.post("TT-101-REEL", "TT-101", "REEL", DATES[0]),
-            self.post("TT-101-CAROUSEL", "TT-101", "CAROUSEL", DATES[1]),
-            self.post("TT-102-REEL", "TT-102", "REEL", DATES[2])]})
+            self.post("TT-102-REEL", "TT-102", "REEL", DATES[1])]})
 
     def save(self, rel, value):
         file = self.root / rel
@@ -67,12 +66,18 @@ class ReadinessTests(unittest.TestCase):
 
     def test_complete_monday_passes(self):
         self.assertTrue(self.check()["ok"], self.check()["errors"])
-        self.assertEqual(len(self.check()["slots"]), 3)
+        self.assertEqual(len(self.check()["slots"]), 2)
 
-    def test_missing_saturday_fails(self):
-        self.save("automation/published.json", {"posts": self.readposts()[:2]})
+    def test_missing_friday_fails(self):
+        self.save("automation/published.json", {"posts": self.readposts()[:1]})
         self.assertFalse(self.check()["ok"])
-        self.assertIn("saturday", " ".join(self.check()["errors"]))
+        self.assertIn("friday", " ".join(self.check()["errors"]))
+
+    def test_prior_week_pending_post_stays_overdue(self):
+        posts = self.readposts()
+        posts[0]["publication_date"] = "2026-11-10T10:00:00+01:00"
+        self.save("automation/published.json", {"posts": posts})
+        self.assertIn("overdue after 3h", " ".join(self.check()["errors"]))
 
     def test_overdue_requires_real_publication_receipt(self):
         self.assertFalse(self.check("2026-11-17T14:15:00+01:00")["ok"])
@@ -112,7 +117,7 @@ class YouTubeReadinessTests(ReadinessTests):
         super().setUp()
         config = json.loads((self.root / "automation/config.json").read_text())
         config["youtube"] = {"enabled": True, "channel_id": YOUTUBE_CHANNEL,
-                             "weekly_shorts": 1, "source_slot": "tuesday",
+                             "weekly_shorts": 2, "source_slots": ["tuesday", "friday"],
                              "made_for_kids": False, "privacy": "PUBLIC"}
         self.save("automation/config.json", config)
         self.save("automation/publisher-status.json", {
@@ -148,6 +153,10 @@ class YouTubeReadinessTests(ReadinessTests):
                             "privacy": "public", "madeForKids": False,
                             "isAiGeneratedContent": True}}
         posts.append(short)
+        friday = json.loads(json.dumps(short).replace("TT-101", "TT-102")
+                            .replace("tt-101", "tt-102").replace("2026-11-17", "2026-11-20"))
+        friday["youtube"]["metadata_sha256"] = metadata_digest(friday)
+        posts.append(friday)
         self.save("automation/published.json", {"posts": posts})
 
     def test_complete_monday_passes(self):
@@ -155,45 +164,45 @@ class YouTubeReadinessTests(ReadinessTests):
         self.assertTrue(report["ok"], report["errors"])
         self.assertEqual(len(report["slots"]), 4)
         self.assertEqual(report["monthly_budgets"][0]["published_used"], 3)
-        self.assertEqual(report["monthly_budgets"][0]["unfilled_instagram_reservations"], 3)
+        self.assertEqual(report["monthly_budgets"][0]["unfilled_instagram_reservations"], 2)
 
     def test_overdue_requires_real_publication_receipt(self):
         posts = self.readposts()
         posts[0].update(status="published", provider_status="PUBLISHED",
                         public_url="https://www.instagram.com/reel/verified/")
-        posts[3].update(status="published", provider_status="PUBLISHED",
+        posts[2].update(status="published", provider_status="PUBLISHED",
                         public_url="https://www.youtube.com/shorts/abcdefghijk")
-        posts[3]["provider_readback"]["providers"] = [{
-            "network": "youtube", "status": "PUBLISHED", "publicUrl": posts[3]["public_url"]}]
+        posts[2]["provider_readback"]["providers"] = [{
+            "network": "youtube", "status": "PUBLISHED", "publicUrl": posts[2]["public_url"]}]
         self.save("automation/published.json", {"posts": posts})
         report = self.check("2026-11-17T14:15:00+01:00")
         self.assertFalse(report["ok"])
         self.assertIn("live video/channel verification missing", " ".join(report["errors"]))
-        posts[3]["live_verification"] = {
+        posts[2]["live_verification"] = {
             "checked_at": "2026-11-17T10:15:00+01:00", "decision": "pass",
-            "channel_id": YOUTUBE_CHANNEL, "url": posts[3]["public_url"]}
+            "channel_id": YOUTUBE_CHANNEL, "url": posts[2]["public_url"]}
         self.save("automation/published.json", {"posts": posts})
         report = self.check("2026-11-17T14:15:00+01:00")
         self.assertTrue(report["ok"], report["errors"])
 
     def test_missing_youtube_fails_without_hiding_instagram(self):
-        self.save("automation/published.json", {"posts": self.readposts()[:3]})
+        self.save("automation/published.json", {"posts": self.readposts()[:2]})
         report = self.check()
         self.assertFalse(report["ok"])
         self.assertIn("tuesday_youtube", " ".join(report["errors"]))
-        self.assertEqual([r["post_id"] for r in report["slots"][:3]],
-                         ["TT-101-REEL", "TT-101-CAROUSEL", "TT-102-REEL"])
+        self.assertEqual([r["post_id"] for r in report["slots"][:2]],
+                         ["TT-101-REEL", "TT-102-REEL"])
 
     def test_provider_utc_z_timestamp_is_valid(self):
         posts = self.readposts()
-        posts[3]["provider_readback_checked_at"] = "2026-11-16T08:20:00Z"
+        posts[2]["provider_readback_checked_at"] = "2026-11-16T08:20:00Z"
         self.save("automation/published.json", {"posts": posts})
         self.assertTrue(self.check()["ok"], self.check()["errors"])
 
     def test_same_video_on_two_networks_is_allowed_but_duplicate_youtube_is_not(self):
         self.assertTrue(self.check()["ok"])
         posts = self.readposts()
-        posts.append({**posts[3], "post_id": "DUPLICATE", "metricool_uuid": "different"})
+        posts.append({**posts[2], "post_id": "DUPLICATE", "metricool_uuid": "different"})
         self.save("automation/published.json", {"posts": posts})
         errors = " ".join(self.check()["errors"])
         self.assertIn("Duplicate DOI+video within youtube", errors)
@@ -204,11 +213,11 @@ class YouTubeReadinessTests(ReadinessTests):
                            ("source_post_id", "TT-102-REEL")):
             with self.subTest(key=key):
                 posts = self.readposts()
-                original = posts[3][key]
-                posts[3][key] = value
+                original = posts[2][key]
+                posts[2][key] = value
                 self.save("automation/published.json", {"posts": posts})
                 self.assertFalse(self.check()["ok"])
-                posts[3][key] = original
+                posts[2][key] = original
                 self.save("automation/published.json", {"posts": posts})
 
     def test_wrong_audience_privacy_or_stale_rights_review_blocks(self):
@@ -219,23 +228,23 @@ class YouTubeReadinessTests(ReadinessTests):
                            ("title", ""), ("description", "No citation")):
             with self.subTest(key=key):
                 posts = self.readposts()
-                original = posts[3]["youtube"][key]
-                posts[3]["youtube"][key] = value
+                original = posts[2]["youtube"][key]
+                posts[2]["youtube"][key] = value
                 self.save("automation/published.json", {"posts": posts})
                 self.assertFalse(self.check()["ok"])
-                posts[3]["youtube"][key] = original
+                posts[2]["youtube"][key] = original
                 self.save("automation/published.json", {"posts": posts})
 
     def test_saturday_youtube_is_not_an_extra_slot(self):
         posts = self.readposts()
-        posts[3]["publication_date"] = DATES[2]
+        posts[2]["publication_date"] = "2026-11-21T10:00:00+01:00"
         self.save("automation/published.json", {"posts": posts})
-        self.assertIn("Tuesday 10:00 slot", " ".join(self.check()["errors"]))
+        self.assertIn("Tuesday/Friday 10:00 slot", " ".join(self.check()["errors"]))
 
     def test_changed_description_invalidates_metadata_review(self):
         posts = self.readposts()
-        posts[3]["youtube"]["description"] += " New claim."
-        posts[3]["provider_readback"]["text"] = posts[3]["youtube"]["description"]
+        posts[2]["youtube"]["description"] += " New claim."
+        posts[2]["provider_readback"]["text"] = posts[2]["youtube"]["description"]
         self.save("automation/published.json", {"posts": posts})
         self.assertIn("metadata changed since its review", " ".join(self.check()["errors"]))
 
@@ -244,26 +253,26 @@ class YouTubeReadinessTests(ReadinessTests):
             with self.subTest(value=value):
                 posts = self.readposts()
                 if value is None:
-                    posts[3]["youtube"].pop("is_ai_generated")
+                    posts[2]["youtube"].pop("is_ai_generated")
                 else:
-                    posts[3]["youtube"]["is_ai_generated"] = value
+                    posts[2]["youtube"]["is_ai_generated"] = value
                 self.save("automation/published.json", {"posts": posts})
                 errors = " ".join(self.check()["errors"])
                 self.assertIn("synthetic-media disclosure missing", errors)
                 self.assertIn("metadata changed since its review", errors)
-                posts[3]["youtube"]["is_ai_generated"] = True
+                posts[2]["youtube"]["is_ai_generated"] = True
                 self.save("automation/published.json", {"posts": posts})
         posts = self.readposts()
-        posts[3]["provider_readback"]["youtubeData"]["isAiGeneratedContent"] = False
+        posts[2]["provider_readback"]["youtubeData"]["isAiGeneratedContent"] = False
         self.save("automation/published.json", {"posts": posts})
         self.assertIn("provider readback does not match", " ".join(self.check()["errors"]))
-        del posts[3]["provider_readback"]["youtubeData"]["isAiGeneratedContent"]
+        del posts[2]["provider_readback"]["youtubeData"]["isAiGeneratedContent"]
         self.save("automation/published.json", {"posts": posts})
         self.assertIn("provider readback does not match", " ".join(self.check()["errors"]))
 
     def test_youtube_item_cannot_include_instagram_destination(self):
         posts = self.readposts()
-        posts[3]["provider_readback"]["providers"].append({"network": "instagram", "status": "PENDING"})
+        posts[2]["provider_readback"]["providers"].append({"network": "instagram", "status": "PENDING"})
         self.save("automation/published.json", {"posts": posts})
         self.assertIn("provider readback does not match", " ".join(self.check()["errors"]))
 
@@ -271,22 +280,22 @@ class YouTubeReadinessTests(ReadinessTests):
         for key, value in (("madeForKids", True), ("title", "Different"), ("privacy", "private")):
             with self.subTest(key=key):
                 posts = self.readposts()
-                original = posts[3]["provider_readback"]["youtubeData"][key]
-                posts[3]["provider_readback"]["youtubeData"][key] = value
+                original = posts[2]["provider_readback"]["youtubeData"][key]
+                posts[2]["provider_readback"]["youtubeData"][key] = value
                 self.save("automation/published.json", {"posts": posts})
                 self.assertIn("provider readback does not match", " ".join(self.check()["errors"]))
-                posts[3]["provider_readback"]["youtubeData"][key] = original
+                posts[2]["provider_readback"]["youtubeData"][key] = original
                 self.save("automation/published.json", {"posts": posts})
         posts = self.readposts()
-        posts[3]["metricool_media_sha256"] = {}
+        posts[2]["metricool_media_sha256"] = {}
         self.save("automation/published.json", {"posts": posts})
         self.assertIn("hosted YouTube media hash verification missing", " ".join(self.check()["errors"]))
 
     def test_future_week_duplicate_is_caught_on_sunday(self):
         posts = self.readposts()
-        posts.append({**posts[3], "post_id": "UNCERTAIN-SECOND",
+        posts.append({**posts[2], "post_id": "UNCERTAIN-SECOND",
                       "status": "submission_uncertain", "publication_date": "2026-11-24T10:00:00+01:00"})
-        posts.append({**posts[3], "post_id": "UNCERTAIN-THIRD",
+        posts.append({**posts[2], "post_id": "UNCERTAIN-THIRD",
                       "status": "submission_uncertain", "publication_date": "2026-11-24T10:00:00+01:00"})
         self.save("automation/published.json", {"posts": posts})
         self.assertIn("More than one YouTube destination reserved", " ".join(self.check()["errors"]))
@@ -304,13 +313,13 @@ class YouTubeReadinessTests(ReadinessTests):
 
     def test_published_without_a_real_video_url_fails(self):
         posts = self.readposts()
-        posts[3].update(status="published", provider_status="PUBLISHED",
+        posts[2].update(status="published", provider_status="PUBLISHED",
                         public_url="https://www.youtube.com/channel/" + YOUTUBE_CHANNEL)
-        posts[3]["provider_readback"]["providers"] = [{
-            "network": "youtube", "status": "PUBLISHED", "publicUrl": posts[3]["public_url"]}]
-        posts[3]["live_verification"] = {
+        posts[2]["provider_readback"]["providers"] = [{
+            "network": "youtube", "status": "PUBLISHED", "publicUrl": posts[2]["public_url"]}]
+        posts[2]["live_verification"] = {
             "checked_at": "2026-11-17T10:15:00+01:00", "decision": "pass",
-            "channel_id": YOUTUBE_CHANNEL, "url": posts[3]["public_url"]}
+            "channel_id": YOUTUBE_CHANNEL, "url": posts[2]["public_url"]}
         self.save("automation/published.json", {"posts": posts})
         self.assertIn("missing PUBLISHED status/live URL", " ".join(self.check()["errors"]))
 
@@ -329,20 +338,20 @@ class YouTubeReadinessTests(ReadinessTests):
         state["quota"]["observed_used"] = 14
         self.save("automation/publisher-status.json", state)
         report = self.check()
-        self.assertEqual(report["monthly_budgets"][0]["projected"], 21)
+        self.assertEqual(report["monthly_budgets"][0]["projected"], 22)
         self.assertFalse(report["ok"])
         self.assertIn("protected remaining Instagram", " ".join(report["errors"]))
 
     def test_rejected_episode_cannot_be_revived_on_youtube(self):
         posts = self.readposts()
-        posts[3]["episode_id"] = "TT-003"
+        posts[2]["episode_id"] = "TT-003"
         self.save("automation/published.json", {"posts": posts})
         self.assertIn("Rejected TT-003", " ".join(self.check()["errors"]))
 
     def test_sunday_preproduction_suppressed(self):
         # Sunday can be missing next week's Short, but actual existing receipts
         # and today's provider counter must still pass their safety checks.
-        self.save("automation/published.json", {"posts": self.readposts()[:3]})
+        self.save("automation/published.json", {"posts": self.readposts()[:2]})
         self.save("automation/publisher-status.json", {
             "updated_at": "2026-11-15T10:15:00+01:00",
             "quota": {"observed_used": 3, "observed_at": "2026-11-15T10:15:00+01:00",
@@ -461,8 +470,8 @@ class MonthlyBudgetTests(unittest.TestCase):
                   "status": "published", "platform": "instagram", "format": "REEL"}]
         report = month_budget(posts, now, 2026, 11, observed_used=3)
         self.assertEqual(report["published_used"], 3)
-        self.assertEqual(report["unfilled_instagram_reservations"], 6)
-        self.assertEqual(report["projected"], 9)
+        self.assertEqual(report["unfilled_instagram_reservations"], 4)
+        self.assertEqual(report["projected"], 11)
 
     def test_two_destinations_and_uncertain_writes_each_reserve_capacity(self):
         now = datetime.fromisoformat("2026-11-30T11:00:00+01:00")
@@ -477,17 +486,106 @@ class MonthlyBudgetTests(unittest.TestCase):
     def test_future_month_protects_all_instagram_slots(self):
         now = datetime.fromisoformat("2026-11-30T11:00:00+01:00")
         report = month_budget([], now, 2026, 12)
-        self.assertEqual(report["unfilled_instagram_reservations"], 14)
-        self.assertEqual(report["projected"], 14)
+        self.assertEqual(report["unfilled_instagram_reservations"], 9)
+        self.assertEqual(report["projected"], 18)
 
     def test_dst_month_uses_vienna_wall_clock(self):
         now = datetime.fromisoformat("2027-03-01T08:00:00+01:00")
         due = datetime(2027, 3, 30, 10, tzinfo=ZONE).isoformat()
         posts = [{"publication_date": due, "status": "scheduled", "format": "REEL"}]
         report = month_budget(posts, now, 2027, 3)
-        self.assertEqual(report["unfilled_instagram_reservations"], 12)
-        self.assertEqual(report["projected"], 13)
+        self.assertEqual(report["unfilled_instagram_reservations"], 8)
+        self.assertEqual(report["projected"], 18)
+
+
+
+class ReconciledQuotaTests(unittest.TestCase):
+    def setUp(self):
+        self.now = datetime.fromisoformat("2026-11-16T11:00:00+01:00")
+        self.quota = {
+            "month": "2026-11", "observed_at": "2026-11-16T10:30:00+01:00",
+            "calendar_checked_at": "2026-11-16T10:30:00+01:00",
+            "full_month_calendar_verified": True,
+            "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
+            "usage_baseline": {"month": "2026-11", "used": 3,
+                              "published_destination_keys": ["instagram:old"]},
+            "published_destination_keys": ["instagram:old", "youtube:new"],
+            "observed_used": 4}
+        self.posts = [{"post_id": "YT", "metricool_uuid": "new", "platform": "youtube",
+                       "status": "published", "publication_date": "2026-11-10T10:00:00+01:00"}]
+
+    def test_baseline_deleted_publication_preserved_without_double_count(self):
+        used, keys = quota_observation(self.quota, self.posts, self.now, 20)
+        self.assertEqual(used, 4)
+        self.assertEqual(keys, {"instagram:old", "youtube:new"})
+        report = month_budget(self.posts, self.now, 2026, 11, used, keys)
+        self.assertEqual(report["published_used"], 4)
+
+    def test_known_publication_may_not_disappear(self):
+        self.quota["published_destination_keys"] = ["instagram:old"]
+        self.quota["observed_used"] = 3
+        with self.assertRaises(ValueError):
+            quota_observation(self.quota, self.posts, self.now, 20)
+
+    def test_incomplete_stale_or_false_arithmetic_block(self):
+        for key, value in (("full_month_calendar_verified", False),
+                           ("calendar_checked_at", "2026-11-12T10:30:00+01:00"),
+                           ("observed_used", 3), ("month", "2026-10")):
+            with self.subTest(key=key):
+                q = copy.deepcopy(self.quota)
+                q[key] = value
+                with self.assertRaises(ValueError):
+                    quota_observation(q, self.posts, self.now, 20)
+
+    def test_baseline_keys_cannot_be_dropped(self):
+        self.quota["published_destination_keys"] = ["youtube:new"]
+        with self.assertRaises(ValueError):
+            quota_observation(self.quota, self.posts, self.now, 20)
+
+    def test_new_month_requires_its_own_reset_baseline(self):
+        self.now = datetime.fromisoformat("2026-12-01T11:00:00+01:00")
+        self.quota.update(month="2026-12", observed_at=self.now.isoformat(),
+                          calendar_checked_at=self.now.isoformat(),
+                          observed_used=0, published_destination_keys=[])
+        with self.assertRaises(ValueError):
+            quota_observation(self.quota, [], self.now, 20)
+        self.quota["usage_baseline"] = {"month": "2026-12", "used": 0,
+                                       "published_destination_keys": []}
+        self.assertEqual(quota_observation(self.quota, [], self.now, 20), (0, set()))
+
+    def test_provider_numeric_id_change_does_not_count_twice(self):
+        self.posts[0]["metricool_id"] = "12345"
+        used, keys = quota_observation(self.quota, self.posts, self.now, 20)
+        self.posts[0]["metricool_id"] = "98765"
+        report = month_budget(self.posts, self.now, 2026, 11, used, keys)
+        self.assertEqual(report["published_used"], 4)
+
+
+class ReelsOnlyCadenceTests(YouTubeReadinessTests):
+    def test_missing_friday_youtube_is_incomplete(self):
+        self.save("automation/published.json", {"posts": self.readposts()[:3]})
+        errors = " ".join(self.check()["errors"])
+        self.assertIn("friday_youtube", errors)
+
+    def test_no_thursday_or_saturday_required(self):
+        report = self.check()
+        self.assertTrue(report["ok"], report["errors"])
+        self.assertEqual([x["slot"] for x in report["slots"]],
+                         ["tuesday", "friday", "tuesday_youtube", "friday_youtube"])
+
+    def test_future_carousel_is_forbidden(self):
+        posts = self.readposts()
+        extra = self.post("TT-101-CAROUSEL", "TT-101", "CAROUSEL",
+                          "2026-11-19T10:00:00+01:00")
+        posts.append(extra)
+        self.save("automation/published.json", {"posts": posts})
+        self.assertIn("reels-only", " ".join(self.check()["errors"]))
+
+    def test_cross_platform_identical_video_allowed(self):
+        report = self.check()
+        self.assertTrue(report["ok"], report["errors"])
 
 
 if __name__ == "__main__":
     unittest.main()
+

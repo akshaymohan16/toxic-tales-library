@@ -7,22 +7,20 @@
   "site_url": "https://akshaymohan16.github.io/toxic-tales-library/",
   "target_weekly_posts": {
     "reels": 2,
-    "carousel": 1
+    "carousel": 0
   },
   "slots": {
     "tuesday": "REEL",
-    "thursday": "CAROUSEL",
-    "saturday": "REEL"
+    "friday": "REEL"
   },
   "default_local_publication_time": "10:00",
-  "monthly_target_approximate": 13,
+  "monthly_target_approximate": 17,
   "monthly_publication_cap": 20,
   "youtube": {
     "enabled": true,
     "channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
     "channel_url": "https://www.youtube.com/channel/UCDvftxMMdtGSntm-ezcPfCg",
-    "weekly_shorts": 1,
-    "source_slot": "tuesday",
+    "weekly_shorts": 2,
     "local_publication_time": "10:00",
     "format": "SHORT",
     "made_for_kids": false,
@@ -31,16 +29,20 @@
     "separate_provider_receipt": true,
     "preserve_instagram_reservations": true,
     "existing_tasks_only": true,
-    "channel_connection_verified_on": "2026-11-08"
+    "channel_connection_verified_on": "2026-11-08",
+    "source_slots": [
+      "tuesday",
+      "friday"
+    ]
   },
   "target_weekly_destination_posts": {
-    "instagram": 3,
-    "youtube": 1,
+    "instagram": 2,
+    "youtube": 2,
     "total": 4
   },
   "monthly_destination_posts_normal_range": [
     16,
-    19
+    18
   ],
   "deployment_verified": true,
   "deployment_evidence": {
@@ -77,8 +79,8 @@
     "independent_final_export_review_required": true,
     "branding_standard": "quality/BRANDING_STANDARD.md"
   },
-  "quota_policy": "Hard cap 20 destination publications per calendar month across all networks. Use a fresh Metricool planner counter; never add already-published ledger rows to that counter again. Add scheduled destinations, held reservations and uncertain writes, plus every still-unfilled Tue/Thu/Sat Instagram slot through month end before admitting YouTube. One cross-post consumes another destination publication even when it shares a planner item. Unknown outcome blocks retry until reconciled. Never upgrade, start a trial, or consume Instagram's reserved capacity. Missing newly connected analytics is not zero usage or publication failure.",
-  "publication_policy": "Autonomous two distinct-paper Instagram Reels Tuesday/Saturday and one Instagram companion carousel Thursday, plus the exact Tuesday Reel once on YouTube as a Short, all 10:00 Europe/Vienna. Existing Sunday producer and daily publisher only. All evidence/editorial/visual/audio/rights/exact-file/deployment checks remain mandatory; YouTube also needs reviewed platform title/description/citations, audience, privacy, verified channel, separate provider receipt and live publication check. No routine owner approval required. Never revive TT-003 or alter scheduled Instagram media to add YouTube. New owner pauses remain binding.",
+  "quota_policy": "Hard cap 20 destination publications per calendar month. Fresh full-month provider calendar reconciled to persisted usage baseline and append-only network:UUID keys. Reserve all remaining Tuesday and Friday slots on BOTH networks, existing commitments and uncertain writes. Never double-count baseline publications or lose deleted publication history. Missing or inconsistent evidence blocks submission. No paid upgrade.",
+  "publication_policy": "Two distinct-paper animated videos each week; each exact approved video on Instagram Reels and YouTube Shorts Tuesday and Friday 10:00 Europe/Vienna. No carousels or backfill. Sunday 10:00 production; daily 10:15 and 18:15 provider checks and recovery. Existing tasks only. All science, rights, independent review, exact-media and deployment gates preserved.",
   "bio_link_verification": {
     "date": "2026-11-07",
     "instagram": "https://www.instagram.com/toxic_tales_eco/",
@@ -88,17 +90,27 @@
   },
   "pilot_approval_required": false,
   "notification_policy": {
-    "event": "newly_confirmed_published_reel",
-    "deduplicate_by": "platform_and_post_id",
+    "events": [
+      "completed_creation_batch",
+      "newly_confirmed_publication",
+      "new_owner_action_blocker"
+    ],
+    "deduplicate_by": "release_fingerprint_for_creation_and_platform_uuid_for_publication",
     "message_fields": [
       "title",
-      "instagram_url",
-      "youtube_url",
+      "brief_summary",
       "paper_doi",
-      "research_record_url"
+      "preview_url",
+      "research_record_url",
+      "scheduled_dates",
+      "instagram_url",
+      "youtube_url"
     ],
-    "daily_check_local_time": "10:15",
-    "delivery_status": "ChatGPT result notification configured; push/email settings not inspected"
+    "daily_check_local_times": [
+      "10:15",
+      "18:15"
+    ],
+    "delivery_status": "ChatGPT task results; push/email delivery settings unverified"
   },
   "active_pilot_id": "TT-005",
   "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
@@ -119,5 +131,8 @@
   "motion_supplement": "quality/MOTION_STANDARD.md",
   "production_entrypoint": "scripts/build_motion.py",
   "canonical_brand_asset": "assets/branding/toxic-tales-logo.json",
-  "future_reel_renderer_required": true
+  "future_reel_renderer_required": true,
+  "reels_only_effective_at": "2026-11-13T00:00:00+01:00",
+  "first_reels_only_publication": "2026-11-17T10:00:00+01:00",
+  "reels_only_policy": "automation/REELS_ONLY_POLICY.md"
 }

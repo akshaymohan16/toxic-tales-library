@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "creation_events": [],
+  "publication_events": [
+    {
+      "key": "instagram:-3158597333632725768",
+      "post_id": "TT-002-REEL",
+      "status": "historically_reported",
+      "notified_at": null
+    },
+    {
+      "key": "instagram:8432780738091634663",
+      "post_id": "TT-004-REEL",
+      "status": "historically_reported",
+      "notified_at": "2026-11-07T17:44:33.983826+00:00"
+    },
+    {
+      "key": "instagram:2386175407143797944",
+      "post_id": "TT-005-REEL",
+      "status": "historically_reported",
+      "notified_at": "2026-11-07T19:07:59.945Z"
+    },
+    {
+      "key": "instagram:-7609883982228992318",
+      "post_id": "TT-005-CAROUSEL",
+      "status": "historically_reported",
+      "notified_at": "2026-11-12T09:13:23.510Z"
+    },
+    {
+      "key": "instagram:-5193152553705388348",
+      "post_id": "TT-006-REEL",
+      "status": "historically_reported",
+      "notified_at": "2026-11-10T09:10:52.163Z"
+    },
+    {
+      "key": "youtube:4422280930322105807",
+      "post_id": "TT-006-YOUTUBE-SHORT",
+      "status": "historically_reported",
+      "notified_at": "2026-11-10T09:16:05.767Z"
+    }
+  ],
+  "delivery": "ChatGPT task result notifications; device/email delivery unverified"
+}

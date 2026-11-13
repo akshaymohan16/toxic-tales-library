@@ -1,3 +1,6 @@
+# Current owner policy — 13 November 2026
+Read automation/REELS_ONLY_POLICY.md first. Two videos/week, each on Instagram and YouTube Shorts, Tuesday and Friday 10:00 Europe/Vienna. No new carousels. This overrides historical cadence/approval/quota-meter wording below; scientific and exact-export safeguards stay mandatory. Sunday producer 10:00; publisher daily 10:15 and 18:15. Website archive and creation/publication alerts are automatic. Routine owner approval is not required.
+
 # Weekly YouTube destination policy
 
 Effective 8 November 2026 under the owner's explicit authorization for full routine automation. This is an extension of the existing Sunday producer and daily publisher, not a new task or posting loop. It supersedes older Instagram-only scope and three-receipt success wording only as described here.
@@ -40,4 +43,5 @@ Every Sunday finish next week's three Instagram reservations and one Tuesday You
 
 ## Verification boundary
 Configuration and scheduling can be verified now; actual publication can only be verified after its future due time. Never claim an unattended production cycle succeeded merely because a task is active or a build passed. Preserve the existing 15 November results-report task and have it assess the current four-destination policy.
+
 

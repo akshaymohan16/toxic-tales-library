@@ -17,8 +17,7 @@ from urllib.parse import urlparse, parse_qs
 from zoneinfo import ZoneInfo
 
 ZONE = ZoneInfo("Europe/Vienna")
-SLOTS = (("tuesday", 1, "REEL"), ("thursday", 3, "CAROUSEL"),
-         ("saturday", 5, "REEL"))
+SLOTS = (("tuesday", 1, "REEL"), ("friday", 4, "REEL"))
 FINAL = {"scheduled", "published"}
 RESERVED = {"scheduled", "published", "draft_held_for_quality_review"}
 RESERVED |= {"submission_uncertain", "pending_confirmation", "failed_retry_pending"}
@@ -63,7 +62,7 @@ def video_files(post):
 
 
 def destination_key(post):
-    return platform(post) + ":" + str(post.get("post_id", ""))
+    return platform(post) + ":" + str(post.get("metricool_uuid") or post.get("post_id", ""))
 
 
 def metadata_digest(post):
@@ -97,16 +96,14 @@ def valid_public_url(url, network):
 
 
 def month_budget(posts, now, year, month, observed_used=0, observed_published_keys=None):
-    """Count each destination once and protect unscheduled remaining IG slots.
+    """Count each destination and reserve all remaining Tue/Fri IG and YT slots.
 
-    The provider counter already includes its saved published-ID baseline. Add
-    only publications outside that baseline, retaining the full ledger as floor.
-    Future IG dates without receipts are reservations too, so an early YouTube
-    submission cannot exhaust the month's Instagram capacity.
+    Persisted usage includes the saved baseline. Never forget deleted published
+    items; add only new ledger publications. Uncertain writes reserve capacity.
     """
     published = pending = 0
     published_keys = set()
-    occupied_ig = set()
+    occupied = set()
     for post in posts:
         if post.get("status") not in RESERVED:
             continue
@@ -121,21 +118,80 @@ def month_budget(posts, now, year, month, observed_used=0, observed_published_ke
             published_keys.add(destination_key(post))
         else:
             pending += 1
-        if platform(post) == "instagram" and post.get("status") in FINAL:
-            occupied_ig.add((due, post.get("format")))
-    unfilled_ig = 0
+        if post.get("status") in FINAL:
+            occupied.add((platform(post), due, post.get("format")))
+    unfilled = {"instagram": 0, "youtube": 0}
     for day in range(1, monthrange(year, month)[1] + 1):
         due = datetime(year, month, day, 10, tzinfo=ZONE)
-        fmt = {1: "REEL", 3: "CAROUSEL", 5: "REEL"}.get(due.weekday())
-        if fmt and due > now and (due, fmt) not in occupied_ig:
-            unfilled_ig += 1
+        if due.weekday() in {1, 4} and due > now:
+            for network, fmt in (("instagram", "REEL"), ("youtube", "SHORT")):
+                if (network, due, fmt) not in occupied:
+                    unfilled[network] += 1
     since_observation = (len(published_keys - set(observed_published_keys))
                          if observed_published_keys is not None else 0)
     used = max(observed_used + since_observation, published)
     return {"month": f"{year:04d}-{month:02d}", "published_used": used,
             "pending_destination_reservations": pending,
-            "unfilled_instagram_reservations": unfilled_ig,
-            "projected": used + pending + unfilled_ig}
+            "unfilled_instagram_reservations": unfilled["instagram"],
+            "unfilled_youtube_reservations": unfilled["youtube"],
+            "projected": used + pending + sum(unfilled.values())}
+
+
+def quota_observation(quota, posts, now, limit):
+    """Validate meter or complete calendar plus preserved monthly baseline.
+
+    Publisher independently fetches the full month. This read-only verifier
+    checks arithmetic, freshness, identities and known-publication retention.
+    """
+    observed = local_date(quota["observed_at"])
+    used = quota["observed_used"]
+    month = now.strftime("%Y-%m")
+    def count(value):
+        return isinstance(value, int) and not isinstance(value, bool) and 0 <= value <= limit
+    def keys(value):
+        if (not isinstance(value, list) or
+                any(not isinstance(k, str) or ":" not in k or not k.split(":", 1)[1]
+                    or k.split(":", 1)[0] not in {"instagram", "youtube"} for k in value) or
+                len(set(value)) != len(value)):
+            raise ValueError("Invalid published destination keys")
+        return set(value)
+    def fresh(stamp):
+        return -timedelta(minutes=15) <= now - stamp <= HEARTBEAT_MAX_AGE
+    if quota.get("month") != month or not count(used) or not fresh(observed):
+        raise ValueError("Invalid current-month quota observation")
+    if quota.get("observation_basis") == "Metricool planner counter":
+        saved = keys(quota["observed_published_post_ids"])
+        id_map = {platform(p) + ":" + str(p.get("post_id", "")): destination_key(p)
+                  for p in posts}
+        saved = {id_map.get(k, k) for k in saved}
+        if len(saved) > used:
+            raise ValueError("Meter below known publications")
+        return used, saved
+    if quota.get("observation_basis") != "Metricool calendar reconciled to persisted usage baseline":
+        raise ValueError("Unsupported quota basis")
+    if quota.get("full_month_calendar_verified") is not True or not fresh(local_date(quota["calendar_checked_at"])):
+        raise ValueError("Complete fresh provider calendar required")
+    baseline = quota["usage_baseline"]
+    baseline_used = baseline["used"]
+    baseline_keys = keys(baseline["published_destination_keys"])
+    saved = keys(quota["published_destination_keys"])
+    if (baseline.get("month") != month or not count(baseline_used) or
+            len(baseline_keys) > baseline_used or not baseline_keys <= saved):
+        raise ValueError("Invalid or reduced monthly baseline")
+    known = set()
+    for post in posts:
+        if post.get("status") == "published":
+            due = local_date(post["publication_date"])
+            if due.strftime("%Y-%m") == month:
+                if not post.get("metricool_uuid"):
+                    raise ValueError("Published provider UUID missing")
+                known.add(destination_key(post))
+    if not known <= saved:
+        raise ValueError("Calendar omitted known published destinations")
+    expected = max(baseline_used + len(saved - baseline_keys), len(saved))
+    if used != expected:
+        raise ValueError("Reconciled usage arithmetic mismatch")
+    return used, saved
 
 
 def publication_check(post, due, now, errors):
@@ -175,8 +231,8 @@ def youtube_check(root, post, posts, releases, now, errors):
         errors.append(pid + ": incorrect YouTube format/channel")
     try:
         due = local_date(post["publication_date"])
-        if due.weekday() != 1 or (due.hour, due.minute, due.second) != (10, 0, 0):
-            errors.append(pid + ": YouTube must use the Tuesday 10:00 slot")
+        if due.weekday() not in {1, 4} or (due.hour, due.minute, due.second) != (10, 0, 0):
+            errors.append(pid + ": YouTube must use a Tuesday/Friday 10:00 slot")
         publication_check(post, due, now, errors)
     except (KeyError, ValueError, TypeError):
         errors.append(pid + ": invalid YouTube publication date")
@@ -389,12 +445,12 @@ def audit(root, now):
     youtube = config.get("youtube", {})
     youtube_enabled = youtube.get("enabled") is True
     if youtube_enabled and (youtube.get("channel_id") != YOUTUBE_CHANNEL or
-                            youtube.get("weekly_shorts") != 1 or
-                            youtube.get("source_slot") != "tuesday" or
+                            youtube.get("weekly_shorts") != 2 or
+                            youtube.get("source_slots") != ["tuesday", "friday"] or
                             youtube.get("made_for_kids") is not False or
                             youtube.get("privacy") != "PUBLIC"):
         errors.append("YouTube routing, channel, audience or privacy configuration mismatch")
-    ids, uuids, reel_dois, video_hashes, youtube_weeks = set(), set(), set(), set(), set()
+    ids, uuids, reel_dois, video_hashes, youtube_slots = set(), set(), set(), set(), set()
     count = 0
     for p in posts:
         pid = p.get("post_id")
@@ -407,10 +463,10 @@ def audit(root, now):
         status = p.get("status")
         if status in RESERVED and network == "youtube":
             try:
-                week = local_date(p["publication_date"]).date().isocalendar()[:2]
-                if week in youtube_weeks:
-                    errors.append("More than one YouTube destination reserved in ISO week " + str(week))
-                youtube_weeks.add(week)
+                slot = local_date(p["publication_date"])
+                if slot in youtube_slots:
+                    errors.append("More than one YouTube destination reserved for " + slot.isoformat())
+                youtube_slots.add(slot)
             except (KeyError, ValueError, TypeError):
                 errors.append(str(pid) + ": invalid reserved YouTube date")
         if status in FINAL:
@@ -433,11 +489,23 @@ def audit(root, now):
                 if not youtube_enabled:
                     errors.append(str(pid) + ": YouTube receipt exists while destination disabled")
                 youtube_check(root, p, posts, releases, now, errors)
+            elif status == "scheduled":
+                # A missed previous-week post remains overdue after rollover.
+                try:
+                    publication_check(p, local_date(p["publication_date"]), now, errors)
+                    release_check(root, p, releases, errors)
+                except (KeyError, ValueError, TypeError):
+                    errors.append(str(pid) + ": invalid scheduled Instagram receipt")
         if status in RESERVED:
             try:
                 date = local_date(p["publication_date"])
                 if date.year == now.year and date.month == now.month:
                     count += 1
+                if status != "published" and date > now and status in FINAL:
+                    expected_format = "SHORT" if network == "youtube" else "REEL"
+                    if (p.get("format") != expected_format or date.weekday() not in {1, 4}
+                            or (date.hour, date.minute, date.second) != (10, 0, 0)):
+                        errors.append(str(pid) + ": future publication violates reels-only Tue/Fri cadence")
             except (KeyError, ValueError, TypeError):
                 errors.append("Missing or invalid publication date: " + str(pid))
     limit = config.get("monthly_publication_cap", 20)
@@ -452,24 +520,12 @@ def audit(root, now):
     observed_used = 0
     observed_published_keys = None
     if youtube_enabled:
-        quota = publisher.get("quota", {})
         try:
-            observed = local_date(quota["observed_at"])
-            observed_used = quota["observed_used"]
-            observed_published_keys = quota["observed_published_post_ids"]
-            if (quota.get("month") != now.strftime("%Y-%m") or
-                    not isinstance(observed_used, int) or isinstance(observed_used, bool) or
-                    observed_used < 0 or observed_used > limit or
-                    not isinstance(observed_published_keys, list) or
-                    any(not isinstance(k, str) or ":" not in k for k in observed_published_keys) or
-                    len(set(observed_published_keys)) != len(observed_published_keys) or
-                    len(observed_published_keys) > observed_used or
-                    now - observed > HEARTBEAT_MAX_AGE or
-                    observed > now + timedelta(minutes=15) or
-                    quota.get("observation_basis") != "Metricool planner counter"):
-                raise ValueError("Invalid quota observation")
+            observed_used, observed_published_keys = quota_observation(
+                publisher.get("quota", {}), posts, now, limit)
         except (KeyError, ValueError, TypeError):
-            errors.append("Fresh monthly Metricool planner counter observation required")
+            errors.append("Fresh monthly Metricool planner counter observation required "
+                          "or complete calendar reconciled to persisted usage baseline")
             observed_used = 0
     months = {(now.year, now.month)}
     for p in posts:
@@ -485,10 +541,10 @@ def audit(root, now):
                            observed_published_keys if (year, month) == (now.year, now.month) else None)
                for year, month in sorted(months)]
     for budget in budgets:
-        budget["available_youtube_slots"] = max(0, limit - budget["projected"])
+        budget["unreserved_capacity"] = max(0, limit - budget["projected"])
         if budget["projected"] > limit:
             errors.append(budget["month"] + ": destination reservations plus protected "
-                          "remaining Instagram slots exceed free plan cap")
+                          "remaining Instagram and YouTube slots exceed free plan cap")
 
     heartbeat = publisher.get("updated_at")
     if not heartbeat:
@@ -504,6 +560,12 @@ def audit(root, now):
         except (ValueError, TypeError):
             errors.append("Invalid publisher heartbeat timestamp")
 
+    try:
+        first_publication = local_date(config.get("first_reels_only_publication",
+                                                  "2026-11-17T10:00:00+01:00"))
+    except (TypeError, ValueError):
+        errors.append("Invalid first reels-only publication timestamp")
+        first_publication = datetime(2026, 11, 17, 10, tzinfo=ZONE)
     monday = target_week(now)
     if monday is None:
         warnings.append("Sunday producer window; Monday check is the readiness deadline")
@@ -511,6 +573,8 @@ def audit(root, now):
         for label, day_offset, fmt in SLOTS:
             due = datetime.combine(monday + timedelta(days=day_offset),
                                    time(10), tzinfo=ZONE)
+            if due < first_publication:
+                continue
             matching = []
             for p in posts:
                 if (platform(p) != "instagram" or p.get("status") not in FINAL or
@@ -532,28 +596,27 @@ def audit(root, now):
             row["status"] = p["status"]
             publication_check(p, due, now, errors)
             release_check(root, p, releases, errors)
-            if fmt == "CAROUSEL":
-                if not any(platform(q) == "instagram" and q.get("format") == "REEL" and
-                           q.get("doi") == p.get("doi") and
-                           q.get("status") in FINAL for q in posts):
-                    errors.append(p["post_id"] + ": companion Reel not found")
 
         if youtube_enabled:
-            due = datetime.combine(monday + timedelta(days=1), time(10), tzinfo=ZONE)
-            matches = []
-            for p in posts:
-                if platform(p) == "youtube" and p.get("status") in FINAL:
-                    try:
-                        if local_date(p["publication_date"]) == due:
-                            matches.append(p)
-                    except (KeyError, ValueError, TypeError):
-                        continue
-            rows.append({"slot": "tuesday_youtube", "due": due.isoformat(),
-                         "post_id": matches[0].get("post_id") if len(matches) == 1 else None,
-                         "status": matches[0].get("status") if len(matches) == 1 else "missing"})
-            if len(matches) != 1:
-                errors.append("tuesday_youtube: expected exactly one active SHORT at " +
-                              due.isoformat() + ", found " + str(len(matches)))
+            for label, day_offset, _ in SLOTS:
+                due = datetime.combine(monday + timedelta(days=day_offset), time(10), tzinfo=ZONE)
+                if due < first_publication:
+                    continue
+                matches = []
+                for p in posts:
+                    if platform(p) == "youtube" and p.get("status") in FINAL:
+                        try:
+                            if local_date(p["publication_date"]) == due:
+                                matches.append(p)
+                        except (KeyError, ValueError, TypeError):
+                            continue
+                slot_label = label + "_youtube"
+                rows.append({"slot": slot_label, "due": due.isoformat(),
+                             "post_id": matches[0].get("post_id") if len(matches) == 1 else None,
+                             "status": matches[0].get("status") if len(matches) == 1 else "missing"})
+                if len(matches) != 1:
+                    errors.append(slot_label + ": expected exactly one active SHORT at " +
+                                  due.isoformat() + ", found " + str(len(matches)))
 
     report = {"ok": not errors, "checked_at": now.isoformat(),
               "week_start": monday.isoformat() if monday else None,
@@ -590,3 +653,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
