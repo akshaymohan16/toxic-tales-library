@@ -586,6 +586,121 @@ class ReelsOnlyCadenceTests(YouTubeReadinessTests):
         self.assertTrue(report["ok"], report["errors"])
 
 
+class OwnerOneOffReadinessTests(unittest.TestCase):
+    """The additional Friday slot must retain the same receipt and QA gates."""
+    def setUp(self):
+        fixture = YouTubeReadinessTests("test_complete_monday_passes")
+        fixture.setUp()
+        self.addCleanup(fixture.doCleanups)
+        self.root, self.save, self.readposts = fixture.root, fixture.save, fixture.readposts
+        self.due = "2026-11-13T18:00:00+01:00"
+        self.now = datetime.fromisoformat("2026-11-13T14:00:00+01:00")
+        config = self.read("automation/config.json")
+        config["first_reels_only_publication"] = DATES[0]
+        config["owner_authorized_one_off_slots"] = [
+            {"episode_id": "TT-008", "post_id": "TT-008" + suffix, "platform": network,
+             "format": fmt, "publication_date": self.due,
+             "authorized_at": "2026-11-13T13:20:50+01:00", "reason": "Owner requested today's new video"}
+            for network, fmt, suffix in (("instagram", "REEL", "-REEL"),
+                                         ("youtube", "SHORT", "-YOUTUBE-SHORT"))]
+        self.save("automation/config.json", config)
+        publisher = self.read("automation/publisher-status.json")
+        publisher["updated_at"] = publisher["quota"]["observed_at"] = self.now.isoformat()
+        self.save("automation/publisher-status.json", publisher)
+        posts = self.readposts()
+        for post in posts:
+            if "provider_readback_checked_at" in post:
+                post["provider_readback_checked_at"] = self.now.isoformat()
+        self.save("automation/published.json", {"posts": posts})
+
+    def read(self, name):
+        return json.loads((self.root / name).read_text())
+
+    def check(self, now=None):
+        return audit(self.root, now or self.now)
+
+    def add_receipts(self):
+        def convert(value):
+            return json.loads(json.dumps(value).replace("TT-101", "TT-008")
+                              .replace("tt-101", "tt-008")
+                              .replace("2026-11-17T10:00:00", "2026-11-13T18:00:00"))
+        source = convert(self.read("episodes/tt-101.json"))
+        self.save("episodes/tt-008.json", source)
+        (self.root / source["evidence_file"]).write_text("Original paper record", encoding="utf-8")
+        releases = self.read("quality/releases.json")
+        releases["TT-008"] = convert(releases["TT-101"])
+        self.save("quality/releases.json", releases)
+        posts = self.readposts()
+        reel, short = convert(posts[0]), convert(posts[2])
+        short["youtube"]["metadata_sha256"] = metadata_digest(short)
+        posts.extend([reel, short])
+        self.save("automation/published.json", {"posts": posts})
+
+    def test_extra_destinations_reserved_before_creation_and_not_counted_twice(self):
+        pending = self.check()
+        self.assertTrue(pending["ok"], pending["errors"])
+        budget = pending["monthly_budgets"][0]
+        self.assertEqual(budget["unfilled_one_off_reservations"], 2)
+        self.assertEqual([row["status"] for row in pending["slots"]], ["missing", "missing"])
+        self.add_receipts()
+        ready = self.check()
+        self.assertTrue(ready["ok"], ready["errors"])
+        self.assertEqual(ready["monthly_budgets"][0]["unfilled_one_off_reservations"], 0)
+        self.assertEqual(ready["monthly_budgets"][0]["projected"], budget["projected"])
+        self.assertEqual([row["status"] for row in ready["slots"]], ["scheduled", "scheduled"])
+
+    def test_no_authorization_or_wrong_identity_and_time_never_waive_cadence(self):
+        self.add_receipts()
+        original = self.readposts()
+        for changed in ({"post_id": "TT-009-YOUTUBE-SHORT"}, {"episode_id": "TT-009"},
+                        {"publication_date": "2026-11-13T18:01:00+01:00"}):
+            with self.subTest(changed=changed):
+                posts = copy.deepcopy(original)
+                posts[-1].update(changed)
+                self.save("automation/published.json", {"posts": posts})
+                self.assertIn("Tuesday/Friday 10:00", " ".join(self.check()["errors"]))
+        self.save("automation/published.json", {"posts": original})
+        config = self.read("automation/config.json")
+        del config["owner_authorized_one_off_slots"]
+        self.save("automation/config.json", config)
+        self.assertIn("Tuesday/Friday 10:00", " ".join(self.check()["errors"]))
+
+    def test_malformed_authorization_fails_audit_without_crashing(self):
+        config = self.read("automation/config.json")
+        config["owner_authorized_one_off_slots"][0]["publication_date"] = "bad"
+        self.save("automation/config.json", config)
+        report = self.check()
+        self.assertFalse(report["ok"])
+        self.assertIn("Invalid owner-authorized one-off configuration", " ".join(report["errors"]))
+
+    def test_due_missing_and_overdue_pending_receipts_are_errors(self):
+        report = self.check(datetime.fromisoformat(self.due))
+        self.assertIn("one-off has no unique active receipt", " ".join(report["errors"]))
+        self.add_receipts()
+        report = self.check(datetime.fromisoformat("2026-11-13T21:01:00+01:00"))
+        self.assertIn("overdue after 3h", " ".join(report["errors"]))
+
+    def test_exact_exception_still_requires_quality_and_provider_readback(self):
+        self.add_receipts()
+        original = self.readposts()
+        posts = copy.deepcopy(original)
+        posts[-1]["provider_readback"]["publicationDate"]["dateTime"] = "2026-11-13T18:01:00"
+        self.save("automation/published.json", {"posts": posts})
+        self.assertFalse(self.check()["ok"])
+        self.save("automation/published.json", {"posts": original})
+        releases = self.read("quality/releases.json")
+        releases["TT-008"]["decision"] = "hold"
+        self.save("quality/releases.json", releases)
+        self.assertFalse(self.check()["ok"])
+
+    def test_published_one_off_instagram_still_requires_positive_receipt(self):
+        self.add_receipts()
+        posts = self.readposts()
+        posts[-2]["status"] = "published"
+        self.save("automation/published.json", {"posts": posts})
+        self.assertFalse(self.check()["ok"])
+
+
 if __name__ == "__main__":
     unittest.main()
 

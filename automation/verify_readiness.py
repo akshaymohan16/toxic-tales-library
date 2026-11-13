@@ -16,6 +16,11 @@ from pathlib import Path
 from urllib.parse import urlparse, parse_qs
 from zoneinfo import ZoneInfo
 
+try:
+    from .enforce_reels_only import authorized_one_off_slot, validate_one_off_slots
+except ImportError:  # Direct script execution: python automation/verify_readiness.py
+    from enforce_reels_only import authorized_one_off_slot, validate_one_off_slots
+
 ZONE = ZoneInfo("Europe/Vienna")
 SLOTS = (("tuesday", 1, "REEL"), ("friday", 4, "REEL"))
 FINAL = {"scheduled", "published"}
@@ -95,7 +100,8 @@ def valid_public_url(url, network):
     return False
 
 
-def month_budget(posts, now, year, month, observed_used=0, observed_published_keys=None):
+def month_budget(posts, now, year, month, observed_used=0, observed_published_keys=None,
+                 one_off_slots=None):
     """Count each destination and reserve all remaining Tue/Fri IG and YT slots.
 
     Persisted usage includes the saved baseline. Never forget deleted published
@@ -103,7 +109,7 @@ def month_budget(posts, now, year, month, observed_used=0, observed_published_ke
     """
     published = pending = 0
     published_keys = set()
-    occupied = set()
+    occupied, occupied_one_off = set(), set()
     for post in posts:
         if post.get("status") not in RESERVED:
             continue
@@ -120,6 +126,8 @@ def month_budget(posts, now, year, month, observed_used=0, observed_published_ke
             pending += 1
         if post.get("status") in FINAL:
             occupied.add((platform(post), due, post.get("format")))
+        occupied_one_off.add((post.get("episode_id"), post.get("post_id"),
+                              platform(post), due, post.get("format")))
     unfilled = {"instagram": 0, "youtube": 0}
     for day in range(1, monthrange(year, month)[1] + 1):
         due = datetime(year, month, day, 10, tzinfo=ZONE)
@@ -130,11 +138,19 @@ def month_budget(posts, now, year, month, observed_used=0, observed_published_ke
     since_observation = (len(published_keys - set(observed_published_keys))
                          if observed_published_keys is not None else 0)
     used = max(observed_used + since_observation, published)
+    extra = 0
+    for slot in one_off_slots or []:
+        due = slot["due"]
+        identity = (slot["episode_id"], slot["post_id"], slot["platform"], due, slot["format"])
+        if ((due.year, due.month) == (year, month) and due > now
+                and identity not in occupied_one_off):
+            extra += 1
     return {"month": f"{year:04d}-{month:02d}", "published_used": used,
             "pending_destination_reservations": pending,
             "unfilled_instagram_reservations": unfilled["instagram"],
             "unfilled_youtube_reservations": unfilled["youtube"],
-            "projected": used + pending + sum(unfilled.values())}
+            "unfilled_one_off_reservations": extra,
+            "projected": used + pending + sum(unfilled.values()) + extra}
 
 
 def quota_observation(quota, posts, now, limit):
@@ -225,13 +241,17 @@ def publication_check(post, due, now, errors):
                 errors.append(pid + ": invalid YouTube live verification timestamp")
 
 
-def youtube_check(root, post, posts, releases, now, errors):
+def youtube_check(root, post, posts, releases, now, errors, config=None):
     pid = post.get("post_id", "unknown")
     if post.get("format") != "SHORT" or post.get("youtube_channel_id") != YOUTUBE_CHANNEL:
         errors.append(pid + ": incorrect YouTube format/channel")
     try:
         due = local_date(post["publication_date"])
-        if due.weekday() not in {1, 4} or (due.hour, due.minute, due.second) != (10, 0, 0):
+        if config is None:
+            config = read(root, "automation/config.json", {})
+        exception = authorized_one_off_slot(post, config)
+        if (exception is None and (due.weekday() not in {1, 4}
+                or (due.hour, due.minute, due.second, due.microsecond) != (10, 0, 0, 0))):
             errors.append(pid + ": YouTube must use a Tuesday/Friday 10:00 slot")
         publication_check(post, due, now, errors)
     except (KeyError, ValueError, TypeError):
@@ -427,6 +447,12 @@ def audit(root, now):
     now = now.astimezone(ZONE)
     errors, warnings, rows = [], [], []
     config = read(root, "automation/config.json", {})
+    try:
+        one_off_slots = validate_one_off_slots(config)
+        exception_config = config
+    except (ValueError, TypeError) as error:
+        errors.append("Invalid owner-authorized one-off configuration: " + str(error))
+        one_off_slots, exception_config = [], {}
     ledger = read(root, "automation/published.json", {"posts": []})
     releases = read(root, "quality/releases.json", {})
     publisher = read(root, "automation/publisher-status.json", {})
@@ -488,7 +514,7 @@ def audit(root, now):
             if network == "youtube":
                 if not youtube_enabled:
                     errors.append(str(pid) + ": YouTube receipt exists while destination disabled")
-                youtube_check(root, p, posts, releases, now, errors)
+                youtube_check(root, p, posts, releases, now, errors, exception_config)
             elif status == "scheduled":
                 # A missed previous-week post remains overdue after rollover.
                 try:
@@ -503,8 +529,10 @@ def audit(root, now):
                     count += 1
                 if status != "published" and date > now and status in FINAL:
                     expected_format = "SHORT" if network == "youtube" else "REEL"
-                    if (p.get("format") != expected_format or date.weekday() not in {1, 4}
-                            or (date.hour, date.minute, date.second) != (10, 0, 0)):
+                    exception = authorized_one_off_slot(p, exception_config)
+                    if (p.get("format") != expected_format or (exception is None and
+                            (date.weekday() not in {1, 4} or
+                             (date.hour, date.minute, date.second, date.microsecond) != (10, 0, 0, 0)))):
                         errors.append(str(pid) + ": future publication violates reels-only Tue/Fri cadence")
             except (KeyError, ValueError, TypeError):
                 errors.append("Missing or invalid publication date: " + str(pid))
@@ -528,6 +556,8 @@ def audit(root, now):
                           "or complete calendar reconciled to persisted usage baseline")
             observed_used = 0
     months = {(now.year, now.month)}
+    months.update((slot["due"].year, slot["due"].month) for slot in one_off_slots
+                  if slot["due"] > now)
     for p in posts:
         if p.get("status") in RESERVED:
             try:
@@ -538,7 +568,8 @@ def audit(root, now):
                 pass
     budgets = [month_budget(posts, now, year, month,
                            observed_used if (year, month) == (now.year, now.month) else 0,
-                           observed_published_keys if (year, month) == (now.year, now.month) else None)
+                           observed_published_keys if (year, month) == (now.year, now.month) else None,
+                           one_off_slots)
                for year, month in sorted(months)]
     for budget in budgets:
         budget["unreserved_capacity"] = max(0, limit - budget["projected"])
@@ -567,6 +598,25 @@ def audit(root, now):
         errors.append("Invalid first reels-only publication timestamp")
         first_publication = datetime(2026, 11, 17, 10, tzinfo=ZONE)
     monday = target_week(now)
+    for slot in one_off_slots:
+        matches = [p for p in posts if p.get("status") in FINAL and
+                   authorized_one_off_slot(p, exception_config) == slot["due"] and
+                   p.get("post_id") == slot["post_id"] and platform(p) == slot["platform"]]
+        rows.append({"slot": "owner_one_off_" + slot["platform"],
+                     "due": slot["due"].isoformat(), "expected_post_id": slot["post_id"],
+                     "post_id": matches[0].get("post_id") if len(matches) == 1 else None,
+                     "status": matches[0].get("status") if len(matches) == 1 else "missing"})
+        if len(matches) != 1:
+            detail = slot["post_id"] + ": owner-authorized one-off has no unique active receipt"
+            if now >= slot["due"]:
+                errors.append(detail)
+            else:
+                warnings.append(detail + "; production/reservation still pending")
+        elif slot["platform"] == "instagram" and matches[0].get("status") == "published":
+            # Published one-offs before the regular first slot still retain all
+            # positive-publication and exact-release checks.
+            publication_check(matches[0], slot["due"], now, errors)
+            release_check(root, matches[0], releases, errors)
     if monday is None:
         warnings.append("Sunday producer window; Monday check is the readiness deadline")
     else:

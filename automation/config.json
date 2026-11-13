@@ -129,10 +129,30 @@
   "branding_supplement": "quality/BRANDING_STANDARD.md",
   "future_reel_renderer": "nature-motion-10",
   "motion_supplement": "quality/MOTION_STANDARD.md",
-  "production_entrypoint": "scripts/build_motion.py",
+  "production_entrypoint": "scripts/build_current.py",
   "canonical_brand_asset": "assets/branding/toxic-tales-logo.json",
   "future_reel_renderer_required": true,
   "reels_only_effective_at": "2026-11-13T00:00:00+01:00",
   "first_reels_only_publication": "2026-11-17T10:00:00+01:00",
-  "reels_only_policy": "automation/REELS_ONLY_POLICY.md"
+  "reels_only_policy": "automation/REELS_ONLY_POLICY.md",
+  "owner_authorized_one_off_slots": [
+    {
+      "episode_id": "TT-008",
+      "post_id": "TT-008-REEL",
+      "platform": "instagram",
+      "format": "REEL",
+      "publication_date": "2026-11-13T18:00:00+01:00",
+      "authorized_at": "2026-11-13T13:20:50+01:00",
+      "reason": "Owner explicitly requested a new Reel today; Tuesday bumblebee unchanged"
+    },
+    {
+      "episode_id": "TT-008",
+      "post_id": "TT-008-YOUTUBE-SHORT",
+      "platform": "youtube",
+      "format": "SHORT",
+      "publication_date": "2026-11-13T18:00:00+01:00",
+      "authorized_at": "2026-11-13T13:20:50+01:00",
+      "reason": "Owner explicitly requested a new Reel today; Tuesday bumblebee unchanged"
+    }
+  ]
 }

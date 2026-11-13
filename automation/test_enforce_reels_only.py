@@ -5,7 +5,8 @@ import unittest
 from datetime import datetime
 from pathlib import Path
 
-from enforce_reels_only import local_slot, run, sanitize_queue, validate_config, validate_episode
+from enforce_reels_only import (authorized_one_off_slot, local_slot, run, sanitize_queue,
+                                validate_config, validate_episode, validate_one_off_slots)
 
 
 FIRST = local_slot("2026-11-17T10:00:00+01:00")
@@ -14,6 +15,19 @@ CONFIG = {"slots": {"tuesday": "REEL", "friday": "REEL"},
           "target_weekly_posts": {"reels": 2, "carousel": 0},
           "target_weekly_destination_posts": {"instagram": 2, "youtube": 2, "total": 4},
           "first_reels_only_publication": FIRST.isoformat()}
+ONE_OFF_DATE = "2026-11-13T18:00:00+01:00"
+
+
+def one_off_config():
+    result = copy.deepcopy(CONFIG)
+    result["owner_authorized_one_off_slots"] = [
+        {"episode_id": "TT-008", "post_id": "TT-008" + suffix, "platform": network,
+         "format": fmt, "publication_date": ONE_OFF_DATE,
+         "authorized_at": "2026-11-13T13:20:50+01:00",
+         "reason": "Owner explicitly requested a new Reel today; Tuesday bumblebee unchanged"}
+        for network, fmt, suffix in (("instagram", "REEL", "-REEL"),
+                                     ("youtube", "SHORT", "-YOUTUBE-SHORT"))]
+    return result
 
 
 def candidate(post_id="TT-008-REEL", **extra):
@@ -102,6 +116,72 @@ class ReelsPolicyTest(unittest.TestCase):
             self.assertEqual(result["queue_count"], 1)
             self.assertEqual(json.loads((root / "site/health.json").read_text())["queue_count"], 1)
             self.assertEqual(before, ((root / "episodes/tt-005.json").read_bytes(), (root / "site/papers.json").read_bytes()))
+
+
+class OwnerAuthorizedOneOffTests(unittest.TestCase):
+    def test_exact_authorized_video_passes_source_and_queue_before_due(self):
+        config = one_off_config()
+        post = candidate(publication_date=ONE_OFF_DATE)
+        episode = {"id": "TT-008", "production": {"renderer": "nature-motion-10"}, "posts": [post]}
+        self.assertEqual(validate_config(config), FIRST)
+        validate_episode(episode, FIRST, config)
+        kept, removed = sanitize_queue([post], {"posts": []}, FIRST, NOW, config)
+        self.assertEqual(kept, [post])
+        self.assertEqual(removed, [])
+        short = {**post, "id": "TT-008-YOUTUBE-SHORT", "platform": "youtube", "format": "SHORT"}
+        self.assertEqual(authorized_one_off_slot(short, config).isoformat(), ONE_OFF_DATE)
+
+    def test_absent_authorization_and_non_exact_identity_fail_closed(self):
+        base = candidate(publication_date=ONE_OFF_DATE)
+        self.assertIsNone(authorized_one_off_slot(base))
+        self.assertEqual(sanitize_queue([base], {"posts": []}, FIRST, NOW)[0], [])
+        for changes in ({"episode_id": "TT-009"}, {"id": "TT-009-REEL"},
+                        {"platform": "youtube"}, {"format": "CAROUSEL"},
+                        {"publication_date": "2026-11-13T18:01:00+01:00"},
+                        {"publication_date": "2026-11-20T18:00:00+01:00"}):
+            with self.subTest(changes=changes):
+                post = {**base, **changes}
+                self.assertIsNone(authorized_one_off_slot(post, one_off_config()))
+                self.assertEqual(sanitize_queue([post], {"posts": []}, FIRST, NOW, one_off_config())[0], [])
+
+    def test_exception_does_not_bypass_release_receipt_duplicate_or_past_guards(self):
+        config, post = one_off_config(), candidate(publication_date=ONE_OFF_DATE)
+        for changes in ({"quality_released": False}, {"scientifically_reviewed": False}):
+            self.assertEqual(sanitize_queue([{**post, **changes}], {"posts": []}, FIRST, NOW, config)[0], [])
+        for receipt in ({"status": "scheduled"}, {"status": "submission_uncertain"},
+                        {"status": "ready", "metricool_uuid": "existing"},
+                        {"status": "ready", "metricool_id": "existing"},
+                        {"status": "ready", "publication_eligible": False}):
+            self.assertEqual(sanitize_queue([post], {"posts": [{"post_id": post["id"], **receipt}]},
+                                            FIRST, NOW, config)[0], [])
+        self.assertEqual(len(sanitize_queue([post, post], {"posts": []}, FIRST, NOW, config)[0]), 1)
+        for instant in (ONE_OFF_DATE, "2026-11-13T18:00:01+01:00"):
+            self.assertEqual(sanitize_queue([post], {"posts": []}, FIRST,
+                                            datetime.fromisoformat(instant), config)[0], [])
+
+    def test_malformed_incomplete_or_historical_authorization_is_rejected(self):
+        malformed = []
+        for value in (None, {}, "2026-11-13", ["invalid"]):
+            malformed.append({**CONFIG, "owner_authorized_one_off_slots": value})
+        for field, value in (("episode_id", "TT-003"), ("platform", "tiktok"),
+                             ("post_id", "TT-999-REEL"), ("format", "CAROUSEL"),
+                             ("publication_date", "2026-11-13T18:00:00"),
+                             ("authorized_at", ONE_OFF_DATE), ("reason", "")):
+            config = one_off_config()
+            config["owner_authorized_one_off_slots"][0][field] = value
+            malformed.append(config)
+        config = one_off_config()
+        config["owner_authorized_one_off_slots"].pop()
+        malformed.append(config)
+        config = one_off_config()
+        config["owner_authorized_one_off_slots"].append(config["owner_authorized_one_off_slots"][0])
+        malformed.append(config)
+        for config in malformed:
+            with self.subTest(records=config.get("owner_authorized_one_off_slots")):
+                with self.assertRaises(ValueError):
+                    validate_one_off_slots(config)
+                with self.assertRaises(ValueError):
+                    sanitize_queue([candidate(publication_date=ONE_OFF_DATE)], {"posts": []}, FIRST, NOW, config)
 
 
 if __name__ == "__main__":

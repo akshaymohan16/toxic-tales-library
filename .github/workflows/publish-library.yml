@@ -43,7 +43,7 @@ jobs:
       - name: Build reviewed stories and media
         env:
           OMP_NUM_THREADS: '2'
-        run: python scripts/build_motion.py
+        run: python scripts/build_current.py
       - name: Exclude retired posts and carousels from publication queue
         run: python automation/enforce_reels_only.py --sanitize-queue
       - name: Add confirmed social links and accurate visual provenance
