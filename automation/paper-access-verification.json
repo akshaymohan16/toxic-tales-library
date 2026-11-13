@@ -1,0 +1,63 @@
+{
+  "verified_at": "2026-11-13T14:07:11.396Z",
+  "implementation_commit": "7aeb003f528c2866e7841fbf6a7a3c78f2b19d87",
+  "cache_commit": "720870afa9523cdcf1fa7a522c59ac9bad759cbb",
+  "workflow_run_id": 43439354279,
+  "workflow_job_id": 131932790371,
+  "request_sha256": "3f6830578f5207a2ebc7a35b95d3bfa017feb91bc0d771d662934ab02b54fc7a",
+  "readback_hashes_verified": true,
+  "papers": [
+    {
+      "pmcid": "PMC4895153",
+      "doi": "10.1038/srep27523",
+      "title": "Discrimination of human faces by archerfish ( Toxotes chatareus )",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/api/oai/v1/mh/?verb=GetRecord&identifier=oai%3Apubmedcentral.nih.gov%3A4895153&metadataPrefix=pmc",
+      "retrieved_at": "2026-11-13T14:05:23.161075+00:00",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by/4.0/",
+        "https://creativecommons.org/licenses/by/4.0/"
+      ],
+      "body_characters": 19813,
+      "sections": [
+        "Results",
+        "Experiment 1",
+        "Experiment 2",
+        "Discussion",
+        "Methods",
+        "Subjects",
+        "Stimuli",
+        "General procedure",
+        "Training and testing for Experiment 1",
+        "Training and testing for Experiment 2",
+        "Statistical analyses",
+        "Additional Information"
+      ],
+      "xml_sha256": "f19aa719d4d8a6ec4983227c35b4a7b15458e55a49710b801c4caf10e9fe16de",
+      "text_sha256": "51ea1f09b35c3cce7cb3ae68343399d59dbb8032361b10192b34cedcdf6471c4"
+    },
+    {
+      "pmcid": "PMC2719796",
+      "doi": "10.1371/journal.pone.0006573",
+      "title": "Ants, Cataglyphis cursor , Use Precisely Directed Rescue Behavior to Free Entrapped Relatives",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/api/oai/v1/mh/?verb=GetRecord&identifier=oai%3Apubmedcentral.nih.gov%3A2719796&metadataPrefix=pmc",
+      "retrieved_at": "2026-11-13T14:05:43.377011+00:00",
+      "license_urls": [
+        "http://creativecommons.org/licenses/by/4.0/",
+        "https://creativecommons.org/licenses/by/4.0/"
+      ],
+      "body_characters": 17535,
+      "sections": [
+        "Introduction",
+        "Results",
+        "Discussion",
+        "Materials and Methods",
+        "Supporting Information"
+      ],
+      "xml_sha256": "63900b9d88ad2a93408839725518e9262951da470ed1992162c268188fc32a66",
+      "text_sha256": "5dd1b5f96dcad0d461bf82553b7f5e5e50d5218a893210dce496bfeae86a034d"
+    }
+  ],
+  "scope": "Two real official-API full-text retrievals and repository readback verified. No local PDF download or owner approval was requested. This does not guarantee future tool permissions or service availability.",
+  "scientific_review_complete": false,
+  "first_unattended_producer_run_verified": false
+}

@@ -1,5 +1,5 @@
 {
-  "verified_at": "2026-11-13T13:17:15.198Z",
+  "verified_at": "2026-11-13T14:07:11.396Z",
   "tasks": [
     {
       "id": "6aeefcb926708191b092554230783da1",
@@ -7,10 +7,10 @@
       "enabled": true,
       "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Vienna:20261108T100000\nRRULE:FREQ=WEEKLY;BYDAY=SU;BYHOUR=10;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
       "next_run_time": "2026-11-15T10:00:00+01:00",
-      "updated_at": "2026-11-13T13:11:21.049804+00:00",
+      "updated_at": "2026-11-13T14:05:04.939245+00:00",
       "environment_selection": "inherited",
       "environments": null,
-      "prompt_source_commit": "60602cbd3e261c20db537f307b2a159039de506e"
+      "prompt_source_commit": "7aeb003f528c2866e7841fbf6a7a3c78f2b19d87"
     },
     {
       "id": "Automation_991690d6af648191ac8037cfa96c92a0",
@@ -18,10 +18,10 @@
       "enabled": true,
       "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Vienna:20261113T181500\nRRULE:FREQ=DAILY;BYHOUR=10,18;BYMINUTE=15;BYSECOND=0\nEND:VEVENT",
       "next_run_time": "2026-11-13T18:15:00+01:00",
-      "updated_at": "2026-11-13T13:11:23.259620+00:00",
+      "updated_at": "2026-11-13T14:05:07.053924+00:00",
       "environment_selection": "inherited",
       "environments": null,
-      "prompt_source_commit": "60602cbd3e261c20db537f307b2a159039de506e"
+      "prompt_source_commit": "7aeb003f528c2866e7841fbf6a7a3c78f2b19d87"
     },
     {
       "id": "6af077085e1c8191af8325f3be864402",
@@ -46,5 +46,12 @@
     "instagram": "https://www.instagram.com/reel/DfrtQD-EZiG/",
     "youtube": "https://www.youtube.com/shorts/le2mS8MHcpo",
     "live_verified": true
+  },
+  "paper_access_update": {
+    "policy": "automation/PAPER_ACCESS_POLICY.md",
+    "enabled": true,
+    "verification": "automation/paper-access-verification.json",
+    "schedule_changed": false,
+    "new_tasks_created": 0
   }
 }
