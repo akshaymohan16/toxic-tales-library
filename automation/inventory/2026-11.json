@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-13T13:13:56.763Z",
+  "observed_at": "2026-11-13T17:17:04.610Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -48,7 +48,7 @@
     "TT-007-REEL",
     "TT-007-YOUTUBE-SHORT"
   ],
-  "calendar_reconciled_on": "2026-11-13T13:12:51.238Z",
+  "calendar_reconciled_on": "2026-11-13T17:17:04.610Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -61,16 +61,16 @@
   "new_scheduling_conditions": "All release/rights/deployment and duplicate checks plus fresh full-month calendar reconciliation and <=20 projected destinations",
   "provider_confirmed_publications": 8,
   "known_usage_lower_bound": 8,
-  "last_calendar_readback": "2026-11-13T13:12:51.238Z",
+  "last_calendar_readback": "2026-11-13T17:17:04.610Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
     "observed_used": 8,
-    "observed_at": "2026-11-13T13:13:56.763Z",
-    "calendar_checked_at": "2026-11-13T13:12:51.238Z",
+    "observed_at": "2026-11-13T17:17:04.610Z",
+    "calendar_checked_at": "2026-11-13T17:17:04.610Z",
     "full_month_calendar_verified": true,
-    "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
+    "observation_basis": "Metricool full-month calendar (12 entries) reconciled to persisted authenticated three-post baseline; eight unique PUBLISHED network:UUIDs",
     "usage_baseline": {
       "month": "2026-11",
       "used": 3,
@@ -108,5 +108,15 @@
     "verified_in_this_run": true,
     "remaining_regular_destination_slots": 8,
     "owner_authorized_one_off_destination_slots": 2
+  },
+  "latest_live_reconciliation": {
+    "checked_at": "2026-11-13T17:17:04.610Z",
+    "published_destinations": 8,
+    "scheduled_active_destinations": 2,
+    "held_retired_drafts": 2,
+    "first_week_future_monday_complete": false,
+    "no_new_writes": true,
+    "owner_authorized_tt008_published_both": true,
+    "retired_tt002_and_rejected_tt003_untouched": true
   }
 }

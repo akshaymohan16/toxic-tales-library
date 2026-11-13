@@ -51,5 +51,21 @@
     "Automation_991690d6af648191ac8037cfa96c92a0"
   ],
   "new_task_created": false,
-  "updated_at": "2026-11-13T11:49:09.201Z"
+  "updated_at": "2026-11-13T17:17:04.610Z",
+  "last_provider_reconciled_at": "2026-11-13T17:17:04.610Z",
+  "provider_reconciliation": {
+    "checked_at": "2026-11-13T17:17:04.610Z",
+    "month": "2026-11",
+    "account_verified": true,
+    "instagram_tuesday_uuid": "-6872348896682359981",
+    "youtube_tuesday_uuid": "-6561054799073883973",
+    "tuesday_auto_publish": true,
+    "tuesday_status": "PENDING",
+    "friday_produced": false,
+    "friday_provider_receipts": 0,
+    "expected_friday_date": "2026-11-20T10:00:00+01:00",
+    "next_producer_window": "2026-11-15T10:00:00+01:00",
+    "quota_projected": 16,
+    "quota_cap": 20
+  }
 }
