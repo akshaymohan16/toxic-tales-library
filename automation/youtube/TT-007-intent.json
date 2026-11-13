@@ -4,11 +4,13 @@
   "source_post_id": "TT-007-REEL",
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "scheduled_for": "2026-11-17T10:00:00+01:00",
-  "status": "prepared_not_submitted",
+  "status": "submitting",
   "observed_monthly_used": 6,
   "projected_month_destinations": 14,
   "created_at": "2026-11-13T11:38:55.901Z",
   "source_video_sha256": "0718599755be4c84f573fa025077cd99ce39bf19ccfb070c2c3ac771b9bccb21",
   "pre_submission_calendar_entries": 9,
-  "pre_submission_existing_youtube_matches": 0
+  "pre_submission_existing_youtube_matches": 0,
+  "metadata_sha256": "7dc6869876ee83364fad91e635b2c69bd52c4539a7c613d417def701a95edbb2",
+  "last_reconciled_at": "2026-11-13T11:48:12.442Z"
 }
