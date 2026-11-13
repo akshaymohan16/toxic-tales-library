@@ -9,7 +9,7 @@
   "timezone": "Europe/Vienna",
   "created_at": "2026-11-13T13:02:50.355Z",
   "owner_run_id": "root-today-tt008-2026-11-13T12:21:54.046Z",
-  "status": "prepared_for_immediate_owner_requested_publication",
+  "status": "scheduled_receipt_verified",
   "source_video_sha256": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb",
   "source_cover_sha256": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d",
   "source_media_urls": [
@@ -23,5 +23,60 @@
   "projected_month_destinations": 16,
   "note": "Owner explicitly requested publication now after export passed independent review; supersedes proposed 18:00 slot. Exact reviewed episode/media unchanged. No provider write yet.",
   "source_publication_date": "2026-11-13T18:00:00+01:00",
-  "latest_owner_instruction_at": "2026-11-13T13:07:29.674Z"
+  "latest_owner_instruction_at": "2026-11-13T13:07:29.674Z",
+  "metricool_id": 426946098,
+  "metricool_uuid": "-6895101637645415437",
+  "provider_readback": {
+    "id": 426946098,
+    "publicationDate": {
+      "dateTime": "2026-11-13T14:10:00",
+      "timezone": "Europe/Vienna"
+    },
+    "creationDate": {
+      "dateTime": "2026-11-13T14:08:00",
+      "timezone": "Europe/Vienna"
+    },
+    "text": "A fish that spits its answer: can archerfish tell human faces apart?\n\nIn two laboratory experiments, separate groups of four Toxotes chatareus learned which face image earned food and which to avoid. During testing, the familiar unrewarded face was paired with one new face at a time, drawn from a pool of 44 images in the first experiment. The fish discriminated above chance.\n\nFour different fish also succeeded with 18 novel faces after colour, mean brightness and the outer head outline were standardized. Only TWO faces appeared per trial. The results show learned image discrimination; they do not demonstrate that fish recognise their owners or use the same cues as humans.\n\nTT-008 | Newport, Wallis, Reshitnyk & Siebeck (2016), Scientific Reports 6:27523. https://doi.org/10.1038/srep27523\nPaper, methods, limitations and full credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-008.html\n\nArcherfish reference photograph: Reichenthal, Ben-Tov & Segev (2018), Front. Neural Circuits 12:18, Fig.1A, CC BY 4.0, cropped; from a separate study: https://doi.org/10.3389/fncir.2018.00018 . Licence: https://creativecommons.org/licenses/by/4.0/ . Original conceptual task illustrations, not actual face-test footage or stimuli. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Archerfish #AnimalBehaviour #FishCognition #Ecology #ScienceCommunication",
+    "firstCommentText": "",
+    "providers": [
+      {
+        "network": "youtube",
+        "status": "PENDING",
+        "detailedStatus": "Pending"
+      }
+    ],
+    "media": [
+      "https://static.metricool.com/planner/202611/7937614-file-1565384995539305417.mp4"
+    ],
+    "autoPublish": true,
+    "saveExternalMediaFiles": false,
+    "mediaAltText": [
+      null
+    ],
+    "shortener": false,
+    "draft": false,
+    "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-2376352421099764662.jpeg",
+    "imageVariants": false,
+    "twitterData": {
+      "type": "POST"
+    },
+    "instagramData": {
+      "autoPublish": true,
+      "isAiGenerated": false
+    },
+    "youtubeData": {
+      "title": "The fish that spat its answer | Toxic Tales #Shorts",
+      "type": "short",
+      "privacy": "public",
+      "madeForKids": false,
+      "isAiGeneratedContent": true,
+      "notifySubscribers": true
+    },
+    "hasNotReadNotes": false,
+    "uuid": "-6895101637645415437",
+    "creatorUserMail": "akshaymohank21@gmail.com",
+    "creatorUserId": 6223629,
+    "brandTags": []
+  },
+  "last_reconciled_at": "2026-11-13T13:09:52.381Z"
 }

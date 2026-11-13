@@ -1,0 +1,39 @@
+{
+  "repository": "akshaymohan16/toxic-tales-library",
+  "brand_id": "7937614",
+  "episode_id": "TT-008",
+  "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+  "source_commit": "f8f101d6dbfc821536015af5704b756740529b31",
+  "files": [
+    {
+      "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-008-archerfish-human-faces-1056e28596f7.mp4",
+      "role": "source_video",
+      "expected_sha256": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb"
+    },
+    {
+      "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg",
+      "role": "source_cover",
+      "expected_sha256": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d"
+    },
+    {
+      "url": "https://static.metricool.com/planner/202611/7937614-file-4909512262506062715.mp4",
+      "role": "provider_video",
+      "expected_sha256": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb"
+    },
+    {
+      "url": "https://static.metricool.com/planner/202611/7937614-file-4474475958381322205.jpeg",
+      "role": "provider_cover",
+      "expected_sha256": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d"
+    },
+    {
+      "url": "https://static.metricool.com/planner/202611/7937614-file-1565384995539305417.mp4",
+      "role": "provider_video",
+      "expected_sha256": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb"
+    },
+    {
+      "url": "https://static.metricool.com/planner/202611/7937614-file-2376352421099764662.jpeg",
+      "role": "provider_cover",
+      "expected_sha256": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d"
+    }
+  ]
+}
