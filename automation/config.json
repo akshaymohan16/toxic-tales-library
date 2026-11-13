@@ -91,7 +91,7 @@
   "pilot_approval_required": false,
   "notification_policy": {
     "events": [
-      "completed_creation_batch",
+      "completed_creation_video",
       "newly_confirmed_publication",
       "new_owner_action_blocker"
     ],

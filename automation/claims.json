@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "claims": {},
+  "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
+}

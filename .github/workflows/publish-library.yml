@@ -46,6 +46,8 @@ jobs:
         run: python scripts/build_motion.py
       - name: Exclude retired posts and carousels from publication queue
         run: python automation/enforce_reels_only.py --sanitize-queue
+      - name: Add confirmed social links and accurate visual provenance
+        run: python scripts/enhance_archive.py
       - name: Create exact-byte site hash manifest without copying large videos
         run: |
           python - <<'PY'
@@ -124,5 +126,3 @@ jobs:
             verification/*_carousel_contact.jpg
           if-no-files-found: error
           retention-days: 7
-
-
