@@ -13,7 +13,7 @@
     "observed_at": "2026-11-13T17:16:07.206Z",
     "calendar_checked_at": "2026-11-13T17:16:07.206Z",
     "full_month_calendar_verified": true,
-    "observation_basis": "Metricool full-November calendar reconciled to persisted authenticated 9-November baseline and 8 distinct confirmed network:UUIDs",
+    "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
       "month": "2026-11",
       "used": 3,
