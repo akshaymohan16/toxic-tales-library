@@ -1,6 +1,8 @@
 """Source-binding, non-mutating dispatch and picture checks for new archer art."""
 import copy
+import contextlib
 import hashlib
+import io
 import json
 import tempfile
 import unittest
@@ -14,6 +16,8 @@ import build_current as current
 import build_motion as frozen
 import motion_spec
 import production_archer as archer
+import production_nature as nature
+import production_pilot as pilot
 from editorial_gate import validate_pre_render
 from test_motion import FixtureTypography
 
@@ -112,6 +116,32 @@ class ArcherPipeline(unittest.TestCase):
                 before = image.crop(area).tobytes()
                 visual._face(image, 200, 200, 1, masked=masked)
                 self.assertEqual(before, image.crop(area).tobytes())
+
+    def test_exact_spelled_and_digit_pool_sizes_are_equivalent(self):
+        for transcript in ('A pool of 44 and 18 unfamiliar faces.',
+                           'A pool of forty-four and eighteen unfamiliar faces.',
+                           'A pool of forty four and eighteen unfamiliar faces.'):
+            with self.subTest(transcript=transcript), contextlib.redirect_stdout(io.StringIO()):
+                archer.require_critical_terms(transcript, ['forty-four', 'eighteen'])
+                archer.require_critical_terms(transcript, ['44', '18'])
+
+    def test_changed_numbers_or_missing_negation_still_fail(self):
+        for transcript, term in (('43 faces', 'forty-four'), ('four faces', 'forty-four'),
+                                 ('forty three faces', 'forty-four'), ('eighty faces', 'eighteen'),
+                                 ('14 faces', 'eighteen'), ('They do show owners.', 'do not show')):
+            with self.subTest(transcript=transcript), contextlib.redirect_stdout(io.StringIO()):
+                with self.assertRaises(ValueError):
+                    archer.require_critical_terms(transcript, [term])
+
+    def test_number_adapter_keeps_frozen_globals_and_function_code(self):
+        original = nature.render.__globals__['require_critical_terms']
+        adapter = archer._number_aware_nature()
+        self.assertIs(adapter.render.__code__, nature.render.__code__)
+        self.assertIs(adapter.render.__globals__['require_critical_terms'],
+                      archer.require_critical_terms)
+        self.assertIs(nature.render.__globals__['require_critical_terms'], original)
+        self.assertIs(original, pilot.require_critical_terms)
+        self.assertEqual(pilot.critical_tokens('forty-four eighteen'), ['forty', '4', 'eighteen'])
 
 
 if __name__ == '__main__':

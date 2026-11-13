@@ -12,6 +12,7 @@ from PIL import Image, ImageDraw
 
 import production_motion as motion
 import production_nature as nature
+import production_pilot as pilot
 from motion_spec import motion_spec_sha256
 from motion_spec import validate_motion_spec as validate_base_spec
 
@@ -22,6 +23,41 @@ FAMILY = 'archerfish-face-2016'
 DOI = '10.1038/srep27523'
 SCENES = frozenset({'archer_hunt', 'archer_task', 'archer_transfer',
                     'archer_controls', 'archer_result', 'archer_scope'})
+
+
+def critical_tokens(text):
+    """Preserve exact claim tokens, accepting the two focal numeric spellings."""
+    tokens = pilot.critical_tokens(text)
+    result = []
+    index = 0
+    while index < len(tokens):
+        if tokens[index:index + 2] == ['forty', '4']:
+            result.append('44')
+            index += 2
+        else:
+            result.append('18' if tokens[index] == 'eighteen' else tokens[index])
+            index += 1
+    return result
+
+
+def require_critical_terms(transcript, terms):
+    # The raw encoded-file ASR remains visible for independent verification;
+    # this does not substitute intended narration for observed speech.
+    print('Archerfish final encoded ASR transcript: ' + transcript, flush=True)
+    pilot.require_critical_terms(' '.join(critical_tokens(transcript)),
+                                 [' '.join(critical_tokens(term)) for term in terms])
+
+
+def _number_aware_nature():
+    """Use exact number equivalence without rebinding any frozen module."""
+    namespace = dict(nature.render.__globals__)
+    namespace['require_critical_terms'] = require_critical_terms
+    render = types.FunctionType(nature.render.__code__, namespace,
+                                'render_archer_nature_pipeline',
+                                nature.render.__defaults__, nature.render.__closure__)
+    adapter = types.SimpleNamespace(**vars(nature))
+    adapter.render = render
+    return adapter
 
 
 def validate_motion_spec(episode):
@@ -232,7 +268,8 @@ class Visuals(motion.Visuals):
 def render(episode, voice, output, *, media_dir=None, qa_dir=None):
     validate_motion_spec(episode)
     namespace = dict(motion.render.__globals__)
-    namespace.update(Visuals=Visuals, validate_motion_spec=validate_motion_spec)
+    namespace.update(Visuals=Visuals, validate_motion_spec=validate_motion_spec,
+                     nature=_number_aware_nature())
     pipeline = types.FunctionType(motion.render.__code__, namespace, 'render_archer_pipeline',
                                   motion.render.__defaults__, motion.render.__closure__)
     result = pipeline(episode, voice, output, media_dir=media_dir, qa_dir=qa_dir)
