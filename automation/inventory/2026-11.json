@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-09T08:22:57.080Z",
+  "observed_at": "2026-11-13T11:49:09.201Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -11,10 +11,11 @@
     "limit": 20,
     "source": "Authenticated Metricool planner UI: You have posted3 out of your20 available posts in your plan this month.",
     "url": "https://app.metricool.com/planner/calendar?blogId=7937614",
-    "observation_status": "Historical authenticated 3/20 from 9 Nov. Full provider calendar on 13 Nov confirms 6 published destinations but does not expose a fresh plan-usage counter. New scheduling blocked."
+    "observation_status": "Historical meter retained; fresh complete provider calendar reconciled with baseline, not a fresh UI meter"
   },
   "scheduled_ids": [
-    "421493462"
+    "426842509",
+    "426850040"
   ],
   "published_ids": [
     "419869962",
@@ -32,33 +33,70 @@
     "TT-006-YOUTUBE-SHORT",
     "TT-005-CAROUSEL"
   ],
-  "reserved_candidate_ids": [
-    "TT-002-CAROUSEL"
-  ],
+  "reserved_candidate_ids": [],
   "unresolved_submissions": [],
   "monthly_cap": 20,
-  "planned_usage_with_current_candidates": 16,
-  "new_scheduling_allowed": false,
+  "planned_usage_with_current_candidates": 14,
+  "new_scheduling_allowed": true,
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [
-    "TT-007-REEL"
+    "TT-007-REEL",
+    "TT-007-YOUTUBE-SHORT"
   ],
-  "calendar_reconciled_on": "2026-11-13T09:12:46.859Z",
+  "calendar_reconciled_on": "2026-11-13T11:49:09.201Z",
   "draft_ids": [
     "420045577",
     "420062745"
   ],
   "retired_draft_ids": [
+    "420045577",
     "420062745"
   ],
-  "held_post_ids": [
-    "TT-002-CAROUSEL"
-  ],
-  "new_scheduling_conditions": "Authenticated Metricool plan meter fresh observation is required. Full provider calendar read 13 Nov confirms 6 published, Saturday TT-007 pending and two held drafts; cannot substitute this for current 20-post plan meter.",
+  "held_post_ids": [],
+  "new_scheduling_conditions": "All release/rights/deployment and duplicate checks plus fresh full-month calendar reconciliation and <=20 projected destinations",
   "provider_confirmed_publications": 6,
   "known_usage_lower_bound": 6,
-  "last_calendar_readback": "2026-11-13T09:12:46.859Z",
+  "last_calendar_readback": "2026-11-13T11:49:09.201Z",
   "pending_release_ids": [],
-  "quota_refresh_blocked_since": "2026-11-11T09:43:22.131Z"
+  "quota_refresh_blocked_since": null,
+  "quota": {
+    "month": "2026-11",
+    "observed_used": 6,
+    "observed_at": "2026-11-13T11:49:09.201Z",
+    "calendar_checked_at": "2026-11-13T11:49:09.201Z",
+    "full_month_calendar_verified": true,
+    "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
+    "usage_baseline": {
+      "month": "2026-11",
+      "used": 3,
+      "observed_at": "2026-11-09T08:22:57.080Z",
+      "basis": "Persisted authenticated planner counter",
+      "published_destination_keys": [
+        "instagram:-3158597333632725768",
+        "instagram:8432780738091634663",
+        "instagram:2386175407143797944"
+      ]
+    },
+    "published_destination_keys": [
+      "instagram:-3158597333632725768",
+      "instagram:8432780738091634663",
+      "instagram:2386175407143797944",
+      "instagram:-7609883982228992318",
+      "instagram:-5193152553705388348",
+      "youtube:4422280930322105807"
+    ],
+    "observed_published_post_ids": [
+      "instagram:TT-002-REEL",
+      "instagram:TT-004-REEL",
+      "instagram:TT-005-REEL",
+      "instagram:TT-005-CAROUSEL",
+      "instagram:TT-006-REEL",
+      "youtube:TT-006-YOUTUBE-SHORT"
+    ],
+    "cap": 20,
+    "projected_month_destinations": 14,
+    "remaining_planned_destination_slots": 8,
+    "verified_in_this_run": true
+  }
 }

@@ -1,88 +1,52 @@
 {
   "checked_on": "2026-11-13",
+  "updated_at": "2026-11-13T11:49:09.201Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": "Europe/Vienna",
-  "deployment_and_media": "Most recent build, deploy and exact-public-media verification workflow 43189574251 succeeded (commit 013ca3ea97c666daec44005af94f45120c34f723); owner-approved motion replacements remain byte-frozen, provider media URLs match known receipts.",
-  "quality_standard": "quality/PRODUCTION_STANDARD.md",
-  "decision": "CURRENT_WEEK_SIX_PUBLISHED_ONE_SATURDAY_PENDING_NEXT_WEEK_QUOTA_HOLD",
-  "reason": "Fresh 13 November Metricool calendar: 6 PUBLISHED with public URLs, 1 still-PENDING pre-due Saturday TT-007 Reel with original UUID, 2 held/rejected drafts; no accidental duplicate or provider mutation. Authenticated Metricool plan usage counter still last observed 3/20 on 9 November; next week's new scheduling remains blocked without fresh meter.",
-  "scheduled_posts_returned": 9,
-  "published_provider_receipts": 6,
-  "new_metricool_submissions": 0,
-  "scheduled_post_ids": [
-    "TT-007-REEL"
-  ],
-  "routine_user_approval_required": false,
-  "automatic_next_step": "Tomorrow 14 Nov after the 10:00 Vienna slot, verify TT-007 positive provider PUBLISHED and public Instagram URL; do not resubmit while PENDING before due. Sunday 15 Nov producer prepares 17/19/21 Nov four-destination batch; new scheduling is held until fresh authenticated Metricool planner 20-post usage reading.",
-  "review_limit": "Encoded frames, final transcript and technical audio reviewed; no listening or original-audio-parity claim.",
+  "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+  "youtube_connection_verified": true,
+  "decision": "TUESDAY_BOTH_PLATFORMS_RESERVED_FRIDAY_ASSIGNED_TO_SUNDAY_PRODUCTION",
   "quota": {
-    "observed_used": 3,
-    "observed_at": "2026-11-09T08:22:57.080Z",
     "month": "2026-11",
-    "observation_basis": "Metricool planner counter",
+    "observed_used": 6,
+    "observed_at": "2026-11-13T11:49:09.201Z",
+    "calendar_checked_at": "2026-11-13T11:49:09.201Z",
+    "full_month_calendar_verified": true,
+    "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
+    "usage_baseline": {
+      "month": "2026-11",
+      "used": 3,
+      "observed_at": "2026-11-09T08:22:57.080Z",
+      "basis": "Persisted authenticated planner counter",
+      "published_destination_keys": [
+        "instagram:-3158597333632725768",
+        "instagram:8432780738091634663",
+        "instagram:2386175407143797944"
+      ]
+    },
+    "published_destination_keys": [
+      "instagram:-3158597333632725768",
+      "instagram:8432780738091634663",
+      "instagram:2386175407143797944",
+      "instagram:-7609883982228992318",
+      "instagram:-5193152553705388348",
+      "youtube:4422280930322105807"
+    ],
     "observed_published_post_ids": [
       "instagram:TT-002-REEL",
       "instagram:TT-004-REEL",
-      "instagram:TT-005-REEL"
+      "instagram:TT-005-REEL",
+      "instagram:TT-005-CAROUSEL",
+      "instagram:TT-006-REEL",
+      "youtube:TT-006-YOUTUBE-SHORT"
     ],
-    "active_scheduled": 1,
-    "held_draft_reservations": 1,
-    "retired_drafts": 1,
     "cap": 20,
-    "remaining_instagram_month_slots": 8,
-    "remaining_tuesday_youtube_slots": 2,
-    "projected_month_destinations": 15,
-    "conservative_projection_including_held_draft": 16,
-    "note": "9 Nov authenticated 3/20 snapshot retained; as of 13 Nov there are six provider-confirmed publications and one Saturday scheduled, plus six remaining month Instagram slots and two remaining Tuesday YouTube slots; conservative projection 15 (16 with held carousel). This is not a current authenticated plan meter.",
-    "verified_in_this_run": false,
-    "observation_detail": "13 Nov live Metricool full-month calendar confirms 6 published destinations, 1 auto-scheduled and 2 drafts. The 9 Nov 3/20 planner meter has not been refreshed; provider counts must not be misreported as an authenticated meter observation.",
-    "confirmed_published_lower_bound": 6
+    "projected_month_destinations": 14,
+    "remaining_planned_destination_slots": 8,
+    "verified_in_this_run": true
   },
-  "submission_note": "Public URLs go in info.media and info.videoThumbnailUrl. Omit mediaFiles for already-public URLs: that optional argument treats them as local upload paths on Windows. The failed upload attempt created nothing, as calendar reconciliation confirmed.",
-  "updated_metricool_posts": 0,
-  "journalism_standard": "quality/SCIENCE_JOURNALISM.md",
-  "draft_posts_held": 2,
-  "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot-tt-005.html?review=3048cc50e4ba",
-  "pilot_record": "quality/pilots/tt-005.json",
-  "historical_pilot_verification": {
-    "episode_id": "TT-003",
-    "release_commit": "97d6540a23ca5b813eb1f07d9e5512f4b4031fc1",
-    "verification_run": 42389865597,
-    "note": "Historical rejected pilot only; not evidence for current TT-004."
-  },
-  "historical_status_notes": {
-    "resolved_hold": "Owner's narrative-quality revision completed; automatic workflow restored with new story requirements.",
-    "prior_review_limit": "No human listening or original Instagram audio parity claimed; technical audio checks and final ASR reviewed.",
-    "quota_observation": {
-      "observed_used": 1,
-      "scheduled_reservations": 2,
-      "projected": 3,
-      "cap": 20,
-      "note": "Historical observation before TT-004 draft creation. Reconcile current provider calendar and inventory before any new submission; rejected TT-003 is not eligible for publication."
-    }
-  },
-  "held_post_ids": [
-    "TT-002-CAROUSEL"
-  ],
-  "retired_draft_post_ids": [
-    "TT-003-REEL"
-  ],
-  "pending_new_pilot_post_id": null,
-  "pilot_record_status": "published_owner_approved",
-  "visual_supplement": "quality/VISUAL_UPGRADE_2026-11.md",
-  "updated_at": "2026-11-13T09:12:46.859Z",
-  "latest_publication": {
-    "post_id": "TT-005-CAROUSEL",
-    "metricool_id": "420683055",
-    "metricool_uuid": "-7609883982228992318",
-    "provider_status": "PUBLISHED",
-    "public_url": "https://www.instagram.com/p/DfosskjCpxx/",
-    "published_confirmed_at": "2026-11-12T09:13:23.510Z",
-    "platform": "instagram",
-    "format": "CAROUSEL",
-    "research_record": "https://akshaymohan16.github.io/toxic-tales-library/sources/tt-005.html"
-  },
+  "routine_user_approval_required": false,
   "publication_notifications": {
     "notified_post_ids": [
       "TT-002-REEL",
@@ -95,190 +59,56 @@
     "latest_delivery": "One concise positive Thursday carousel automation-result update recorded; push/email delivery unverified.",
     "delivery_status": "ChatGPT task push/email settings unknown; owner notification emitted only for positively confirmed PUBLISHED, never merely scheduled."
   },
-  "recurring_tasks": {
-    "verified_at": "2026-11-11T09:43:22.131Z",
-    "producer": {
-      "id": "6aeefcb926708191b092554230783da1",
-      "enabled": true,
-      "schedule": "Sunday 10:00 Europe/Vienna"
-    },
-    "publisher": {
-      "id": "Automation_991690d6af648191ac8037cfa96c92a0",
-      "enabled": true,
-      "schedule": "Daily 10:15 Europe/Vienna"
-    },
-    "verification": "Live readback: original Sunday 10:00 producer and daily 10:15 publisher remain enabled; no added task or posting loop.",
-    "branding_prompts_exact_readback": true,
-    "scheduled_media_replacement_handoff": {
-      "checked_at": "2026-11-09T08:03:11.744Z",
-      "producer_prompt_readback_verified": true,
-      "publisher_prompt_readback_verified": true,
-      "active": true,
-      "task_schedule_controls_changed": false,
-      "new_tasks": 0,
-      "scope": "Owner-authorized replacement of pending TT006/TT007 media and linked Tuesday Short; original UUIDs and slots retained."
-    }
-  },
-  "new_visual_pilot": {
-    "id": "TT-005",
-    "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b",
-    "technical_and_editorial_review": "pass",
-    "owner_approval": {
-      "approved": true,
-      "recorded_at": "2026-11-07T19:07:59.945Z",
-      "text": "Post the frog reel that you made, I like it, good job",
-      "scope": "Unchanged TT-005 REEL, cover and caption only; future branding applies to future exports. Carousel remains subject to ordinary checks and scheduling.",
-      "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b"
-    },
-    "publication": "published",
-    "duration_seconds": 50.875,
-    "research_record": "https://akshaymohan16.github.io/toxic-tales-library/sources/tt-005.html",
-    "verification_run": 42402379631,
-    "public_url": "https://www.instagram.com/reel/Dfc5DEPHJCJ/"
-  },
-  "future_branding_standard": "quality/BRANDING_STANDARD.md",
-  "scheduled_provider_ids": [
-    "421493009",
-    "420683055",
-    "421493462",
-    "421493849"
-  ],
-  "provider_receipts_status": "13 Nov full Metricool calendar: 6 PUBLISHED Instagram/YouTube destinations; TT-007-REEL PENDING, autoPublish=true, draft=false, 14 Nov 10:00 Europe/Vienna, same UUID -6872348896682359981 and hosted video; TT-002-CAROUSEL and rejected TT-003-REEL remain nonpublishing drafts. All other published URLs unchanged.",
   "next_batch": {
     "week_start": "2026-11-16",
     "slots": [
       "2026-11-17T10:00:00+01:00",
-      "2026-11-19T10:00:00+01:00",
-      "2026-11-21T10:00:00+01:00"
+      "2026-11-20T10:00:00+01:00"
     ],
-    "state": "unprepared_next_week_assigned_to_existing_sunday_producer; fresh quota meter required before scheduling",
-    "producer_due": "Sunday 2026-11-15 10:00 Europe/Vienna",
-    "hard_readiness_due": "Monday 2026-11-16 before end of day Europe/Vienna",
-    "youtube_slot": "2026-11-17T10:00:00+01:00",
-    "current_week_fully_reserved": true,
-    "current_week_destinations_verified": 4,
-    "current_week_provider_status": "THREE_PUBLISHED_ONE_PENDING",
-    "next_publication_due": "2026-11-14T10:00:00+01:00",
-    "status": "unprepared_future_week_assigned_to_existing_sunday_producer; NEW SCHEDULING HELD BY STALE AUTHENTICATED METRICOOL PLAN METER",
-    "checked_at": "2026-11-13T09:12:46.859Z"
+    "required_destination_receipts": 4,
+    "verified_destination_receipts": 2,
+    "producer_due": "2026-11-15T10:00:00+01:00",
+    "hard_readiness_due": "2026-11-16T23:59:59+01:00",
+    "status": "Tuesday both verified; Friday new video due from Sunday production"
   },
-  "watchdog": {
-    "workflow": ".github/workflows/readiness-watchdog.yml",
-    "script": "automation/verify_readiness.py",
-    "scope": "GitHub repo ledger receipts only; live Metricool checks by existing daily publisher",
-    "schedule_utc": [
-      "08:35",
-      "12:20"
-    ],
-    "status": "13 Nov verified latest 12 Nov 20:07 UTC watchdog run 43297111436: sole failure is stale authenticated Metricool plan meter. Do not bypass quota freshness or close issue #1. Last build/deploy/exact-public-media 43189574251 success.",
-    "last_smoke_run": 42483555450,
-    "scheduled_issue_alerts": true,
-    "after_state_changes": true,
-    "issue_prefix": "Toxic Tales readiness: ",
-    "repo_issue_alert_delivery": "GitHub issue notification depends on user's GitHub notification settings",
-    "last_checked_at": "2026-11-13T09:12:46.859Z",
-    "latest_run_id": 43297111436,
-    "latest_run_result": "failure: Fresh monthly Metricool planner counter observation required (confirmed in actual GitHub job logs); all other readiness errors absent",
-    "prior_run_id": 42593942242,
-    "prior_result": "failure_caused_by_changed_quota_basis_in_intermediate_heartbeat; corrected and next run 42594057697 passed",
-    "open_readiness_issues": 1
-  },
-  "storage": "GitHub workflow 42482770601 successful with compact SHA-manifest verification and ~257 MiB artifacts vs former ~617 MiB. Historical duplicate artifact housekeeping workflow 42483693420 success: 51 redundant old archives totaling 6,834,278,226 bytes pruned; one latest legacy QA retained and live public media untouched.",
-  "issue_status": "Read GitHub issue #1 (2026-W46): remains open because authenticated Metricool planner meter has not been refreshed. Sole latest watchdog failure verified in job logs, not provider publication failure.",
-  "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
-  "youtube_channel_name": "Toxic Tales",
-  "youtube_connection_verified": true,
-  "new_task_created": false,
-  "verification_actor": "Existing daily Toxic Tales publisher; live GitHub and Metricool readback",
-  "last_media_replacement": "automation/motion-replacement-2026-11-09.json",
-  "provider_readback": {
-    "checked_at": "2026-11-12T09:13:23.510Z",
-    "brand_id": "7937614",
-    "instagram_handle": "toxic_tales_eco",
-    "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
-    "calendar_window": "2026-11-01 through 2026-11-30 Europe/Vienna",
-    "all_calendar_entries": 9,
-    "provider_published_receipts": 6,
-    "scheduled": [
-      {
-        "id": "420683055",
-        "uuid": "-7609883982228992318",
-        "date": "2026-11-12T10:00:00",
-        "network": "instagram",
-        "provider_status": "PUBLISHED",
-        "public_url": "https://www.instagram.com/p/DfosskjCpxx/",
-        "autoPublish": true,
-        "draft": false,
-        "media_count": 6
-      },
-      {
-        "id": "421493009",
-        "uuid": "-5193152553705388348",
-        "date": "2026-11-10T10:00:00",
-        "network": "instagram",
-        "provider_status": "PUBLISHED",
-        "public_url": "https://www.instagram.com/reel/Dfji4yhnB6c/",
-        "autoPublish": true,
-        "draft": false,
-        "media_count": 1
-      },
-      {
-        "id": "421493462",
-        "uuid": "-6872348896682359981",
-        "date": "2026-11-14T10:00:00",
-        "network": "instagram",
-        "provider_status": "PENDING",
-        "public_url": null,
-        "autoPublish": true,
-        "draft": false,
-        "media_count": 1
-      },
-      {
-        "id": "421493849",
-        "uuid": "4422280930322105807",
-        "date": "2026-11-10T10:00:00",
-        "network": "youtube",
-        "provider_status": "PUBLISHED",
-        "public_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
-        "autoPublish": true,
-        "draft": false,
-        "media_count": 1
-      }
-    ],
-    "held_legacy_drafts": [
-      "TT-002-CAROUSEL",
-      "TT-003-REEL"
-    ],
-    "new_publications": 1,
-    "created_posts": 0,
-    "updated_posts": 0,
-    "prepublication_receipts_only": false,
-    "last_checked_at": "2026-11-13T09:12:46.859Z",
-    "timezone": "Europe/Vienna",
-    "published_provider_receipts": 6
-  },
-  "replacement_status": {
-    "ledger_path": "automation/motion-replacement-2026-11-09.json",
-    "status": "completed_verified",
-    "original_uuids_preserved": true,
-    "three_provider_media_and_covers_readback_match": true,
-    "new_video_exports_current": true,
-    "do_not_revert_to_original": true
-  },
-  "new_actionable_blocker": {
-    "type": "authenticated_metricool_plan_meter_not_exposed_by_connector",
-    "detected_at": "2026-11-11T09:43:22.131Z",
-    "level": "previously_reported_unchanged_future_new_scheduling_hold",
-    "impact": "Fresh 13 Nov calendar confirms current-week six published and Saturday pending; new 17/19/21 Nov Instagram/YouTube reservations remain blocked by stale authenticated plan meter. This is the same previously reported blocker, not a new notification.",
-    "required_resolution": "Refresh planner usage counter through authenticated Metricool UI or a connected tool that exposes it. Do not renew observed_at by inference, calendar counts or analytics."
-  },
-  "first_youtube_live_verification": {
-    "post_id": "TT-006-YOUTUBE-SHORT",
-    "video_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
-    "channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
-    "qa_workflow_run": 42789107581,
-    "result": "pass",
-    "checked_at": "2026-11-10T09:17:08.521Z",
-    "notice_recorded": true
+  "recurring_tasks": [
+    {
+      "id": "6af077085e1c8191af8325f3be864402",
+      "title": "Toxic Tales first unattended run",
+      "enabled": true,
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Vienna:20261115T190000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+      "next_run_time": "2026-11-15T19:00:00+01:00"
+    },
+    {
+      "id": "Automation_991690d6af648191ac8037cfa96c92a0",
+      "title": "Publish Toxic Tales queue",
+      "enabled": true,
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Vienna:20261113T181500\nRRULE:FREQ=DAILY;BYHOUR=10,18;BYMINUTE=15;BYSECOND=0\nEND:VEVENT",
+      "next_run_time": "2026-11-13T18:15:00+01:00"
+    },
+    {
+      "id": "6aeefcb926708191b092554230783da1",
+      "title": "Produce Toxic Tales weekly",
+      "enabled": true,
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Vienna:20261108T100000\nRRULE:FREQ=WEEKLY;BYDAY=SU;BYHOUR=10;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+      "next_run_time": "2026-11-15T10:00:00+01:00"
+    }
+  ],
+  "deployment_and_media": "TT-007 public archive and Metricool hosted MP4 independently downloaded 13 November; both SHA256 0718599755be4c84f573fa025077cd99ce39bf19ccfb070c2c3ac771b9bccb21. Research source page HTTP 200 with DOI, evidence, limits and credits.",
+  "review_limit": "Frozen reviewed film reused; no new listening or moving playback claim.",
+  "automatic_next_step": "Sunday 15 November 10:00 Vienna: complete new Friday 20 November video and both provider reservations, then emit creation summary. Daily checks continue.",
+  "notification_delivery": "ChatGPT task results configured; push/email receipt unverified.",
+  "scheduled_posts_returned": 10,
+  "published_provider_receipts": 6,
+  "scheduled_post_ids": [
+    "TT-007-REEL",
+    "TT-007-YOUTUBE-SHORT"
+  ],
+  "last_successful_deployment_run": 43419010540,
+  "validation": {
+    "automation_tests": 92,
+    "render_tests": 110,
+    "render_tests_skipped": 2,
+    "exact_public_video_and_provider_hashes": "match"
   }
 }

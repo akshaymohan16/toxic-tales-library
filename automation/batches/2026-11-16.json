@@ -4,37 +4,43 @@
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-15T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-16",
-  "status": "unprepared_future_week_assigned_to_existing_sunday_producer",
+  "status": "partial_tuesday_both_reserved_friday_due_sunday_production",
   "slots": [
     {
       "date": "2026-11-17T10:00:00+01:00",
+      "platform": "instagram",
       "format": "REEL",
-      "status": "topic_and_full_paper_pending",
-      "topic_policy": "New distinct peer-reviewed ecology paper, not an already-published TT DOI"
-    },
-    {
-      "date": "2026-11-19T10:00:00+01:00",
-      "format": "CAROUSEL",
-      "status": "companion_paper_and_slides_pending",
-      "topic_policy": "Genuine companion to a verified Reel, licensed images and current visual review"
-    },
-    {
-      "date": "2026-11-21T10:00:00+01:00",
-      "format": "REEL",
-      "status": "different_paper_pending",
-      "topic_policy": "Different original published paper from Tuesday and all previous Reels"
+      "post_id": "TT-007-REEL",
+      "status": "scheduled_receipt_verified",
+      "metricool_id": "426842509",
+      "metricool_uuid": "-6872348896682359981"
     },
     {
       "date": "2026-11-17T10:00:00+01:00",
       "platform": "youtube",
       "format": "SHORT",
+      "post_id": "TT-007-YOUTUBE-SHORT",
       "source_slot": "tuesday",
-      "status": "awaiting_reviewed_tuesday_reel",
-      "topic_policy": "Same exact approved Tuesday Reel, independent YouTube metadata/rights review, no new paper or rerender required."
+      "status": "scheduled_receipt_verified",
+      "metricool_id": "426850040",
+      "metricool_uuid": "-6561054799073883973"
+    },
+    {
+      "date": "2026-11-20T10:00:00+01:00",
+      "platform": "instagram",
+      "format": "REEL",
+      "status": "new_paper_and_video_pending_sunday_production"
+    },
+    {
+      "date": "2026-11-20T10:00:00+01:00",
+      "platform": "youtube",
+      "format": "SHORT",
+      "source_slot": "friday",
+      "status": "awaiting_same_friday_video"
     }
   ],
   "quality_policy": "Full original paper and correction check, claim-level evidence, independent final encoded story/branding/visual and narration verification, exact public media hashes, fresh provider monthly quota and duplicate validation. Never publish unreviewed content merely to satisfy a date.",
-  "required_success": "Four real Metricool destination reservations: three unchanged IG slots plus one Tuesday YouTube Short on the pinned channel, with exact releases and per-platform reviewed metadata/receipts. Only PUBLISHED plus live verification proves actual publication.",
+  "required_success": "Four actual Metricool reservations: Tuesday and Friday on both Instagram Reels and YouTube Shorts. Same approved bytes per video; all release/metadata/rights checks. Scheduled is not published.",
   "failed_sunday_rule": "Sunday task must actually produce/recover or persist an actionable blocker; Monday daily publisher must fill missing slots. GitHub watchdog must FAIL with a durable issue when missing metadata persists; its lack of Metricool API means ChatGPT daily provider checks are mandatory.",
   "held_do_not_touch": [
     "TT-002-CAROUSEL",
@@ -44,5 +50,6 @@
     "6aeefcb926708191b092554230783da1",
     "Automation_991690d6af648191ac8037cfa96c92a0"
   ],
-  "new_task_created": false
+  "new_task_created": false,
+  "updated_at": "2026-11-13T11:49:09.201Z"
 }
