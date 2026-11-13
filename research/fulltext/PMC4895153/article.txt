@@ -1,0 +1,233 @@
+Discrimination of human faces by archerfish ( Toxotes chatareus )
+DOI: 10.1038/srep27523
+PMCID: PMC4895153
+Source API: https://pmc.ncbi.nlm.nih.gov/api/oai/v1/mh/?verb=GetRecord&identifier=oai%3Apubmedcentral.nih.gov%3A4895153&metadataPrefix=pmc
+Retrieved: 2026-11-13T14:05:23.161075+00:00
+Licence: http://creativecommons.org/licenses/by/4.0/, https://creativecommons.org/licenses/by/4.0/
+XML SHA256: f19aa719d4d8a6ec4983227c35b4a7b15458e55a49710b801c4caf10e9fe16de
+Text extraction from licensed JATS XML; layout changed, article wording retained.
+Access verified only. Scientific review, current notices and asset rights still require checks.
+
+Sci RepSci Rep1579scirep101563288Scientific Reports2045-2322Nature Publishing GroupPMC4895153PMC4895153.1489515348951532727255110.1038/srep27523srep275231Article
+Discrimination of human faces by archerfish (Toxotes chatareus)
+NewportCaita12
+WallisGuy3
+ReshitnykYarema4
+SiebeckUlrike E.1
+1School of Biomedical Sciences, University of Queensland, Brisbane, Australia2Department of Zoology, University of Oxford, Oxford, England3Centre for Sensorimotor Performance, School of Human Movement Studies, University of Queensland, Brisbane, Australia4ARC Centre of Excellence for Engineered Quantum Systems, School of Mathematics and Physics, University of Queensland, Brisbane, Australiaacaitlin.newport@zoo.ox.ac.uk0706201620166262676275230212201520052016070620161006201611062016Copyright © 2016, Macmillan Publishers Limited2016Macmillan Publishers Limitedhttps://creativecommons.org/licenses/by/4.0/This work is licensed under a Creative Commons Attribution 4.0 International License. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicated otherwise in the credit line; if the material is not included under the Creative Commons license, users will need to obtain permission from the license holder to reproduce the material. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+Two rival theories of how humans recognize faces exist: (i) recognition is innate, relying on specialized neocortical circuitry, and (ii) recognition is a learned expertise, relying on general object recognition pathways. Here, we explore whether animals without a neocortex, can learn to recognize human faces. Human facial recognition has previously been demonstrated for birds, however they are now known to possess neocortex-like structures. Also, with much of the work done in domesticated pigeons, one cannot rule out the possibility that they have developed adaptations for human face recognition. Fish do not appear to possess neocortex-like cells, and given their lack of direct exposure to humans, are unlikely to have evolved any specialized capabilities for human facial recognition. Using a two-alternative forced-choice procedure, we show that archerfish (Toxotes chatareus) can learn to discriminate a large number of human face images (Experiment 1, 44 faces), even after controlling for colour, head-shape and brightness (Experiment 2, 18 faces). This study not only demonstrates that archerfish have impressive pattern discrimination abilities, but also provides evidence that a vertebrate lacking a neocortex and without an evolutionary prerogative to discriminate human faces, can nonetheless do so to a high degree of accuracy.
+pmc-status-qastatus0pmc-status-liveyespmc-status-embargonopmc-status-releasedyespmc-prop-open-accessyespmc-prop-olfnopmc-prop-manuscriptnopmc-prop-legally-suppressednopmc-prop-has-pdfyespmc-prop-has-supplementnopmc-prop-pdf-onlynopmc-prop-suppress-copyrightnopmc-prop-is-real-versionnopmc-prop-is-scanned-articlenopmc-prop-preprintnopmc-prop-in-epmcyespmc-license-refCC BY
+Rapid and accurate recognition of an individual is central to the development of complex social systems that rely on individual identification. Humans are highly adept at this task despite the fact that faces share the same basic components and individuals must be discriminated based on subtle differences in features or spatial relationships12. Considerable evidence points to the fact that the fusiform gyrus, located in the neocortex, is heavily involved in face processing in humans34. While it appears that there is domain specificity for face processing, it is still unknown whether the neurons in the fusiform gyrus are specially evolved for this task5, and hence whether faces represent a unique class of object, or if the neurons performing face processing are general object recognition neurons tuned to faces through extensive exposure6789.
+One question we might ask is if there is something special about faces as objects that require specialized recognition circuitry. This can be tested by determining if non-human species that have not evolved to recognize human faces, are nevertheless capable of discriminating human facial stimuli. Evidence that other animals can do this will not unequivocally prove that humans do not use specialized neurons, but it will give an indication if specialized neurons are a requirement and if there is something unusual about faces themselves. There is evidence from a range of studies that some non-primate mammals can discriminate human faces. Species which have been tested include sheep1011, dogs1213, cows14 and horses15. However, most animals tested possess a neocortex and have been domesticated, and may, as a result, have experienced evolutionary pressure to recognize their human carers.
+There is some evidence that animals lacking a neocortex, namely bees16 and birds17181920212223, are capable of some degree of human facial discrimination. Although the experiments with bees are limited by the small number of test stimuli (a total of four human faces were presented to the bees)16, it does indicate that the bee visual recognition system is adequate for a limited version of the task. One reason that human facial recognition is considered a difficult task is that all faces share the same basic features (i.e. two eyes above a nose and a mouth) and therefore discrimination generally requires the ability to detect subtle differences within the set of all faces. The small number of faces presented to the bees makes it possible to discriminate the faces using only trivial visual features, as opposed to the more complex and subtle discrimination required when performing true robust facial discrimination with a large number of faces. Considering that bees and many insects have a much lower visual acuity than most diurnal vertebrates (bees, Apis mellifera, for example have a visual acuity of ~0.25 cycles per degree (cpd)24 while archerfish have an acuity of ~3.2 cpd25 and humans have an acuity of ~72 cpd26), it seems questionable that bees would be able to detect enough detail to discriminate more than a small number of faces.
+Pigeons (Columba livia) can not only discriminate frontal and rotated images of human faces2027 but can also categorize them based on expressions1727 and gender1821. In addition, the performance of pigeons when completing some visual tasks is comparable to that of primates, suggesting that the underlying mechanisms of object recognition, including human facial recognition, may be similar between the two groups2829. For example, both humans and pigeons can recognize an individual human face despite some changes in facial expression, while the ability to discriminate emotional expression is associated with a particular face27. Chickens (Gallus gallus domesticus)19 and jungle crows (Corvus macrorhynchos)23 can also discriminate pictures of human faces, and American crows (Corvus brachyrhynchos) recognize individual face masks worn by humans and respond to a particular mask regardless of the person wearing it22. This ability may be a result of pre-existing neural specializations as these species often live in urban habitats and interact with humans3031 as well as demonstrate conspecific recognition based on visual cues3233343536. We therefore wondered whether teleost fish, the earliest vertebrate taxon lacking neocortical circuitry and one that is unlikely to have evolved any specializations for discriminating human faces, would show similar human face discrimination abilities.
+In this report we used archerfish (Toxotes chatareus) as a model for behavioural experiments. This species, known for knocking down aerial prey with jets of water, relies heavily on vision to detect small prey against a visually complex background and demonstrates impressive visual cognitive abilities37383940. We hypothesized that this species may be ideally adapted to visual tasks that require sophisticated pattern recognition. Experiments using two stimulus sets were run. In Experiment 1, the fish were presented with 44 colour images of full faces (Fig. 1A). In Experiment 2, the fish were presented with 18 greyscale images of faces that were standardized for brightness (Fig. 1B). In addition, an oval mask was overlaid on the faces to eliminate head shape as a possible recognition cue.
+Results
+Experiment 1
+In the first experiment, we tested whether four archerfish could be trained using operant conditioning to discriminate between two images of human faces. The images were presented on a computer monitor positioned above the aquarium and the archerfish were required to spit a jet of water at a conditioned stimulus (CS+) and avoid a second conditioned stimulus (CS−) to receive a food reward (Fig. 1C). All fish learned to discriminate between CS+ and CS− within 2–14 sessions (Fig. 2A; Fish 1: 12 sessions; Fish 2: 14 sessions; Fish 3: 3 sessions; Fish 4: 2 sessions).
+To determine how robust the discrimination abilities of archerfish are when faced with many faces, we tested whether the fish could continue to discriminate the learned CS− face from 44 novel faces. The task was for fish to continue to avoid the trained distractor (CS−) and select the novel stimuli (N+). Avoidance of CS− rather than selection of CS+ or N+, was used to test the archerfish because Newport, et al.41 found that archerfish form a stronger association with unrewarded stimuli than with rewarded stimuli. Presentation of the novel faces was divided into two sessions of 29 trials, which were grouped for the purpose of analysis and referred to as a ‘block’. Fish 1 and 4 completed four blocks while Fish 2 and 3 completed two blocks. The individual percentage of correct choices for all four fish was grouped by block and the mean frequency of correct choices and standard deviation for each block was calculated (Block 1: 64.75 ± 8.342; Block 2: 73 ± 11.40; Block 3: 66.5 ± 2.121; Block 4: 81.5 ± 6.364). Our sample size was small (N = 4 fish for each experiment) therefore a Generalized Linear Mixed Model fit by maximum likelihood (Laplace Approximation) with a binomial distribution with logit-link function was used for analysis in both experiments (see Statistical Analysis section for more details). We found the fish were able to discriminate the trained face from the 44 novel ones (Z = 5.949, P < 0.001, Fig. 2B).
+Experiment 2
+In the second experiment, we tested whether four new archerfish could be trained to discriminate human faces when some potentially trivial cues (i.e. brightness, colour and head-shape) were standardized. The general protocol of training and testing was the same as that described for Experiment 1 with the exception that the number of novel stimuli used in testing was 18 and there was no intermediate training step. All fish reached our training criterion within 8–17 sessions (Fig. 3A; Fish 5: 14 sessions; Fish 6: 8 sessions; Fish 7: 7 sessions; Fish 8: 17 sessions). Four testing blocks were then completed by all fish. The individual percentage of correct choices for all four fish was grouped by block and the mean frequency of correct choices and standard deviation for each block were calculated (Block 1: 73.50 ± 12.77; Block 2: 69.50 ± 14.62; Block 3: 77.50 ± 6.351; Block 4: 86.25 ± 5.50). The fish significantly discriminated the trained face from the 18 novel ones (Z = 6.794, P < 0.001, Fig. 2B).
+Discussion
+We tested whether a species of fish, unlikely to have experienced any evolutionary pressure for human facial recognition, could learn to discriminate human faces. We found that archerfish could be trained to discriminate a learned face from a large number of other human faces even when some trivial cues had been removed (i.e. brightness, colour and head-shape). While it is impossible to say from our study whether archerfish use the same visual information to discriminate the face images as humans, our results clearly show that some aspects of the facial recognition task can be learnt, even in the absence of a neocortex.
+During testing in Experiments 1 and 2, all fish reached peak discrimination accuracy between 77–89%. Archerfish have previously been shown capable of discriminating large numbers of stimuli to a similar degree of accuracy (up to 93% accuracy)4142. It seems likely that the archerfish did not use trivial features to discriminate the human faces as the fish could distinguish one face from 44 others which varied in similarity. In addition, when brightness, colour and general outline cues were standardized, the fish were still able to complete the task. Our results demonstrate that, like some species of reef fish43, archerfish are adept at fine-detail pattern discrimination and can apply these abilities to unfamiliar stimuli, including human faces.
+During training, we observed individual variation in the number of sessions required to learn the task; while some fish learned within a single session (Experiment 1: Fish 3 and 4), others required longer periods of training (up to 17 sessions / 510 trials). The difference in learning rates may simply be due to individual factors such as experience and motivation. However, it is also possible that individuals used different visual information to discriminate the faces and that some features required more time to learn. If individuals do learn to use different visual information for discrimination, it may also explain why some fish achieved a higher degree of accuracy than others in the testing period. When it comes to visually identifying an object, not all visual information is created equal. For example, by learning the combined appearance of the eyes, nose and mouth of a particular human face, it is likely you will be able to easily identify that face from a large pool of other faces. However, learning the appearance of a single spot on the cheek is not likely to be as helpful.
+During testing, we saw a similar pattern of behavior. Some fish were immediately highly accurate (Experiment 1: Fish 3 and 4; Experiment 2: Fish 5, 7 and 8), while others improved with experience (Experiment 1: Fish 1 and 2; Experiment 2: Fish 6). These differences in individual performance provide additional evidence that some of the fish were using different features for facial identification from the others and that this visual information differed in its effectiveness for the discrimination task. Future experiments testing which features the fish use to discriminate faces would help shed light on whether individual fish use different features and if these feature were similar to those used by human observers. There are several experimental methods that involve altering facial stimuli in some way (e.g.44454647) which have previously been used to explore feature use by primates44454647 and pigeons21 when discriminating human faces and these approaches may be adaptable for future studies with fish.
+Understanding the recognition capabilities of different animals can inform us about the evolutionary history of human facial recognition. There are a wide range of animals that use visual cues for conspecific individual recognition including primates e.g.4748, crayfish49, fiddler crabs50, sheep5152, damselfish43 and wasps53. With so many examples across such diverse taxa, it is clear that the discrimination of individuals based on facial features is not unique to humans and suggests that perhaps human faces themselves are not a particularly special class of objects. Our evidence that archerfish can discriminate human faces without having any obvious selection pressure for this specific task, suggests that the visual system of distantly related vertebrates is capable of sophisticated discrimination tasks. This is not surprising as so many behaviours fundamental to the survival of a wide range of species rely on accurate vision-based object recognition, including predator detection, mate selection, and feeding. Therefore it seems possible that pre-existing circuits for sophisticated visual discrimination evolved into the dedicated face-processing circuitry of primates.
+In this experiment we tested discrimination of frontal views; this is a very restricted version of the task humans must perform in order to rapidly and accurately discriminate human faces in real situations. Faces are dynamic and their appearance can be drastically changed by a range of factors including variations in viewing angle, lighting, or facial expression. Unlike the faces of many other vertebrates, primate faces have complex musculature allowing them to form a broad range of facial expressions2. It is possible that the complexity of the neocortex is a requirement for the discrimination of faces under variable conditions. That said, there is evidence that pigeons are able to recognize faces that have changed in viewing angle20 and expression17. This has yet to be tested in animals such as fish that do not live near humans, however, many social animals that recognize conspecific individuals are equally capable of discriminating those individuals under a range of viewing conditions. Fish present an interesting example as they can use colour patterns for recognition which are additionally affected by changes in water quality and lighting. Because different wavelengths are attenuated unequally in water, some colours within a pattern are affected more than others. It is possible that the perceived complexity of human facial recognition may simply be an anthropogenic point of view and in fact other animals must also perform similarly complex pattern discrimination tasks under highly demanding conditions43.
+Methods
+Subjects
+The archerfish used in this experiment were kept as described in Newport, et al.41. All fish were kept in accordance with the University of Queensland Animal Ethics Committee approval (AEC approval number: SBMS/241/12) and all experimental protocols were approved by the same body. The fish had different levels of previous experience, however all subjects had at least been pre-trained to spit at stimuli presented on a computer monitor, following methods described in Newport, et al.41.
+Stimuli
+The images used were acquired from a database of three-dimensional head models created by researchers at the Max Planck Institute in Tübingen, Germany545556. A total of 62 frontal views of Caucasian female human faces (rendered size: 384 × 384 pixels) were used as stimuli (see examples in Fig. 1A,B). The images in this database have had extraneous cues (e.g. hair and clothing) removed thereby reducing the possibility that trivial features could be used to discriminate the faces.
+Three aspects of the images in Experiment 2 were standardized. 1) An identical oval mask was overlaid on all images to remove head-shape as a possible cue. 2) The images were then converted to grayscale, where pixels can have individual values between 0–255, to remove colour cues. 3) The brightness of each image was normalized so that all images had a mean brightness of 128.
+General procedure
+The experimental apparatus and stimulus presentation were as described in Newport, et al.41. Briefly, stimuli were presented on an LCD monitor (1024 × 768 pixels) suspended above the aquaria and oriented parallel to the water’s surface. A two-alternative forced choice (2-AFC) procedure was used and images were displayed on each half of the monitor (monitor coordinates: 0–160, 0 160), one of which was rewarded if hit. Fish were rewarded with one food pellet (Cichlid Gold, Kyorin Co. Ltd., Japan) each time they selected the correct stimulus by hitting it with a jet of water. Selection of the incorrect stimulus terminated the trial.
+Training and testing for Experiment 1
+Archerfish were trained to discriminate between one rewarded face (CS+) and one unrewarded face (CS−). Fish 1 & 2 and Fish 3 & 4 were trained with opposite faces as CS− to reduce the possibility that performance was due to a unique characteristic of a particular face. Each training session consisted of 21–31 trials, depending on the individual level of motivation in a particular session. Training sessions were repeated until the subjects had achieved a statistically significant correct choice frequency of ≥71% (binomial test: P < 0.05, N = 21 trials) in two consecutive sessions.
+In an intermediary training step, the fish learned to discriminate CS− from eight novel face images (N+). For each trial, one N+ was chosen randomly from the pool of stimuli with the constraint that the same N+ was not used in consecutive trials and that the presentation of all eight stimuli was balanced within a session. One trial with the original CS+ and CS− was included in the pool as task reinforcement. Sessions were run until the fish reached our training criterion (correct choice frequency of ≥71% in two consecutive sessions).
+During testing, a pool of 44 faces was used as novel stimuli. Within a block, 10 reinforcement trials (CS+ and CS−) and four of the faces used during the intermediary training step were used as training reminders. Trials with previously seen stimuli were excluded from analysis, therefore a testing block consisted of 44 trials.
+Training and testing for Experiment 2
+Training was run generally using the same procedures as in Experiment 1, however, no intermediary training stage was used as we felt it had little impact on the ability of the fish to complete the task. All fish were trained to different faces as CS− to reduce the possibility that performance was due to a unique characteristic of a particular face. Each training session consisted of 30 trials and sessions were repeated until the subjects had achieved a correct choice frequency of ≥75% (binomial test: P < 0.01, N = 30 trials) in two consecutive sessions.
+During testing, a pool of 18 novel faces was used. Within each block, one reinforcement trial (the original CS+ and CS−) was run but was excluded from analysis, therefore a testing block consisted of 18 trials. A single session consisted of 30 trials, therefore more than one block was completed per session.
+Statistical analyses
+For each experiment we used a Generalized Linear Mixed Model with a binomial distribution with log-link function. A binary outcome (correct/incorrect) was used as the dependent variable. Fish ID and block number were included as random factors. In addition, Fish ID and block number were included as separate, crossed random factors. Variance due to individual fish choices in both experiments was small (<0.01), indicating that the fish made similar choices.
+Additional Information
+How to cite this article: Newport, C. et al. Discrimination of human faces by archerfish (Toxotes chatareus). Sci. Rep.
+6, 27523; doi: 10.1038/srep27523 (2016).
+We thank D. Lloyd and M. Franz for technical assistance and S. Blomberg for statistical analysis advice. This study was funded by the Australian Research Council (UES: DP140100431; GW: FT100100020; YR: CE110001013) and the European Union’s Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie grant agreement (CN: 659684). The contents of this study reflect only the author’s views and not the views of the European Commission.
+DiamondR. & CareyS.
+Why faces are and are not special: An effect of expertise
+. J Exp Psychol Gen115, 107–117 (1986).294031210.1037//0096-3445.115.2.107
+LeopoldD. A. & RhodesG.
+A comparative view of face perception
+. J Comp Psychol124, 233–251 (2010).2069565510.1037/a0019460PMC2998394
+KanwisherN., McDermottJ. & ChunM. M.
+The Fusiform Face Area: A Module in Human Extrastriate Cortex Specialized for Face Perception
+. J Neurosci17, 4302–4311 (1997).915174710.1523/JNEUROSCI.17-11-04302.1997PMC6573547
+TongF., NakayamaK., MoscovitchM., WeinribO. & KanwisherN.
+Response properties of the human fusiform face area
+. Cognitive Neuropsych17, 257–280 (2000).10.1080/02643290038060720945183
+DuchaineB., GermineL. & NakayamaK.
+Family resemblance: Ten family members with prosopagnosia and within-class object agnosia
+. Cognitive Neuropsych24, 419–430 (2007).10.1080/0264329070138049118416499
+GauthierI. & LogothetisN. K.
+Is face recognition not so unique after all?
+Cognitive Neuropsych17, 125–142 (2000).10.1080/02643290038053520945176
+TarrM. J. & GauthierI.
+FFA: a flexible fusiform area for subordinate-level visual processing automatized by expertise
+. Nat Neurosci3, 764–769 (2000).1090356810.1038/77666
+McGuginR. W., GatenbyJ. C., GoreJ. C. & GauthierI.
+High-resolution imaging of expertise reveals reliable object selectivity in the fusiform face area related to perceptual performance
+. Proc Natl Acad Sci. USA109, 17063–17068 (2012).2302797010.1073/pnas.1116333109PMC3479484
+WallisG.
+Towards a unified model of face and object recognition in the human visual system
+. Front Psych4, 1–25 (2013).10.3389/fpsyg.2013.00497PMC374401223966963
+DavisH., NorrisC. & TaylorA.
+Wether ewe know me or not: The discrimination of individual humans by sheep
+. Behav Process43, 27–32 (1998).10.1016/s0376-6357(97)00082-x24897637
+PeirceJ. W., LeighA. E., daCostaA. P. C. & KendrickK. M.
+Human face recognition in sheep: lack of configurational coding and right hemisphere advantage
+. Behav Process55, 13–26 (2001).10.1016/s0376-6357(01)00158-911390088
+RaccaA.et al.
+Discrimination of human and dog faces and inversion responses in domestic dogs (Canis familiaris)
+. Anim Cogn13, 525–533 (2010).2002016810.1007/s10071-009-0303-3
+HuberL., RaccaA., ScafB., VirányiZ. & RangeF.
+Discrimination of familiar human faces in dogs (Canis familiaris)
+. Learn Motiv44, 258–269 (2013).2418738510.1016/j.lmot.2013.04.005PMC3807667
+RybarczykP., KobaY., RushenJ., TanidaH. & de PassilléA. M.
+Can cows discriminate people by their faces?
+Appl Anim Behav Sci74, 175–189 (2001).
+StoneS.
+M. Human facial discrimination in horses: can they tell us apart?
+Anim Cogn13, 51–61 (2010).1953318510.1007/s10071-009-0244-x
+DyerA. G., NeumeyerC. & ChittkaL.
+Honeybee (Apis mellifera) vision can discriminate between and recognise images of human faces
+. J Exp Biol208, 4709–4714 (2005).1632695210.1242/jeb.01929
+JitsumoriM. & YoshiharaM.
+Categorical discrimination of human facial expressions by pigeons: A test of the linear feature model
+. Q J Exp Psychol B50, 253–268 (1997).
+TrojeN. F., HuberL., LoidoltM., AustU. & FiederM.
+Categorical learning in pigeons: the role of texture and shape in complex static stimuli
+. Vision Res39, 353–366 (1999).1032614110.1016/s0042-6989(98)00153-9
+GhirlandaS., JanssonL. & EnquistM.
+Chickens prefer beautiful humans
+. Hum Nat13, 383–389 (2002).2619292910.1007/s12110-002-1021-6
+JitsumoriM. & MakinoH.
+Recognition of static and dynamic images of depth-rotated human faces by pigeons
+. Learn Behav32, 145–156 (2004).1528138710.3758/bf03196016
+GibsonB. M., WassermanE. A., GosselinF. & SchynsP. G.
+Applying bubbles to localize features that control pigeons’ visual discrimination behavior
+. J Exp Psychol Anim Behav Process31, 376–382 (2005).1604539210.1037/0097-7403.31.3.376
+MarzluffJ. M., WallsJ., CornellH. N., WitheyJ. C. & CraigD. P.
+Lasting recognition of threatening people by wild American crows
+. Anim Behav79, 699–707 (2010).
+BogaleB. A., AoyamaM. & SugitaS.
+Categorical learning between ‘male’ and ‘female’ photographic human faces in jungle crows (Corvus macrorhynchos)
+. Behav Process86, 109–118 (2011).10.1016/j.beproc.2010.10.00220971169
+SrinivasenM. V. & LehrerM.
+Spatial acuity of honeybee vision and its spectral properties
+. J Comp Physiol162, 159–172 (1988).
+TempleS. E., ManiettaD. & CollinS. P.
+A comparison of behavioural (Landolt C) and anatomical estimates of visual acuity in archerfish (Toxotes chatareus)
+. Vision Res83, 1–8 (2013).2346647310.1016/j.visres.2013.02.014
+ReymondL. & CookM.
+Relation between simultaneous spatial-discrimination thresholds and luminance in man
+. Behav Brain Res14, 51–59 (1984).651808010.1016/0166-4328(84)90019-6
+SotoF. A. & WassermanE. A.
+Asymmetrical interactions in the perception of face identity and emotional expression are not unique to the primate visual system
+. J Vision11 (2011).10.1167/11.3.2421454855
+SotoF. & WassermanE.
+Visual object categorization in birds and primates: Integrating behavioral, neurobiological, and computational evidence within a “general process” framework
+. Cogn Affect Behav Neurosci12, 220–240 (2012).2208654510.3758/s13415-011-0070-x
+SotoF. A. & WassermanE.
+Mechanisms of object recognition: what we have learned from pigeons
+. Front Neuro8, 1–22 (2014).10.3389/fncir.2014.00122PMC419531725352784
+MatsubaraH.
+Comparative study of territoriality and habitat use in syntopic Jungle Crow (Corvus macrorhynchos) and Carrion Crow (C. corone)
+. Ornithological Sci.2, 103–111 (2003).
+BelguermiA.et al.
+Pigeons discriminate between human feeders
+. Anim Cogn14, 909–914 (2011).2164764910.1007/s10071-011-0420-7
+WatanabeS. & ItoY.
+Discrimination of individuals in pigeons
+. Bird Behav9, 20–29 (1991).
+BradshawR. H. & DawkinsM. S.
+Slides of conspecifics as representatives of real animals in laying hens (Gallus domesticus)
+. Behav Process28, 165–172 (1993).10.1016/0376-6357(93)90089-A24897601
+RyanC. M. E. & LeaS. E. G.
+Images of conspecifics as categories to be discriminated by pigeons and chickens: Slides, video tapes, stuffed birds and live birds
+. Behav Process33, 155–175 (1994).10.1016/0376-6357(94)90064-724925244
+NakamuraT., CroftD. & WestbrookR.
+Domestic pigeons (Columba livia) discriminate between photographs of individual pigeons
+. Learn Behav31, 307–317 (2003).1473348010.3758/bf03195993
+NakamuraT., ItoM., CroftD. & Frederick WestbrookR.
+Domestic pigeons (Columba livia) discriminate between photographs of male and female pigeons
+. Learn Behav34, 327–339 (2006).1733052210.3758/bf03193196
+SchlegelT., SchmidC. J. & SchusterS.
+Archerfish shots are evolutionarily matched to prey adhesion
+. Curr Biol16, R836–R837 (2006).1702747610.1016/j.cub.2006.08.082
+SchlegelT. & SchusterS.
+Small circuits for large tasks: High-speed decision-making in archerfish
+. Science319, 104–106 (2008).1817444510.1126/science.1149265
+TempleS., HartN. S., MarshallN. J. & CollinS. P.
+A spitting image: specializations in archerfish eyes for vision at the interface between air and water
+. Proc R Soc B Biol. Sci.277, 2607–2615 (2010).10.1098/rspb.2010.0345PMC298204020392734
+RischawyI. & SchusterS.
+Visual search in hunting archerfish shares all hallmarks of human performance
+. J Exp Biol216, 3096–3103 (2013).2361942010.1242/jeb.087734
+NewportC., WallisG., TempleS. E. & SiebeckU. E.
+Complex, context-dependent decision strategies of archerfish,
+Toxotes chatareus. Anim Behav86, 1265–1274 (2013).
+NewportC., WallisG. & SiebeckU. E.
+Concept learning and the use of three common psychophysical paradigms in the archerfish (Toxotes chatareus)
+. Front Neuro8, 1–13 (2014).10.3389/fncir.2014.00039PMC400602824795572
+SiebeckU. E., ParkerA. N., SprengerD., MathgerL. M. & WallisG.
+A species of reef fish that uses ultraviolet patterns for covert face recognition
+. Curr Biol.20, 407–410 (2010).2018855710.1016/j.cub.2009.12.047
+GosselinF. & SchynsP. G.
+Bubbles: a technique to reveal the use of information in recognition tasks
+. Vision Res41, 2261–2271 (2001).1144871810.1016/s0042-6989(01)00097-9
+SchynsP. G., BonnarL. & GosselinF.
+Show me the features! Understanding recognition from the use of visual information
+. Psychol Sci.13, 402–409 (2002).1221980510.1111/1467-9280.00472
+BerishaF., JohnstonA. & McOwanP. W.
+Identifying regions that carry the best information about global facial configurations
+. J Vision10, 1–8 (2010).10.1167/10.11.2720884522
+ParrL. A., WinslowJ. T., HopkinsW. D. & de WaalF. B. M.
+Recognizing facial cues: Individual discrimination by chimpanzees (Pan troglodytes) and rhesus monkeys (Macaca mulatta)
+. J Comp Psychol114, 47–60 (2000).1073931110.1037/0735-7036.114.1.47PMC2018744
+BovetD. & WashburnD. A.
+Rhesus macaques (Macaca mulatta) categorize unknown conspecifics according to their dominance relations
+. J Comp Psychol117, 400–405 (2003).1471764110.1037/0735-7036.117.4.400
+Van der VeldenJ., ZhengY., PatulloB. W. & MacmillanD. L.
+Crayfish recognize the faces of fight opponents
+. PLoS ONE3, e1695 (2008).1830582310.1371/journal.pone.0001695PMC2257977
+DettoT., BackwellP. R. Y., HemmiJ. M. & ZeilJ.
+Visually mediated species and neighbour recognition in fiddler crabs (Uca mjoebergi and Uca capricornis)
+. Proc R Soc B Biol Sci.273, 1661–1666 (2006).10.1098/rspb.2006.3503PMC163493016769638
+KendrickK. M., da CostaA. P., LeighA. E., HintonM. R. & PeirceJ. W.
+Sheep don’t forget a face
+. Nature414, 165–166 (2001).1170054310.1038/35102669
+TateA. J., FischerH., LeighA. E. & KendrickK. M.
+Behavioural and neurophysiological evidence for face identity and face emotion processing in animals
+. Philos T Roy Soc B361, 2155–2172 (2006).10.1098/rstb.2006.1937PMC176484217118930
+TibbettsE. A.
+Visual signals of individual identity in the wasp Polistes fuscatus
+. Philos T Roy Soc B269, 1423–1428 (2002).10.1098/rspb.2002.2031PMC169105612137570
+VetterT.
+Synthesis of novel views from a single face image
+. Int J Comput Vision28, 103–116 (1998).
+BlanzV. & VetterT. In Proceedings of the 26th annual conference on Computer graphics and interactive techniques187–194 (ACM Press/Addison-Wesley Publishing Co., 1999).
+TrojeN. F. & BülthoffH. H.
+Face recognition under varying poses: The role of texture and shape
+. Vision Res36, 1761–1771 (1996).875944510.1016/0042-6989(95)00230-8
+Author Contributions C.N. carried out experimental work and data analysis as well as designed the study and drafted the manuscript. G.W. participated in the design of the study and revised the manuscript. Y.R. and U.E.S. participated in the design of the study and helped carry out experimental work and revised the manuscript.
+Figure 1
+Examples of face images representative of those used in Experiment 1 (A) and Experiment 2 (B). Images shown are 3D morphs of several faces to protect the privacy of specific individuals. All face images were provided by the Max-Planck Institute for Biological Cybernetics in Tübingen, Germany. (C) Illustration of the experimental setup.
+Figure 2
+Training and testing results for Experiment 1.
+(A) Training results. Fish were trained to select CS+ and avoid CS−. Each curve represents the individual results of a specific fish. The dashed line at 71% represents the training criterion performance level. (B) Testing results. Fish were trained to avoid CS− and select 44 possible N+. The mean correct selection frequencies for each testing block were calculated. Bars represent standard deviation. The red line at 50% in both figures represents the expected selection frequency if subjects were choosing at random.
+Figure 3
+Training and testing results for Experiment 2.
+(A) Training results. Fish were trained to select CS+ and avoid CS−. Each curve represents the individual results of a specific fish. The dashed line at 75% represents the training criterion performance level. (B) Testing results. Fish were trained to avoid CS− and select 18 possible N+. The mean correct selection frequencies for each testing block were calculated. Bars represent standard deviation. The red line at 50% in both figures represents the expected selection frequency if subjects were choosing at random.

@@ -1,0 +1,39 @@
+{
+  "pmcid": "PMC4895153",
+  "doi": "10.1038/srep27523",
+  "title": "Discrimination of human faces by archerfish ( Toxotes chatareus )",
+  "article_type": "research-article",
+  "license_urls": [
+    "http://creativecommons.org/licenses/by/4.0/",
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "license_statement": "https://creativecommons.org/licenses/by/4.0/ This work is licensed under a Creative Commons Attribution 4.0 International License. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicated otherwise in the credit line; if the material is not included under the Creative Commons license, users will need to obtain permission from the license holder to reproduce the material. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/",
+  "body_characters": 19813,
+  "sections": [
+    "Results",
+    "Experiment 1",
+    "Experiment 2",
+    "Discussion",
+    "Methods",
+    "Subjects",
+    "Stimuli",
+    "General procedure",
+    "Training and testing for Experiment 1",
+    "Training and testing for Experiment 2",
+    "Statistical analyses",
+    "Additional Information"
+  ],
+  "supplement_links": [],
+  "scientific_review_complete": false,
+  "required_before_selection": [
+    "Read original study and necessary supplements",
+    "Check current correction, retraction and expression-of-concern records",
+    "Confirm peer review, study design, claims and limitations",
+    "Check each proposed visual asset licence separately"
+  ],
+  "cache_scope": "Article XML and text only; no PDF, figure or supplementary asset download. Cached access is not editorial approval.",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/api/oai/v1/mh/?verb=GetRecord&identifier=oai%3Apubmedcentral.nih.gov%3A4895153&metadataPrefix=pmc",
+  "retrieved_at": "2026-11-13T14:05:23.161075+00:00",
+  "xml_sha256": "f19aa719d4d8a6ec4983227c35b4a7b15458e55a49710b801c4caf10e9fe16de",
+  "text_sha256": "51ea1f09b35c3cce7cb3ae68343399d59dbb8032361b10192b34cedcdf6471c4"
+}

@@ -1,0 +1,25 @@
+{
+  "repository": "akshaymohan16/toxic-tales-library",
+  "request_id": "paper-access-check-2026-11-13",
+  "request_sha256": "3f6830578f5207a2ebc7a35b95d3bfa017feb91bc0d771d662934ab02b54fc7a",
+  "checked_at": "2026-11-13T14:05:21.343143+00:00",
+  "scientific_review_complete": false,
+  "papers": [
+    {
+      "pmcid": "PMC4895153",
+      "expected_doi": "10.1038/srep27523",
+      "status": "cached",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/api/oai/v1/mh/?verb=GetRecord&identifier=oai%3Apubmedcentral.nih.gov%3A4895153&metadataPrefix=pmc",
+      "xml_sha256": "f19aa719d4d8a6ec4983227c35b4a7b15458e55a49710b801c4caf10e9fe16de",
+      "title": "Discrimination of human faces by archerfish ( Toxotes chatareus )"
+    },
+    {
+      "pmcid": "PMC2719796",
+      "expected_doi": "10.1371/journal.pone.0006573",
+      "status": "cached",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/api/oai/v1/mh/?verb=GetRecord&identifier=oai%3Apubmedcentral.nih.gov%3A2719796&metadataPrefix=pmc",
+      "xml_sha256": "63900b9d88ad2a93408839725518e9262951da470ed1992162c268188fc32a66",
+      "title": "Ants, Cataglyphis cursor , Use Precisely Directed Rescue Behavior to Free Entrapped Relatives"
+    }
+  ]
+}
