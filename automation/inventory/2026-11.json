@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-13T17:17:04.610Z",
+  "observed_at": "2026-11-14T08:49:08.466Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -48,7 +48,7 @@
     "TT-007-REEL",
     "TT-007-YOUTUBE-SHORT"
   ],
-  "calendar_reconciled_on": "2026-11-13T17:17:04.610Z",
+  "calendar_reconciled_on": "2026-11-14T08:49:08.466Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -61,14 +61,14 @@
   "new_scheduling_conditions": "All release/rights/deployment and duplicate checks plus fresh full-month calendar reconciliation and <=20 projected destinations",
   "provider_confirmed_publications": 8,
   "known_usage_lower_bound": 8,
-  "last_calendar_readback": "2026-11-13T17:17:04.610Z",
+  "last_calendar_readback": "2026-11-14T08:49:08.466Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
     "observed_used": 8,
-    "observed_at": "2026-11-13T17:17:04.610Z",
-    "calendar_checked_at": "2026-11-13T17:17:04.610Z",
+    "observed_at": "2026-11-14T08:49:08.466Z",
+    "calendar_checked_at": "2026-11-14T08:49:08.466Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -98,9 +98,9 @@
       "instagram:TT-005-REEL",
       "instagram:TT-005-CAROUSEL",
       "instagram:TT-006-REEL",
-      "youtube:TT-006-YOUTUBE-SHORT",
+      "instagram:TT-006-YOUTUBE-SHORT",
       "instagram:TT-008-REEL",
-      "youtube:TT-008-YOUTUBE-SHORT"
+      "instagram:TT-008-YOUTUBE-SHORT"
     ],
     "cap": 20,
     "projected_month_destinations": 16,
@@ -110,7 +110,7 @@
     "owner_authorized_one_off_destination_slots": 2
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-13T17:17:04.610Z",
+    "checked_at": "2026-11-14T08:49:08.466Z",
     "published_destinations": 8,
     "scheduled_active_destinations": 2,
     "held_retired_drafts": 2,
