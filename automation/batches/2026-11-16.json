@@ -51,10 +51,10 @@
     "Automation_991690d6af648191ac8037cfa96c92a0"
   ],
   "new_task_created": false,
-  "updated_at": "2026-11-14T08:49:08.466Z",
-  "last_provider_reconciled_at": "2026-11-14T08:49:08.466Z",
+  "updated_at": "2026-11-14T17:17:37.639Z",
+  "last_provider_reconciled_at": "2026-11-14T17:17:37.639Z",
   "provider_reconciliation": {
-    "checked_at": "2026-11-14T08:49:08.466Z",
+    "checked_at": "2026-11-14T17:17:37.639Z",
     "month": "2026-11",
     "account_verified": true,
     "instagram_tuesday_uuid": "-6872348896682359981",
@@ -65,7 +65,12 @@
     "friday_provider_receipts": 0,
     "expected_friday_date": "2026-11-20T10:00:00+01:00",
     "next_producer_window": "2026-11-15T10:00:00+01:00",
+    "quota_observed_used": 8,
     "quota_projected": 16,
-    "quota_cap": 20
+    "quota_cap": 20,
+    "open_readiness_issues": 0,
+    "latest_watchdog_run": 43609392090,
+    "latest_watchdog_conclusion": "success",
+    "note": "Exactly 2/4 destinations have scheduled provider receipts as of Saturday evening; Sunday producer window has not yet begun. TT008 owner-authorized one-off separately confirmed published on both destinations."
   }
 }
