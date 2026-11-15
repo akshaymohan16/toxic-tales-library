@@ -1,17 +1,17 @@
 {
   "checked_on": "2026-11-15",
-  "updated_at": "2026-11-15T17:23:40.168Z",
+  "updated_at": "2026-11-15T17:46:42.887Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_connection_verified": true,
-  "decision": "TT008_TWO_PUBLISHED_TT007_TWO_RESERVED_TT009_SHOT_LIMIT_REPAIRED_AND_BUILD_UNDER_WAY",
+  "decision": "EIGHT_PUBLISHED_TT007_TWO_RESERVED_TT009_RENDER_SUCCESS_FINAL_REVIEW_PENDING_ACTIVE_CLAIM",
   "quota": {
     "month": "2026-11",
     "observed_used": 8,
-    "observed_at": "2026-11-15T17:23:40.168Z",
-    "calendar_checked_at": "2026-11-15T17:23:40.168Z",
+    "observed_at": "2026-11-15T17:46:42.887Z",
+    "calendar_checked_at": "2026-11-15T17:46:42.887Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -75,7 +75,7 @@
     "verified_destination_receipts": 2,
     "producer_due": "2026-11-15T10:00:00+01:00",
     "hard_readiness_due": "2026-11-16T23:59:59+01:00",
-    "status": "PARTIAL: Tuesday TT-007 approved on both networks; TT-009 Friday shot timing was repaired with a new evidence-bound storyboard review and GitHub build 43740595648 is in progress; no exact export release or provider reservations yet"
+    "status": "PARTIAL: Tuesday TT-007 both provider reservations verified; Friday TT-009 new intact-ant render/deploy/public-byte verification 43741853856 passed, but independent exact-export release and both provider reservations remain pending under a different active run claim"
   },
   "recurring_tasks": [
     {
@@ -102,7 +102,7 @@
   ],
   "deployment_and_media": "TT-008 source page and public/provider video+cover verified; exact released hashes retained.",
   "review_limit": "New TT-008 exact export release recorded; only reviews actually performed are claimed.",
-  "automatic_next_step": "Finish current TT-009 standard-hosted build, inspect exact encoded export independently, pass release and public-byte gates, then schedule only two missing Friday destinations after fresh claim/intent/duplicate and quota checks. Do not touch TT-007 or published TT-008.",
+  "automatic_next_step": "Existing owner of unexpired Friday TT-009 production claim must complete independent encoded export review, exact release, then two Friday provider reservations. This run performed reconciliation only and avoided parallel ownership.",
   "notification_delivery": "ChatGPT task results configured; push/email receipt unverified.",
   "scheduled_posts_returned": 12,
   "published_provider_receipts": 8,
@@ -110,7 +110,7 @@
     "TT-007-REEL",
     "TT-007-YOUTUBE-SHORT"
   ],
-  "last_successful_deployment_run": 43439354073,
+  "last_successful_deployment_run": 43741853856,
   "validation": {
     "script_tests": 150,
     "automation_tests": 104,
@@ -119,7 +119,7 @@
     "provider_byte_verification_run": 43431286055,
     "latest_watchdog_run": 43731888649,
     "latest_watchdog_conclusion": "success",
-    "latest_build_run": 43740595648,
+    "latest_build_run": 43741853856,
     "latest_build_verified_steps": [
       "build",
       "deploy",
@@ -127,10 +127,11 @@
     ],
     "latest_paper_retrieval_run": 43439354279,
     "latest_paper_retrieval_conclusion": "success",
-    "fresh_live_metricool_reconciliation_at": "2026-11-15T17:23:40.168Z",
-    "latest_build_conclusion": "in_progress",
+    "fresh_live_metricool_reconciliation_at": "2026-11-15T17:46:42.887Z",
+    "latest_build_conclusion": "success",
     "latest_build_failure_step": null,
-    "latest_build_failure_cause": null
+    "latest_build_failure_cause": null,
+    "claim_ownership_verified": true
   },
   "current_one_off": {
     "episode_id": "TT-008",
@@ -141,7 +142,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-15T17:23:40.168Z",
+    "checked_at": "2026-11-15T17:46:42.887Z",
     "brand_id": "7937614",
     "accounts": {
       "instagram": "toxic_tales_eco",
@@ -189,22 +190,32 @@
       }
     ],
     "unused_or_missing": [
-      "2026-11-20 Instagram release and receipt pending",
-      "2026-11-20 YouTube release and receipt pending"
+      "Friday 20 Nov Instagram TT-009 unsubmitted; exact release pending independent review",
+      "Friday 20 Nov YouTube TT-009 unsubmitted; exact release pending independent review"
     ],
     "open_readiness_issues": 0,
-    "duplicate_checks": "12 unique provider UUIDs; eight PUBLISHED; no new provider writes; TT-008 one-off only 14:10 entries",
+    "duplicate_checks": "12 unique provider UUIDs; 8 PUBLISHED, 2 PENDING active, 2 retired/held drafts; no new provider writes",
     "blockers": [],
     "routine_recovery": {
       "episode_id": "TT-009",
-      "latest_failed_run": 43698889550,
-      "root_cause": "Shot exceeds 8 seconds",
-      "resolved_source_commit": "cd216b780b75feda14cbe73a2447d0e4dc3faef4",
-      "new_build_run": 43740595648,
-      "build_status": "in_progress",
-      "production_claim_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-15T17:15:49Z",
-      "independent_export_pending": true,
+      "owner_claim": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-15T17:15:49Z",
+      "claim_expires_at": "2026-11-15T21:15:49Z",
+      "claim_currently_active": true,
+      "latest_render_workflow": 43741853856,
+      "render_status": "build/deploy/verify-public-media SUCCESS",
+      "release_record_exists": false,
+      "independent_exact_export_review": "pending",
+      "friday_provider_receipts": 0,
+      "action": "Skip parallel claim; existing owner must independently review exact exported ant film, release approved byte hashes, then schedule both missing Friday destinations under quota/intent/CAS gates",
       "owner_action_required": false
     }
+  },
+  "claim_coordination": {
+    "checked_at": "2026-11-15T17:46:42.887Z",
+    "claim_key": "production:2026-11-20",
+    "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-15T17:15:49Z",
+    "expires_at": "2026-11-15T21:15:49Z",
+    "observed_status": "in_progress",
+    "this_run_action": "read_only_skip_active_claim"
   }
 }
