@@ -82,7 +82,7 @@
     },
     "production:2026-11-20": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-15T17:15:49Z",
-      "phase": "recover_shot_over_eight_seconds_after_verified_no_provider_submission",
+      "phase": "licensed_full_ant_repair_render_queued_after_independent_rejection_of_head_crop",
       "claimed_at": "2026-11-15T17:15:49Z",
       "expires_at": "2026-11-15T21:15:49Z",
       "status": "in_progress",
@@ -97,10 +97,10 @@
       "evidence_file": "evidence/tt-009.md",
       "episode_file": "episodes/tt-009.json",
       "science_source": "PMC2719796",
-      "asset_pin_sha256": "1ae4f39347882c4825f19dd84438620005b5936ccc07f0455396854d0d074bec",
-      "asset_pin_action_run": 43698418899,
-      "quality_status": "source reviewed; encoded film and independent final export pending",
-      "last_render_failure": "Build 43698889550 failed: motion shot length exceeds eight seconds; plan to split existing story scenes without changing evidence or narration; release still pending",
+      "asset_pin_sha256": "8f3bde49adf80825320854e0943c2bbb17ad3f273e6d90e4476d722b474222a1",
+      "asset_pin_action_run": 43741444847,
+      "quality_status": "revised source/pre-render pass; new exact final encoded export and independent review pending",
+      "last_render_failure": "Previous e682f826 version rendered and deployed, but independent frame review rejected its unrecognisable cropped head-only photo and weak visual explanation. Whole-ant 960px dorsal source with CC BY 4.0 and SHA pin is now prepared; final render/review required.",
       "recovery_from_owner": "6aeefcb926708191b092554230783da1:2026-11-15T09:59:06+01:00",
       "reconciliation": {
         "calendar_checked": "2026-11-15T17:17:41Z",
@@ -108,6 +108,14 @@
         "friday_20_youtube_exists": false,
         "intents_exist": false,
         "producer_run_completed": true
+      },
+      "render_attempt": {
+        "source_commit": "ef1cfbf56d1c85dc95efa8cf1d3c67d2fbfcd3b7",
+        "workflow_run_id": 43741853856,
+        "status": "pending",
+        "previous_unreleased_export": "e682f82673dbf52080739a117bb666f844086be0c46d56e65b3f83896db5fa00",
+        "old_preview_rejected": true,
+        "provider_receipts": 0
       }
     }
   },
