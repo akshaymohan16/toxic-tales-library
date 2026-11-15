@@ -23,8 +23,8 @@ jobs:
           assert j['licence'] == 'CC BY 4.0'
           url = j['url']
           parsed = urllib.parse.urlparse(url)
-          assert parsed.scheme == 'https' and parsed.hostname == 'upload.wikimedia.org'
-          assert parsed.path == '/wikipedia/commons/4/4c/Cataglyphis_cursor_creticus_casent0102116_head_1.jpg'
+          assert parsed.scheme == 'https' and parsed.hostname == 'thumb.wikimedia.org'
+          assert parsed.path == '/wikipedia/commons/thumb/4/4c/Cataglyphis_cursor_creticus_casent0102116_head_1.jpg/330px-Cataglyphis_cursor_creticus_casent0102116_head_1.jpg'
           req = urllib.request.Request(url, headers={'User-Agent':'ToxicTalesAssetPin/1.0 (research reproduction)'})
           h = hashlib.sha256()
           size = 0
@@ -37,7 +37,7 @@ jobs:
                   size += len(chunk)
                   assert size <= 2500000
                   h.update(chunk)
-          assert 500000 < size < 800000
+          assert 10000 < size < 500000
           print('ASSET_PIN_RESULT',json.dumps({'url':url, 'bytes':size,
                 'sha256':h.hexdigest(),'licence':'CC BY 4.0',
                 'source':'https://commons.wikimedia.org/wiki/File:Cataglyphis_cursor_creticus_casent0102116_head_1.jpg'}))
