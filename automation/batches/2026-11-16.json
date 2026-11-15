@@ -4,7 +4,7 @@
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-15T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-16",
-  "status": "friday_TT009_pre_render_science_ready_action_build_requested",
+  "status": "friday_TT009_retry_render_accepted_thumbnail",
   "slots": [
     {
       "date": "2026-11-17T10:00:00+01:00",
@@ -59,7 +59,7 @@
     "Automation_991690d6af648191ac8037cfa96c92a0"
   ],
   "new_task_created": false,
-  "updated_at": "2026-11-15T09:14:00Z",
+  "updated_at": "2026-11-15T09:17:00Z",
   "last_provider_reconciled_at": "2026-11-14T17:17:37.639Z",
   "provider_reconciliation": {
     "checked_at": "2026-11-14T17:17:37.639Z",
@@ -89,11 +89,13 @@
     "screened_candidates": 8,
     "cached_fulltext_read": true,
     "media_asset_licence": "CC BY 4.0 verified Wikimedia",
-    "asset_pin_run": 43697926120,
-    "asset_sha256": "65ccc22f9b73ccd56a9d517d106d2530fae7d770ef70dfbe91dd450e4489defb",
+    "asset_pin_run": 43698418899,
+    "asset_sha256": "1ae4f39347882c4825f19dd84438620005b5936ccc07f0455396854d0d074bec",
     "pre_render_review_complete": true,
     "encoded_export_review_complete": false,
     "external_writes": 0,
-    "creation_notifications": 0
+    "creation_notifications": 0,
+    "first_render_attempt": "failed_http_429_original_wikimedia_image",
+    "current_render_attempt": "pending_supported_thumbnail"
   }
 }

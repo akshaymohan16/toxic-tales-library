@@ -94,14 +94,14 @@
     "assets": [
       {
         "id": "cursor_reference",
-        "filename": "cataglyphis-cursor-creticus-antweb.jpg",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Cataglyphis_cursor_creticus_casent0102116_head_1.jpg",
+        "filename": "cataglyphis-cursor-creticus-antweb-330px.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Cataglyphis_cursor_creticus_casent0102116_head_1.jpg/330px-Cataglyphis_cursor_creticus_casent0102116_head_1.jpg",
         "source_page": "https://commons.wikimedia.org/wiki/File:Cataglyphis_cursor_creticus_casent0102116_head_1.jpg",
         "creator": "April Nobile / AntWeb.org",
         "license": "CC BY 4.0",
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
-        "changes": "Portrait crop, color treatment and gentle editorial camera movement over still; a related Cataglyphis cursor creticus reference specimen, NOT experimental Cataglyphis cursor rescue footage",
-        "sha256": "65ccc22f9b73ccd56a9d517d106d2530fae7d770ef70dfbe91dd450e4489defb",
+        "changes": "Wikimedia supported 330px reference specimen thumbnail; upscaled editorial portrait crop with gently moving camera, explicitly related subspecies rather than rescue test footage; fallback after original CDN 429",
+        "sha256": "1ae4f39347882c4825f19dd84438620005b5936ccc07f0455396854d0d074bec",
         "focus": [
           0.5,
           0.5
@@ -417,7 +417,7 @@
   "editorial_review": {
     "standard": "story-first-v1",
     "reviewer": "Toxic Tales pre-render science-story editor (weekly producer)",
-    "reviewed_at": "2026-11-15T09:12:00Z",
+    "reviewed_at": "2026-11-15T09:17:00Z",
     "decision": "pass",
     "checks": {
       "cold_viewer": {
@@ -451,6 +451,6 @@
         "basis": "Focal original Results, Methods and Discussion, with context reviews separated from observed evidence."
       }
     },
-    "source_sha256": "439638d6f31b4f60c9a6c90f4167e48eac6eadf942aa243df1785cd66f3aecee"
+    "source_sha256": "6c580c831bd85cb38bf04d583373fefc24721bf2283ac713a45b2583b8568464"
   }
 }

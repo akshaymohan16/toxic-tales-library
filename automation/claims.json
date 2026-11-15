@@ -82,7 +82,7 @@
     },
     "production:2026-11-20": {
       "owner_run_id": "6aeefcb926708191b092554230783da1:2026-11-15T09:59:06+01:00",
-      "phase": "science_pre_render_complete_workflow_requested",
+      "phase": "retry_render_after_external_429",
       "claimed_at": "2026-11-15T08:59:06Z",
       "expires_at": "2026-11-15T12:59:06Z",
       "status": "in_progress",
@@ -97,9 +97,10 @@
       "evidence_file": "evidence/tt-009.md",
       "episode_file": "episodes/tt-009.json",
       "science_source": "PMC2719796",
-      "asset_pin_sha256": "65ccc22f9b73ccd56a9d517d106d2530fae7d770ef70dfbe91dd450e4489defb",
-      "asset_pin_action_run": 43697926120,
-      "quality_status": "source reviewed; encoded film and independent final export pending"
+      "asset_pin_sha256": "1ae4f39347882c4825f19dd84438620005b5936ccc07f0455396854d0d074bec",
+      "asset_pin_action_run": 43698418899,
+      "quality_status": "source reviewed; encoded film and independent final export pending",
+      "last_render_failure": "2026-11-15 original Wikimedia CDN HTTP429; switch to verified supported thumbnail"
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
