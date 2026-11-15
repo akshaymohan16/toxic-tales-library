@@ -45,9 +45,9 @@ jobs:
       - name: Build reviewed stories and media
         env:
           OMP_NUM_THREADS: '2'
-        run: python scripts/build_current.py
+        run: python scripts/build_next.py
       - name: Package exact encoded frames for current film reviews
-        run: python scripts/package_review.py --current
+        run: python scripts/package_review_next.py --current
       - name: Save compact encoded review packages
         uses: actions/upload-artifact@v4
         with:

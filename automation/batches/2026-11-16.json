@@ -4,7 +4,7 @@
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-15T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-16",
-  "status": "partial_tuesday_both_reserved_friday_due_sunday_production",
+  "status": "friday_TT009_pre_render_science_ready_action_build_requested",
   "slots": [
     {
       "date": "2026-11-17T10:00:00+01:00",
@@ -29,14 +29,22 @@
       "date": "2026-11-20T10:00:00+01:00",
       "platform": "instagram",
       "format": "REEL",
-      "status": "new_paper_and_video_pending_sunday_production"
+      "status": "source_created_pending_render_and_independent_export_review",
+      "episode_id": "TT-009",
+      "doi": "10.1371/journal.pone.0006573",
+      "release_approved": false,
+      "provider_receipt_verified": false
     },
     {
       "date": "2026-11-20T10:00:00+01:00",
       "platform": "youtube",
       "format": "SHORT",
       "source_slot": "friday",
-      "status": "awaiting_same_friday_video"
+      "status": "source_created_pending_render_and_independent_export_review",
+      "episode_id": "TT-009",
+      "doi": "10.1371/journal.pone.0006573",
+      "release_approved": false,
+      "provider_receipt_verified": false
     }
   ],
   "quality_policy": "Full original paper and correction check, claim-level evidence, independent final encoded story/branding/visual and narration verification, exact public media hashes, fresh provider monthly quota and duplicate validation. Never publish unreviewed content merely to satisfy a date.",
@@ -51,7 +59,7 @@
     "Automation_991690d6af648191ac8037cfa96c92a0"
   ],
   "new_task_created": false,
-  "updated_at": "2026-11-14T17:17:37.639Z",
+  "updated_at": "2026-11-15T09:14:00Z",
   "last_provider_reconciled_at": "2026-11-14T17:17:37.639Z",
   "provider_reconciliation": {
     "checked_at": "2026-11-14T17:17:37.639Z",
@@ -72,5 +80,20 @@
     "latest_watchdog_run": 43609392090,
     "latest_watchdog_conclusion": "success",
     "note": "Exactly 2/4 destinations have scheduled provider receipts as of Saturday evening; Sunday producer window has not yet begun. TT008 owner-authorized one-off separately confirmed published on both destinations."
+  },
+  "sunday_run": {
+    "claim_owner": "6aeefcb926708191b092554230783da1:2026-11-15T09:59:06+01:00",
+    "source_episode": "TT-009",
+    "pmcid": "PMC2719796",
+    "paper_doi": "10.1371/journal.pone.0006573",
+    "screened_candidates": 8,
+    "cached_fulltext_read": true,
+    "media_asset_licence": "CC BY 4.0 verified Wikimedia",
+    "asset_pin_run": 43697926120,
+    "asset_sha256": "65ccc22f9b73ccd56a9d517d106d2530fae7d770ef70dfbe91dd450e4489defb",
+    "pre_render_review_complete": true,
+    "encoded_export_review_complete": false,
+    "external_writes": 0,
+    "creation_notifications": 0
   }
 }

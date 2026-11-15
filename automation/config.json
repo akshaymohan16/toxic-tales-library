@@ -129,7 +129,7 @@
   "branding_supplement": "quality/BRANDING_STANDARD.md",
   "future_reel_renderer": "nature-motion-10",
   "motion_supplement": "quality/MOTION_STANDARD.md",
-  "production_entrypoint": "scripts/build_current.py",
+  "production_entrypoint": "scripts/build_next.py",
   "canonical_brand_asset": "assets/branding/toxic-tales-logo.json",
   "future_reel_renderer_required": true,
   "reels_only_effective_at": "2026-11-13T00:00:00+01:00",
@@ -175,5 +175,6 @@
     "download_is_not_review": true,
     "platform_permission_controls_unchanged": true,
     "authorized_on": "2026-11-13"
-  }
+  },
+  "production_entrypoint_versioning_note": "TT-009 uses additive scripts/build_next.py and production_ants.py; frozen TT-002..TT-008 bytes and renderer dependencies must remain unchanged."
 }

@@ -1,0 +1,456 @@
+{
+  "id": "TT-009",
+  "slug": "tt-009-ants-bite-the-restraint",
+  "title": "The ants that bit the trap",
+  "hook": "A trapped ant. A hidden thread. The colony workers targeted the restraint.",
+  "doi": "10.1371/journal.pone.0006573",
+  "paper_title": "Ants, Cataglyphis cursor, Use Precisely Directed Rescue Behavior to Free Entrapped Relatives",
+  "citation": "Nowbahari, Scohier, Durand & Hollis (2009), PLOS ONE 4(8):e6573",
+  "tags": [
+    "ants",
+    "animal behaviour",
+    "rescue behaviour",
+    "ecology"
+  ],
+  "summary": "A controlled study of Cataglyphis cursor found precisely directed rescue behaviors, including nylon-snare biting, only for active colony-mates in nine group tests; no rescue appeared in the other 45 group tests.",
+  "evidence_note": "Nine group tests per six conditions across three laboratory colonies; group of five workers is the unit, and only 1-3 helped in positive trials. Rescue in artificial thread traps neither establishes empathy nor victim release success.",
+  "source_url": "https://doi.org/10.1371/journal.pone.0006573",
+  "review_status": "verified_full_text",
+  "publication_enabled": true,
+  "is_ai_generated": true,
+  "batch_id": "2026-11-16",
+  "slides": [],
+  "evidence_file": "evidence/tt-009.md",
+  "checks": {
+    "full_text": true,
+    "design": true,
+    "findings": true,
+    "limitations": true,
+    "rights": true
+  },
+  "evidence": {
+    "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2719796/",
+    "checked_at": "2026-11-15",
+    "design": "Three source colonies, six experimental conditions with three tests per colony; 54 groups of five worker ants, 9 group trials per condition. Each 7-minute test used a nylon thread and concealed paper disc; worker groups were statistical replicates.",
+    "claims": [
+      {
+        "claim": "A nylon loop held a partly buried ant to concealed paper in a laboratory test.",
+        "location": "Results initial setup; Materials and Methods nylon/filter paper apparatus."
+      },
+      {
+        "claim": "Workers dug sand, pulled legs and repeatedly bit the nylon snare itself.",
+        "location": "Results 54 tests behavior paragraph; Discussion opening."
+      },
+      {
+        "claim": "Rescue occurred in each of nine active nestmate group tests and none of 45 alternative condition group tests.",
+        "location": "Results across 54 tests, first comparison paragraph."
+      },
+      {
+        "claim": "Only one to three workers from each group of five took part in rescue behavior.",
+        "location": "Materials and Methods, paragraph 'Although, as described above'."
+      },
+      {
+        "claim": "Exact eliciting cues, emotions and wild rescue rates were not established.",
+        "location": "Discussion pheromone hypothesis; Methods artificial test and confined group."
+      }
+    ],
+    "limitations": [
+      "Only three laboratory colonies with nine group trials per treatment; groups of five, not 45 independent ants, were the condition replicates.",
+      "Only 1–3 of 5 workers in positive trials performed rescue; this is not universal participation.",
+      "An artificially tied nylon snare and confined seven-minute test do not establish behavior frequencies in wild natural traps.",
+      "Thread biting does not prove that every snare was cut or every ant freed.",
+      "The cue, empathic experience, and precise causal mechanism were not directly measured.",
+      "Source paper supplement audiovisual files were listed but not in the cached text; no supplemental footage or data claims have been made.",
+      "The reference still depicts a taxonomically related subspecies, not the original experiment's photographed workers."
+    ],
+    "correction_check": "Original PubMed/PLOS DOI, 15 November 2026, and keyword searches for correction, erratum or retraction checked; no linked notice was identified in that search, without guarantee of absence.",
+    "access_note": "Reviewed the full cached main paper Introduction, Results, Discussion, Materials and Methods and supporting figure captions; the separate video supplements were not viewed and no claim requiring them is made. Official-API request-hash report and metadata matched."
+  },
+  "production": {
+    "renderer": "nature-motion-10",
+    "scene_family": "cataglyphis-rescue-2009",
+    "editorial_style": "science-journalism",
+    "editorial_standard": "story-first-v1",
+    "visual_standard": "nature-visuals-v1",
+    "branding_standard": "toxic-tales-branding-v1",
+    "script_author": "weekly_producer_science_editor",
+    "voice_speed": 1.04,
+    "cover_asset": "cursor_reference",
+    "cover_focus": [
+      0.5,
+      0.5
+    ],
+    "cover_kicker": "RELATED SUBSPECIES REFERENCE PHOTO",
+    "cover_title": "Ants that\nbite the trap?",
+    "cover_subtitle": "A hidden thread became their target",
+    "takeaway": "In controlled trials, some C. cursor workers dug sand and repeatedly targeted the nylon snare restraining an active colony-mate.",
+    "critical_terms": [
+      "ant",
+      "nylon",
+      "thread",
+      "nestmate",
+      "rescue"
+    ],
+    "assets": [
+      {
+        "id": "cursor_reference",
+        "filename": "cataglyphis-cursor-creticus-antweb.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Cataglyphis_cursor_creticus_casent0102116_head_1.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Cataglyphis_cursor_creticus_casent0102116_head_1.jpg",
+        "creator": "April Nobile / AntWeb.org",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Portrait crop, color treatment and gentle editorial camera movement over still; a related Cataglyphis cursor creticus reference specimen, NOT experimental Cataglyphis cursor rescue footage",
+        "sha256": "65ccc22f9b73ccd56a9d517d106d2530fae7d770ef70dfbe91dd450e4489defb",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "speech": "An ant is trapped under sand. Nearby workers uncover the nylon thread holding it in place—and then some bite the thread itself.",
+        "captions": [
+          "An ant is trapped under sand. Nearby",
+          "workers uncover the nylon thread holding",
+          "it in place—and then some bite the thread",
+          "itself."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "portrait",
+            "title": "An ant\nin trouble",
+            "kicker": "REFERENCE SPECIMEN",
+            "start": 0,
+            "end": 0.28,
+            "asset": "cursor_reference"
+          },
+          {
+            "kind": "ant_trap",
+            "title": "An ant caught\nunder sand",
+            "kicker": "LABORATORY TEST",
+            "start": 0.28,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "In a laboratory test, researchers tethered one ant to a hidden paper disc. Five workers from its colony had seven minutes to respond.",
+        "captions": [
+          "In a laboratory test, researchers tethered",
+          "one ant to a hidden paper disc. Five",
+          "workers from its colony had seven minutes",
+          "to respond."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "ant_trap",
+            "title": "A hidden restraint",
+            "kicker": "THE SETUP",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "They dug through sand, carried grains away, and pulled at the trapped ant's legs. That exposed the thread.",
+        "captions": [
+          "They dug through sand, carried grains",
+          "away, and pulled at the trapped ant's",
+          "legs. That exposed the thread."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "ant_dig",
+            "title": "Move the sand.\nFind the restraint.",
+            "kicker": "THE RESCUE SEQUENCE",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Then rescuers repeatedly bit the nylon snare. The study did not establish that every ant was freed or that every thread was cut.",
+        "captions": [
+          "Then rescuers repeatedly bit the nylon",
+          "snare. The study did not establish that",
+          "every ant was freed or that every thread",
+          "was cut."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "ant_thread",
+            "title": "They bit\nthe thread",
+            "kicker": "THE UNEXPECTED TARGET",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "But did the workers react to anything trapped? The researchers compared active nestmates with strangers, prey, a motionless nestmate, and an empty snare.",
+        "captions": [
+          "But did the workers react to anything",
+          "trapped? The researchers compared active",
+          "nestmates with strangers, prey, a",
+          "motionless nestmate, and an empty snare."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "ant_comparison",
+            "title": "Who gets help?",
+            "kicker": "SIX LAB CONDITIONS",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Rescue occurred in all nine tests with active nestmates, and in none of the other forty-five group tests.",
+        "captions": [
+          "Rescue occurred in all nine tests with",
+          "active nestmates, and in none of the other",
+          "forty-five group tests."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "ant_findings",
+            "title": "Selective rescue",
+            "kicker": "THE REPORTED RESULT",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Even in the rescue tests, only one to three workers from each group of five took part. The group, not each worker, was the replicate.",
+        "captions": [
+          "Even in the rescue tests, only one to",
+          "three workers from each group of five took",
+          "part. The group, not each worker, was the",
+          "replicate."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "ant_workers",
+            "title": "Not every ant\ntook part",
+            "kicker": "A CRUCIAL DETAIL",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "These were artificial traps. The experiments did not measure empathy, wild rescue rates, or precisely how the workers detected a trapped nestmate.",
+        "captions": [
+          "These were artificial traps. The",
+          "experiments did not measure empathy, wild",
+          "rescue rates, or precisely how the workers",
+          "detected a trapped nestmate."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "ant_limit",
+            "title": "What we\ncannot conclude",
+            "kicker": "THE LIMIT",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "The striking finding is more precise: some ants found and repeatedly bit the object holding a colony-mate down.",
+        "captions": [
+          "The striking finding is more precise: some",
+          "ants found and repeatedly bit the object",
+          "holding a colony-mate down."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "ant_close",
+            "title": "A precise\nkind of help",
+            "kicker": "WHAT THE STUDY SHOWED",
+            "start": 0,
+            "end": 0.65
+          },
+          {
+            "kind": "closing",
+            "title": "A rescue of\na different kind",
+            "kicker": "RELATED SUBSPECIES PHOTO",
+            "start": 0.65,
+            "end": 1,
+            "asset": "cursor_reference"
+          }
+        ]
+      }
+    ],
+    "logo": {
+      "asset": "assets/branding/toxic-tales-logo.json",
+      "sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+      "placement": "Official Toxic Tales flask/plant/Asellus logo visible at upper left from first frame within phone-safe area",
+      "forbid": [
+        "footer",
+        "progress bar",
+        "field notes"
+      ],
+      "credits_in_caption": true
+    },
+    "motion": {
+      "schema_version": 1,
+      "evidence_sha256": "d6fc3c7a219a1cd3a6db671d15d1a5aa79907ea48a6e0552f3b77aa43deda82c"
+    }
+  },
+  "editorial_story": {
+    "audience": "Adults interested in nature and social insects, without assuming ants share human emotional states.",
+    "subject": "Cataglyphis cursor ant workers encountering a colony-mate restrained by nylon thread in a sand-filled artificial laboratory test.",
+    "setting": "Six test conditions, three source colonies, nine seven-minute group trials per condition.",
+    "opening_context": "A clear trapped ant and nylon restraint shown in conceptual motion, preceded by an identified related-subspecies specimen photo.",
+    "normal_expectation": "An ant may dig near a distressed nestmate, but targeting the inanimate thread rather than only pulling legs requires a more focused action.",
+    "story_selection": "The restraint gives the film a concrete mystery; revealed sand, worker biting, controlled alternatives and small group replication provide a supported payoff.",
+    "decisive_limit": "Artificial tests, groups not individuals as replicates, no proof of feelings, mechanism or how frequently this happens outside the lab.",
+    "question": "Would workers target the thing trapping a nestmate, and would they do the same for other trapped stimuli?",
+    "why_it_matters": "Separates a surprising precise cooperative behavior from anthropomorphic claims that the experiment could not support.",
+    "narrative_arc": "Trapped ant and hidden restraint; apparatus; digging exposes thread; snare-biting; different victims and controls; selective group-trial result; 1–3 worker variation; interpretation limits; narrow payoff.",
+    "closing_payoff": "The workers' bites went to the restraint itself, but only under narrow conditions and without establishing emotional intent.",
+    "context_sources": [
+      {
+        "citation": "Nowbahari et al. (2009), focal original experiment",
+        "url": "https://doi.org/10.1371/journal.pone.0006573",
+        "scope": "All experimental design, observed behavioral patterns and trial counts"
+      },
+      {
+        "citation": "Hollis & Nowbahari (2013), subsequent conceptual review",
+        "url": "https://doi.org/10.1177/147470491301100311",
+        "scope": "Caution about behavioral ecology and rescue interpretation, not focal evidence"
+      },
+      {
+        "citation": "April Nobile / AntWeb.org, related subspecies specimen reference photograph",
+        "url": "https://commons.wikimedia.org/wiki/File:Cataglyphis_cursor_creticus_casent0102116_head_1.jpg",
+        "scope": "Identity illustration only, not focal study animals"
+      }
+    ],
+    "reporting_method": "Read full cached text of focal peer-reviewed 2009 PLOS ONE JATS, reviewed Methods/Results/Discussion, recorded correction check, cross-checked alternative conditions and rights. Supplement binaries unavailable; no claims of viewing them.",
+    "visual_plan": [
+      {
+        "segment": 1,
+        "visual": "Reference close-up of related C. cursor creticus specimen, then moving original schematic of a tethered ant under sand",
+        "purpose": "Identify the ant and establish the puzzling thread rather than stage a supposed wild scene",
+        "source_or_concept": "April Nobile / AntWeb.org Commons CC BY 4.0; original research apparatus schematic",
+        "accuracy_note": "Photo is related subspecies and separately sourced; all lab action is schematic, not recorded"
+      },
+      {
+        "segment": 2,
+        "visual": "The diagram shows a paper disc and nylon loop partly concealed under sand beside a colony worker",
+        "purpose": "Make the restraint and group test intelligible before showing behavior",
+        "source_or_concept": "Nowbahari et al. 2009 Materials and Methods, nylon pedicel loop",
+        "accuracy_note": "Not an exact apparatus scale reconstruction; no simulated elapsed response times"
+      },
+      {
+        "segment": 3,
+        "visual": "Moving schematic sand particles and a worker approaching the partly buried nestmate",
+        "purpose": "Explain how digging and leg pulling exposed the hidden thread",
+        "source_or_concept": "Nowbahari et al. Results sequence of sand removal and limb pulling",
+        "accuracy_note": "Particle trajectories are decorative, not observed measurements"
+      },
+      {
+        "segment": 4,
+        "visual": "Original drawing shows worker near a highlighted loop without depicting a severed thread",
+        "purpose": "Distinguish biting a restraint from biting or freeing the victim",
+        "source_or_concept": "Nowbahari et al. Results snare-biting paragraph",
+        "accuracy_note": "Do not animate a cut or completed release not reported"
+      },
+      {
+        "segment": 5,
+        "visual": "Paired active nestmate versus other test conditions using distinct schematic ant treatment",
+        "purpose": "Show the need for comparisons rather than universal 'help'",
+        "source_or_concept": "Nowbahari et al. Results six conditions",
+        "accuracy_note": "Two-panel summary is not photographic footage of any one trial"
+      },
+      {
+        "segment": 6,
+        "visual": "A fixed 9-of-9 group-trial label beside none-of-45 other group trials",
+        "purpose": "Preserve the exact observed group-level contrast",
+        "source_or_concept": "Results opening 'each of 9' and 'remaining 45'; each group of five was unit",
+        "accuracy_note": "Counts describe laboratory groups, not all individuals or population rates"
+      },
+      {
+        "segment": 7,
+        "visual": "Five labeled conceptual worker ants and text that only one to three took part",
+        "purpose": "Keep worker-level variation and true replication visible",
+        "source_or_concept": "Nowbahari et al. Materials and Methods final paragraphs",
+        "accuracy_note": "Animated grouping does not show measured individual participation"
+      },
+      {
+        "segment": 8,
+        "visual": "An illustrated group beside a restrained diagram and explicit untested interpretation",
+        "purpose": "Prevent empathy and ecological extrapolation",
+        "source_or_concept": "Nowbahari et al. Discussion and controlled apparatus limitations",
+        "accuracy_note": "No conclusion about emotional experience or natural frequency"
+      },
+      {
+        "segment": 9,
+        "visual": "Return to original tether diagram, then related taxon reference photo",
+        "purpose": "Resolve the opening with the narrow 'thread targeted' finding",
+        "source_or_concept": "Nowbahari et al. Results; April Nobile / AntWeb.org photo",
+        "accuracy_note": "Photo is not a victim or experimental animal; no actual study footage used"
+      }
+    ]
+  },
+  "posts": [
+    {
+      "id": "TT-009-REEL",
+      "format": "REEL",
+      "publication_date": "2026-11-20T10:00:00+01:00",
+      "caption": "An ant trapped under sand. A worker finds the nylon holding it down—and bites the thread.\n\nNowbahari and colleagues tested Cataglyphis cursor workers in controlled laboratory groups. In nine group tests with an active colony-mate, workers dug, moved sand, pulled at limbs and sometimes bit the snare. No rescue was observed in 45 tests with other-colony ants, another species, prey, a chilled nestmate or an empty snare.\n\nOnly one to three of the five workers in a responsive group performed rescue. Each five-worker group was the statistical replicate, not every ant. These artificial traps do NOT establish empathy, wild rescue rates or that every victim escaped.\n\nTT-009 | Nowbahari, Scohier, Durand & Hollis (2009), PLOS ONE. DOI: 10.1371/journal.pone.0006573\nFull open-access paper: https://pmc.ncbi.nlm.nih.gov/articles/PMC2719796/\nEvidence, limits and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-009.html\n\nRelated-subspecies ant specimen photo: April Nobile / AntWeb.org, CC BY 4.0, editorial crop (not the experimental ant). All sand/snare/rescue scenes are original conceptual drawings and animations, NOT field footage or recorded trials. Synthetic narration and official Toxic Tales logo.\n\n#ToxicTales #Ants #AnimalBehaviour #Ecology #ScienceCommunication"
+    }
+  ],
+  "editorial_review": {
+    "standard": "story-first-v1",
+    "reviewer": "Toxic Tales pre-render science-story editor (weekly producer)",
+    "reviewed_at": "2026-11-15T09:12:00Z",
+    "decision": "pass",
+    "checks": {
+      "cold_viewer": {
+        "decision": "pass",
+        "finding": "First three seconds name the ant and visible trap rather than hiding the actor behind a generic hook.",
+        "basis": "Opening original narration paired with a clearly flagged related-subspecies reference photo and schematic trap."
+      },
+      "story": {
+        "decision": "pass",
+        "finding": "A coherent causal sequence explains why the worker moved sand and why a nylon bite is the payoff; controls follow to delimit the claim.",
+        "basis": "Nine spoken beats tied to the paper's artificial setup, sequence, controls and group-level replication."
+      },
+      "visuals": {
+        "decision": "pass",
+        "finding": "Separate ant/snare, sand-moving, thread-biting, control and worker-variation scenes show relationships without invented animal trajectories.",
+        "basis": "Visual plan explicitly flags all diagrams as conceptual and the reference taxon as a related subspecies, not experimental video."
+      },
+      "payoff": {
+        "decision": "pass",
+        "finding": "Closing resolves the opening question about the restraint rather than suggesting all ants always cooperate.",
+        "basis": "Opening hidden nylon loop versus closing repeated bites on restraint, bounded by trial controls."
+      },
+      "scope": {
+        "decision": "pass",
+        "finding": "Group-level nine versus 45 result, one-to-three participating workers and artificial-trap scope remain spoken.",
+        "basis": "Narration segments six through eight and primary Results/Methods, with no empathy or thread-cutting claim."
+      },
+      "retelling": {
+        "decision": "pass",
+        "finding": "In a laboratory trap, some worker ants selectively targeted the nylon holding an active nestmate, but this does not show empathy or wild rescue frequency.",
+        "basis": "Focal original Results, Methods and Discussion, with context reviews separated from observed evidence."
+      }
+    },
+    "source_sha256": "439638d6f31b4f60c9a6c90f4167e48eac6eadf942aa243df1785cd66f3aecee"
+  }
+}
