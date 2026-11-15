@@ -96,6 +96,7 @@
     "external_writes": 0,
     "creation_notifications": 0,
     "first_render_attempt": "failed_http_429_original_wikimedia_image",
-    "current_render_attempt": "pending_supported_thumbnail"
+    "current_render_attempt": "pending_supported_thumbnail",
+    "audio_asr_script_repair": "Segment 6 speech/captions made faithful to observed neural voice ASR (45; nest mates). Remaining neural audio and encoded export unverified."
   }
 }

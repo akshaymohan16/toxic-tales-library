@@ -82,7 +82,7 @@
     },
     "production:2026-11-20": {
       "owner_run_id": "6aeefcb926708191b092554230783da1:2026-11-15T09:59:06+01:00",
-      "phase": "pre_render_hash_repaired_rerun",
+      "phase": "fourth_render_attempt_after_asr_text_correction",
       "claimed_at": "2026-11-15T08:59:06Z",
       "expires_at": "2026-11-15T12:59:06Z",
       "status": "in_progress",
@@ -100,7 +100,7 @@
       "asset_pin_sha256": "1ae4f39347882c4825f19dd84438620005b5936ccc07f0455396854d0d074bec",
       "asset_pin_action_run": 43698418899,
       "quality_status": "source reviewed; encoded film and independent final export pending",
-      "last_render_failure": "second attempt pre-render hash unintentionally included review metadata; stripped editor metadata correctly"
+      "last_render_failure": "ASR rendered '45' and 'nest mates', not 'forty-five'/'nestmates'; corrected source and captions without altering evidence"
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."

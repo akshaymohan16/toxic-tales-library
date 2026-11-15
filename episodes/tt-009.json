@@ -88,7 +88,7 @@
       "ant",
       "nylon",
       "thread",
-      "nestmate",
+      "colony",
       "rescue"
     ],
     "assets": [
@@ -212,11 +212,11 @@
         ]
       },
       {
-        "speech": "Rescue occurred in all nine tests with active nestmates, and in none of the other forty-five group tests.",
+        "speech": "Rescue occurred in all nine tests with active nest mates, and in none of the other 45 group tests.",
         "captions": [
           "Rescue occurred in all nine tests with",
-          "active nestmates, and in none of the other",
-          "forty-five group tests."
+          "active nest mates, and in none of the other",
+          "45 group tests."
         ],
         "pause_after": 0.18,
         "shots": [
@@ -417,7 +417,7 @@
   "editorial_review": {
     "standard": "story-first-v1",
     "reviewer": "Toxic Tales pre-render science-story editor (weekly producer)",
-    "reviewed_at": "2026-11-15T09:17:00Z",
+    "reviewed_at": "2026-11-15T09:21:00Z",
     "decision": "pass",
     "checks": {
       "cold_viewer": {
@@ -451,6 +451,6 @@
         "basis": "Focal original Results, Methods and Discussion, with context reviews separated from observed evidence."
       }
     },
-    "source_sha256": "de01435f072e7fe9e422e1784d1983dbf1ec206cca3693f1bdb3b811cd918e0e"
+    "source_sha256": "229839b6fcab1816e28253779b0234da4565feb51c5b83faad6f5876779ac90f"
   }
 }
