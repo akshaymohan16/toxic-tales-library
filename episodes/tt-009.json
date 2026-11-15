@@ -124,14 +124,21 @@
             "title": "An ant\nin trouble",
             "kicker": "REFERENCE SPECIMEN",
             "start": 0,
-            "end": 0.28,
+            "end": 0.25,
             "asset": "cursor_reference"
           },
           {
             "kind": "ant_trap",
-            "title": "An ant caught\nunder sand",
-            "kicker": "LABORATORY TEST",
-            "start": 0.28,
+            "title": "Caught\nunder sand",
+            "kicker": "LABORATORY SETUP",
+            "start": 0.25,
+            "end": 0.63
+          },
+          {
+            "kind": "ant_thread",
+            "title": "The nylon\nis the target",
+            "kicker": "SCHEMATIC RESCUE",
+            "start": 0.63,
             "end": 1
           }
         ]
@@ -148,9 +155,16 @@
         "shots": [
           {
             "kind": "ant_trap",
-            "title": "A hidden restraint",
-            "kicker": "THE SETUP",
+            "title": "A hidden\nrestraint",
+            "kicker": "THE LAB SETUP",
             "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "ant_trap",
+            "title": "Five workers.\nSeven minutes.",
+            "kicker": "THE LAB SETUP",
+            "start": 0.5,
             "end": 1
           }
         ]
@@ -166,9 +180,16 @@
         "shots": [
           {
             "kind": "ant_dig",
-            "title": "Move the sand.\nFind the restraint.",
-            "kicker": "THE RESCUE SEQUENCE",
+            "title": "Digging away\nthe sand",
+            "kicker": "RESCUE ACTION",
             "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "ant_dig",
+            "title": "The nylon\ncomes into view",
+            "kicker": "RESCUE ACTION",
+            "start": 0.5,
             "end": 1
           }
         ]
@@ -188,6 +209,13 @@
             "title": "They bit\nthe thread",
             "kicker": "THE UNEXPECTED TARGET",
             "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "ant_close",
+            "title": "Biting does not\nprove escape",
+            "kicker": "IMPORTANT LIMIT",
+            "start": 0.5,
             "end": 1
           }
         ]
@@ -205,8 +233,15 @@
           {
             "kind": "ant_comparison",
             "title": "Who gets help?",
-            "kicker": "SIX LAB CONDITIONS",
+            "kicker": "SIX CONDITIONS",
             "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "ant_comparison",
+            "title": "Five different\ncontrols",
+            "kicker": "SIX CONDITIONS",
+            "start": 0.5,
             "end": 1
           }
         ]
@@ -222,9 +257,16 @@
         "shots": [
           {
             "kind": "ant_findings",
-            "title": "Selective rescue",
-            "kicker": "THE REPORTED RESULT",
+            "title": "Rescue in\n9 of 9 tests",
+            "kicker": "ACTIVE NESTMATES",
             "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "ant_findings",
+            "title": "None in 45\nother tests",
+            "kicker": "CONTROL CONDITIONS",
+            "start": 0.5,
             "end": 1
           }
         ]
@@ -241,9 +283,16 @@
         "shots": [
           {
             "kind": "ant_workers",
-            "title": "Not every ant\ntook part",
-            "kicker": "A CRUCIAL DETAIL",
+            "title": "Only one to three\nworkers helped",
+            "kicker": "GROUP OF FIVE",
             "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "ant_workers",
+            "title": "Groups, not\nindividuals",
+            "kicker": "REPLICATION",
+            "start": 0.5,
             "end": 1
           }
         ]
@@ -260,9 +309,16 @@
         "shots": [
           {
             "kind": "ant_limit",
-            "title": "What we\ncannot conclude",
-            "kicker": "THE LIMIT",
+            "title": "Artificial\nnylon traps",
+            "kicker": "EXPERIMENTAL SCOPE",
             "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "ant_limit",
+            "title": "Empathy and wild\nrates not tested",
+            "kicker": "SCIENTIFIC LIMITS",
+            "start": 0.5,
             "end": 1
           }
         ]
@@ -416,41 +472,41 @@
   ],
   "editorial_review": {
     "standard": "story-first-v1",
-    "reviewer": "Toxic Tales pre-render science-story editor (weekly producer)",
-    "reviewed_at": "2026-11-15T09:21:00Z",
+    "reviewer": "Toxic Tales publisher recovery: source-level storyboard and scope review",
+    "reviewed_at": "2026-11-15T17:20:40Z",
     "decision": "pass",
     "checks": {
       "cold_viewer": {
         "decision": "pass",
-        "finding": "First three seconds name the ant and visible trap rather than hiding the actor behind a generic hook.",
-        "basis": "Opening original narration paired with a clearly flagged related-subspecies reference photo and schematic trap."
+        "finding": "The first 25 percent of the opening shot shows a named related-subspecies ant specimen; the subsequent sand and nylon scenes immediately clarify that the event is a schematic laboratory scenario. No unrelated opening logo or unexplained pronoun.",
+        "basis": "Opening narration and three-shot plan with reference specimen, trap, then nylon bite; identity/provenance in evidence and captions."
       },
       "story": {
         "decision": "pass",
-        "finding": "A coherent causal sequence explains why the worker moved sand and why a nylon bite is the payoff; controls follow to delimit the claim.",
-        "basis": "Nine spoken beats tied to the paper's artificial setup, sequence, controls and group-level replication."
+        "finding": "The unchanged nine-beat story progresses from a trapped ant through the worker response to the observed snare biting, six control conditions, 9-of-9 versus zero-of-45 group-level outcomes, worker participation and scientific limits. Shortened scenes only divide existing narrative turns; no new claims are introduced.",
+        "basis": "All 9 exact original spoken segments and claim ledger, unchanged research source."
       },
       "visuals": {
         "decision": "pass",
-        "finding": "Separate ant/snare, sand-moving, thread-biting, control and worker-variation scenes show relationships without invented animal trajectories.",
-        "basis": "Visual plan explicitly flags all diagrams as conceptual and the reference taxon as a related subspecies, not experimental video."
+        "finding": "Repaired the over-eight-second encoded-shot failure by dividing each long narration segment into two or three visually purposeful short scenes. The opening now moves from the identified related-subspecies reference photo to a labelled laboratory snare and finally the schematic thread target. Subsequent scene changes follow setup, digging, precise biting, controls, exact group counts, participant variation and limits; they do not invent trajectories, measurements or observations.",
+        "basis": "Nine unchanged narration/caption beats; revised shot fractions and scene kinds in production.segments 1–8; primary evidence/tt-009.md claim locations; each diagram remains a conceptual reconstruction, and reference specimen is not the experimental ant."
       },
       "payoff": {
         "decision": "pass",
-        "finding": "Closing resolves the opening question about the restraint rather than suggesting all ants always cooperate.",
-        "basis": "Opening hidden nylon loop versus closing repeated bites on restraint, bounded by trial controls."
+        "finding": "The visual and spoken payoff remains the workers' precise biting at the holding thread, not a claim of successful cutting or rescue outside the lab.",
+        "basis": "Opening snare sequence, segment four caveat and final original claim; graphical titles explicitly state biting does not prove escape."
       },
       "scope": {
         "decision": "pass",
-        "finding": "Group-level nine versus 45 result, one-to-three participating workers and artificial-trap scope remain spoken.",
-        "basis": "Narration segments six through eight and primary Results/Methods, with no empathy or thread-cutting claim."
+        "finding": "All counts remain group-level nine active-nestmate versus 45 other tests. Narration still says only one to three of five helped, and none of the illustrations claim empathy, every animal freed or a wild rescue frequency.",
+        "basis": "Results and Methods in verified source; segments six through eight retain exact numbers, negations and controls."
       },
       "retelling": {
         "decision": "pass",
-        "finding": "In a laboratory trap, some worker ants selectively targeted the nylon holding an active nestmate, but this does not show empathy or wild rescue frequency.",
-        "basis": "Focal original Results, Methods and Discussion, with context reviews separated from observed evidence."
+        "finding": "In a controlled sand-and-nylon setup, some ants precisely targeted the restraint holding a colony-mate. This does not establish natural rescue frequencies, empathy or that all trapped ants escaped.",
+        "basis": "Current unchanged narration, controls and primary paper claim-level evidence; storyboard is a conceptual visual."
       }
     },
-    "source_sha256": "229839b6fcab1816e28253779b0234da4565feb51c5b83faad6f5876779ac90f"
+    "source_sha256": "63c9d67ce8251bf26bba10edf50507813dcd839a82ec94e60de7e3fcdf3c4ba9"
   }
 }
