@@ -4,7 +4,7 @@
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-15T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-16",
-  "status": "friday_TT009_retry_render_accepted_thumbnail",
+  "status": "friday_TT009_new_render_in_progress_after_shot_split",
   "slots": [
     {
       "date": "2026-11-17T10:00:00+01:00",
@@ -29,7 +29,7 @@
       "date": "2026-11-20T10:00:00+01:00",
       "platform": "instagram",
       "format": "REEL",
-      "status": "source_created_pending_render_and_independent_export_review",
+      "status": "render_repair_in_progress_pending_exact_export_review",
       "episode_id": "TT-009",
       "doi": "10.1371/journal.pone.0006573",
       "release_approved": false,
@@ -40,7 +40,7 @@
       "platform": "youtube",
       "format": "SHORT",
       "source_slot": "friday",
-      "status": "source_created_pending_render_and_independent_export_review",
+      "status": "render_repair_in_progress_pending_exact_export_review",
       "episode_id": "TT-009",
       "doi": "10.1371/journal.pone.0006573",
       "release_approved": false,
@@ -59,10 +59,10 @@
     "Automation_991690d6af648191ac8037cfa96c92a0"
   ],
   "new_task_created": false,
-  "updated_at": "2026-11-15T09:17:00Z",
-  "last_provider_reconciled_at": "2026-11-14T17:17:37.639Z",
+  "updated_at": "2026-11-15T17:24:06.798Z",
+  "last_provider_reconciled_at": "2026-11-15T17:24:06.798Z",
   "provider_reconciliation": {
-    "checked_at": "2026-11-14T17:17:37.639Z",
+    "checked_at": "2026-11-15T17:24:06.798Z",
     "month": "2026-11",
     "account_verified": true,
     "instagram_tuesday_uuid": "-6872348896682359981",
@@ -79,10 +79,10 @@
     "open_readiness_issues": 0,
     "latest_watchdog_run": 43609392090,
     "latest_watchdog_conclusion": "success",
-    "note": "Exactly 2/4 destinations have scheduled provider receipts as of Saturday evening; Sunday producer window has not yet begun. TT008 owner-authorized one-off separately confirmed published on both destinations."
+    "note": "Live November provider readback: 8 confirmed PUBLISHED, TT-007 Tuesday Instagram/YouTube pending, TT-009 Friday no provider UUID yet. Current repair and rendering claimed by existing publisher."
   },
   "sunday_run": {
-    "claim_owner": "6aeefcb926708191b092554230783da1:2026-11-15T09:59:06+01:00",
+    "claim_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-15T17:15:49Z",
     "source_episode": "TT-009",
     "pmcid": "PMC2719796",
     "paper_doi": "10.1371/journal.pone.0006573",
@@ -97,6 +97,12 @@
     "creation_notifications": 0,
     "first_render_attempt": "failed_http_429_original_wikimedia_image",
     "current_render_attempt": "pending_supported_thumbnail",
-    "audio_asr_script_repair": "Segment 6 speech/captions made faithful to observed neural voice ASR (45; nest mates). Remaining neural audio and encoded export unverified."
+    "audio_asr_script_repair": "Segment 6 speech/captions made faithful to observed neural voice ASR (45; nest mates). Remaining neural audio and encoded export unverified.",
+    "recover_from_producer_claim": "6aeefcb926708191b092554230783da1:2026-11-15T09:59:06+01:00",
+    "latest_render_failure": "GitHub build 43698889550: over-eight-second narration-aligned shot, after previous asset 429 and ASR issues were corrected",
+    "latest_recovery_source_commit": "cd216b780b75feda14cbe73a2447d0e4dc3faef4",
+    "latest_reviewed_source_sha256": "63c9d67ce8251bf26bba10edf50507813dcd839a82ec94e60de7e3fcdf3c4ba9",
+    "current_render_run": 43740595648,
+    "current_render_status": "in_progress"
   }
 }
