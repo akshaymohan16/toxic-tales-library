@@ -1,17 +1,17 @@
 {
   "checked_on": "2026-11-15",
-  "updated_at": "2026-11-15T09:15:53.116Z",
+  "updated_at": "2026-11-15T17:23:40.168Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_connection_verified": true,
-  "decision": "TT008_BOTH_PUBLISHED_TT007_TUESDAY_RESERVED_TT009_FRIDAY_BUILD_TRANSIENT_WIKIMEDIA_429_OWNED_BY_SUNDAY_PRODUCER",
+  "decision": "TT008_TWO_PUBLISHED_TT007_TWO_RESERVED_TT009_SHOT_LIMIT_REPAIRED_AND_BUILD_UNDER_WAY",
   "quota": {
     "month": "2026-11",
     "observed_used": 8,
-    "observed_at": "2026-11-15T09:15:53.116Z",
-    "calendar_checked_at": "2026-11-15T09:15:53.116Z",
+    "observed_at": "2026-11-15T17:23:40.168Z",
+    "calendar_checked_at": "2026-11-15T17:23:40.168Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -29,8 +29,8 @@
       "instagram:-3158597333632725768",
       "instagram:8432780738091634663",
       "instagram:2386175407143797944",
-      "instagram:-5193152553705388348",
       "instagram:-7609883982228992318",
+      "instagram:-5193152553705388348",
       "instagram:3555893508354493617",
       "youtube:4422280930322105807",
       "youtube:-6895101637645415437"
@@ -75,7 +75,7 @@
     "verified_destination_receipts": 2,
     "producer_due": "2026-11-15T10:00:00+01:00",
     "hard_readiness_due": "2026-11-16T23:59:59+01:00",
-    "status": "PARTIAL: TT-007 Tue 17 Nov Instagram+YouTube confirmed PENDING; TT-009 Fri 20 Nov source/pre-render completed by Sunday producer but current GitHub build failed on external Wikimedia HTTP 429 before encoded release. Active production claim belongs to Sunday producer; no parallel retry or submission."
+    "status": "PARTIAL: Tuesday TT-007 approved on both networks; TT-009 Friday shot timing was repaired with a new evidence-bound storyboard review and GitHub build 43740595648 is in progress; no exact export release or provider reservations yet"
   },
   "recurring_tasks": [
     {
@@ -102,7 +102,7 @@
   ],
   "deployment_and_media": "TT-008 source page and public/provider video+cover verified; exact released hashes retained.",
   "review_limit": "New TT-008 exact export release recorded; only reviews actually performed are claimed.",
-  "automatic_next_step": "Existing Sunday producer owns TT-009 Friday production and must repair temporary Wikimedia 429 asset retrieval before independent exact-export review, public-byte verification and both provider reservations. Publisher preserves existing TT-007 bookings and rechecks producer status and provider calendar later.",
+  "automatic_next_step": "Finish current TT-009 standard-hosted build, inspect exact encoded export independently, pass release and public-byte gates, then schedule only two missing Friday destinations after fresh claim/intent/duplicate and quota checks. Do not touch TT-007 or published TT-008.",
   "notification_delivery": "ChatGPT task results configured; push/email receipt unverified.",
   "scheduled_posts_returned": 12,
   "published_provider_receipts": 8,
@@ -117,9 +117,9 @@
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
     "provider_byte_verification_run": 43431286055,
-    "latest_watchdog_run": 43698150828,
+    "latest_watchdog_run": 43731888649,
     "latest_watchdog_conclusion": "success",
-    "latest_build_run": 43698150877,
+    "latest_build_run": 43740595648,
     "latest_build_verified_steps": [
       "build",
       "deploy",
@@ -127,10 +127,10 @@
     ],
     "latest_paper_retrieval_run": 43439354279,
     "latest_paper_retrieval_conclusion": "success",
-    "fresh_live_metricool_reconciliation_at": "2026-11-15T09:15:53.116Z",
-    "latest_build_conclusion": "failure",
-    "latest_build_failure_step": "Build reviewed stories and media",
-    "latest_build_failure_cause": "Wikimedia-hosted source photograph HTTP 429 rate limit while rendering TT-009; external source temporarily unavailable, no released bytes produced"
+    "fresh_live_metricool_reconciliation_at": "2026-11-15T17:23:40.168Z",
+    "latest_build_conclusion": "in_progress",
+    "latest_build_failure_step": null,
+    "latest_build_failure_cause": null
   },
   "current_one_off": {
     "episode_id": "TT-008",
@@ -141,7 +141,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-15T09:15:53.116Z",
+    "checked_at": "2026-11-15T17:23:40.168Z",
     "brand_id": "7937614",
     "accounts": {
       "instagram": "toxic_tales_eco",
@@ -158,55 +158,52 @@
         "platform": "instagram",
         "uuid": "-6872348896682359981",
         "metricool_id": "426842509",
-        "date": "2026-11-17T10:00:00+01:00",
         "status": "PENDING",
-        "draft": false,
-        "autoPublish": true
+        "date": "2026-11-17T10:00:00+01:00",
+        "autoPublish": true,
+        "draft": false
       },
       {
         "post_id": "TT-007-YOUTUBE-SHORT",
         "platform": "youtube",
         "uuid": "-6561054799073883973",
         "metricool_id": "426850040",
-        "date": "2026-11-17T10:00:00+01:00",
         "status": "PENDING",
-        "draft": false,
-        "autoPublish": true
+        "date": "2026-11-17T10:00:00+01:00",
+        "autoPublish": true,
+        "draft": false
       }
     ],
     "one_off": [
       {
         "platform": "instagram",
         "uuid": "3555893508354493617",
-        "metricool_id": "426945585",
-        "date": "2026-11-13T14:10:00+01:00",
         "status": "PUBLISHED",
         "public_url": "https://www.instagram.com/reel/DfrtQD-EZiG/"
       },
       {
         "platform": "youtube",
         "uuid": "-6895101637645415437",
-        "metricool_id": "426946098",
-        "date": "2026-11-13T14:10:00+01:00",
         "status": "PUBLISHED",
         "public_url": "https://www.youtube.com/shorts/le2mS8MHcpo"
       }
     ],
     "unused_or_missing": [
-      "2026-11-20 Instagram (not yet released)",
-      "2026-11-20 YouTube (not yet released)"
+      "2026-11-20 Instagram release and receipt pending",
+      "2026-11-20 YouTube release and receipt pending"
     ],
     "open_readiness_issues": 0,
-    "duplicate_checks": "12 unique provider UUIDs; no new provider writes; TT-008 only 14:10 entries and published on both platforms; previously published identities retained",
+    "duplicate_checks": "12 unique provider UUIDs; eight PUBLISHED; no new provider writes; TT-008 one-off only 14:10 entries",
     "blockers": [],
-    "temporary_recoverable_build_problem": {
+    "routine_recovery": {
       "episode_id": "TT-009",
-      "workflow_run": 43698150877,
-      "step": "Build reviewed stories and media",
-      "cause": "HTTP 429 from Wikimedia image source",
-      "production_claim_owner": "6aeefcb926708191b092554230783da1:2026-11-15T09:59:06+01:00",
-      "claim_expires_at": "2026-11-15T12:59:06Z",
-      "parallel_repair_skipped": true,
+      "latest_failed_run": 43698889550,
+      "root_cause": "Shot exceeds 8 seconds",
+      "resolved_source_commit": "cd216b780b75feda14cbe73a2447d0e4dc3faef4",
+      "new_build_run": 43740595648,
+      "build_status": "in_progress",
+      "production_claim_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-15T17:15:49Z",
+      "independent_export_pending": true,
       "owner_action_required": false
     }
   }
