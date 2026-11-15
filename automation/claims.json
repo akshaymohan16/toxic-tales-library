@@ -81,10 +81,10 @@
       ]
     },
     "production:2026-11-20": {
-      "owner_run_id": "6aeefcb926708191b092554230783da1:2026-11-15T09:59:06+01:00",
-      "phase": "fourth_render_attempt_after_asr_text_correction",
-      "claimed_at": "2026-11-15T08:59:06Z",
-      "expires_at": "2026-11-15T12:59:06Z",
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-15T17:15:49Z",
+      "phase": "recover_shot_over_eight_seconds_after_verified_no_provider_submission",
+      "claimed_at": "2026-11-15T17:15:49Z",
+      "expires_at": "2026-11-15T21:15:49Z",
       "status": "in_progress",
       "publication_date": "2026-11-20T10:00:00+01:00",
       "required_destinations": [
@@ -100,7 +100,15 @@
       "asset_pin_sha256": "1ae4f39347882c4825f19dd84438620005b5936ccc07f0455396854d0d074bec",
       "asset_pin_action_run": 43698418899,
       "quality_status": "source reviewed; encoded film and independent final export pending",
-      "last_render_failure": "ASR rendered '45' and 'nest mates', not 'forty-five'/'nestmates'; corrected source and captions without altering evidence"
+      "last_render_failure": "Build 43698889550 failed: motion shot length exceeds eight seconds; plan to split existing story scenes without changing evidence or narration; release still pending",
+      "recovery_from_owner": "6aeefcb926708191b092554230783da1:2026-11-15T09:59:06+01:00",
+      "reconciliation": {
+        "calendar_checked": "2026-11-15T17:17:41Z",
+        "friday_20_instagram_exists": false,
+        "friday_20_youtube_exists": false,
+        "intents_exist": false,
+        "producer_run_completed": true
+      }
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
