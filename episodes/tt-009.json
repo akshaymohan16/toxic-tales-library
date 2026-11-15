@@ -94,17 +94,21 @@
     "assets": [
       {
         "id": "cursor_reference",
-        "filename": "cataglyphis-cursor-creticus-antweb-330px.jpg",
-        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Cataglyphis_cursor_creticus_casent0102116_head_1.jpg/330px-Cataglyphis_cursor_creticus_casent0102116_head_1.jpg",
-        "source_page": "https://commons.wikimedia.org/wiki/File:Cataglyphis_cursor_creticus_casent0102116_head_1.jpg",
+        "filename": "cataglyphis-cursor-creticus-antweb-dorsal-960px.jpg",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Cataglyphis_cursor_creticus_casent0102116_dorsal_1.jpg/960px-Cataglyphis_cursor_creticus_casent0102116_dorsal_1.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Cataglyphis_cursor_creticus_casent0102116_dorsal_1.jpg",
         "creator": "April Nobile / AntWeb.org",
         "license": "CC BY 4.0",
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
-        "changes": "Wikimedia supported 330px reference specimen thumbnail; upscaled editorial portrait crop with gently moving camera, explicitly related subspecies rather than rescue test footage; fallback after original CDN 429",
-        "sha256": "1ae4f39347882c4825f19dd84438620005b5936ccc07f0455396854d0d074bec",
+        "changes": "Pinned 960x695 source photograph of an entire dorsal reference specimen, framed without extreme portrait cropping and with small editorial camera motion; related subspecies only, not the experimental ant or rescue video.",
+        "sha256": "8f3bde49adf80825320854e0943c2bbb17ad3f273e6d90e4476d722b474222a1",
         "focus": [
           0.5,
           0.5
+        ],
+        "source_dimensions": [
+          960,
+          695
         ]
       }
     ],
@@ -363,7 +367,7 @@
     },
     "motion": {
       "schema_version": 1,
-      "evidence_sha256": "d6fc3c7a219a1cd3a6db671d15d1a5aa79907ea48a6e0552f3b77aa43deda82c"
+      "evidence_sha256": "a1a2a382950405bbf268c1aeeda23a7ba02f021f98eb21fffc6792305ac65008"
     }
   },
   "editorial_story": {
@@ -472,41 +476,41 @@
   ],
   "editorial_review": {
     "standard": "story-first-v1",
-    "reviewer": "Toxic Tales publisher recovery: source-level storyboard and scope review",
-    "reviewed_at": "2026-11-15T17:20:40Z",
+    "reviewer": "Independent source/craft reviewer for TT-009 revision (publisher recovery, not original script author)",
+    "reviewed_at": "2026-11-15T17:31:51.157Z",
     "decision": "pass",
     "checks": {
       "cold_viewer": {
         "decision": "pass",
-        "finding": "The first 25 percent of the opening shot shows a named related-subspecies ant specimen; the subsequent sand and nylon scenes immediately clarify that the event is a schematic laboratory scenario. No unrelated opening logo or unexplained pronoun.",
-        "basis": "Opening narration and three-shot plan with reference specimen, trap, then nylon bite; identity/provenance in evidence and captions."
+        "finding": "Planned first frame shows an entire intact ant specimen with recognisable head, thorax and abdomen and an explicit related-subspecies label, before the schematic lab trap and nylon target are introduced. This corrects the original rejected close crop, but requires final export confirmation.",
+        "basis": "First segment narration and three shots, pinned source photograph and replacement photo compositor; pre-render only."
       },
       "story": {
         "decision": "pass",
-        "finding": "The unchanged nine-beat story progresses from a trapped ant through the worker response to the observed snare biting, six control conditions, 9-of-9 versus zero-of-45 group-level outcomes, worker participation and scientific limits. Shortened scenes only divide existing narrative turns; no new claims are introduced.",
-        "basis": "All 9 exact original spoken segments and claim ledger, unchanged research source."
+        "finding": "The revised reference photo lets a first-time viewer recognize an ant before the lab setup; the nine intact spoken beats advance from ant entrapment through thread targeting, controls, observed group counts, worker participation and limitations. No new science was inserted to accommodate the asset.",
+        "basis": "Nine fixed spoken segments with 19 individual shots and current evidence ledger."
       },
       "visuals": {
         "decision": "pass",
-        "finding": "Repaired the over-eight-second encoded-shot failure by dividing each long narration segment into two or three visually purposeful short scenes. The opening now moves from the identified related-subspecies reference photo to a labelled laboratory snare and finally the schematic thread target. Subsequent scene changes follow setup, digging, precise biting, controls, exact group counts, participant variation and limits; they do not invent trajectories, measurements or observations.",
-        "basis": "Nine unchanged narration/caption beats; revised shot fractions and scene kinds in production.segments 1–8; primary evidence/tt-009.md claim locations; each diagram remains a conceptual reconstruction, and reference specimen is not the experimental ant."
+        "finding": "The original encoded TT-009 export was rejected because its 330px head-only photo became an unrecognisable macro fragment in the vertical cover/opening. The replacement source is the accurately identified full-body dorsal specimen of related subspecies Cataglyphis cursor creticus (April Nobile/AntWeb, CC BY 4.0), verified as 960x695 source and byte-pinned by GitHub action 43741444847. The new isolated renderer composes the intact ant within a portrait-safe photographic panel with restrained editorial drift, instead of cropping it to an unidentifiable fragment. The control, trial-count and nylon diagrams remain original conceptual schematics, not recorded study behavior.",
+        "basis": "Wikimedia source/licence page of C. cursor creticus dorsal specimen; action 43741444847 SHA 8f3bde49adf8; independently inspected failed actual TT-009 cover and 19-shot contact sheet; isolated production_ants.Visuals.gradient_photo implementation. New encoded output and phone-scale cover still require independent final review; this is strictly pre-render."
       },
       "payoff": {
         "decision": "pass",
-        "finding": "The visual and spoken payoff remains the workers' precise biting at the holding thread, not a claim of successful cutting or rescue outside the lab.",
-        "basis": "Opening snare sequence, segment four caveat and final original claim; graphical titles explicitly state biting does not prove escape."
+        "finding": "The film still answers why the ant's biting is important by showing a thread-directed conceptual rescue and the controlled comparison. The camera move on the specimen does not imply observed behavioral movement, and the closing remains bounded by lack of wild observation.",
+        "basis": "First/last narrated sequences, complete paper, revised source-photo provenance and conceptual visual plan."
       },
       "scope": {
         "decision": "pass",
-        "finding": "All counts remain group-level nine active-nestmate versus 45 other tests. Narration still says only one to three of five helped, and none of the illustrations claim empathy, every animal freed or a wild rescue frequency.",
-        "basis": "Results and Methods in verified source; segments six through eight retain exact numbers, negations and controls."
+        "finding": "The dorsal photograph is a related subspecies reference specimen and not a filmed C. cursor rescuer, with explicit scene identification and full creator/attribution in evidence. Narration continues to distinguish artificial nylon traps, active nestmate versus 45 control group tests, and one-to-three participating workers; no claims of emotion, universal rescue or measured trajectories.",
+        "basis": "Primary article Results, Methods and Discussion, revised evidence file and unchanged scientifically reviewed narration."
       },
       "retelling": {
         "decision": "pass",
-        "finding": "In a controlled sand-and-nylon setup, some ants precisely targeted the restraint holding a colony-mate. This does not establish natural rescue frequencies, empathy or that all trapped ants escaped.",
-        "basis": "Current unchanged narration, controls and primary paper claim-level evidence; storyboard is a conceptual visual."
+        "finding": "When workers encountered a live nestmate caught by a laboratory nylon snare, some dug and specifically bit the restraint. The experiments cannot show that every ant was freed, that ants felt empathy, or what wild rescue rates are.",
+        "basis": "Nine controlled same-colony versus 45 other group-level tests, explicit main-paper Results and Methods; no supplementary-video claim."
       }
     },
-    "source_sha256": "63c9d67ce8251bf26bba10edf50507813dcd839a82ec94e60de7e3fcdf3c4ba9"
+    "source_sha256": "3102c782d37b5bbae9d2a590caa4d74042d5eca993395c9d951f100fd3e60ca5"
   }
 }
