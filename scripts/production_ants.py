@@ -6,7 +6,7 @@ This is an additive renderer; frozen renderers and existing release bytes are un
 import copy
 import math
 import types
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageOps
 import production_motion as motion
 import production_nature as nature
 from motion_spec import motion_spec_sha256
@@ -51,6 +51,33 @@ class Visuals(motion.Visuals):
             motion.Visuals.__init__.__defaults__, motion.Visuals.__init__.__closure__)
         initialize(self, episode, output, preview, timeline=timeline,
                    artifact_root=artifact_root)
+
+    def gradient_photo(self, key, t=0, focus=None):
+        """Source-specific intact-ant composition; do not crop a landscape specimen
+        into an unrecognisable portrait fragment. Dorsal specimen is a licensed
+        related subspecies, NOT the observed laboratory rescuer.
+        """
+        if key != 'cursor_reference':
+            return super().gradient_photo(key, t, focus)
+        source = self.photos.get(key)
+        if source is None:
+            raise ValueError('Missing pinned full-ant reference specimen')
+        image = self.background.copy()
+        draw = ImageDraw.Draw(image)
+        draw.rounded_rectangle((51, 630, 1029, 1438), radius=32,
+                               fill='#15292b', outline='#4c6b62', width=3)
+        ant = ImageOps.contain(source, (940, 745), Image.Resampling.LANCZOS)
+        phase = motion.ease(max(0.0, min(1.0, t / 8.0)))
+        # Less than 10-pixel editorial drift; no simulated ant movement.
+        dx = int(8 * (phase - .5))
+        dy = int(8 * (.5 - phase))
+        x = (nature.W - ant.width) // 2 + dx
+        y = 656 + (745 - ant.height) // 2 + dy
+        image.paste(ant, (x, y))
+        # Readable, scene-specific provenance instead of a recurring footer.
+        self.type.text(image, 'RELATED SUBSPECIES · REFERENCE SPECIMEN',
+                       540, 1452, 27, nature.ICE, anchor='mt')
+        return image
 
     @staticmethod
     def _ant(draw, x, y, scale=1.0, facing=1, phase=0, pale=False):
