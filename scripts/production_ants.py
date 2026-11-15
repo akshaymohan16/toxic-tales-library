@@ -76,7 +76,7 @@ class Visuals(motion.Visuals):
         image.paste(ant, (x, y))
         # Readable, scene-specific provenance instead of a recurring footer.
         self.type.text(image, 'RELATED SUBSPECIES · REFERENCE SPECIMEN',
-                       540, 1452, 27, nature.ICE, anchor='mt')
+                       540, 602, 28, nature.ICE, anchor='mt')
         return image
 
     @staticmethod
