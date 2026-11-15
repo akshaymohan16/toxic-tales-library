@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-15T09:16:09.326Z",
+  "observed_at": "2026-11-15T17:24:16.313Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -48,7 +48,7 @@
     "TT-007-REEL",
     "TT-007-YOUTUBE-SHORT"
   ],
-  "calendar_reconciled_on": "2026-11-15T09:16:09.326Z",
+  "calendar_reconciled_on": "2026-11-15T17:24:16.313Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -61,7 +61,7 @@
   "new_scheduling_conditions": "All release/rights/deployment, current per-slot CAS ownership and intent, quota and duplicate checks; next Friday release not yet available",
   "provider_confirmed_publications": 8,
   "known_usage_lower_bound": 8,
-  "last_calendar_readback": "2026-11-15T09:16:09.326Z",
+  "last_calendar_readback": "2026-11-15T17:24:16.313Z",
   "pending_release_ids": [
     "TT-009"
   ],
@@ -69,8 +69,8 @@
   "quota": {
     "month": "2026-11",
     "observed_used": 8,
-    "observed_at": "2026-11-15T09:16:09.326Z",
-    "calendar_checked_at": "2026-11-15T09:16:09.326Z",
+    "observed_at": "2026-11-15T17:24:16.313Z",
+    "calendar_checked_at": "2026-11-15T17:24:16.313Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -112,7 +112,7 @@
     "owner_authorized_one_off_destination_slots": 2
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-15T09:16:09.326Z",
+    "checked_at": "2026-11-15T17:24:16.313Z",
     "published_destinations": 8,
     "scheduled_active_destinations": 2,
     "held_retired_drafts": 2,
@@ -120,7 +120,7 @@
     "no_new_writes": true,
     "owner_authorized_tt008_published_both": true,
     "retired_tt002_and_rejected_tt003_untouched": true,
-    "friday_20_november_status": "TT-009 manuscript/source pre-render checked; temporary Wikimedia 429 caused GitHub build 43698150877 to fail; Sunday producer holds active production claim and handles repair; no provider receipts yet",
+    "friday_20_november_status": "TT-009 revised to comply with 8s max shot length; new standard-hosted build 43740595648 in progress; independent exact-export review and both Friday provider receipts not yet complete",
     "observed_provider_uuid_count": 12
   }
 }
