@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-15T17:46:42.887Z",
+  "observed_at": "2026-11-16T10:23:32.470Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -15,7 +15,9 @@
   },
   "scheduled_ids": [
     "426842509",
-    "426850040"
+    "426850040",
+    "429844048",
+    "429844729"
   ],
   "published_ids": [
     "419869962",
@@ -46,9 +48,11 @@
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [
     "TT-007-REEL",
-    "TT-007-YOUTUBE-SHORT"
+    "TT-007-YOUTUBE-SHORT",
+    "TT-009-REEL",
+    "TT-009-YOUTUBE-SHORT"
   ],
-  "calendar_reconciled_on": "2026-11-15T17:46:42.887Z",
+  "calendar_reconciled_on": "2026-11-16T10:23:32.470Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -58,19 +62,17 @@
     "420062745"
   ],
   "held_post_ids": [],
-  "new_scheduling_conditions": "All release/rights/deployment, current per-slot CAS ownership and intent, quota and duplicate checks; next Friday release not yet available",
+  "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
   "provider_confirmed_publications": 8,
   "known_usage_lower_bound": 8,
-  "last_calendar_readback": "2026-11-15T17:46:42.887Z",
-  "pending_release_ids": [
-    "TT-009"
-  ],
+  "last_calendar_readback": "2026-11-16T10:23:32.470Z",
+  "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
     "observed_used": 8,
-    "observed_at": "2026-11-15T17:46:42.887Z",
-    "calendar_checked_at": "2026-11-15T17:46:42.887Z",
+    "observed_at": "2026-11-16T10:23:32.470Z",
+    "calendar_checked_at": "2026-11-16T10:23:32.470Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -112,15 +114,15 @@
     "owner_authorized_one_off_destination_slots": 2
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-15T17:46:42.887Z",
+    "checked_at": "2026-11-16T10:23:32.470Z",
     "published_destinations": 8,
-    "scheduled_active_destinations": 2,
+    "scheduled_active_destinations": 4,
     "held_retired_drafts": 2,
-    "first_week_future_monday_complete": false,
-    "no_new_writes": true,
+    "first_week_future_monday_complete": true,
+    "no_new_writes": false,
     "owner_authorized_tt008_published_both": true,
     "retired_tt002_and_rejected_tt003_untouched": true,
-    "friday_20_november_status": "TT-009 intact-ant source build/deploy/public byte verification 43741853856 succeeded; independent exact-encoded-export review and release not yet passed, production claim active in another run, no Friday provider receipts",
-    "observed_provider_uuid_count": 12
+    "friday_20_november_status": "TT-009 independent encoded release and IG/YT PENDING auto receipts ID 429844048/429844729; source, both hosted video and cover byte hashes verified workflow 43847978272",
+    "observed_provider_uuid_count": 14
   }
 }
