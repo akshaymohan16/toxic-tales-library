@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "post_id": "TT-009-YOUTUBE-SHORT",
+  "episode_id": "TT-009",
+  "platform": "youtube",
+  "format": "SHORT",
+  "brand_id": "7937614",
+  "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+  "scheduled_for": "2026-11-20T10:00:00+01:00",
+  "timezone": "Europe/Vienna",
+  "created_at": "2026-11-16T10:17:54.245Z",
+  "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-16T10:12:00Z",
+  "status": "intent_persisted_awaiting_exact_public_byte_verify",
+  "source_video_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b",
+  "source_cover_sha256": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224",
+  "source_media_urls": [
+    "https://akshaymohan16.github.io/toxic-tales-library/media/tt-009-ants-bite-the-restraint-b89b5c741890.mp4"
+  ],
+  "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-009-ants-bite-the-restraint-b89b5c741890_cover.jpg",
+  "research_record_url": "https://akshaymohan16.github.io/toxic-tales-library/sources/tt-009.html",
+  "release_fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
+  "doi": "10.1371/journal.pone.0006573",
+  "source_commit": "ef1cfbf56d1c85dc95efa8cf1d3c67d2fbfcd3b7",
+  "source_verification_run": 43741853856,
+  "current_release_deployment_run": 43847085574,
+  "projected_month_destinations": 16,
+  "submission_guard": "Do not resubmit on timeout or uncertain write; inspect full November Metricool calendar first",
+  "metricool_id": null,
+  "metricool_uuid": null
+}
