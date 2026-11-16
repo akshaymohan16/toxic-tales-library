@@ -9,7 +9,7 @@
   "timezone": "Europe/Vienna",
   "created_at": "2026-11-16T10:17:51.420Z",
   "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-16T10:12:00Z",
-  "status": "intent_persisted_awaiting_exact_public_byte_verify",
+  "status": "provider_pending_readback_verified_byte_verification_pending",
   "source_video_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b",
   "source_cover_sha256": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224",
   "source_media_urls": [
@@ -24,6 +24,56 @@
   "current_release_deployment_run": 43847085574,
   "projected_month_destinations": 16,
   "submission_guard": "Do not resubmit on timeout or uncertain write; inspect full November Metricool calendar first",
-  "metricool_id": null,
-  "metricool_uuid": null
+  "metricool_id": "429844048",
+  "metricool_uuid": "1927625585550052374",
+  "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=1927625585550052374",
+  "provider_readback": {
+    "id": 429844048,
+    "publicationDate": {
+      "dateTime": "2026-11-20T10:00:00",
+      "timezone": "Europe/Vienna"
+    },
+    "creationDate": {
+      "dateTime": "2026-11-16T11:19:00",
+      "timezone": "Europe/Vienna"
+    },
+    "text": "A trapped ant. A hidden thread. Its colony-mates targeted the restraint.\n\nIn laboratory trials with Cataglyphis cursor, workers dug sand, pulled at an active nestmate’s limbs and sometimes bit the nylon snare holding it. Rescue behaviour appeared in all 9 group tests with active colony-mates, but none of the 45 tests involving other stimuli or controls. Each test had five potential rescuers; only one to three helped in positive tests.\n\nThese counts describe groups of ants in a controlled artificial setup, not the percentage of individual ants that help. The study did not establish that every ant escaped, why the response was triggered, that ants felt empathy, or how often this happens in nature.\n\nNowbahari et al. (2009), PLOS ONE 4:e6573. DOI: 10.1371/journal.pone.0006573\nOpen paper: https://pmc.ncbi.nlm.nih.gov/articles/PMC2719796/\nResearch record: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-009.html\n\nOriginal conceptual ant-and-thread illustrations, not the experiment’s footage. Reference photo of related C. cursor creticus subspecies: April Nobile / AntWeb.org, CC BY 4.0; edited. Source and licence links in research record. Synthetic neural narration, original Toxic Tales logo.\n\n#ToxicTales #Ants #AnimalBehaviour #Ecology #ScienceCommunication",
+    "firstCommentText": "",
+    "providers": [
+      {
+        "network": "instagram",
+        "status": "PENDING",
+        "detailedStatus": "Pending"
+      }
+    ],
+    "media": [
+      "https://static.metricool.com/planner/202611/7937614-file-3737416094863891945.mp4"
+    ],
+    "autoPublish": true,
+    "saveExternalMediaFiles": false,
+    "mediaAltText": [
+      null
+    ],
+    "shortener": false,
+    "draft": false,
+    "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-15334528450768090167.jpeg",
+    "imageVariants": false,
+    "twitterData": {
+      "type": "POST"
+    },
+    "instagramData": {
+      "autoPublish": true,
+      "type": "REEL",
+      "showReelOnFeed": true,
+      "isAiGenerated": true
+    },
+    "hasNotReadNotes": false,
+    "uuid": "1927625585550052374",
+    "creatorUserMail": "akshaymohank21@gmail.com",
+    "creatorUserId": 6223629,
+    "brandTags": []
+  },
+  "provider_media_url": "https://static.metricool.com/planner/202611/7937614-file-3737416094863891945.mp4",
+  "provider_cover_url": "https://static.metricool.com/planner/202611/7937614-file-15334528450768090167.jpeg",
+  "last_reconciled_at": "2026-11-16T10:19:44.786Z"
 }
