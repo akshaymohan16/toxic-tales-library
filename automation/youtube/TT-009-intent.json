@@ -10,7 +10,7 @@
   "timezone": "Europe/Vienna",
   "created_at": "2026-11-16T10:17:54.245Z",
   "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-16T10:12:00Z",
-  "status": "intent_persisted_awaiting_exact_public_byte_verify",
+  "status": "provider_pending_readback_verified_byte_verification_pending",
   "source_video_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b",
   "source_cover_sha256": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224",
   "source_media_urls": [
@@ -25,6 +25,62 @@
   "current_release_deployment_run": 43847085574,
   "projected_month_destinations": 16,
   "submission_guard": "Do not resubmit on timeout or uncertain write; inspect full November Metricool calendar first",
-  "metricool_id": null,
-  "metricool_uuid": null
+  "metricool_id": "429844729",
+  "metricool_uuid": "3828607998694999530",
+  "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=3828607998694999530",
+  "provider_readback": {
+    "id": 429844729,
+    "publicationDate": {
+      "dateTime": "2026-11-20T10:00:00",
+      "timezone": "Europe/Vienna"
+    },
+    "creationDate": {
+      "dateTime": "2026-11-16T11:20:00",
+      "timezone": "Europe/Vienna"
+    },
+    "text": "A trapped ant. A nylon snare. What did workers do when a colony-mate was stuck?\n\nIn controlled laboratory tests, Cataglyphis cursor workers dug sand, pulled limbs, and sometimes repeatedly bit the nylon thread restraining an active nestmate. Rescue behavior occurred in each of 9 group trials with active colony-mates, and in none of 45 group trials with other stimuli or controls. Each trial used five potential rescuers; only one to three workers actually helped in positive trials. These are group-level tests, not independent samples of 270 workers.\n\nThe restraint was artificial. The study did not show that every thread was cut or every ant escaped, prove empathy, establish the exact triggering cue, or measure rescue frequency in wild colonies.\n\nOriginal primary study: Nowbahari, Scohier, Durand & Hollis (2009), PLOS ONE 4(8): e6573.\nDOI: https://doi.org/10.1371/journal.pone.0006573\nFull open-access article: https://pmc.ncbi.nlm.nih.gov/articles/PMC2719796/\nResearch evidence, limitations and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-009.html\n\nVisuals: original schematic illustrations of ants, sand and nylon, not experimental video or measured individual trajectories. Whole-ant dorsal reference photograph of a related subspecies Cataglyphis cursor creticus (not the tested ant): April Nobile / AntWeb.org, CC BY 4.0, 960px Wikimedia Commons version, edited/cropped: https://commons.wikimedia.org/wiki/File:Cataglyphis_cursor_creticus_casent0102116_dorsal_1.jpg\nLicence: https://creativecommons.org/licenses/by/4.0/\nSynthetic neural narration and captions; original illustrations and the authorized Toxic Tales logo. Font credits and details on the research page.\n\n#ToxicTales #Ants #AnimalBehavior #Ecology #ScienceCommunication #Shorts",
+    "firstCommentText": "",
+    "providers": [
+      {
+        "network": "youtube",
+        "status": "PENDING",
+        "detailedStatus": "Pending"
+      }
+    ],
+    "media": [
+      "https://static.metricool.com/planner/202611/7937614-file-12147950446845277643.mp4"
+    ],
+    "autoPublish": true,
+    "saveExternalMediaFiles": false,
+    "mediaAltText": [
+      null
+    ],
+    "shortener": false,
+    "draft": false,
+    "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-15401831120842934675.jpeg",
+    "imageVariants": false,
+    "twitterData": {
+      "type": "POST"
+    },
+    "instagramData": {
+      "autoPublish": true,
+      "isAiGenerated": false
+    },
+    "youtubeData": {
+      "title": "Ants That Bite the Trap | Toxic Tales",
+      "type": "short",
+      "privacy": "public",
+      "madeForKids": false,
+      "isAiGeneratedContent": true,
+      "notifySubscribers": true
+    },
+    "hasNotReadNotes": false,
+    "uuid": "3828607998694999530",
+    "creatorUserMail": "akshaymohank21@gmail.com",
+    "creatorUserId": 6223629,
+    "brandTags": []
+  },
+  "provider_media_url": "https://static.metricool.com/planner/202611/7937614-file-12147950446845277643.mp4",
+  "provider_cover_url": "https://static.metricool.com/planner/202611/7937614-file-15401831120842934675.jpeg",
+  "last_reconciled_at": "2026-11-16T10:20:16.412Z"
 }
