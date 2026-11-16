@@ -4,7 +4,7 @@
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-15T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-16",
-  "status": "friday_TT009_render_verified_independent_release_pending",
+  "status": "all_four_destinations_ready_verified",
   "slots": [
     {
       "date": "2026-11-17T10:00:00+01:00",
@@ -29,22 +29,34 @@
       "date": "2026-11-20T10:00:00+01:00",
       "platform": "instagram",
       "format": "REEL",
-      "status": "render_verified_exact_export_review_pending_active_claim",
+      "status": "scheduled_receipt_verified",
       "episode_id": "TT-009",
       "doi": "10.1371/journal.pone.0006573",
-      "release_approved": false,
-      "provider_receipt_verified": false
+      "release_approved": true,
+      "provider_receipt_verified": true,
+      "post_id": "TT-009-REEL",
+      "metricool_id": "429844048",
+      "metricool_uuid": "1927625585550052374",
+      "release_fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
+      "provider_byte_verification_run": 43847978272,
+      "source_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b"
     },
     {
       "date": "2026-11-20T10:00:00+01:00",
       "platform": "youtube",
       "format": "SHORT",
       "source_slot": "friday",
-      "status": "render_verified_exact_export_review_pending_active_claim",
+      "status": "scheduled_receipt_verified",
       "episode_id": "TT-009",
       "doi": "10.1371/journal.pone.0006573",
-      "release_approved": false,
-      "provider_receipt_verified": false
+      "release_approved": true,
+      "provider_receipt_verified": true,
+      "post_id": "TT-009-YOUTUBE-SHORT",
+      "metricool_id": "429844729",
+      "metricool_uuid": "3828607998694999530",
+      "release_fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
+      "provider_byte_verification_run": 43847978272,
+      "source_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b"
     }
   ],
   "quality_policy": "Full original paper and correction check, claim-level evidence, independent final encoded story/branding/visual and narration verification, exact public media hashes, fresh provider monthly quota and duplicate validation. Never publish unreviewed content merely to satisfy a date.",
@@ -59,18 +71,18 @@
     "Automation_991690d6af648191ac8037cfa96c92a0"
   ],
   "new_task_created": false,
-  "updated_at": "2026-11-15T17:46:42.887Z",
-  "last_provider_reconciled_at": "2026-11-15T17:46:42.887Z",
+  "updated_at": "2026-11-16T10:23:22.427Z",
+  "last_provider_reconciled_at": "2026-11-16T10:23:22.427Z",
   "provider_reconciliation": {
-    "checked_at": "2026-11-15T17:46:42.887Z",
+    "checked_at": "2026-11-16T10:23:22.427Z",
     "month": "2026-11",
     "account_verified": true,
     "instagram_tuesday_uuid": "-6872348896682359981",
     "youtube_tuesday_uuid": "-6561054799073883973",
     "tuesday_auto_publish": true,
     "tuesday_status": "PENDING",
-    "friday_produced": false,
-    "friday_provider_receipts": 0,
+    "friday_produced": true,
+    "friday_provider_receipts": 2,
     "expected_friday_date": "2026-11-20T10:00:00+01:00",
     "next_producer_window": "2026-11-15T10:00:00+01:00",
     "quota_observed_used": 8,
@@ -79,12 +91,14 @@
     "open_readiness_issues": 0,
     "latest_watchdog_run": 43609392090,
     "latest_watchdog_conclusion": "success",
-    "note": "Fresh full November provider readback: 8 published; Tuesday TT-007 Instagram/YouTube PENDING. Friday TT-009 ant artwork render/deploy/public byte verified at 43741853856; separate exact final encoded review/release and 2 provider receipts still missing. Another run has unexpired production claim; no parallel edits/submissions.",
-    "latest_build_run": 43741853856,
-    "latest_build_conclusion": "success"
+    "note": "Fresh full month: 8 PUBLISHED, Tuesday and Friday each 2 platform PENDING true auto/false draft, 2 retired draft. Friday TT009 independent release and exact source plus both hosted video/cover SHA verified.",
+    "latest_build_run": 43847085574,
+    "latest_build_conclusion": "success",
+    "latest_provider_byte_run": 43847978272,
+    "latest_provider_byte_conclusion": "success"
   },
   "sunday_run": {
-    "claim_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-15T17:15:49Z",
+    "claim_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-16T10:12:00Z",
     "source_episode": "TT-009",
     "pmcid": "PMC2719796",
     "paper_doi": "10.1371/journal.pone.0006573",
@@ -94,7 +108,7 @@
     "asset_pin_run": 43698418899,
     "asset_sha256": "1ae4f39347882c4825f19dd84438620005b5936ccc07f0455396854d0d074bec",
     "pre_render_review_complete": true,
-    "encoded_export_review_complete": false,
+    "encoded_export_review_complete": true,
     "external_writes": 0,
     "creation_notifications": 0,
     "first_render_attempt": "failed_http_429_original_wikimedia_image",
@@ -104,9 +118,11 @@
     "latest_render_failure": "GitHub build 43698889550: over-eight-second narration-aligned shot, after previous asset 429 and ASR issues were corrected",
     "latest_recovery_source_commit": "cd216b780b75feda14cbe73a2447d0e4dc3faef4",
     "latest_reviewed_source_sha256": "63c9d67ce8251bf26bba10edf50507813dcd839a82ec94e60de7e3fcdf3c4ba9",
-    "current_render_run": 43741853856,
+    "current_render_run": 43847085574,
     "current_render_status": "completed_success",
-    "provider_receipts": 0,
-    "notes": "Active production claim held by previous publisher run; present run only reconciled, did not supersede or self-certify."
+    "provider_receipts": 2,
+    "notes": "Recovered expired production claim; new intact-ant exact encoded export independently released and both Metricool destinations saved and hash verified. Tuesday originals unchanged.",
+    "latest_reviewed_release_fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
+    "provider_byte_verification_run": 43847978272
   }
 }
