@@ -119,6 +119,36 @@
         "provider_receipts": 0,
         "fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb"
       }
+    },
+    "submission:instagram:2026-11-20T10:00:Europe/Vienna": {
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-16T10:12:00Z",
+      "phase": "metadata_review_and_submission_intent",
+      "claimed_at": "2026-11-16T10:16:58.194Z",
+      "expires_at": "2026-11-16T10:41:58.194Z",
+      "status": "in_progress",
+      "episode_id": "TT-009",
+      "post_id": "TT-009-REEL",
+      "platform": "instagram",
+      "publication_date": "2026-11-20T10:00:00+01:00",
+      "doi": "10.1371/journal.pone.0006573",
+      "release_fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
+      "intent": "automation/instagram/TT-009-intent.json",
+      "quota_projection": 16
+    },
+    "submission:youtube:2026-11-20T10:00:Europe/Vienna": {
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-16T10:12:00Z",
+      "phase": "metadata_review_and_submission_intent",
+      "claimed_at": "2026-11-16T10:16:58.194Z",
+      "expires_at": "2026-11-16T10:41:58.194Z",
+      "status": "in_progress",
+      "episode_id": "TT-009",
+      "post_id": "TT-009-YOUTUBE-SHORT",
+      "platform": "youtube",
+      "publication_date": "2026-11-20T10:00:00+01:00",
+      "doi": "10.1371/journal.pone.0006573",
+      "release_fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
+      "intent": "automation/youtube/TT-009-intent.json",
+      "quota_projection": 16
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
