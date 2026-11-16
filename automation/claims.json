@@ -81,10 +81,10 @@
       ]
     },
     "production:2026-11-20": {
-      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-15T17:15:49Z",
-      "phase": "licensed_full_ant_repair_render_queued_after_independent_rejection_of_head_crop",
-      "claimed_at": "2026-11-15T17:15:49Z",
-      "expires_at": "2026-11-15T21:15:49Z",
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-16T10:12:00Z",
+      "phase": "independent_exact_encoded_review_after_expired_claim_reconciliation",
+      "claimed_at": "2026-11-16T10:12:00Z",
+      "expires_at": "2026-11-16T14:12:00Z",
       "status": "in_progress",
       "publication_date": "2026-11-20T10:00:00+01:00",
       "required_destinations": [
@@ -99,23 +99,25 @@
       "science_source": "PMC2719796",
       "asset_pin_sha256": "8f3bde49adf80825320854e0943c2bbb17ad3f273e6d90e4476d722b474222a1",
       "asset_pin_action_run": 43741444847,
-      "quality_status": "revised source/pre-render pass; new exact final encoded export and independent review pending",
+      "quality_status": "actual exported frames, full paper and release hashes under independent review",
       "last_render_failure": "Previous e682f826 version rendered and deployed, but independent frame review rejected its unrecognisable cropped head-only photo and weak visual explanation. Whole-ant 960px dorsal source with CC BY 4.0 and SHA pin is now prepared; final render/review required.",
       "recovery_from_owner": "6aeefcb926708191b092554230783da1:2026-11-15T09:59:06+01:00",
       "reconciliation": {
-        "calendar_checked": "2026-11-15T17:17:41Z",
+        "calendar_checked": "2026-11-16T10:07:00Z",
         "friday_20_instagram_exists": false,
         "friday_20_youtube_exists": false,
         "intents_exist": false,
-        "producer_run_completed": true
+        "previous_claim_expired": true,
+        "previous_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-15T17:15:49Z"
       },
       "render_attempt": {
         "source_commit": "ef1cfbf56d1c85dc95efa8cf1d3c67d2fbfcd3b7",
         "workflow_run_id": 43741853856,
-        "status": "pending",
+        "status": "completed_success",
         "previous_unreleased_export": "e682f82673dbf52080739a117bb666f844086be0c46d56e65b3f83896db5fa00",
         "old_preview_rejected": true,
-        "provider_receipts": 0
+        "provider_receipts": 0,
+        "fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb"
       }
     }
   },
