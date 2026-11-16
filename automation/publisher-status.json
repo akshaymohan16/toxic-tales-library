@@ -1,17 +1,17 @@
 {
   "checked_on": "2026-11-16",
-  "updated_at": "2026-11-16T10:25:16.577Z",
+  "updated_at": "2026-11-16T17:27:18.456Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_connection_verified": true,
-  "decision": "EIGHT_PUBLISHED_NEXT_WEEK_ALL_FOUR_DESTINATIONS_SCHEDULED_AND_SHA_VERIFIED",
+  "decision": "EIGHT_PUBLISHED_FOUR_FUTURE_DESTINATIONS_VERIFIED",
   "quota": {
     "month": "2026-11",
     "observed_used": 8,
-    "observed_at": "2026-11-16T10:23:52.062Z",
-    "calendar_checked_at": "2026-11-16T10:23:52.062Z",
+    "observed_at": "2026-11-16T17:27:18.456Z",
+    "calendar_checked_at": "2026-11-16T17:27:18.456Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -27,13 +27,13 @@
     },
     "published_destination_keys": [
       "instagram:-3158597333632725768",
-      "instagram:8432780738091634663",
-      "instagram:2386175407143797944",
-      "instagram:-7609883982228992318",
       "instagram:-5193152553705388348",
+      "instagram:-7609883982228992318",
+      "instagram:2386175407143797944",
       "instagram:3555893508354493617",
-      "youtube:4422280930322105807",
-      "youtube:-6895101637645415437"
+      "instagram:8432780738091634663",
+      "youtube:-6895101637645415437",
+      "youtube:4422280930322105807"
     ],
     "observed_published_post_ids": [
       "instagram:TT-002-REEL",
@@ -75,7 +75,7 @@
     "verified_destination_receipts": 4,
     "producer_due": "2026-11-15T10:00:00+01:00",
     "hard_readiness_due": "2026-11-16T23:59:59+01:00",
-    "status": "READY: Tue TT-007 IG/YT and Fri TT-009 IG/YT both PENDING autoPublished scheduled, all four provider readbacks and exact reviewed bytes verified"
+    "status": "READY: TT-007 Tuesday and TT-009 Friday IG/YT; all four exact existing PENDING receipts confirmed"
   },
   "recurring_tasks": [
     {
@@ -100,9 +100,9 @@
       "next_run_time": "2026-11-15T10:00:00+01:00"
     }
   ],
-  "deployment_and_media": "TT009 exact independent release e59fe15 and GitHub Pages build/deploy/verify run 43847085574 passed; source and both provider videos/covers SHA256 verified in 43847978272.",
+  "deployment_and_media": "TT-009 released exact media retained. Pages build/deploy and 55 public-file SHA checks passed run 43848353452; two provider MP4s/covers matched source SHA in 43847978272.",
   "review_limit": "Separate reviewer inspected 19 actual encoded shots, 18 boundaries, opening and final encoded frame, final audio ASR/caption/loudness and source rights; no perceptual listening or uninterrupted motion playback claimed.",
-  "automatic_next_step": "Preserve TT-007 and TT-009 provider UUIDs. Check Tuesday and Friday due-time PUBLISHED with public URLs; never blind-resubmit a PENDING post. Later routine build 43848353452 was still in progress; verified release build 43847085574 and provider byte run 43847978272 already passed.",
+  "automatic_next_step": "Four original provider UUIDs are confirmed PENDING for 17/20 November, 10:00 Europe/Vienna. Check due-time PUBLISHED and public URLs without resubmission. Next producer Sunday 22 November handles Tuesday 24/Friday 27. No owner-action blockers.",
   "notification_delivery": "TT-009 paired creation alert recorded once in automation/notifications.json; only scheduled PENDING, not published. Push/email delivery unverified.",
   "scheduled_posts_returned": 14,
   "published_provider_receipts": 8,
@@ -112,16 +112,16 @@
     "TT-009-REEL",
     "TT-009-YOUTUBE-SHORT"
   ],
-  "last_successful_deployment_run": 43741853856,
+  "last_successful_deployment_run": 43848353452,
   "validation": {
     "script_tests": 150,
     "automation_tests": 104,
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
     "provider_byte_verification_run": 43847978272,
-    "latest_watchdog_run": 43848463904,
+    "latest_watchdog_run": 43848681445,
     "latest_watchdog_conclusion": "success",
-    "latest_build_run": 43847085574,
+    "latest_build_run": 43848353452,
     "latest_build_verified_steps": [
       "build",
       "deploy",
@@ -129,15 +129,15 @@
     ],
     "latest_paper_retrieval_run": 43439354279,
     "latest_paper_retrieval_conclusion": "success",
-    "fresh_live_metricool_reconciliation_at": "2026-11-16T10:23:52.062Z",
+    "fresh_live_metricool_reconciliation_at": "2026-11-16T17:27:18.456Z",
     "latest_build_conclusion": "success",
     "latest_build_failure_step": null,
     "latest_build_failure_cause": null,
     "claim_ownership_verified": true,
-    "latest_verified_build_run": 43847085574,
+    "latest_verified_build_run": 43848353452,
     "latest_verified_build_conclusion": "success",
     "later_same_source_deployment_run": 43848353452,
-    "later_same_source_deployment_status": "in_progress_at_last_read"
+    "later_same_source_deployment_status": "completed_success"
   },
   "current_one_off": {
     "episode_id": "TT-008",
@@ -148,7 +148,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-16T10:23:52.062Z",
+    "checked_at": "2026-11-16T17:27:18.456Z",
     "brand_id": "7937614",
     "accounts": {
       "instagram": "toxic_tales_eco",
@@ -217,7 +217,7 @@
     ],
     "unused_or_missing": [],
     "open_readiness_issues": 0,
-    "duplicate_checks": "14 unique provider UUIDs: 8 PUBLISHED, 4 PENDING ready, 2 retired draft; no TT007 or TT008 resubmission",
+    "duplicate_checks": "14 unique provider UUIDs: 8 PUBLISHED, 4 scheduled PENDING, 2 inactive drafts; no new submissions",
     "blockers": [],
     "routine_recovery": {
       "episode_id": "TT-009",
@@ -228,14 +228,69 @@
       "provider_byte_verification_run": 43847978272,
       "friday_provider_receipts": 2,
       "owner_action_required": false
-    }
+    },
+    "published_ids_verified": [
+      {
+        "id": "419869962",
+        "uuid": "-3158597333632725768",
+        "network": "instagram",
+        "public_url": "https://www.instagram.com/reel/DfcF7aYiuWU/"
+      },
+      {
+        "id": "420123422",
+        "uuid": "8432780738091634663",
+        "network": "instagram",
+        "public_url": "https://www.instagram.com/reel/DfcvkhGDsFb/"
+      },
+      {
+        "id": "420178205",
+        "uuid": "2386175407143797944",
+        "network": "instagram",
+        "public_url": "https://www.instagram.com/reel/Dfc5DEPHJCJ/"
+      },
+      {
+        "id": "420683055",
+        "uuid": "-7609883982228992318",
+        "network": "instagram",
+        "public_url": "https://www.instagram.com/p/DfosskjCpxx/"
+      },
+      {
+        "id": "421493009",
+        "uuid": "-5193152553705388348",
+        "network": "instagram",
+        "public_url": "https://www.instagram.com/reel/Dfji4yhnB6c/"
+      },
+      {
+        "id": "421493849",
+        "uuid": "4422280930322105807",
+        "network": "youtube",
+        "public_url": "https://www.youtube.com/shorts/X333C5Dcxxo"
+      },
+      {
+        "id": "426945585",
+        "uuid": "3555893508354493617",
+        "network": "instagram",
+        "public_url": "https://www.instagram.com/reel/DfrtQD-EZiG/"
+      },
+      {
+        "id": "426946098",
+        "uuid": "-6895101637645415437",
+        "network": "youtube",
+        "public_url": "https://www.youtube.com/shorts/le2mS8MHcpo"
+      }
+    ]
   },
   "claim_coordination": {
-    "checked_at": "2026-11-15T17:46:42.887Z",
-    "claim_key": "production:2026-11-20",
-    "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-15T17:15:49Z",
-    "expires_at": "2026-11-15T21:15:49Z",
-    "observed_status": "in_progress",
-    "this_run_action": "read_only_skip_active_claim"
+    "checked_at": "2026-11-16T17:27:18.456Z",
+    "status": "all_relevant_TT009_claims_completed",
+    "this_run_action": "read-only provider reconciliation; no production or submission claim acquisition needed",
+    "active_competing_claims": 0
+  },
+  "following_week_readiness": {
+    "week_start": "2026-11-23",
+    "required_destination_receipts": 4,
+    "verified_destination_receipts": 0,
+    "producer_due": "2026-11-22T10:00:00+01:00",
+    "status": "not_yet_due_for_production; ordinary Sunday workflow"
   }
 }

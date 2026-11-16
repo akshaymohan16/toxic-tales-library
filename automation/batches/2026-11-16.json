@@ -71,10 +71,10 @@
     "Automation_991690d6af648191ac8037cfa96c92a0"
   ],
   "new_task_created": false,
-  "updated_at": "2026-11-16T10:23:22.427Z",
-  "last_provider_reconciled_at": "2026-11-16T10:23:22.427Z",
+  "updated_at": "2026-11-16T17:27:18.456Z",
+  "last_provider_reconciled_at": "2026-11-16T17:27:18.456Z",
   "provider_reconciliation": {
-    "checked_at": "2026-11-16T10:23:22.427Z",
+    "checked_at": "2026-11-16T17:27:18.456Z",
     "month": "2026-11",
     "account_verified": true,
     "instagram_tuesday_uuid": "-6872348896682359981",
@@ -89,10 +89,10 @@
     "quota_projected": 16,
     "quota_cap": 20,
     "open_readiness_issues": 0,
-    "latest_watchdog_run": 43609392090,
+    "latest_watchdog_run": 43848681445,
     "latest_watchdog_conclusion": "success",
-    "note": "Fresh full month: 8 PUBLISHED, Tuesday and Friday each 2 platform PENDING true auto/false draft, 2 retired draft. Friday TT009 independent release and exact source plus both hosted video/cover SHA verified.",
-    "latest_build_run": 43847085574,
+    "note": "Monday evening live calendar: all 4 paired IG/YT receipts PENDING, autoPublish true/draft false. 8 historical published, 2 retired drafts. 55 public files verified in latest build, exact TT009 provider byte hashes verified. No external provider writes.",
+    "latest_build_run": 43848353452,
     "latest_build_conclusion": "success",
     "latest_provider_byte_run": 43847978272,
     "latest_provider_byte_conclusion": "success"
