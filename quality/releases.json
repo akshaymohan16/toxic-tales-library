@@ -1002,5 +1002,290 @@
       "media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg"
     ],
     "release_note": "Independent science/story/branding/motion review is complete for these exact encoded bytes only. MP4 and cover hashes were recomputed from the downloaded public files and match the manifest. Review uses actual encoded frame sampling, transcript comparison and loudness measurements; no continuous playback, listening or source-audio parity is claimed. Provider account, schedule, public-byte readiness and eventual platform publication must be independently reconciled by the publishing workflow."
+  },
+  "TT-009": {
+    "fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
+    "files": {
+      "media/tt-009-ants-bite-the-restraint-b89b5c741890.mp4": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b",
+      "media/tt-009-ants-bite-the-restraint-b89b5c741890_cover.jpg": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224"
+    },
+    "evidence_sha256": "a1a2a382950405bbf268c1aeeda23a7ba02f021f98eb21fffc6792305ac65008",
+    "episode_id": "TT-009",
+    "decision": "release",
+    "publication_enabled": true,
+    "publication_eligible": true,
+    "reviewer": "Independent publisher-run encoded-export reviewer (not TT-009 script author)",
+    "reviewed_at": "2026-11-16T10:14:40.655Z",
+    "source_commit": "ef1cfbf56d1c85dc95efa8cf1d3c67d2fbfcd3b7",
+    "media_commit": "ef1cfbf56d1c85dc95efa8cf1d3c67d2fbfcd3b7",
+    "verification_run": 43741853856,
+    "duration_seconds": 69.4,
+    "source_sha256": "3102c782d37b5bbae9d2a590caa4d74042d5eca993395c9d951f100fd3e60ca5",
+    "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-009-contact.jpg?review=ef1cfbf",
+    "scientific_review": "Reviewed full 17,535-character JATS main-text primary study Nowbahari et al. (2009), PLOS ONE DOI 10.1371/journal.pone.0006573: six test conditions, 9 groups in each, 3 laboratory colonies, 5 workers per group, 7-minute trials; 9 active-nestmate groups with rescue versus 45 other groups without; snare biting, sand digging and limb pulling; only 1–3 workers participating in positive groups. The artificial nylon restraint, lack of established escape outcomes, unresolved eliciting cue, and inability to infer empathy or wild rescue rate are maintained. Supplement text/captions read; large AVI supplements not viewed or used. Main text gives sufficient direct evidence for stated claims; previous 15-Nov PubMed/DOI correction check found no linked notice, which is not proof of absence.",
+    "visual_review": "Independently inspected exact-release 19-shot contact sheet; opening 0 and 1 seconds; all 19 recorded shot midpoint and 0.18/0.70-second samples; all 18 immediate before/after transitions; final encoded frame; and full-body licensed reference cover. Recognizable ant specimen and clear schematic nylon setup correct the prior rejected head crop. Some short wipes show adjacent headings fading, but settle without persistent clipping. All real photo versus schematic distinctions and counts remain labelled. Full video copied from GitHub Pages Actions artifact and SHA recomputed.",
+    "audio_review": "Reviewed 9 neural segment ASR transcripts, final encoded ASR and 33 timed captions. Final script similarity 0.97959; ASR differences are punctuation and disk/disc and nestmate spacing, not a changed condition, negation or count. Recorded integrated loudness -16.11 LUFS, true peak -4.80 dBTP and 2.00 LRA; H.264/AAC export 69.4s at 1080×1920 24fps. No direct audio listening, perceptual pronunciation certification or continuous moving playback claimed.",
+    "narrative_review": "The clear trapped-ant question moves from nylon/snare targeting to needed controls, accurate group and worker units, untested mental states, and a narrow thread-biting payoff. The related subspecies dorsal photograph is a disclosed visual reference rather than a live experimental animal.",
+    "final_editorial_review": {
+      "fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
+      "files": {
+        "media/tt-009-ants-bite-the-restraint-b89b5c741890.mp4": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b",
+        "media/tt-009-ants-bite-the-restraint-b89b5c741890_cover.jpg": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224"
+      },
+      "evidence_sha256": "a1a2a382950405bbf268c1aeeda23a7ba02f021f98eb21fffc6792305ac65008",
+      "reviewer": "Independent publisher-run encoded-export reviewer (not TT-009 script author)",
+      "reviewed_at": "2026-11-16T10:14:40.655Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "reviewed_encoded_frames": true,
+      "standard": "story-first-v1",
+      "source_sha256": "3102c782d37b5bbae9d2a590caa4d74042d5eca993395c9d951f100fd3e60ca5",
+      "checks": {
+        "cold_viewer": {
+          "decision": "pass",
+          "finding": "The opening encoded 0s/1s frames show a recognisable entire ant in a specimen photograph, then the next two shots explain its imagined nylon restraint. Related-subspecies reference status is visibly labelled; this is not experimental footage.",
+          "basis": "Actual encoded 0s/1s frame and full-body replacement cover, settled shots 1–3, original main-text Methods."
+        },
+        "story": {
+          "decision": "pass",
+          "finding": "Nineteen shots build a connected question from a hidden trap, digging, thread biting, five controls, 9 versus 45 group trials and variable worker participation to an explicit bounded rescue claim.",
+          "basis": "Actual 19-shot contact grid, shot start/boundary sampled frames, nine final ASR segments, Nowbahari et al. Results and Methods."
+        },
+        "visuals": {
+          "decision": "pass",
+          "finding": "Simple moving ant and nylon schematics expose the barrier and differentiate workers, controls and recorded counts; the only photograph is a visibly disclosed related-subspecies reference specimen and shows the complete animal, fixing the rejected head crop.",
+          "basis": "Actual encoded shot samples 1–19, transition pairs and final cover; pinned AntWeb reference image and original chartless schematic."
+        },
+        "payoff": {
+          "decision": "pass",
+          "finding": "The final scene returns to the ant while the spoken payoff says some workers target the restraint itself. It does not assert every snare was cut or every victim freed.",
+          "basis": "Encoded shots 18–19, last caption and final ASR, primary Results."
+        },
+        "scope": {
+          "decision": "pass",
+          "finding": "The video explicitly calls these artificial traps, identifies 9 positive versus 45 other group tests, distinguishes groups from workers, and avoids claims about empathy, specific signals or rescue prevalence in the wild.",
+          "basis": "Encoded shots 12–17, count/worker labels, exact final speech transcript, original study Methods and Discussion."
+        },
+        "retelling": {
+          "decision": "pass",
+          "finding": "A viewer can retell: in a controlled ant experiment some workers exposed and bit the nylon restraint holding an active nestmate; 9 active-nestmate group tests showed rescue and 45 others did not, without proving empathy or field frequency.",
+          "basis": "Opening through ending checked against article full Results, Methods and limitations; no unaccessed supplement used."
+        }
+      }
+    },
+    "branding_review": {
+      "fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
+      "files": {
+        "media/tt-009-ants-bite-the-restraint-b89b5c741890.mp4": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b",
+        "media/tt-009-ants-bite-the-restraint-b89b5c741890_cover.jpg": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224"
+      },
+      "evidence_sha256": "a1a2a382950405bbf268c1aeeda23a7ba02f021f98eb21fffc6792305ac65008",
+      "reviewer": "Independent publisher-run encoded-export reviewer (not TT-009 script author)",
+      "reviewed_at": "2026-11-16T10:14:40.655Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "standard": "toxic-tales-branding-v1",
+      "logo_sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+      "reviewed_encoded_frames": true,
+      "reviewed_opening_frames": true,
+      "reviewed_every_shot_and_transition": true,
+      "reviewed_final_frame": true,
+      "reviewed_cover": true,
+      "reviewed_phone_scale": true,
+      "checks": {
+        "actual_logo": {
+          "decision": "pass",
+          "finding": "The real green flask/plant Toxic Tales mark stays legible at upper left from encoded opening through the final still and appears on the cover.",
+          "basis": "0s/1s frames, 19 shot samples, final frame, source brand-asset pin and exported cover."
+        },
+        "placement": {
+          "decision": "pass",
+          "finding": "Logo, upper headings, conceptual panels and speech captions remain in distinct safe regions in settled portrait frames.",
+          "basis": "Encoded plus-0.70 shot images, opening/ending 1080×1920 frame and phone-scale contact montage."
+        },
+        "clean_frames": {
+          "decision": "pass",
+          "finding": "No decorative progress bar, episode tag or persistent generic production footer; short diagram labels explain what is conceptual or a reference specimen.",
+          "basis": "All 19 shot samples, transition montage, first and last frames; the small nylon/setup labels are scientific-scope labels."
+        },
+        "captions_and_labels": {
+          "decision": "pass",
+          "finding": "One high-contrast caption area appears beneath the central panels, with no persistent overlap or clipped negative qualification.",
+          "basis": "Actual sampled shot images, 33 caption start/end records and final transcript."
+        },
+        "scientific_limits": {
+          "decision": "pass",
+          "finding": "Groups—not individual ants—are identified as replicates. No universal help, empathy, measured field frequency or proven escape is claimed.",
+          "basis": "Encoded count shots 12–15, artificial-trap/interpretation shots 16–17 and original Results/Methods."
+        },
+        "provenance": {
+          "decision": "pass",
+          "finding": "Photo is separately labelled a reference of a related subspecies, with AntWeb April Nobile CC BY 4.0, thumbnail SHA and modifications listed in the evidence/archive; no paper supplement frames were used.",
+          "basis": "Evidence/tt-009 source ledger, fixed production assets and actual cover/photo frames; pinned licence/creator and OFL font receipts."
+        },
+        "reference_imagery": {
+          "decision": "pass",
+          "finding": "The only real ant is a photographed dorsal specimen, not moving laboratory footage. Illustrated sand/nylon scenes visibly use schematics rather than fabricated study video.",
+          "basis": "Opening, closing and shot-kind diagrams, licence record and claim-level source."
+        }
+      }
+    },
+    "motion_review": {
+      "fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
+      "files": {
+        "media/tt-009-ants-bite-the-restraint-b89b5c741890.mp4": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b",
+        "media/tt-009-ants-bite-the-restraint-b89b5c741890_cover.jpg": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224"
+      },
+      "evidence_sha256": "a1a2a382950405bbf268c1aeeda23a7ba02f021f98eb21fffc6792305ac65008",
+      "reviewer": "Independent publisher-run encoded-export reviewer (not TT-009 script author)",
+      "reviewed_at": "2026-11-16T10:14:40.655Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "standard": "toxic-tales-motion-v1",
+      "source_sha256": "3102c782d37b5bbae9d2a590caa4d74042d5eca993395c9d951f100fd3e60ca5",
+      "motion_spec_sha256": "2cd086b9428d7564db457fa0a7d668e765d6935c1dee2edff1258352c70988d2",
+      "reviewed_encoded_frames": true,
+      "reviewed_every_shot_and_transition": true,
+      "reviewed_phone_scale": true,
+      "moving_playback_review_claimed": false,
+      "review_method": "Reviewed exact encoded frames for 19 shots (midpoint and 0.18/0.70-second starts), all 18 before/after boundaries, opening 0s/1s, final frame, contact sheet and cover. Extracted final MP4 from official Pages artifact and confirmed SHA and H.264/AAC 1080×1920 24-fps metadata. Did not claim full continuous playback or perceptual listening.",
+      "checks": {
+        "kinetic_text": {
+          "decision": "pass",
+          "finding": "Large question and counterheadings settle into high contrast without clipping; the count headings read as fixed study results.",
+          "basis": "All 19 encoded settled shot samples and opening/final frames."
+        },
+        "transitions": {
+          "decision": "pass",
+          "finding": "Brief artwork crossfades change the title while the graphic resolves; the 9-of-9/none-of-45 comparison stays whole and numeric glyphs are not wiped into an invented value.",
+          "basis": "Shot 11–15 boundary before/after montage and 0.18/0.70 settled frames."
+        },
+        "ecological_motion": {
+          "decision": "pass",
+          "finding": "Originally drawn ants, nylon loop and sand movement illustrate the setup and direction of intervention; they are not presented as measured trajectories or actual rescue recordings.",
+          "basis": "Comparative ant scene shots 2–11, changing encoded frame samples and manifest motion metadata."
+        },
+        "camera_motion": {
+          "decision": "pass",
+          "finding": "Photo remains a recognisable intact dorsal ant with limited editorial movement on the opening and closing frames, not a false living-ant motion claim.",
+          "basis": "Actual first/final reference frames and selected intermediary shot views."
+        },
+        "evidence_bound_data": {
+          "decision": "pass",
+          "finding": "The fixed group-level 9-of-9 and none-of-45 statements match the 54 original trials, and one-to-three participants remains separate from five workers per group; no animated time series or invented percentages.",
+          "basis": "Article Results and Methods, graph scene 12/13, worker scene 14/15, manifest metrics=[] and measured_time_series=false."
+        },
+        "caption_sync": {
+          "decision": "pass",
+          "finding": "All 33 caption chunks remain ordered and within the 69.4-second final file; final ASR similarity 0.9796 preserves 9, 45, five, one-to-three and all cautionary negations.",
+          "basis": "Exact encoded manifest segment and final transcripts, caption timing bounds, loudness record; final last caption at 69.193s."
+        }
+      }
+    },
+    "listening_review_claimed": false,
+    "moving_playback_review_claimed": false,
+    "original_audio_comparison_claimed": false,
+    "encoded_review_index_sha256": "05784f2b4ee01531b2d42388d2ea49beb078f388c6ed05f87ed191e5d3de1a49",
+    "inspected_frame_paths": [
+      "qa/tt-009-contact.jpg",
+      "qa/tt-009-opening-0s.jpg",
+      "qa/tt-009-opening-1s.jpg",
+      "qa/tt-009-final-frame.jpg",
+      "qa/tt-009-shot-01.jpg",
+      "qa/tt-009-shot-02.jpg",
+      "qa/tt-009-shot-03.jpg",
+      "qa/tt-009-shot-04.jpg",
+      "qa/tt-009-shot-05.jpg",
+      "qa/tt-009-shot-06.jpg",
+      "qa/tt-009-shot-07.jpg",
+      "qa/tt-009-shot-08.jpg",
+      "qa/tt-009-shot-09.jpg",
+      "qa/tt-009-shot-10.jpg",
+      "qa/tt-009-shot-11.jpg",
+      "qa/tt-009-shot-12.jpg",
+      "qa/tt-009-shot-13.jpg",
+      "qa/tt-009-shot-14.jpg",
+      "qa/tt-009-shot-15.jpg",
+      "qa/tt-009-shot-16.jpg",
+      "qa/tt-009-shot-17.jpg",
+      "qa/tt-009-shot-18.jpg",
+      "qa/tt-009-shot-19.jpg",
+      "qa/tt-009-boundary-01-before.jpg",
+      "qa/tt-009-boundary-01-after.jpg",
+      "qa/tt-009-boundary-02-before.jpg",
+      "qa/tt-009-boundary-02-after.jpg",
+      "qa/tt-009-boundary-03-before.jpg",
+      "qa/tt-009-boundary-03-after.jpg",
+      "qa/tt-009-boundary-04-before.jpg",
+      "qa/tt-009-boundary-04-after.jpg",
+      "qa/tt-009-boundary-05-before.jpg",
+      "qa/tt-009-boundary-05-after.jpg",
+      "qa/tt-009-boundary-06-before.jpg",
+      "qa/tt-009-boundary-06-after.jpg",
+      "qa/tt-009-boundary-07-before.jpg",
+      "qa/tt-009-boundary-07-after.jpg",
+      "qa/tt-009-boundary-08-before.jpg",
+      "qa/tt-009-boundary-08-after.jpg",
+      "qa/tt-009-boundary-09-before.jpg",
+      "qa/tt-009-boundary-09-after.jpg",
+      "qa/tt-009-boundary-10-before.jpg",
+      "qa/tt-009-boundary-10-after.jpg",
+      "qa/tt-009-boundary-11-before.jpg",
+      "qa/tt-009-boundary-11-after.jpg",
+      "qa/tt-009-boundary-12-before.jpg",
+      "qa/tt-009-boundary-12-after.jpg",
+      "qa/tt-009-boundary-13-before.jpg",
+      "qa/tt-009-boundary-13-after.jpg",
+      "qa/tt-009-boundary-14-before.jpg",
+      "qa/tt-009-boundary-14-after.jpg",
+      "qa/tt-009-boundary-15-before.jpg",
+      "qa/tt-009-boundary-15-after.jpg",
+      "qa/tt-009-boundary-16-before.jpg",
+      "qa/tt-009-boundary-16-after.jpg",
+      "qa/tt-009-boundary-17-before.jpg",
+      "qa/tt-009-boundary-17-after.jpg",
+      "qa/tt-009-boundary-18-before.jpg",
+      "qa/tt-009-boundary-18-after.jpg",
+      "qa/tt-009-review-shot-01-plus-018.jpg",
+      "qa/tt-009-review-shot-01-plus-070.jpg",
+      "qa/tt-009-review-shot-02-plus-018.jpg",
+      "qa/tt-009-review-shot-02-plus-070.jpg",
+      "qa/tt-009-review-shot-03-plus-018.jpg",
+      "qa/tt-009-review-shot-03-plus-070.jpg",
+      "qa/tt-009-review-shot-04-plus-018.jpg",
+      "qa/tt-009-review-shot-04-plus-070.jpg",
+      "qa/tt-009-review-shot-05-plus-018.jpg",
+      "qa/tt-009-review-shot-05-plus-070.jpg",
+      "qa/tt-009-review-shot-06-plus-018.jpg",
+      "qa/tt-009-review-shot-06-plus-070.jpg",
+      "qa/tt-009-review-shot-07-plus-018.jpg",
+      "qa/tt-009-review-shot-07-plus-070.jpg",
+      "qa/tt-009-review-shot-08-plus-018.jpg",
+      "qa/tt-009-review-shot-08-plus-070.jpg",
+      "qa/tt-009-review-shot-09-plus-018.jpg",
+      "qa/tt-009-review-shot-09-plus-070.jpg",
+      "qa/tt-009-review-shot-10-plus-018.jpg",
+      "qa/tt-009-review-shot-10-plus-070.jpg",
+      "qa/tt-009-review-shot-11-plus-018.jpg",
+      "qa/tt-009-review-shot-11-plus-070.jpg",
+      "qa/tt-009-review-shot-12-plus-018.jpg",
+      "qa/tt-009-review-shot-12-plus-070.jpg",
+      "qa/tt-009-review-shot-13-plus-018.jpg",
+      "qa/tt-009-review-shot-13-plus-070.jpg",
+      "qa/tt-009-review-shot-14-plus-018.jpg",
+      "qa/tt-009-review-shot-14-plus-070.jpg",
+      "qa/tt-009-review-shot-15-plus-018.jpg",
+      "qa/tt-009-review-shot-15-plus-070.jpg",
+      "qa/tt-009-review-shot-16-plus-018.jpg",
+      "qa/tt-009-review-shot-16-plus-070.jpg",
+      "qa/tt-009-review-shot-17-plus-018.jpg",
+      "qa/tt-009-review-shot-17-plus-070.jpg",
+      "qa/tt-009-review-shot-18-plus-018.jpg",
+      "qa/tt-009-review-shot-18-plus-070.jpg",
+      "qa/tt-009-review-shot-19-plus-018.jpg",
+      "qa/tt-009-review-shot-19-plus-070.jpg",
+      "media/tt-009-ants-bite-the-restraint-b89b5c741890_cover.jpg"
+    ],
+    "release_note": "Separate 16 November review of export produced by previous TT-009 author. Exact public video, cover, manifest and review-index hashes independently checked. Release does not itself create a platform reservation; publication still needs provider CAS, intent, full-month quota, media-byte and readback checks. No perceptual audio listening or uninterrupted playback claimed."
   }
 }
