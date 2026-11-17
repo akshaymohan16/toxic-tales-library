@@ -471,8 +471,8 @@
       "metricool_uuid": "-6872348896682359981",
       "publication_date": "2026-11-17T10:00:00+01:00",
       "timezone": "Europe/Vienna",
-      "status": "scheduled",
-      "provider_status": "PENDING",
+      "status": "published",
+      "provider_status": "PUBLISHED",
       "auto_publish": true,
       "draft": false,
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6872348896682359981",
@@ -494,7 +494,7 @@
       "receipt_saved_on": "2026-11-09T08:28:58.049309+00:00",
       "schedule_readback_verified": true,
       "publication_eligible": true,
-      "publication_confirmation": "PENDING future reservation after owner-authorized media replacement; not yet PUBLISHED. Require positive provider publication and live URL after due time.",
+      "publication_confirmation": "Fresh full-month Metricool PUBLISHED receipt and explicit public permalink after the 17 Nov 10:00 Vienna slot; original UUID and SHA-verified approved release preserved.",
       "duplicate_guard": "Distinct-paper TT-007-REEL reserved. Never resubmit while scheduled, and never substitute TT-003.",
       "media_replacement_history": [
         {
@@ -523,7 +523,7 @@
       },
       "metricool_cover_sha256": "e135568b0dca854ba3c6ae22ecd426387d2999f2d7b9647c832d755c12b2c934",
       "metricool_hosted_bytes_verified": true,
-      "provider_readback_checked_at": "2026-11-13T11:42:42.179Z",
+      "provider_readback_checked_at": "2026-11-17T16:56:19.742Z",
       "replacement_authorization": "automation/motion-replacement-2026-11-09.json",
       "provider_readback": {
         "id": 426842509,
@@ -540,8 +540,10 @@
         "providers": [
           {
             "network": "instagram",
-            "status": "PENDING",
-            "detailedStatus": "Pending"
+            "id": "https://www.instagram.com/reel/Df1kUbZlb21/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df1kUbZlb21/",
+            "detailedStatus": "Published"
           }
         ],
         "media": [
@@ -577,7 +579,27 @@
           "reason": "Owner requested Tuesday/Friday cadence"
         }
       ],
-      "exact_bytes_reverified_at": "2026-11-13T11:42:42.179Z"
+      "exact_bytes_reverified_at": "2026-11-13T11:42:42.179Z",
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.instagram.com/reel/Df1kUbZlb21/",
+      "publication_confirmed_at": "2026-11-17T16:56:19.742Z",
+      "published_confirmed_at": "2026-11-17T16:56:19.742Z",
+      "confirmation_source": "Authenticated Metricool brand 7937614, original platform UUID, media URL, publicUrl, autoPublish and title/metadata readback.",
+      "live_verification": {
+        "decision": "provider_public_permalink_confirmed",
+        "url": "https://www.instagram.com/reel/Df1kUbZlb21/",
+        "checked_at": "2026-11-17T16:56:19.742Z",
+        "verification_basis": "Provider PUBLISHED with explicit Instagram reel publicUrl and exact authorized brand account, caption/DOI and SHA-verified hosted release; direct unauthenticated page playback was unavailable and is not claimed."
+      },
+      "notified": true,
+      "notified_at": "2026-11-17T16:56:19.742Z",
+      "publication_notification": {
+        "status": "reported_in_chat",
+        "channel": "scheduled_automation_result",
+        "notified_at": "2026-11-17T16:56:19.742Z",
+        "post_id": "TT-007-REEL",
+        "public_url": "https://www.instagram.com/reel/Df1kUbZlb21/"
+      }
     },
     {
       "episode_id": "TT-006",
@@ -751,8 +773,8 @@
       "metricool_id": "426850040",
       "metricool_uuid": "-6561054799073883973",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6561054799073883973",
-      "status": "scheduled",
-      "provider_status": "PENDING",
+      "status": "published",
+      "provider_status": "PUBLISHED",
       "auto_publish": true,
       "draft": false,
       "metricool_media_urls": [
@@ -779,8 +801,10 @@
         "providers": [
           {
             "network": "youtube",
-            "status": "PENDING",
-            "detailedStatus": "Pending"
+            "id": "Dh6xDjEV1fg",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/Dh6xDjEV1fg",
+            "detailedStatus": "Published"
           }
         ],
         "media": [
@@ -814,7 +838,7 @@
         "uuid": "-6561054799073883973",
         "brandTags": []
       },
-      "provider_readback_checked_at": "2026-11-13T11:49:09.201Z",
+      "provider_readback_checked_at": "2026-11-17T16:56:19.742Z",
       "schedule_readback_verified": true,
       "publication_eligible": true,
       "receipt_saved_on": "2026-11-13T11:49:09.201Z",
@@ -836,8 +860,36 @@
         "moving_playback_review_claimed": false,
         "metadata_sha256": "7dc6869876ee83364fad91e635b2c69bd52c4539a7c613d417def701a95edbb2"
       },
-      "publication_confirmation": "Future scheduled reservation only. Require positive PUBLISHED and live URL after due time.",
-      "duplicate_guard": "Exact Tuesday TT007 video already reserved on this YouTube UUID; never create a second copy."
+      "publication_confirmation": "Fresh full-month Metricool PUBLISHED receipt and explicit public permalink after the 17 Nov 10:00 Vienna slot; original UUID and SHA-verified approved release preserved.",
+      "duplicate_guard": "Exact Tuesday TT007 video already reserved on this YouTube UUID; never create a second copy.",
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.youtube.com/shorts/Dh6xDjEV1fg",
+      "publication_confirmed_at": "2026-11-17T16:56:19.742Z",
+      "published_confirmed_at": "2026-11-17T16:56:19.742Z",
+      "confirmation_source": "Authenticated Metricool brand 7937614, original platform UUID, media URL, publicUrl, autoPublish and title/metadata readback.",
+      "youtube_video_id": "Dh6xDjEV1fg",
+      "live_verification": {
+        "decision": "pass",
+        "url": "https://www.youtube.com/shorts/Dh6xDjEV1fg",
+        "video_id": "Dh6xDjEV1fg",
+        "channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+        "title": "Do Bumblebees Play? Balls Without a Food Reward | Toxic Tales",
+        "checked_at": "2026-11-17T16:54:38.291500Z",
+        "verification_basis": "Independent free GitHub Actions public YouTube oEmbed returned exact approved title, Toxic Tales @toxic_tales_eco as public author and linked public channel page containing pinned channel ID; yt-dlp was bot-blocked and no video playback/audio is claimed. Authenticated Metricool independently returned PUBLISHED on exact UUID and a public Shorts URL. The approved video and its provider-hosted MP4 were previously SHA-matched.",
+        "public_oembed_title_match": true,
+        "public_oembed_author_url": "https://www.youtube.com/@toxic_tales_eco",
+        "public_channel_page_id_match": true,
+        "independent_public_metadata_workflow": "https://github.com/akshaymohan16/toxic-tales-library/actions/runs/44131070810"
+      },
+      "notified": true,
+      "notified_at": "2026-11-17T16:56:19.742Z",
+      "publication_notification": {
+        "status": "reported_in_chat",
+        "channel": "scheduled_automation_result",
+        "notified_at": "2026-11-17T16:56:19.742Z",
+        "post_id": "TT-007-YOUTUBE-SHORT",
+        "public_url": "https://www.youtube.com/shorts/Dh6xDjEV1fg"
+      }
     },
     {
       "post_id": "TT-008-REEL",
@@ -1274,6 +1326,10 @@
     "TT-006-YOUTUBE-SHORT",
     "youtube:TT-006-YOUTUBE-SHORT",
     "TT-005-CAROUSEL",
-    "instagram:TT-005-CAROUSEL"
+    "instagram:TT-005-CAROUSEL",
+    "TT-007-REEL",
+    "instagram:TT-007-REEL",
+    "TT-007-YOUTUBE-SHORT",
+    "youtube:TT-007-YOUTUBE-SHORT"
   ]
 }

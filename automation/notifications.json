@@ -114,6 +114,30 @@
       "public_url": "https://www.youtube.com/shorts/le2mS8MHcpo",
       "verification": "Metricool PUBLISHED plus actual live page, correct account/title/DOI as applicable",
       "delivery_status": "Reported in this chat; push/email receipt not claimed"
+    },
+    {
+      "key": "instagram:-6872348896682359981",
+      "post_id": "TT-007-REEL",
+      "episode_id": "TT-007",
+      "platform": "instagram",
+      "uuid": "-6872348896682359981",
+      "status": "reported_in_chat",
+      "notified_at": "2026-11-17T16:56:19.742Z",
+      "public_url": "https://www.instagram.com/reel/Df1kUbZlb21/",
+      "verification": "Metricool PUBLISHED, public Instagram Reel permalink and approved media matched",
+      "delivery_status": "Task-result update prepared; push/email delivery not verified"
+    },
+    {
+      "key": "youtube:-6561054799073883973",
+      "post_id": "TT-007-YOUTUBE-SHORT",
+      "episode_id": "TT-007",
+      "platform": "youtube",
+      "uuid": "-6561054799073883973",
+      "status": "reported_in_chat",
+      "notified_at": "2026-11-17T16:56:19.742Z",
+      "public_url": "https://www.youtube.com/shorts/Dh6xDjEV1fg",
+      "verification": "Metricool PUBLISHED and independent public YouTube oEmbed exact title/channel verified",
+      "delivery_status": "Task-result update prepared; push/email delivery not verified"
     }
   ],
   "delivery": "ChatGPT task result notifications; device/email delivery unverified"
