@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-16T17:27:18.456Z",
+  "observed_at": "2026-11-17T08:54:12.258Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -30,14 +30,14 @@
     "426946098"
   ],
   "published_post_ids": [
-    "TT-002-REEL",
-    "TT-004-REEL",
-    "TT-005-REEL",
-    "TT-005-CAROUSEL",
-    "TT-006-REEL",
-    "TT-006-YOUTUBE-SHORT",
-    "TT-008-REEL",
-    "TT-008-YOUTUBE-SHORT"
+    "instagram:TT-002-REEL",
+    "instagram:TT-004-REEL",
+    "instagram:TT-005-REEL",
+    "instagram:TT-005-CAROUSEL",
+    "instagram:TT-006-REEL",
+    "youtube:TT-006-YOUTUBE-SHORT",
+    "instagram:TT-008-REEL",
+    "youtube:TT-008-YOUTUBE-SHORT"
   ],
   "reserved_candidate_ids": [],
   "unresolved_submissions": [],
@@ -52,7 +52,7 @@
     "TT-009-REEL",
     "TT-009-YOUTUBE-SHORT"
   ],
-  "calendar_reconciled_on": "2026-11-16T17:27:18.456Z",
+  "calendar_reconciled_on": "2026-11-17T08:54:12.258Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -65,14 +65,14 @@
   "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
   "provider_confirmed_publications": 8,
   "known_usage_lower_bound": 8,
-  "last_calendar_readback": "2026-11-16T17:27:18.456Z",
+  "last_calendar_readback": "2026-11-17T08:54:12.258Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
     "observed_used": 8,
-    "observed_at": "2026-11-16T17:27:18.456Z",
-    "calendar_checked_at": "2026-11-16T17:27:18.456Z",
+    "observed_at": "2026-11-17T08:54:12.258Z",
+    "calendar_checked_at": "2026-11-17T08:54:12.258Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -114,7 +114,7 @@
     "owner_authorized_one_off_destination_slots": 2
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-16T17:27:18.456Z",
+    "checked_at": "2026-11-17T08:54:12.258Z",
     "published_destinations": 8,
     "scheduled_active_destinations": 4,
     "held_retired_drafts": 2,
@@ -122,9 +122,10 @@
     "no_new_writes": true,
     "owner_authorized_tt008_published_both": true,
     "retired_tt002_and_rejected_tt003_untouched": true,
-    "friday_20_november_status": "TT-009 IG/YT PENDING, IDs 429844048 and 429844729; exact media/source SHA verified 43847978272",
+    "friday_20_november_status": "TT-009 Instagram & YouTube PENDING 10:00 Nov 20, 2 unchanged original UUIDs and prior exact provider SHA verification",
     "observed_provider_uuid_count": 14,
     "latest_build_run": 43848353452,
-    "latest_watchdog_run": 43848681445
+    "latest_watchdog_run": 43968916405,
+    "today_tuesday_status": "TT-007 Instagram & YouTube PENDING at pre-due-time check on Nov 17; await provider confirmation after 10:00"
   }
 }
