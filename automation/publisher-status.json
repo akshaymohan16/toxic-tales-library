@@ -1,6 +1,6 @@
 {
   "checked_on": "2026-11-17",
-  "updated_at": "2026-11-17T16:56:19.742Z",
+  "updated_at": "2026-11-17T16:59:28.717Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
@@ -81,7 +81,7 @@
     "verified_destination_receipts": 4,
     "producer_due": "2026-11-15T10:00:00+01:00",
     "hard_readiness_due": "2026-11-16T23:59:59+01:00",
-    "status": "Tuesday TT-007 PUBLISHED on Instagram and YouTube with confirmed public links; Friday TT-009 PENDING with two verified 20 Nov 10:00 receipts"
+    "status": "Tuesday TT-007 both PUBLISHED; Friday TT-009 both PENDING; 4 existing provider receipts and public TT-007 archive deployment verified"
   },
   "recurring_tasks": [
     {
@@ -106,7 +106,7 @@
       "next_run_time": "2026-11-15T10:00:00+01:00"
     }
   ],
-  "deployment_and_media": "TT-009 released exact media retained. Pages build/deploy and 55 public-file SHA checks passed run 43848353452; two provider MP4s/covers matched source SHA in 43847978272.",
+  "deployment_and_media": "TT-007 publication links added to the archive by build/deploy run 44131433054; anonymous public byte verification passed 55 public files at 2026-11-17T16:58:21Z. Original approved TT-007 and TT-009 releases unchanged.",
   "review_limit": "Separate reviewer inspected 19 actual encoded shots, 18 boundaries, opening and final encoded frame, final audio ASR/caption/loudness and source rights; no perceptual listening or uninterrupted motion playback claimed.",
   "automatic_next_step": "Friday 20 November 10:00 Vienna: verify TT-009 PUBLISHED/public URLs after due time; no resubmission while PENDING. Sunday 22 November producer handles 24/27 November missing episodes.",
   "notification_delivery": "TT-009 paired creation alert recorded once in automation/notifications.json; only scheduled PENDING, not published. Push/email delivery unverified.",
@@ -116,16 +116,16 @@
     "TT-009-REEL",
     "TT-009-YOUTUBE-SHORT"
   ],
-  "last_successful_deployment_run": 43848353452,
+  "last_successful_deployment_run": 44131433054,
   "validation": {
-    "script_tests": 150,
+    "script_tests": 165,
     "automation_tests": 104,
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
     "provider_byte_verification_run": 43847978272,
-    "latest_watchdog_run": 43968916405,
+    "latest_watchdog_run": 44131432961,
     "latest_watchdog_conclusion": "success",
-    "latest_build_run": 43848353452,
+    "latest_build_run": 44131433054,
     "latest_build_verified_steps": [
       "build",
       "deploy",
@@ -138,12 +138,15 @@
     "latest_build_failure_step": null,
     "latest_build_failure_cause": null,
     "claim_ownership_verified": true,
-    "latest_verified_build_run": 43848353452,
+    "latest_verified_build_run": 44131433054,
     "latest_verified_build_conclusion": "success",
     "later_same_source_deployment_run": 43848353452,
     "later_same_source_deployment_status": "completed_success",
     "public_youtube_verification_run": 44131070810,
-    "public_youtube_verification_conclusion": "success"
+    "public_youtube_verification_conclusion": "success",
+    "latest_archive_confirmed_social_links": 10,
+    "public_files_verified": 55,
+    "last_public_media_verification_checked_at": "2026-11-17T16:58:21.158402+00:00"
   },
   "current_one_off": {
     "episode_id": "TT-008",
@@ -281,7 +284,9 @@
       "instagram": "https://www.instagram.com/reel/Df1kUbZlb21/",
       "youtube": "https://www.youtube.com/shorts/Dh6xDjEV1fg",
       "youtube_independent_check": "https://github.com/akshaymohan16/toxic-tales-library/actions/runs/44131070810"
-    }
+    },
+    "latest_verified_archive_build": 44131433054,
+    "archive_confirmed_social_links": 10
   },
   "claim_coordination": {
     "checked_at": "2026-11-17T16:56:19.742Z",

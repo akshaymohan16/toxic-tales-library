@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-17T16:56:19.742Z",
+  "observed_at": "2026-11-17T16:59:28.717Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -128,8 +128,10 @@
     "retired_tt002_and_rejected_tt003_untouched": true,
     "friday_20_november_status": "TT-009 unchanged Instagram & YouTube PENDING 20 Nov 10:00 Europe/Vienna",
     "observed_provider_uuid_count": 14,
-    "latest_build_run": 43848353452,
-    "latest_watchdog_run": 43968916405,
-    "today_tuesday_status": "TT-007 Instagram and YouTube both PUBLISHED on 17 Nov with provider links; YouTube title/channel independently checked by public Actions 44131070810"
+    "latest_build_run": 44131433054,
+    "latest_watchdog_run": 44131432961,
+    "today_tuesday_status": "TT-007 Instagram and YouTube both PUBLISHED on 17 Nov with provider links; YouTube title/channel independently checked by public Actions 44131070810",
+    "archive_deployment_verified": true,
+    "public_files_verified": 55
   }
 }
