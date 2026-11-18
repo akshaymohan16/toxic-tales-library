@@ -1331,5 +1331,28 @@
     "instagram:TT-007-REEL",
     "TT-007-YOUTUBE-SHORT",
     "youtube:TT-007-YOUTUBE-SHORT"
-  ]
+  ],
+  "last_provider_reconciled_at": "2026-11-18T17:07:33.637Z",
+  "last_provider_reconciliation": {
+    "month": "2026-11",
+    "calendar_entries": 14,
+    "published_count": 10,
+    "scheduled_count": 2,
+    "retired_draft_count": 2,
+    "published_destination_keys": [
+      "instagram:-3158597333632725768",
+      "instagram:-5193152553705388348",
+      "instagram:-6872348896682359981",
+      "instagram:-7609883982228992318",
+      "instagram:2386175407143797944",
+      "instagram:3555893508354493617",
+      "instagram:8432780738091634663",
+      "youtube:-6561054799073883973",
+      "youtube:-6895101637645415437",
+      "youtube:4422280930322105807"
+    ],
+    "remaining_regular_destinations": 4,
+    "projected_month_destinations": 16,
+    "one_off_confirmed_both": true
+  }
 }
