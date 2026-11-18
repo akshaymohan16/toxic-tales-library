@@ -1,6 +1,6 @@
 {
   "checked_on": "2026-11-18",
-  "updated_at": "2026-11-18T09:38:57.749Z",
+  "updated_at": "2026-11-18T17:07:33.637Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
@@ -10,8 +10,8 @@
   "quota": {
     "month": "2026-11",
     "observed_used": 10,
-    "observed_at": "2026-11-18T09:38:57.749Z",
-    "calendar_checked_at": "2026-11-18T09:38:57.749Z",
+    "observed_at": "2026-11-18T17:07:33.637Z",
+    "calendar_checked_at": "2026-11-18T17:07:33.637Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -81,7 +81,7 @@
     "verified_destination_receipts": 4,
     "producer_due": "2026-11-15T10:00:00+01:00",
     "hard_readiness_due": "2026-11-16T23:59:59+01:00",
-    "status": "Tuesday TT-007 both PUBLISHED and live-verified; Friday TT-009 both PENDING with existing verified receipts (10:00 Vienna 20 Nov)"
+    "status": "TT-007 both PUBLISHED; TT-009 Friday 20 Nov both PENDING and verified with original UUIDs"
   },
   "recurring_tasks": [
     {
@@ -108,7 +108,7 @@
   ],
   "deployment_and_media": "TT-007 publication links added to the archive by build/deploy run 44131433054; anonymous public byte verification passed 55 public files at 2026-11-17T16:58:21Z. Original approved TT-007 and TT-009 releases unchanged.",
   "review_limit": "Separate reviewer inspected 19 actual encoded shots, 18 boundaries, opening and final encoded frame, final audio ASR/caption/loudness and source rights; no perceptual listening or uninterrupted motion playback claimed.",
-  "automatic_next_step": "Friday 20 November 10:00 Vienna: verify TT-009 PUBLISHED/public URLs after due time; no resubmission while PENDING. Sunday 22 November producer handles 24/27 November missing episodes.",
+  "automatic_next_step": "After Friday 20 November 10:00 Vienna, reconcile TT-009 PUBLISHED and live public URL per network, notify once; Sunday 22 November produce and schedule missing 24/27 November paired slots.",
   "notification_delivery": "TT-009 paired creation alert recorded once in automation/notifications.json; only scheduled PENDING, not published. Push/email delivery unverified.",
   "scheduled_posts_returned": 14,
   "published_provider_receipts": 10,
@@ -119,11 +119,11 @@
   "last_successful_deployment_run": 44131433054,
   "validation": {
     "script_tests": 165,
-    "automation_tests": 104,
+    "automation_tests": 115,
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
     "provider_byte_verification_run": 43847978272,
-    "latest_watchdog_run": 44176131567,
+    "latest_watchdog_run": 44277920843,
     "latest_watchdog_conclusion": "success",
     "latest_build_run": 44131433054,
     "latest_build_verified_steps": [
@@ -133,7 +133,7 @@
     ],
     "latest_paper_retrieval_run": 43439354279,
     "latest_paper_retrieval_conclusion": "success",
-    "fresh_live_metricool_reconciliation_at": "2026-11-18T09:38:57.749Z",
+    "fresh_live_metricool_reconciliation_at": "2026-11-18T17:07:33.637Z",
     "latest_build_conclusion": "success",
     "latest_build_failure_step": null,
     "latest_build_failure_cause": null,
@@ -157,7 +157,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-18T09:38:57.749Z",
+    "checked_at": "2026-11-18T17:07:33.637Z",
     "brand_id": "7937614",
     "accounts": {
       "instagram": "toxic_tales_eco",
@@ -206,7 +206,7 @@
     ],
     "unused_or_missing": [],
     "open_readiness_issues": 0,
-    "duplicate_checks": "14 unique UUIDs; 10 published, 2 Friday scheduled, 2 retired/inactive drafts; no new writes",
+    "duplicate_checks": "14 unique UUIDs; 10 published, 2 Friday pending, 2 retired/inactive; no provider writes",
     "blockers": [],
     "routine_recovery": {
       "episode_id": "TT-009",
@@ -289,9 +289,9 @@
     "archive_confirmed_social_links": 10
   },
   "claim_coordination": {
-    "checked_at": "2026-11-18T09:38:57.749Z",
-    "status": "Read-only live provider reconciliation; TT-009 production and submission claims already completed",
-    "this_run_action": "No production or submission claim required; no provider writes",
+    "checked_at": "2026-11-18T17:07:33.637Z",
+    "status": "All TT-009 production/submission claims completed; no unexpired competing claim",
+    "this_run_action": "No new production/submission claim required; no external provider writes",
     "active_competing_claims": 0
   },
   "following_week_readiness": {
@@ -299,6 +299,6 @@
     "required_destination_receipts": 4,
     "verified_destination_receipts": 0,
     "producer_due": "2026-11-22T10:00:00+01:00",
-    "status": "Not yet due: production Sunday 22 November for Tuesday 24 and Friday 27 November"
+    "status": "Not yet due; Sunday 22 Nov producer should create only missing Tue 24 / Fri 27 episodes"
   }
 }
