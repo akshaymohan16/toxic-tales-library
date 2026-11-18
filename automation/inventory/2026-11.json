@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-17T16:59:28.717Z",
+  "observed_at": "2026-11-18T09:38:57.749Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -52,7 +52,7 @@
     "TT-009-REEL",
     "TT-009-YOUTUBE-SHORT"
   ],
-  "calendar_reconciled_on": "2026-11-17T16:56:19.742Z",
+  "calendar_reconciled_on": "2026-11-18T09:38:57.749Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -65,14 +65,14 @@
   "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
   "provider_confirmed_publications": 10,
   "known_usage_lower_bound": 10,
-  "last_calendar_readback": "2026-11-17T16:56:19.742Z",
+  "last_calendar_readback": "2026-11-18T09:38:57.749Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
     "observed_used": 10,
-    "observed_at": "2026-11-17T16:56:19.742Z",
-    "calendar_checked_at": "2026-11-17T16:56:19.742Z",
+    "observed_at": "2026-11-18T09:38:57.749Z",
+    "calendar_checked_at": "2026-11-18T09:38:57.749Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -118,7 +118,7 @@
     "owner_authorized_one_off_destination_slots": 2
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-17T16:56:19.742Z",
+    "checked_at": "2026-11-18T09:38:57.749Z",
     "published_destinations": 10,
     "scheduled_active_destinations": 2,
     "held_retired_drafts": 2,
@@ -126,10 +126,10 @@
     "no_new_writes": true,
     "owner_authorized_tt008_published_both": true,
     "retired_tt002_and_rejected_tt003_untouched": true,
-    "friday_20_november_status": "TT-009 unchanged Instagram & YouTube PENDING 20 Nov 10:00 Europe/Vienna",
+    "friday_20_november_status": "TT-009 Instagram and YouTube PENDING for 20 Nov 10:00 Vienna, original UUIDs and approved bytes unchanged",
     "observed_provider_uuid_count": 14,
     "latest_build_run": 44131433054,
-    "latest_watchdog_run": 44131432961,
+    "latest_watchdog_run": 44176131567,
     "today_tuesday_status": "TT-007 Instagram and YouTube both PUBLISHED on 17 Nov with provider links; YouTube title/channel independently checked by public Actions 44131070810",
     "archive_deployment_verified": true,
     "public_files_verified": 55
