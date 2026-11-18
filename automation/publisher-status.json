@@ -1,6 +1,6 @@
 {
   "checked_on": "2026-11-18",
-  "updated_at": "2026-11-18T17:07:33.637Z",
+  "updated_at": "2026-11-18T17:09:08.853Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
@@ -85,25 +85,28 @@
   },
   "recurring_tasks": [
     {
-      "id": "6af077085e1c8191af8325f3be864402",
-      "title": "Toxic Tales first unattended run",
-      "enabled": true,
-      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Vienna:20261115T190000\nRRULE:FREQ=DAILY\nEND:VEVENT",
-      "next_run_time": "2026-11-15T19:00:00+01:00"
-    },
-    {
       "id": "Automation_991690d6af648191ac8037cfa96c92a0",
       "title": "Publish Toxic Tales queue",
       "enabled": true,
       "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Vienna:20261113T181500\nRRULE:FREQ=DAILY;BYHOUR=10,18;BYMINUTE=15;BYSECOND=0\nEND:VEVENT",
-      "next_run_time": "2026-11-13T18:15:00+01:00"
+      "next_run_time": "2026-11-18T18:15:00+01:00",
+      "last_run_time": "2026-11-18T09:39:44.816176+00:00"
     },
     {
       "id": "6aeefcb926708191b092554230783da1",
       "title": "Produce Toxic Tales weekly",
       "enabled": true,
       "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Vienna:20261108T100000\nRRULE:FREQ=WEEKLY;BYDAY=SU;BYHOUR=10;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
-      "next_run_time": "2026-11-15T10:00:00+01:00"
+      "next_run_time": "2026-11-22T10:00:00+01:00",
+      "last_run_time": "2026-11-15T09:29:17.391074+00:00"
+    },
+    {
+      "id": "6af077085e1c8191af8325f3be864402",
+      "title": "Toxic Tales first unattended run",
+      "enabled": false,
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Vienna:20261115T190000\nRRULE:FREQ=DAILY\nEND:VEVENT",
+      "next_run_time": null,
+      "last_run_time": "2026-11-16T17:52:10.734012+00:00"
     }
   ],
   "deployment_and_media": "TT-007 publication links added to the archive by build/deploy run 44131433054; anonymous public byte verification passed 55 public files at 2026-11-17T16:58:21Z. Original approved TT-007 and TT-009 releases unchanged.",
@@ -300,5 +303,6 @@
     "verified_destination_receipts": 0,
     "producer_due": "2026-11-22T10:00:00+01:00",
     "status": "Not yet due; Sunday 22 Nov producer should create only missing Tue 24 / Fri 27 episodes"
-  }
+  },
+  "automation_tasks_verified_at": "2026-11-18T17:09:08.853Z"
 }
