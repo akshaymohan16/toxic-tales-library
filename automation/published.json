@@ -1354,5 +1354,20 @@
     "remaining_regular_destinations": 4,
     "projected_month_destinations": 16,
     "one_off_confirmed_both": true
+  },
+  "last_live_reconciliation": {
+    "checked_at": "2026-11-19T09:15:43.642Z",
+    "month": "2026-11",
+    "brand_id": "7937614",
+    "calendar_entries": 14,
+    "published_destinations": 10,
+    "scheduled_destinations": 2,
+    "inactive_drafts": 2,
+    "friday_2026_11_20": [
+      "instagram:1927625585550052374",
+      "youtube:3828607998694999530"
+    ],
+    "post_records_changed": 0,
+    "provider_writes": 0
   }
 }
