@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-19T09:15:43.642Z",
+  "observed_at": "2026-11-19T17:10:48.000Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -52,7 +52,7 @@
     "TT-009-REEL",
     "TT-009-YOUTUBE-SHORT"
   ],
-  "calendar_reconciled_on": "2026-11-19T09:15:43.642Z",
+  "calendar_reconciled_on": "2026-11-19T17:10:48.000Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -65,16 +65,16 @@
   "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
   "provider_confirmed_publications": 10,
   "known_usage_lower_bound": 10,
-  "last_calendar_readback": "2026-11-19T09:15:43.642Z",
+  "last_calendar_readback": "2026-11-19T17:10:48.000Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
     "observed_used": 10,
-    "observed_at": "2026-11-19T09:15:43.642Z",
-    "calendar_checked_at": "2026-11-19T09:15:43.642Z",
+    "observed_at": "2026-11-19T17:10:48.000Z",
+    "calendar_checked_at": "2026-11-19T17:10:48.000Z",
     "full_month_calendar_verified": true,
-    "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
+    "observation_basis": "Complete Metricool November calendar reconciled to persisted 9 November usage baseline and append-only network:UUID history",
     "usage_baseline": {
       "month": "2026-11",
       "used": 3,
@@ -118,7 +118,7 @@
     "owner_authorized_one_off_destination_slots": 2
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-19T09:15:43.642Z",
+    "checked_at": "2026-11-19T17:10:48.000Z",
     "published_destinations": 10,
     "scheduled_active_destinations": 2,
     "held_retired_drafts": 2,
@@ -126,12 +126,15 @@
     "no_new_writes": true,
     "owner_authorized_tt008_published_both": true,
     "retired_tt002_and_rejected_tt003_untouched": true,
-    "friday_20_november_status": "TT-009 paired receipts PENDING; original UUIDs and media retained",
+    "friday_20_november_status": "TT-009 Instagram and YouTube PENDING for 20 November 10:00 Europe/Vienna; original UUIDs and approved media retained",
     "observed_provider_uuid_count": 14,
-    "latest_build_run": 44131433054,
-    "latest_watchdog_run": 44393732996,
-    "today_tuesday_status": "TT-007 Instagram and YouTube both PUBLISHED on 17 Nov with provider links; YouTube title/channel independently checked by public Actions 44131070810",
+    "latest_build_run": 44494813543,
+    "latest_build_conclusion": "success",
+    "latest_watchdog_run": 44494813558,
+    "latest_watchdog_conclusion": "success",
+    "today_tuesday_status": "TT-007 Instagram and YouTube PUBLISHED on 17 Nov with public URLs; YouTube title/channel independently verified",
     "archive_deployment_verified": true,
-    "public_files_verified": 55
+    "public_files_verified": 55,
+    "open_readiness_issues": 0
   }
 }

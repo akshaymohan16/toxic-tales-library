@@ -1330,9 +1330,13 @@
     "TT-007-REEL",
     "instagram:TT-007-REEL",
     "TT-007-YOUTUBE-SHORT",
-    "youtube:TT-007-YOUTUBE-SHORT"
+    "youtube:TT-007-YOUTUBE-SHORT",
+    "TT-008-REEL",
+    "instagram:TT-008-REEL",
+    "TT-008-YOUTUBE-SHORT",
+    "youtube:TT-008-YOUTUBE-SHORT"
   ],
-  "last_provider_reconciled_at": "2026-11-18T17:07:33.637Z",
+  "last_provider_reconciled_at": "2026-11-19T17:10:48.000Z",
   "last_provider_reconciliation": {
     "month": "2026-11",
     "calendar_entries": 14,
@@ -1353,10 +1357,23 @@
     ],
     "remaining_regular_destinations": 4,
     "projected_month_destinations": 16,
-    "one_off_confirmed_both": true
+    "one_off_confirmed_both": true,
+    "checked_at": "2026-11-19T17:10:48.000Z",
+    "full_month_calendar_verified": true,
+    "usage_baseline": {
+      "month": "2026-11",
+      "used": 3,
+      "observed_at": "2026-11-09T08:22:57.080Z",
+      "basis": "Persisted authenticated planner counter",
+      "published_destination_keys": [
+        "instagram:-3158597333632725768",
+        "instagram:8432780738091634663",
+        "instagram:2386175407143797944"
+      ]
+    }
   },
   "last_live_reconciliation": {
-    "checked_at": "2026-11-19T09:15:43.642Z",
+    "checked_at": "2026-11-19T17:10:48.000Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "calendar_entries": 14,
@@ -1367,7 +1384,20 @@
       "instagram:1927625585550052374",
       "youtube:3828607998694999530"
     ],
+    "published_destination_keys": [
+      "instagram:-3158597333632725768",
+      "instagram:-5193152553705388348",
+      "instagram:-6872348896682359981",
+      "instagram:-7609883982228992318",
+      "instagram:2386175407143797944",
+      "instagram:3555893508354493617",
+      "instagram:8432780738091634663",
+      "youtube:-6561054799073883973",
+      "youtube:-6895101637645415437",
+      "youtube:4422280930322105807"
+    ],
     "post_records_changed": 0,
-    "provider_writes": 0
+    "provider_writes": 0,
+    "open_readiness_issues": 0
   }
 }
