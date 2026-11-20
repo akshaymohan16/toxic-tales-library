@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-20T09:45:16.945Z",
+  "observed_at": "2026-11-20T17:13:59.915Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -48,7 +48,7 @@
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [],
-  "calendar_reconciled_on": "2026-11-20T09:45:16.945Z",
+  "calendar_reconciled_on": "2026-11-20T17:13:59.915Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -61,14 +61,14 @@
   "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
   "provider_confirmed_publications": 11,
   "known_usage_lower_bound": 11,
-  "last_calendar_readback": "2026-11-20T09:45:16.945Z",
+  "last_calendar_readback": "2026-11-20T17:13:59.915Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-20T09:45:16.945Z",
-    "calendar_checked_at": "2026-11-20T09:45:16.945Z",
+    "observed_at": "2026-11-20T17:13:59.915Z",
+    "calendar_checked_at": "2026-11-20T17:13:59.915Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -117,10 +117,10 @@
       "youtube:3828607998694999530"
     ],
     "conservative_committed_destination_count": 16,
-    "conservative_accounting_note": "11 PUBLISHED receipts + 1 YouTube ERROR with public URL (already committed, count once) + 4 remaining Tue/Fri destinations = 16/20. The ERROR is a thumbnail-upload warning, not permission to retry the video."
+    "conservative_accounting_note": "11 PUBLISHED receipts + 1 existing YouTube ERROR/public URL reservation (counted once) + 4 remaining Tue/Fri destinations = 16/20. No duplicate submission."
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-20T09:45:16.945Z",
+    "checked_at": "2026-11-20T17:13:59.915Z",
     "published_destinations": 11,
     "scheduled_active_destinations": 0,
     "held_retired_drafts": 2,
@@ -128,16 +128,16 @@
     "no_new_writes": true,
     "owner_authorized_tt008_published_both": true,
     "retired_tt002_and_rejected_tt003_untouched": true,
-    "friday_20_november_status": "TT-009 Instagram PUBLISHED with Reel link; YouTube ERROR thumbnail warning with Shorts URL, not positively PUBLISHED and no duplicate retry.",
+    "friday_20_november_status": "Instagram PUBLISHED; YouTube ERROR after completed video upload, thumbnail warning; original UUID and public Shorts URL preserved",
     "observed_provider_uuid_count": 14,
     "latest_build_run": 44713140659,
     "latest_build_conclusion": "success",
-    "latest_watchdog_run": 44713163265,
-    "latest_watchdog_conclusion": "failure_expected_youtube_status_error",
+    "latest_watchdog_run": 44780605180,
+    "latest_watchdog_conclusion": "failure_due_to_youtube_error",
     "today_tuesday_status": "TT-007 Instagram and YouTube PUBLISHED on 17 Nov with public URLs; YouTube title/channel independently verified",
     "archive_deployment_verified": true,
     "public_files_verified": 55,
-    "open_readiness_issues": 0,
+    "open_readiness_issues": 1,
     "provider_errors_with_public_urls": 1,
     "youtube_public_verification_requested": true,
     "public_youtube_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
@@ -161,7 +161,9 @@
       "warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "owner_action_required": false,
       "retry_permitted": false,
-      "public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d"
+      "public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
+      "public_metadata_verified": true,
+      "public_metadata_verification_run": 44712245363
     }
   ]
 }
