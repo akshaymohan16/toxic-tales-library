@@ -93,7 +93,7 @@
     "Automation_991690d6af648191ac8037cfa96c92a0"
   ],
   "new_task_created": false,
-  "updated_at": "2026-11-20T09:46:05.567Z",
+  "updated_at": "2026-11-20T09:47:07.978Z",
   "last_provider_reconciled_at": "2026-11-20T09:45:16.945Z",
   "provider_reconciliation": {
     "checked_at": "2026-11-20T09:45:16.945Z",
@@ -115,7 +115,7 @@
     "latest_watchdog_conclusion": "failure_due_to_youtube_error",
     "note": "TT-009 Instagram PUBLISHED 20 Nov; YouTube independent public oEmbed metadata PASS but Metricool ERROR failed thumbnail; no duplicate video or unsent slot; conservative quota 16/20 and readiness fail closed",
     "latest_build_run": 44713140659,
-    "latest_build_conclusion": "build_deploy_passed_verify_in_progress",
+    "latest_build_conclusion": "success",
     "latest_provider_byte_run": 43847978272,
     "latest_provider_byte_conclusion": "success",
     "tuesday_instagram_public_url": "https://www.instagram.com/reel/Df1kUbZlb21/",
