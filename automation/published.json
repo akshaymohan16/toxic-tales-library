@@ -1124,8 +1124,8 @@
       "metricool_uuid": "1927625585550052374",
       "publication_date": "2026-11-20T10:00:00+01:00",
       "timezone": "Europe/Vienna",
-      "status": "scheduled",
-      "provider_status": "PENDING",
+      "status": "published",
+      "provider_status": "PUBLISHED",
       "auto_publish": true,
       "draft": false,
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=1927625585550052374",
@@ -1199,8 +1199,12 @@
         "uuid": "1927625585550052374",
         "brandTags": []
       },
-      "publication_confirmation": "PENDING future scheduled reservation only; verify provider PUBLISHED and live URL after 20 Nov 10:00 Vienna.",
-      "duplicate_guard": "Exact TT-009 approved film reserved once per platform. Never resubmit this DOI/format/channel/week/UUID."
+      "publication_confirmation": "Positive PUBLISHED with existing UUID; no resubmission",
+      "duplicate_guard": "Exact TT-009 approved film reserved once per platform. Never resubmit this DOI/format/channel/week/UUID.",
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.instagram.com/reel/Df9S7TAD77J/",
+      "published_confirmed_at": "2026-11-20T09:40:02.763Z",
+      "confirmed_source": "Fresh complete Metricool 20 Nov 2026 calendar, exact original UUID, Instagram PUBLISHED and Reel public URL"
     },
     {
       "post_id": "TT-009-YOUTUBE-SHORT",
@@ -1212,8 +1216,8 @@
       "metricool_uuid": "3828607998694999530",
       "publication_date": "2026-11-20T10:00:00+01:00",
       "timezone": "Europe/Vienna",
-      "status": "scheduled",
-      "provider_status": "PENDING",
+      "status": "publication_uncertain_thumbnail_warning",
+      "provider_status": "ERROR",
       "auto_publish": true,
       "draft": false,
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=3828607998694999530",
@@ -1294,7 +1298,7 @@
         "brandTags": []
       },
       "publication_confirmation": "PENDING future scheduled reservation only; verify provider PUBLISHED and live URL after 20 Nov 10:00 Vienna.",
-      "duplicate_guard": "Exact TT-009 approved film reserved once per platform. Never resubmit this DOI/format/channel/week/UUID.",
+      "duplicate_guard": "Original provider UUID has Shorts URL; do not create or retry; awaiting PUBLISHED and independent live verification",
       "source_post_id": "TT-009-REEL",
       "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
       "youtube": {
@@ -1314,7 +1318,14 @@
         "listening_review_claimed": false,
         "moving_playback_review_claimed": false,
         "metadata_sha256": "4508e2d025ae41a8dd9575e282efb7872127b9d44a986054da379049147090dc"
-      }
+      },
+      "provider_detailed_status": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
+      "reported_public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
+      "public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
+      "publication_confirmed": false,
+      "public_metadata_verification_requested": true,
+      "public_metadata_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
+      "last_reconciled_at": "2026-11-20T09:40:02.763Z"
     }
   ],
   "notified_post_ids": [
@@ -1334,20 +1345,23 @@
     "TT-008-REEL",
     "instagram:TT-008-REEL",
     "TT-008-YOUTUBE-SHORT",
-    "youtube:TT-008-YOUTUBE-SHORT"
+    "youtube:TT-008-YOUTUBE-SHORT",
+    "TT-009-REEL",
+    "instagram:TT-009-REEL"
   ],
-  "last_provider_reconciled_at": "2026-11-19T17:10:48.000Z",
+  "last_provider_reconciled_at": "2026-11-20T09:40:02.763Z",
   "last_provider_reconciliation": {
     "month": "2026-11",
     "calendar_entries": 14,
-    "published_count": 10,
-    "scheduled_count": 2,
+    "published_count": 11,
+    "scheduled_count": 0,
     "retired_draft_count": 2,
     "published_destination_keys": [
       "instagram:-3158597333632725768",
       "instagram:-5193152553705388348",
       "instagram:-6872348896682359981",
       "instagram:-7609883982228992318",
+      "instagram:1927625585550052374",
       "instagram:2386175407143797944",
       "instagram:3555893508354493617",
       "instagram:8432780738091634663",
@@ -1358,7 +1372,7 @@
     "remaining_regular_destinations": 4,
     "projected_month_destinations": 16,
     "one_off_confirmed_both": true,
-    "checked_at": "2026-11-19T17:10:48.000Z",
+    "checked_at": "2026-11-20T09:40:02.763Z",
     "full_month_calendar_verified": true,
     "usage_baseline": {
       "month": "2026-11",
@@ -1370,15 +1384,20 @@
         "instagram:8432780738091634663",
         "instagram:2386175407143797944"
       ]
-    }
+    },
+    "provider_error_count": 1,
+    "uncertain_destination_count": 1,
+    "observed_at": "2026-11-20T09:40:02.763Z",
+    "ambiguous_youtube_uuid": "3828607998694999530",
+    "ambiguity_note": "The YouTube post was published with some warnings: Could not upload video thumbnail."
   },
   "last_live_reconciliation": {
-    "checked_at": "2026-11-19T17:10:48.000Z",
+    "checked_at": "2026-11-20T09:40:02.763Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "calendar_entries": 14,
-    "published_destinations": 10,
-    "scheduled_destinations": 2,
+    "published_destinations": 11,
+    "scheduled_destinations": 0,
     "inactive_drafts": 2,
     "friday_2026_11_20": [
       "instagram:1927625585550052374",
@@ -1389,6 +1408,7 @@
       "instagram:-5193152553705388348",
       "instagram:-6872348896682359981",
       "instagram:-7609883982228992318",
+      "instagram:1927625585550052374",
       "instagram:2386175407143797944",
       "instagram:3555893508354493617",
       "instagram:8432780738091634663",
@@ -1396,8 +1416,11 @@
       "youtube:-6895101637645415437",
       "youtube:4422280930322105807"
     ],
-    "post_records_changed": 0,
+    "post_records_changed": 2,
     "provider_writes": 0,
-    "open_readiness_issues": 0
+    "open_readiness_issues": 0,
+    "provider_warning_destinations": 1,
+    "youtube_warning_status": "ERROR",
+    "youtube_reported_public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4"
   }
 }
