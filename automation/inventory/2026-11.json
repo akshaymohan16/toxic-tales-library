@@ -61,7 +61,7 @@
   "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
   "provider_confirmed_publications": 11,
   "known_usage_lower_bound": 11,
-  "last_calendar_readback": "2026-11-20T09:40:02.763Z",
+  "last_calendar_readback": "2026-11-20T09:43:30.532Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
@@ -120,7 +120,7 @@
     "conservative_accounting_note": "11 PUBLISHED receipts + 1 YouTube ERROR with public URL (already committed, count once) + 4 remaining Tue/Fri destinations = 16/20. The ERROR is a thumbnail-upload warning, not permission to retry the video."
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-20T09:40:02.763Z",
+    "checked_at": "2026-11-20T09:43:30.532Z",
     "published_destinations": 11,
     "scheduled_active_destinations": 0,
     "held_retired_drafts": 2,
@@ -140,7 +140,10 @@
     "open_readiness_issues": 0,
     "provider_errors_with_public_urls": 1,
     "youtube_public_verification_requested": true,
-    "public_youtube_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d"
+    "public_youtube_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
+    "youtube_public_metadata_verified": true,
+    "youtube_public_metadata_verification_run": 44712245363,
+    "youtube_public_metadata_verification_method": "Public oEmbed title and author channel identity matched; independent GitHub Actions pass"
   },
   "provider_warning_ids": [
     "429844729"
