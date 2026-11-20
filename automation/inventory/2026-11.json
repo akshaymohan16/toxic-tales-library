@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-19T17:10:48.000Z",
+  "observed_at": "2026-11-20T09:40:02.763Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -13,10 +13,7 @@
     "url": "https://app.metricool.com/planner/calendar?blogId=7937614",
     "observation_status": "Historical meter retained; fresh complete provider calendar reconciled with baseline, not a fresh UI meter"
   },
-  "scheduled_ids": [
-    "429844048",
-    "429844729"
-  ],
+  "scheduled_ids": [],
   "published_ids": [
     "419869962",
     "420123422",
@@ -27,7 +24,8 @@
     "426842509",
     "426850040",
     "426945585",
-    "426946098"
+    "426946098",
+    "429844048"
   ],
   "published_post_ids": [
     "instagram:TT-002-REEL",
@@ -39,7 +37,8 @@
     "instagram:TT-007-REEL",
     "youtube:TT-007-YOUTUBE-SHORT",
     "instagram:TT-008-REEL",
-    "youtube:TT-008-YOUTUBE-SHORT"
+    "youtube:TT-008-YOUTUBE-SHORT",
+    "instagram:TT-009-REEL"
   ],
   "reserved_candidate_ids": [],
   "unresolved_submissions": [],
@@ -48,11 +47,8 @@
   "new_scheduling_allowed": true,
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
-  "scheduled_post_ids": [
-    "TT-009-REEL",
-    "TT-009-YOUTUBE-SHORT"
-  ],
-  "calendar_reconciled_on": "2026-11-19T17:10:48.000Z",
+  "scheduled_post_ids": [],
+  "calendar_reconciled_on": "2026-11-20T09:40:02.763Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -63,16 +59,16 @@
   ],
   "held_post_ids": [],
   "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
-  "provider_confirmed_publications": 10,
-  "known_usage_lower_bound": 10,
-  "last_calendar_readback": "2026-11-19T17:10:48.000Z",
+  "provider_confirmed_publications": 11,
+  "known_usage_lower_bound": 11,
+  "last_calendar_readback": "2026-11-20T09:40:02.763Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
-    "observed_used": 10,
-    "observed_at": "2026-11-19T17:10:48.000Z",
-    "calendar_checked_at": "2026-11-19T17:10:48.000Z",
+    "observed_used": 11,
+    "observed_at": "2026-11-20T09:40:02.763Z",
+    "calendar_checked_at": "2026-11-20T09:40:02.763Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -91,6 +87,7 @@
       "instagram:-5193152553705388348",
       "instagram:-6872348896682359981",
       "instagram:-7609883982228992318",
+      "instagram:1927625585550052374",
       "instagram:2386175407143797944",
       "instagram:3555893508354493617",
       "instagram:8432780738091634663",
@@ -112,21 +109,26 @@
     ],
     "cap": 20,
     "projected_month_destinations": 16,
-    "remaining_planned_destination_slots": 6,
+    "remaining_planned_destination_slots": 5,
     "verified_in_this_run": true,
-    "remaining_regular_destination_slots": 6,
-    "owner_authorized_one_off_destination_slots": 2
+    "remaining_regular_destination_slots": 4,
+    "owner_authorized_one_off_destination_slots": 2,
+    "uncertain_provider_publication_keys": [
+      "youtube:3828607998694999530"
+    ],
+    "conservative_committed_destination_count": 16,
+    "conservative_accounting_note": "11 PUBLISHED receipts + 1 YouTube ERROR with public URL (already committed, count once) + 4 remaining Tue/Fri destinations = 16/20. The ERROR is a thumbnail-upload warning, not permission to retry the video."
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-19T17:10:48.000Z",
-    "published_destinations": 10,
-    "scheduled_active_destinations": 2,
+    "checked_at": "2026-11-20T09:40:02.763Z",
+    "published_destinations": 11,
+    "scheduled_active_destinations": 0,
     "held_retired_drafts": 2,
     "first_week_future_monday_complete": true,
     "no_new_writes": true,
     "owner_authorized_tt008_published_both": true,
     "retired_tt002_and_rejected_tt003_untouched": true,
-    "friday_20_november_status": "TT-009 Instagram and YouTube PENDING for 20 November 10:00 Europe/Vienna; original UUIDs and approved media retained",
+    "friday_20_november_status": "TT-009 Instagram PUBLISHED with Reel link; YouTube ERROR thumbnail warning with Shorts URL, not positively PUBLISHED and no duplicate retry.",
     "observed_provider_uuid_count": 14,
     "latest_build_run": 44494813543,
     "latest_build_conclusion": "success",
@@ -135,6 +137,28 @@
     "today_tuesday_status": "TT-007 Instagram and YouTube PUBLISHED on 17 Nov with public URLs; YouTube title/channel independently verified",
     "archive_deployment_verified": true,
     "public_files_verified": 55,
-    "open_readiness_issues": 0
-  }
+    "open_readiness_issues": 0,
+    "provider_errors_with_public_urls": 1,
+    "youtube_public_verification_requested": true,
+    "public_youtube_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d"
+  },
+  "provider_warning_ids": [
+    "429844729"
+  ],
+  "provider_warning_post_ids": [
+    "TT-009-YOUTUBE-SHORT"
+  ],
+  "uncertain_publication_receipts": [
+    {
+      "network": "youtube",
+      "uuid": "3828607998694999530",
+      "metricool_id": "429844729",
+      "provider_status": "ERROR",
+      "reported_public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
+      "warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
+      "owner_action_required": false,
+      "retry_permitted": false,
+      "public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d"
+    }
+  ]
 }
