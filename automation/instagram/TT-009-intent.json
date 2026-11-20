@@ -9,7 +9,7 @@
   "timezone": "Europe/Vienna",
   "created_at": "2026-11-16T10:17:51.420Z",
   "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-16T10:12:00Z",
-  "status": "scheduled_provider_readback_and_hosted_sha256_verified",
+  "status": "published_provider_confirmed",
   "source_video_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b",
   "source_cover_sha256": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224",
   "source_media_urls": [
@@ -75,9 +75,12 @@
   },
   "provider_media_url": "https://static.metricool.com/planner/202611/7937614-file-3737416094863891945.mp4",
   "provider_cover_url": "https://static.metricool.com/planner/202611/7937614-file-15334528450768090167.jpeg",
-  "last_reconciled_at": "2026-11-16T10:24:28.522Z",
+  "last_reconciled_at": "2026-11-20T09:40:02.763Z",
   "provider_media_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b",
   "provider_cover_sha256": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224",
   "provider_byte_verification_run": 43847978272,
-  "hash_verified_at": "2026-11-16T10:20:49.799071Z"
+  "hash_verified_at": "2026-11-16T10:20:49.799071Z",
+  "provider_status": "PUBLISHED",
+  "public_url": "https://www.instagram.com/reel/Df9S7TAD77J/",
+  "published_confirmed_at": "2026-11-20T09:40:02.763Z"
 }
