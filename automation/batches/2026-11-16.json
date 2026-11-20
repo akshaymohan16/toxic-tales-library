@@ -4,7 +4,7 @@
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-15T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-16",
-  "status": "three_published_one_youtube_warning_publication_unconfirmed",
+  "status": "tt009_instagram_published_youtube_public_live_provider_error",
   "slots": [
     {
       "date": "2026-11-17T10:00:00+01:00",
@@ -58,7 +58,7 @@
       "platform": "youtube",
       "format": "SHORT",
       "source_slot": "friday",
-      "status": "provider_error_thumbnail_warning_publication_unconfirmed",
+      "status": "pending_confirmation",
       "episode_id": "TT-009",
       "doi": "10.1371/journal.pone.0006573",
       "release_approved": true,
@@ -72,10 +72,13 @@
       "provider_status": "ERROR",
       "provider_detailed_status": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "reported_public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
-      "confirmed_live": false,
+      "confirmed_live": true,
       "last_checked_at": "2026-11-20T09:40:02.763Z",
       "retry_permitted": false,
-      "public_metadata_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d"
+      "public_metadata_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
+      "public_metadata_verified": true,
+      "public_metadata_verification_run": 44712245363,
+      "publication_confirmed": false
     }
   ],
   "quality_policy": "Full original paper and correction check, claim-level evidence, independent final encoded story/branding/visual and narration verification, exact public media hashes, fresh provider monthly quota and duplicate validation. Never publish unreviewed content merely to satisfy a date.",
@@ -90,7 +93,7 @@
     "Automation_991690d6af648191ac8037cfa96c92a0"
   ],
   "new_task_created": false,
-  "updated_at": "2026-11-20T09:40:02.763Z",
+  "updated_at": "2026-11-20T09:43:30.532Z",
   "last_provider_reconciled_at": "2026-11-20T09:40:02.763Z",
   "provider_reconciliation": {
     "checked_at": "2026-11-20T09:40:02.763Z",
@@ -126,7 +129,10 @@
     "friday_youtube_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
     "friday_youtube_verified_published": false,
     "friday_requires_investigation": true,
-    "publication_no_retry": true
+    "publication_no_retry": true,
+    "youtube_public_metadata_verification_run": 44712245363,
+    "youtube_public_metadata_verified": true,
+    "youtube_public_title_channel_pass": true
   },
   "sunday_run": {
     "claim_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-16T10:12:00Z",
