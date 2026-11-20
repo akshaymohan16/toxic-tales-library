@@ -1204,7 +1204,8 @@
       "provider_detailed_status": "Published",
       "public_url": "https://www.instagram.com/reel/Df9S7TAD77J/",
       "published_confirmed_at": "2026-11-20T09:40:02.763Z",
-      "confirmed_source": "Fresh complete Metricool 20 Nov 2026 calendar, exact original UUID, Instagram PUBLISHED and Reel public URL"
+      "confirmed_source": "Fresh complete Metricool 20 Nov 2026 calendar, exact original UUID, Instagram PUBLISHED and Reel public URL",
+      "last_provider_reconciled_at": "2026-11-20T17:13:59.915Z"
     },
     {
       "post_id": "TT-009-YOUTUBE-SHORT",
@@ -1329,7 +1330,8 @@
       "public_metadata_verified": true,
       "public_metadata_verification_method": "Independent GitHub Actions yt-dlp attempt blocked by YouTube bot check; public oEmbed returned exact title and creator/channel page resolves expected YouTube channel ID",
       "public_metadata_verification_run": 44712245363,
-      "public_metadata_verification_url": "https://github.com/akshaymohan16/toxic-tales-library/actions/runs/44712245363"
+      "public_metadata_verification_url": "https://github.com/akshaymohan16/toxic-tales-library/actions/runs/44712245363",
+      "last_provider_reconciled_at": "2026-11-20T17:13:59.915Z"
     }
   ],
   "notified_post_ids": [
@@ -1353,7 +1355,7 @@
     "TT-009-REEL",
     "instagram:TT-009-REEL"
   ],
-  "last_provider_reconciled_at": "2026-11-20T09:43:30.532Z",
+  "last_provider_reconciled_at": "2026-11-20T17:13:59.915Z",
   "last_provider_reconciliation": {
     "month": "2026-11",
     "calendar_entries": 14,
@@ -1376,7 +1378,7 @@
     "remaining_regular_destinations": 4,
     "projected_month_destinations": 16,
     "one_off_confirmed_both": true,
-    "checked_at": "2026-11-20T09:40:02.763Z",
+    "checked_at": "2026-11-20T17:13:59.915Z",
     "full_month_calendar_verified": true,
     "usage_baseline": {
       "month": "2026-11",
@@ -1391,14 +1393,14 @@
     },
     "provider_error_count": 1,
     "uncertain_destination_count": 1,
-    "observed_at": "2026-11-20T09:40:02.763Z",
+    "observed_at": "2026-11-20T17:13:59.915Z",
     "ambiguous_youtube_uuid": "3828607998694999530",
     "ambiguity_note": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
     "youtube_public_metadata_verified": true,
     "youtube_public_metadata_verification_run": 44712245363
   },
   "last_live_reconciliation": {
-    "checked_at": "2026-11-20T09:43:30.532Z",
+    "checked_at": "2026-11-20T17:13:59.915Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "calendar_entries": 14,
@@ -1422,9 +1424,9 @@
       "youtube:-6895101637645415437",
       "youtube:4422280930322105807"
     ],
-    "post_records_changed": 2,
+    "post_records_changed": 0,
     "provider_writes": 0,
-    "open_readiness_issues": 0,
+    "open_readiness_issues": 1,
     "provider_warning_destinations": 1,
     "youtube_warning_status": "ERROR",
     "youtube_reported_public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
