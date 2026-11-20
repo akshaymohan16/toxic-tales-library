@@ -4,7 +4,7 @@
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-15T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-16",
-  "status": "tuesday_published_friday_both_scheduled_verified",
+  "status": "three_published_one_youtube_warning_publication_unconfirmed",
   "slots": [
     {
       "date": "2026-11-17T10:00:00+01:00",
@@ -36,7 +36,7 @@
       "date": "2026-11-20T10:00:00+01:00",
       "platform": "instagram",
       "format": "REEL",
-      "status": "scheduled_receipt_verified",
+      "status": "published_verified",
       "episode_id": "TT-009",
       "doi": "10.1371/journal.pone.0006573",
       "release_approved": true,
@@ -46,14 +46,19 @@
       "metricool_uuid": "1927625585550052374",
       "release_fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
       "provider_byte_verification_run": 43847978272,
-      "source_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b"
+      "source_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b",
+      "provider_status": "PUBLISHED",
+      "public_url": "https://www.instagram.com/reel/Df9S7TAD77J/",
+      "confirmed_at": "2026-11-20T09:40:02.763Z",
+      "auto_publish": true,
+      "draft": false
     },
     {
       "date": "2026-11-20T10:00:00+01:00",
       "platform": "youtube",
       "format": "SHORT",
       "source_slot": "friday",
-      "status": "scheduled_receipt_verified",
+      "status": "provider_error_thumbnail_warning_publication_unconfirmed",
       "episode_id": "TT-009",
       "doi": "10.1371/journal.pone.0006573",
       "release_approved": true,
@@ -63,7 +68,14 @@
       "metricool_uuid": "3828607998694999530",
       "release_fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
       "provider_byte_verification_run": 43847978272,
-      "source_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b"
+      "source_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b",
+      "provider_status": "ERROR",
+      "provider_detailed_status": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
+      "reported_public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
+      "confirmed_live": false,
+      "last_checked_at": "2026-11-20T09:40:02.763Z",
+      "retry_permitted": false,
+      "public_metadata_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d"
     }
   ],
   "quality_policy": "Full original paper and correction check, claim-level evidence, independent final encoded story/branding/visual and narration verification, exact public media hashes, fresh provider monthly quota and duplicate validation. Never publish unreviewed content merely to satisfy a date.",
@@ -78,10 +90,10 @@
     "Automation_991690d6af648191ac8037cfa96c92a0"
   ],
   "new_task_created": false,
-  "updated_at": "2026-11-19T17:13:38.000Z",
-  "last_provider_reconciled_at": "2026-11-19T17:10:48.000Z",
+  "updated_at": "2026-11-20T09:40:02.763Z",
+  "last_provider_reconciled_at": "2026-11-20T09:40:02.763Z",
   "provider_reconciliation": {
-    "checked_at": "2026-11-19T17:10:48.000Z",
+    "checked_at": "2026-11-20T09:40:02.763Z",
     "month": "2026-11",
     "account_verified": true,
     "instagram_tuesday_uuid": "-6872348896682359981",
@@ -92,13 +104,13 @@
     "friday_provider_receipts": 2,
     "expected_friday_date": "2026-11-20T10:00:00+01:00",
     "next_producer_window": "2026-11-22T10:00:00+01:00",
-    "quota_observed_used": 10,
+    "quota_observed_used": 11,
     "quota_projected": 16,
     "quota_cap": 20,
     "open_readiness_issues": 0,
     "latest_watchdog_run": 44494813558,
     "latest_watchdog_conclusion": "success",
-    "note": "Fresh complete Metricool November calendar: 14 unique UUIDs, 10 PUBLISHED with public URLs, two TT-009 Friday PENDING and two inactive drafts. No provider writes.",
+    "note": "Friday TT-009 IG PUBLISHED; YouTube reports ERROR due to thumbnail warning though a Shorts URL exists. No duplicate video write; public identity check requested.",
     "latest_build_run": 44494813543,
     "latest_build_conclusion": "success",
     "latest_provider_byte_run": 43847978272,
@@ -106,7 +118,15 @@
     "tuesday_instagram_public_url": "https://www.instagram.com/reel/Df1kUbZlb21/",
     "tuesday_youtube_public_url": "https://www.youtube.com/shorts/Dh6xDjEV1fg",
     "latest_public_youtube_verification_run": 44131070810,
-    "latest_public_media_checked_files": 55
+    "latest_public_media_checked_files": 55,
+    "friday_instagram_status": "PUBLISHED",
+    "friday_instagram_url": "https://www.instagram.com/reel/Df9S7TAD77J/",
+    "friday_youtube_status": "ERROR",
+    "friday_youtube_reported_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
+    "friday_youtube_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
+    "friday_youtube_verified_published": false,
+    "friday_requires_investigation": true,
+    "publication_no_retry": true
   },
   "sunday_run": {
     "claim_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-16T10:12:00Z",
