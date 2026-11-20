@@ -1,12 +1,12 @@
 {
   "checked_on": "2026-11-20",
-  "updated_at": "2026-11-20T09:40:02.763Z",
+  "updated_at": "2026-11-20T09:43:30.532Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_connection_verified": true,
-  "decision": "TT009_INSTAGRAM_PUBLISHED_YOUTUBE_ERROR_THUMBNAIL_WARNING_VERIFY_NO_REPOST",
+  "decision": "TT009_INSTAGRAM_PUBLISHED_YOUTUBE_PUBLIC_METADATA_VERIFIED_BUT_PROVIDER_ERROR",
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
@@ -119,7 +119,7 @@
   ],
   "deployment_and_media": "Build and deployment run 44494813543 succeeded; the retried verify-public-media job also succeeded, confirming 55 public files at 2026-11-19T17:13:11Z. TT-009 provider video and cover copies remain SHA-verified by run 43847978272.",
   "review_limit": "Separate reviewer inspected 19 actual encoded shots, 18 boundaries, opening and final encoded frame, final audio ASR/caption/loudness and source rights; no perceptual listening or uninterrupted motion playback claimed.",
-  "automatic_next_step": "Do not recreate TT-009 YouTube. Inspect fresh provider status and current GitHub public YouTube metadata check for Y0CF32fpJC4, confirm expected channel/title/DOI. Only record/notify YouTube publication after actual provider PUBLISHED plus verified live URL. Sunday 22 Nov produce only missing paired films for 24/27 Nov.",
+  "automatic_next_step": "TT-009 YouTube is independently public (title and channel checked) but Metricool still ERROR for failed thumbnail; do not resubmit. Recheck existing UUID later for actual PUBLISHED before publishing a platform notification. Current-week readiness fails closed until that status can be established. Sunday 22 Nov producer fills 24/27 Nov paired videos.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
   "scheduled_posts_returned": 14,
   "published_provider_receipts": 11,
@@ -158,7 +158,10 @@
     "last_successful_deployment_run": 44494813543,
     "youtube_public_verification_requested_at": "2026-11-20T09:40:02.763Z",
     "youtube_public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
-    "latest_new_workflow_result": "not independently inspected; no new CI pass claimed"
+    "latest_new_workflow_result": "not independently inspected; no new CI pass claimed",
+    "youtube_public_verification_run": 44712245363,
+    "youtube_public_verification_conclusion": "success",
+    "youtube_public_verification_basis": "Public oEmbed exact title and channel identity; yt-dlp blocked by bot check"
   },
   "current_one_off": {
     "episode_id": "TT-008",
@@ -210,7 +213,9 @@
         "youtube_type": "short",
         "youtube_privacy": "public",
         "youtube_madeForKids": false,
-        "youtube_ai_disclosure": true
+        "youtube_ai_disclosure": true,
+        "public_metadata_verified": true,
+        "public_verification_run": 44712245363
       }
     ],
     "one_off": [
@@ -310,7 +315,9 @@
     "public_files_verified": 55,
     "public_media_verification_run": 44494813543,
     "provider_error_entries": 1,
-    "youtube_public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d"
+    "youtube_public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
+    "youtube_public_metadata_verified": true,
+    "youtube_public_metadata_verification_run": 44712245363
   },
   "claim_coordination": {
     "checked_at": "2026-11-20T09:40:02.763Z",
