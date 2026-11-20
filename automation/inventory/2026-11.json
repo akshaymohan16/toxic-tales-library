@@ -131,7 +131,7 @@
     "friday_20_november_status": "TT-009 Instagram PUBLISHED with Reel link; YouTube ERROR thumbnail warning with Shorts URL, not positively PUBLISHED and no duplicate retry.",
     "observed_provider_uuid_count": 14,
     "latest_build_run": 44713140659,
-    "latest_build_conclusion": "build_deploy_success_public_byte_check_running",
+    "latest_build_conclusion": "success",
     "latest_watchdog_run": 44713163265,
     "latest_watchdog_conclusion": "failure_expected_youtube_status_error",
     "today_tuesday_status": "TT-007 Instagram and YouTube PUBLISHED on 17 Nov with public URLs; YouTube title/channel independently verified",
