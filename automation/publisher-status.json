@@ -1,17 +1,17 @@
 {
-  "checked_on": "2026-11-19",
-  "updated_at": "2026-11-19T17:13:38.000Z",
+  "checked_on": "2026-11-20",
+  "updated_at": "2026-11-20T09:40:02.763Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_connection_verified": true,
-  "decision": "TEN_PUBLISHED_TT009_BOTH_PENDING_NO_PROVIDER_WRITES",
+  "decision": "TT009_INSTAGRAM_PUBLISHED_YOUTUBE_ERROR_THUMBNAIL_WARNING_VERIFY_NO_REPOST",
   "quota": {
     "month": "2026-11",
-    "observed_used": 10,
-    "observed_at": "2026-11-19T17:10:48.000Z",
-    "calendar_checked_at": "2026-11-19T17:10:48.000Z",
+    "observed_used": 11,
+    "observed_at": "2026-11-20T09:40:02.763Z",
+    "calendar_checked_at": "2026-11-20T09:40:02.763Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -30,6 +30,7 @@
       "instagram:-5193152553705388348",
       "instagram:-6872348896682359981",
       "instagram:-7609883982228992318",
+      "instagram:1927625585550052374",
       "instagram:2386175407143797944",
       "instagram:3555893508354493617",
       "instagram:8432780738091634663",
@@ -51,10 +52,15 @@
     ],
     "cap": 20,
     "projected_month_destinations": 16,
-    "remaining_planned_destination_slots": 6,
+    "remaining_planned_destination_slots": 5,
     "verified_in_this_run": true,
-    "remaining_regular_destination_slots": 6,
-    "owner_authorized_one_off_destination_slots": 2
+    "remaining_regular_destination_slots": 4,
+    "owner_authorized_one_off_destination_slots": 2,
+    "uncertain_provider_publication_keys": [
+      "youtube:3828607998694999530"
+    ],
+    "conservative_committed_destination_count": 16,
+    "conservative_accounting_note": "11 PUBLISHED receipts + 1 YouTube ERROR with public URL (already committed, count once) + 4 remaining Tue/Fri destinations = 16/20. The ERROR is a thumbnail-upload warning, not permission to retry the video."
   },
   "routine_user_approval_required": false,
   "publication_notifications": {
@@ -70,7 +76,7 @@
       "TT-008-REEL",
       "TT-008-YOUTUBE-SHORT"
     ],
-    "latest_delivery": "TT-007 publication results previously recorded once; TT-009 remains scheduled PENDING on both destinations, so no publication alert is due.",
+    "latest_delivery": "TT-009 Instagram Reel PUBLISHED and notification recorded once; YouTube Short has URL but Metricool ERROR from thumbnail upload, so publication notification withheld pending PUBLISHED/live verification.",
     "delivery_status": "ChatGPT task push/email settings unknown; owner notification emitted only for positively confirmed PUBLISHED, never merely scheduled."
   },
   "next_batch": {
@@ -83,7 +89,7 @@
     "verified_destination_receipts": 4,
     "producer_due": "2026-11-15T10:00:00+01:00",
     "hard_readiness_due": "2026-11-16T23:59:59+01:00",
-    "status": "TT-007 both PUBLISHED; TT-009 Friday 20 Nov PENDING on both with original receipt IDs"
+    "status": "TT-007 both published, TT-009 Instagram published; TT-009 YouTube provider ERROR with public URL, thumbnail warning"
   },
   "recurring_tasks": [
     {
@@ -113,14 +119,11 @@
   ],
   "deployment_and_media": "Build and deployment run 44494813543 succeeded; the retried verify-public-media job also succeeded, confirming 55 public files at 2026-11-19T17:13:11Z. TT-009 provider video and cover copies remain SHA-verified by run 43847978272.",
   "review_limit": "Separate reviewer inspected 19 actual encoded shots, 18 boundaries, opening and final encoded frame, final audio ASR/caption/loudness and source rights; no perceptual listening or uninterrupted motion playback claimed.",
-  "automatic_next_step": "After Friday 20 November 10:00 Vienna, reconcile TT-009 as PUBLISHED plus its expected live URL on each platform before notifying; Sunday 22 November produce only missing paired videos for 24/27 November.",
-  "notification_delivery": "TT-009 paired creation alert recorded once in automation/notifications.json; only scheduled PENDING, not published. Push/email delivery unverified.",
+  "automatic_next_step": "Do not recreate TT-009 YouTube. Inspect fresh provider status and current GitHub public YouTube metadata check for Y0CF32fpJC4, confirm expected channel/title/DOI. Only record/notify YouTube publication after actual provider PUBLISHED plus verified live URL. Sunday 22 Nov produce only missing paired films for 24/27 Nov.",
+  "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
   "scheduled_posts_returned": 14,
-  "published_provider_receipts": 10,
-  "scheduled_post_ids": [
-    "TT-009-REEL",
-    "TT-009-YOUTUBE-SHORT"
-  ],
+  "published_provider_receipts": 11,
+  "scheduled_post_ids": [],
   "last_successful_deployment_run": 44131433054,
   "validation": {
     "script_tests": 165,
@@ -138,7 +141,7 @@
     ],
     "latest_paper_retrieval_run": 43439354279,
     "latest_paper_retrieval_conclusion": "success",
-    "fresh_live_metricool_reconciliation_at": "2026-11-19T17:10:48.000Z",
+    "fresh_live_metricool_reconciliation_at": "2026-11-20T09:40:02.763Z",
     "latest_build_conclusion": "success",
     "latest_build_failure_step": null,
     "latest_build_failure_cause": null,
@@ -152,7 +155,10 @@
     "latest_archive_confirmed_social_links": 10,
     "public_files_verified": 55,
     "last_public_media_verification_checked_at": "2026-11-19T17:13:11.420995Z",
-    "last_successful_deployment_run": 44494813543
+    "last_successful_deployment_run": 44494813543,
+    "youtube_public_verification_requested_at": "2026-11-20T09:40:02.763Z",
+    "youtube_public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
+    "latest_new_workflow_result": "not independently inspected; no new CI pass claimed"
   },
   "current_one_off": {
     "episode_id": "TT-008",
@@ -163,7 +169,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-19T17:10:48.000Z",
+    "checked_at": "2026-11-20T09:40:02.763Z",
     "brand_id": "7937614",
     "accounts": {
       "instagram": "toxic_tales_eco",
@@ -171,8 +177,8 @@
     },
     "month": "2026-11",
     "calendar_entries": 14,
-    "published_entries": 10,
-    "scheduled_live_entries": 2,
+    "published_entries": 11,
+    "scheduled_live_entries": 0,
     "retired_or_rejected_drafts": 2,
     "active_publications": [
       {
@@ -180,29 +186,26 @@
         "platform": "instagram",
         "uuid": "1927625585550052374",
         "metricool_id": "429844048",
-        "status": "PENDING",
+        "status": "PUBLISHED",
+        "public_url": "https://www.instagram.com/reel/Df9S7TAD77J/",
         "date": "2026-11-20T10:00:00+01:00",
         "autoPublish": true,
         "draft": false,
-        "media": "https://static.metricool.com/planner/202611/7937614-file-3737416094863891945.mp4",
-        "thumbnail": "https://static.metricool.com/planner/202611/7937614-file-15334528450768090167.jpeg",
-        "youtube_title": null,
-        "youtube_type": null,
-        "youtube_privacy": null,
-        "youtube_madeForKids": null,
-        "youtube_ai_disclosure": null
+        "media": "https://static.metricool.com/planner/202611/7937614-file-3737416094863891945.mp4"
       },
       {
         "post_id": "TT-009-YOUTUBE-SHORT",
         "platform": "youtube",
         "uuid": "3828607998694999530",
         "metricool_id": "429844729",
-        "status": "PENDING",
+        "status": "ERROR",
+        "detailed_status": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
+        "reported_public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
+        "positive_publication_verified": false,
         "date": "2026-11-20T10:00:00+01:00",
         "autoPublish": true,
         "draft": false,
         "media": "https://static.metricool.com/planner/202611/7937614-file-12147950446845277643.mp4",
-        "thumbnail": "https://static.metricool.com/planner/202611/7937614-file-15401831120842934675.jpeg",
         "youtube_title": "Ants That Bite the Trap | Toxic Tales",
         "youtube_type": "short",
         "youtube_privacy": "public",
@@ -226,16 +229,12 @@
     ],
     "unused_or_missing": [],
     "open_readiness_issues": 0,
-    "duplicate_checks": "14 unique provider UUIDs: 10 PUBLISHED with live public URLs, two TT-009 PENDING, two retired drafts; no duplicate writes",
+    "duplicate_checks": "14 unique provider UUIDs, 11 PUBLISHED, 1 YouTube ERROR with public URL, 2 inactive drafts; no new provider write or retry",
     "blockers": [],
     "routine_recovery": {
       "episode_id": "TT-009",
-      "status": "completed",
-      "release_fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
-      "final_encoded_review": "pass",
-      "source_deployed_verification_run": 43847085574,
-      "provider_byte_verification_run": 43847978272,
-      "friday_provider_receipts": 2,
+      "status": "public_youtube_verification_pending_provider_thumbnail_warning",
+      "action": "Reconcile existing provider UUID and independent public YouTube check; never duplicate an uploaded video",
       "owner_action_required": false
     },
     "published_ids_verified": [
@@ -298,17 +297,25 @@
         "uuid": "-6895101637645415437",
         "network": "youtube",
         "public_url": "https://www.youtube.com/shorts/le2mS8MHcpo"
+      },
+      {
+        "id": "429844048",
+        "uuid": "1927625585550052374",
+        "network": "instagram",
+        "public_url": "https://www.instagram.com/reel/Df9S7TAD77J/"
       }
     ],
     "latest_verified_archive_build": 44494813543,
     "archive_confirmed_social_links": 10,
     "public_files_verified": 55,
-    "public_media_verification_run": 44494813543
+    "public_media_verification_run": 44494813543,
+    "provider_error_entries": 1,
+    "youtube_public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d"
   },
   "claim_coordination": {
-    "checked_at": "2026-11-19T17:10:48.000Z",
-    "status": "All existing TT-008 and TT-009 claims are completed; no active or competing claims",
-    "this_run_action": "Read-only provider reconciliation; no new production/submission claim or external provider write required",
+    "checked_at": "2026-11-20T09:40:02.763Z",
+    "status": "All original TT-009 submission/production claims completed; no new submission ownership needed",
+    "this_run_action": "Read and reconcile existing post-publication receipts only; no provider mutation",
     "active_competing_claims": 0
   },
   "following_week_readiness": {
@@ -316,7 +323,8 @@
     "required_destination_receipts": 4,
     "verified_destination_receipts": 0,
     "producer_due": "2026-11-22T10:00:00+01:00",
-    "status": "Sunday 22 Nov production is pending; only missing Tue 24/Fri 27 paired videos should be created"
+    "status": "Upcoming slots 24/27 November not yet produced; Sunday producer window pending",
+    "complete": false
   },
   "automation_tasks_verified_at": "2026-11-18T17:09:08.853Z"
 }
