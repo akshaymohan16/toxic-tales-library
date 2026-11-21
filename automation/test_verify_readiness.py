@@ -628,6 +628,19 @@ class ReelsOnlyCadenceTests(YouTubeReadinessTests):
         self.assertFalse(any("friday_youtube: existing" in e for e in report["errors"]))
         self.assertTrue(any("thumbnail upload remains ERROR" in w
                             for w in report["warnings"]))
+        # Updating the mutable request for a future upload must not invalidate
+        # this originally verified Short.
+        historic = json.loads(
+            (self.root / "automation/youtube-public-verification-request.json").read_text())
+        self.save("automation/youtube/public-verification-" + post["post_id"] + ".json",
+                  historic)
+        self.save("automation/youtube-public-verification-request.json",
+                  {**historic, "post_id": "TT-010-YOUTUBE-SHORT"})
+        self.assertTrue(thumbnail_warning_publicly_verified(
+            self.root, post, {post["post_id"]: check}, now))
+        after_rotation = audit(self.root, now, verified_public_checks={post["post_id"]: check})
+        self.assertFalse(any("friday_youtube: existing" in e for e in
+                             after_rotation["errors"]))
         # No proof, a mismatched title or a genuine upload error must still fail.
         self.assertFalse(thumbnail_warning_publicly_verified(self.root, post, {}, now))
         self.assertFalse(thumbnail_warning_publicly_verified(

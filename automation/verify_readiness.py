@@ -9,6 +9,7 @@ import argparse
 import copy
 import hashlib
 import json
+import re
 import os
 import sys
 import urllib.request
@@ -243,7 +244,15 @@ def thumbnail_warning_publicly_verified(root, post, evidence, now):
             post.get("public_metadata_verification_url") !=
             "https://github.com/akshaymohan16/toxic-tales-library/actions/runs/" + str(run_id)):
         return False
-    request = read(root, "automation/youtube-public-verification-request.json", {})
+    # The mutable request points to the MOST RECENT Short. Keep historic
+    # thumbnail-warning evidence bound to each original post ID as new videos
+    # replace the global request; do not allow a later upload to break TT-009.
+    pid = str(post.get("post_id", ""))
+    archived = ("automation/youtube/public-verification-" + pid + ".json"
+                if re.fullmatch(r"TT-[0-9]{3,}-YOUTUBE-SHORT", pid) else None)
+    request = read(root, archived, None) if archived else None
+    if request is None:
+        request = read(root, "automation/youtube-public-verification-request.json", {})
     meta = post.get("youtube", {})
     expected = {
         "repository": "akshaymohan16/toxic-tales-library",
@@ -870,7 +879,13 @@ def main():
     arg = argparse.ArgumentParser()
     arg.add_argument("--root", default=".")
     arg.add_argument("--now", default=None)
-    arg.add_argument("--verify-public-thumbnail-warnings", action="store_true")
+    # Live verification is the default for both CI and the daily publisher.
+    # Offline callers must explicitly opt out; an offline check cannot claim PASS
+    # for TT-009's historic thumbnail-only provider warning.
+    arg.add_argument("--verify-public-thumbnail-warnings", action="store_true",
+                     default=True)
+    arg.add_argument("--offline-public-verification",
+                     dest="verify_public_thumbnail_warnings", action="store_false")
     args = arg.parse_args()
     now = datetime.fromisoformat(args.now) if args.now else datetime.now(timezone.utc)
     root = Path(args.root)

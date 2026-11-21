@@ -43,7 +43,7 @@ jobs:
       - name: Enforce active Reels-only source policy
         run: python automation/enforce_reels_only.py
       - name: Fail closed if required posts or positive publication receipts are missing
-        run: python automation/verify_readiness.py --verify-public-thumbnail-warnings
+        run: python automation/verify_readiness.py
       - name: Preserve live-provider incident details on failed scheduled checks
         if: failure() && github.event_name == 'schedule'
         env:

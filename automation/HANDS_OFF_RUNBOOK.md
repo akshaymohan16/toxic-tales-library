@@ -70,3 +70,8 @@ Transition: the later owner request authorizes only the paired TT-008 one-off on
 
 
 Latest owner instruction, 13 November 2026: publish the ready TT-008 now. Both actual provider slots are 14:10 Europe/Vienna, replacing the proposed18:00 slot. Preserve18:00 in the frozen episode only; config source_publication_date distinguishes source identity from the actual14:10 receipt date. This later instruction overrides earlier18:00 timing in this document. Never duplicate or retry the old18:00 slot. Tuesday17November bumblebee and Sunday production / Tuesday-Friday10:00 automation remain unchanged.
+
+
+## Stable historic public verification evidence (21 November 2026)
+
+The global `automation/youtube-public-verification-request.json` is a rolling request, **not** a durable historical receipt. Before replacing it for a newly published Short, preserve the request for any prior thumbnail-warning public video under `automation/youtube/public-verification-TT-NNN-YOUTUBE-SHORT.json` (using its exact post ID), with the same repository, UUID, video ID, URL, channel, title, DOI and release fingerprint. The watchdog checks immutable per-post evidence first and requires fresh public YouTube title/channel confirmation on each run. Never substitute the new video's global request as evidence for an older Short. The existing TT-009 request is now archived. Running `python automation/verify_readiness.py` automatically performs public verification; `--offline-public-verification` is for explicitly offline testing and does not waive genuine publication checks.
