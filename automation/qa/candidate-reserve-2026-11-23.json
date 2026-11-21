@@ -5,9 +5,30 @@
   "status": "screened_by_title_abstract_and_metadata_only_no_release_or_quality_approval",
   "primary_source_policy": "Read complete cached JATS or original full text and required supplements. Check corrections, disputes, licenses and final media independently before release.",
   "request_id": "reserve-animals-2026-11-21",
-  "candidate_count": 7,
+  "candidate_count": 8,
   "candidate_rank_is_not_publication_authorization": true,
   "candidates": [
+    {
+      "pmcid": "PMC13752372",
+      "doi": "10.1073/pnas.2618030123",
+      "organism": "Portia fimbriata jumping spider",
+      "idea": "A spider's sleep shows arousal thresholds and rebounds after disturbance",
+      "abstract_support": "PNAS 2026 original experiment measured circadian timing, reduced arousal during REM-like bouts and a homeostatic rebound following fly-induced nocturnal disturbance",
+      "critical_limit": "Distinct species from 2022 Evarcha arcuata observations; study supports behavioral sleep and REM-like states, not evidence that spiders dream",
+      "interest": "high",
+      "state": "full_main_article_cached_but_not_independently_reviewed",
+      "retrieval": {
+        "status": "full_main_article_cached_CC_BY_4_0",
+        "cached_text": "research/fulltext/PMC13752372/article.txt",
+        "license": "CC BY 4.0",
+        "issues": [
+          "Read all 47k characters of main body; inspect supplements for any specific claim",
+          "Verify contemporaneous corrections or notices",
+          "Science and independent final-media, rights, narration review required",
+          "Do not infer visual rights for supplementary movies from general article licence without checking"
+        ]
+      }
+    },
     {
       "pmcid": "PMC3966847",
       "doi": "10.1371/journal.pone.0092895",
@@ -130,7 +151,7 @@
     "checked": "2026-11-21",
     "workflow_run_id": 44930526923,
     "request_id": "reserve-animals-2026-11-21",
-    "cached_complete_main_articles": 2,
+    "cached_complete_main_articles": 3,
     "skipped": 5,
     "scientific_review_complete": false,
     "rights_and_supplements_review_complete": false,
@@ -142,8 +163,11 @@
       "doi": "10.1073/pnas.2618030123",
       "publication_date": "2026-11-10",
       "note": "Related 2026 Portia fimbriata two-stage sleep / arousal thresholds / sleep rebound publication. New official full-text retrieval requested separately; treat as separate species and experimental confirmation, not proof of dreams or a correction to old paper.",
-      "request_id": "sleep-2026-followup-20261121"
+      "request_id": "sleep-2026-followup-20261121",
+      "status": "cached_complete_main_text_CC_BY_4_0",
+      "cache_path": "research/fulltext/PMC13752372",
+      "retrieval_run_id": 44930966526
     },
-    "next_step": "Use available full texts to build two new videos after science/visual/rights/independent media approval; do not submit one item until both provider-specific intents and quota are verified."
+    "next_step": "Select two distinctive, fully reviewed papers from the three cached sources: crows (PMC3966847), jumping-spider 2022 (PMC9388130), newer Portia spider 2026 (PMC13752372). Treat last two as a linked research tradition rather than two independent story slots. Check supplements/rights/contrary literature, render distinct videos, independently review, then schedule exactly four paired destinations subject to quota/claims."
   }
 }
