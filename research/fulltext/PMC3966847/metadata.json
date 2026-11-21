@@ -1,0 +1,72 @@
+{
+  "pmcid": "PMC3966847",
+  "doi": "10.1371/journal.pone.0092895",
+  "title": "Using the Aesop's Fable Paradigm to Investigate Causal Understanding of Water Displacement by New Caledonian Crows",
+  "article_type": "research-article",
+  "license_urls": [
+    "http://creativecommons.org/licenses/by/4.0/",
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "license_statement": "https://creativecommons.org/licenses/by/4.0/ This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.",
+  "body_characters": 43049,
+  "sections": [
+    "Introduction",
+    "Methods",
+    "Ethics Statement",
+    "Subjects",
+    "Initial Training",
+    "General Procedure",
+    "Diagrams of the apparatus used in each of the 6 experiments.",
+    "Specific Procedure and Materials",
+    "Experiment 1: Water- vs. Sand-filled tubes",
+    "Experiment 2: Sinking vs. Floating objects",
+    "Experiment 3: Solid vs. Hollow objects",
+    "Experiment 4: Narrow vs. Wide water-filled tubes",
+    "Experiment 5: High vs. Low water-level in Wide & Narrow water-filled tubes",
+    "Experiment 6: U-Tube",
+    "Results",
+    "Results from each Experiment",
+    "Experiment 1: Water- vs. Sand-filled tubes",
+    "Average performance in all six experiments.",
+    "Experiment 2: Sinking vs. Floating objects",
+    "Experiment 3: Solid vs. Hollow objects",
+    "Experiment 4: Narrow vs. Wide water-filled tubes",
+    "Changes in mean performance over the course of each experiment.",
+    "Experiment 5: High vs. Low water-level in Wide & Narrow water-filled tubes",
+    "Experiment 6: U-Tube",
+    "Discussion",
+    "Supporting Information"
+  ],
+  "supplement_links": [
+    {
+      "content-type": "local-data",
+      "id": "pone.0092895.s001",
+      "position": "float",
+      "orientation": "portrait"
+    },
+    {
+      "content-type": "local-data",
+      "id": "pone.0092895.s002",
+      "position": "float",
+      "orientation": "portrait"
+    },
+    {
+      "content-type": "local-data",
+      "id": "pone.0092895.s003",
+      "position": "float",
+      "orientation": "portrait"
+    }
+  ],
+  "scientific_review_complete": false,
+  "required_before_selection": [
+    "Read original study and necessary supplements",
+    "Check current correction, retraction and expression-of-concern records",
+    "Confirm peer review, study design, claims and limitations",
+    "Check each proposed visual asset licence separately"
+  ],
+  "cache_scope": "Article XML and text only; no PDF, figure or supplementary asset download. Cached access is not editorial approval.",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/api/oai/v1/mh/?verb=GetRecord&identifier=oai%3Apubmedcentral.nih.gov%3A3966847&metadataPrefix=pmc",
+  "retrieved_at": "2026-11-21T17:32:24.855738+00:00",
+  "xml_sha256": "474963b983846ed67d8e0dcc88185aac92ebf091f88912fbdc6a32c204219be3",
+  "text_sha256": "1ede00801afa955e11e6f6ddc0738cb8b4f319c9f613153f97123d1fbe464d37"
+}
