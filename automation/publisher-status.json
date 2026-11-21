@@ -1,6 +1,6 @@
 {
-  "checked_on": "2026-11-20",
-  "updated_at": "2026-11-20T17:13:59.915Z",
+  "checked_on": "2026-11-21",
+  "updated_at": "2026-11-21T09:32:28Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
@@ -10,8 +10,8 @@
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-20T17:13:59.915Z",
-    "calendar_checked_at": "2026-11-20T17:13:59.915Z",
+    "observed_at": "2026-11-21T09:32:28Z",
+    "calendar_checked_at": "2026-11-21T09:32:28Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -61,7 +61,7 @@
       "youtube:3828607998694999530"
     ],
     "conservative_committed_destination_count": 16,
-    "conservative_accounting_note": "11 PUBLISHED receipts + 1 YouTube ERROR / public video URL (already committed) + 4 unfilled 24/27 Nov destinations = 16/20; only 11 provider-positive publications."
+    "conservative_accounting_note": "11 PUBLISHED + 1 existing YouTube ERROR/public URL (reserved once) + 4 remaining 24/27 Nov destinations = 16/20; provider-positive count remains 11."
   },
   "routine_user_approval_required": false,
   "publication_notifications": {
@@ -90,7 +90,7 @@
     "verified_destination_receipts": 4,
     "producer_due": "2026-11-15T10:00:00+01:00",
     "hard_readiness_due": "2026-11-16T23:59:59+01:00",
-    "status": "TT-007 both published, TT-009 Instagram published; TT-009 YouTube provider ERROR with public URL, thumbnail warning"
+    "status": "TT-007 both PUBLISHED; TT-009 Instagram PUBLISHED; TT-009 YouTube public, Metricool ERROR thumbnail"
   },
   "recurring_tasks": [
     {
@@ -120,7 +120,7 @@
   ],
   "deployment_and_media": "GitHub build/deploy/public-media exact-byte verification 44713140659 succeeded after TT-009 Instagram source link update; 55 public files checked anonymously. TT-009 provider-hosted MP4 and cover remain exactly hash-verified in run 43847978272.",
   "review_limit": "Separate reviewer inspected 19 actual encoded shots, 18 boundaries, opening and final encoded frame, final audio ASR/caption/loudness and source rights; no perceptual listening or uninterrupted motion playback claimed.",
-  "automatic_next_step": "Retain the original uploaded YouTube Short/UUID and public URL; do not resubmit. Continue monitoring for Metricool PUBLISHED; Sunday 22 Nov producer fills Tue 24/Fri 27 Nov after all quality/claim/quota checks.",
+  "automatic_next_step": "Keep original TT-009 YouTube UUID, no resubmission; Sunday 22 Nov producer must fill next week's two distinct-paper videos on both channels after all release and quota gates.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
   "scheduled_posts_returned": 14,
   "published_provider_receipts": 11,
@@ -132,7 +132,7 @@
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
     "provider_byte_verification_run": 43847978272,
-    "latest_watchdog_run": 44780605180,
+    "latest_watchdog_run": 44812240054,
     "latest_watchdog_conclusion": "failure",
     "latest_build_run": 44713140659,
     "latest_build_verified_steps": [
@@ -142,7 +142,7 @@
     ],
     "latest_paper_retrieval_run": 43439354279,
     "latest_paper_retrieval_conclusion": "success",
-    "fresh_live_metricool_reconciliation_at": "2026-11-20T17:13:59.915Z",
+    "fresh_live_metricool_reconciliation_at": "2026-11-21T09:32:28Z",
     "latest_build_conclusion": "success",
     "latest_build_failure_step": null,
     "latest_build_failure_cause": null,
@@ -159,11 +159,11 @@
     "last_successful_deployment_run": 44494813543,
     "youtube_public_verification_requested_at": "2026-11-20T09:40:02.763Z",
     "youtube_public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
-    "latest_new_workflow_result": "Prior readiness 44780605180 inspected; post-heartbeat run not yet verified",
+    "latest_new_workflow_result": "Readiness workflow 44812240054 and audit job logs independently inspected.",
     "youtube_public_verification_run": 44712245363,
     "youtube_public_verification_conclusion": "success",
     "youtube_public_verification_basis": "Public oEmbed exact title and channel identity; yt-dlp blocked by bot check",
-    "latest_watchdog_reason": "Expected failure: Friday YouTube TT-009 status ERROR after thumbnail upload despite public video; required PUBLISHED not present; tests passed",
+    "latest_watchdog_reason": "115 tests pass; readiness correctly fails: TT-009 Friday YouTube ERROR due to thumbnail upload, not PUBLISHED; existing public Short must not be duplicated.",
     "latest_public_verification_status": "completed_success",
     "last_verified_archive_build_run": 44713140659,
     "last_verified_archive_build_conclusion": "success"
@@ -177,7 +177,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-20T17:13:59.915Z",
+    "checked_at": "2026-11-21T09:32:28Z",
     "brand_id": "7937614",
     "accounts": {
       "instagram": "toxic_tales_eco",
@@ -239,12 +239,12 @@
     ],
     "unused_or_missing": [],
     "open_readiness_issues": 1,
-    "duplicate_checks": "14 distinct UUIDs: 11 PUBLISHED, 1 existing YouTube ERROR due thumbnail upload with public video URL, 2 inactive drafts. No writes or retries.",
+    "duplicate_checks": "14 UUIDs: 11 PUBLISHED, one ERROR with existing public video URL/thumbnail warning, two inactive drafts; no duplicate, retry, or provider mutation.",
     "blockers": [],
     "routine_recovery": {
       "episode_id": "TT-009",
-      "status": "YouTube public video metadata verified but Metricool ERROR thumbnail, no duplicate/retry permitted",
-      "action": "Preserve existing YouTube Short and seek only positive provider PUBLISHED status on subsequent audits",
+      "status": "YouTube Short publicly present but Metricool ERROR, thumbnail upload warning; no duplicate or post-publication edit safe",
+      "action": "Keep UUID and public Short intact. Continue checks for provider PUBLISHED; do not resubmit or change past publication.",
       "owner_action_required": false
     },
     "published_ids_verified": [
@@ -325,13 +325,13 @@
     "youtube_public_metadata_verification_run": 44712245363,
     "youtube_provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
     "youtube_provider_status": "ERROR",
-    "watchdog_run": 44713163265,
-    "watchdog_status": "failure_due_to_youtube_provider_error_not_PUBLISHED"
+    "watchdog_run": 44812240054,
+    "watchdog_status": "failure_missing_positive_youtube_receipt"
   },
   "claim_coordination": {
-    "checked_at": "2026-11-20T17:13:59.915Z",
-    "status": "All original TT-009 submission/production claims completed; no new submission ownership needed",
-    "this_run_action": "Live provider reconciliation and repository heartbeat only; no provider mutation, no claim takeover",
+    "checked_at": "2026-11-21T09:32:28Z",
+    "status": "All TT-009 production/submission claims completed; no competing live claims.",
+    "this_run_action": "Verified provider state; only status/ledger/inventory/batch heartbeat, no production or provider writes.",
     "active_competing_claims": 0
   },
   "following_week_readiness": {
@@ -339,7 +339,7 @@
     "required_destination_receipts": 4,
     "verified_destination_receipts": 0,
     "producer_due": "2026-11-22T10:00:00+01:00",
-    "status": "Unfilled four destinations on 24/27 November; producer Sunday 22 November",
+    "status": "Next-week Tue 24 and Fri 27 Nov still empty; existing Sunday producer due 22 Nov; no Saturday catch-up or unreleased post.",
     "complete": false
   },
   "automation_tasks_verified_at": "2026-11-18T17:09:08.853Z"
