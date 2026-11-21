@@ -10,6 +10,9 @@ import copy
 import hashlib
 import json
 import os
+import sys
+import urllib.request
+import urllib.parse
 from calendar import monthrange
 from datetime import datetime, time, timedelta, timezone
 from pathlib import Path
@@ -210,6 +213,111 @@ def quota_observation(quota, posts, now, limit):
     return used, saved
 
 
+
+THUMBNAIL_ONLY_WARNING = (
+    "The YouTube post was published with some warnings: "
+    "Could not upload video thumbnail."
+)
+
+
+def thumbnail_warning_publicly_verified(root, post, evidence, now):
+    """A verified public video with only a thumbnail warning is not a failed upload."""
+    if (platform(post) != "youtube" or post.get("status") != "pending_confirmation"
+            or post.get("provider_status") != "ERROR"
+            or post.get("provider_detailed_status") != THUMBNAIL_ONLY_WARNING
+            or post.get("public_metadata_verified") is not True
+            or post.get("schedule_readback_verified") is not True
+            or post.get("metricool_hosted_bytes_verified") is not True
+            or post.get("youtube_channel_id") != YOUTUBE_CHANNEL):
+        return False
+    url = post.get("public_url")
+    if (not isinstance(url, str) or not valid_public_url(url, "youtube")
+            or not url.startswith("https://www.youtube.com/shorts/")
+            or post.get("reported_public_url") != url):
+        return False
+    video_id = url.removeprefix("https://www.youtube.com/shorts/").strip("/")
+    run_id = post.get("public_metadata_verification_run")
+    if (type(run_id) is not int or run_id <= 0 or
+            post.get("public_metadata_verification_url") !=
+            "https://github.com/akshaymohan16/toxic-tales-library/actions/runs/" + str(run_id)):
+        return False
+    request = read(root, "automation/youtube-public-verification-request.json", {})
+    meta = post.get("youtube", {})
+    expected = {
+        "repository": "akshaymohan16/toxic-tales-library",
+        "episode_id": post.get("episode_id"), "post_id": post.get("post_id"),
+        "metricool_uuid": str(post.get("metricool_uuid")),
+        "video_id": video_id, "public_url": url,
+        "channel_id": YOUTUBE_CHANNEL, "title": meta.get("title"),
+        "doi": post.get("doi"),
+        "release_fingerprint": post.get("release_fingerprint")
+    }
+    if not isinstance(request, dict) or any(request.get(k) != v
+                                             for k, v in expected.items()):
+        return False
+    check = evidence.get(post.get("post_id"), {}) if isinstance(evidence, dict) else {}
+    if (check.get("decision") != "pass" or check.get("url") != url or
+            check.get("title") != meta.get("title") or
+            check.get("channel_id") != YOUTUBE_CHANNEL):
+        return False
+    try:
+        checked = local_date(check["checked_at"])
+        due = local_date(post["publication_date"])
+        if checked < due or checked > now + timedelta(minutes=15) or (
+                now - checked > timedelta(hours=6)):
+            return False
+    except (KeyError, ValueError, TypeError):
+        return False
+    return True
+
+
+def probe_public_thumbnail_warnings(root):
+    """On each CI run, check the public video's title and actual channel identity."""
+    posts = read(root, "automation/published.json", {"posts": []}).get("posts", [])
+    evidence = {}
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; ToxicTalesReadiness/1.0)"}
+    for post in posts:
+        if (platform(post) != "youtube" or
+                post.get("status") != "pending_confirmation" or
+                post.get("provider_status") != "ERROR" or
+                post.get("provider_detailed_status") != THUMBNAIL_ONLY_WARNING):
+            continue
+        url = post.get("public_url")
+        if not valid_public_url(url, "youtube"):
+            continue
+        try:
+            endpoint = ("https://www.youtube.com/oembed?url=" +
+                        urllib.parse.quote(url, safe="") + "&format=json")
+            with urllib.request.urlopen(urllib.request.Request(endpoint, headers=headers),
+                                        timeout=20) as response:
+                metadata = json.load(response)
+            author = str(metadata.get("author_url", ""))
+            parts = urlparse(author)
+            channel_ok = YOUTUBE_CHANNEL in author
+            if (not channel_ok and parts.scheme == "https" and
+                    parts.hostname in {"www.youtube.com", "youtube.com"}):
+                with urllib.request.urlopen(urllib.request.Request(author, headers=headers),
+                                            timeout=20) as response:
+                    page = response.read(1500000).decode("utf-8", "replace")
+                channel_ok = YOUTUBE_CHANNEL in page
+            if (metadata.get("type") == "video" and
+                    metadata.get("title") == post.get("youtube", {}).get("title") and
+                    channel_ok):
+                evidence[post["post_id"]] = {
+                    "decision": "pass", "url": url,
+                    "title": metadata["title"], "channel_id": YOUTUBE_CHANNEL,
+                    "checked_at": datetime.now(timezone.utc).isoformat()
+                }
+                print("Public YouTube Short verified; Metricool thumbnail-only warning: "
+                      + url, file=sys.stderr)
+            else:
+                print("Public YouTube title/channel mismatch: " + str(url), file=sys.stderr)
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            print("Public verification unavailable; remain fail-closed for " +
+                  str(url) + ": " + str(exc)[:250], file=sys.stderr)
+    return evidence
+
+
 def publication_check(post, due, now, errors):
     pid = post.get("post_id", "unknown")
     network = platform(post)
@@ -241,7 +349,8 @@ def publication_check(post, due, now, errors):
                 errors.append(pid + ": invalid YouTube live verification timestamp")
 
 
-def youtube_check(root, post, posts, releases, now, errors, config=None):
+def youtube_check(root, post, posts, releases, now, errors, config=None,
+                  allow_historical_public_warning=False):
     pid = post.get("post_id", "unknown")
     if post.get("format") != "SHORT" or post.get("youtube_channel_id") != YOUTUBE_CHANNEL:
         errors.append(pid + ": incorrect YouTube format/channel")
@@ -310,7 +419,9 @@ def youtube_check(root, post, posts, releases, now, errors, config=None):
             str(settings.get("type", "")).upper() not in {"SHORT", "SHORTS"} or
             provider.get("autoPublish") is not True or provider.get("draft") is not False or
             len(destinations) != 1 or len(youtube_receipts) != 1 or
-            youtube_receipts[0].get("status") != post.get("provider_status") or
+            youtube_receipts[0].get("status") not in
+             ({"PENDING", "ERROR"} if allow_historical_public_warning
+              else {post.get("provider_status")}) or
             not isinstance(media, list) or len(media) != 1 or provider.get("media") != media):
         errors.append(pid + ": YouTube provider readback does not match reviewed schedule/settings/media")
     if (post.get("status") == "published" and len(youtube_receipts) == 1 and
@@ -441,11 +552,13 @@ def motion_release_identity_ok(root, episode, release):
         return False
 
 
-def audit(root, now):
+def audit(root, now, verified_public_checks=None):
     if now.tzinfo is None:
         raise ValueError("Watchdog time must have timezone")
     now = now.astimezone(ZONE)
     errors, warnings, rows = [], [], []
+    verified_public_checks = verified_public_checks or {}
+    verified_warning_posts = set()
     config = read(root, "automation/config.json", {})
     try:
         one_off_slots = validate_one_off_slots(config)
@@ -523,18 +636,26 @@ def audit(root, now):
                 except (KeyError, ValueError, TypeError):
                     errors.append(str(pid) + ": invalid scheduled Instagram receipt")
         if status in UNCERTAIN:
-            # Keep outstanding old publication errors visible after the week rolls over.
-            try:
-                due = local_date(p["publication_date"])
-                week = target_week(now)
-                if now - due >= GRACE and (week is None or due.date() < week):
-                    errors.append(str(pid) + ": prior-week " + network +
-                                  " publication remains unconfirmed (" +
-                                  str(status) + "; Metricool " +
-                                  str(p.get("provider_status", "unknown")) +
-                                  "); require PUBLISHED/live verification, preserve UUID")
-            except (KeyError, ValueError, TypeError):
-                errors.append(str(pid) + ": invalid uncertain publication date")
+            if thumbnail_warning_publicly_verified(root, p, verified_public_checks, now):
+                youtube_check(root, p, posts, releases, now, errors, exception_config,
+                              allow_historical_public_warning=True)
+                verified_warning_posts.add(pid)
+                warnings.append(str(pid) + ": public YouTube Short independently "
+                                "verified; Metricool thumbnail upload remains ERROR. "
+                                "Do not duplicate or mislabel provider status PUBLISHED.")
+            else:
+                # Genuine unverified publications remain blocking after rollover.
+                try:
+                    due = local_date(p["publication_date"])
+                    week = target_week(now)
+                    if now - due >= GRACE and (week is None or due.date() < week):
+                        errors.append(str(pid) + ": prior-week " + network +
+                                      " publication remains unconfirmed (" +
+                                      str(status) + "; Metricool " +
+                                      str(p.get("provider_status", "unknown")) +
+                                      "); require PUBLISHED/live verification, preserve UUID")
+                except (KeyError, ValueError, TypeError):
+                    errors.append(str(pid) + ": invalid uncertain publication date")
         if status in RESERVED:
             try:
                 date = local_date(p["publication_date"])
@@ -625,7 +746,8 @@ def audit(root, now):
                 errors.append(detail)
             else:
                 warnings.append(detail + "; production/reservation still pending")
-        elif matches[0].get("status") in UNCERTAIN:
+        elif (matches[0].get("status") in UNCERTAIN and
+              matches[0].get("post_id") not in verified_warning_posts):
             errors.append(slot["post_id"] +
                           ": existing one-off receipt remains unconfirmed (" +
                           str(matches[0].get("status")) + "; Metricool " +
@@ -689,11 +811,15 @@ def audit(root, now):
                 slot_label = label + "_youtube"
                 rows.append({"slot": slot_label, "due": due.isoformat(),
                              "post_id": matches[0].get("post_id") if len(matches) == 1 else None,
-                             "status": matches[0].get("status") if len(matches) == 1 else "missing"})
+                             "status": (("public_verified_provider_thumbnail_warning"
+                                          if matches[0].get("post_id") in verified_warning_posts
+                                          else matches[0].get("status"))
+                                         if len(matches) == 1 else "missing")})
                 if len(matches) != 1:
                     errors.append(slot_label + ": expected exactly one active SHORT at " +
                                   due.isoformat() + ", found " + str(len(matches)))
-                elif matches[0].get("status") in UNCERTAIN:
+                elif (matches[0].get("status") in UNCERTAIN and
+                      matches[0].get("post_id") not in verified_warning_posts):
                     p = matches[0]
                     errors.append(slot_label + ": existing " + str(p.get("post_id")) +
                                   " UUID " + str(p.get("metricool_uuid") or "unconfirmed") +
@@ -703,7 +829,7 @@ def audit(root, now):
 
     report = {"ok": not errors, "checked_at": now.isoformat(),
               "week_start": monday.isoformat() if monday else None,
-              "basis": "committed ledger receipts, NOT live Metricool availability",
+              "basis": "committed ledger plus fresh independent YouTube evidence; NOT live Metricool",
               "reserved_month": count, "limit": limit,
               "monthly_budgets": budgets,
               "slots": rows, "errors": errors, "warnings": warnings}
@@ -714,9 +840,12 @@ def main():
     arg = argparse.ArgumentParser()
     arg.add_argument("--root", default=".")
     arg.add_argument("--now", default=None)
+    arg.add_argument("--verify-public-thumbnail-warnings", action="store_true")
     args = arg.parse_args()
     now = datetime.fromisoformat(args.now) if args.now else datetime.now(timezone.utc)
-    report = audit(Path(args.root), now)
+    root = Path(args.root)
+    evidence = probe_public_thumbnail_warnings(root) if args.verify_public_thumbnail_warnings else {}
+    report = audit(root, now, verified_public_checks=evidence)
     print(json.dumps(report, indent=2))
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary:
@@ -730,6 +859,8 @@ def main():
                 file.write("- " + row["slot"] + ": " + str(row["post_id"]) + "\n")
             for error in report["errors"]:
                 file.write("- **FAIL:** " + error + "\n")
+            for warning in report["warnings"]:
+                file.write("- **WARNING:** " + warning + "\n")
     if not report["ok"]:
         raise SystemExit(1)
 

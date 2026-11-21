@@ -8,7 +8,8 @@ from datetime import datetime
 from pathlib import Path
 from automation.verify_readiness import (audit, target_week, month_budget, ZONE,
                                         YOUTUBE_CHANNEL, metadata_digest, release_check,
-                                        quota_observation)
+                                        quota_observation,
+                                        thumbnail_warning_publicly_verified)
 
 DATES = ["2026-11-17T10:00:00+01:00", "2026-11-20T10:00:00+01:00"]
 
@@ -588,6 +589,49 @@ class ReelsOnlyCadenceTests(YouTubeReadinessTests):
         self.assertFalse(report["ok"])
         self.assertIn("TT-102-YOUTUBE-SHORT: prior-week youtube publication remains unconfirmed",
                       " ".join(report["errors"]))
+
+
+    def test_thumbnail_only_public_verified_but_provider_error_can_be_warning(self):
+        posts = self.readposts()
+        post = posts[3]
+        url = "https://www.youtube.com/shorts/Y0CF32fpJC4"
+        post.update(status="pending_confirmation", provider_status="ERROR",
+                    provider_detailed_status=(
+                        "The YouTube post was published with some warnings: "
+                        "Could not upload video thumbnail."),
+                    reported_public_url=url, public_url=url,
+                    public_metadata_verified=True,
+                    public_metadata_verification_run=12345,
+                    public_metadata_verification_url=(
+                        "https://github.com/akshaymohan16/toxic-tales-library/actions/runs/12345"),
+                    metricool_hosted_bytes_verified=True)
+        self.save("automation/published.json", {"posts": posts})
+        self.save("automation/youtube-public-verification-request.json", {
+            "repository": "akshaymohan16/toxic-tales-library",
+            "episode_id": post["episode_id"], "post_id": post["post_id"],
+            "metricool_uuid": post["metricool_uuid"], "video_id": "Y0CF32fpJC4",
+            "public_url": url, "channel_id": YOUTUBE_CHANNEL,
+            "title": post["youtube"]["title"], "doi": post["doi"],
+            "release_fingerprint": post["release_fingerprint"]})
+        now = datetime.fromisoformat("2026-11-20T14:00:00+01:00")
+        check = {"decision": "pass", "url": url,
+                 "title": post["youtube"]["title"], "channel_id": YOUTUBE_CHANNEL,
+                 "checked_at": "2026-11-20T13:59:00+01:00"}
+        self.assertTrue(thumbnail_warning_publicly_verified(
+            self.root, post, {post["post_id"]: check}, now))
+        report = audit(self.root, now, verified_public_checks={post["post_id"]: check})
+        row = next(x for x in report["slots"] if x["slot"] == "friday_youtube")
+        self.assertEqual(row["status"], "public_verified_provider_thumbnail_warning")
+        self.assertFalse(any("friday_youtube: existing" in e for e in report["errors"]))
+        self.assertTrue(any("thumbnail upload remains ERROR" in w
+                            for w in report["warnings"]))
+        # No proof, a mismatched title or a genuine upload error must still fail.
+        self.assertFalse(thumbnail_warning_publicly_verified(self.root, post, {}, now))
+        self.assertFalse(thumbnail_warning_publicly_verified(
+            self.root, post, {post["post_id"]: {**check, "title": "Another video"}}, now))
+        post["provider_detailed_status"] = "Video upload failed"
+        self.assertFalse(thumbnail_warning_publicly_verified(
+            self.root, post, {post["post_id"]: check}, now))
 
     def test_missing_friday_youtube_is_incomplete(self):
         self.save("automation/published.json", {"posts": self.readposts()[:3]})
