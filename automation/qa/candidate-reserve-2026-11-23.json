@@ -1,0 +1,87 @@
+{
+  "kind": "toxic-tales-unpublished-primary-study-screen",
+  "week_start": "2026-11-23",
+  "screened_at": "2026-11-21",
+  "status": "screened_by_title_abstract_and_metadata_only_no_release_or_quality_approval",
+  "primary_source_policy": "Read complete cached JATS or original full text and required supplements. Check corrections, disputes, licenses and final media independently before release.",
+  "request_id": "reserve-animals-2026-11-21",
+  "candidate_count": 7,
+  "candidate_rank_is_not_publication_authorization": true,
+  "candidates": [
+    {
+      "pmcid": "PMC3966847",
+      "doi": "10.1371/journal.pone.0092895",
+      "organism": "New Caledonian crow",
+      "idea": "A crow can raise a floating reward by choosing what to drop into water",
+      "abstract_support": "Experiment reports preferences for water over sand, sinking over floating and solid over hollow objects",
+      "critical_limit": "The birds failed two harder tasks; avoid claims of complete causal understanding or human-equivalent intelligence",
+      "interest": "high",
+      "state": "await full-text, correction, supplementary and visual-rights review"
+    },
+    {
+      "pmcid": "PMC9388130",
+      "doi": "10.1073/pnas.2204754119",
+      "organism": "jumping spider",
+      "idea": "Retinal movements in a resting spider point toward an REM-like state",
+      "abstract_support": "Authors report recurring retinal movements during sleep-like inactivity",
+      "critical_limit": "REM-like does not prove dreams or mammalian REM; interpret behavior cautiously",
+      "interest": "high",
+      "state": "await full-text, correction, supplementary and visual-rights review"
+    },
+    {
+      "pmcid": "PMC3565511",
+      "doi": "10.1098/rsbl.2012.0931",
+      "organism": "urban birds",
+      "idea": "Cigarette filters in nests are associated with fewer ectoparasites",
+      "abstract_support": "Nest-material association and a separate heat-trap comparison",
+      "critical_limit": "Does not prove birds deliberately medicate themselves or improve fitness; avoid encouraging litter or claiming nicotine is harmless",
+      "interest": "high",
+      "state": "await full-text, correction, supplementary and visual-rights review"
+    },
+    {
+      "pmcid": "PMC8101055",
+      "doi": "10.1016/j.isci.2021.102223",
+      "organism": "octopus",
+      "idea": "Octopuses cycle between quiet and active sleep-like states",
+      "abstract_support": "Four adult Octopus insularis were observed with behavioral state measurements",
+      "critical_limit": "Small group, behavioral definition, and no demonstration that octopuses dream",
+      "interest": "high",
+      "state": "await full-text, supplementary, corrections and visual-rights review"
+    },
+    {
+      "pmcid": "PMC6366756",
+      "doi": "10.1371/journal.pbio.3000021",
+      "organism": "cleaner wrasse",
+      "idea": "A reef fish changes behavior toward a mirror and visible marks",
+      "abstract_support": "Fish displayed mark-test behaviors under particular conditions",
+      "critical_limit": "Mirror-test interpretation is contested; not direct proof of consciousness/self-awareness",
+      "interest": "high",
+      "state": "await full-text, follow-up and competing-explanation review"
+    },
+    {
+      "pmcid": "PMC3093451",
+      "doi": "10.1073/pnas.1016658108",
+      "organism": "red imported fire ant",
+      "idea": "Groups of ants interlock and float in a waterproof raft",
+      "abstract_support": "Time-lapse experiments examined raft assembly and hydrophobicity",
+      "critical_limit": "Do not claim individual ants float effortlessly or consciously coordinate every movement; current episode TT-009 already features ants",
+      "interest": "reserve",
+      "state": "await full-text, rights and correction review"
+    },
+    {
+      "pmcid": "PMC9290741",
+      "doi": "10.1111/nyas.14600",
+      "organism": "fruit bat",
+      "idea": "Sickness-like immune challenge alters group contact",
+      "abstract_support": "Authors report reduced social contacts following immunological challenge",
+      "critical_limit": "Immune challenge is not an infection, reduced encounters do not establish deliberate altruistic distancing",
+      "interest": "reserve",
+      "state": "await full-text, rights and correction review"
+    }
+  ],
+  "recommended_first_full_text_comparisons": [
+    "PMC3966847",
+    "PMC9388130"
+  ],
+  "technical_note": "No media or Metricool changes authorized by this shortlist. Seven candidates are requested through official open-text retrieval, which enforces manuscript DOI, PMCID, body and CC BY/CC0 cache requirements."
+}
