@@ -93,7 +93,7 @@
     "Automation_991690d6af648191ac8037cfa96c92a0"
   ],
   "new_task_created": false,
-  "updated_at": "2026-11-21T17:13:19.512Z",
+  "updated_at": "2026-11-21T17:16:22.412Z",
   "last_provider_reconciled_at": "2026-11-21T17:13:19.512Z",
   "provider_reconciliation": {
     "checked_at": "2026-11-21T17:13:19.512Z",
@@ -111,10 +111,10 @@
     "quota_projected": 16,
     "quota_cap": 20,
     "open_readiness_issues": 1,
-    "latest_watchdog_run": 44926570070,
+    "latest_watchdog_run": 44928858024,
     "latest_watchdog_conclusion": "success_with_public_youtube_thumbnail_warning",
     "note": "Complete live 14 UUID month verified; 11 strict PUBLISHED, one TT-009 YouTube ERROR only because thumbnail, publicly verified title/channel; two inert drafts. New 24/27 Nov slots empty and Sunday producer not yet due. Current CI watchdog succeeds only with explicit public verification exception, not a Metricool PUBLISHED receipt.",
-    "latest_build_run": 44890175684,
+    "latest_build_run": 44928858017,
     "latest_build_conclusion": "success",
     "latest_provider_byte_run": 43847978272,
     "latest_provider_byte_conclusion": "success",
