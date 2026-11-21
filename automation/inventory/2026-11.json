@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-21T09:32:28Z",
+  "observed_at": "2026-11-21T09:48:19.680Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -48,7 +48,7 @@
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [],
-  "calendar_reconciled_on": "2026-11-21T09:32:28Z",
+  "calendar_reconciled_on": "2026-11-21T09:48:19.680Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -67,8 +67,8 @@
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-21T09:32:28Z",
-    "calendar_checked_at": "2026-11-21T09:32:28Z",
+    "observed_at": "2026-11-21T09:48:19.680Z",
+    "calendar_checked_at": "2026-11-21T09:48:19.680Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -121,7 +121,7 @@
     "conservative_accounting_note": "11 PUBLISHED + 1 existing YouTube ERROR/public URL (reserved once) + 4 remaining 24/27 Nov destinations = 16/20; provider-positive count remains 11."
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-21T09:32:28Z",
+    "checked_at": "2026-11-21T09:48:19.680Z",
     "published_destinations": 11,
     "scheduled_active_destinations": 0,
     "held_retired_drafts": 2,

@@ -1355,7 +1355,7 @@
     "TT-009-REEL",
     "instagram:TT-009-REEL"
   ],
-  "last_provider_reconciled_at": "2026-11-21T09:32:28Z",
+  "last_provider_reconciled_at": "2026-11-21T09:48:19.680Z",
   "last_provider_reconciliation": {
     "month": "2026-11",
     "calendar_entries": 14,
@@ -1378,7 +1378,7 @@
     "remaining_regular_destinations": 4,
     "projected_month_destinations": 16,
     "one_off_confirmed_both": true,
-    "checked_at": "2026-11-21T09:32:28Z",
+    "checked_at": "2026-11-21T09:48:19.680Z",
     "full_month_calendar_verified": true,
     "usage_baseline": {
       "month": "2026-11",
@@ -1400,7 +1400,7 @@
     "youtube_public_metadata_verification_run": 44712245363
   },
   "last_live_reconciliation": {
-    "checked_at": "2026-11-21T09:32:28Z",
+    "checked_at": "2026-11-21T09:48:19.680Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "calendar_entries": 14,

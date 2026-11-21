@@ -562,6 +562,33 @@ class ReconciledQuotaTests(unittest.TestCase):
 
 
 class ReelsOnlyCadenceTests(YouTubeReadinessTests):
+    def test_unconfirmed_youtube_receipt_is_not_misreported_as_missing(self):
+        posts = self.readposts()
+        posts[3].update(status="pending_confirmation", provider_status="ERROR",
+                        public_url="https://www.youtube.com/shorts/Y0CF32fpJC4")
+        self.save("automation/published.json", {"posts": posts})
+        report = self.check("2026-11-20T14:00:00+01:00")
+        self.assertFalse(report["ok"])
+        row = next(r for r in report["slots"] if r["slot"] == "friday_youtube")
+        self.assertEqual(row["post_id"], "TT-102-YOUTUBE-SHORT")
+        self.assertEqual(row["status"], "pending_confirmation")
+        self.assertIn("friday_youtube: existing TT-102-YOUTUBE-SHORT", " ".join(report["errors"]))
+        self.assertNotIn("friday_youtube: expected exactly one active", " ".join(report["errors"]))
+
+    def test_prior_week_unconfirmed_youtube_remains_blocking_after_rollover(self):
+        posts = self.readposts()
+        posts[3].update(status="pending_confirmation", provider_status="ERROR",
+                        public_url="https://www.youtube.com/shorts/Y0CF32fpJC4")
+        self.save("automation/published.json", {"posts": posts})
+        state = json.loads((self.root / "automation/publisher-status.json").read_text())
+        state["updated_at"] = "2026-11-23T09:30:00+01:00"
+        state["quota"]["observed_at"] = "2026-11-23T09:30:00+01:00"
+        self.save("automation/publisher-status.json", state)
+        report = self.check("2026-11-23T11:00:00+01:00")
+        self.assertFalse(report["ok"])
+        self.assertIn("TT-102-YOUTUBE-SHORT: prior-week youtube publication remains unconfirmed",
+                      " ".join(report["errors"]))
+
     def test_missing_friday_youtube_is_incomplete(self):
         self.save("automation/published.json", {"posts": self.readposts()[:3]})
         errors = " ".join(self.check()["errors"])

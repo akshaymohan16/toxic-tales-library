@@ -24,8 +24,8 @@ except ImportError:  # Direct script execution: python automation/verify_readine
 ZONE = ZoneInfo("Europe/Vienna")
 SLOTS = (("tuesday", 1, "REEL"), ("friday", 4, "REEL"))
 FINAL = {"scheduled", "published"}
-RESERVED = {"scheduled", "published", "draft_held_for_quality_review"}
-RESERVED |= {"submission_uncertain", "pending_confirmation", "failed_retry_pending"}
+UNCERTAIN = {"submission_uncertain", "pending_confirmation", "failed_retry_pending"}
+RESERVED = FINAL | UNCERTAIN | {"draft_held_for_quality_review"}
 GRACE = timedelta(hours=3)
 HEARTBEAT_MAX_AGE = timedelta(hours=42)
 YOUTUBE_CHANNEL = "UCDvftxMMdtGSntm-ezcPfCg"
@@ -522,6 +522,19 @@ def audit(root, now):
                     release_check(root, p, releases, errors)
                 except (KeyError, ValueError, TypeError):
                     errors.append(str(pid) + ": invalid scheduled Instagram receipt")
+        if status in UNCERTAIN:
+            # Keep outstanding old publication errors visible after the week rolls over.
+            try:
+                due = local_date(p["publication_date"])
+                week = target_week(now)
+                if now - due >= GRACE and (week is None or due.date() < week):
+                    errors.append(str(pid) + ": prior-week " + network +
+                                  " publication remains unconfirmed (" +
+                                  str(status) + "; Metricool " +
+                                  str(p.get("provider_status", "unknown")) +
+                                  "); require PUBLISHED/live verification, preserve UUID")
+            except (KeyError, ValueError, TypeError):
+                errors.append(str(pid) + ": invalid uncertain publication date")
         if status in RESERVED:
             try:
                 date = local_date(p["publication_date"])
@@ -599,7 +612,7 @@ def audit(root, now):
         first_publication = datetime(2026, 11, 17, 10, tzinfo=ZONE)
     monday = target_week(now)
     for slot in one_off_slots:
-        matches = [p for p in posts if p.get("status") in FINAL and
+        matches = [p for p in posts if p.get("status") in FINAL | UNCERTAIN and
                    authorized_one_off_slot(p, exception_config) == slot["due"] and
                    p.get("post_id") == slot["post_id"] and platform(p) == slot["platform"]]
         rows.append({"slot": "owner_one_off_" + slot["platform"],
@@ -612,6 +625,12 @@ def audit(root, now):
                 errors.append(detail)
             else:
                 warnings.append(detail + "; production/reservation still pending")
+        elif matches[0].get("status") in UNCERTAIN:
+            errors.append(slot["post_id"] +
+                          ": existing one-off receipt remains unconfirmed (" +
+                          str(matches[0].get("status")) + "; Metricool " +
+                          str(matches[0].get("provider_status", "unknown")) +
+                          "); preserve UUID; no retry after due time")
         elif slot["platform"] == "instagram" and matches[0].get("status") == "published":
             # Published one-offs before the regular first slot still retain all
             # positive-publication and exact-release checks.
@@ -627,7 +646,7 @@ def audit(root, now):
                 continue
             matching = []
             for p in posts:
-                if (platform(p) != "instagram" or p.get("status") not in FINAL or
+                if (platform(p) != "instagram" or p.get("status") not in FINAL | UNCERTAIN or
                         p.get("format") != fmt):
                     continue
                 try:
@@ -644,6 +663,13 @@ def audit(root, now):
                 continue
             p = matching[0]
             row["status"] = p["status"]
+            if p["status"] in UNCERTAIN:
+                errors.append(label + ": existing " + str(p.get("post_id")) +
+                              " UUID " + str(p.get("metricool_uuid") or "unconfirmed") +
+                              " is " + str(p["status"]) + " (Metricool " +
+                              str(p.get("provider_status", "unknown")) +
+                              "); not PUBLISHED/live verified; preserve existing destination")
+                continue
             publication_check(p, due, now, errors)
             release_check(root, p, releases, errors)
 
@@ -654,7 +680,7 @@ def audit(root, now):
                     continue
                 matches = []
                 for p in posts:
-                    if platform(p) == "youtube" and p.get("status") in FINAL:
+                    if platform(p) == "youtube" and p.get("status") in FINAL | UNCERTAIN:
                         try:
                             if local_date(p["publication_date"]) == due:
                                 matches.append(p)
@@ -667,6 +693,13 @@ def audit(root, now):
                 if len(matches) != 1:
                     errors.append(slot_label + ": expected exactly one active SHORT at " +
                                   due.isoformat() + ", found " + str(len(matches)))
+                elif matches[0].get("status") in UNCERTAIN:
+                    p = matches[0]
+                    errors.append(slot_label + ": existing " + str(p.get("post_id")) +
+                                  " UUID " + str(p.get("metricool_uuid") or "unconfirmed") +
+                                  " is " + str(p["status"]) + " (Metricool " +
+                                  str(p.get("provider_status", "unknown")) +
+                                  "); not PUBLISHED/live verified; preserve existing destination")
 
     report = {"ok": not errors, "checked_at": now.isoformat(),
               "week_start": monday.isoformat() if monday else None,
