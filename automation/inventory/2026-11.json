@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-21T09:48:19.680Z",
+  "observed_at": "2026-11-21T17:13:19.512Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -48,7 +48,7 @@
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [],
-  "calendar_reconciled_on": "2026-11-21T09:48:19.680Z",
+  "calendar_reconciled_on": "2026-11-21T17:13:19.512Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -61,14 +61,14 @@
   "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
   "provider_confirmed_publications": 11,
   "known_usage_lower_bound": 11,
-  "last_calendar_readback": "2026-11-21T09:32:28Z",
+  "last_calendar_readback": "2026-11-21T17:13:19.512Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-21T09:48:19.680Z",
-    "calendar_checked_at": "2026-11-21T09:48:19.680Z",
+    "observed_at": "2026-11-21T17:13:19.512Z",
+    "calendar_checked_at": "2026-11-21T17:13:19.512Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -118,10 +118,10 @@
       "youtube:3828607998694999530"
     ],
     "conservative_committed_destination_count": 16,
-    "conservative_accounting_note": "11 PUBLISHED + 1 existing YouTube ERROR/public URL (reserved once) + 4 remaining 24/27 Nov destinations = 16/20; provider-positive count remains 11."
+    "conservative_accounting_note": "Fresh complete 14-item Metricool calendar: 11 strictly PUBLISHED, one previously submitted TT-009 YouTube ERROR (public video independently verified; thumbnail warning), two retired/rejected inert drafts. Preserve original YouTube UUID and reserve it once; four as-yet-empty 24/27 November destinations = 16/20. No re-upload or duplicate."
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-21T09:48:19.680Z",
+    "checked_at": "2026-11-21T17:13:19.512Z",
     "published_destinations": 11,
     "scheduled_active_destinations": 0,
     "held_retired_drafts": 2,
@@ -129,12 +129,12 @@
     "no_new_writes": true,
     "owner_authorized_tt008_published_both": true,
     "retired_tt002_and_rejected_tt003_untouched": true,
-    "friday_20_november_status": "Instagram PUBLISHED; YouTube Short URL live, Metricool ERROR after thumbnail upload warning; original UUID and media preserved.",
+    "friday_20_november_status": "Instagram PUBLISHED, YouTube public and channel/title independently verified but Metricool ERROR thumbnail warning; no strict YouTube publication notification.",
     "observed_provider_uuid_count": 14,
     "latest_build_run": 44713140659,
     "latest_build_conclusion": "success",
-    "latest_watchdog_run": 44812240054,
-    "latest_watchdog_conclusion": "failure_due_to_youtube_error",
+    "latest_watchdog_run": 44926570070,
+    "latest_watchdog_conclusion": "success_with_public_youtube_thumbnail_warning",
     "today_tuesday_status": "TT-007 Instagram and YouTube PUBLISHED on 17 Nov with public URLs; YouTube title/channel independently verified",
     "archive_deployment_verified": true,
     "public_files_verified": 55,
@@ -144,7 +144,10 @@
     "public_youtube_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
     "youtube_public_metadata_verified": true,
     "youtube_public_metadata_verification_run": 44712245363,
-    "youtube_public_metadata_verification_method": "Public oEmbed title and author channel identity matched; independent GitHub Actions pass"
+    "youtube_public_metadata_verification_method": "Public oEmbed title and author channel identity matched; independent GitHub Actions pass",
+    "next_week_2026_11_23_receipts": 0,
+    "next_week_2026_11_23_required": 4,
+    "next_week_producer_due": "2026-11-22T10:00:00+01:00"
   },
   "provider_warning_ids": [
     "429844729"
