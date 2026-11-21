@@ -1,55 +1,24 @@
 {
   "repository": "akshaymohan16/toxic-tales-library",
-  "request_id": "reserve-animals-2026-11-21",
-  "request_sha256": "10f4c16474a6aed371a9c98bc59538d97f79bcaf27433d036ca5d7b75414fddb",
-  "checked_at": "2026-11-21T17:31:54.758892+00:00",
+  "request_id": "sleep-2026-followup-20261121",
+  "request_sha256": "636c51b83a8075c23e0e37385c83be8c5e2f0c3527f1a0bcbb94dba8e0b74496",
+  "checked_at": "2026-11-21T17:36:37.496337+00:00",
   "scientific_review_complete": false,
   "papers": [
     {
       "pmcid": "PMC9388130",
       "expected_doi": "10.1073/pnas.2204754119",
-      "status": "cached",
-      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9388130/fullTextXML",
+      "status": "reused",
       "xml_sha256": "3c461a37147968e9b55be5cc845bb20ebe595fd732084c8dec8af178afb58d1d",
       "title": "Regularly occurring bouts of retinal movements suggest an REM sleep–like state in jumping spiders"
     },
     {
-      "pmcid": "PMC6366756",
-      "expected_doi": "10.1371/journal.pbio.3000021",
-      "status": "skipped",
-      "reason": "API HTTP status 503; Article title unavailable"
-    },
-    {
-      "pmcid": "PMC8101055",
-      "expected_doi": "10.1016/j.isci.2021.102223",
-      "status": "skipped",
-      "reason": "API HTTP status 503; Public cache requires unambiguous article-level CC BY or CC0 licence"
-    },
-    {
-      "pmcid": "PMC3966847",
-      "expected_doi": "10.1371/journal.pone.0092895",
+      "pmcid": "PMC13752372",
+      "expected_doi": "10.1073/pnas.2618030123",
       "status": "cached",
-      "source_url": "https://pmc.ncbi.nlm.nih.gov/api/oai/v1/mh/?verb=GetRecord&identifier=oai%3Apubmedcentral.nih.gov%3A3966847&metadataPrefix=pmc",
-      "xml_sha256": "474963b983846ed67d8e0dcc88185aac92ebf091f88912fbdc6a32c204219be3",
-      "title": "Using the Aesop's Fable Paradigm to Investigate Causal Understanding of Water Displacement by New Caledonian Crows"
-    },
-    {
-      "pmcid": "PMC3565511",
-      "expected_doi": "10.1098/rsbl.2012.0931",
-      "status": "skipped",
-      "reason": "API HTTP status 503; API HTTP status 400"
-    },
-    {
-      "pmcid": "PMC3093451",
-      "expected_doi": "10.1073/pnas.1016658108",
-      "status": "skipped",
-      "reason": "API connection unavailable; API HTTP status 400"
-    },
-    {
-      "pmcid": "PMC9290741",
-      "expected_doi": "10.1111/nyas.14600",
-      "status": "skipped",
-      "reason": "Oversized XML or forbidden document declaration; Public cache requires unambiguous article-level CC BY or CC0 licence"
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/api/oai/v1/mh/?verb=GetRecord&identifier=oai%3Apubmedcentral.nih.gov%3A13752372&metadataPrefix=pmc",
+      "xml_sha256": "d27378b10eabacd43c55f01fa7f05406704b1e4729685c93c5a3bd9cb54347eb",
+      "title": "Behavioral evidence for two-stage sleep in spiders"
     }
   ]
 }
