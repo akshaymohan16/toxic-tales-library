@@ -14,7 +14,7 @@ import sys
 import urllib.request
 import urllib.parse
 import urllib.error
-import time
+import time as sleep_time
 from calendar import monthrange
 from datetime import datetime, time, timedelta, timezone
 from pathlib import Path
@@ -280,7 +280,7 @@ def check_short_public_metadata(post, opener=None, sleeper=None):
     Every validation attempt checks both the title and creator channel identity.
     """
     opener = opener or urllib.request.urlopen
-    sleeper = sleeper or time.sleep
+    sleeper = sleeper or sleep_time.sleep
     url = post.get("public_url")
     if not isinstance(url, str) or not valid_public_url(url, "youtube"):
         return None

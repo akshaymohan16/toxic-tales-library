@@ -658,6 +658,20 @@ class ReelsOnlyCadenceTests(YouTubeReadinessTests):
         self.assertEqual(len(calls), 3)
         self.assertEqual(backoffs, [1])
 
+
+    def test_public_video_default_retry_dependency_is_valid(self):
+        post = self.readposts()[2]
+        post["public_url"] = "https://www.youtube.com/shorts/Y0CF32fpJC4"
+        calls = []
+        def wrong_title(request, timeout):
+            calls.append(request.full_url)
+            return io.BytesIO(json.dumps({"type":"video", "title":"wrong",
+                            "author_url":"https://www.youtube.com/channel/" +
+                            YOUTUBE_CHANNEL}).encode("utf-8"))
+        # Uses the default sleeper, catching shadowing of datetime.time.
+        self.assertIsNone(check_short_public_metadata(post, opener=wrong_title))
+        self.assertEqual(len(calls), 1)
+
     def test_public_video_wrong_title_or_not_found_never_passes(self):
         post = self.readposts()[2]
         post["public_url"] = "https://www.youtube.com/shorts/Y0CF32fpJC4"
