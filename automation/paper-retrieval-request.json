@@ -1,34 +1,14 @@
 {
   "repository": "akshaymohan16/toxic-tales-library",
-  "request_id": "reserve-animals-2026-11-21",
+  "request_id": "sleep-2026-followup-20261121",
   "papers": [
     {
       "pmcid": "PMC9388130",
       "expected_doi": "10.1073/pnas.2204754119"
     },
     {
-      "pmcid": "PMC6366756",
-      "expected_doi": "10.1371/journal.pbio.3000021"
-    },
-    {
-      "pmcid": "PMC8101055",
-      "expected_doi": "10.1016/j.isci.2021.102223"
-    },
-    {
-      "pmcid": "PMC3966847",
-      "expected_doi": "10.1371/journal.pone.0092895"
-    },
-    {
-      "pmcid": "PMC3565511",
-      "expected_doi": "10.1098/rsbl.2012.0931"
-    },
-    {
-      "pmcid": "PMC3093451",
-      "expected_doi": "10.1073/pnas.1016658108"
-    },
-    {
-      "pmcid": "PMC9290741",
-      "expected_doi": "10.1111/nyas.14600"
+      "pmcid": "PMC13752372",
+      "expected_doi": "10.1073/pnas.2618030123"
     }
   ]
 }
