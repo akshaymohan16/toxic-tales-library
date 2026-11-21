@@ -13,6 +13,8 @@ import os
 import sys
 import urllib.request
 import urllib.parse
+import urllib.error
+import time
 from calendar import monthrange
 from datetime import datetime, time, timedelta, timezone
 from pathlib import Path
@@ -271,50 +273,78 @@ def thumbnail_warning_publicly_verified(root, post, evidence, now):
     return True
 
 
+def check_short_public_metadata(post, opener=None, sleeper=None):
+    """Verify the exact public YouTube Short, retrying only transient transport errors.
+
+    Returns fresh evidence or None. Never interprets Metricool ERROR as PUBLISHED.
+    Every validation attempt checks both the title and creator channel identity.
+    """
+    opener = opener or urllib.request.urlopen
+    sleeper = sleeper or time.sleep
+    url = post.get("public_url")
+    if not isinstance(url, str) or not valid_public_url(url, "youtube"):
+        return None
+    expected_title = post.get("youtube", {}).get("title")
+    if not isinstance(expected_title, str) or not expected_title:
+        return None
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; ToxicTalesReadiness/1.0)"}
+    endpoint = ("https://www.youtube.com/oembed?url=" +
+                urllib.parse.quote(url, safe="") + "&format=json")
+    for attempt in range(3):
+        try:
+            with opener(urllib.request.Request(endpoint, headers=headers),
+                        timeout=12) as response:
+                metadata = json.load(response)
+            if (metadata.get("type") != "video" or
+                    metadata.get("title") != expected_title):
+                return None  # A mismatched video is NOT a network error.
+            author = str(metadata.get("author_url", ""))
+            parts = urlparse(author)
+            channel_ok = YOUTUBE_CHANNEL in author
+            if (not channel_ok and parts.scheme == "https" and
+                    parts.hostname in {"www.youtube.com", "youtube.com"}):
+                with opener(urllib.request.Request(author, headers=headers),
+                            timeout=12) as response:
+                    page = response.read(1500000).decode("utf-8", "replace")
+                channel_ok = YOUTUBE_CHANNEL in page
+            if not channel_ok:
+                return None
+            return {"decision": "pass", "url": url,
+                    "title": metadata["title"], "channel_id": YOUTUBE_CHANNEL,
+                    "checked_at": datetime.now(timezone.utc).isoformat()}
+        except urllib.error.HTTPError as exc:
+            # Not found/forbidden is never treated as an assumed live video.
+            if exc.code not in {408, 429, 500, 502, 503, 504} or attempt == 2:
+                print("YouTube public verification HTTP error: " + str(exc),
+                      file=sys.stderr)
+                return None
+        except (OSError, ValueError, KeyError, TypeError, AttributeError) as exc:
+            if attempt == 2:
+                print("YouTube public verification transport error: " + str(exc)[:250],
+                      file=sys.stderr)
+                return None
+        sleeper(attempt + 1)
+    return None
+
+
 def probe_public_thumbnail_warnings(root):
-    """On each CI run, check the public video's title and actual channel identity."""
+    """Read-only online verification; one provider warning cannot hide a missing video."""
     posts = read(root, "automation/published.json", {"posts": []}).get("posts", [])
     evidence = {}
-    headers = {"User-Agent": "Mozilla/5.0 (compatible; ToxicTalesReadiness/1.0)"}
     for post in posts:
         if (platform(post) != "youtube" or
                 post.get("status") != "pending_confirmation" or
                 post.get("provider_status") != "ERROR" or
                 post.get("provider_detailed_status") != THUMBNAIL_ONLY_WARNING):
             continue
-        url = post.get("public_url")
-        if not valid_public_url(url, "youtube"):
-            continue
-        try:
-            endpoint = ("https://www.youtube.com/oembed?url=" +
-                        urllib.parse.quote(url, safe="") + "&format=json")
-            with urllib.request.urlopen(urllib.request.Request(endpoint, headers=headers),
-                                        timeout=20) as response:
-                metadata = json.load(response)
-            author = str(metadata.get("author_url", ""))
-            parts = urlparse(author)
-            channel_ok = YOUTUBE_CHANNEL in author
-            if (not channel_ok and parts.scheme == "https" and
-                    parts.hostname in {"www.youtube.com", "youtube.com"}):
-                with urllib.request.urlopen(urllib.request.Request(author, headers=headers),
-                                            timeout=20) as response:
-                    page = response.read(1500000).decode("utf-8", "replace")
-                channel_ok = YOUTUBE_CHANNEL in page
-            if (metadata.get("type") == "video" and
-                    metadata.get("title") == post.get("youtube", {}).get("title") and
-                    channel_ok):
-                evidence[post["post_id"]] = {
-                    "decision": "pass", "url": url,
-                    "title": metadata["title"], "channel_id": YOUTUBE_CHANNEL,
-                    "checked_at": datetime.now(timezone.utc).isoformat()
-                }
-                print("Public YouTube Short verified; Metricool thumbnail-only warning: "
-                      + url, file=sys.stderr)
-            else:
-                print("Public YouTube title/channel mismatch: " + str(url), file=sys.stderr)
-        except (OSError, ValueError, KeyError, TypeError) as exc:
-            print("Public verification unavailable; remain fail-closed for " +
-                  str(url) + ": " + str(exc)[:250], file=sys.stderr)
+        check = check_short_public_metadata(post)
+        if check:
+            evidence[post["post_id"]] = check
+            print("Public YouTube Short verified; Metricool thumbnail-only warning: "
+                  + check["url"], file=sys.stderr)
+        else:
+            print("Public YouTube evidence unavailable; failing closed for " +
+                  str(post.get("post_id")), file=sys.stderr)
     return evidence
 
 

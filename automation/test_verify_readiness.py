@@ -2,6 +2,8 @@
 import copy
 import hashlib
 import json
+import io
+import urllib.error
 import tempfile
 import unittest
 from datetime import datetime
@@ -9,7 +11,8 @@ from pathlib import Path
 from automation.verify_readiness import (audit, target_week, month_budget, ZONE,
                                         YOUTUBE_CHANNEL, metadata_digest, release_check,
                                         quota_observation,
-                                        thumbnail_warning_publicly_verified)
+                                        thumbnail_warning_publicly_verified,
+                                        check_short_public_metadata)
 
 DATES = ["2026-11-17T10:00:00+01:00", "2026-11-20T10:00:00+01:00"]
 
@@ -632,6 +635,46 @@ class ReelsOnlyCadenceTests(YouTubeReadinessTests):
         post["provider_detailed_status"] = "Video upload failed"
         self.assertFalse(thumbnail_warning_publicly_verified(
             self.root, post, {post["post_id"]: check}, now))
+
+
+    def test_public_video_check_retries_transient_failure(self):
+        post = self.readposts()[2]
+        post["public_url"] = "https://www.youtube.com/shorts/Y0CF32fpJC4"
+        calls, backoffs = [], []
+        def fake_open(request, timeout):
+            calls.append(request.full_url)
+            if len(calls) == 1:
+                raise urllib.error.URLError("temporary transport failure")
+            if len(calls) == 2:
+                return io.BytesIO(json.dumps({
+                    "type": "video", "title": post["youtube"]["title"],
+                    "author_url": "https://www.youtube.com/@toxic_tales_eco"
+                }).encode("utf-8"))
+            return io.BytesIO(("owner channel: " + YOUTUBE_CHANNEL).encode("utf-8"))
+        found = check_short_public_metadata(post, opener=fake_open,
+                                            sleeper=backoffs.append)
+        self.assertEqual(found["decision"], "pass")
+        self.assertEqual(found["url"], post["public_url"])
+        self.assertEqual(len(calls), 3)
+        self.assertEqual(backoffs, [1])
+
+    def test_public_video_wrong_title_or_not_found_never_passes(self):
+        post = self.readposts()[2]
+        post["public_url"] = "https://www.youtube.com/shorts/Y0CF32fpJC4"
+        def wrong_title(request, timeout):
+            return io.BytesIO(json.dumps({
+                "type": "video", "title": "Different video",
+                "author_url": "https://www.youtube.com/channel/" + YOUTUBE_CHANNEL
+            }).encode("utf-8"))
+        self.assertIsNone(check_short_public_metadata(
+            post, opener=wrong_title, sleeper=lambda _: None))
+        calls = []
+        def removed(request, timeout):
+            calls.append(1)
+            raise urllib.error.HTTPError(request.full_url, 404, "Not Found", {}, None)
+        self.assertIsNone(check_short_public_metadata(
+            post, opener=removed, sleeper=lambda _: None))
+        self.assertEqual(len(calls), 1)  # Do not retry a missing video.
 
     def test_missing_friday_youtube_is_incomplete(self):
         self.save("automation/published.json", {"posts": self.readposts()[:3]})
