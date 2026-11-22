@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-22T09:15:04.266Z",
+  "observed_at": "2026-11-22T17:22:37.475Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -48,7 +48,7 @@
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [],
-  "calendar_reconciled_on": "2026-11-22T09:15:04.266Z",
+  "calendar_reconciled_on": "2026-11-22T17:22:37.475Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -61,14 +61,14 @@
   "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
   "provider_confirmed_publications": 11,
   "known_usage_lower_bound": 11,
-  "last_calendar_readback": "2026-11-22T09:15:04.266Z",
+  "last_calendar_readback": "2026-11-22T17:22:37.475Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-22T09:15:04.266Z",
-    "calendar_checked_at": "2026-11-22T09:15:04.266Z",
+    "observed_at": "2026-11-22T17:22:37.475Z",
+    "calendar_checked_at": "2026-11-22T17:22:37.475Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -118,10 +118,10 @@
       "youtube:3828607998694999530"
     ],
     "conservative_committed_destination_count": 16,
-    "conservative_accounting_note": "22 Nov live 14-item full-month Metricool reconciliation: 11 strictly PUBLISHED, one previously submitted TT-009 YouTube ERROR with public video independently verified and thumbnail-only warning, two inert drafts; four upcoming Tue/Fri destinations empty and owned by Sunday's active producer. Conservative 11+1+4=16/20."
+    "conservative_accounting_note": "11 confirmed PUBLISHED + 1 already-submitted TT-009 YouTube ERROR/public warning + 4 vacant future Tue/Fri destinations = 16/20; historical draft entries excluded."
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-22T09:15:04.266Z",
+    "checked_at": "2026-11-22T17:22:37.475Z",
     "published_destinations": 11,
     "scheduled_active_destinations": 0,
     "held_retired_drafts": 2,
@@ -133,8 +133,8 @@
     "observed_provider_uuid_count": 14,
     "latest_build_run": 44928858017,
     "latest_build_conclusion": "success",
-    "latest_watchdog_run": 44941138749,
-    "latest_watchdog_conclusion": "success_with_public_youtube_thumbnail_warning",
+    "latest_watchdog_run": 45044532541,
+    "latest_watchdog_conclusion": "success",
     "today_tuesday_status": "TT-007 Instagram and YouTube PUBLISHED on 17 Nov with public URLs; YouTube title/channel independently verified",
     "archive_deployment_verified": true,
     "public_files_verified": 55,
@@ -148,12 +148,13 @@
     "next_week_2026_11_23_receipts": 0,
     "next_week_2026_11_23_required": 4,
     "next_week_producer_due": "2026-11-22T10:00:00+01:00",
-    "active_production_claims": [
+    "active_production_claims": [],
+    "latest_asset_pin_run": 45005820057,
+    "latest_asset_pin_conclusion": "success",
+    "expired_production_claims": [
       "production:2026-11-24",
       "production:2026-11-27"
-    ],
-    "latest_asset_pin_run": 45005820057,
-    "latest_asset_pin_conclusion": "success"
+    ]
   },
   "provider_warning_ids": [
     "429844729"
@@ -173,7 +174,8 @@
       "retry_permitted": false,
       "public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
       "public_metadata_verified": true,
-      "public_metadata_verification_run": 44712245363
+      "public_metadata_verification_run": 44712245363,
+      "last_checked_at": "2026-11-22T17:22:37.475Z"
     }
   ]
 }

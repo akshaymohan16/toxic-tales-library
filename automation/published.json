@@ -1357,7 +1357,7 @@
     "TT-009-REEL",
     "instagram:TT-009-REEL"
   ],
-  "last_provider_reconciled_at": "2026-11-22T09:15:04.266Z",
+  "last_provider_reconciled_at": "2026-11-22T17:22:37.475Z",
   "last_provider_reconciliation": {
     "month": "2026-11",
     "calendar_entries": 14,
@@ -1380,7 +1380,7 @@
     "remaining_regular_destinations": 4,
     "projected_month_destinations": 16,
     "one_off_confirmed_both": true,
-    "checked_at": "2026-11-22T09:15:04.266Z",
+    "checked_at": "2026-11-22T17:22:37.475Z",
     "full_month_calendar_verified": true,
     "usage_baseline": {
       "month": "2026-11",
@@ -1395,14 +1395,14 @@
     },
     "provider_error_count": 1,
     "uncertain_destination_count": 1,
-    "observed_at": "2026-11-22T09:15:04.266Z",
+    "observed_at": "2026-11-22T17:22:37.475Z",
     "ambiguous_youtube_uuid": "3828607998694999530",
     "ambiguity_note": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
     "youtube_public_metadata_verified": true,
     "youtube_public_metadata_verification_run": 44712245363
   },
   "last_live_reconciliation": {
-    "checked_at": "2026-11-22T09:15:04.266Z",
+    "checked_at": "2026-11-22T17:22:37.475Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "calendar_entries": 14,
@@ -1435,11 +1435,12 @@
     "youtube_public_metadata_verified": true,
     "youtube_public_metadata_verification_run": 44712245363,
     "weekly_2026_11_23_receipts": 0,
-    "active_production_claims": [
+    "active_production_claims": [],
+    "youtube_warning_uuid": "3828607998694999530",
+    "note": "Provider identities unchanged. Four future slots absent; expired producer claims must be reconciled before takeover.",
+    "expired_production_claims": [
       "production:2026-11-24",
       "production:2026-11-27"
-    ],
-    "youtube_warning_uuid": "3828607998694999530",
-    "note": "Live provider audit unchanged. No destination can be safely added while Sunday's producer claims are active; the existing YouTube Short with thumbnail ERROR must not be resubmitted."
+    ]
   }
 }

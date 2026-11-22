@@ -1,0 +1,90 @@
+{
+  "batch_id": "2026-11-23",
+  "created_on": "2026-11-22",
+  "updated_at": "2026-11-22T17:22:37.475Z",
+  "timezone": "Europe/Vienna",
+  "production_day": "2026-11-22T10:00:00+01:00",
+  "monday_hard_readiness_date": "2026-11-23",
+  "status": "NOT_READY_four_destinations_unreserved",
+  "required_success": {
+    "distinct_papers": 2,
+    "instagram_reels": 2,
+    "youtube_shorts": 2,
+    "total_destinations": 4
+  },
+  "slots": [
+    {
+      "date": "2026-11-24T10:00:00+01:00",
+      "platform": "instagram",
+      "format": "REEL",
+      "status": "not_reserved",
+      "metricool_uuid": null
+    },
+    {
+      "date": "2026-11-24T10:00:00+01:00",
+      "platform": "youtube",
+      "format": "SHORT",
+      "status": "not_reserved",
+      "metricool_uuid": null
+    },
+    {
+      "date": "2026-11-27T10:00:00+01:00",
+      "platform": "instagram",
+      "format": "REEL",
+      "status": "not_reserved",
+      "metricool_uuid": null
+    },
+    {
+      "date": "2026-11-27T10:00:00+01:00",
+      "platform": "youtube",
+      "format": "SHORT",
+      "status": "not_reserved",
+      "metricool_uuid": null
+    }
+  ],
+  "source_candidates": "automation/qa/candidate-reserve-2026-11-23.json",
+  "science_rights_release_status": "Not completed, not authorized for submission",
+  "expired_claims": [
+    "production:2026-11-24",
+    "production:2026-11-27"
+  ],
+  "provider_reconciliation": {
+    "checked_at": "2026-11-22T17:22:37.475Z",
+    "brand_id": "7937614",
+    "accounts": {
+      "instagram": "toxic_tales_eco",
+      "youtube": "UCDvftxMMdtGSntm-ezcPfCg"
+    },
+    "month": "2026-11",
+    "calendar_entries": 14,
+    "published_entries": 11,
+    "provider_errors": 1,
+    "retired_or_rejected_drafts": 2,
+    "regular_next_week_destinations_missing": 4,
+    "expired_production_claims": [
+      "production:2026-11-24",
+      "production:2026-11-27"
+    ],
+    "tt008_both_published": true,
+    "tt007_both_published": true,
+    "tt009_youtube": {
+      "uuid": "3828607998694999530",
+      "id": "429844729",
+      "status": "ERROR",
+      "warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
+      "reported_public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
+      "independent_public_metadata_verified_previously": true,
+      "independent_public_metadata_run": 44712245363,
+      "positively_published": false,
+      "retry_permitted": false
+    },
+    "quota_conservative": 16,
+    "quota_cap": 20,
+    "provider_writes": 0,
+    "owner_action_blockers": [],
+    "latest_watchdog_run": 45044532541,
+    "latest_watchdog_conclusion": "success"
+  },
+  "owner_action_blocker": false,
+  "next_step": "Reconcile expired production claims and intents; CAS acquire before any production or provider writes; verify science/rights/independent encoded export and public archive first."
+}
