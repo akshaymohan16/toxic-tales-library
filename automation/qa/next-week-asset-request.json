@@ -1,0 +1,28 @@
+{
+  "repository": "akshaymohan16/toxic-tales-library",
+  "run_date": "2026-11-22",
+  "episode_ids": [
+    "TT-010",
+    "TT-011"
+  ],
+  "assets": [
+    {
+      "id": "crow_wild_cc0",
+      "episode_id": "TT-010",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Corvus_moneduloides%2C_Sarramea%2C_New_Caledonia_1.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Corvus_moneduloides,_Sarramea,_New_Caledonia_1.jpg",
+      "creator": "benkeen / Wikimedia Commons",
+      "licence": "CC0 1.0",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "id": "portia_wild_by2",
+      "episode_id": "TT-011",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Portia_fimbriata_%2815235249464%29.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Portia_fimbriata_(15235249464).jpg",
+      "creator": "Donald Hobern",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0/"
+    }
+  ]
+}

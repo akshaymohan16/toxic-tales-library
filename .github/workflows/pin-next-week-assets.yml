@@ -1,0 +1,49 @@
+name: Inspect freely licensed next-week Toxic Tales references
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'automation/qa/next-week-asset-request.json'
+      - '.github/workflows/pin-next-week-assets.yml'
+permissions:
+  contents: read
+jobs:
+  validate-and-pin:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v6
+      - name: Hash approved public reference photographs (no publishing)
+        run: |
+          python - <<'PY'
+          import hashlib, json, urllib.parse, urllib.request, sys
+          from pathlib import Path
+          doc=json.loads(Path('automation/qa/next-week-asset-request.json').read_text())
+          assert doc['repository']=='akshaymohan16/toxic-tales-library'
+          assert doc['episode_ids']==['TT-010','TT-011']
+          assert len(doc['assets'])==2
+          ids=set()
+          for a in doc['assets']:
+              assert a['id'] not in ids and a['episode_id'] in doc['episode_ids']
+              ids.add(a['id'])
+              assert a['licence'] in ('CC0 1.0','CC BY 2.0')
+              assert a['licence_url'].startswith('https://creativecommons.org/')
+              assert a['source_page'].startswith('https://commons.wikimedia.org/wiki/File:')
+              u=urllib.parse.urlparse(a['url'])
+              assert u.scheme=='https' and u.hostname=='upload.wikimedia.org'
+              assert u.path.startswith('/wikipedia/commons/') and u.path.endswith('.jpg')
+              req=urllib.request.Request(a['url'],headers={'User-Agent':'ToxicTalesOpenReferenceHash/1.0 (licensed image QA)'})
+              h=hashlib.sha256();size=0
+              with urllib.request.urlopen(req,timeout=35) as res:
+                  assert res.status==200
+                  assert urllib.parse.urlparse(res.geturl()).hostname=='upload.wikimedia.org'
+                  while True:
+                      chunk=res.read(65536)
+                      if not chunk:break
+                      size+=len(chunk)
+                      if size>6000000: raise ValueError('oversize-image')
+                      h.update(chunk)
+              assert size>30000
+              print('ASSET_PIN_RESULT',json.dumps({'id':a['id'],'url':a['url'],'size':size,'sha256':h.hexdigest(),'licence':a['licence'],'source_page':a['source_page']}),flush=True)
+          PY
