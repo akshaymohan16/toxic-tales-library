@@ -1,6 +1,6 @@
 {
-  "checked_on": "2026-11-21",
-  "updated_at": "2026-11-21T17:16:22.412Z",
+  "checked_on": "2026-11-22",
+  "updated_at": "2026-11-22T09:15:04.266Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
@@ -10,8 +10,8 @@
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-21T17:13:19.512Z",
-    "calendar_checked_at": "2026-11-21T17:13:19.512Z",
+    "observed_at": "2026-11-22T09:15:04.266Z",
+    "calendar_checked_at": "2026-11-22T09:15:04.266Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -61,7 +61,7 @@
       "youtube:3828607998694999530"
     ],
     "conservative_committed_destination_count": 16,
-    "conservative_accounting_note": "Fresh complete 14-item Metricool calendar: 11 strictly PUBLISHED, one previously submitted TT-009 YouTube ERROR (public video independently verified; thumbnail warning), two retired/rejected inert drafts. Preserve original YouTube UUID and reserve it once; four as-yet-empty 24/27 November destinations = 16/20. No re-upload or duplicate."
+    "conservative_accounting_note": "22 Nov live 14-item full-month Metricool reconciliation: 11 strictly PUBLISHED, one previously submitted TT-009 YouTube ERROR with public video independently verified and thumbnail-only warning, two inert drafts; four upcoming Tue/Fri destinations empty and owned by Sunday's active producer. Conservative 11+1+4=16/20."
   },
   "routine_user_approval_required": false,
   "publication_notifications": {
@@ -90,7 +90,7 @@
     "verified_destination_receipts": 0,
     "producer_due": "2026-11-22T10:00:00+01:00",
     "hard_readiness_due": "2026-11-23T23:59:59+01:00",
-    "status": "Four future destinations empty; normal Sunday producer to create two distinct-paper releases under all quality, claims, public deploy and quota gates; not overdue on Saturday",
+    "status": "Sunday producer actively owns both dates; source/rights/release review underway; no paired Metricool reservations yet",
     "existing_videos_count": 0
   },
   "recurring_tasks": [
@@ -121,7 +121,7 @@
   ],
   "deployment_and_media": "21 Nov GitHub run 44928858017: build PASS, Pages deployment PASS and anonymous exact-byte public-media verification PASS (55 public files). 118 automation tests, active Reels-only enforcer and readiness gate pass in separate run 44928858024; strict TT-009 YouTube provider status remains ERROR thumbnail warning.",
   "review_limit": "Separate reviewer inspected 19 actual encoded shots, 18 boundaries, opening and final encoded frame, final audio ASR/caption/loudness and source rights; no perceptual listening or uninterrupted motion playback claimed.",
-  "automatic_next_step": "Sunday 22 Nov producer: finish new fully reviewed distinct-paper videos for Tue 24 and Fri 27 on both networks. Preserve original TT-009 YouTube UUID/public Short; monitor its ERROR thumbnail warning, never re-upload or notify it as provider PUBLISHED.",
+  "automatic_next_step": "Do not take over 24/27 Nov production while active Sunday claims stand. Producer must finish complete scientific/release/independent review and reserve both destinations each by Monday; publisher reconciles at later checks. Preserve TT-009 YouTube thumbnail ERROR and UUID without retry.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
   "scheduled_posts_returned": 14,
   "published_provider_receipts": 11,
@@ -129,11 +129,11 @@
   "last_successful_deployment_run": 44928858017,
   "validation": {
     "script_tests": 165,
-    "automation_tests": 118,
+    "automation_tests": 121,
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
     "provider_byte_verification_run": 43847978272,
-    "latest_watchdog_run": 44928858024,
+    "latest_watchdog_run": 44941138749,
     "latest_watchdog_conclusion": "success_with_public_youtube_thumbnail_warning",
     "latest_build_run": 44928858017,
     "latest_build_verified_steps": [
@@ -143,7 +143,7 @@
     ],
     "latest_paper_retrieval_run": 43439354279,
     "latest_paper_retrieval_conclusion": "success",
-    "fresh_live_metricool_reconciliation_at": "2026-11-21T17:13:19.512Z",
+    "fresh_live_metricool_reconciliation_at": "2026-11-22T09:15:04.266Z",
     "latest_build_conclusion": "success",
     "latest_build_failure_step": null,
     "latest_build_failure_cause": null,
@@ -164,12 +164,14 @@
     "youtube_public_verification_run": 44712245363,
     "youtube_public_verification_conclusion": "success",
     "youtube_public_verification_basis": "Public oEmbed exact title and channel identity; yt-dlp blocked by bot check",
-    "latest_watchdog_reason": "118 tests pass, Reels-only enforcer passes, readiness PASS with independent public YouTube title/channel verification; provider still ERROR thumbnail warning and publication-notification gate remains strict.",
+    "latest_watchdog_reason": "21 Nov scheduled watchdog: 121 automation tests, policy enforcer and readiness passed, public TT-009 YouTube independently verified, provider ERROR preserved",
     "latest_public_verification_status": "completed_success",
     "last_verified_archive_build_run": 44713140659,
     "last_verified_archive_build_conclusion": "success",
     "upcoming_week_receipts": 0,
-    "upcoming_week_expected": 4
+    "upcoming_week_expected": 4,
+    "latest_asset_pin_run": 45005820057,
+    "latest_asset_pin_conclusion": "success"
   },
   "current_one_off": {
     "episode_id": "TT-008",
@@ -180,7 +182,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-21T17:13:19.512Z",
+    "checked_at": "2026-11-22T09:15:04.266Z",
     "brand_id": "7937614",
     "accounts": {
       "instagram": "toxic_tales_eco",
@@ -263,7 +265,7 @@
       }
     ],
     "open_readiness_issues": 1,
-    "duplicate_checks": "Exactly 14 distinct current-month provider UUIDs; 11 strict PUBLISHED, one TT-009 YouTube ERROR with existing public Short and independently verified title/channel, two historical inactive drafts; 24/27 Nov currently empty. No duplicate or resubmission.",
+    "duplicate_checks": "14 distinct UUIDs; no extra reservations or new network writes. TT-009 original UUID retained and NOT labelled PUBLISHED.",
     "blockers": [],
     "routine_recovery": {
       "episode_id": "TT-009",
@@ -349,7 +351,7 @@
     "youtube_public_metadata_verification_run": 44712245363,
     "youtube_provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
     "youtube_provider_status": "ERROR",
-    "watchdog_run": 44928858024,
+    "watchdog_run": 44941138749,
     "watchdog_status": "failure_missing_positive_youtube_receipt",
     "next_week_receipts": 0,
     "next_week_required": 4,
@@ -357,20 +359,31 @@
     "archive_deployment_conclusion": "success",
     "archive_public_files_verified": 55,
     "watchdog_conclusion": "success_with_explicit_thumbnail_warning",
-    "provider_recheck_needed_for_future_change": true
+    "provider_recheck_needed_for_future_change": true,
+    "owner_claims_respected": true,
+    "active_production_claims": [
+      "production:2026-11-24",
+      "production:2026-11-27"
+    ],
+    "asset_pin_initial_failure": "2026-11-22 GitHub Action 45005719610 Wikimedia HTTP 429",
+    "asset_pin_recovery_success_run": 45005820057
   },
   "claim_coordination": {
-    "checked_at": "2026-11-21T09:32:28Z",
-    "status": "All TT-009 production/submission claims completed; no competing live claims.",
-    "this_run_action": "Verified provider state; only status/ledger/inventory/batch heartbeat, no production or provider writes.",
-    "active_competing_claims": 0
+    "checked_at": "2026-11-22T09:15:04.266Z",
+    "status": "Active Sunday producer claims on both future slots; this publisher run respected ownership and did not submit new destinations.",
+    "this_run_action": "Live full-month provider reconciliation; existing TT-009 thumbnail warning checked; updated heartbeat/inventory/ledger/prior batch; no duplicate uploads.",
+    "active_competing_claims": 2,
+    "active_claim_keys": [
+      "production:2026-11-24",
+      "production:2026-11-27"
+    ]
   },
   "following_week_readiness": {
     "week_start": "2026-11-23",
     "required_destination_receipts": 4,
     "verified_destination_receipts": 0,
     "producer_due": "2026-11-22T10:00:00+01:00",
-    "status": "Next-week Tue 24 and Fri 27 Nov still empty; existing Sunday producer due 22 Nov; no Saturday catch-up or unreleased post.",
+    "status": "Sunday producer in progress, zero live reservations",
     "complete": false
   },
   "automation_tasks_verified_at": "2026-11-18T17:09:08.853Z",
@@ -385,11 +398,11 @@
     "confirmed_metricool_reservations": 0,
     "missing_destinations": 4,
     "deadline": "Monday 23 November evening check",
-    "status": "awaiting existing Sunday producer, all safeguards remain active"
+    "status": "Sunday producer owns in-progress source and asset preparation; awaiting full quality gates"
   },
   "next_week_completeness": {
     "week_start": "2026-11-23",
-    "date_checked": "2026-11-21T17:13:19.512Z",
+    "date_checked": "2026-11-22T09:15:04.266Z",
     "slots": [
       {
         "platform": "instagram",
@@ -418,6 +431,11 @@
     ],
     "receipts_confirmed": 0,
     "receipts_required": 4,
-    "production_window_not_yet_due": true
+    "production_window_not_yet_due": false,
+    "production_window_in_progress": true,
+    "active_production_claims": [
+      "production:2026-11-24",
+      "production:2026-11-27"
+    ]
   }
 }
