@@ -170,6 +170,34 @@
       "metricool_id": "429844729",
       "metricool_uuid": "3828607998694999530",
       "provider_byte_verification_run": 43847978272
+    },
+    "production:2026-11-24": {
+      "owner_run_id": "6aeefcb926708191b092554230783da1:2026-11-22T09:58:34+01:00",
+      "phase": "live_calendar_reconciled_candidate_scientific_review",
+      "claimed_at": "2026-11-22T09:58:34+01:00",
+      "expires_at": "2026-11-22T13:58:34+01:00",
+      "status": "active",
+      "publication_date": "2026-11-24T10:00:00+01:00",
+      "required_destinations": [
+        "instagram",
+        "youtube"
+      ],
+      "candidate_reserve": "automation/qa/candidate-reserve-2026-11-23.json",
+      "note": "No Tuesday 24 / Friday 27 provider receipts in full-month Metricool read at start; selection pending full review. Preserve 2026-11-20 YouTube warning UUID."
+    },
+    "production:2026-11-27": {
+      "owner_run_id": "6aeefcb926708191b092554230783da1:2026-11-22T09:58:34+01:00",
+      "phase": "live_calendar_reconciled_candidate_scientific_review",
+      "claimed_at": "2026-11-22T09:58:34+01:00",
+      "expires_at": "2026-11-22T13:58:34+01:00",
+      "status": "active",
+      "publication_date": "2026-11-27T10:00:00+01:00",
+      "required_destinations": [
+        "instagram",
+        "youtube"
+      ],
+      "candidate_reserve": "automation/qa/candidate-reserve-2026-11-23.json",
+      "note": "No Tuesday 24 / Friday 27 provider receipts in full-month Metricool read at start; selection pending full review. Preserve 2026-11-20 YouTube warning UUID."
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
