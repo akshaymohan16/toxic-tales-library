@@ -29,15 +29,15 @@ jobs:
               ids.add(a['id'])
               assert a['licence'] in ('CC0 1.0','CC BY 2.0')
               assert a['licence_url'].startswith('https://creativecommons.org/')
-              assert a['source_page'].startswith('https://commons.wikimedia.org/wiki/File:')
+              assert a['source_page'].startswith(('https://commons.wikimedia.org/wiki/File:', 'https://www.inaturalist.org/photos/'))
               u=urllib.parse.urlparse(a['url'])
-              assert u.scheme=='https' and u.hostname=='upload.wikimedia.org'
-              assert u.path.startswith('/wikipedia/commons/') and u.path.endswith('.jpg')
+              assert u.scheme=='https' and u.hostname in ('inaturalist-open-data.s3.amazonaws.com','live.staticflickr.com')
+              assert u.path.endswith('.jpg') and (u.path.startswith('/photos/586262751/') if u.hostname=='inaturalist-open-data.s3.amazonaws.com' else u.path.startswith('/7538/15235249464_'))
               req=urllib.request.Request(a['url'],headers={'User-Agent':'ToxicTalesOpenReferenceHash/1.0 (licensed image QA)'})
               h=hashlib.sha256();size=0
               with urllib.request.urlopen(req,timeout=35) as res:
                   assert res.status==200
-                  assert urllib.parse.urlparse(res.geturl()).hostname=='upload.wikimedia.org'
+                  assert urllib.parse.urlparse(res.geturl()).hostname==u.hostname
                   while True:
                       chunk=res.read(65536)
                       if not chunk:break
