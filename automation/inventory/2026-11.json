@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-23T16:52:07.177Z",
+  "observed_at": "2026-11-23T17:17:37.321Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -48,7 +48,7 @@
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [],
-  "calendar_reconciled_on": "2026-11-23T16:52:07.177Z",
+  "calendar_reconciled_on": "2026-11-23T17:17:37.321Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -61,14 +61,17 @@
   "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
   "provider_confirmed_publications": 11,
   "known_usage_lower_bound": 11,
-  "last_calendar_readback": "2026-11-23T16:52:07.177Z",
-  "pending_release_ids": [],
+  "last_calendar_readback": "2026-11-23T17:17:37.321Z",
+  "pending_release_ids": [
+    "TT-010",
+    "TT-011"
+  ],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-23T16:52:07.177Z",
-    "calendar_checked_at": "2026-11-23T16:52:07.177Z",
+    "observed_at": "2026-11-23T17:17:37.321Z",
+    "calendar_checked_at": "2026-11-23T17:17:37.321Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -118,10 +121,10 @@
       "youtube:3828607998694999530"
     ],
     "conservative_committed_destination_count": 16,
-    "conservative_accounting_note": "11 confirmed PUBLISHED + 1 preserved TT-009 YouTube ERROR/public URL + 4 missing normal Tue/Fri destinations = 16/20. No new submissions or retries."
+    "conservative_accounting_note": "11 confirmed PUBLISHED + 1 preserved TT009 YouTube ERROR with existing public URL + 4 unreserved Tue/Fri destinations = 16 of 20; no creates or retries."
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-23T16:52:07.177Z",
+    "checked_at": "2026-11-23T17:17:37.321Z",
     "published_destinations": 11,
     "scheduled_active_destinations": 0,
     "held_retired_drafts": 2,
@@ -131,12 +134,12 @@
     "retired_tt002_and_rejected_tt003_untouched": true,
     "friday_20_november_status": "Instagram PUBLISHED, YouTube public and channel/title independently verified but Metricool ERROR thumbnail warning; no strict YouTube publication notification.",
     "observed_provider_uuid_count": 14,
-    "latest_build_run": 45142641948,
-    "latest_build_conclusion": "success",
-    "latest_watchdog_run": 45142641933,
-    "latest_watchdog_conclusion": "failure",
+    "latest_build_run": 45223565914,
+    "latest_build_conclusion": "failure_caption_overflow",
+    "latest_watchdog_run": 45223565930,
+    "latest_watchdog_conclusion": "failure_missing_reservations",
     "today_tuesday_status": "TT-007 Instagram and YouTube PUBLISHED on 17 Nov with public URLs; YouTube title/channel independently verified",
-    "archive_deployment_verified": true,
+    "archive_deployment_verified": false,
     "public_files_verified": 55,
     "open_readiness_issues": 1,
     "provider_errors_with_public_urls": 1,
@@ -148,7 +151,10 @@
     "next_week_2026_11_23_receipts": 0,
     "next_week_2026_11_23_required": 4,
     "next_week_producer_due": "2026-11-22T10:00:00+01:00",
-    "active_production_claims": [],
+    "active_production_claims": [
+      "production:2026-11-24",
+      "production:2026-11-27"
+    ],
     "latest_asset_pin_run": 45005820057,
     "latest_asset_pin_conclusion": "success",
     "expired_production_claims": [],
@@ -176,7 +182,8 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": false,
-      "previous_verified_public_metadata_run": 44712245363,
+      "independent_public_verification_job": 45223565930,
+      "independent_public_verification_basis": "GitHub readiness job log 2026-11-23T17:04Z states public YouTube Short verified; Metricool remains ERROR",
       "retry_allowed": false
     },
     "weekly_slots": [
@@ -211,21 +218,39 @@
     "production_claims_previous_run_released": true,
     "repository_sha_inspected": "c34d5b1886cbf90d317e80c2c9032626e692dd84",
     "latest_readiness_workflow": {
-      "id": 45142641933,
+      "id": 45223565930,
       "conclusion": "failure",
-      "cause": "4 required weekly provider reservations absent"
+      "cause": "four required Tue 24/Fri 27 provider reservations absent; TT009 separate warning"
     },
     "latest_archive_workflow": {
-      "id": 45142641948,
-      "conclusion": "success",
-      "public_file_verification": "success"
+      "id": 45223565914,
+      "conclusion": "failure",
+      "cause": "TT010 caption overflow; no deployment or media verification"
     },
     "secondary_legacy_asset_workflow": {
       "id": 45141692418,
       "conclusion": "failure",
       "cause": "Wikimedia HTTP 429, unrelated to current approved reference-image pin"
     },
-    "current_reference_pin_success_run": 45141692028
+    "current_reference_pin_success_run": 45141692028,
+    "active_production_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T16:56:production-recovery",
+    "production_claim_expires_at": "2026-11-23T20:55:49.297Z",
+    "tt010_render_failure": {
+      "workflow_run": 45223565914,
+      "job_id": 137864671271,
+      "step": "Build reviewed stories and media",
+      "reason": "ValueError Caption overflow in first TT-010 caption; source nonfrozen; do not edit while another run holds active production claim",
+      "status": "unrepaired_due_active_claim"
+    },
+    "last_pre_change_successful_archive_workflow": {
+      "id": 45221358609,
+      "conclusion": "success",
+      "date": "2026-11-23"
+    },
+    "complete_month_metricool_reconciliation": true,
+    "provider_uuids_count": 14,
+    "source": "Metricool brand 7937614 getScheduledPosts full 2026-11 month; returned historical published and draft entries",
+    "last_successful_build_run": 45221358609
   },
   "provider_warning_ids": [
     "429844729"
