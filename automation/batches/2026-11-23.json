@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-22T17:22:37.475Z",
+  "updated_at": "2026-11-23T08:53:39.153Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
@@ -43,13 +43,10 @@
     }
   ],
   "source_candidates": "automation/qa/candidate-reserve-2026-11-23.json",
-  "science_rights_release_status": "Not completed, not authorized for submission",
-  "expired_claims": [
-    "production:2026-11-24",
-    "production:2026-11-27"
-  ],
+  "science_rights_release_status": "Official full main OA papers and primary Methods/Results/Discussion triaged; correction/supplement/asset rights, pre-render review, source-specific renderer, exact independent encoded export, SHA release and public archive deployment are NOT complete; no submissions authorized",
+  "expired_claims": [],
   "provider_reconciliation": {
-    "checked_at": "2026-11-22T17:22:37.475Z",
+    "checked_at": "2026-11-23T08:53:39.153Z",
     "brand_id": "7937614",
     "accounts": {
       "instagram": "toxic_tales_eco",
@@ -61,7 +58,8 @@
     "provider_errors": 1,
     "retired_or_rejected_drafts": 2,
     "regular_next_week_destinations_missing": 4,
-    "expired_production_claims": [
+    "expired_production_claims": [],
+    "owned_production_claims": [
       "production:2026-11-24",
       "production:2026-11-27"
     ],
@@ -82,9 +80,15 @@
     "quota_cap": 20,
     "provider_writes": 0,
     "owner_action_blockers": [],
-    "latest_watchdog_run": 45044532541,
-    "latest_watchdog_conclusion": "success"
+    "research_notes": "automation/qa/2026-11-23-science-preproduction.json",
+    "latest_watchdog_run": 45141692023,
+    "latest_watchdog_conclusion": "failure_due_to_existing_strict_TT009_provider_ERROR_warning"
   },
   "owner_action_blocker": false,
-  "next_step": "Reconcile expired production claims and intents; CAS acquire before any production or provider writes; verify science/rights/independent encoded export and public archive first."
+  "next_step": "Resume claim-owned science/rights/independent reviewer and GitHub Actions film production; require successful exact encoded release/public deployed archive, then acquire destination submission claims and pre-write intents before 4 provider entries; leave TT-009 YouTube unchanged.",
+  "owned_production_claims": [
+    "production:2026-11-24",
+    "production:2026-11-27"
+  ],
+  "research_readiness_note": "automation/qa/2026-11-23-science-preproduction.json"
 }
