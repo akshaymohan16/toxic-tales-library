@@ -172,11 +172,11 @@
       "provider_byte_verification_run": 43847978272
     },
     "production:2026-11-24": {
-      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T08:48:14.077Z",
-      "phase": "full_main_paper_triage_and_unreleased_script_draft_completed_release_and_provider_not_ready",
-      "claimed_at": "2026-11-23T08:48:14.077Z",
-      "expires_at": "2026-11-23T08:56:03.702Z",
-      "status": "released_unfinished_for_fresh_provider_reconciliation",
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T16:56:production-recovery",
+      "phase": "review_source_and_build_original_scene_module",
+      "claimed_at": "2026-11-23T16:55:49.297Z",
+      "expires_at": "2026-11-23T20:55:49.297Z",
+      "status": "active",
       "publication_date": "2026-11-24T10:00:00+01:00",
       "required_destinations": [
         "instagram",
@@ -192,14 +192,19 @@
       "preproduction_research_note": "automation/qa/2026-11-23-science-preproduction.json",
       "unreleased_storyboards": "automation/qa/2026-11-23-unreleased-storyboards.json",
       "submission_intent_written": false,
-      "provider_writes": 0
+      "provider_writes": 0,
+      "episode_id": "TT-010",
+      "doi": "10.1371/journal.pone.0092895",
+      "prior_release_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T08:48:14.077Z",
+      "prior_reconciled_calendar_at": "2026-11-23T16:52:07.177Z",
+      "provider_receipts": []
     },
     "production:2026-11-27": {
-      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T08:48:14.077Z",
-      "phase": "full_main_paper_triage_and_unreleased_script_draft_completed_release_and_provider_not_ready",
-      "claimed_at": "2026-11-23T08:48:14.077Z",
-      "expires_at": "2026-11-23T08:56:03.702Z",
-      "status": "released_unfinished_for_fresh_provider_reconciliation",
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T16:56:production-recovery",
+      "phase": "review_source_and_build_original_scene_module",
+      "claimed_at": "2026-11-23T16:55:49.297Z",
+      "expires_at": "2026-11-23T20:55:49.297Z",
+      "status": "active",
       "publication_date": "2026-11-27T10:00:00+01:00",
       "required_destinations": [
         "instagram",
@@ -215,7 +220,12 @@
       "preproduction_research_note": "automation/qa/2026-11-23-science-preproduction.json",
       "unreleased_storyboards": "automation/qa/2026-11-23-unreleased-storyboards.json",
       "submission_intent_written": false,
-      "provider_writes": 0
+      "provider_writes": 0,
+      "episode_id": "TT-011",
+      "doi": "10.1073/pnas.2618030123",
+      "prior_release_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T08:48:14.077Z",
+      "prior_reconciled_calendar_at": "2026-11-23T16:52:07.177Z",
+      "provider_receipts": []
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
