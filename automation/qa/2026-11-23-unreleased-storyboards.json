@@ -1,0 +1,104 @@
+{
+  "schema": "toxic-tales-unreleased-storyboard-v1",
+  "created_at": "2026-11-23T08:55:16.730Z",
+  "policy": "Active story-first-v1, two separate source papers, no output approved by this draft",
+  "editorial_status": "DRAFT_FOR_PRE_RENDER_SCIENCE_AND_EDITORIAL_REVIEW",
+  "ready_for_render": false,
+  "ready_for_release": false,
+  "ready_for_publication": false,
+  "episodes": [
+    {
+      "id": "TT-010",
+      "paper_doi": "10.1371/journal.pone.0092895",
+      "question": "Can a trained New Caledonian crow choose objects and tubes that actually lift a floating reward?",
+      "audience": "Animal-behaviour and nature viewers; no presupposition of human-like intelligence",
+      "narration_draft": "How can a crow reach food floating too far down a tube? Researchers trained six New Caledonian crows to drop stones into an apparatus. Then the real tests began: would the birds choose things that actually lifted the reward? Most stone drops went into water rather than sand. They chose sinking objects more often than floating ones, and solid objects rather than hollow shapes. In another task, they preferred a tube whose water started higher. But two tests changed the picture. They showed no reliable preference for the narrower tube, even though each stone should raise its water faster. And when the useful tube was secretly connected to the reward, choices were close to fifty-fifty. These small, trained laboratory samples show sensitivity to several properties of water displacement. They do not prove that the birds understand every hidden cause, or that wild crows solve this puzzle.",
+      "scientific_limits": [
+        "The six birds received extensive stone-drop training, not spontaneous invention",
+        "Only four finished all six experiments; groups' earlier task experiences could carry over",
+        "The narrow-tube task first-choice 56% is not significantly above chance",
+        "U-tube behavior was around chance, not a universal impossibility or species-level inference"
+      ],
+      "paired_visual_plan": [
+        {
+          "cue": "0-6s",
+          "scene": "Recognizable crow in licensed CC0 original reference photo, then animating a too-low floating food item in a transparent water tube",
+          "intent": "Identify protagonist and establish obstacle; label real crow still as REFERENCE, lab as SCHEMATIC"
+        },
+        {
+          "cue": "6-15s",
+          "scene": "Illustrated training device then individual stones raised/dropped in actual water rather than sand",
+          "intent": "Avoid false spontaneous-wild-tool-use story"
+        },
+        {
+          "cue": "15-33s",
+          "scene": "Original motion of paired same-sized sinking/floating and solid/hollow objects interacting differently with waterline; no invented frequencies",
+          "intent": "Explain physical mechanism rather than textual results slide"
+        },
+        {
+          "cue": "33-46s",
+          "scene": "Different initial water levels and highlighted reach threshold",
+          "intent": "Show why choosing a higher starting level helps"
+        },
+        {
+          "cue": "46-63s",
+          "scene": "Two tube widths, then conceptual connected concealed U-tube that does not reveal connection to bird",
+          "intent": "Show specific contrasts where crow performance did not establish general solution"
+        },
+        {
+          "cue": "63-75s",
+          "scene": "Return to crow photo and illustrated tube with explicitly modest bound on what we learned",
+          "intent": "Bounded payoff, no human-age cognition equivalence"
+        }
+      ],
+      "pre_render_review": "NOT_PERFORMED",
+      "asset_rights_final_review": "NOT_PERFORMED",
+      "source_confirmation": "Main paper Methods/Results/Discussion read; required supplements and up-to-date correction metadata not certified; see companion research note"
+    },
+    {
+      "id": "TT-011",
+      "paper_doi": "10.1073/pnas.2618030123",
+      "question": "How can scientists distinguish sleep in a spider from simply remaining still?",
+      "audience": "General biology and freshwater/animal behavior science viewers; avoid dreams framing",
+      "narration_draft": "At night, a jumping spider stops moving. Is that sleep, or just waiting? A study of Portia fimbriata looked for more than stillness. On silk platforms, spiders adopted a characteristic resting posture, interrupted by bouts of twitching and movement of their retinal tubes. Researchers then tested how readily the spiders reacted to sound. Among those that responded, reactions during REM-like bouts were slower than when awake. Four out of ten did not react within the ten-second test. Another test made the puzzle sharper. After a night disturbed by fruit flies, thirteen spiders with usable recordings showed more REM-like bouts and nearly twice as much total REM-like time the following night. In undisturbed controls, the sleep window did not increase similarly. These are several independent kinds of behavioral evidence that spider sleep is regulated, with recurring REM-like periods. But no one measured the relevant brain activity, and this study does not show that spiders dream.",
+      "scientific_limits": [
+        "No EEG or equivalent brain measurements; REM-like is a behavioral analogy",
+        "The characteristic sleep window may include some quiet wakefulness",
+        "Stimulus experiment used separate spiders per state (n=10 each), not a within-individual change",
+        "Rebound analyses included 13 analyzable animals after fly interference, not complete sleep deprivation",
+        "Experimental illustrations do not depict measured responses or direct experiment footage"
+      ],
+      "paired_visual_plan": [
+        {
+          "cue": "0-7s",
+          "scene": "Licensed Portia reference photo with slow natural camera movement leading to original silk-platform movement and resting-posture schematic",
+          "intent": "Immediately identify spider and set sleep-versus-waiting puzzle; still labelled REFERENCE"
+        },
+        {
+          "cue": "7-23s",
+          "scene": "Subtle diagram of falling body posture and retinal-tube movement inside the spider; limb twitching, schematic only",
+          "intent": "Visualize biological markers accurately"
+        },
+        {
+          "cue": "23-40s",
+          "scene": "Illustrated sound pulses with waking vs quiescent vs REM-like spider reactions, no fabricated individual response curves",
+          "intent": "Explain independent arousal test and difference between quiet and asleep"
+        },
+        {
+          "cue": "40-57s",
+          "scene": "Night disturbance by flies represented as concept sketch, then next-night timeline with more REM-like bout markers; don't show unknown fly-induced stress magnitude",
+          "intent": "Explain homeostatic rebound"
+        },
+        {
+          "cue": "57-75s",
+          "scene": "Return to Portia photograph plus conceptual distinctions: behavioral sleep, REM-like phases, no dream or direct neural data",
+          "intent": "Payoff with decisive limitation"
+        }
+      ],
+      "pre_render_review": "NOT_PERFORMED",
+      "asset_rights_final_review": "NOT_PERFORMED",
+      "source_confirmation": "Official OA JATS main text methods/results/discussion read, no claims from supplemental films; fresh notices not certified; see companion research note"
+    }
+  ],
+  "publication_safety": "These scripts are editorial candidates, not a programmatically approved release. They cannot be scheduled or fed as published metadata until scientific correction/rights, pre-render, exact encoded independent review, SHA release, verified archive and provider checks all pass."
+}
