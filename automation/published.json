@@ -1332,7 +1332,7 @@
       "public_metadata_verification_run": 44712245363,
       "public_metadata_verification_url": "https://github.com/akshaymohan16/toxic-tales-library/actions/runs/44712245363",
       "last_provider_reconciled_at": "2026-11-20T17:13:59.915Z",
-      "last_checked_at": "2026-11-21T17:13:19.512Z",
+      "last_checked_at": "2026-11-23T16:52:07.177Z",
       "retry_permitted": false
     }
   ],
@@ -1357,7 +1357,7 @@
     "TT-009-REEL",
     "instagram:TT-009-REEL"
   ],
-  "last_provider_reconciled_at": "2026-11-23T08:53:39.153Z",
+  "last_provider_reconciled_at": "2026-11-23T16:52:07.177Z",
   "last_provider_reconciliation": {
     "month": "2026-11",
     "calendar_entries": 14,
@@ -1380,7 +1380,7 @@
     "remaining_regular_destinations": 4,
     "projected_month_destinations": 16,
     "one_off_confirmed_both": true,
-    "checked_at": "2026-11-23T08:53:39.153Z",
+    "checked_at": "2026-11-23T16:52:07.177Z",
     "full_month_calendar_verified": true,
     "usage_baseline": {
       "month": "2026-11",
@@ -1395,14 +1395,14 @@
     },
     "provider_error_count": 1,
     "uncertain_destination_count": 1,
-    "observed_at": "2026-11-23T08:53:39.153Z",
+    "observed_at": "2026-11-23T16:52:07.177Z",
     "ambiguous_youtube_uuid": "3828607998694999530",
     "ambiguity_note": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
     "youtube_public_metadata_verified": true,
     "youtube_public_metadata_verification_run": 44712245363
   },
   "last_live_reconciliation": {
-    "checked_at": "2026-11-23T08:53:39.153Z",
+    "checked_at": "2026-11-23T16:52:07.177Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "calendar_entries": 14,
@@ -1442,6 +1442,69 @@
     "reconciled_handoff_claims": [
       "production:2026-11-24",
       "production:2026-11-27"
-    ]
+    ],
+    "accounts": {
+      "instagram": "toxic_tales_eco",
+      "youtube": "UCDvftxMMdtGSntm-ezcPfCg"
+    },
+    "timezone": "Europe/Vienna",
+    "tt007_published_both": true,
+    "tt008_published_both_at_exact_14_10": true,
+    "tt009_youtube": {
+      "id": "429844729",
+      "uuid": "3828607998694999530",
+      "provider_status": "ERROR",
+      "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
+      "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
+      "public_title_channel_independently_rechecked_this_run": false,
+      "previous_verified_public_metadata_run": 44712245363,
+      "retry_allowed": false
+    },
+    "weekly_slots": [
+      {
+        "date": "2026-11-24T10:00:00+01:00",
+        "network": "instagram",
+        "found": false
+      },
+      {
+        "date": "2026-11-24T10:00:00+01:00",
+        "network": "youtube",
+        "found": false
+      },
+      {
+        "date": "2026-11-27T10:00:00+01:00",
+        "network": "instagram",
+        "found": false
+      },
+      {
+        "date": "2026-11-27T10:00:00+01:00",
+        "network": "youtube",
+        "found": false
+      }
+    ],
+    "weekly_receipts": 0,
+    "missing_destinations": 4,
+    "new_releases": 0,
+    "new_confirmed_published_keys": [],
+    "history_preserved": true,
+    "owner_action_blockers": [],
+    "production_claims_previous_run_released": true,
+    "repository_sha_inspected": "c34d5b1886cbf90d317e80c2c9032626e692dd84",
+    "latest_readiness_workflow": {
+      "id": 45142641933,
+      "conclusion": "failure",
+      "cause": "4 required weekly provider reservations absent"
+    },
+    "latest_archive_workflow": {
+      "id": 45142641948,
+      "conclusion": "success",
+      "public_file_verification": "success"
+    },
+    "secondary_legacy_asset_workflow": {
+      "id": 45141692418,
+      "conclusion": "failure",
+      "cause": "Wikimedia HTTP 429, unrelated to current approved reference-image pin"
+    },
+    "current_reference_pin_success_run": 45141692028
   }
 }

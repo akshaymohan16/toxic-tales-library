@@ -1,0 +1,52 @@
+{
+  "kind": "evening_check_science_and_rights_without_release",
+  "checked_at": "2026-11-23T16:52:07.177Z",
+  "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T16:52:07.177Z",
+  "episode_candidates": [
+    {
+      "episode_id": "TT-010",
+      "pmcid": "PMC3966847",
+      "doi": "10.1371/journal.pone.0092895",
+      "full_text": "research/fulltext/PMC3966847/article.txt",
+      "text_sha256": "1ede00801afa955e11e6f6ddc0738cb8b4f319c9f613153f97123d1fbe464d37",
+      "xml_sha256": "474963b983846ed67d8e0dcc88185aac92ebf091f88912fbdc6a32c204219be3",
+      "matching_retrieval_workflow_run": 44930526923,
+      "matching_report_request_sha256_from_job_log": "10f4c16474a6aed371a9c98bc59538d97f79bcaf27433d036ca5d7b75414fddb",
+      "source_image_license": "CC0 1.0 original benkeen iNaturalist; Commons file title Corvus moneduloides, Sarramea, New Caledonia 1.jpg",
+      "independent_rights_page_verified": true,
+      "reference_sha256": "3807578f3a93cdaa7bd009921f58b522907871235d7d711ce2bdd9c18aa2ecb9",
+      "essential_supplement_status": "Data S1 individual records and Movie S1 not read; no supplement footage may be used; still unresolved whether essential to proposed on-screen claims"
+    },
+    {
+      "episode_id": "TT-011",
+      "pmcid": "PMC13752372",
+      "doi": "10.1073/pnas.2618030123",
+      "full_text": "research/fulltext/PMC13752372/article.txt",
+      "text_sha256": "5cafed61f6070847f65fa9cb327c7fd00403c90963f8e7dd2c7f766b6a47f7ab",
+      "xml_sha256": "d27378b10eabacd43c55f01fa7f05406704b1e4729685c93c5a3bd9cb54347eb",
+      "matching_retrieval_report": "automation/paper-retrieval-report.json",
+      "matching_report_request_sha256": "636c51b83a8075c23e0e37385c83be8c5e2f0c3527f1a0bcbb94dba8e0b74496",
+      "reference_license": "CC BY 2.0 Donald Hobern, Commons file title Portia fimbriata (15235249464).jpg",
+      "independent_rights_page_verified": true,
+      "reference_sha256": "a5cf25c55f840908163ab8e95504f8c6af3fbb78d884156fbb770105e19227d0",
+      "essential_supplement_status": "Four linked supplementary materials not read or individually licensed; do not use visuals from them; unresolved exact essentiality"
+    }
+  ],
+  "fresh_public_notice_checks": {
+    "date": "2026-11-23",
+    "scope": "Targeted web searches of full titles, exact DOI, publisher correction/retraction phrasing plus PubMed/PNAS/PLOS result pages",
+    "result": "No specific correction or retraction notice identified in consulted search results; absence of a search result is not proof of none; no final editorial correction clearance",
+    "status": "limited_search_only"
+  },
+  "verified_rights_sources": [
+    "https://commons.wikimedia.org/wiki/File:Corvus_moneduloides,_Sarramea,_New_Caledonia_1.jpg",
+    "https://commons.wikimedia.org/wiki/File:Portia_fimbriata_(15235249464).jpg"
+  ],
+  "image_pin_workflow_run": 45141692028,
+  "final_visual_inspection_completed": false,
+  "pre_render_editorial_completed": false,
+  "exact_encoded_export_review_completed": false,
+  "released": false,
+  "scheduled": false,
+  "remaining": "Do not submit or claim released. Need scientific correction/supplement decisions, complete visual review, evidence and scenes, cloud render, independent encoded media review, SHA release, public deployment, provider CAS/intents/readbacks."
+}

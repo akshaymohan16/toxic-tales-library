@@ -1,11 +1,11 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-23T08:56:03.702Z",
+  "updated_at": "2026-11-23T16:52:07.177Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
-  "status": "NOT_READY_four_destinations_unreserved",
+  "status": "NOT_READY_four_destinations_unreserved_monday_evening",
   "required_success": {
     "distinct_papers": 2,
     "instagram_reels": 2,
@@ -43,10 +43,10 @@
     }
   ],
   "source_candidates": "automation/qa/candidate-reserve-2026-11-23.json",
-  "science_rights_release_status": "Official full main OA papers and primary Methods/Results/Discussion triaged; correction/supplement/asset rights, pre-render review, source-specific renderer, exact independent encoded export, SHA release and public archive deployment are NOT complete; no submissions authorized",
+  "science_rights_release_status": "Main papers cached and claim-level triage reviewed; independent source image licences verified at Commons and pinning verified by Actions; correction search found no specific notices but not a comprehensive clearance; essential supplement decisions, exact visual/editorial QA, render, independent encoded export, SHA-bound release and public deployment NOT complete",
   "expired_claims": [],
   "provider_reconciliation": {
-    "checked_at": "2026-11-23T08:53:39.153Z",
+    "checked_at": "2026-11-23T16:52:07.177Z",
     "brand_id": "7937614",
     "accounts": {
       "instagram": "toxic_tales_eco",
@@ -63,15 +63,14 @@
     "tt008_both_published": true,
     "tt007_both_published": true,
     "tt009_youtube": {
-      "uuid": "3828607998694999530",
       "id": "429844729",
-      "status": "ERROR",
-      "warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
-      "reported_public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
-      "independent_public_metadata_verified_previously": true,
-      "independent_public_metadata_run": 44712245363,
-      "positively_published": false,
-      "retry_permitted": false
+      "uuid": "3828607998694999530",
+      "provider_status": "ERROR",
+      "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
+      "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
+      "public_title_channel_independently_rechecked_this_run": false,
+      "previous_verified_public_metadata_run": 44712245363,
+      "retry_allowed": false
     },
     "quota_conservative": 16,
     "quota_cap": 20,
@@ -84,12 +83,63 @@
     "reconciled_handoff_claims": [
       "production:2026-11-24",
       "production:2026-11-27"
-    ]
+    ],
+    "timezone": "Europe/Vienna",
+    "published_destinations": 11,
+    "scheduled_destinations": 0,
+    "inactive_drafts": 2,
+    "tt007_published_both": true,
+    "tt008_published_both_at_exact_14_10": true,
+    "weekly_slots": [
+      {
+        "date": "2026-11-24T10:00:00+01:00",
+        "network": "instagram",
+        "found": false
+      },
+      {
+        "date": "2026-11-24T10:00:00+01:00",
+        "network": "youtube",
+        "found": false
+      },
+      {
+        "date": "2026-11-27T10:00:00+01:00",
+        "network": "instagram",
+        "found": false
+      },
+      {
+        "date": "2026-11-27T10:00:00+01:00",
+        "network": "youtube",
+        "found": false
+      }
+    ],
+    "weekly_receipts": 0,
+    "missing_destinations": 4,
+    "new_releases": 0,
+    "new_confirmed_published_keys": [],
+    "history_preserved": true,
+    "production_claims_previous_run_released": true,
+    "repository_sha_inspected": "c34d5b1886cbf90d317e80c2c9032626e692dd84",
+    "latest_readiness_workflow": {
+      "id": 45142641933,
+      "conclusion": "failure",
+      "cause": "4 required weekly provider reservations absent"
+    },
+    "latest_archive_workflow": {
+      "id": 45142641948,
+      "conclusion": "success",
+      "public_file_verification": "success"
+    },
+    "secondary_legacy_asset_workflow": {
+      "id": 45141692418,
+      "conclusion": "failure",
+      "cause": "Wikimedia HTTP 429, unrelated to current approved reference-image pin"
+    },
+    "current_reference_pin_success_run": 45141692028
   },
   "owner_action_blocker": false,
   "next_step": "Next existing publisher/producer run rechecks full live Metricool + intents and CAS-acquires released 24/27 claims; complete science, rights, rendering, exact independent encoded QA, archive verified deployment and paired provider receipts. No quality shortcuts/backfill.",
   "owned_production_claims": [],
-  "research_readiness_note": "automation/qa/2026-11-23-science-preproduction.json",
+  "research_readiness_note": "automation/qa/2026-11-23-evening-qa.json",
   "reconciled_handoff_claims": [
     "production:2026-11-24",
     "production:2026-11-27"

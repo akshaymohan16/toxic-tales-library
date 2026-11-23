@@ -1,17 +1,17 @@
 {
   "checked_on": "2026-11-23",
-  "updated_at": "2026-11-23T08:56:03.702Z",
+  "updated_at": "2026-11-23T16:52:07.177Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_connection_verified": true,
-  "decision": "FOUR_UPCOMING_DESTINATIONS_MISSING_RECOVERED_CLAIMS_RESEARCH_TRIAGED_NO_UNREVIEWED_POST",
+  "decision": "NOT_READY_MON_23_EVENING_FOUR_FUTURE_DESTINATIONS_UNRESERVED_QUALITY_GATES_PENDING",
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-23T08:53:39.153Z",
-    "calendar_checked_at": "2026-11-23T08:53:39.153Z",
+    "observed_at": "2026-11-23T16:52:07.177Z",
+    "calendar_checked_at": "2026-11-23T16:52:07.177Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -61,7 +61,7 @@
       "youtube:3828607998694999530"
     ],
     "conservative_committed_destination_count": 16,
-    "conservative_accounting_note": "11 confirmed PUBLISHED + 1 already-submitted TT-009 YouTube ERROR/public warning + 4 vacant future Tue/Fri destinations = 16/20; historical draft entries excluded."
+    "conservative_accounting_note": "11 confirmed PUBLISHED + 1 preserved TT-009 YouTube ERROR/public URL + 4 missing normal Tue/Fri destinations = 16/20. No new submissions or retries."
   },
   "routine_user_approval_required": false,
   "publication_notifications": {
@@ -90,11 +90,11 @@
     "verified_destination_receipts": 0,
     "producer_due": "2026-11-22T10:00:00+01:00",
     "hard_readiness_due": "2026-11-23T23:59:59+01:00",
-    "status": "NOT_READY 0/4 paired provider reservations. Preproduction source triage/storyboards persisted, claims safely released for another existing run to CAS take over.",
+    "status": "NOT_READY 0/4 provider receipts at Monday evening checkpoint; TT-010/TT-011 drafts not released and not authorized to schedule",
     "existing_videos_count": 0,
     "expired_claims_need_reconciliation": [],
     "owned_production_claims": [],
-    "research_readiness_note": "automation/qa/2026-11-23-science-preproduction.json",
+    "research_readiness_note": "automation/qa/2026-11-23-evening-qa.json",
     "reconciled_handoff_claims": [
       "production:2026-11-24",
       "production:2026-11-27"
@@ -130,7 +130,7 @@
   "review_limit": "Separate reviewer inspected 19 actual encoded shots, 18 boundaries, opening and final encoded frame, final audio ASR/caption/loudness and source rights; no perceptual listening or uninterrupted motion playback claimed.",
   "automatic_next_step": "Safely resume 24 and 27 Nov incomplete production from committed preproduction sources; next run must freshly reconcile live calendar and CAS acquire released claims. Finish all scientific/visual/audio/encoded/release/public deployment gates before any provider submission. Hard Monday target currently 0/4.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
-  "scheduled_posts_returned": 14,
+  "scheduled_posts_returned": 0,
   "published_provider_receipts": 11,
   "scheduled_post_ids": [],
   "last_successful_deployment_run": 44928858017,
@@ -178,7 +178,13 @@
     "upcoming_week_receipts": 0,
     "upcoming_week_expected": 4,
     "latest_asset_pin_run": 45005820057,
-    "latest_asset_pin_conclusion": "success"
+    "latest_asset_pin_conclusion": "success",
+    "last_inspected_watchdog_run": 45142641933,
+    "last_inspected_watchdog_conclusion": "failure_expected_missing_receipts",
+    "latest_archive_build_run": 45142641948,
+    "latest_archive_verification": "success",
+    "last_test_count_from_workflow": 121,
+    "tests_run_again_after_this_commit": false
   },
   "current_one_off": {
     "episode_id": "TT-008",
@@ -189,241 +195,90 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-23T08:53:39.153Z",
+    "checked_at": "2026-11-23T16:52:07.177Z",
     "brand_id": "7937614",
     "accounts": {
       "instagram": "toxic_tales_eco",
       "youtube": "UCDvftxMMdtGSntm-ezcPfCg"
     },
+    "timezone": "Europe/Vienna",
     "month": "2026-11",
     "calendar_entries": 14,
-    "published_entries": 11,
-    "scheduled_live_entries": 0,
-    "retired_or_rejected_drafts": 2,
-    "active_publications": [
-      {
-        "post_id": "TT-009-REEL",
-        "platform": "instagram",
-        "uuid": "1927625585550052374",
-        "metricool_id": "429844048",
-        "status": "PUBLISHED",
-        "public_url": "https://www.instagram.com/reel/Df9S7TAD77J/",
-        "date": "2026-11-20T10:00:00+01:00",
-        "autoPublish": true,
-        "draft": false,
-        "media": "https://static.metricool.com/planner/202611/7937614-file-3737416094863891945.mp4"
-      },
-      {
-        "post_id": "TT-009-YOUTUBE-SHORT",
-        "platform": "youtube",
-        "uuid": "3828607998694999530",
-        "metricool_id": "429844729",
-        "status": "ERROR",
-        "detailed_status": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
-        "reported_public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
-        "positive_publication_verified": false,
-        "date": "2026-11-20T10:00:00+01:00",
-        "autoPublish": true,
-        "draft": false,
-        "media": "https://static.metricool.com/planner/202611/7937614-file-12147950446845277643.mp4",
-        "youtube_title": "Ants That Bite the Trap | Toxic Tales",
-        "youtube_type": "short",
-        "youtube_privacy": "public",
-        "youtube_madeForKids": false,
-        "youtube_ai_disclosure": true,
-        "public_metadata_verified": true,
-        "public_verification_run": 44712245363
-      }
-    ],
-    "one_off": [
-      {
-        "platform": "instagram",
-        "uuid": "3555893508354493617",
-        "status": "PUBLISHED",
-        "public_url": "https://www.instagram.com/reel/DfrtQD-EZiG/"
-      },
-      {
-        "platform": "youtube",
-        "uuid": "-6895101637645415437",
-        "status": "PUBLISHED",
-        "public_url": "https://www.youtube.com/shorts/le2mS8MHcpo"
-      }
-    ],
-    "unused_or_missing": [
-      {
-        "date": "2026-11-24T10:00:00+01:00",
-        "platform": "instagram",
-        "format": "REEL",
-        "status": "not_reserved",
-        "metricool_uuid": null
-      },
-      {
-        "date": "2026-11-24T10:00:00+01:00",
-        "platform": "youtube",
-        "format": "SHORT",
-        "status": "not_reserved",
-        "metricool_uuid": null
-      },
-      {
-        "date": "2026-11-27T10:00:00+01:00",
-        "platform": "instagram",
-        "format": "REEL",
-        "status": "not_reserved",
-        "metricool_uuid": null
-      },
-      {
-        "date": "2026-11-27T10:00:00+01:00",
-        "platform": "youtube",
-        "format": "SHORT",
-        "status": "not_reserved",
-        "metricool_uuid": null
-      }
-    ],
-    "open_readiness_issues": 1,
-    "duplicate_checks": "14 distinct UUIDs; no extra reservations or new network writes. TT-009 original UUID retained and NOT labelled PUBLISHED.",
-    "blockers": [],
-    "routine_recovery": {
-      "episode_id": "TT-009",
-      "status": "Publicly live Short with correct channel/title but Metricool ERROR thumbnail upload; latest provider inspection unchanged",
-      "action": "Preserve the original UUID and published YouTube video; no safe API retry or edit of a past item; check for provider status change before any publication alert.",
-      "owner_action_required": false
-    },
-    "published_ids_verified": [
-      {
-        "metricool_id": "419869962",
-        "uuid": "-3158597333632725768",
-        "network": "instagram",
-        "public_url": "https://www.instagram.com/reel/DfcF7aYiuWU/"
-      },
-      {
-        "metricool_id": "420123422",
-        "uuid": "8432780738091634663",
-        "network": "instagram",
-        "public_url": "https://www.instagram.com/reel/DfcvkhGDsFb/"
-      },
-      {
-        "metricool_id": "420178205",
-        "uuid": "2386175407143797944",
-        "network": "instagram",
-        "public_url": "https://www.instagram.com/reel/Dfc5DEPHJCJ/"
-      },
-      {
-        "metricool_id": "420683055",
-        "uuid": "-7609883982228992318",
-        "network": "instagram",
-        "public_url": "https://www.instagram.com/p/DfosskjCpxx/"
-      },
-      {
-        "metricool_id": "421493009",
-        "uuid": "-5193152553705388348",
-        "network": "instagram",
-        "public_url": "https://www.instagram.com/reel/Dfji4yhnB6c/"
-      },
-      {
-        "metricool_id": "421493849",
-        "uuid": "4422280930322105807",
-        "network": "youtube",
-        "public_url": "https://www.youtube.com/shorts/X333C5Dcxxo"
-      },
-      {
-        "metricool_id": "426842509",
-        "uuid": "-6872348896682359981",
-        "network": "instagram",
-        "public_url": "https://www.instagram.com/reel/Df1kUbZlb21/"
-      },
-      {
-        "metricool_id": "426850040",
-        "uuid": "-6561054799073883973",
-        "network": "youtube",
-        "public_url": "https://www.youtube.com/shorts/Dh6xDjEV1fg"
-      },
-      {
-        "metricool_id": "426945585",
-        "uuid": "3555893508354493617",
-        "network": "instagram",
-        "public_url": "https://www.instagram.com/reel/DfrtQD-EZiG/"
-      },
-      {
-        "metricool_id": "426946098",
-        "uuid": "-6895101637645415437",
-        "network": "youtube",
-        "public_url": "https://www.youtube.com/shorts/le2mS8MHcpo"
-      },
-      {
-        "metricool_id": "429844048",
-        "uuid": "1927625585550052374",
-        "network": "instagram",
-        "public_url": "https://www.instagram.com/reel/Df9S7TAD77J/"
-      }
-    ],
-    "latest_verified_archive_build": 44713140659,
-    "archive_confirmed_social_links": 10,
-    "public_files_verified": 55,
-    "public_media_verification_run": 44713140659,
-    "provider_error_entries": 1,
-    "youtube_public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
-    "youtube_public_metadata_verified": true,
-    "youtube_public_metadata_verification_run": 44712245363,
-    "youtube_provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
-    "youtube_provider_status": "ERROR",
-    "watchdog_run": 44941138749,
-    "watchdog_status": "failure_missing_positive_youtube_receipt",
-    "next_week_receipts": 0,
-    "next_week_required": 4,
-    "archive_deployment_run": 44928858017,
-    "archive_deployment_conclusion": "success",
-    "archive_public_files_verified": 55,
-    "watchdog_conclusion": "success_with_explicit_thumbnail_warning",
-    "provider_recheck_needed_for_future_change": true,
-    "owner_claims_respected": true,
-    "active_production_claims": [],
-    "asset_pin_initial_failure": "2026-11-22 GitHub Action 45005719610 Wikimedia HTTP 429",
-    "asset_pin_recovery_success_run": 45005820057,
-    "provider_errors": 1,
-    "regular_next_week_destinations_missing": 4,
-    "expired_production_claims": [],
-    "tt008_both_published": true,
-    "tt007_both_published": true,
+    "published_destinations": 11,
+    "scheduled_destinations": 0,
+    "inactive_drafts": 2,
+    "tt007_published_both": true,
+    "tt008_published_both_at_exact_14_10": true,
     "tt009_youtube": {
-      "uuid": "3828607998694999530",
       "id": "429844729",
-      "status": "ERROR",
-      "warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
-      "reported_public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
-      "independent_public_metadata_verified_previously": true,
-      "independent_public_metadata_run": 44712245363,
-      "positively_published": false,
-      "retry_permitted": false
+      "uuid": "3828607998694999530",
+      "provider_status": "ERROR",
+      "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
+      "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
+      "public_title_channel_independently_rechecked_this_run": false,
+      "previous_verified_public_metadata_run": 44712245363,
+      "retry_allowed": false
     },
-    "quota_conservative": 16,
-    "quota_cap": 20,
+    "weekly_slots": [
+      {
+        "date": "2026-11-24T10:00:00+01:00",
+        "network": "instagram",
+        "found": false
+      },
+      {
+        "date": "2026-11-24T10:00:00+01:00",
+        "network": "youtube",
+        "found": false
+      },
+      {
+        "date": "2026-11-27T10:00:00+01:00",
+        "network": "instagram",
+        "found": false
+      },
+      {
+        "date": "2026-11-27T10:00:00+01:00",
+        "network": "youtube",
+        "found": false
+      }
+    ],
+    "weekly_receipts": 0,
+    "missing_destinations": 4,
     "provider_writes": 0,
+    "new_releases": 0,
+    "new_confirmed_published_keys": [],
+    "history_preserved": true,
     "owner_action_blockers": [],
-    "latest_watchdog_run": 45044532541,
-    "latest_watchdog_conclusion": "success",
-    "new_published_receipts": 0,
-    "new_reservations": 0,
-    "reconciled_handoff_claims": [
-      "production:2026-11-24",
-      "production:2026-11-27"
-    ]
+    "production_claims_previous_run_released": true,
+    "repository_sha_inspected": "c34d5b1886cbf90d317e80c2c9032626e692dd84",
+    "latest_readiness_workflow": {
+      "id": 45142641933,
+      "conclusion": "failure",
+      "cause": "4 required weekly provider reservations absent"
+    },
+    "latest_archive_workflow": {
+      "id": 45142641948,
+      "conclusion": "success",
+      "public_file_verification": "success"
+    },
+    "secondary_legacy_asset_workflow": {
+      "id": 45141692418,
+      "conclusion": "failure",
+      "cause": "Wikimedia HTTP 429, unrelated to current approved reference-image pin"
+    },
+    "current_reference_pin_success_run": 45141692028
   },
   "claim_coordination": {
-    "checked_at": "2026-11-22T09:15:04.266Z",
-    "status": "Active Sunday producer claims on both future slots; this publisher run respected ownership and did not submit new destinations.",
-    "this_run_action": "Live full-month provider reconciliation; existing TT-009 thumbnail warning checked; updated heartbeat/inventory/ledger/prior batch; no duplicate uploads.",
-    "active_competing_claims": 2,
-    "active_claim_keys": [
-      "production:2026-11-24",
-      "production:2026-11-27"
-    ]
+    "checked_at": "2026-11-23T16:52:07.177Z",
+    "status": "No active production claim; earlier reconciled released claims retained; no external writes undertaken",
+    "this_run_action": "Full live monthly provider audit, review of current failures and source/reference checkpoints, heartbeat/ledger/inventory/batch update",
+    "active_competing_claims": 0,
+    "active_claim_keys": []
   },
   "following_week_readiness": {
     "week_start": "2026-11-23",
     "required_destination_receipts": 4,
     "verified_destination_receipts": 0,
-    "producer_due": "2026-11-22T10:00:00+01:00",
-    "status": "Sunday producer in progress, zero live reservations",
+    "status": "NOT_READY at Monday evening checkpoint",
     "complete": false
   },
   "automation_tasks_verified_at": "2026-11-18T17:09:08.853Z",
@@ -438,45 +293,38 @@
     "confirmed_metricool_reservations": 0,
     "missing_destinations": 4,
     "deadline": "Monday 23 November evening check",
-    "status": "Sunday producer owns in-progress source and asset preparation; awaiting full quality gates"
+    "status": "Monday evening: required science, supplements, rights and independent encoded release checks remain unfinished; no live reservations"
   },
   "next_week_completeness": {
     "week_start": "2026-11-23",
-    "date_checked": "2026-11-22T09:15:04.266Z",
+    "date_checked": "2026-11-23T16:52:07.177Z",
     "slots": [
       {
         "platform": "instagram",
         "date": "2026-11-24T10:00:00+01:00",
-        "provider_receipt_found": false,
-        "production_due": "2026-11-22T10:00:00+01:00"
+        "provider_receipt_found": false
       },
       {
         "platform": "youtube",
         "date": "2026-11-24T10:00:00+01:00",
-        "provider_receipt_found": false,
-        "production_due": "2026-11-22T10:00:00+01:00"
+        "provider_receipt_found": false
       },
       {
         "platform": "instagram",
         "date": "2026-11-27T10:00:00+01:00",
-        "provider_receipt_found": false,
-        "production_due": "2026-11-22T10:00:00+01:00"
+        "provider_receipt_found": false
       },
       {
         "platform": "youtube",
         "date": "2026-11-27T10:00:00+01:00",
-        "provider_receipt_found": false,
-        "production_due": "2026-11-22T10:00:00+01:00"
+        "provider_receipt_found": false
       }
     ],
     "receipts_confirmed": 0,
     "receipts_required": 4,
     "production_window_not_yet_due": false,
-    "production_window_in_progress": true,
-    "active_production_claims": [
-      "production:2026-11-24",
-      "production:2026-11-27"
-    ]
+    "production_window_in_progress": false,
+    "active_production_claims": []
   },
   "production_claim_recovery": {
     "at": "2026-11-23T08:53:39.153Z",

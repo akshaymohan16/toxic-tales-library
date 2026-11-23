@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-23T08:53:39.153Z",
+  "observed_at": "2026-11-23T16:52:07.177Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -48,7 +48,7 @@
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [],
-  "calendar_reconciled_on": "2026-11-23T08:53:39.153Z",
+  "calendar_reconciled_on": "2026-11-23T16:52:07.177Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -61,14 +61,14 @@
   "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
   "provider_confirmed_publications": 11,
   "known_usage_lower_bound": 11,
-  "last_calendar_readback": "2026-11-23T08:53:39.153Z",
+  "last_calendar_readback": "2026-11-23T16:52:07.177Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-23T08:53:39.153Z",
-    "calendar_checked_at": "2026-11-23T08:53:39.153Z",
+    "observed_at": "2026-11-23T16:52:07.177Z",
+    "calendar_checked_at": "2026-11-23T16:52:07.177Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -118,10 +118,10 @@
       "youtube:3828607998694999530"
     ],
     "conservative_committed_destination_count": 16,
-    "conservative_accounting_note": "11 confirmed PUBLISHED + 1 already-submitted TT-009 YouTube ERROR/public warning + 4 vacant future Tue/Fri destinations = 16/20; historical draft entries excluded."
+    "conservative_accounting_note": "11 confirmed PUBLISHED + 1 preserved TT-009 YouTube ERROR/public URL + 4 missing normal Tue/Fri destinations = 16/20. No new submissions or retries."
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-23T08:53:39.153Z",
+    "checked_at": "2026-11-23T16:52:07.177Z",
     "published_destinations": 11,
     "scheduled_active_destinations": 0,
     "held_retired_drafts": 2,
@@ -131,9 +131,9 @@
     "retired_tt002_and_rejected_tt003_untouched": true,
     "friday_20_november_status": "Instagram PUBLISHED, YouTube public and channel/title independently verified but Metricool ERROR thumbnail warning; no strict YouTube publication notification.",
     "observed_provider_uuid_count": 14,
-    "latest_build_run": 44928858017,
+    "latest_build_run": 45142641948,
     "latest_build_conclusion": "success",
-    "latest_watchdog_run": 45142319313,
+    "latest_watchdog_run": 45142641933,
     "latest_watchdog_conclusion": "failure",
     "today_tuesday_status": "TT-007 Instagram and YouTube PUBLISHED on 17 Nov with public URLs; YouTube title/channel independently verified",
     "archive_deployment_verified": true,
@@ -156,7 +156,76 @@
       "production:2026-11-24",
       "production:2026-11-27"
     ],
-    "latest_watchdog_reason": "4 missing upcoming destination receipts; TT-009 YouTube thumbnail ERROR retained as warning"
+    "latest_watchdog_reason": "4 missing upcoming destination receipts; TT-009 YouTube thumbnail ERROR retained as warning",
+    "brand_id": "7937614",
+    "accounts": {
+      "instagram": "toxic_tales_eco",
+      "youtube": "UCDvftxMMdtGSntm-ezcPfCg"
+    },
+    "timezone": "Europe/Vienna",
+    "month": "2026-11",
+    "calendar_entries": 14,
+    "scheduled_destinations": 0,
+    "inactive_drafts": 2,
+    "tt007_published_both": true,
+    "tt008_published_both_at_exact_14_10": true,
+    "tt009_youtube": {
+      "id": "429844729",
+      "uuid": "3828607998694999530",
+      "provider_status": "ERROR",
+      "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
+      "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
+      "public_title_channel_independently_rechecked_this_run": false,
+      "previous_verified_public_metadata_run": 44712245363,
+      "retry_allowed": false
+    },
+    "weekly_slots": [
+      {
+        "date": "2026-11-24T10:00:00+01:00",
+        "network": "instagram",
+        "found": false
+      },
+      {
+        "date": "2026-11-24T10:00:00+01:00",
+        "network": "youtube",
+        "found": false
+      },
+      {
+        "date": "2026-11-27T10:00:00+01:00",
+        "network": "instagram",
+        "found": false
+      },
+      {
+        "date": "2026-11-27T10:00:00+01:00",
+        "network": "youtube",
+        "found": false
+      }
+    ],
+    "weekly_receipts": 0,
+    "missing_destinations": 4,
+    "provider_writes": 0,
+    "new_releases": 0,
+    "new_confirmed_published_keys": [],
+    "history_preserved": true,
+    "owner_action_blockers": [],
+    "production_claims_previous_run_released": true,
+    "repository_sha_inspected": "c34d5b1886cbf90d317e80c2c9032626e692dd84",
+    "latest_readiness_workflow": {
+      "id": 45142641933,
+      "conclusion": "failure",
+      "cause": "4 required weekly provider reservations absent"
+    },
+    "latest_archive_workflow": {
+      "id": 45142641948,
+      "conclusion": "success",
+      "public_file_verification": "success"
+    },
+    "secondary_legacy_asset_workflow": {
+      "id": 45141692418,
+      "conclusion": "failure",
+      "cause": "Wikimedia HTTP 429, unrelated to current approved reference-image pin"
+    },
+    "current_reference_pin_success_run": 45141692028
   },
   "provider_warning_ids": [
     "429844729"
