@@ -1,0 +1,141 @@
+{
+  "schema": "preproduction-research-note-v1",
+  "checked_at": "2026-11-23T08:52:43.810Z",
+  "week_start": "2026-11-23",
+  "state": "SCIENCE_TRIAGE_ONLY_NOT_APPROVED_NOT_RENDERED_NOT_PUBLISHED",
+  "owner_claim_keys": [
+    "production:2026-11-24",
+    "production:2026-11-27"
+  ],
+  "paper_access_policy": "automation/PAPER_ACCESS_POLICY.md",
+  "screening": "automation/qa/candidate-reserve-2026-11-23.json",
+  "candidates": [
+    {
+      "working_episode": "TT-010",
+      "slot": "2026-11-24T10:00:00+01:00",
+      "doi": "10.1371/journal.pone.0092895",
+      "pmcid": "PMC3966847",
+      "title": "Using the Aesop's Fable Paradigm to Investigate Causal Understanding of Water Displacement by New Caledonian Crows",
+      "source": "research/fulltext/PMC3966847/article.txt",
+      "source_text_sha256": "1ede00801afa955e11e6f6ddc0738cb8b4f319c9f613153f97123d1fbe464d37",
+      "source_xml_sha256": "474963b983846ed67d8e0dcc88185aac92ebf091f88912fbdc6a32c204219be3",
+      "original_retrieval_run": 44930526923,
+      "access": "PMC official-API JATS full main cached CC BY 4.0; main Methods, Results, Discussion and figure captions inspected in this run; supplemental binaries not accessed",
+      "proposed_hook": "A crow can get food that is too far down a tube by dropping objects into water. But can it tell which objects and tubes actually work?",
+      "observed_findings": [
+        {
+          "claim": "Six wild-caught New Caledonian crows tested, with only four completing all six experiments",
+          "location": "Methods > Subjects and Results opening"
+        },
+        {
+          "claim": "All birds were trained first to drop stones; not spontaneous invention of water tool use",
+          "location": "Methods > Initial Training, Discussion paragraph 2"
+        },
+        {
+          "claim": "Across 20-trial tasks, birds preferentially selected water rather than sand and sinking rather than floating objects",
+          "location": "Results Experiments 1 and 2 (76.3%, 88.0% descriptive choices)"
+        },
+        {
+          "claim": "Four or five birds tested on later tasks; 89% solid over hollow choice, 86.8% high-water choice",
+          "location": "Results Experiments 3 and 5"
+        },
+        {
+          "claim": "Failed to prefer narrower tube on first drops; U-tube at chance (48.9%, p=0.79)",
+          "location": "Results Experiments 4 and 6"
+        }
+      ],
+      "limits": [
+        "Very small captive sample, four completed all six assays",
+        "Fixed task order and prior training create possible learning carryover",
+        "Failure on U-tube not proof species-wide inability or lack of all causal reasoning",
+        "Cannot claim wild stone-dropping or language-like intelligence",
+        "Supplement Data S1 and Movie S1 not inspected: do not base video claims or use footage until checked"
+      ],
+      "visual_reference": {
+        "source_page": "https://www.inaturalist.org/photos/586262751",
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/586262751/original.jpg",
+        "license": "CC0 1.0 per preproduction source audit",
+        "sha256": "3807578f3a93cdaa7bd009921f58b522907871235d7d711ce2bdd9c18aa2ecb9",
+        "verification_run": 45005820057,
+        "independent_visual_or_rights_final_review": false
+      },
+      "remaining": [
+        "Check PLOS CrossMark-linked corrections/expressions/retractions and context sources at source",
+        "Decide whether individual claims require Data S1; retrieve necessary supplement or omit those claims",
+        "Reconfirm reference photo taxon identification and attribution; conduct separate visual asset rights review",
+        "Create evidence and episode brief, pre-render reviewer, science script and compliant source-specific motion",
+        "Build via standard public GitHub Actions; independent exact encoded video and audio QA; SHA-bound release; archive and anonymous public bytes",
+        "Only after both-network intents/claims/month quota and readbacks, submit each separate destination"
+      ]
+    },
+    {
+      "working_episode": "TT-011",
+      "slot": "2026-11-27T10:00:00+01:00",
+      "doi": "10.1073/pnas.2618030123",
+      "pmcid": "PMC13752372",
+      "title": "Behavioral evidence for two-stage sleep in spiders",
+      "source": "research/fulltext/PMC13752372/article.txt",
+      "source_text_sha256": "5cafed61f6070847f65fa9cb327c7fd00403c90963f8e7dd2c7f766b6a47f7ab",
+      "source_xml_sha256": "d27378b10eabacd43c55f01fa7f05406704b1e4729685c93c5a3bd9cb54347eb",
+      "request_id": "sleep-2026-followup-20261121",
+      "request_report_sha256": "636c51b83a8075c23e0e37385c83be8c5e2f0c3527f1a0bcbb94dba8e0b74496",
+      "retrieval_run": 44930966526,
+      "access": "PMC official-API JATS full main cached CC BY 4.0; introduction, primary Methods/Results and Discussion inspected; four supplemental binaries not accessed",
+      "proposed_hook": "How do you tell a sleeping spider from one that is merely sitting still? Interrupt its night and see what happens next.",
+      "observed_findings": [
+        {
+          "claim": "Juvenile/captive Portia studied in distinct experiments; 40 for circadian locomotion, 10 sleep architecture, 30 arousal",
+          "location": "Materials and Methods > Circadian activity tracking, Sleep architecture, Arousal threshold"
+        },
+        {
+          "claim": "Sleep architecture: 10 spiders, 109 REM-like bouts, but sleep window potentially includes quiet wakefulness",
+          "location": "Results > Sleep Architecture and Discussion limitations"
+        },
+        {
+          "claim": "At standardized acoustic stimulus, response longer in REM-like than waking state, 4.27 versus 1.69 seconds among responding spiders; four of ten REM-like spiders did not respond within ten-second test",
+          "location": "Results > Arousal Threshold"
+        },
+        {
+          "claim": "After fly-induced interrupted night, n=13 usable rebound recordings; total REM-like time 9.4 to 16.9 min and number of REM-like bouts increased",
+          "location": "Results > Sleep Disruption; Methods > Sleep homeostasis"
+        },
+        {
+          "claim": "Undisturbed control n=5 did not show same increase in sleep window",
+          "location": "Results > Sleep Disruption"
+        }
+      ],
+      "limits": [
+        "Strong behavioral evidence for sleep and REM-like state, not evidence of dreaming or mammalian-equivalent REM brain activity",
+        "No electrophysiological measurement; some quiet wakefulness possible",
+        "Fly exposure was sleep disruption not proven complete deprivation; disrupted night not filmed continuously",
+        "Multiple distinct modest-sized experimental samples, some exclusions; not a single N=92 comparison",
+        "Do not reuse research supplement imagery/audio without separate licensing, and no claim of watching it"
+      ],
+      "context_primary": "2022 Evarcha arcuata PNAS doi 10.1073/pnas.2204754119, PMC9388130; a related tradition not second distinct video of same topic",
+      "visual_reference": {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Portia_fimbriata_(15235249464).jpg",
+        "url": "https://live.staticflickr.com/7538/15235249464_d29102f3bd_o.jpg",
+        "creator": "Donald Hobern",
+        "license": "CC BY 2.0 per Commons source audit",
+        "sha256": "a5cf25c55f840908163ab8e95504f8c6af3fbb78d884156fbb770105e19227d0",
+        "verification_run": 45005820057,
+        "independent_visual_or_rights_final_review": false
+      },
+      "remaining": [
+        "Check fresh PNAS/CrossMark correction/retraction update metadata and central competing evidence",
+        "Determine whether four supplements matter for exact on-screen claims; inspect any essential supplement before editorial approval",
+        "Independently confirm exact Portia reference asset rights and crop, never imply reference footage depicts experimental test",
+        "Create episode/evidence narrative, pre-render review and distinctive evidence-specific motion scenes with frozen renderers untouched",
+        "Render in standard GitHub Actions, independently inspect exact encoded frames/video/audio and secure SHA-bound release and public archive deployment",
+        "Before each new provider post, acquire destination claims, persist intent and verify month budget, correct settings, 2 independent receipts per MP4"
+      ]
+    }
+  ],
+  "main_paper_review_not_complete": true,
+  "rights_review_not_complete": true,
+  "pre_render_review_not_complete": true,
+  "encoded_export_review_not_complete": true,
+  "public_deployment_for_new_episodes": false,
+  "authorized_to_submit": false,
+  "metricool_new_posts_created": 0
+}
