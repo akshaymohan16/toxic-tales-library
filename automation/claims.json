@@ -173,7 +173,7 @@
     },
     "production:2026-11-24": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T16:56:production-recovery",
-      "phase": "review_source_and_build_original_scene_module",
+      "phase": "evidence_and_distinct_pre_render_review_persisted_render_source_pending",
       "claimed_at": "2026-11-23T16:55:49.297Z",
       "expires_at": "2026-11-23T20:55:49.297Z",
       "status": "active",
@@ -197,7 +197,17 @@
       "doi": "10.1371/journal.pone.0092895",
       "prior_release_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T08:48:14.077Z",
       "prior_reconciled_calendar_at": "2026-11-23T16:52:07.177Z",
-      "provider_receipts": []
+      "provider_receipts": [],
+      "science_source": "PMC3966847",
+      "evidence_file": "evidence/tt-010.md",
+      "episode_file": "episodes/tt-010.json",
+      "pre_render_editorial_review": {
+        "reviewer": "Publisher science-and-craft reviewer of prior producer's unchanged narration (distinct 23 Nov run)",
+        "reviewed_at": "2026-11-23T17:02:00.189Z",
+        "source_sha256": "8e866f58122056b29ee39c4b48e8d69fb38d3b3ba88500f68d72d1ef79944ec6"
+      },
+      "asset_pin_sha256": "3807578f3a93cdaa7bd009921f58b522907871235d7d711ce2bdd9c18aa2ecb9",
+      "asset_pin_action_run": 45141692028
     },
     "production:2026-11-27": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T16:56:production-recovery",

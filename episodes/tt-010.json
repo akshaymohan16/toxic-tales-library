@@ -1,0 +1,455 @@
+{
+  "id": "TT-010",
+  "slug": "tt-010-crows-and-rising-water",
+  "title": "The crow and the rising water",
+  "hook": "The crows made four clever choices. Two experiments exposed the limits.",
+  "doi": "10.1371/journal.pone.0092895",
+  "paper_title": "Using the Aesop's Fable Paradigm to Investigate Causal Understanding of Water Displacement by New Caledonian Crows",
+  "citation": "Jelbert, Taylor, Cheke, Clayton & Gray (2014), PLOS ONE 9(3):e92895",
+  "tags": [
+    "crows",
+    "animal cognition",
+    "tool use",
+    "behaviour",
+    "ecology"
+  ],
+  "summary": "Six trained New Caledonian crows preferentially selected several functional properties of water displacement, but failed to favor the more efficient narrow tube or a concealed connected U-tube.",
+  "evidence_note": "Six trained birds began; four completed all six tasks. Narrow-tube first-choice and U-tube performance did not exceed chance, and fixed task order limits causal inference.",
+  "source_url": "https://doi.org/10.1371/journal.pone.0092895",
+  "review_status": "full_primary_main_text_checked",
+  "publication_enabled": true,
+  "is_ai_generated": true,
+  "batch_id": "2026-11-23",
+  "slides": [],
+  "evidence_file": "evidence/tt-010.md",
+  "checks": {
+    "full_text": true,
+    "design": true,
+    "findings": true,
+    "limitations": true,
+    "rights": true
+  },
+  "evidence": {
+    "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3966847/",
+    "checked_at": "2026-11-23",
+    "design": "Six temporarily captive wild-caught New Caledonian crows; extensive stone-drop training; six tasks with fixed order, 20 trials each; n=6 initially, 5 on tasks 3–4, n=4 on tasks 5–6.",
+    "claims": [
+      {
+        "claim": "Six trained New Caledonian crows entered the displacement study; only four completed all six experiments.",
+        "location": "Methods > Subjects, Initial Training; Results opening, cached article lines 50–56 and 74–76."
+      },
+      {
+        "claim": "Most stone drops went into water rather than sand across the first task (76.3%).",
+        "location": "Methods and Results > Experiment 1, cached article lines 62–63 and 77–78."
+      },
+      {
+        "claim": "Crows selected sinking objects (88.0%) and solid rather than hollow objects (89.0%).",
+        "location": "Methods and Results > Experiments 2–3, cached article lines 64–67 and 82–85."
+      },
+      {
+        "claim": "The high starting water tube was chosen more often overall (86.8%), with a preference that developed during trials.",
+        "location": "Methods and Results > Experiment 5, cached article lines 70–71 and 91–92."
+      },
+      {
+        "claim": "No reliable first-drop preference for narrower tubes (56%, p=0.27), and connected U-tube choices near chance (48.9%, p=0.79).",
+        "location": "Results > Experiments 4 and 6; Discussion, cached article lines 86–94 and 99–103."
+      }
+    ],
+    "limitations": [
+      "Trained stone dropping, not spontaneous wild water-tool use.",
+      "Only four crows completed all six experiments; two stopped because of reduced motivation.",
+      "Fixed task order leaves possible learning carryover.",
+      "Narrow task produced reachable rewards from either tube, so preference for the efficient one may have been weakly rewarded.",
+      "U-tube connection concealed; chance results do not establish species-wide failure of causal reasoning.",
+      "No individual-record claims or experimental footage drawn from uninspected Data S1 or Movie S1.",
+      "CC0 wild crow reference photo is not from laboratory trials."
+    ],
+    "correction_check": "Checked focal PLOS current DOI article and PMC metadata plus targeted DOI/title corrections and retraction terms on 23 November 2026; no specific focal notice identified in consulted results. Repeat on release day; negative search is not absolute assurance.",
+    "access_note": "Reviewed main official-API JATS Methods, Results, Discussion and all main figure captions; supplementary binaries not viewed or used in any film claim."
+  },
+  "production": {
+    "renderer": "nature-motion-10",
+    "scene_family": "corvus-water-2014",
+    "editorial_style": "science-journalism",
+    "editorial_standard": "story-first-v1",
+    "visual_standard": "nature-visuals-v1",
+    "branding_standard": "toxic-tales-branding-v1",
+    "script_author": "prior_sunday_producer_original_narration",
+    "voice_speed": 1.04,
+    "cover_asset": "crow_reference",
+    "cover_focus": [
+      0.5,
+      0.5
+    ],
+    "cover_kicker": "NEW CALEDONIAN CROW · WILD REFERENCE PHOTO",
+    "cover_title": "The crow\\nand the water",
+    "cover_subtitle": "Six trials reveal both skill and limits",
+    "takeaway": "In tests, trained crows selected several useful water-displacement properties, but not a narrower efficient tube or a concealed U-tube connection.",
+    "critical_terms": [
+      "crow",
+      "water",
+      "stones",
+      "sinking",
+      "hollow",
+      "narrow"
+    ],
+    "assets": [
+      {
+        "id": "crow_reference",
+        "filename": "new-caledonian-crow-benkeen-cc0-original.jpg",
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/586262751/original.jpg",
+        "source_page": "https://www.inaturalist.org/photos/586262751",
+        "creator": "benkeen / iNaturalist",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Original CC0 wild crow photograph, carefully contained in vertical layout with slight editorial camera drift, not experiment footage.",
+        "sha256": "3807578f3a93cdaa7bd009921f58b522907871235d7d711ce2bdd9c18aa2ecb9",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "speech": "How can a crow reach food floating too far down a tube? Researchers trained six New Caledonian crows to drop stones into an apparatus.",
+        "captions": [
+          "How can a crow reach food floating too far down a tube? Researchers",
+          "trained six New Caledonian crows to drop stones into an apparatus."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "portrait",
+            "title": "A crow with\\na problem",
+            "kicker": "WILD REFERENCE PHOTO",
+            "start": 0,
+            "end": 0.44,
+            "asset": "crow_reference"
+          },
+          {
+            "kind": "crow_stone",
+            "title": "Can stones\\nlift food?",
+            "kicker": "WATER DISPLACEMENT",
+            "start": 0.44,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Then the real tests began: would the birds choose things that actually lifted the reward? Most stone drops went into water rather than sand.",
+        "captions": [
+          "Then the real tests began: would the birds choose things that",
+          "actually lifted the reward? Most stone drops went into water rather",
+          "than sand."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "crow_compare",
+            "title": "Water or sand?",
+            "kicker": "FIRST CHOICE TEST",
+            "start": 0,
+            "end": 0.52
+          },
+          {
+            "kind": "crow_stone",
+            "title": "Water lifts\\nthe food",
+            "kicker": "FUNCTIONAL PHYSICS",
+            "start": 0.52,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "They chose sinking objects more often than floating ones, and solid objects rather than hollow shapes.",
+        "captions": [
+          "They chose sinking objects more often than floating ones, and solid",
+          "objects rather than hollow shapes."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "crow_sink",
+            "title": "Sink or float?",
+            "kicker": "OBJECT CHOICE",
+            "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "crow_solid",
+            "title": "Solid or hollow?",
+            "kicker": "OBJECT CHOICE",
+            "start": 0.5,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "In another task, they preferred a tube whose water started higher.",
+        "captions": [
+          "In another task, they preferred a tube whose water started higher."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "crow_high",
+            "title": "A head start\\nin the water",
+            "kicker": "HIGH VS LOW LEVEL",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "But two tests changed the picture. They showed no reliable preference for the narrower tube, even though each stone should raise its water faster.",
+        "captions": [
+          "But two tests changed the picture. They showed no reliable",
+          "preference for the narrower tube, even though each stone should",
+          "raise its water faster."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "crow_narrow",
+            "title": "Narrow needs\\nfewer stones",
+            "kicker": "EFFICIENT BUT NOT FAVOURED",
+            "start": 0,
+            "end": 0.58
+          },
+          {
+            "kind": "crow_narrow",
+            "title": "No reliable\\nfirst choice",
+            "kicker": "THE FIRST LIMIT",
+            "start": 0.58,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "And when the useful tube was secretly connected to the reward, choices were close to fifty-fifty.",
+        "captions": [
+          "And when the useful tube was secretly connected to the reward,",
+          "choices were close to fifty-fifty."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "crow_u",
+            "title": "The hidden\\nconnection",
+            "kicker": "CONCEALED U-TUBE",
+            "start": 0,
+            "end": 0.55
+          },
+          {
+            "kind": "crow_result",
+            "title": "About half\\nand half",
+            "kicker": "U-TUBE CHOICES",
+            "start": 0.55,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "These small, trained laboratory samples show sensitivity to several properties of water displacement.",
+        "captions": [
+          "These small, trained laboratory samples show sensitivity to several",
+          "properties of water displacement."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "crow_recap",
+            "title": "Some properties\\nwere noticed",
+            "kicker": "WHAT WORKED",
+            "start": 0,
+            "end": 0.52
+          },
+          {
+            "kind": "crow_limits",
+            "title": "Six trained\\ncrows began",
+            "kicker": "SMALL LAB SAMPLE",
+            "start": 0.52,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "They do not prove that the birds understand every hidden cause, or that wild crows solve this puzzle.",
+        "captions": [
+          "They do not prove that the birds understand every hidden cause, or",
+          "that wild crows solve this puzzle."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "crow_limits",
+            "title": "Four completed\\nevery task",
+            "kicker": "WHAT REMAINS UNKNOWN",
+            "start": 0,
+            "end": 0.65
+          },
+          {
+            "kind": "closing",
+            "title": "Choices reveal\\nboth strengths and limits",
+            "kicker": "WILD REFERENCE PHOTO",
+            "start": 0.65,
+            "end": 1,
+            "asset": "crow_reference"
+          }
+        ]
+      }
+    ],
+    "logo": {
+      "asset": "assets/branding/toxic-tales-logo.json",
+      "sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+      "placement": "Actual owner-verified Toxic Tales flask/plant/Asellus logo upper-left from first frame, phone safe, no collisions",
+      "forbid": [
+        "footer",
+        "progress bar",
+        "field notes"
+      ],
+      "credits_in_caption": true
+    },
+    "motion": {
+      "schema_version": 1,
+      "evidence_sha256": "fa94af7733be29f5a1c04d25cfa6a88965eb88a3c26faa5e782c0d57d61ae466"
+    }
+  },
+  "editorial_story": {
+    "audience": "Adults curious about wild birds, tool use and physical reasoning; no prior animal cognition training required.",
+    "subject": "Six trained New Caledonian crows choosing objects and tubes to raise a floating meat reward.",
+    "setting": "Temporary captivity and controlled six-task testing cage on Grande-Terre, New Caledonia.",
+    "opening_context": "A clear photo of the actual species, then a conceptual moving water tube with a floating reward out of reach.",
+    "normal_expectation": "Stones can raise the water, but choosing the objects and tubes that work is a separate challenge.",
+    "story_selection": "Lead with the concrete obstacle; repeat physical contrasts before the counterexample of a narrow tube and concealed U-tube; close on bounded interpretation.",
+    "decisive_limit": "Six animals with training and fixed task order, only four completing all tests, no proof of wild discovery or universal understanding.",
+    "question": "Could trained crows distinguish functional properties of water displacement, including hidden causes?",
+    "why_it_matters": "Separates useful flexible animal choices from overly broad claims that a species understands all unseen physics.",
+    "narrative_arc": "Floating food obstacle; initial training; functional water and object choices; higher starting water; first-choice narrow-tube failure; hidden U-tube at chance; training and sample limits; measured conclusion.",
+    "closing_payoff": "Tested birds selected several useful properties, yet did not consistently discriminate narrow efficiency or concealed connection; intelligence is not a binary score.",
+    "context_sources": [
+      {
+        "citation": "Jelbert et al. (2014), PLOS ONE, focal original experimental report",
+        "url": "https://doi.org/10.1371/journal.pone.0092895",
+        "scope": "All behavioral result statements and limitations"
+      },
+      {
+        "citation": "Taylor et al. (2010), related crow water-displacement experiment",
+        "url": "https://doi.org/10.1371/journal.pone.0010187",
+        "scope": "Context only; no results or claims used in narration"
+      },
+      {
+        "citation": "benkeen / iNaturalist CC0 1.0 organism reference image",
+        "url": "https://www.inaturalist.org/photos/586262751",
+        "scope": "Actual species identification and source photo; not experimental footage"
+      }
+    ],
+    "reporting_method": "Read official full-text cached JATS with matching request hash; checked PLOS source and targeted notices; benchmarked exact group-level results and sample changes; did not inspect or use supplemental media.",
+    "visual_plan": [
+      {
+        "segment": 1,
+        "visual": "portrait → crow_stone",
+        "purpose": "Identify the bird, then demonstrate the inaccessible floating reward and conceptual water displacement.",
+        "source_or_concept": "CC0 benkeen wild species reference photo; original concept animation of Methods",
+        "accuracy_note": "Schematics are not recorded experimental trials or measured trajectories; source photo is a wild reference specimen, while all numeric claims are main-paper aggregates."
+      },
+      {
+        "segment": 2,
+        "visual": "crow_compare → crow_stone",
+        "purpose": "Contrast the two substrates and show why stones can raise food in water but not sand.",
+        "source_or_concept": "Original scene-specific schematic based on Jelbert et al. main Methods and Results",
+        "accuracy_note": "Schematics are not recorded experimental trials or measured trajectories; source photo is a wild reference specimen, while all numeric claims are main-paper aggregates."
+      },
+      {
+        "segment": 3,
+        "visual": "crow_sink → crow_solid",
+        "purpose": "Contrast functional sinking and solid objects with floating and hollow alternatives.",
+        "source_or_concept": "Original scene-specific schematic based on Jelbert et al. main Methods and Results",
+        "accuracy_note": "Schematics are not recorded experimental trials or measured trajectories; source photo is a wild reference specimen, while all numeric claims are main-paper aggregates."
+      },
+      {
+        "segment": 4,
+        "visual": "crow_high",
+        "purpose": "Show how higher starting water reduces distance to reachable reward.",
+        "source_or_concept": "Original scene-specific schematic based on Jelbert et al. main Methods and Results",
+        "accuracy_note": "Schematics are not recorded experimental trials or measured trajectories; source photo is a wild reference specimen, while all numeric claims are main-paper aggregates."
+      },
+      {
+        "segment": 5,
+        "visual": "crow_narrow → crow_narrow",
+        "purpose": "Explain narrow versus wide volume difference and why first-choice responses did not show reliable efficiency preference.",
+        "source_or_concept": "Original scene-specific schematic based on Jelbert et al. main Methods and Results",
+        "accuracy_note": "Schematics are not recorded experimental trials or measured trajectories; source photo is a wild reference specimen, while all numeric claims are main-paper aggregates."
+      },
+      {
+        "segment": 6,
+        "visual": "crow_u → crow_result",
+        "purpose": "Reveal concealed connected U-tube to viewer but not the experimental bird, then near-chance performance.",
+        "source_or_concept": "Original scene-specific schematic based on Jelbert et al. main Methods and Results",
+        "accuracy_note": "Schematics are not recorded experimental trials or measured trajectories; source photo is a wild reference specimen, while all numeric claims are main-paper aggregates."
+      },
+      {
+        "segment": 7,
+        "visual": "crow_recap → crow_limits",
+        "purpose": "Summarize property-dependent behavioral choices and emphasize the actual small sample.",
+        "source_or_concept": "Original scene-specific schematic based on Jelbert et al. main Methods and Results",
+        "accuracy_note": "Schematics are not recorded experimental trials or measured trajectories; source photo is a wild reference specimen, while all numeric claims are main-paper aggregates."
+      },
+      {
+        "segment": 8,
+        "visual": "crow_limits → closing",
+        "purpose": "Provide transparent bounds and close with recognizable wild-specimen photograph.",
+        "source_or_concept": "CC0 benkeen wild species reference photo; original concept animation of Methods",
+        "accuracy_note": "Schematics are not recorded experimental trials or measured trajectories; source photo is a wild reference specimen, while all numeric claims are main-paper aggregates."
+      }
+    ]
+  },
+  "posts": [
+    {
+      "id": "TT-010-REEL",
+      "format": "REEL",
+      "publication_date": "2026-11-24T10:00:00+01:00",
+      "caption": "Could a trained crow raise a floating reward with stones? Six New Caledonian crows made choices between materials and water-filled tubes. They more often used water than sand, sinking rather than floating objects, and solid rather than hollow ones. They favoured higher starting water—but did not reliably prefer the more efficient narrow tube or identify a concealed functional U-tube connection. Only four birds completed every test. These controlled tasks show selectivity, not a proof of complete causal understanding or of wild stone-dropping.\\n\\nJelbert et al. (2014), PLOS ONE. DOI: 10.1371/journal.pone.0092895\\nFull open-access paper: https://pmc.ncbi.nlm.nih.gov/articles/PMC3966847/\\nEvidence, limitations and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-010.html\\n\\nWild crow reference photo: benkeen / iNaturalist, CC0 1.0 (NOT experiment footage). Original water/tube animations are conceptual schematics, not recorded experiments or measured trajectories. Synthetic neural narration, captions and real Toxic Tales logo.\\n\\n#ToxicTales #Crows #AnimalBehaviour #Ecology #Science"
+    }
+  ],
+  "editorial_review": {
+    "standard": "story-first-v1",
+    "reviewer": "Publisher science-and-craft reviewer of prior producer's unchanged narration (distinct 23 Nov run)",
+    "reviewed_at": "2026-11-23T17:02:00.189Z",
+    "decision": "pass",
+    "checks": {
+      "cold_viewer": {
+        "decision": "pass",
+        "finding": "The organism is immediately identified with a separately licensed wild-specimen photo, followed by a visibly unreachable reward and a simple water-displacement demonstration; no viewer needs to know the Aesop's-fable paradigm.",
+        "basis": "First two narrated beats and shot sequence; source species/photo provenance, original Methods apparatus and source-checked physical relationship."
+      },
+      "story": {
+        "decision": "pass",
+        "finding": "The previous producer's original eight narrative beats move from the crow's food obstacle to successful functional contrasts, then two clear failures and the sample limitation; each beat contributes a nonrepetitive scene.",
+        "basis": "Eight spoken segments preserved from earlier source storyboard, first six experiments in main Methods/Results; the narrow and U-tube failures provide a genuine counterturn."
+      },
+      "visuals": {
+        "decision": "pass",
+        "finding": "Source-specific tube/stone diagrams illustrate the water-level mechanism, sand comparison, object density/solidity, starting level and concealed U-tube. The opening and ending species photo is visibly framed as a reference; none of the drawings claim to reproduce laboratory recording or measured time series. Frame/crop/phone-scale compliance remains for independent encoded QA.",
+        "basis": "Planned nine new corvus scene families, fixed captions, CC0 benkeen image hash and no reused frog/bee/spider diagrams; pre-render plan only, not video playback."
+      },
+      "payoff": {
+        "decision": "pass",
+        "finding": "The successful choices and failed efficiency/concealed-link decisions reconcile a tempting but exaggerated crows-are-geniuses framing into the scientifically supported conclusion that performance varied with the available property.",
+        "basis": "Jelbert et al. Results Experiments 1–6 and Discussion, especially comparison of narrow and connected tube conditions."
+      },
+      "scope": {
+        "decision": "pass",
+        "finding": "The script says six trained New Caledonian crows and finishes with limits to generalizing hidden causation or wild solving. It omits human intelligence-age equivalence and any subjective experience or spontaneous tool invention.",
+        "basis": "Main article Subject/Initial Training, Results and fixed task order in Discussion. Supplemental Data S1 and footage are not required or used."
+      },
+      "retelling": {
+        "decision": "pass",
+        "finding": "After training, a few crows usually selected items that would lift a floating reward but did not prefer more efficient narrow tubes or infer an unseen connection; small sample and lab training restrict generalization.",
+        "basis": "Original eight narration beats, n=6 declining to n=4 and contrasted experiment statistics in main peer-reviewed paper."
+      }
+    },
+    "source_sha256": "8e866f58122056b29ee39c4b48e8d69fb38d3b3ba88500f68d72d1ef79944ec6"
+  }
+}
