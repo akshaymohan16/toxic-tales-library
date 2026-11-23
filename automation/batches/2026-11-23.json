@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-23T08:53:39.153Z",
+  "updated_at": "2026-11-23T08:56:03.702Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
@@ -59,10 +59,7 @@
     "retired_or_rejected_drafts": 2,
     "regular_next_week_destinations_missing": 4,
     "expired_production_claims": [],
-    "owned_production_claims": [
-      "production:2026-11-24",
-      "production:2026-11-27"
-    ],
+    "owned_production_claims": [],
     "tt008_both_published": true,
     "tt007_both_published": true,
     "tt009_youtube": {
@@ -82,13 +79,21 @@
     "owner_action_blockers": [],
     "research_notes": "automation/qa/2026-11-23-science-preproduction.json",
     "latest_watchdog_run": 45141692023,
-    "latest_watchdog_conclusion": "failure_due_to_existing_strict_TT009_provider_ERROR_warning"
+    "latest_watchdog_conclusion": "failure_due_to_existing_strict_TT009_provider_ERROR_warning",
+    "claim_handoff_at": "2026-11-23T08:56:03.702Z",
+    "reconciled_handoff_claims": [
+      "production:2026-11-24",
+      "production:2026-11-27"
+    ]
   },
   "owner_action_blocker": false,
-  "next_step": "Resume claim-owned science/rights/independent reviewer and GitHub Actions film production; require successful exact encoded release/public deployed archive, then acquire destination submission claims and pre-write intents before 4 provider entries; leave TT-009 YouTube unchanged.",
-  "owned_production_claims": [
+  "next_step": "Next existing publisher/producer run rechecks full live Metricool + intents and CAS-acquires released 24/27 claims; complete science, rights, rendering, exact independent encoded QA, archive verified deployment and paired provider receipts. No quality shortcuts/backfill.",
+  "owned_production_claims": [],
+  "research_readiness_note": "automation/qa/2026-11-23-science-preproduction.json",
+  "reconciled_handoff_claims": [
     "production:2026-11-24",
     "production:2026-11-27"
   ],
-  "research_readiness_note": "automation/qa/2026-11-23-science-preproduction.json"
+  "claim_handoff_at": "2026-11-23T08:56:03.702Z",
+  "production_readiness": "TT010/TT011 prerelease science notes and storyboards preserved; never treat preproduction drafts as released media."
 }

@@ -1435,12 +1435,13 @@
     "youtube_public_metadata_verified": true,
     "youtube_public_metadata_verification_run": 44712245363,
     "weekly_2026_11_23_receipts": 0,
-    "active_production_claims": [
+    "active_production_claims": [],
+    "youtube_warning_uuid": "3828607998694999530",
+    "note": "14 entries verified live; 11 PUBLISHED, 2 draft, one prior ERROR, 0/4 future. Expired Sunday production claims acquired then released in a documented handoff after source and script triage; next run must recheck and CAS acquire before any work.",
+    "expired_production_claims": [],
+    "reconciled_handoff_claims": [
       "production:2026-11-24",
       "production:2026-11-27"
-    ],
-    "youtube_warning_uuid": "3828607998694999530",
-    "note": "Four future destinations absent; expired Sunday claims reconciled against complete live calendar and empty provider-intent directories, acquired by expected-head CAS. Primary-source triage recorded; final review, encoded release and public archive for new episodes still missing.",
-    "expired_production_claims": []
+    ]
   }
 }

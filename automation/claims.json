@@ -173,10 +173,10 @@
     },
     "production:2026-11-24": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T08:48:14.077Z",
-      "phase": "provider_and_intents_reconciled_science_rights_preproduction",
+      "phase": "full_main_paper_triage_and_unreleased_script_draft_completed_release_and_provider_not_ready",
       "claimed_at": "2026-11-23T08:48:14.077Z",
-      "expires_at": "2026-11-23T12:48:14.077Z",
-      "status": "active",
+      "expires_at": "2026-11-23T08:56:03.702Z",
+      "status": "released_unfinished_for_fresh_provider_reconciliation",
       "publication_date": "2026-11-24T10:00:00+01:00",
       "required_destinations": [
         "instagram",
@@ -187,14 +187,19 @@
       "recovery_from_owner": "6aeefcb926708191b092554230783da1:2026-11-22T09:58:34+01:00",
       "recovery_checked_at": "2026-11-23T08:48:14.077Z",
       "last_live_calendar_count": 14,
-      "recovery_note": "Prior producer claim expired. Live full November Metricool calendar contains no 24/27 provider items; automation/instagram and automation/youtube directories contain no 24/27 intents; no TT010/TT011 released assets. No prior publication submission can be duplicated."
+      "recovery_note": "Prior producer claim expired. Live full November Metricool calendar contains no 24/27 provider items; automation/instagram and automation/youtube directories contain no 24/27 intents; no TT010/TT011 released assets. No prior publication submission can be duplicated. Primary text source notes and unreleased scripts committed; complete science/rights/independent encoded QA and public release still pending. Handoff allows next publisher or producer run to inspect live provider anew and CAS-acquire without waiting until old expiry; never submit unreviewed media.",
+      "released_at": "2026-11-23T08:56:03.702Z",
+      "preproduction_research_note": "automation/qa/2026-11-23-science-preproduction.json",
+      "unreleased_storyboards": "automation/qa/2026-11-23-unreleased-storyboards.json",
+      "submission_intent_written": false,
+      "provider_writes": 0
     },
     "production:2026-11-27": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T08:48:14.077Z",
-      "phase": "provider_and_intents_reconciled_science_rights_preproduction",
+      "phase": "full_main_paper_triage_and_unreleased_script_draft_completed_release_and_provider_not_ready",
       "claimed_at": "2026-11-23T08:48:14.077Z",
-      "expires_at": "2026-11-23T12:48:14.077Z",
-      "status": "active",
+      "expires_at": "2026-11-23T08:56:03.702Z",
+      "status": "released_unfinished_for_fresh_provider_reconciliation",
       "publication_date": "2026-11-27T10:00:00+01:00",
       "required_destinations": [
         "instagram",
@@ -205,7 +210,12 @@
       "recovery_from_owner": "6aeefcb926708191b092554230783da1:2026-11-22T09:58:34+01:00",
       "recovery_checked_at": "2026-11-23T08:48:14.077Z",
       "last_live_calendar_count": 14,
-      "recovery_note": "Prior producer claim expired. Live full November Metricool calendar contains no 24/27 provider items; automation/instagram and automation/youtube directories contain no 24/27 intents; no TT010/TT011 released assets. No prior publication submission can be duplicated."
+      "recovery_note": "Prior producer claim expired. Live full November Metricool calendar contains no 24/27 provider items; automation/instagram and automation/youtube directories contain no 24/27 intents; no TT010/TT011 released assets. No prior publication submission can be duplicated. Primary text source notes and unreleased scripts committed; complete science/rights/independent encoded QA and public release still pending. Handoff allows next publisher or producer run to inspect live provider anew and CAS-acquire without waiting until old expiry; never submit unreviewed media.",
+      "released_at": "2026-11-23T08:56:03.702Z",
+      "preproduction_research_note": "automation/qa/2026-11-23-science-preproduction.json",
+      "unreleased_storyboards": "automation/qa/2026-11-23-unreleased-storyboards.json",
+      "submission_intent_written": false,
+      "provider_writes": 0
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."

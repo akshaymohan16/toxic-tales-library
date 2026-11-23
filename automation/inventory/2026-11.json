@@ -133,7 +133,7 @@
     "observed_provider_uuid_count": 14,
     "latest_build_run": 44928858017,
     "latest_build_conclusion": "success",
-    "latest_watchdog_run": 45141692023,
+    "latest_watchdog_run": 45142319313,
     "latest_watchdog_conclusion": "failure",
     "today_tuesday_status": "TT-007 Instagram and YouTube PUBLISHED on 17 Nov with public URLs; YouTube title/channel independently verified",
     "archive_deployment_verified": true,
@@ -148,13 +148,15 @@
     "next_week_2026_11_23_receipts": 0,
     "next_week_2026_11_23_required": 4,
     "next_week_producer_due": "2026-11-22T10:00:00+01:00",
-    "active_production_claims": [
+    "active_production_claims": [],
+    "latest_asset_pin_run": 45005820057,
+    "latest_asset_pin_conclusion": "success",
+    "expired_production_claims": [],
+    "reconciled_handoff_claims": [
       "production:2026-11-24",
       "production:2026-11-27"
     ],
-    "latest_asset_pin_run": 45005820057,
-    "latest_asset_pin_conclusion": "success",
-    "expired_production_claims": []
+    "latest_watchdog_reason": "4 missing upcoming destination receipts; TT-009 YouTube thumbnail ERROR retained as warning"
   },
   "provider_warning_ids": [
     "429844729"
