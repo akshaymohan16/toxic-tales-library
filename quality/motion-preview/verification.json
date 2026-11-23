@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-09",
+  "authorized_repository": "akshaymohan16/toxic-tales-library",
+  "tested_base_commit": "1333e10b470b5500cc5a00b839f2af7ca975e8e2",
+  "purpose": "Unpublished implementation verification, not a publication release",
+  "publication_enabled": false,
+  "release_eligible": false,
+  "renderer": "nature-motion-10.0",
+  "preview": {
+    "episode": "TT-007",
+    "source_fixture": "quality/motion-preview/tt-007.json",
+    "focal_doi": "10.1016/j.anbehav.2022.08.013",
+    "full_text_url": "https://www.houstonnativebees.org/wp-content/uploads/2023/01/Study.Do-Bumblebees-Play.2022.pdf",
+    "fingerprint": "bf24bcac0cfea84c33be4d424e33cc9cd8b278113f42a5d6758181b27f44d883",
+    "renderer_sha256": "cfa43a22be3bcd5efddcc5b70418c074ee856cc074fe0c58e3851fb3bab477c9",
+    "files": {
+      "media/tt-007-bumblebees-play-with-balls.mp4": "ee673c4e297b5ec1ad6559c1339bae52f198a9d5a63ca96662cbeae772ecd161",
+      "media/tt-007-bumblebees-play-with-balls_cover.jpg": "e135568b0dca854ba3c6ae22ecd426387d2999f2d7b9647c832d755c12b2c934"
+    },
+    "duration_seconds": 56.416667,
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "fps": 24,
+    "shots": 14,
+    "caption_phrases": 33,
+    "final_script_similarity": 0.9813664596273292,
+    "integrated_lufs": -16.75,
+    "true_peak_dbtp": -5.42,
+    "full_second_export_byte_identical": true,
+    "source_story_approved": true,
+    "new_motion_export_released": false,
+    "actual_encoded_frame_review": "Passed after repairing clipped count transitions; opening, all shots, transitions, final and cover inspected"
+  },
+  "tests": {
+    "production": {
+      "run": 94,
+      "passed": 92,
+      "skipped": 2,
+      "skip_reason": "Exact Linux DejaVu font tests on Windows (same inherited test appears twice in discovery)"
+    },
+    "readiness": {
+      "run": 45,
+      "passed": 45
+    },
+    "dependency_check": "pip check passed",
+    "whitespace": "git diff --check passed"
+  },
+  "preservation": {
+    "all_six_legacy_fingerprints_unchanged": true,
+    "legacy_episodes": [
+      "TT-002",
+      "TT-003",
+      "TT-004",
+      "TT-005",
+      "TT-006",
+      "TT-007"
+    ],
+    "exact_media_files_restored_and_unchanged_after_full_build": 25,
+    "exact_qa_manifests": 6,
+    "ancillary_qa_jpegs_restored": 80,
+    "ancillary_qa_note": "Readable images fetched from authorized Pages; observed hashes recorded separately, not claimed to be historically signed.",
+    "local_full_build_publish_queue_count": 0,
+    "existing_episode_evidence_release_logo_bytes_unchanged": true,
+    "scheduled_workflow_cron_bytes_unchanged": true,
+    "budget_eur": 0,
+    "monthly_destination_cap": 20,
+    "instagram_slots_per_week": 3,
+    "tuesday_youtube_shorts": 1,
+    "provider_writes": 0,
+    "hosted_task_updates": 0,
+    "new_posting_automations": 0
+  },
+  "runtime": {
+    "os": "Windows",
+    "python": "3.12.14",
+    "pillow": "11.3.0",
+    "numpy": "2.2.6",
+    "ffmpeg": "9.0.2",
+    "kokoro_onnx": "0.4.9",
+    "faster_whisper": "1.2.1",
+    "pyav": "16.0.1"
+  },
+  "limitations": [
+    "No independent listening or continuous video playback was performed; transcript, critical terms, loudness, timed captions and decoded frames were checked.",
+    "Linux hosted Actions was not run for this commit; push CI is intentionally skipped to avoid an immediate deployment. Existing scheduled tasks/workflows are not activated or replaced.",
+    "Live Metricool/YouTube planner and hosted ChatGPT task state were not queried or changed. Existing scheduling records/configuration remained unchanged.",
+    "Deterministic bytes demonstrated for identical local runtime; new runtime/tool versions can change bytes and require fresh exact-file approval.",
+    "This is a 2D, source-specific compositor with discrete counts up to 30, not generative 3D video or arbitrary measured time-series animation.",
+    "Wood-frog source images returned HTTP 403 locally; the approved bumblebee story was used with all original licensed assets pinned."
+  ],
+  "files_changed": [
+    ".github/workflows/publish-library.yml",
+    "OPERATIONS.md",
+    "automation/HANDS_OFF_RUNBOOK.md",
+    "automation/config.json",
+    "automation/producer-prompt.txt",
+    "automation/publisher-prompt.txt",
+    "automation/verify_readiness.py",
+    "automation/test_verify_readiness.py",
+    "quality/MOTION_STANDARD.md",
+    "quality/motion-preview/tt-007.json",
+    "requirements-motion.txt",
+    "scripts/build_motion.py",
+    "scripts/motion_spec.py",
+    "scripts/preserve_releases.py",
+    "scripts/preview_motion.py",
+    "scripts/production_motion.py",
+    "scripts/test_motion.py",
+    "scripts/test_motion_integration.py",
+    "scripts/test_preserve_releases.py",
+    "quality/motion-preview/verification.json"
+  ]
+}

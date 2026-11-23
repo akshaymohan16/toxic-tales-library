@@ -1,0 +1,76 @@
+name: Narration replacement test - NO PUBLISHING
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/voice-rebuild-test.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: toxic-tales-voice-test
+  cancel-in-progress: false
+jobs:
+  test-voice:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install free local speech tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak-ng ffmpeg
+          python -m pip install 'kokoro-onnx==0.4.9' soundfile
+      - name: Download open licensed model and synthesise draft
+        env:
+          OMP_NUM_THREADS: '2'
+        run: |
+          python - <<'PY'
+          import hashlib,json,subprocess,time,urllib.request
+          from pathlib import Path
+          import numpy as np
+          import soundfile as sf
+          from kokoro_onnx import Kokoro
+          modeldir=Path('voice-models');modeldir.mkdir()
+          out=Path('voice-test');out.mkdir()
+          base='https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/'
+          checks={}
+          for name in ['kokoro-v1.0.onnx','voices-v1.0.bin']:
+              p=modeldir/name
+              urllib.request.urlretrieve(base+name,p)
+              checks[name]=hashlib.sha256(p.read_bytes()).hexdigest()
+          tts=Kokoro(str(modeldir/'kokoro-v1.0.onnx'),str(modeldir/'voices-v1.0.bin'))
+          sentences=[
+            'Imagine measuring a whole group of fish, and missing the thing that changed.',
+            'For two years, researchers kept guppy populations with or without fluoxetine, an antidepressant.',
+            'They did not just compare averages. They tested individual fish repeatedly.',
+            'Exposed populations showed smaller differences between individuals in how active they were. Average activity did not clearly differ.',
+            'But this was not a loss of every personality trait. Variation in risk-taking did not show the same pattern.',
+            'And it does not prove wild populations are declining.',
+            'The lesson? An average can hide part of the story. Follow Toxic Tales for the evidence behind it.'
+          ]
+          pieces=[];timing=[];clock=0.;started=time.time()
+          for i,txt in enumerate(sentences):
+              audio,sr=tts.create(txt,voice='af_heart',speed=1.02,lang='en-us')
+              if sr!=24000 or not len(audio):raise RuntimeError('Unexpected/empty audio')
+              audio=np.asarray(audio,dtype=np.float32)
+              sf.write(out/f'segment_{i:02}.wav',audio,sr,subtype='PCM_16')
+              duration=len(audio)/sr
+              timing.append({'index':i,'text':txt,'start':clock,'speech_duration':duration,'duration':duration+.25})
+              pieces.extend([audio,np.zeros(int(.25*sr),dtype=np.float32)])
+              clock+=duration+.25
+          sf.write(out/'Toxic_Tales_Neural_Voice_Draft.wav',np.concatenate(pieces),sr,subtype='PCM_16')
+          subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-i',str(out/'Toxic_Tales_Neural_Voice_Draft.wav'),'-af','loudnorm=I=-16:TP=-1.5:LRA=9','-c:a','libmp3lame','-b:a','160k',str(out/'Toxic_Tales_Neural_Voice_Draft.mp3')],check=True)
+          (out/'timing.json').write_text(json.dumps(timing,indent=2))
+          (out/'transcript.txt').write_text('\n\n'.join(sentences))
+          (out/'test-report.json').write_text(json.dumps({'engine':'kokoro-onnx 0.4.9','model':'Kokoro v1.0','voice':'af_heart','speed':1.02,'sample_rate':sr,'duration':clock,'synthesis_seconds':round(time.time()-started,2),'model_license':'Apache-2.0','runtime_license':'MIT','checksums':checks,'public_posting':False,'aesthetic_approval':False,'scope':'Draft narration only; no Instagram action and no Pages deployment. eSpeak-ng is used only for phoneme preprocessing, not the generated voice. Do not use direct eSpeak audio as a fallback.'},indent=2))
+          print('Draft narration created; no publishing performed.')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: toxic-tales-neural-voice-draft
+          path: voice-test
+          retention-days: 7

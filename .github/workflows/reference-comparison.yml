@@ -1,0 +1,72 @@
+name: Older Toxic Tales reference check - NO PUBLISHING
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/reference-comparison.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare-references:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install free public-media inspection tools
+        run: |
+          python -m pip install requests yt-dlp
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Inspect public original account references without login
+        run: |
+          python - <<'PY'
+          import json,subprocess,requests
+          from pathlib import Path
+          out=Path('reference-comparison');out.mkdir()
+          report={'scope':'Only public Toxic Tales account references; no credentials, no uploads, no Instagram changes.','instagram_reel':'https://www.instagram.com/reel/DJcFnDGsQxo/','instagram_result':None,'bluesky_result':None}
+          try:
+              p=subprocess.run(['yt-dlp','--no-playlist','--socket-timeout','20','--retries','0','--extractor-retries','0','--write-info-json','--no-progress','--max-filesize','50M','-o',str(out/'original_instagram.%(ext)s'),report['instagram_reel']],capture_output=True,text=True,timeout=110)
+              report['instagram_result']={'returncode':p.returncode,'stdout':p.stdout[-8000:],'stderr':p.stderr[-8000:]}
+          except Exception as e: report['instagram_result']={'error':str(e)}
+          actor='toxic-tales-eco.bsky.social'
+          base='https://public.api.bsky.app/xrpc/'
+          try:
+              r=requests.get(base+'app.bsky.actor.getProfile',params={'actor':actor},timeout=25);r.raise_for_status();profile=r.json()
+              (out/'public_profile.json').write_text(json.dumps(profile,indent=2))
+              r=requests.get(base+'app.bsky.feed.getAuthorFeed',params={'actor':actor,'limit':100,'filter':'posts_no_replies'},timeout=25);r.raise_for_status();feed=r.json()
+              (out/'public_feed.json').write_text(json.dumps(feed,indent=2))
+              posts=[];videos=[]
+              for item in feed.get('feed',[]):
+                  post=item.get('post',{})
+                  if post.get('author',{}).get('did')!=profile.get('did'):continue
+                  record=post.get('record',{});embed=post.get('embed',{})
+                  text=record.get('text','');date=record.get('createdAt','')
+                  row={'uri':post.get('uri'),'date':date,'text':text,'embed_type':embed.get('$type'),'external':embed.get('external'),'images':embed.get('images',[])}
+                  if 'playlist' in embed:row['playlist']=embed['playlist']
+                  if embed.get('media',{}).get('playlist'):row['playlist']=embed['media']['playlist']
+                  posts.append(row)
+                  if row.get('playlist') and date<'2026-11-07':videos.append(row)
+              (out/'original_posts_summary.json').write_text(json.dumps(posts,indent=2))
+              downloads=[]
+              for n,row in enumerate(videos[:3]):
+                  url=row['playlist']
+                  if not url.startswith('https://video.bsky.app/'):continue
+                  dest=out/f'older_crosspost_{n+1}.mp4'
+                  try:
+                      proc=subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-i',url,'-t','95','-c','copy','-movflags','+faststart',str(dest)],capture_output=True,text=True,timeout=65)
+                      downloads.append({'filename':dest.name,'reference':row,'returncode':proc.returncode,'stderr':proc.stderr[-1500:]})
+                  except Exception as e:downloads.append({'reference':row,'error':str(e)})
+              report['bluesky_result']={'profile_handle':profile.get('handle'),'profile_description':profile.get('description'),'posts_returned':len(posts),'video_posts':len(videos),'downloads':downloads}
+          except Exception as e:report['bluesky_result']={'error':str(e)}
+          (out/'report.json').write_text(json.dumps(report,indent=2))
+          print(json.dumps(report,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: toxic-tales-older-reference-comparison
+          path: reference-comparison
+          retention-days: 7

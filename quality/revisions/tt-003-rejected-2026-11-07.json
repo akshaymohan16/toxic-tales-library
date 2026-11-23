@@ -1,0 +1,21 @@
+{
+  "decision": "rejected_by_owner",
+  "reviewed_at": "2026-11-07",
+  "reviewer": "Delegated Toxic Tales editor",
+  "verification_run": 42382117062,
+  "media_commit": "e07fc264e11df529be8b099262602b28dfdaf6fa",
+  "listening_review_claimed": false,
+  "original_audio_comparison_claimed": false,
+  "fingerprint": "20fde516bde50049d02d684b89f6ed8307bfc2a4ed1f10d7c44287be354c048a",
+  "files": {
+    "media/tt-003-recovery-with-pollution-20fde516bde5.mp4": "8e2d95e7b0cddeac80707966876ede8d62b31ca285ad2a8f50935b1cfbafce76",
+    "media/tt-003-recovery-with-pollution-20fde516bde5_cover.jpg": "c6bc58b8ac049bbe2ecb91f303b63b2435b25c8c4154cd7395f909706e7a8fb6"
+  },
+  "evidence_sha256": "ebba9222edbbdbd652115402cfab6cc73d9be86262a29fae3c56084042417e7d",
+  "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-003-contact.jpg?release=e07fc264",
+  "scientific_review": "Primary full text checked: twelve outdoor tanks; all received fish, some later fluoxetine; reduced zooplankton abundance rebound after fish removal with dosing continuing. The film explicitly says this is not recovery after pollution stopped. Mechanism unresolved, tank variability and tank-to-lake limit retained. No permanent damage or unique initial fish-causation claim. Source records and CC BY credits verified.",
+  "visual_review": "Inspected actual encoded contact sheet, full-size caveat frame and final cover. Moving browser playback loaded successfully (38.33-second metadata, readyState 4) and showed readable result/subtitle frame. No caption overlaps. Eleven short scenes use reference fish imagery, real microscopy, experimental design, sequence and qualitative comparison. Conceptual comparison is labelled, not fabricated numerical data. The complete negative recovery-after-removal claim fits on screen.",
+  "audio_review": "Final encoded audio ASR reviewed against script: 98.96% token similarity; fluoxetine, zooplankton and the continued-dosing/not-after-pollution-stopped qualification are preserved. Segment and critical-word tests passed. Integrated loudness -16.77 LUFS, true peak -5.47 dBTP, 38.33 seconds; pinned Kokoro voice. Human listening and comparison with original Instagram audio are not claimed.",
+  "publication_scope": "TT-003-REEL",
+  "rejection_reason": "Fails narrative quality: insufficient ecological context, real-world stakes and complete explanatory story."
+}

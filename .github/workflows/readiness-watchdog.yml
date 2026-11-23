@@ -1,0 +1,65 @@
+name: Toxic Tales autonomous schedule watchdog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/readiness-watchdog.yml'
+      - 'automation/verify_readiness.py'
+      - 'automation/test_verify_readiness.py'
+      - 'automation/enforce_reels_only.py'
+      - 'automation/test_enforce_reels_only.py'
+      - 'automation/published.json'
+      - 'automation/publisher-status.json'
+      - 'automation/config.json'
+      - 'automation/batches/**'
+      - 'quality/releases.json'
+  schedule:
+    # UTC triggers. All scheduling comparisons use Europe/Vienna with DST.
+    - cron: '35 8 * * *'
+    - cron: '20 12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: toxic-tales-ledger-watchdog
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Test scheduling and failure cases
+        run: python -m unittest discover -s automation -p 'test_*.py' -v
+      - name: Enforce active Reels-only source policy
+        run: python automation/enforce_reels_only.py
+      - name: Fail closed if required posts or positive publication receipts are missing
+        run: python automation/verify_readiness.py
+      - name: Preserve live-provider incident details on failed scheduled checks
+        if: failure() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          week=$(TZ=Europe/Vienna date +%G-W%V)
+          title="Toxic Tales readiness: $week"
+          body="Automated ledger-readiness check failed. This may mean missing Tuesday/Friday Instagram or YouTube destinations, overdue positive publication receipts, stale daily publisher heartbeat, a source/release identity mismatch, or a failed test. Inspect: https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID . This GitHub check has no live Metricool access. The EXISTING ChatGPT daily publisher must read this issue, check the actual provider calendar, fix the missing work or record a specific authenticated-provider blocker. Do not duplicate posts or lower science/branding standards."
+          # Reuse one open readiness incident across weeks without destroying
+          # the authenticated Metricool evidence added by the daily publisher.
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --limit 100 --json number,title --jq '.[] | select(.title | startswith("Toxic Tales readiness:")) | .number' | head -n 1)
+          if [ -z "$existing" ]; then
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "$body"
+          else
+            gh issue edit "$existing" --repo "$GITHUB_REPOSITORY" --title "$title"
+            echo "Existing issue #$existing preserved, including live-provider detail. This watchdog is ledger-only." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      # Never auto-close an incident on a green ledger-only audit. Only the
+      # existing publisher may close it after actual live Metricool confirmation.

@@ -1,0 +1,490 @@
+{
+  "id": "TT-008",
+  "slug": "tt-008-archerfish-human-faces",
+  "title": "The fish that spat its answer",
+  "hook": "An archerfish spits its answer: can a fish tell human face images apart?",
+  "doi": "10.1038/srep27523",
+  "paper_title": "Discrimination of human faces by archerfish (Toxotes chatareus)",
+  "citation": "Newport, Wallis, Reshitnyk & Siebeck (2016), Scientific Reports 6:27523",
+  "tags": [
+    "archerfish",
+    "animal behaviour",
+    "visual discrimination",
+    "fish cognition"
+  ],
+  "summary": "Two separate four-fish experiments found learned discrimination of a familiar unrewarded human face image from novel alternatives. The second cohort succeeded when colour, mean brightness and outer head shape were standardized. These trained choices do not demonstrate recognition of owners.",
+  "evidence_note": "Only two faces were shown per trial. The 44 and 18 counts describe pools of novel images. Biological replication was four fish per experiment, with repeated trials and a restricted set of still frontal face images.",
+  "source_url": "https://doi.org/10.1038/srep27523",
+  "review_status": "verified_full_text",
+  "publication_enabled": true,
+  "is_ai_generated": true,
+  "batch_id": "2026-11-13",
+  "slides": [],
+  "evidence_file": "evidence/tt-008.md",
+  "checks": {
+    "full_text": true,
+    "design": true,
+    "findings": true,
+    "limitations": true,
+    "rights": true
+  },
+  "evidence": {
+    "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4895153/",
+    "checked_at": "2026-11-13",
+    "design": "Two separate four-fish cohorts of Toxotes chatareus used food-rewarded two-alternative choice by spitting at an overhead screen. Experiment 1 tested avoidance of a familiar negative face against a pool of 44 new faces; Experiment 2 used four new fish, 18 new faces, grayscale images, an oval mask and normalized mean brightness. All subjects had prior monitor-spitting experience.",
+    "claims": [
+      {
+        "claim": "Archerfish hit targets above water with water jets; the face study used this response to report choices.",
+        "location": "Introduction final paragraph; Results Experiment 1; Methods General procedure, Fig.1C."
+      },
+      {
+        "claim": "Four fish learned a rewarded and an unrewarded face; the overhead screen showed two alternatives per trial.",
+        "location": "Results Experiment 1; Methods General procedure and Training/testing Experiment 1."
+      },
+      {
+        "claim": "In Experiment 1 the familiar unrewarded face was paired with one novel face at a time from a pool of 44; the fish discriminated above chance.",
+        "location": "Results Experiment 1 paragraphs 2–3 and Fig.2; Methods Training/testing Experiment 1."
+      },
+      {
+        "claim": "Experiment 2 used four new fish, a pool of 18 novel faces, greyscale images, a common oval mask and normalized mean brightness.",
+        "location": "Results Experiment 2; Methods Stimuli and Training/testing Experiment 2."
+      },
+      {
+        "claim": "The controlled cohort also discriminated the trained negative face from the new alternatives above chance.",
+        "location": "Results Experiment 2: GLMM Z=6.794, P<0.001; Fig.3."
+      },
+      {
+        "claim": "Each experiment had only four trained laboratory fish; images were still frontal views, so recognising owners was not tested.",
+        "location": "Results sample-size statement; Methods Subjects and Stimuli; Discussion final paragraphs."
+      },
+      {
+        "claim": "Learned discrimination of fine differences in unfamiliar face images demonstrates flexible visual abilities without identifying the specific cues or subjective understanding.",
+        "location": "Discussion first two paragraphs and interpretation paragraphs before frontal-view limitation."
+      }
+    ],
+    "limitations": [
+      "Two separate cohorts of four fish; repeated trials are not additional animals or independent laboratory replications.",
+      "The testing rule was avoid a familiar unrewarded face and choose the other image, not choose an owner from a simultaneous array of 44 people.",
+      "Food-reward learning after prior monitor-spitting training; spontaneous social recognition was not studied.",
+      "Only still frontal views from a restricted set of rendered female human faces; owner recognition and emotions are outside this study.",
+      "Colour, brightness and head outline were controlled, but the exact remaining visual cues and neural mechanism were not identified.",
+      "The living-fish reference photograph is from a separate 2018 study; no actual footage from the 2016 face experiment is used.",
+      "The source contains training-session and model-link reporting inconsistencies documented in evidence; neither is used in narration."
+    ],
+    "correction_check": "Title/DOI searches for correction, erratum and retraction and original Nature/PMC/PubMed records checked on 2026-11-13; no linked notice found. This is a dated search, not a guarantee of absence.",
+    "access_note": "Read complete original main paper through PMC, including both experiments, all figure captions, full Discussion and Methods; independently verified the selected related-study photograph species, panel identity and CC BY rights. Source inconsistencies are recorded and excluded from narration."
+  },
+  "production": {
+    "renderer": "nature-motion-10",
+    "scene_family": "archerfish-face-2016",
+    "editorial_style": "science-journalism",
+    "editorial_standard": "story-first-v1",
+    "visual_standard": "nature-visuals-v1",
+    "branding_standard": "toxic-tales-branding-v1",
+    "script_author": "today_research",
+    "voice_speed": 1.04,
+    "cover_asset": "archer_reference",
+    "cover_focus": [
+      0.5,
+      0.5
+    ],
+    "cover_kicker": "ARCHERFISH / REFERENCE PHOTO",
+    "cover_title": "A fish can\ntell faces apart?",
+    "cover_subtitle": "The answer came in a jet of water",
+    "takeaway": "Trained archerfish distinguished a learned negative human face image from novel alternatives in two small controlled experiments.",
+    "critical_terms": [
+      "archerfish",
+      "water",
+      "two faces",
+      "four fish",
+      "forty-four",
+      "eighteen",
+      "owners"
+    ],
+    "assets": [
+      {
+        "id": "archer_reference",
+        "filename": "archerfish-reichenthal-2018-fig1.webp",
+        "url": "https://www.frontiersin.org/files/Articles/333383/xml-images/fncir-12-00018-g0001.webp",
+        "source_page": "https://www.frontiersin.org/journals/neural-circuits/articles/10.3389/fncir.2018.00018/full",
+        "creator": "Adam Reichenthal, Mor Ben-Tov and Ronen Segev",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Crop only Figure 1A showing Toxotes chatareus hunting with a water jet; portrait framing and short camera movement over a reference still. This is a different study from the 2016 face test, not experimental face-test footage.",
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "sha256": "56db2e031ead7bc20a724eb18108046857d74160fe5095f6f0cc1c760c4f513f",
+        "source_dimensions": [
+          1624,
+          2028
+        ],
+        "source_crop_box": [
+          117,
+          59,
+          529,
+          793
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "speech": "An archerfish can hit a target with a jet of water. Researchers turned that skill into a test of human faces.",
+        "captions": [
+          "An archerfish can hit a target",
+          "with a jet of water. Researchers",
+          "turned that skill into a test",
+          "of human faces."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "portrait",
+            "title": "A fish that\nspits its answer",
+            "kicker": "REFERENCE PHOTO",
+            "start": 0,
+            "end": 0.48,
+            "asset": "archer_reference"
+          },
+          {
+            "kind": "archer_hunt",
+            "title": "A jet of water.\nA precise target.",
+            "kicker": "CONCEPTUAL ILLUSTRATION",
+            "start": 0.48,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Above its aquarium, a screen showed two faces. The fish spat at one to make its choice.",
+        "captions": [
+          "Above its aquarium, a screen showed",
+          "two faces. The fish spat at",
+          "one to make its choice."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "archer_task",
+            "title": "Two faces.\nOne water jet.",
+            "kicker": "THE LABORATORY TEST",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "First, four fish learned which face earned food, and which face to avoid.",
+        "captions": [
+          "First, four fish learned which face",
+          "earned food, and which face to",
+          "avoid."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "archer_task",
+            "title": "One face: food.\nThe other: no food.",
+            "kicker": "LEARNING THE CHOICE",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Then the rewarded face was replaced by new faces from a pool of forty-four. Could the fish still avoid the familiar one?",
+        "captions": [
+          "Then the rewarded face was replaced",
+          "by new faces from a pool",
+          "of forty-four. Could the fish still",
+          "avoid the familiar one?"
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "archer_transfer",
+            "title": "New faces\nenter the test",
+            "kicker": "THE TRANSFER TEST",
+            "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "archer_transfer",
+            "title": "The familiar face\nstill gives no food",
+            "kicker": "THE SAME FACE TO AVOID",
+            "start": 0.5,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "They could, choosing correctly more often than chance. Only two faces appeared in each trial.",
+        "captions": [
+          "They could, choosing correctly more often",
+          "than chance. Only two faces appeared",
+          "in each trial."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "archer_transfer",
+            "title": "Above chance\nwith new faces",
+            "kicker": "TWO FACES PER TRIAL",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Four new fish then faced another test, using eighteen unfamiliar faces. Colour, brightness and the outer head shape were controlled.",
+        "captions": [
+          "Four new fish then faced another",
+          "test, using eighteen unfamiliar faces. Colour,",
+          "brightness and the outer head shape",
+          "were controlled."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "archer_controls",
+            "title": "Could simpler\ncues explain it?",
+            "kicker": "FOUR DIFFERENT FISH",
+            "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "archer_controls",
+            "title": "Colour. Brightness.\nOuter head shape.",
+            "kicker": "THREE CUES CONTROLLED",
+            "start": 0.5,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "They still distinguished the trained face from the others.",
+        "captions": [
+          "They still distinguished the trained face",
+          "from the others."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "archer_result",
+            "title": "They still told\nthe images apart",
+            "kicker": "THE CONTROLLED TEST",
+            "start": 0,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "But these were small laboratory experiments using still, front-facing images. They do not show that fish recognise their owners.",
+        "captions": [
+          "But these were small laboratory experiments",
+          "using still, front-facing images. They do",
+          "not show that fish recognise their",
+          "owners."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "archer_scope",
+            "title": "Small groups.\nStill images.",
+            "kicker": "THE LIMIT",
+            "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "archer_scope",
+            "title": "Recognising owners\nwas not tested",
+            "kicker": "WHAT THIS CANNOT TELL US",
+            "start": 0.5,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "A fish can learn fine differences between human face images. That tells us something about the flexibility of animal vision.",
+        "captions": [
+          "A fish can learn fine differences",
+          "between human face images. That tells",
+          "us something about the flexibility of",
+          "animal vision."
+        ],
+        "pause_after": 0.18,
+        "shots": [
+          {
+            "kind": "archer_result",
+            "title": "Fine differences.\nLearned by a fish.",
+            "kicker": "THE NARROW FINDING",
+            "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "closing",
+            "title": "A different\nway to see faces",
+            "kicker": "REFERENCE PHOTO",
+            "start": 0.5,
+            "end": 1,
+            "asset": "archer_reference"
+          }
+        ]
+      }
+    ],
+    "logo": {
+      "asset": "assets/branding/toxic-tales-logo.json",
+      "sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+      "placement": "Official green flask/plant/Asellus logo visible from first frame at upper left within phone-safe area; does not obscure footage or captions",
+      "forbid": [
+        "footer",
+        "progress bar",
+        "field notes"
+      ],
+      "credits_in_caption": true
+    },
+    "motion": {
+      "schema_version": 1,
+      "evidence_sha256": "f5b140fd78d29362d49632b1f0f2539a64cbd509bfd10bc29b013a516ba2c872"
+    }
+  },
+  "editorial_story": {
+    "audience": "Curious adults who know fish visually but may not expect a trained fish to distinguish human face images.",
+    "subject": "Toxotes chatareus archerfish choosing between human face images by spitting a water jet at an overhead screen.",
+    "setting": "Two controlled laboratory experiments, each using four trained fish, paired face images and food rewards.",
+    "opening_context": "The opening names an archerfish and its water jet while showing a correctly identified reference animal, then explains why that visible action can report a choice.",
+    "normal_expectation": "A fish targets prey with water jets; a human face image is an unfamiliar target whose subtle visual differences might seem beyond this hunting skill.",
+    "story_selection": "The observable spit response turns a cognitive question into a clear action, and a two-choice test plus separate controlled cohort supports a surprising result without claims about owners or emotions.",
+    "decisive_limit": "Small trained laboratory cohorts discriminated restricted still frontal images; the exact cues and recognition of people in natural encounters were not established.",
+    "question": "Can an archerfish use its visual abilities to distinguish human face images?",
+    "why_it_matters": "It reveals flexible visual learning while showing how carefully animal cognition claims must follow the task actually tested.",
+    "narrative_arc": "Water-jet hunter; overhead two-face choice; food/no-food learning; novel-face transfer; qualitative above-chance result; independent cohort with simpler cues controlled; continued discrimination; spoken small-sample and owner-recognition limit; return to living fish.",
+    "closing_payoff": "The fish learned fine differences between unfamiliar face images: a result about visual discrimination, bounded by the controlled task.",
+    "context_sources": [
+      {
+        "citation": "Newport et al. (2016), original focal paper",
+        "url": "https://doi.org/10.1038/srep27523",
+        "scope": "All spoken experimental design, result and limitations."
+      },
+      {
+        "citation": "Reichenthal, Ben-Tov & Segev (2018), Fig.1A and Methods/Animals",
+        "url": "https://doi.org/10.3389/fncir.2018.00018",
+        "scope": "Correctly identified licensed reference photograph of Toxotes chatareus hunting; not evidence for the face-discrimination result."
+      }
+    ],
+    "reporting_method": "Full original main text and figure captions read, exact negative-stimulus testing rule verified, two cohorts separated, correction notices searched, source-specific image licence checked.",
+    "visual_plan": [
+      {
+        "segment": 1,
+        "visual": "Correctly identified living Toxotes chatareus reference photo, then a labelled conceptual fish aiming water at an insect.",
+        "purpose": "Identify the actor and the natural action that makes its answer visible.",
+        "source_or_concept": "Reichenthal et al. 2018 Fig.1A CC BY crop, from a separate study; original hunt schematic grounded in Newport et al. Introduction.",
+        "accuracy_note": "Photo is a reference still, not the face-test animals; diagram is not measured jet kinematics."
+      },
+      {
+        "segment": 2,
+        "visual": "A drawn overhead monitor with exactly two schematic faces; fish aims a jet at one.",
+        "purpose": "Explain how a fish can make a choice in a face test.",
+        "source_or_concept": "Original diagram based on Newport et al. 2016 Fig.1C and General procedure.",
+        "accuracy_note": "No copied human face stimuli; screen-side layout is illustrative and is not a claim of fixed-side reward."
+      },
+      {
+        "segment": 3,
+        "visual": "The same two-face aquarium diagram links a correct image choice to food and leaves the other unrewarded.",
+        "purpose": "Make learned positive and negative associations explicit before transfer.",
+        "source_or_concept": "Original animation based on Training/testing Experiment 1.",
+        "accuracy_note": "No punishment is shown or implied; food follows a correct spit."
+      },
+      {
+        "segment": 4,
+        "visual": "One learned unrewarded face remains while the other face changes across illustrative trials.",
+        "purpose": "Show exactly what transferred to novel images.",
+        "source_or_concept": "Original conceptual two-choice animation, Results Experiment 1 and Methods testing pool.",
+        "accuracy_note": "Only two images appear per trial; never an array of 44 simultaneous choices or a familiar positive target."
+      },
+      {
+        "segment": 5,
+        "visual": "Repeat the two-image task with a qualitative above-chance title.",
+        "purpose": "State the result without an unsourced numerical rate.",
+        "source_or_concept": "Results Experiment 1 GLMM and Fig.2, rendered as qualitative task illustration.",
+        "accuracy_note": "Animation is not an actual sequence of trials, an accuracy plot or a success probability."
+      },
+      {
+        "segment": 6,
+        "visual": "Drawn faces become greyscale with identical oval masks and brightness treatment; text names separate fish.",
+        "purpose": "Explain why the second experiment makes simpler visual explanations less adequate.",
+        "source_or_concept": "Methods Stimuli and Experiment 2 controls; original schematic faces.",
+        "accuracy_note": "No morph is a real study stimulus; the standardization does not identify the actual cues used."
+      },
+      {
+        "segment": 7,
+        "visual": "Facial feature schematic and qualitative learned-discrimination statement.",
+        "purpose": "Give the controlled result and preserve uncertainty about mechanism.",
+        "source_or_concept": "Original illustration based on Results Experiment 2 and Discussion.",
+        "accuracy_note": "Features are symbolic, not empirically identified discriminative features; no invented percentage."
+      },
+      {
+        "segment": 8,
+        "visual": "Four fish symbols identify the size of each trained group, accompanied by still-image/living-person distinction.",
+        "purpose": "Put the decisive limitation inside the film.",
+        "source_or_concept": "Original schematic based on N=4 per experiment and Discussion frontal-view limit.",
+        "accuracy_note": "Four means each independent cohort, not the complete eight-fish sample; owner recognition is untested."
+      },
+      {
+        "segment": 9,
+        "visual": "Return to the licensed living-fish reference crop.",
+        "purpose": "Close the question with learned fine visual discrimination.",
+        "source_or_concept": "Reichenthal et al. 2018 Fig.1A CC BY, reference photograph from another study.",
+        "accuracy_note": "Camera movement over a still does not imply actual footage or spontaneous recognition of people."
+      }
+    ]
+  },
+  "posts": [
+    {
+      "id": "TT-008-REEL",
+      "format": "REEL",
+      "publication_date": "2026-11-13T18:00:00+01:00",
+      "caption": "A fish that spits its answer: can archerfish tell human faces apart?\n\nIn two laboratory experiments, separate groups of four Toxotes chatareus learned which face image earned food and which to avoid. During testing, the familiar unrewarded face was paired with one new face at a time, drawn from a pool of 44 images in the first experiment. The fish discriminated above chance.\n\nFour different fish also succeeded with 18 novel faces after colour, mean brightness and the outer head outline were standardized. Only TWO faces appeared per trial. The results show learned image discrimination; they do not demonstrate that fish recognise their owners or use the same cues as humans.\n\nTT-008 | Newport, Wallis, Reshitnyk & Siebeck (2016), Scientific Reports 6:27523. DOI: 10.1038/srep27523\nPaper, methods, limitations and full credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-008.html\n\nArcherfish reference photograph: Reichenthal, Ben-Tov & Segev (2018), Front. Neural Circuits 12:18, Fig.1A, CC BY 4.0, cropped; from a separate study (10.3389/fncir.2018.00018). Original conceptual task illustrations, not actual face-test footage or stimuli. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Archerfish #AnimalBehaviour #FishCognition #Ecology #ScienceCommunication"
+    }
+  ],
+  "editorial_review": {
+    "standard": "story-first-v1",
+    "reviewer": "Independent science and story reviewer / runbook_review",
+    "reviewed_at": "2026-11-13T12:34:50Z",
+    "decision": "pass",
+    "checks": {
+      "cold_viewer": {
+        "decision": "pass",
+        "finding": "The first sentence identifies the archerfish and its visible water-jet response before introducing the face test.",
+        "basis": "Read all nine narration segments and paired shots; inspected the reference crop and six scene previews. Opening and closing photo kickers explicitly identify reference imagery."
+      },
+      "story": {
+        "decision": "pass",
+        "finding": "The sequence explains learned choice, transfer to new images and a separate control experiment before stating the boundary.",
+        "basis": "Compared the narration and storyboard with the original paper's Results, Methods and Discussion; reward and unrewarded-face roles remain consistent."
+      },
+      "visuals": {
+        "decision": "pass",
+        "finding": "The planned task keeps two schematic faces per trial, labels illustrations and avoids invented accuracy graphs. Reference imagery comes from a separately credited study.",
+        "basis": "Inspected scene code/previews and licensed photo crop. Removed the hair-like outline because both experiments excluded hair cues; asset source, species and CC BY terms were independently checked. Final encoded frames are not yet reviewed."
+      },
+      "payoff": {
+        "decision": "pass",
+        "finding": "The ending answers the opening with learned visual discrimination and does not turn it into a claim about recognising people.",
+        "basis": "Compared the opening question with the final two spoken segments and their planned closing shots."
+      },
+      "scope": {
+        "decision": "pass",
+        "finding": "The script separates the two four-fish cohorts and identifies 44 and 18 as image pools, with still-image and owner-recognition limits spoken aloud.",
+        "basis": "Checked the original design and test rule; omitted disputed training-session/model-link details and selective peak-accuracy headlines."
+      },
+      "retelling": {
+        "decision": "pass",
+        "finding": "Trained archerfish learned to distinguish human face images by choosing with a water jet.",
+        "basis": "The result concerns small laboratory groups and paired still images; recognition of owners was not tested."
+      }
+    },
+    "source_sha256": "92cb33ab294a88ccf99b8c523b68c16a1fe3873dd5433fbbf86c24439e73244b"
+  }
+}

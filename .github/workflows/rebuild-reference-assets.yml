@@ -1,0 +1,40 @@
+name: Replacement reference assets - NO PUBLISHING
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/rebuild-reference-assets.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fetch-reference-media:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Retrieve CC0 reference material and rights record
+        run: |
+          python - <<'PY'
+          import json,hashlib,urllib.request
+          from pathlib import Path
+          out=Path('references');out.mkdir()
+          files=[
+           {'name':'guppy_cc0.jpg','url':'https://upload.wikimedia.org/wikipedia/commons/c/c0/Poecilia_reticulata_-_Guppy%2C_male%2C_cobra-green_morph.jpg','source_page':'https://commons.wikimedia.org/wiki/File:Poecilia_reticulata_-_Guppy,_male,_cobra-green_morph.jpg'},
+           {'name':'guppy_cc0.ogv','url':'https://upload.wikimedia.org/wikipedia/commons/0/0f/Feeding_of_Poecilia_reticulata.ogv','source_page':'https://commons.wikimedia.org/wiki/File:Feeding_of_Poecilia_reticulata.ogv'}
+          ]
+          for f in files:
+              req=urllib.request.Request(f['url'],headers={'User-Agent':'ToxicTales-reference-review/1.0'})
+              with urllib.request.urlopen(req,timeout=60) as r:data=r.read(20_000_001)
+              if len(data)>20_000_000:raise ValueError('Unexpected media size')
+              (out/f['name']).write_bytes(data)
+              f.update({'sha256':hashlib.sha256(data).hexdigest(),'bytes':len(data),'creator':'5snake5','license':'CC0 1.0','license_url':'https://creativecommons.org/publicdomain/zero/1.0/','use':'General guppy reference only, NOT footage or animals from the cited experiment. Label accordingly. No publication is authorised by this test.'})
+          (out/'rights.json').write_text(json.dumps(files,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: toxic-tales-replacement-reference-media
+          path: references
+          retention-days: 7

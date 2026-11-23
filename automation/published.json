@@ -1,0 +1,1446 @@
+{
+  "posts": [
+    {
+      "post_id": "TT-002-REEL",
+      "episode_id": "TT-002",
+      "format": "REEL",
+      "doi": "10.1098/rspb.2020.2294",
+      "metricool_id": "419869962",
+      "metricool_uuid": "-3158597333632725768",
+      "publication_date": "2026-11-07T12:38:00+01:00",
+      "publication_date_meaning": "Scheduled time; the provider did not return a separate exact actual-publication timestamp.",
+      "timezone": "Europe/Vienna",
+      "original_planned_date": "2026-11-10T10:00:00+01:00",
+      "user_requested_immediate_publication": true,
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.instagram.com/reel/DfcF7aYiuWU/",
+      "published_confirmation_date": "2026-11-07",
+      "confirmation_source": "Metricool getScheduledPosts returned the matching ID/UUID, Instagram provider status PUBLISHED and publicUrl; this is positive evidence, not inference from disappearance from the queue.",
+      "auto_publish": true,
+      "draft": false,
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-3158597333632725768",
+      "source_media_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-002-the-average-can-hide.mp4",
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-002-the-average-can-hide_cover.jpg",
+      "metricool_media_url": "https://static.metricool.com/planner/202611/7937614-file-14503219743493405572.mp4",
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-8703534166706542430.jpeg",
+      "source_sha256": "219e8ee38a51b4e067b8d4dba0e68d8736a8a4dc523cbda42ca68b5ff2eab1af",
+      "submission_note": "User explicitly requested the first finished Reel now. Existing monthly schedule and ledger were empty; published-history queries returned no rows but older-history completeness remains unconfirmed. One live publishing test was submitted without any paid action and has now been confirmed published.",
+      "duplicate_guard": "TT-002-REEL is already published and must never be resubmitted. On 7 November the owner renewed the two-Reels-per-week requirement; Tuesday 10 November is now assigned a NEW distinct paper by the Sunday producer. Count this published item only once."
+    },
+    {
+      "post_id": "TT-002-CAROUSEL",
+      "episode_id": "TT-002",
+      "format": "CAROUSEL",
+      "doi": "10.1098/rspb.2020.2294",
+      "metricool_id": "420045577",
+      "metricool_uuid": "3228865276435317523",
+      "publication_date": "2026-11-12T10:00:00+01:00",
+      "timezone": "Europe/Vienna",
+      "status": "retired_reels_only_policy",
+      "provider_status": "PENDING",
+      "auto_publish": false,
+      "draft": true,
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=3228865276435317523",
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-002-the-average-can-hide-3107c7add56b_slide_01.jpg",
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-002-the-average-can-hide-3107c7add56b_slide_02.jpg",
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-002-the-average-can-hide-3107c7add56b_slide_03.jpg",
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-002-the-average-can-hide-3107c7add56b_slide_04.jpg",
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-002-the-average-can-hide-3107c7add56b_slide_05.jpg",
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-002-the-average-can-hide-3107c7add56b_slide_06.jpg",
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-002-the-average-can-hide-3107c7add56b_slide_07.jpg"
+      ],
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-13605576112605857234.jpeg",
+        "https://static.metricool.com/planner/202611/7937614-file-3618317110716798238.jpeg",
+        "https://static.metricool.com/planner/202611/7937614-file-9878615238619353083.jpeg",
+        "https://static.metricool.com/planner/202611/7937614-file-8262715836806845291.jpeg",
+        "https://static.metricool.com/planner/202611/7937614-file-13685219736065977030.jpeg",
+        "https://static.metricool.com/planner/202611/7937614-file-14700949379974944849.jpeg",
+        "https://static.metricool.com/planner/202611/7937614-file-8849843596553853923.jpeg"
+      ],
+      "source_files_sha256": {
+        "media/tt-002-the-average-can-hide-3107c7add56b.mp4": "2eb0284ba27d1f6025a6eb62a56e248a4390ed676e5e5f7d4d82cc12b22ea105",
+        "media/tt-002-the-average-can-hide-3107c7add56b_cover.jpg": "000c2be05573f4a51101c1eeeea7809faa550bc0478ce49c276b92ee9cd85201",
+        "media/tt-002-the-average-can-hide-3107c7add56b_slide_01.jpg": "ad919abd3726c41946c3f6441036331fdc257945cc76253c3aa6909f87f3fbed",
+        "media/tt-002-the-average-can-hide-3107c7add56b_slide_02.jpg": "3ea1cf6927da63899a8259ea7616c8ff26062fe5a42150abdc459957fb5a1996",
+        "media/tt-002-the-average-can-hide-3107c7add56b_slide_03.jpg": "10d07323b5874c5dc4e0d0a3a718e0363befe5244f6fbc4f19809942703bca83",
+        "media/tt-002-the-average-can-hide-3107c7add56b_slide_04.jpg": "f7688b59d07ff071be1072fe66dfad713413ea77a2492a554f8ba39b316b6f2c",
+        "media/tt-002-the-average-can-hide-3107c7add56b_slide_05.jpg": "55267a61b31681348b1803c54c3540b0e501d5b2b23b22775671efbe0efa1010",
+        "media/tt-002-the-average-can-hide-3107c7add56b_slide_06.jpg": "e23d388e2179fbd4440552cb94d79e5dc3da2f315e3ee167ea85fc493c664db5",
+        "media/tt-002-the-average-can-hide-3107c7add56b_slide_07.jpg": "1669c3162e0aacfb832a10e5cefa7eafea62413c6cc7a36d02e5690361224d02"
+      },
+      "release_fingerprint": "3107c7add56b0123b6365d75b1c015e8f1d564e748b77f500773226d64344a54",
+      "release_commit": "788b338bcb61b5302e085ad07097a8a5fa0978b8",
+      "public_verification_run": 42382836366,
+      "receipt_saved_on": "2026-11-07",
+      "publication_confirmation": "Unpublished draft. Requires current-standard review/rebuild or replacement by a new distinct companion; pilot approval does not release this old export.",
+      "schedule_readback_verified": true,
+      "readback_date": "2026-11-07",
+      "previous_revisions": [
+        {
+          "metricool_id": "419994151",
+          "status": "scheduled",
+          "date": "2026-11-07",
+          "reason": "Owner requests visual pilot approval before publication"
+        }
+      ],
+      "publication_eligible": false,
+      "retired_on": "2026-11-13"
+    },
+    {
+      "post_id": "TT-003-REEL",
+      "episode_id": "TT-003",
+      "format": "REEL",
+      "doi": "10.1021/acs.est.4c02807",
+      "metricool_id": "420062745",
+      "metricool_uuid": "6027580248989713344",
+      "publication_date": "2026-11-14T10:00:00+01:00",
+      "timezone": "Europe/Vienna",
+      "status": "rejected_retired_draft",
+      "provider_status": "PENDING",
+      "auto_publish": false,
+      "draft": true,
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=6027580248989713344",
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-003-recovery-with-pollution-de6e3de79586.mp4"
+      ],
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-003-recovery-with-pollution-de6e3de79586_cover.jpg",
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-13947162906712262509.mp4"
+      ],
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-8319541877274291437.jpeg",
+      "source_files_sha256": {
+        "media/tt-003-recovery-with-pollution-de6e3de79586.mp4": "ef9802da9c598e63cb9648e3cc23fc52218d197354e676dfae713468cc82d19c",
+        "media/tt-003-recovery-with-pollution-de6e3de79586_cover.jpg": "eaf6567aff45e948c50ec9c2c50f58c1ad7e3707d368c4fbb11609a8b6d6fae3"
+      },
+      "release_fingerprint": "de6e3de79586e0b1839f97649c2441c76db19ca84c00f7d868d33e761e89bbc8",
+      "release_commit": "97d6540a23ca5b813eb1f07d9e5512f4b4031fc1",
+      "public_verification_run": 42389865597,
+      "receipt_saved_on": "2026-11-07",
+      "publication_confirmation": "Unpublished rejected draft. It is retired from future publication; no provider deletion or publication occurred in this metadata update.",
+      "schedule_readback_verified": true,
+      "readback_date": "2026-11-07",
+      "previous_revisions": [
+        {
+          "metricool_id": "419994528",
+          "source_media_urls": [
+            "https://akshaymohan16.github.io/toxic-tales-library/media/tt-003-recovery-with-pollution-20fde516bde5.mp4"
+          ],
+          "source_files_sha256": {
+            "media/tt-003-recovery-with-pollution-20fde516bde5.mp4": "8e2d95e7b0cddeac80707966876ede8d62b31ca285ad2a8f50935b1cfbafce76",
+            "media/tt-003-recovery-with-pollution-20fde516bde5_cover.jpg": "c6bc58b8ac049bbe2ecb91f303b63b2435b25c8c4154cd7395f909706e7a8fb6"
+          },
+          "release_fingerprint": "20fde516bde50049d02d684b89f6ed8307bfc2a4ed1f10d7c44287be354c048a",
+          "status": "user_rejected_before_publication",
+          "reason": "Experiment-and-results summary does not tell a full science-journalism story."
+        },
+        {
+          "metricool_id": "420001608",
+          "status": "draft_replaced",
+          "date": "2026-11-07",
+          "release_fingerprint": "20fde516bde50049d02d684b89f6ed8307bfc2a4ed1f10d7c44287be354c048a"
+        },
+        {
+          "metricool_id": "420018600",
+          "status": "scheduled",
+          "date": "2026-11-07",
+          "reason": "Owner requests visual pilot approval before publication"
+        },
+        {
+          "metricool_id": "420045654",
+          "release_fingerprint": "55c2001a3e7201dc71022ee4ef2e6393a94d4baefec5592579b29e34e3fb9d75",
+          "status": "superseded_by_visual_pilot",
+          "date": "2026-11-07"
+        },
+        {
+          "metricool_id": "420062745",
+          "status": "draft_awaiting_owner_pilot_approval",
+          "date": "2026-11-07",
+          "release_fingerprint": "de6e3de79586e0b1839f97649c2441c76db19ca84c00f7d868d33e761e89bbc8",
+          "reason": "Historical pilot state superseded by owner rejection."
+        }
+      ],
+      "release_record_note": "Exact historical export and provider identifiers retained for audit. Previous editorial review was rejected by the owner and is not a publication release.",
+      "revision_reason": "Owner rejected the unclear opening and the complete script; TT-004 is the new pilot. Approval of TT-004 must never revive TT-003.",
+      "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-003-recovery-with-pollution-de6e3de79586.mp4",
+      "publication_eligible": false,
+      "retired_on": "2026-11-07",
+      "superseded_by_pilot": "TT-004",
+      "retirement_reason": "Owner rejected the unclear opening and the complete script; TT-004 is the new pilot. Approval of TT-004 must never revive TT-003.",
+      "preview_type": "archived_rejected_video"
+    },
+    {
+      "post_id": "TT-004-REEL",
+      "episode_id": "TT-004",
+      "format": "REEL",
+      "doi": "10.1073/pnas.2004805117",
+      "metricool_id": "420123422",
+      "metricool_uuid": "8432780738091634663",
+      "publication_date": "2026-11-07T18:41:00+01:00",
+      "publication_date_meaning": "Scheduled time; provider did not return a separate exact actual-publication timestamp.",
+      "timezone": "Europe/Vienna",
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "auto_publish": true,
+      "draft": false,
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=8432780738091634663",
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-004-fish-eggs-duck-gut-a70c13bde0d3.mp4"
+      ],
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-004-fish-eggs-duck-gut-a70c13bde0d3_cover.jpg",
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-16623688872722396926.mp4"
+      ],
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-10815844774929756845.jpeg",
+      "source_files_sha256": {
+        "media/tt-004-fish-eggs-duck-gut-a70c13bde0d3.mp4": "3efdc77803ce516f59dea819cbac43361dfc0efd214438e48a5dda58286565d1",
+        "media/tt-004-fish-eggs-duck-gut-a70c13bde0d3_cover.jpg": "e9325d79575c2b86c52fa148bb291a974a0aad30980601288c0538c317219626"
+      },
+      "release_fingerprint": "a70c13bde0d36f7cb62fc7d9ecef687af36728f180391931265041a5ce166223",
+      "release_commit": "bae856975a24dd81ce61c53b3ee1d31840038aae",
+      "public_verification_run": 42396049419,
+      "receipt_saved_on": "2026-11-07T17:35:16.850565+00:00",
+      "schedule_readback_verified": true,
+      "publication_eligible": true,
+      "publication_confirmation": "Provider-confirmed published; live Instagram URL saved.",
+      "pilot_preview_url": "https://akshaymohan16.github.io/toxic-tales-library/pilot.html?review=bae85697",
+      "metricool_hosted_bytes_verified": true,
+      "metricool_media_verification": "Downloaded the Metricool-hosted MP4 and cover; both SHA-256 hashes exactly match the reviewed public export.",
+      "previous_revisions": [
+        {
+          "metricool_id": "420118848",
+          "publication_date": "2026-11-14T10:00:00+01:00",
+          "status": "draft_awaiting_owner_pilot_approval"
+        }
+      ],
+      "original_planned_date": "2026-11-14T10:00:00+01:00",
+      "owner_approved": true,
+      "user_requested_immediate_publication": true,
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.instagram.com/reel/DfcvkhGDsFb/",
+      "published_confirmation_date": "2026-11-07",
+      "published_confirmed_at": "2026-11-07T17:44:33.983826+00:00",
+      "confirmation_source": "Metricool getScheduledPosts returned matching stable UUID, numeric ID 420123422, Instagram PUBLISHED and publicUrl.",
+      "duplicate_guard": "Already published. Never resubmit TT-004-REEL or this DOI as a new Reel. The November 14 slot requires a new distinct-paper story.",
+      "publication_notification": {
+        "channel": "current_chat",
+        "status": "delivered",
+        "notified_at": "2026-11-07T17:44:33.983826+00:00",
+        "post_id": "TT-004-REEL",
+        "public_url": "https://www.instagram.com/reel/DfcvkhGDsFb/"
+      },
+      "notified": true,
+      "notified_at": "2026-11-07T17:44:33.983826+00:00"
+    },
+    {
+      "post_id": "TT-005-REEL",
+      "episode_id": "TT-005",
+      "format": "REEL",
+      "doi": "10.1371/journal.pone.0117234",
+      "metricool_id": "420178205",
+      "metricool_uuid": "2386175407143797944",
+      "publication_date": "2026-11-07T20:02:00+01:00",
+      "publication_date_meaning": "Scheduled time; provider did not supply separate exact publication timestamp.",
+      "timezone": "Europe/Vienna",
+      "original_planned_date": "2026-11-10T10:00:00+01:00",
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.instagram.com/reel/Dfc5DEPHJCJ/",
+      "published_confirmed_at": "2026-11-07T19:07:59.945Z",
+      "confirmation_source": "Fresh Metricool getScheduledPosts returned matching ID/UUID, Instagram PUBLISHED and public URL.",
+      "auto_publish": true,
+      "draft": false,
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=2386175407143797944",
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-005-wood-frog-winter-survival-3048cc50e4ba.mp4"
+      ],
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-005-wood-frog-winter-survival-3048cc50e4ba_cover.jpg",
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-16288469284416189696.mp4"
+      ],
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-8227246352838881922.jpeg",
+      "source_files_sha256": {
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba.mp4": "8d89bd481e522ea513a10f3ee348a0b8e6f5da9c19cf63816e908e3bf1976c91",
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_cover.jpg": "e8483fea17b02c5077bf67a377e1f80a5e2831898e6a2d914accb7bf32da995c"
+      },
+      "release_fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b",
+      "release_commit": "084bf0e6204bb5eaaf8b34f65a56d7bece84f9f9",
+      "public_verification_run": 42402379631,
+      "owner_approved": true,
+      "owner_approval": {
+        "approved": true,
+        "recorded_at": "2026-11-07T19:07:59.945Z",
+        "text": "Post the frog reel that you made, I like it, good job",
+        "scope": "Unchanged TT-005 REEL, cover and caption only; future branding applies to future exports. Carousel remains subject to ordinary checks and scheduling.",
+        "fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b"
+      },
+      "user_requested_immediate_publication": true,
+      "publication_eligible": true,
+      "publication_confirmation": "Provider-confirmed published; exact approved caption verified on provider readback. Source MP4/cover previously exact-byte verified; no fresh Metricool-hosted download hash claimed.",
+      "duplicate_guard": "Already published. Never resubmit TT-005-REEL or this DOI as a new Reel. November 10 and 14 still require new distinct-paper stories.",
+      "publication_notification": {
+        "channel": "current_chat",
+        "status": "delivered",
+        "notified_at": "2026-11-07T19:07:59.945Z",
+        "public_url": "https://www.instagram.com/reel/Dfc5DEPHJCJ/"
+      },
+      "notified": true,
+      "notified_at": "2026-11-07T19:07:59.945Z"
+    },
+    {
+      "post_id": "TT-005-CAROUSEL",
+      "episode_id": "TT-005",
+      "format": "CAROUSEL",
+      "doi": "10.1371/journal.pone.0117234",
+      "metricool_id": "420683055",
+      "metricool_uuid": "-7609883982228992318",
+      "publication_date": "2026-11-12T10:00:00+01:00",
+      "timezone": "Europe/Vienna",
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "auto_publish": true,
+      "draft": false,
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-7609883982228992318",
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_01.jpg",
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_02.jpg",
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_03.jpg",
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_04.jpg",
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_05.jpg",
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_06.jpg"
+      ],
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-5371632828368620519.jpeg",
+        "https://static.metricool.com/planner/202611/7937614-file-18191197738778871268.jpeg",
+        "https://static.metricool.com/planner/202611/7937614-file-13349111473232479673.jpeg",
+        "https://static.metricool.com/planner/202611/7937614-file-9341800610226332610.jpeg",
+        "https://static.metricool.com/planner/202611/7937614-file-8701982579630452810.jpeg",
+        "https://static.metricool.com/planner/202611/7937614-file-7906712340470617086.jpeg"
+      ],
+      "source_files_sha256": {
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_01.jpg": "971ed1c85523f9e0ba35a8707861ee0053610d8f183055878a1b312d8b537b12",
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_02.jpg": "80fd9459356794a5dfc2cb18d29974deb03b22a98932f320ef781655143b0d6e",
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_03.jpg": "7deab1849321833579f72967dbb38a824e7c4fe2bda7ccb6b721e4e82c4c50a7",
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_04.jpg": "515ccc8ba0a9543fcb17b3349aba9a24f66254bbfb0739ff5f4e77e418858320",
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_05.jpg": "fb375b00419a0d466123cedb65e14c8aff3ddd970a830494567f2b57ab1ca62b",
+        "media/tt-005-wood-frog-winter-survival-3048cc50e4ba_slide_06.jpg": "e152a82e33cce2600f061fc42cf2d77f81b161a3729f2a482967b180bd5ab6fe"
+      },
+      "release_fingerprint": "3048cc50e4baf83085f78b564094ebf80e930b711a55e1733e5f0fe8d05d3c8b",
+      "release_commit": "084bf0e6204bb5eaaf8b34f65a56d7bece84f9f9",
+      "public_verification_run": 42402379631,
+      "schedule_readback_verified": true,
+      "receipt_saved_on": "2026-11-08",
+      "publication_confirmation": "Positive PUBLISHED and public URL. This is the original released six-slide Thursday companion; do not repost.",
+      "duplicate_guard": "TT-005-REEL was separately published on 7 November and must never be repeated; TT-005-CAROUSEL is an intentional different format, publish once on Thursday.",
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.instagram.com/p/DfosskjCpxx/",
+      "publication_eligible": false,
+      "published_confirmed_at": "2026-11-12T09:13:23.510Z",
+      "confirmation_source": "Fresh Metricool full November readback: original ID 420683055 / UUID -7609883982228992318, Instagram PUBLISHED and direct public URL; six hosted carousel images unchanged and autoPublish=true, draft=false.",
+      "publication_notification": {
+        "channel": "automation_result",
+        "status": "reported_in_this_run",
+        "post_id": "TT-005-CAROUSEL",
+        "public_url": "https://www.instagram.com/p/DfosskjCpxx/",
+        "notified_at": "2026-11-12T09:13:23.510Z"
+      },
+      "notified": true,
+      "notified_at": "2026-11-12T09:13:23.510Z"
+    },
+    {
+      "post_id": "TT-006-REEL",
+      "episode_id": "TT-006",
+      "format": "REEL",
+      "doi": "10.1242/jeb.056093",
+      "metricool_id": "421493009",
+      "metricool_uuid": "-5193152553705388348",
+      "publication_date": "2026-11-10T10:00:00+01:00",
+      "timezone": "Europe/Vienna",
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "auto_publish": true,
+      "draft": false,
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-5193152553705388348",
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-006-diving-bell-spider-oxygen-6f32e96cb564.mp4"
+      ],
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-006-diving-bell-spider-oxygen-6f32e96cb564_cover.jpg",
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-17990352752448799481.mp4"
+      ],
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-17429599029430546809.jpeg",
+      "source_files_sha256": {
+        "media/tt-006-diving-bell-spider-oxygen-6f32e96cb564.mp4": "4611a09a346314cb2f81b2696180e4c0334429adf9f500c39e6037a0e919f847",
+        "media/tt-006-diving-bell-spider-oxygen-6f32e96cb564_cover.jpg": "2a68f1bbeb377d7265fd5176fb788a0e9e2e4054e530908b14670b1ea9e6f58e"
+      },
+      "release_fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df",
+      "release_commit": "c120ffb735194f646b860a59f02e683c003b6171",
+      "public_verification_run": 42585216267,
+      "receipt_saved_on": "2026-11-09T08:28:58.049309+00:00",
+      "schedule_readback_verified": true,
+      "publication_eligible": true,
+      "publication_confirmation": "PENDING future reservation after owner-authorized media replacement; not yet PUBLISHED. Require positive provider publication and live URL after due time.",
+      "duplicate_guard": "Stable ID/DOI and provider UUID reserved. Do not submit again or use TT004/TT005 to fill this slot.",
+      "media_replacement_history": [
+        {
+          "metricool_id": "420702555",
+          "release_fingerprint": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
+          "release_commit": "0d336f8035756b0c4f831806c3e08f5d968167f2",
+          "source_media_urls": [
+            "https://akshaymohan16.github.io/toxic-tales-library/media/tt-006-diving-bell-spider-oxygen-d34a246d6540.mp4"
+          ],
+          "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-006-diving-bell-spider-oxygen-d34a246d6540_cover.jpg",
+          "source_files_sha256": {
+            "media/tt-006-diving-bell-spider-oxygen-d34a246d6540.mp4": "be7ccc16374b8e1951669da564f8c65de9a495550549e4b56c08aaf7ddaccb60",
+            "media/tt-006-diving-bell-spider-oxygen-d34a246d6540_cover.jpg": "332ae3063461fe2c684764ca9e051e0b7b48b2332d12facef50f99fe50a50404"
+          },
+          "metricool_media_urls": [
+            "https://static.metricool.com/planner/202611/7937614-file-7041497825826372728.mp4"
+          ],
+          "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-562503526555367785.jpeg",
+          "public_verification_run": 42480206394,
+          "replaced_at": "2026-11-09T08:28:58.049309+00:00",
+          "reason": "Explicit owner request for better animation; original UUID/time retained"
+        }
+      ],
+      "metricool_media_sha256": {
+        "https://static.metricool.com/planner/202611/7937614-file-17990352752448799481.mp4": "4611a09a346314cb2f81b2696180e4c0334429adf9f500c39e6037a0e919f847"
+      },
+      "metricool_cover_sha256": "2a68f1bbeb377d7265fd5176fb788a0e9e2e4054e530908b14670b1ea9e6f58e",
+      "metricool_hosted_bytes_verified": true,
+      "provider_readback_checked_at": "2026-11-09T08:26:13.704Z",
+      "replacement_authorization": "automation/motion-replacement-2026-11-09.json",
+      "provider_readback": {
+        "id": 421493009,
+        "uuid": "-5193152553705388348",
+        "text": "How does a spider breathe underwater?\n\nThe diving bell spider (*Argyroneta aquatica*) builds a web-supported pocket of air under freshwater. It replenishes the pocket from the surface, but the remarkable part is what happens between those trips: oxygen dissolved in the surrounding water can diffuse into the bell. That makes the air-water boundary a physical gill.\n\nSeymour and Hetz measured oxygen and gas conductance in laboratory diving bells. Many bells supplied enough oxygen for resting spiders in warm, still aquarium water. But nitrogen leaves the chamber, so it gradually shrinks and the spider still needs fresh air eventually. These tests do not establish oxygen supply during all activity or in every natural habitat.\n\nTT-006 | Seymour & Hetz (2011), Journal of Experimental Biology, DOI: 10.1242/jeb.056093\nFull source, methods, limitations and media credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-006.html\n\nReal spider reference photographs (not the experiment): bykovskii and Lennart Lennuk, CC BY 4.0, cropped/graded; source/licence links on research page. Gas-transfer and measurement sequences are original conceptual illustrations, not recorded data. Synthetic narration. Official Toxic Tales logo.\n\n#ToxicTales #FreshwaterEcology #WaterSpider #AnimalPhysiology #ScienceCommunication",
+        "firstCommentText": "",
+        "media": [
+          "https://static.metricool.com/planner/202611/7937614-file-17990352752448799481.mp4"
+        ],
+        "autoPublish": true,
+        "draft": false,
+        "publicationDate": {
+          "dateTime": "2026-11-10T10:00:00",
+          "timezone": "Europe/Vienna"
+        },
+        "providers": [
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "instagramData": {
+          "autoPublish": true,
+          "type": "REEL",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "mediaAltText": [
+          null
+        ],
+        "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-17429599029430546809.jpeg"
+      },
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.instagram.com/reel/Dfji4yhnB6c/",
+      "published_confirmed_at": "2026-11-10T09:10:52.163Z",
+      "confirmation_source": "Fresh Metricool full-month readback confirms original UUID/numeric ID, expected motion-file hosted URL, provider PUBLISHED and publicUrl. Scheduled time is not an observed exact publication timestamp.",
+      "scheduled_time_is_not_actual_post_time": true,
+      "publication_notification": {
+        "channel": "scheduled_automation_result",
+        "status": "emitted_in_this_run",
+        "notified_at": "2026-11-10T09:10:52.163Z",
+        "post_id": "TT-006-REEL",
+        "public_url": "https://www.instagram.com/reel/Dfji4yhnB6c/",
+        "doi": "10.1242/jeb.056093"
+      },
+      "notified": true,
+      "notified_at": "2026-11-10T09:10:52.163Z"
+    },
+    {
+      "post_id": "TT-007-REEL",
+      "episode_id": "TT-007",
+      "format": "REEL",
+      "doi": "10.1016/j.anbehav.2022.08.013",
+      "metricool_id": "426842509",
+      "metricool_uuid": "-6872348896682359981",
+      "publication_date": "2026-11-17T10:00:00+01:00",
+      "timezone": "Europe/Vienna",
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "auto_publish": true,
+      "draft": false,
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6872348896682359981",
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-007-bumblebees-play-with-balls-5e2a2773aacd.mp4"
+      ],
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-007-bumblebees-play-with-balls-5e2a2773aacd_cover.jpg",
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-16303245207478276113.mp4"
+      ],
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-3332585606843713405.jpeg",
+      "source_files_sha256": {
+        "media/tt-007-bumblebees-play-with-balls-5e2a2773aacd.mp4": "0718599755be4c84f573fa025077cd99ce39bf19ccfb070c2c3ac771b9bccb21",
+        "media/tt-007-bumblebees-play-with-balls-5e2a2773aacd_cover.jpg": "e135568b0dca854ba3c6ae22ecd426387d2999f2d7b9647c832d755c12b2c934"
+      },
+      "release_fingerprint": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1",
+      "release_commit": "c120ffb735194f646b860a59f02e683c003b6171",
+      "public_verification_run": 42585216267,
+      "receipt_saved_on": "2026-11-09T08:28:58.049309+00:00",
+      "schedule_readback_verified": true,
+      "publication_eligible": true,
+      "publication_confirmation": "Fresh full-month Metricool PUBLISHED receipt and explicit public permalink after the 17 Nov 10:00 Vienna slot; original UUID and SHA-verified approved release preserved.",
+      "duplicate_guard": "Distinct-paper TT-007-REEL reserved. Never resubmit while scheduled, and never substitute TT-003.",
+      "media_replacement_history": [
+        {
+          "metricool_id": "420703487",
+          "release_fingerprint": "828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db",
+          "release_commit": "0d336f8035756b0c4f831806c3e08f5d968167f2",
+          "source_media_urls": [
+            "https://akshaymohan16.github.io/toxic-tales-library/media/tt-007-bumblebees-play-with-balls-828b394d3351.mp4"
+          ],
+          "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-007-bumblebees-play-with-balls-828b394d3351_cover.jpg",
+          "source_files_sha256": {
+            "media/tt-007-bumblebees-play-with-balls-828b394d3351.mp4": "3f8245a5dec4bec9b30e6f514ba46e8657bf91835a7036d19bfe989f7604a495",
+            "media/tt-007-bumblebees-play-with-balls-828b394d3351_cover.jpg": "38d68de52a9711a5979df7baac1dff23698f1762fad2d2d342b7bc577c8d9f9c"
+          },
+          "metricool_media_urls": [
+            "https://static.metricool.com/planner/202611/7937614-file-6134241904496776178.mp4"
+          ],
+          "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-10393480036313352400.jpeg",
+          "public_verification_run": 42480206394,
+          "replaced_at": "2026-11-09T08:28:58.049309+00:00",
+          "reason": "Explicit owner request for better animation; original UUID/time retained"
+        }
+      ],
+      "metricool_media_sha256": {
+        "https://static.metricool.com/planner/202611/7937614-file-16303245207478276113.mp4": "0718599755be4c84f573fa025077cd99ce39bf19ccfb070c2c3ac771b9bccb21"
+      },
+      "metricool_cover_sha256": "e135568b0dca854ba3c6ae22ecd426387d2999f2d7b9647c832d755c12b2c934",
+      "metricool_hosted_bytes_verified": true,
+      "provider_readback_checked_at": "2026-11-17T16:56:19.742Z",
+      "replacement_authorization": "automation/motion-replacement-2026-11-09.json",
+      "provider_readback": {
+        "id": 426842509,
+        "publicationDate": {
+          "dateTime": "2026-11-17T10:00:00",
+          "timezone": "Europe/Vienna"
+        },
+        "creationDate": {
+          "dateTime": "2026-11-13T12:41:00",
+          "timezone": "Europe/Vienna"
+        },
+        "text": "Do bumblebees play? Look at these rolling balls.\n\nIn a laboratory, *Bombus terrestris* repeatedly manipulated small wooden balls, even though no nectar or pollen reward was attached. Researchers provided a clear route to food, so bees did not need to move the objects to feed. Younger bees rolled balls more often than older bees in a separate test. In another experiment, a chamber colour previously associated with rolling influenced their later choices, even when the balls were absent.\n\nThese findings support interpreting the behaviour as play-like or intrinsically rewarding. They do NOT directly establish how a bee feels, whether the activity improves future skills, or how often wild bees do this.\n\nTT-007 | Galpayage Dona et al. (2022), Animal Behaviour 194:239–251. DOI: 10.1016/j.anbehav.2022.08.013\nMethods, evidence and full visual credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-007.html\n\nOriginal experimental footage: Galpayage Dona and colleagues, CC BY 4.0, edited from Supplementary Video S1; natural-history photos Marco Almbauer and Aethonatic, CC0, reference only. Conceptual diagrams are original illustrations. The 11-of-13 young-bee count comes from the paper's separate laboratory age test; its animation reveals that fixed result, not a measured time series. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Bumblebees #InsectBehaviour #AnimalPlay #Ecology #ScienceCommunication",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df1kUbZlb21/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df1kUbZlb21/",
+            "detailedStatus": "Published"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202611/7937614-file-16303245207478276113.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-3332585606843713405.jpeg",
+        "imageVariants": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "REEL",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-6872348896682359981",
+        "brandTags": []
+      },
+      "schedule_history": [
+        {
+          "date": "2026-11-14T10:00:00+01:00",
+          "metricool_id": "421493462",
+          "changed_at": "2026-11-13T11:42:42.179Z",
+          "reason": "Owner requested Tuesday/Friday cadence"
+        }
+      ],
+      "exact_bytes_reverified_at": "2026-11-13T11:42:42.179Z",
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.instagram.com/reel/Df1kUbZlb21/",
+      "publication_confirmed_at": "2026-11-17T16:56:19.742Z",
+      "published_confirmed_at": "2026-11-17T16:56:19.742Z",
+      "confirmation_source": "Authenticated Metricool brand 7937614, original platform UUID, media URL, publicUrl, autoPublish and title/metadata readback.",
+      "live_verification": {
+        "decision": "provider_public_permalink_confirmed",
+        "url": "https://www.instagram.com/reel/Df1kUbZlb21/",
+        "checked_at": "2026-11-17T16:56:19.742Z",
+        "verification_basis": "Provider PUBLISHED with explicit Instagram reel publicUrl and exact authorized brand account, caption/DOI and SHA-verified hosted release; direct unauthenticated page playback was unavailable and is not claimed."
+      },
+      "notified": true,
+      "notified_at": "2026-11-17T16:56:19.742Z",
+      "publication_notification": {
+        "status": "reported_in_chat",
+        "channel": "scheduled_automation_result",
+        "notified_at": "2026-11-17T16:56:19.742Z",
+        "post_id": "TT-007-REEL",
+        "public_url": "https://www.instagram.com/reel/Df1kUbZlb21/"
+      }
+    },
+    {
+      "episode_id": "TT-006",
+      "doi": "10.1242/jeb.056093",
+      "publication_date": "2026-11-10T10:00:00+01:00",
+      "timezone": "Europe/Vienna",
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-006-diving-bell-spider-oxygen-6f32e96cb564.mp4"
+      ],
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-006-diving-bell-spider-oxygen-6f32e96cb564_cover.jpg",
+      "source_files_sha256": {
+        "media/tt-006-diving-bell-spider-oxygen-6f32e96cb564.mp4": "4611a09a346314cb2f81b2696180e4c0334429adf9f500c39e6037a0e919f847",
+        "media/tt-006-diving-bell-spider-oxygen-6f32e96cb564_cover.jpg": "2a68f1bbeb377d7265fd5176fb788a0e9e2e4054e530908b14670b1ea9e6f58e"
+      },
+      "release_fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df",
+      "release_commit": "c120ffb735194f646b860a59f02e683c003b6171",
+      "public_verification_run": 42585216267,
+      "post_id": "TT-006-YOUTUBE-SHORT",
+      "platform": "youtube",
+      "format": "SHORT",
+      "source_post_id": "TT-006-REEL",
+      "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+      "metricool_id": "421493849",
+      "metricool_uuid": "4422280930322105807",
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "auto_publish": true,
+      "draft": false,
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=4422280930322105807",
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-7730075875026868133.mp4"
+      ],
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-7583590252245201324.jpeg",
+      "youtube": {
+        "title": "How a Diving Bell Spider Breathes Underwater | Toxic Tales",
+        "description": "How does a spider breathe underwater?\n\nThe diving bell spider (Argyroneta aquatica) builds a silk-supported pocket of air among freshwater plants. Oxygen dissolved in the surrounding water can diffuse into this bell, helping it act as a physical gill.\n\nSeymour and Hetz measured oxygen and gas exchange in laboratory diving bells. Many bells supplied enough oxygen for resting spiders in warm, still aquarium water. But nitrogen escapes, the chamber shrinks, and the spider eventually needs fresh surface air. These results do not establish oxygen supply for every active spider or every natural habitat.\n\nTT-006 | Original research:\nSeymour, R. S. & Hetz, S. K. (2011). The diving bell and the spider: the physical gill of Argyroneta aquatica. Journal of Experimental Biology 214:2175–2181.\nhttps://doi.org/10.1242/jeb.056093\n\nFull sources, methods, limitations and media credits:\nhttps://akshaymohan16.github.io/toxic-tales-library/sources/tt-006.html\n\nVisual credits:\n• Underwater female with air bubble — bykovskii, CC BY 4.0:\nhttps://commons.wikimedia.org/wiki/File:Argyroneta_aquatica_female_with_bubble.jpeg\n• Water spider and freshwater crustacean — Lennart Lennuk, CC BY 4.0:\nhttps://commons.wikimedia.org/wiki/File:Waterspider_(Argyroneta_aquatica)_and_freshwater_crustacean_(Asellus_aquaticus).jpg\nLicence for both: https://creativecommons.org/licenses/by/4.0/\nPhotographs cropped, colour graded and animated for portrait presentation. They are wildlife reference images, not photographs of the experiment. Gas-transfer and measurement sequences are original conceptual illustrations, not recorded measurements. Synthetic narration. Official Toxic Tales logo.\n\n#ToxicTales #FreshwaterEcology #DivingBellSpider #Science #Shorts",
+        "made_for_kids": false,
+        "privacy": "PUBLIC",
+        "is_ai_generated": true,
+        "review_decision": "pass",
+        "reviewed_release_fingerprint": "6f32e96cb5649003ce6db0ae9a79164cab5aacbc7d9027449d79cf9573f9d1df",
+        "source_video_sha256": "4611a09a346314cb2f81b2696180e4c0334429adf9f500c39e6037a0e919f847",
+        "rights_review_decision": "pass",
+        "audience_review": "Episode explicitly targets curious non-specialist adults; general scientific reporting, not child-directed.",
+        "review_basis": "Fresh review against the exact motion export 4611a09a346314cb2f81b2696180e4c0334429adf9f500c39e6037a0e919f847, current source hash 9694ea7ccfb7e3d7e74c6298971993cc6c5ef13ecc3d0a9c22f1913f720ec1b0 and original Seymour/Hetz paper pp.2175-2181. Unchanged title/description correctly state resting spiders, warm still aquarium water, nitrogen loss and limits. Both actually used CC BY 4.0 photographs retain creator/source/licence/adaptation credits; conceptual diagrams and synthetic narration are disclosed. Original logo permission and OFL fonts remain valid. Audience/privacy and synthetic-media settings remain unchanged. Exact caption/ASR and encoded-frame review passed; no direct listening claimed.",
+        "reviewed_at": "2026-11-09T08:18:01.862031Z",
+        "metadata_sha256": "df8eab9b31aa20c78f893b5c21f14a7a1eeef4ca307169f5a5a999c1ff8fa033",
+        "reviewer": "Codex independent exact-export review / replacement_review"
+      },
+      "provider_readback": {
+        "id": 421493849,
+        "uuid": "4422280930322105807",
+        "publicationDate": {
+          "dateTime": "2026-11-10T10:00:00",
+          "timezone": "Europe/Vienna"
+        },
+        "text": "How does a spider breathe underwater?\n\nThe diving bell spider (Argyroneta aquatica) builds a silk-supported pocket of air among freshwater plants. Oxygen dissolved in the surrounding water can diffuse into this bell, helping it act as a physical gill.\n\nSeymour and Hetz measured oxygen and gas exchange in laboratory diving bells. Many bells supplied enough oxygen for resting spiders in warm, still aquarium water. But nitrogen escapes, the chamber shrinks, and the spider eventually needs fresh surface air. These results do not establish oxygen supply for every active spider or every natural habitat.\n\nTT-006 | Original research:\nSeymour, R. S. & Hetz, S. K. (2011). The diving bell and the spider: the physical gill of Argyroneta aquatica. Journal of Experimental Biology 214:2175–2181.\nhttps://doi.org/10.1242/jeb.056093\n\nFull sources, methods, limitations and media credits:\nhttps://akshaymohan16.github.io/toxic-tales-library/sources/tt-006.html\n\nVisual credits:\n• Underwater female with air bubble — bykovskii, CC BY 4.0:\nhttps://commons.wikimedia.org/wiki/File:Argyroneta_aquatica_female_with_bubble.jpeg\n• Water spider and freshwater crustacean — Lennart Lennuk, CC BY 4.0:\nhttps://commons.wikimedia.org/wiki/File:Waterspider_(Argyroneta_aquatica)_and_freshwater_crustacean_(Asellus_aquaticus).jpg\nLicence for both: https://creativecommons.org/licenses/by/4.0/\nPhotographs cropped, colour graded and animated for portrait presentation. They are wildlife reference images, not photographs of the experiment. Gas-transfer and measurement sequences are original conceptual illustrations, not recorded measurements. Synthetic narration. Official Toxic Tales logo.\n\n#ToxicTales #FreshwaterEcology #DivingBellSpider #Science #Shorts",
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "X333C5Dcxxo",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/X333C5Dcxxo",
+            "detailedStatus": "Published"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202611/7937614-file-7730075875026868133.mp4"
+        ],
+        "youtubeData": {
+          "title": "How a Diving Bell Spider Breathes Underwater | Toxic Tales",
+          "type": "short",
+          "privacy": "public",
+          "madeForKids": false,
+          "isAiGeneratedContent": true,
+          "notifySubscribers": true
+        },
+        "autoPublish": true,
+        "draft": false
+      },
+      "provider_readback_checked_at": "2026-11-10T09:13:49.656Z",
+      "schedule_readback_verified": true,
+      "publication_eligible": true,
+      "receipt_saved_on": "2026-11-09T08:28:58.049309+00:00",
+      "metricool_hosted_bytes_verified": true,
+      "metricool_media_sha256": {
+        "https://static.metricool.com/planner/202611/7937614-file-7730075875026868133.mp4": "4611a09a346314cb2f81b2696180e4c0334429adf9f500c39e6037a0e919f847"
+      },
+      "metricool_cover_sha256": "2a68f1bbeb377d7265fd5176fb788a0e9e2e4054e530908b14670b1ea9e6f58e",
+      "publication_confirmation": "PENDING future reservation after owner-authorized media replacement; not yet PUBLISHED. Require positive provider publication and live URL after due time.",
+      "duplicate_guard": "One authorized YouTube copy of Tuesday source; never resubmit this UUID or repeat this source on YouTube. Instagram receipt remains independent and unchanged.",
+      "media_replacement_history": [
+        {
+          "metricool_id": "420844339",
+          "release_fingerprint": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
+          "release_commit": "0d336f8035756b0c4f831806c3e08f5d968167f2",
+          "source_media_urls": [
+            "https://akshaymohan16.github.io/toxic-tales-library/media/tt-006-diving-bell-spider-oxygen-d34a246d6540.mp4"
+          ],
+          "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-006-diving-bell-spider-oxygen-d34a246d6540_cover.jpg",
+          "source_files_sha256": {
+            "media/tt-006-diving-bell-spider-oxygen-d34a246d6540.mp4": "be7ccc16374b8e1951669da564f8c65de9a495550549e4b56c08aaf7ddaccb60",
+            "media/tt-006-diving-bell-spider-oxygen-d34a246d6540_cover.jpg": "332ae3063461fe2c684764ca9e051e0b7b48b2332d12facef50f99fe50a50404"
+          },
+          "metricool_media_urls": [
+            "https://static.metricool.com/planner/202611/7937614-file-1479431808781019617.mp4"
+          ],
+          "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-14326156854470616673.jpeg",
+          "public_verification_run": 42480206394,
+          "replaced_at": "2026-11-09T08:28:58.049309+00:00",
+          "reason": "Explicit owner request for better animation; original UUID/time retained"
+        }
+      ],
+      "replacement_authorization": "automation/motion-replacement-2026-11-09.json",
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
+      "published_confirmed_at": "2026-11-10T09:10:52.163Z",
+      "confirmation_source": "Fresh Metricool full-month readback confirms original UUID/numeric ID, expected motion-file hosted URL, provider PUBLISHED and publicUrl. Scheduled time is not an observed exact publication timestamp.",
+      "scheduled_time_is_not_actual_post_time": true,
+      "youtube_video_id": "X333C5Dcxxo",
+      "youtube_title": "How a Diving Bell Spider Breathes Underwater | Toxic Tales",
+      "youtube_privacy": "public",
+      "youtube_made_for_kids": false,
+      "youtube_is_ai_generated": true,
+      "live_verification": {
+        "decision": "pass",
+        "checked_at": "2026-11-10T09:16:05.767Z",
+        "url": "https://www.youtube.com/shorts/X333C5Dcxxo",
+        "channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+        "video_id": "X333C5Dcxxo",
+        "title": "How a Diving Bell Spider Breathes Underwater | Toxic Tales",
+        "public_oembed_title_match": true,
+        "public_oembed_author_name": "Toxic Tales",
+        "public_oembed_author_url": "https://www.youtube.com/@toxic_tales_eco",
+        "public_channel_page_id_match": true,
+        "independent_public_metadata_workflow": "https://github.com/akshaymohan16/toxic-tales-library/actions/runs/42789107581",
+        "verification_basis": "Independent GitHub free runner fetched publicly accessible YouTube oEmbed video metadata, matched video title, author channel handle and channel page ID; provider simultaneously confirmed PUBLISHED/public URL on exact scheduled UUID with previously verified motion media SHA. Video playback/audio were not independently observed."
+      },
+      "notified": true,
+      "notified_at": "2026-11-10T09:16:05.767Z",
+      "publication_notification": {
+        "channel": "scheduled_automation_result",
+        "status": "emitted_in_this_run",
+        "notified_at": "2026-11-10T09:16:05.767Z",
+        "post_id": "TT-006-YOUTUBE-SHORT",
+        "public_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
+        "doi": "10.1242/jeb.056093"
+      }
+    },
+    {
+      "episode_id": "TT-007",
+      "doi": "10.1016/j.anbehav.2022.08.013",
+      "publication_date": "2026-11-17T10:00:00+01:00",
+      "timezone": "Europe/Vienna",
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-007-bumblebees-play-with-balls-5e2a2773aacd.mp4"
+      ],
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-007-bumblebees-play-with-balls-5e2a2773aacd_cover.jpg",
+      "source_files_sha256": {
+        "media/tt-007-bumblebees-play-with-balls-5e2a2773aacd.mp4": "0718599755be4c84f573fa025077cd99ce39bf19ccfb070c2c3ac771b9bccb21",
+        "media/tt-007-bumblebees-play-with-balls-5e2a2773aacd_cover.jpg": "e135568b0dca854ba3c6ae22ecd426387d2999f2d7b9647c832d755c12b2c934"
+      },
+      "release_fingerprint": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1",
+      "release_commit": "c120ffb735194f646b860a59f02e683c003b6171",
+      "public_verification_run": 42585216267,
+      "post_id": "TT-007-YOUTUBE-SHORT",
+      "platform": "youtube",
+      "format": "SHORT",
+      "source_post_id": "TT-007-REEL",
+      "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+      "metricool_id": "426850040",
+      "metricool_uuid": "-6561054799073883973",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6561054799073883973",
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "auto_publish": true,
+      "draft": false,
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-8941215035910186238.mp4"
+      ],
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-9945659240576538884.jpeg",
+      "metricool_media_sha256": {
+        "https://static.metricool.com/planner/202611/7937614-file-8941215035910186238.mp4": "0718599755be4c84f573fa025077cd99ce39bf19ccfb070c2c3ac771b9bccb21"
+      },
+      "metricool_cover_sha256": "e135568b0dca854ba3c6ae22ecd426387d2999f2d7b9647c832d755c12b2c934",
+      "metricool_hosted_bytes_verified": true,
+      "provider_readback": {
+        "id": 426850040,
+        "publicationDate": {
+          "dateTime": "2026-11-17T10:00:00",
+          "timezone": "Europe/Vienna"
+        },
+        "creationDate": {
+          "dateTime": "2026-11-13T12:48:00",
+          "timezone": "Europe/Vienna"
+        },
+        "text": "Why would a bumblebee roll a wooden ball when there is no food reward?\n\nIn laboratory experiments, Bombus terrestris bumblebees repeatedly rolled balls despite having a clear route to food. In a separate age test, younger bees rolled more often. A colour-chamber experiment also suggested that the activity itself could be rewarding.\n\nThe researchers interpreted the behaviour as play-like. These laboratory tests do not directly reveal how bees feel or establish how often wild bees do this. The age and colour tests used separate experimental groups.\n\nTT-007 | Original research:\nGalpayage Dona et al. (2022). Do bumble bees play? Animal Behaviour 194:239-251.\nhttps://doi.org/10.1016/j.anbehav.2022.08.013\n\nFull sources, methods, limitations and media credits:\nhttps://akshaymohan16.github.io/toxic-tales-library/sources/tt-007.html\n\nVisual credits:\nActual laboratory footage: Supplementary Video S1 by Hiruni Samadi Galpayage Dona, Cwyn Solvi, Amelia Kowalewska, Kaarle Mäkelä, HaDi MaBouDi and Lars Chittka; CC BY 4.0.\nhttps://commons.wikimedia.org/wiki/File:Bombus_terrestris_rolling_ball.webm\nLicence: https://creativecommons.org/licenses/by/4.0/\nThe source clip shows ball rolling at half speed. Excerpts were sampled, resized and cropped for the portrait presentation.\n\nBumblebee head reference photograph: Marco Almbauer, CC0 1.0.\nhttps://commons.wikimedia.org/wiki/File:Bombus_terrestris_head_in_detail.jpg\nBumblebee on flowers reference photograph: Aethonatic, CC0 1.0.\nhttps://commons.wikimedia.org/wiki/File:Bombus_terrestris_-_5_June_2026.jpg\nCC0: https://creativecommons.org/publicdomain/zero/1.0/\nPhotographs are cropped, colour graded and animated species references, not the study animals. Diagrams are original conceptual illustrations. Synthetic narration. Official Toxic Tales logo.\n\n#ToxicTales #Bumblebees #AnimalBehaviour #Science #Shorts",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "Dh6xDjEV1fg",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/Dh6xDjEV1fg",
+            "detailedStatus": "Published"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202611/7937614-file-8941215035910186238.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-9945659240576538884.jpeg",
+        "imageVariants": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Do Bumblebees Play? Balls Without a Food Reward | Toxic Tales",
+          "type": "short",
+          "privacy": "public",
+          "madeForKids": false,
+          "isAiGeneratedContent": true,
+          "notifySubscribers": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-6561054799073883973",
+        "brandTags": []
+      },
+      "provider_readback_checked_at": "2026-11-17T16:56:19.742Z",
+      "schedule_readback_verified": true,
+      "publication_eligible": true,
+      "receipt_saved_on": "2026-11-13T11:49:09.201Z",
+      "youtube": {
+        "title": "Do Bumblebees Play? Balls Without a Food Reward | Toxic Tales",
+        "description": "Why would a bumblebee roll a wooden ball when there is no food reward?\n\nIn laboratory experiments, Bombus terrestris bumblebees repeatedly rolled balls despite having a clear route to food. In a separate age test, younger bees rolled more often. A colour-chamber experiment also suggested that the activity itself could be rewarding.\n\nThe researchers interpreted the behaviour as play-like. These laboratory tests do not directly reveal how bees feel or establish how often wild bees do this. The age and colour tests used separate experimental groups.\n\nTT-007 | Original research:\nGalpayage Dona et al. (2022). Do bumble bees play? Animal Behaviour 194:239-251.\nhttps://doi.org/10.1016/j.anbehav.2022.08.013\n\nFull sources, methods, limitations and media credits:\nhttps://akshaymohan16.github.io/toxic-tales-library/sources/tt-007.html\n\nVisual credits:\nActual laboratory footage: Supplementary Video S1 by Hiruni Samadi Galpayage Dona, Cwyn Solvi, Amelia Kowalewska, Kaarle Mäkelä, HaDi MaBouDi and Lars Chittka; CC BY 4.0.\nhttps://commons.wikimedia.org/wiki/File:Bombus_terrestris_rolling_ball.webm\nLicence: https://creativecommons.org/licenses/by/4.0/\nThe source clip shows ball rolling at half speed. Excerpts were sampled, resized and cropped for the portrait presentation.\n\nBumblebee head reference photograph: Marco Almbauer, CC0 1.0.\nhttps://commons.wikimedia.org/wiki/File:Bombus_terrestris_head_in_detail.jpg\nBumblebee on flowers reference photograph: Aethonatic, CC0 1.0.\nhttps://commons.wikimedia.org/wiki/File:Bombus_terrestris_-_5_June_2026.jpg\nCC0: https://creativecommons.org/publicdomain/zero/1.0/\nPhotographs are cropped, colour graded and animated species references, not the study animals. Diagrams are original conceptual illustrations. Synthetic narration. Official Toxic Tales logo.\n\n#ToxicTales #Bumblebees #AnimalBehaviour #Science #Shorts",
+        "made_for_kids": false,
+        "privacy": "PUBLIC",
+        "is_ai_generated": true,
+        "review_decision": "pass",
+        "reviewed_release_fingerprint": "5e2a2773aacd80463d73f23015650176884ab8d8dd737e7cf71ebf466c7a73e1",
+        "source_video_sha256": "0718599755be4c84f573fa025077cd99ce39bf19ccfb070c2c3ac771b9bccb21",
+        "rights_review_decision": "pass",
+        "audience_review": "General science reporting for curious adults, as specified by the existing episode audience. The subject of animal play does not itself make this child-directed content.",
+        "review_basis": "Independent destination metadata and transferable-rights review against episodes/tt-007.json and the existing exact frozen release in quality/releases.json. Title and description retain no food reward, laboratory setting, separate age and colour experiments, play-like interpretation and unmeasured feelings/wild prevalence. Fresh primary Wikimedia source-page checks confirm six-author study footage under CC BY 4.0 and Marco Almbauer/Aethonatic reference photographs under CC0 1.0; these licences allow redistribution and adaptation on YouTube with the stated credits, licence links and changes. The source video's half-speed description is explicitly retained. Existing release records cover original diagrams, owner logo, synthetic narration and OFL fonts; no new audio or video review is claimed. Public MP4 byte verification is performed separately by the publishing operator. This review authorizes these destination metadata for the already released exact bytes, not any changed export.",
+        "reviewed_at": "2026-11-13T11:47:29.4969257Z",
+        "reviewer": "Codex independent YouTube metadata and rights review / verify_metricool_limits",
+        "listening_review_claimed": false,
+        "moving_playback_review_claimed": false,
+        "metadata_sha256": "7dc6869876ee83364fad91e635b2c69bd52c4539a7c613d417def701a95edbb2"
+      },
+      "publication_confirmation": "Fresh full-month Metricool PUBLISHED receipt and explicit public permalink after the 17 Nov 10:00 Vienna slot; original UUID and SHA-verified approved release preserved.",
+      "duplicate_guard": "Exact Tuesday TT007 video already reserved on this YouTube UUID; never create a second copy.",
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.youtube.com/shorts/Dh6xDjEV1fg",
+      "publication_confirmed_at": "2026-11-17T16:56:19.742Z",
+      "published_confirmed_at": "2026-11-17T16:56:19.742Z",
+      "confirmation_source": "Authenticated Metricool brand 7937614, original platform UUID, media URL, publicUrl, autoPublish and title/metadata readback.",
+      "youtube_video_id": "Dh6xDjEV1fg",
+      "live_verification": {
+        "decision": "pass",
+        "url": "https://www.youtube.com/shorts/Dh6xDjEV1fg",
+        "video_id": "Dh6xDjEV1fg",
+        "channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+        "title": "Do Bumblebees Play? Balls Without a Food Reward | Toxic Tales",
+        "checked_at": "2026-11-17T16:54:38.291500Z",
+        "verification_basis": "Independent free GitHub Actions public YouTube oEmbed returned exact approved title, Toxic Tales @toxic_tales_eco as public author and linked public channel page containing pinned channel ID; yt-dlp was bot-blocked and no video playback/audio is claimed. Authenticated Metricool independently returned PUBLISHED on exact UUID and a public Shorts URL. The approved video and its provider-hosted MP4 were previously SHA-matched.",
+        "public_oembed_title_match": true,
+        "public_oembed_author_url": "https://www.youtube.com/@toxic_tales_eco",
+        "public_channel_page_id_match": true,
+        "independent_public_metadata_workflow": "https://github.com/akshaymohan16/toxic-tales-library/actions/runs/44131070810"
+      },
+      "notified": true,
+      "notified_at": "2026-11-17T16:56:19.742Z",
+      "publication_notification": {
+        "status": "reported_in_chat",
+        "channel": "scheduled_automation_result",
+        "notified_at": "2026-11-17T16:56:19.742Z",
+        "post_id": "TT-007-YOUTUBE-SHORT",
+        "public_url": "https://www.youtube.com/shorts/Dh6xDjEV1fg"
+      }
+    },
+    {
+      "post_id": "TT-008-REEL",
+      "episode_id": "TT-008",
+      "platform": "instagram",
+      "format": "REEL",
+      "doi": "10.1038/srep27523",
+      "publication_date": "2026-11-13T14:10:00+01:00",
+      "timezone": "Europe/Vienna",
+      "metricool_id": "426945585",
+      "metricool_uuid": "3555893508354493617",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=3555893508354493617",
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "auto_publish": true,
+      "draft": false,
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-008-archerfish-human-faces-1056e28596f7.mp4"
+      ],
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg",
+      "source_files_sha256": {
+        "media/tt-008-archerfish-human-faces-1056e28596f7.mp4": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb",
+        "media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d"
+      },
+      "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+      "release_commit": "f8f101d6dbfc821536015af5704b756740529b31",
+      "public_verification_run": 43430953217,
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-4909512262506062715.mp4"
+      ],
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-4474475958381322205.jpeg",
+      "metricool_media_sha256": {
+        "https://static.metricool.com/planner/202611/7937614-file-4909512262506062715.mp4": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb"
+      },
+      "metricool_cover_sha256": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d",
+      "metricool_hosted_bytes_verified": true,
+      "exact_bytes_reverified_at": "2026-11-13T13:10:28.847503+00:00",
+      "provider_readback": {
+        "id": 426945585,
+        "publicationDate": {
+          "dateTime": "2026-11-13T14:10:00",
+          "timezone": "Europe/Vienna"
+        },
+        "creationDate": {
+          "dateTime": "2026-11-13T14:08:00",
+          "timezone": "Europe/Vienna"
+        },
+        "text": "A fish that spits its answer: can archerfish tell human faces apart?\n\nIn two laboratory experiments, separate groups of four Toxotes chatareus learned which face image earned food and which to avoid. During testing, the familiar unrewarded face was paired with one new face at a time, drawn from a pool of 44 images in the first experiment. The fish discriminated above chance.\n\nFour different fish also succeeded with 18 novel faces after colour, mean brightness and the outer head outline were standardized. Only TWO faces appeared per trial. The results show learned image discrimination; they do not demonstrate that fish recognise their owners or use the same cues as humans.\n\nTT-008 | Newport, Wallis, Reshitnyk & Siebeck (2016), Scientific Reports 6:27523. DOI: 10.1038/srep27523\nPaper, methods, limitations and full credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-008.html\n\nArcherfish reference photograph: Reichenthal, Ben-Tov & Segev (2018), Front. Neural Circuits 12:18, Fig.1A, CC BY 4.0, cropped; from a separate study (10.3389/fncir.2018.00018). Original conceptual task illustrations, not actual face-test footage or stimuli. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Archerfish #AnimalBehaviour #FishCognition #Ecology #ScienceCommunication",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/DfrtQD-EZiG/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/DfrtQD-EZiG/",
+            "detailedStatus": "Published"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202611/7937614-file-4909512262506062715.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-4474475958381322205.jpeg",
+        "imageVariants": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "REEL",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "3555893508354493617",
+        "brandTags": []
+      },
+      "provider_readback_checked_at": "2026-11-13T13:13:56.763Z",
+      "schedule_readback_verified": true,
+      "publication_eligible": false,
+      "receipt_saved_on": "2026-11-13T13:13:56.763Z",
+      "owner_authorization": "automation/config.json#owner_authorized_one_off_slots",
+      "publication_confirmation": "Provider PUBLISHED and separate live verification confirmed.",
+      "duplicate_guard": "This platform UUID already owns the exact TT-008 one-off; never create another copy.",
+      "public_url": "https://www.instagram.com/reel/DfrtQD-EZiG/",
+      "live_verification": {
+        "decision": "pass",
+        "url": "https://www.instagram.com/reel/DfrtQD-EZiG/",
+        "checked_at": "2026-11-13T13:13:56.762Z",
+        "verification_basis": "Opened the exact provider public URL in the browser (canonical redirect /reels/DfrtQD-EZiG/). The live Reel shows @toxic_tales_eco, the complete TT-008 archerfish caption and DOI10.1038/srep27523, matching the reviewed post. Metricool exact UUID3555893508354493617 independently reports PUBLISHED."
+      },
+      "publication_confirmed_at": "2026-11-13T13:13:56.762Z"
+    },
+    {
+      "post_id": "TT-008-YOUTUBE-SHORT",
+      "episode_id": "TT-008",
+      "platform": "youtube",
+      "format": "SHORT",
+      "doi": "10.1038/srep27523",
+      "publication_date": "2026-11-13T14:10:00+01:00",
+      "timezone": "Europe/Vienna",
+      "metricool_id": "426946098",
+      "metricool_uuid": "-6895101637645415437",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-6895101637645415437",
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "auto_publish": true,
+      "draft": false,
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-008-archerfish-human-faces-1056e28596f7.mp4"
+      ],
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg",
+      "source_files_sha256": {
+        "media/tt-008-archerfish-human-faces-1056e28596f7.mp4": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb",
+        "media/tt-008-archerfish-human-faces-1056e28596f7_cover.jpg": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d"
+      },
+      "release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+      "release_commit": "f8f101d6dbfc821536015af5704b756740529b31",
+      "public_verification_run": 43430953217,
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-1565384995539305417.mp4"
+      ],
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-2376352421099764662.jpeg",
+      "metricool_media_sha256": {
+        "https://static.metricool.com/planner/202611/7937614-file-1565384995539305417.mp4": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb"
+      },
+      "metricool_cover_sha256": "8f7bbf5f22f01bd170ad659d89717b968247ad1e06d53a186fadeb4587e4879d",
+      "metricool_hosted_bytes_verified": true,
+      "exact_bytes_reverified_at": "2026-11-13T13:10:28.847503+00:00",
+      "provider_readback": {
+        "id": 426946098,
+        "publicationDate": {
+          "dateTime": "2026-11-13T14:10:00",
+          "timezone": "Europe/Vienna"
+        },
+        "creationDate": {
+          "dateTime": "2026-11-13T14:08:00",
+          "timezone": "Europe/Vienna"
+        },
+        "text": "A fish that spits its answer: can archerfish tell human faces apart?\n\nIn two laboratory experiments, separate groups of four Toxotes chatareus learned which face image earned food and which to avoid. During testing, the familiar unrewarded face was paired with one new face at a time, drawn from a pool of 44 images in the first experiment. The fish discriminated above chance.\n\nFour different fish also succeeded with 18 novel faces after colour, mean brightness and the outer head outline were standardized. Only TWO faces appeared per trial. The results show learned image discrimination; they do not demonstrate that fish recognise their owners or use the same cues as humans.\n\nTT-008 | Newport, Wallis, Reshitnyk & Siebeck (2016), Scientific Reports 6:27523. https://doi.org/10.1038/srep27523\nPaper, methods, limitations and full credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-008.html\n\nArcherfish reference photograph: Reichenthal, Ben-Tov & Segev (2018), Front. Neural Circuits 12:18, Fig.1A, CC BY 4.0, cropped; from a separate study: https://doi.org/10.3389/fncir.2018.00018 . Licence: https://creativecommons.org/licenses/by/4.0/ . Original conceptual task illustrations, not actual face-test footage or stimuli. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Archerfish #AnimalBehaviour #FishCognition #Ecology #ScienceCommunication",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "le2mS8MHcpo",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/le2mS8MHcpo",
+            "detailedStatus": "Published"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202611/7937614-file-1565384995539305417.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-2376352421099764662.jpeg",
+        "imageVariants": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "The fish that spat its answer | Toxic Tales #Shorts",
+          "type": "short",
+          "privacy": "public",
+          "madeForKids": false,
+          "isAiGeneratedContent": true,
+          "notifySubscribers": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-6895101637645415437",
+        "brandTags": []
+      },
+      "provider_readback_checked_at": "2026-11-13T13:13:56.763Z",
+      "schedule_readback_verified": true,
+      "publication_eligible": false,
+      "receipt_saved_on": "2026-11-13T13:13:56.763Z",
+      "owner_authorization": "automation/config.json#owner_authorized_one_off_slots",
+      "publication_confirmation": "Provider PUBLISHED and separate live verification confirmed.",
+      "duplicate_guard": "This platform UUID already owns the exact TT-008 one-off; never create another copy.",
+      "public_url": "https://www.youtube.com/shorts/le2mS8MHcpo",
+      "live_verification": {
+        "decision": "pass",
+        "url": "https://www.youtube.com/shorts/le2mS8MHcpo",
+        "channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+        "checked_at": "2026-11-13T13:12:50.412Z",
+        "verification_basis": "Opened the actual public YouTube Short in browser: URL le2mS8MHcpo, page title The fish that spat its answer | Toxic Tales #Shorts and visible channel @toxic_tales_eco. This handle matches the connected Metricool brand whose verified YouTube channel ID is UCDvftxMMdtGSntm-ezcPfCg; provider UUID -6895101637645415437 reports PUBLISHED for this exact video."
+      },
+      "publication_confirmed_at": "2026-11-13T13:12:50.412Z",
+      "source_post_id": "TT-008-REEL",
+      "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+      "youtube": {
+        "title": "The fish that spat its answer | Toxic Tales #Shorts",
+        "description": "A fish that spits its answer: can archerfish tell human faces apart?\n\nIn two laboratory experiments, separate groups of four Toxotes chatareus learned which face image earned food and which to avoid. During testing, the familiar unrewarded face was paired with one new face at a time, drawn from a pool of 44 images in the first experiment. The fish discriminated above chance.\n\nFour different fish also succeeded with 18 novel faces after colour, mean brightness and the outer head outline were standardized. Only TWO faces appeared per trial. The results show learned image discrimination; they do not demonstrate that fish recognise their owners or use the same cues as humans.\n\nTT-008 | Newport, Wallis, Reshitnyk & Siebeck (2016), Scientific Reports 6:27523. https://doi.org/10.1038/srep27523\nPaper, methods, limitations and full credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-008.html\n\nArcherfish reference photograph: Reichenthal, Ben-Tov & Segev (2018), Front. Neural Circuits 12:18, Fig.1A, CC BY 4.0, cropped; from a separate study: https://doi.org/10.3389/fncir.2018.00018 . Licence: https://creativecommons.org/licenses/by/4.0/ . Original conceptual task illustrations, not actual face-test footage or stimuli. Synthetic narration; official Toxic Tales logo.\n\n#ToxicTales #Archerfish #AnimalBehaviour #FishCognition #Ecology #ScienceCommunication",
+        "made_for_kids": false,
+        "privacy": "PUBLIC",
+        "is_ai_generated": true,
+        "review_decision": "pass",
+        "reviewed_release_fingerprint": "1056e28596f7296051f5d8c3e1180487f8642b22d9893feb79139361f8e79810",
+        "source_video_sha256": "cb6bd463e1f31f3f9b7797fb6221cba61dc416261a80ba746367645c460079fb",
+        "rights_review_decision": "pass",
+        "audience_review": "General science reporting for curious adults. This explanation of a laboratory vision experiment, its transfer design and inference limits is not directed to children.",
+        "review_basis": "Independent review against the focal 2016 full paper, current locked TT-008 episode, actual encoded export and final release. Title and description preserve separate four-fish cohorts, two faces per trial, pools of 44 and 18 alternatives, the controlled second experiment and the owner-recognition limit. The primary Frontiers 2018 source identifies Reichenthal, Ben-Tov and Segev and a CC BY licence for the reference photograph; Figure 1A and the Toxotes chatareus identification were independently checked. Cropping/reframing and separate-study provenance are disclosed, with clickable source DOI and CC BY 4.0 licence links in the description. The licence permits redistribution/adaptation to both destinations with attribution. Original conceptual illustrations, owner-authorized brand logo, synthetic Kokoro narration and pinned OFL fonts are documented in the episode, manifest and archive. These metadata are bound to the reviewed video SHA-256 and release fingerprint; no new or changed export is authorized. No listening or continuous playback is claimed.",
+        "reviewed_at": "2026-11-13T13:00:37.449955Z",
+        "reviewer": "Independent exact-export science and editorial reviewer / runbook_review",
+        "listening_review_claimed": false,
+        "moving_playback_review_claimed": false,
+        "metadata_sha256": "4e33719b2c83eb43c6cb9f14ee1729447910a1672ba793239980322a560dc6b6"
+      }
+    },
+    {
+      "post_id": "TT-009-REEL",
+      "episode_id": "TT-009",
+      "format": "REEL",
+      "platform": "instagram",
+      "doi": "10.1371/journal.pone.0006573",
+      "metricool_id": "429844048",
+      "metricool_uuid": "1927625585550052374",
+      "publication_date": "2026-11-20T10:00:00+01:00",
+      "timezone": "Europe/Vienna",
+      "status": "published",
+      "provider_status": "PUBLISHED",
+      "auto_publish": true,
+      "draft": false,
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=1927625585550052374",
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-009-ants-bite-the-restraint-b89b5c741890.mp4"
+      ],
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-009-ants-bite-the-restraint-b89b5c741890_cover.jpg",
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-3737416094863891945.mp4"
+      ],
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-15334528450768090167.jpeg",
+      "source_files_sha256": {
+        "media/tt-009-ants-bite-the-restraint-b89b5c741890.mp4": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b",
+        "media/tt-009-ants-bite-the-restraint-b89b5c741890_cover.jpg": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224"
+      },
+      "release_fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
+      "release_commit": "e59fe15d2f840f9a8cedf7f1692f5f37d2401b33",
+      "source_commit": "ef1cfbf56d1c85dc95efa8cf1d3c67d2fbfcd3b7",
+      "public_verification_run": 43847085574,
+      "provider_byte_verification_run": 43847978272,
+      "receipt_saved_on": "2026-11-16T10:23:07.898Z",
+      "schedule_readback_verified": true,
+      "publication_eligible": true,
+      "metricool_media_sha256": {
+        "https://static.metricool.com/planner/202611/7937614-file-3737416094863891945.mp4": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b"
+      },
+      "metricool_cover_sha256": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224",
+      "metricool_hosted_bytes_verified": true,
+      "provider_readback_checked_at": "2026-11-16T10:23:07.898Z",
+      "provider_readback": {
+        "id": 429844048,
+        "publicationDate": {
+          "dateTime": "2026-11-20T10:00:00",
+          "timezone": "Europe/Vienna"
+        },
+        "creationDate": {
+          "dateTime": "2026-11-16T11:19:00",
+          "timezone": "Europe/Vienna"
+        },
+        "text": "A trapped ant. A hidden thread. Its colony-mates targeted the restraint.\n\nIn laboratory trials with Cataglyphis cursor, workers dug sand, pulled at an active nestmate’s limbs and sometimes bit the nylon snare holding it. Rescue behaviour appeared in all 9 group tests with active colony-mates, but none of the 45 tests involving other stimuli or controls. Each test had five potential rescuers; only one to three helped in positive tests.\n\nThese counts describe groups of ants in a controlled artificial setup, not the percentage of individual ants that help. The study did not establish that every ant escaped, why the response was triggered, that ants felt empathy, or how often this happens in nature.\n\nNowbahari et al. (2009), PLOS ONE 4:e6573. DOI: 10.1371/journal.pone.0006573\nOpen paper: https://pmc.ncbi.nlm.nih.gov/articles/PMC2719796/\nResearch record: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-009.html\n\nOriginal conceptual ant-and-thread illustrations, not the experiment’s footage. Reference photo of related C. cursor creticus subspecies: April Nobile / AntWeb.org, CC BY 4.0; edited. Source and licence links in research record. Synthetic neural narration, original Toxic Tales logo.\n\n#ToxicTales #Ants #AnimalBehaviour #Ecology #ScienceCommunication",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202611/7937614-file-3737416094863891945.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-15334528450768090167.jpeg",
+        "imageVariants": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "REEL",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "1927625585550052374",
+        "brandTags": []
+      },
+      "publication_confirmation": "Positive PUBLISHED with existing UUID; no resubmission",
+      "duplicate_guard": "Exact TT-009 approved film reserved once per platform. Never resubmit this DOI/format/channel/week/UUID.",
+      "provider_detailed_status": "Published",
+      "public_url": "https://www.instagram.com/reel/Df9S7TAD77J/",
+      "published_confirmed_at": "2026-11-20T09:40:02.763Z",
+      "confirmed_source": "Fresh complete Metricool 20 Nov 2026 calendar, exact original UUID, Instagram PUBLISHED and Reel public URL",
+      "last_provider_reconciled_at": "2026-11-20T17:13:59.915Z"
+    },
+    {
+      "post_id": "TT-009-YOUTUBE-SHORT",
+      "episode_id": "TT-009",
+      "format": "SHORT",
+      "platform": "youtube",
+      "doi": "10.1371/journal.pone.0006573",
+      "metricool_id": "429844729",
+      "metricool_uuid": "3828607998694999530",
+      "publication_date": "2026-11-20T10:00:00+01:00",
+      "timezone": "Europe/Vienna",
+      "status": "pending_confirmation",
+      "provider_status": "ERROR",
+      "auto_publish": true,
+      "draft": false,
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=3828607998694999530",
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-009-ants-bite-the-restraint-b89b5c741890.mp4"
+      ],
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-009-ants-bite-the-restraint-b89b5c741890_cover.jpg",
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-12147950446845277643.mp4"
+      ],
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-15401831120842934675.jpeg",
+      "source_files_sha256": {
+        "media/tt-009-ants-bite-the-restraint-b89b5c741890.mp4": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b",
+        "media/tt-009-ants-bite-the-restraint-b89b5c741890_cover.jpg": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224"
+      },
+      "release_fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
+      "release_commit": "e59fe15d2f840f9a8cedf7f1692f5f37d2401b33",
+      "source_commit": "ef1cfbf56d1c85dc95efa8cf1d3c67d2fbfcd3b7",
+      "public_verification_run": 43847085574,
+      "provider_byte_verification_run": 43847978272,
+      "receipt_saved_on": "2026-11-16T10:23:07.898Z",
+      "schedule_readback_verified": true,
+      "publication_eligible": true,
+      "metricool_media_sha256": {
+        "https://static.metricool.com/planner/202611/7937614-file-12147950446845277643.mp4": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b"
+      },
+      "metricool_cover_sha256": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224",
+      "metricool_hosted_bytes_verified": true,
+      "provider_readback_checked_at": "2026-11-16T10:23:07.898Z",
+      "provider_readback": {
+        "id": 429844729,
+        "publicationDate": {
+          "dateTime": "2026-11-20T10:00:00",
+          "timezone": "Europe/Vienna"
+        },
+        "creationDate": {
+          "dateTime": "2026-11-16T11:20:00",
+          "timezone": "Europe/Vienna"
+        },
+        "text": "A trapped ant. A nylon snare. What did workers do when a colony-mate was stuck?\n\nIn controlled laboratory tests, Cataglyphis cursor workers dug sand, pulled limbs, and sometimes repeatedly bit the nylon thread restraining an active nestmate. Rescue behavior occurred in each of 9 group trials with active colony-mates, and in none of 45 group trials with other stimuli or controls. Each trial used five potential rescuers; only one to three workers actually helped in positive trials. These are group-level tests, not independent samples of 270 workers.\n\nThe restraint was artificial. The study did not show that every thread was cut or every ant escaped, prove empathy, establish the exact triggering cue, or measure rescue frequency in wild colonies.\n\nOriginal primary study: Nowbahari, Scohier, Durand & Hollis (2009), PLOS ONE 4(8): e6573.\nDOI: https://doi.org/10.1371/journal.pone.0006573\nFull open-access article: https://pmc.ncbi.nlm.nih.gov/articles/PMC2719796/\nResearch evidence, limitations and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-009.html\n\nVisuals: original schematic illustrations of ants, sand and nylon, not experimental video or measured individual trajectories. Whole-ant dorsal reference photograph of a related subspecies Cataglyphis cursor creticus (not the tested ant): April Nobile / AntWeb.org, CC BY 4.0, 960px Wikimedia Commons version, edited/cropped: https://commons.wikimedia.org/wiki/File:Cataglyphis_cursor_creticus_casent0102116_dorsal_1.jpg\nLicence: https://creativecommons.org/licenses/by/4.0/\nSynthetic neural narration and captions; original illustrations and the authorized Toxic Tales logo. Font credits and details on the research page.\n\n#ToxicTales #Ants #AnimalBehavior #Ecology #ScienceCommunication #Shorts",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202611/7937614-file-12147950446845277643.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-15401831120842934675.jpeg",
+        "imageVariants": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Ants That Bite the Trap | Toxic Tales",
+          "type": "short",
+          "privacy": "public",
+          "madeForKids": false,
+          "isAiGeneratedContent": true,
+          "notifySubscribers": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "3828607998694999530",
+        "brandTags": []
+      },
+      "publication_confirmation": "PENDING future scheduled reservation only; verify provider PUBLISHED and live URL after 20 Nov 10:00 Vienna.",
+      "duplicate_guard": "Video upload exists with original UUID and verified public Shorts title/channel. Provider ERROR only thumbnail upload warning; do not resubmit. Wait for actual PUBLISHED status before publication notification.",
+      "source_post_id": "TT-009-REEL",
+      "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+      "youtube": {
+        "title": "Ants That Bite the Trap | Toxic Tales",
+        "description": "A trapped ant. A nylon snare. What did workers do when a colony-mate was stuck?\n\nIn controlled laboratory tests, Cataglyphis cursor workers dug sand, pulled limbs, and sometimes repeatedly bit the nylon thread restraining an active nestmate. Rescue behavior occurred in each of 9 group trials with active colony-mates, and in none of 45 group trials with other stimuli or controls. Each trial used five potential rescuers; only one to three workers actually helped in positive trials. These are group-level tests, not independent samples of 270 workers.\n\nThe restraint was artificial. The study did not show that every thread was cut or every ant escaped, prove empathy, establish the exact triggering cue, or measure rescue frequency in wild colonies.\n\nOriginal primary study: Nowbahari, Scohier, Durand & Hollis (2009), PLOS ONE 4(8): e6573.\nDOI: https://doi.org/10.1371/journal.pone.0006573\nFull open-access article: https://pmc.ncbi.nlm.nih.gov/articles/PMC2719796/\nResearch evidence, limitations and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-009.html\n\nVisuals: original schematic illustrations of ants, sand and nylon, not experimental video or measured individual trajectories. Whole-ant dorsal reference photograph of a related subspecies Cataglyphis cursor creticus (not the tested ant): April Nobile / AntWeb.org, CC BY 4.0, 960px Wikimedia Commons version, edited/cropped: https://commons.wikimedia.org/wiki/File:Cataglyphis_cursor_creticus_casent0102116_dorsal_1.jpg\nLicence: https://creativecommons.org/licenses/by/4.0/\nSynthetic neural narration and captions; original illustrations and the authorized Toxic Tales logo. Font credits and details on the research page.\n\n#ToxicTales #Ants #AnimalBehavior #Ecology #ScienceCommunication #Shorts",
+        "made_for_kids": false,
+        "privacy": "PUBLIC",
+        "is_ai_generated": true,
+        "review_decision": "pass",
+        "reviewed_release_fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
+        "source_video_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b",
+        "rights_review_decision": "pass",
+        "audience_review": "Original science reporting for a general adult audience, not directed to children; false madeForKids. Synthetic narration declared. No music or third-party audio.",
+        "review_basis": "Reviewed final TT-009 exact H.264/AAC encoded release and complete 2009 PLOS ONE main paper. Six group-trial conditions, 9 versus 45 group counts, five potential rescuers and 1–3 active workers accurately framed; artificial nylon trap, no empathy/wild prevalence/guaranteed release. April Nobile / AntWeb related subspecies reference photo 960px pinned under CC BY 4.0 with full attribution, link and crop; no focal experimental footage or unread large video supplements reused. Original diagrams and owned brand mark. Neural voice, caption/ASR/loudness, OFL font licences checked separately. Rights permit Instagram and YouTube; no paid music.",
+        "reviewed_at": "2026-11-16T10:19:10.104Z",
+        "reviewer": "Independent final-encoded-release and platform metadata reviewer, separate from TT-009 script author",
+        "listening_review_claimed": false,
+        "moving_playback_review_claimed": false,
+        "metadata_sha256": "4508e2d025ae41a8dd9575e282efb7872127b9d44a986054da379049147090dc"
+      },
+      "provider_detailed_status": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
+      "reported_public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
+      "public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
+      "publication_confirmed": false,
+      "public_metadata_verification_requested": true,
+      "public_metadata_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
+      "last_reconciled_at": "2026-11-20T09:43:30.532Z",
+      "public_metadata_verified": true,
+      "public_metadata_verification_method": "Independent GitHub Actions yt-dlp attempt blocked by YouTube bot check; public oEmbed returned exact title and creator/channel page resolves expected YouTube channel ID",
+      "public_metadata_verification_run": 44712245363,
+      "public_metadata_verification_url": "https://github.com/akshaymohan16/toxic-tales-library/actions/runs/44712245363",
+      "last_provider_reconciled_at": "2026-11-20T17:13:59.915Z",
+      "last_checked_at": "2026-11-21T17:13:19.512Z",
+      "retry_permitted": false
+    }
+  ],
+  "notified_post_ids": [
+    "TT-002-REEL",
+    "TT-004-REEL",
+    "TT-005-REEL",
+    "TT-006-REEL",
+    "instagram:TT-006-REEL",
+    "TT-006-YOUTUBE-SHORT",
+    "youtube:TT-006-YOUTUBE-SHORT",
+    "TT-005-CAROUSEL",
+    "instagram:TT-005-CAROUSEL",
+    "TT-007-REEL",
+    "instagram:TT-007-REEL",
+    "TT-007-YOUTUBE-SHORT",
+    "youtube:TT-007-YOUTUBE-SHORT",
+    "TT-008-REEL",
+    "instagram:TT-008-REEL",
+    "TT-008-YOUTUBE-SHORT",
+    "youtube:TT-008-YOUTUBE-SHORT",
+    "TT-009-REEL",
+    "instagram:TT-009-REEL"
+  ],
+  "last_provider_reconciled_at": "2026-11-22T17:22:37.475Z",
+  "last_provider_reconciliation": {
+    "month": "2026-11",
+    "calendar_entries": 14,
+    "published_count": 11,
+    "scheduled_count": 0,
+    "retired_draft_count": 2,
+    "published_destination_keys": [
+      "instagram:-3158597333632725768",
+      "instagram:-5193152553705388348",
+      "instagram:-6872348896682359981",
+      "instagram:-7609883982228992318",
+      "instagram:1927625585550052374",
+      "instagram:2386175407143797944",
+      "instagram:3555893508354493617",
+      "instagram:8432780738091634663",
+      "youtube:-6561054799073883973",
+      "youtube:-6895101637645415437",
+      "youtube:4422280930322105807"
+    ],
+    "remaining_regular_destinations": 4,
+    "projected_month_destinations": 16,
+    "one_off_confirmed_both": true,
+    "checked_at": "2026-11-22T17:22:37.475Z",
+    "full_month_calendar_verified": true,
+    "usage_baseline": {
+      "month": "2026-11",
+      "used": 3,
+      "observed_at": "2026-11-09T08:22:57.080Z",
+      "basis": "Persisted authenticated planner counter",
+      "published_destination_keys": [
+        "instagram:-3158597333632725768",
+        "instagram:8432780738091634663",
+        "instagram:2386175407143797944"
+      ]
+    },
+    "provider_error_count": 1,
+    "uncertain_destination_count": 1,
+    "observed_at": "2026-11-22T17:22:37.475Z",
+    "ambiguous_youtube_uuid": "3828607998694999530",
+    "ambiguity_note": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
+    "youtube_public_metadata_verified": true,
+    "youtube_public_metadata_verification_run": 44712245363
+  },
+  "last_live_reconciliation": {
+    "checked_at": "2026-11-22T17:22:37.475Z",
+    "month": "2026-11",
+    "brand_id": "7937614",
+    "calendar_entries": 14,
+    "published_destinations": 11,
+    "scheduled_destinations": 0,
+    "inactive_drafts": 2,
+    "friday_2026_11_20": [
+      "instagram:1927625585550052374",
+      "youtube:3828607998694999530"
+    ],
+    "published_destination_keys": [
+      "instagram:-3158597333632725768",
+      "instagram:-5193152553705388348",
+      "instagram:-6872348896682359981",
+      "instagram:-7609883982228992318",
+      "instagram:1927625585550052374",
+      "instagram:2386175407143797944",
+      "instagram:3555893508354493617",
+      "instagram:8432780738091634663",
+      "youtube:-6561054799073883973",
+      "youtube:-6895101637645415437",
+      "youtube:4422280930322105807"
+    ],
+    "post_records_changed": 0,
+    "provider_writes": 0,
+    "open_readiness_issues": 1,
+    "provider_warning_destinations": 1,
+    "youtube_warning_status": "ERROR",
+    "youtube_reported_public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
+    "youtube_public_metadata_verified": true,
+    "youtube_public_metadata_verification_run": 44712245363,
+    "weekly_2026_11_23_receipts": 0,
+    "active_production_claims": [],
+    "youtube_warning_uuid": "3828607998694999530",
+    "note": "Provider identities unchanged. Four future slots absent; expired producer claims must be reconciled before takeover.",
+    "expired_production_claims": [
+      "production:2026-11-24",
+      "production:2026-11-27"
+    ]
+  }
+}

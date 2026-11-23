@@ -1,0 +1,410 @@
+{
+  "id": "TT-003",
+  "slug": "tt-003-recovery-with-pollution",
+  "title": "The pressure left behind",
+  "hook": "When a predator disappears, what else can hold recovery back?",
+  "doi": "10.1021/acs.est.4c02807",
+  "paper_title": "Pharmaceutical Pollution Alters the Structure of Freshwater Communities and Hinders Their Recovery from a Fish Predator",
+  "citation": "Michelangeli et al. (2024), Environ. Sci. Technol.",
+  "tags": [
+    "recovery",
+    "food webs",
+    "pharmaceuticals",
+    "freshwater"
+  ],
+  "summary": "In 12 outdoor mesocosms, zooplankton abundance rebounded less in fluoxetine-exposed treatments than in controls after fish removal. Fluoxetine dosing continued during this recovery period.",
+  "evidence_note": "Four tanks per treatment; responses varied and estimates were uncertain. The experiment did not establish the mechanism, test recovery after drug removal, or measure diversity loss. Nutrient addition confounded attribution of the initial zooplankton decline solely to fish.",
+  "source_url": "https://doi.org/10.1021/acs.est.4c02807",
+  "review_status": "verified",
+  "checks": {
+    "full_text": true,
+    "design": true,
+    "findings": true,
+    "limitations": true,
+    "rights": true
+  },
+  "review_note": "Re-reported as a complete ecological story after owner rejected the compressed experiment summary on 2026-11-07. Focal findings checked against original full text; context supported separately by published field and grazing studies. Visual pilot requested 7 November: owner will judge final video before publication.",
+  "publication_enabled": false,
+  "is_ai_generated": true,
+  "batch_id": "2026-11-09",
+  "posts": [
+    {
+      "id": "TT-003-REEL",
+      "format": "REEL",
+      "publication_date": "2026-11-14T10:00:00+01:00",
+      "caption": "TT-003-REEL | THE PRESSURE LEFT BEHIND\n\nRemove a predator, and its prey gets a chance to recover. But what happens when another pressure keeps arriving?\n\nZooplankton link microscopic food and fish. Some graze algae; their response matters beyond a count in a sample. Published field research has also detected antidepressants downstream of wastewater treatment plants.\n\nMichelangeli and colleagues tested recovery in 12 outdoor freshwater communities: four tanks per treatment. All received mosquitofish; some later received fluoxetine. After fish removal, zooplankton abundance rebounded less in the fluoxetine treatments than in controls.\n\nThe crucial distinction: drug dosing continued for all 21 days after fish removal. This was not a test of recovery after pollution stopped. Responses varied, the mechanism remained unresolved, and tank communities cannot establish what every lake will do. Initial nutrient additions and variation among tanks also complicate interpretation.\n\nThe restoration question is an inference to test: when one pressure is removed, what else might still hold recovery back?\n\nFocal study: Michelangeli et al. (2024), Environmental Science & Technology.\nhttps://doi.org/10.1021/acs.est.4c02807\nContext: Schultz et al. (2010), DOI 10.1021/es9022706; Ekvall et al. (2014), DOI 10.1371/journal.pone.0112956.\n\nFull sources, claim checks and limits:\nhttps://akshaymohan16.github.io/toxic-tales-library/sources/tt-003.html\n\nReference imagery: Robert Aguilar/SERC (CC BY 2.0); Tim Tim (VD fr) and Lukas Beck (CC BY 4.0), resized/edited. Stream footage is not the study site. Licence links in source record. Conceptual animations are not study footage or numerical data. Synthetic narration.\n\n#ToxicTales #FreshwaterEcology #EcologicalRecovery #Ecotoxicology"
+    }
+  ],
+  "slides": [],
+  "evidence_file": "evidence/tt-003.md",
+  "evidence": {
+    "full_text_url": "https://pub.epsilon.slu.se/34834/1/michelangeli-m-et-al-20240826.pdf",
+    "checked_at": "2026-11-07",
+    "design": "Twelve 270-L outdoor communities, four per treatment. All received five male Gambusia holbrooki; solvent control and low/high fluoxetine treatments. Dosing continued for 21 days after fish removal. Measured means approximately 10 and 110 ng/L.",
+    "claims": [
+      {
+        "claim": "Zooplankton abundance rebounded less in exposed treatments following fish removal.",
+        "location": "Results: Changes in Zooplankton Abundance; recovery phase and corresponding figures."
+      },
+      {
+        "claim": "Fluoxetine dosing continued during the post-removal period.",
+        "location": "Methods: Experimental Design and Sampling, 113-day timeline; final 21-day recovery phase."
+      },
+      {
+        "claim": "The experiment used 12 outdoor mesocosms with four replicates per treatment.",
+        "location": "Methods: Experimental Setup and Experimental Design."
+      },
+      {
+        "claim": "Responses were variable and the mechanism was unresolved.",
+        "location": "Results uncertainty and Discussion; multiple candidate mechanisms considered."
+      },
+      {
+        "claim": "Antidepressants have been detected in streams downstream of wastewater treatment plants.",
+        "location": "Schultz et al. 2010 (10.1021/es9022706), primary USGS publication record: sampling upstream/downstream of two effluent outfalls; results and source-pathway conclusion."
+      },
+      {
+        "claim": "Zooplankton include algal grazers and are prey for fish, linking different levels of freshwater food webs.",
+        "location": "Ekvall et al. 2014 (10.1371/journal.pone.0112956), Introduction, field grazing experiment, Discussion. This is ecological context, not an algae or water-clarity result from Michelangeli et al."
+      }
+    ],
+    "limitations": [
+      "No drug-removal recovery test.",
+      "Not evidence of permanent damage or whole-lake response.",
+      "Nutrients were added before fish introduction, complicating attribution of initial decline.",
+      "All tanks received fish; no continuously fish-free control."
+    ],
+    "correction_check": "DOI/title searches and journal/PubMed records checked on 2026-11-07; no correction/retraction notice found."
+  },
+  "production": {
+    "cover_asset": "copepod",
+    "cover_title": "ONE THREAT GONE.\nANOTHER REMAINS.",
+    "critical_terms": [
+      "fluoxetine",
+      "zooplankton",
+      "kept adding",
+      "drug was removed"
+    ],
+    "assets": [
+      {
+        "id": "mosquitofish",
+        "filename": "mosquitofish.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Gambusia_holbrooki_-_SERC.jpg",
+        "creator": "Robert Aguilar / Smithsonian Environmental Research Center",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Gambusia_holbrooki_-_SERC.jpg",
+        "changes": "Cropped, resized and edited with labels; reference imagery, not animals or footage from this experiment."
+      },
+      {
+        "id": "copepod",
+        "filename": "copepod-portrait.webm",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Cop%C3%A9pode.webm",
+        "creator": "Tim Tim (VD fr)",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Cop%C3%A9pode.webm",
+        "changes": "Resized and edited with captions; reference copepod microscopy, not study animals or footage. Original 2160 x 3840 portrait video."
+      },
+      {
+        "id": "stream",
+        "filename": "stream-portrait.webm",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Naturschutzgebiet_Kleiner_Wagenberg_lub_2025-04-14_mov02_Strenge.webm",
+        "creator": "Lukas Beck",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Naturschutzgebiet_Kleiner_Wagenberg_lub_2025-04-14_mov02_Strenge.webm",
+        "changes": "Resized and edited with captions. Reference footage of the Strenge stream in Germany, not the study site or evidence of pharmaceutical pollution at this location."
+      }
+    ],
+    "segments": [
+      {
+        "speech": "The fish were gone. But for the tiny animals they ate, the pressure was not over.",
+        "captions": [
+          "The fish were gone.",
+          "But for the tiny animals they ate,",
+          "the pressure was not over."
+        ],
+        "shots": [
+          {
+            "kind": "specimen",
+            "asset": "mosquitofish",
+            "note": "Eastern mosquitofish • reference photograph",
+            "kicker": "THE RECOVERY QUESTION",
+            "start": 0,
+            "end": 0.25
+          },
+          {
+            "kind": "micro",
+            "asset": "copepod",
+            "note": "Copepod • reference microscopy",
+            "offset": 2,
+            "start": 0.25,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Those tiny animals are zooplankton. Many eat algae, and they are food for fish.",
+        "captions": [
+          "Those tiny animals are zooplankton.",
+          "Many eat algae,",
+          "and they are food for fish."
+        ],
+        "shots": [
+          {
+            "kind": "micro",
+            "asset": "copepod",
+            "note": "Copepod • reference microscopy",
+            "offset": 4,
+            "kicker": "ZOOPLANKTON",
+            "start": 0,
+            "end": 0.38
+          },
+          {
+            "kind": "foodweb",
+            "note": "Conceptual food web • not study data",
+            "start": 0.38,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "The second pressure can come through wastewater. Researchers have detected antidepressants in streams downstream of treatment plants.",
+        "captions": [
+          "The second pressure can come",
+          "through wastewater.",
+          "Researchers have detected antidepressants",
+          "in streams downstream of treatment plants."
+        ],
+        "shots": [
+          {
+            "kind": "wastewater_route",
+            "note": "Conceptual route • removal varies by treatment",
+            "start": 0,
+            "end": 0.6
+          },
+          {
+            "kind": "landscape",
+            "asset": "stream",
+            "offset": 2,
+            "kicker": "A ROUTE INTO FRESH WATER",
+            "note": "Reference stream • not a sampled pollution site",
+            "start": 0.6,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Could that pollution change what happens after a predator disappears?",
+        "captions": [
+          "Could that pollution change what happens",
+          "after a predator disappears?"
+        ],
+        "shots": [
+          {
+            "kind": "restoration_question",
+            "pressure_label": "Continuing exposure",
+            "note": "The question • conceptual illustration"
+          }
+        ]
+      },
+      {
+        "speech": "To test it, ecologists built twelve outdoor tank communities.",
+        "captions": [
+          "To test it, ecologists built",
+          "twelve outdoor tank communities."
+        ],
+        "shots": [
+          {
+            "kind": "tanks",
+            "note": "12 outdoor communities • 4 per treatment"
+          }
+        ]
+      },
+      {
+        "speech": "They added mosquitofish to all of them, and later added fluoxetine, an antidepressant, to some.",
+        "captions": [
+          "They added mosquitofish to all of them,",
+          "and later added fluoxetine,",
+          "an antidepressant, to some."
+        ],
+        "shots": [
+          {
+            "kind": "specimen",
+            "asset": "mosquitofish",
+            "note": "Eastern mosquitofish • reference photograph",
+            "start": 0,
+            "end": 0.4
+          },
+          {
+            "kind": "timeline",
+            "note": "Fish first • fluoxetine introduced later",
+            "start": 0.4,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Then they removed the fish. Over the next three weeks, zooplankton numbers rebounded less in the drug-exposed tanks than in the controls.",
+        "captions": [
+          "Then they removed the fish.",
+          "Over the next three weeks,",
+          "zooplankton numbers rebounded less",
+          "in the drug-exposed tanks",
+          "than in the controls."
+        ],
+        "shots": [
+          {
+            "kind": "restoration_question",
+            "pressure_label": "Fluoxetine continued",
+            "note": "Fish removed • 21-day post-removal period",
+            "start": 0,
+            "end": 0.4
+          },
+          {
+            "kind": "evidence_rebound",
+            "note": "Reported direction • not a numerical graph",
+            "start": 0.4,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "But the researchers kept adding the drug throughout. So the animals had lost one pressure while another remained.",
+        "captions": [
+          "But the researchers kept adding",
+          "the drug throughout.",
+          "So the animals had lost one pressure",
+          "while another remained."
+        ],
+        "shots": [
+          {
+            "kind": "micro",
+            "asset": "copepod",
+            "note": "Copepod • reference microscopy",
+            "offset": 10,
+            "kicker": "DOSING CONTINUED",
+            "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "restoration_question",
+            "pressure_label": "Dosing continued",
+            "note": "Not recovery after chemical exposure stopped",
+            "start": 0.5,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "The pattern varied between tanks, and the study could not pinpoint why.",
+        "captions": [
+          "The pattern varied between tanks,",
+          "and the study could not pinpoint why."
+        ],
+        "shots": [
+          {
+            "kind": "micro",
+            "asset": "copepod",
+            "note": "Copepod • reference microscopy",
+            "offset": 13,
+            "kicker": "THE EXPLANATION IS STILL OPEN"
+          }
+        ]
+      },
+      {
+        "speech": "Nor did it test recovery after the drug was removed.",
+        "captions": [
+          "Nor did it test recovery after the drug was removed."
+        ],
+        "shots": [
+          {
+            "kind": "micro",
+            "asset": "copepod",
+            "note": "Copepod • reference microscopy",
+            "offset": 1,
+            "kicker": "WHAT WAS NOT TESTED"
+          }
+        ]
+      },
+      {
+        "speech": "These were small experimental communities. Whether the same pattern holds in lakes needs testing.",
+        "captions": [
+          "These were small experimental communities.",
+          "Whether the same pattern holds",
+          "in lakes needs testing."
+        ],
+        "shots": [
+          {
+            "kind": "landscape",
+            "asset": "stream",
+            "offset": 5,
+            "kicker": "FROM TANKS TO THE WIDER WORLD",
+            "note": "Reference stream • not the study site"
+          }
+        ]
+      },
+      {
+        "speech": "It raises a question for restoration: when we remove one pressure, what else might still be holding recovery back?",
+        "captions": [
+          "It raises a question for restoration:",
+          "when we remove one pressure,",
+          "what else might still be",
+          "holding recovery back?"
+        ],
+        "shots": [
+          {
+            "kind": "micro",
+            "asset": "copepod",
+            "note": "Copepod • reference microscopy",
+            "offset": 6,
+            "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "story_close",
+            "takeaway": "What else is holding recovery back?",
+            "note": "Full paper, context and limits in the caption",
+            "start": 0.5,
+            "end": 1
+          }
+        ]
+      }
+    ],
+    "editorial_style": "science-journalism",
+    "cover_kicker": "THE PRESSURE LEFT BEHIND",
+    "takeaway": "What else is holding recovery back?"
+  },
+  "editorial_story": {
+    "question": "When a predator disappears, what else can hold recovery back?",
+    "why_it_matters": "Zooplankton link microscopic food and fish; wastewater provides a real-world route for another pressure. The story asks why removing one pressure may not deliver the same recovery while another continues.",
+    "narrative_arc": [
+      "Predator-removal puzzle",
+      "Introduce organisms and food web",
+      "Independently verified wastewater pathway",
+      "A focused experimental test",
+      "Smaller rebound",
+      "Continued dosing changes interpretation",
+      "Uncertainty and a bounded restoration question"
+    ],
+    "context_sources": [
+      {
+        "doi": "10.1021/es9022706",
+        "citation": "Schultz et al. (2010), Environmental Science & Technology",
+        "url": "https://www.usgs.gov/publications/antidepressant-pharmaceuticals-two-us-effluent-impacted-streams-occurrence-and-fate",
+        "scope": "Primary publication record and results summary: antidepressants downstream of two wastewater outfalls, not a worldwide uniform exposure claim."
+      },
+      {
+        "doi": "10.1371/journal.pone.0112956",
+        "citation": "Ekvall et al. (2014), PLOS ONE",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0112956",
+        "scope": "Full-text introduction, grazing experiment and discussion: fish predation/zooplankton grazing links; grazer identity matters. No algal outcome is claimed for the focal tanks."
+      }
+    ],
+    "closing_payoff": "Restoration implication framed as a question requiring field tests, not a proven universal rule.",
+    "reporting_mode": "Published-source explanatory journalism; no interviews, eyewitness reporting or researcher quotations claimed.",
+    "craft_record": "quality/SCIENCE_JOURNALISM.md"
+  },
+  "pilot_status": "awaiting_owner_approval"
+}
+

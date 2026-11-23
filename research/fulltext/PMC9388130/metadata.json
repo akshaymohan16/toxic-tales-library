@@ -1,0 +1,117 @@
+{
+  "pmcid": "PMC9388130",
+  "doi": "10.1073/pnas.2204754119",
+  "title": "Regularly occurring bouts of retinal movements suggest an REM sleep–like state in jumping spiders",
+  "article_type": "brief-report",
+  "license_urls": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "license_statement": "This open access article is distributed under Creative Commons Attribution License 4.0 (CC BY) .",
+  "body_characters": 15197,
+  "sections": [
+    "Methods and Results",
+    "Discussion",
+    "Supplementary Material",
+    "Acknowledgments",
+    "Footnotes",
+    "Data Availability",
+    "References",
+    "Associated Data",
+    "Supplementary Materials",
+    "Data Availability Statement"
+  ],
+  "supplement_links": [
+    {
+      "id": "supplementary-material1",
+      "position": "float"
+    },
+    {
+      "id": "supplementary-material2",
+      "position": "float"
+    },
+    {
+      "id": "supplementary-material3",
+      "position": "float"
+    },
+    {
+      "id": "supplementary-material4",
+      "position": "float"
+    },
+    {
+      "id": "supplementary-material5",
+      "position": "float"
+    },
+    {
+      "id": "supplementary-material6",
+      "position": "float"
+    },
+    {
+      "id": "supplementary-material7",
+      "position": "float"
+    },
+    {
+      "id": "supplementary-material8",
+      "position": "float"
+    },
+    {
+      "id": "supplementary-material9",
+      "position": "float"
+    },
+    {
+      "id": "supplementary-material10",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material1_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material2_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material3_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material4_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material5_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material6_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material7_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material8_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material9_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material10_reqid_",
+      "position": "float"
+    }
+  ],
+  "scientific_review_complete": false,
+  "required_before_selection": [
+    "Read original study and necessary supplements",
+    "Check current correction, retraction and expression-of-concern records",
+    "Confirm peer review, study design, claims and limitations",
+    "Check each proposed visual asset licence separately"
+  ],
+  "cache_scope": "Article XML and text only; no PDF, figure or supplementary asset download. Cached access is not editorial approval.",
+  "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9388130/fullTextXML",
+  "retrieved_at": "2026-11-21T17:32:08.098420+00:00",
+  "xml_sha256": "3c461a37147968e9b55be5cc845bb20ebe595fd732084c8dec8af178afb58d1d",
+  "text_sha256": "46e50c2f6fa940bc8b29b21db88f042e6de77dc0afda8c474cc603bdb90c044e"
+}

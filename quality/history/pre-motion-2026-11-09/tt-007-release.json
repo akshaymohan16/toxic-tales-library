@@ -1,0 +1,132 @@
+{
+  "episode_id": "TT-007",
+  "decision": "release",
+  "publication_enabled": true,
+  "publication_eligible": true,
+  "reviewer": "TT-007 separate final encoded-export QA desk",
+  "reviewed_at": "2026-11-08T12:25:41.310Z",
+  "media_commit": "97e6198957e3a14a793b39dfdeb0b542e44cc7dc",
+  "verification_run": 42479311271,
+  "fingerprint": "828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db",
+  "evidence_sha256": "7853e9a54b1b1e006b0c43178d12a84dbced821c7112d30b396f8f7da4f05fa2",
+  "files": {
+    "media/tt-007-bumblebees-play-with-balls-828b394d3351.mp4": "3f8245a5dec4bec9b30e6f514ba46e8657bf91835a7036d19bfe989f7604a495",
+    "media/tt-007-bumblebees-play-with-balls-828b394d3351_cover.jpg": "38d68de52a9711a5979df7baac1dff23698f1762fad2d2d342b7bc577c8d9f9c"
+  },
+  "duration_seconds": 56.416667,
+  "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-007-contact.jpg?review=97e61989",
+  "scientific_review": "Read original Galpayage Dona et al. 2022 Animal Behaviour 194 pp.239–251, distinct experiments 1–3 and limitations; no food reward, 910 actions from 45 bees not independent individuals, age-dependent trend and colour association support a play-like operational interpretation, not a direct emotional measurement or wild prevalence.",
+  "visual_review": "Final real primary footage is clearly identified and placed in a dark-designed landscape insert, not blown up to fake portrait video. Conceptual foraging-route, age-group and conditioned-colour figures convey one idea each; final reference bee fills the frame. Original 1080 macro cover legible with actual logo.",
+  "audio_review": "Final 56.4167s H264/AAC neural voice, integrated -16.75 LUFS and -5.32 dBTP, 98.14% normalized ASR similarity. Exact matched phrases bumblebee, wooden ball, no nectar, young bees, wild bees, cannot directly reveal. An ASR punctuation comma in 'An insect rolling a ball' is nonmaterial. No direct audio listening performed.",
+  "narrative_review": "Nine scientific beats connect a mystery (rolling without reward) to the unobstructed food route, observed repeated ball rolling, separate age test, separate colour association, rewarding interpretation and explicit laboratory/feelings limit before an organism-based payoff.",
+  "final_editorial_review": {
+    "standard": "story-first-v1",
+    "reviewer": "TT-007 separate final encoded-export QA desk",
+    "reviewed_at": "2026-11-08T12:25:41.310Z",
+    "decision": "pass",
+    "independent_from_script_author": true,
+    "reviewed_encoded_frames": true,
+    "source_sha256": "185ddd66c4c57284aabfe712f28116c234c867c60dd955c899b64f71c65df6a9",
+    "fingerprint": "828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db",
+    "files": {
+      "media/tt-007-bumblebees-play-with-balls-828b394d3351.mp4": "3f8245a5dec4bec9b30e6f514ba46e8657bf91835a7036d19bfe989f7604a495",
+      "media/tt-007-bumblebees-play-with-balls-828b394d3351_cover.jpg": "38d68de52a9711a5979df7baac1dff23698f1762fad2d2d342b7bc577c8d9f9c"
+    },
+    "evidence_sha256": "7853e9a54b1b1e006b0c43178d12a84dbced821c7112d30b396f8f7da4f05fa2",
+    "inspection_scope": "Final H264/AAC 1080x1920 MP4 and cover SHA-256 independently verified from 42479311271 exact preview artifact; verified both retained identical image/video bytes of high-contrast 424789 review after caption-only cleanup. Viewed actual 14 midpoints, all 26 internal pre/post shot transitions, opening at 0 and 1 s, actual final frame and full 1080 cover, including phone-scale frame. Read final 56.4167s source-aligned ASR and loudness. Neither continuous audio listening nor listening parity with owner work is claimed.",
+    "listening_review_claimed": false,
+    "continuous_playback_review_claimed": false,
+    "checks": {
+      "cold_viewer": {
+        "decision": "pass",
+        "finding": "At encoded frame 0 a real research bumblebee is visible moving near coloured balls in the original study footage; the opening spoken line explicitly names its rolling and lack of nectar, with a clear title and labelled actual study footage.",
+        "basis": "Actual opening 0s/1s, original source video and first caption in finished export."
+      },
+      "story": {
+        "decision": "pass",
+        "finding": "Nine scientific beats connect a mystery (rolling without reward) to the unobstructed food route, observed repeated ball rolling, separate age test, separate colour association, rewarding interpretation and explicit laboratory/feelings limit before an organism-based payoff.",
+        "basis": "Review 14 encoded midpoints/26 shot boundaries + full output ASR and three separate original experiments."
+      },
+      "visuals": {
+        "decision": "pass",
+        "finding": "Three shots use correctly credited actual CC BY study footage, presented wide rather than falsely stretched; rest includes accurate original route/choice/age/ball schematics and a species-correct closing CC0 macro. New dark-green background eliminates the washed-out grey wash. Some conceptual panels have minimal movement, but convey a distinct necessary experimental comparison.",
+        "basis": "Actual 14-portrait contact and phone-sized frame, full 1080 cover, exact video SHA matched to inspected 424789 review."
+      },
+      "payoff": {
+        "decision": "pass",
+        "finding": "The end gives an answer within this Reel: unrewarded ball rolling is play-like by operational criteria and may itself be rewarding, rather than an untested implication deferred elsewhere.",
+        "basis": "Last three conceptual/animal shots, final video frame and exact spoken interpretation."
+      },
+      "scope": {
+        "decision": "pass",
+        "finding": "The film keeps 'young bees' and chamber-colour tests separate and ends with the explicit scientific caveat that lab behaviour cannot directly reveal bee feelings or prevalence in the wild.",
+        "basis": "Final ASR and separate scope frames checked against original Methods/Discussion and evidence source."
+      },
+      "retelling": {
+        "decision": "pass",
+        "finding": "Lab bumblebees rolled inedible wooden balls even with unrestricted access to food; an age trend and conditioned colour choice suggest play-like and rewarding behaviour, not proven subjective joy.",
+        "basis": "Narration/visual sequence supports one concise story and explicit feelings/wild limits."
+      }
+    }
+  },
+  "branding_review": {
+    "standard": "toxic-tales-branding-v1",
+    "reviewer": "TT-007 separate branded-export QA desk",
+    "reviewed_at": "2026-11-08T12:25:41.310Z",
+    "decision": "pass",
+    "independent_from_script_author": true,
+    "logo_sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+    "fingerprint": "828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db",
+    "files": {
+      "media/tt-007-bumblebees-play-with-balls-828b394d3351.mp4": "3f8245a5dec4bec9b30e6f514ba46e8657bf91835a7036d19bfe989f7604a495",
+      "media/tt-007-bumblebees-play-with-balls-828b394d3351_cover.jpg": "38d68de52a9711a5979df7baac1dff23698f1762fad2d2d342b7bc577c8d9f9c"
+    },
+    "evidence_sha256": "7853e9a54b1b1e006b0c43178d12a84dbced821c7112d30b396f8f7da4f05fa2",
+    "reviewed_encoded_frames": true,
+    "reviewed_opening_frames": true,
+    "reviewed_every_shot_and_transition": true,
+    "reviewed_final_frame": true,
+    "reviewed_cover": true,
+    "reviewed_phone_scale": true,
+    "checks": {
+      "actual_logo": {
+        "decision": "pass",
+        "finding": "Exact Toxic Tales circular mark is consistently visible in all 14 actual encoded midpoints, first two frames, all boundaries, final photo and cover.",
+        "basis": "Inspect actual opening frames, every shot and 1080px cover; pinned brand master SHA256."
+      },
+      "placement": {
+        "decision": "pass",
+        "finding": "Upper-left logo stays against dark or shaded background, away from the study bee, lab balls, comparison diagrams, captions and reference-photo subject.",
+        "basis": "Upper-left asset box 82,72,140,140 verified against 360px and 1080px actual frames."
+      },
+      "clean_frames": {
+        "decision": "pass",
+        "finding": "New frame layout has no fine-print bottom production notice, progress indicator or Field notes. 'Actual study footage' label is brief, large and scientifically important to clarify the rare genuine trial footage.",
+        "basis": "All source-derived encoded shots and 26/16 before-after boundary frames, final shot."
+      },
+      "captions_and_labels": {
+        "decision": "pass",
+        "finding": "Final white Manrope captions are large and readable against dark panels at 360px, no clipping; coloured route/age/chamber distinctions are qualitative and not invented data.",
+        "basis": "Actual 360px contact thumbnails, boundary frames, ASR and phone-scale visual inspection."
+      },
+      "scientific_limits": {
+        "decision": "pass",
+        "finding": "Spoken outcome is play-like, interpreted as rewarding; decisive qualifiers 'laboratory' and cannot directly reveal feelings or wild incidence persist in final caption/voice.",
+        "basis": "Original full-text evidence, actual voice transcript, material limits in final shots."
+      },
+      "provenance": {
+        "decision": "pass",
+        "finding": "Publication caption includes DOI, actual full text archive, CC BY 4.0 original study video from authors, CC0 reference stills, edits and synthetic narration, and clarifies concepts are not raw study data.",
+        "basis": "Complete plain Instagram post text, evidence/<episode>.md, generated sources/<episode>.html; research/full licence links."
+      },
+      "reference_imagery": {
+        "decision": "pass",
+        "finding": "The bee rolling inserts are genuine published supplementary study video; the ending bee-on-flower photo is only a wildlife reference and diagrams are conspicuously conceptual, never claimed as observed recorded results.",
+        "basis": "Original assets' source pages, study classification, actual encoded footage and diagrams."
+      }
+    }
+  },
+  "listening_review_claimed": false,
+  "release_note": "Exact exported bytes and source hashes after cleaned caption were independently assessed in a separate final editorial/branding QA pass. Must pass current published Pages byte verification, duplicate, rights, account, quota and provider readback before scheduling. No listening claim.",
+  "source_sha256": "185ddd66c4c57284aabfe712f28116c234c867c60dd955c899b64f71c65df6a9"
+}

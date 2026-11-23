@@ -1,0 +1,63 @@
+{
+  "pmcid": "PMC2719796",
+  "doi": "10.1371/journal.pone.0006573",
+  "title": "Ants, Cataglyphis cursor , Use Precisely Directed Rescue Behavior to Free Entrapped Relatives",
+  "article_type": "research-article",
+  "license_urls": [
+    "http://creativecommons.org/licenses/by/4.0/",
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "license_statement": "https://creativecommons.org/licenses/by/4.0/ This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited.",
+  "body_characters": 17535,
+  "sections": [
+    "Introduction",
+    "Results",
+    "Discussion",
+    "Materials and Methods",
+    "Supporting Information"
+  ],
+  "supplement_links": [
+    {
+      "content-type": "local-data",
+      "id": "pone.0006573.s001",
+      "position": "float",
+      "orientation": "portrait"
+    },
+    {
+      "content-type": "local-data",
+      "id": "pone.0006573.s002",
+      "position": "float",
+      "orientation": "portrait"
+    },
+    {
+      "content-type": "local-data",
+      "id": "pone.0006573.s003",
+      "position": "float",
+      "orientation": "portrait"
+    },
+    {
+      "content-type": "local-data",
+      "id": "pone.0006573.s004",
+      "position": "float",
+      "orientation": "portrait"
+    },
+    {
+      "content-type": "local-data",
+      "id": "pone.0006573.s005",
+      "position": "float",
+      "orientation": "portrait"
+    }
+  ],
+  "scientific_review_complete": false,
+  "required_before_selection": [
+    "Read original study and necessary supplements",
+    "Check current correction, retraction and expression-of-concern records",
+    "Confirm peer review, study design, claims and limitations",
+    "Check each proposed visual asset licence separately"
+  ],
+  "cache_scope": "Article XML and text only; no PDF, figure or supplementary asset download. Cached access is not editorial approval.",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/api/oai/v1/mh/?verb=GetRecord&identifier=oai%3Apubmedcentral.nih.gov%3A2719796&metadataPrefix=pmc",
+  "retrieved_at": "2026-11-13T14:05:43.377011+00:00",
+  "xml_sha256": "63900b9d88ad2a93408839725518e9262951da470ed1992162c268188fc32a66",
+  "text_sha256": "5dd1b5f96dcad0d461bf82553b7f5e5e50d5218a893210dce496bfeae86a034d"
+}

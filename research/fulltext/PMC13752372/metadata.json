@@ -1,0 +1,68 @@
+{
+  "pmcid": "PMC13752372",
+  "doi": "10.1073/pnas.2618030123",
+  "title": "Behavioral evidence for two-stage sleep in spiders",
+  "article_type": "research-article",
+  "license_urls": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "license_statement": "https://creativecommons.org/licenses/by/4.0/ This open access article is distributed under Creative Commons Attribution License 4.0 (CC BY) .",
+  "body_characters": 47221,
+  "sections": [
+    "Results",
+    "Endogenous Circadian Control of Activity.",
+    "Sleep Architecture: Consolidated Sleep and REM-Like States in P. fimbriata .",
+    "Arousal Threshold: State-Dependent Differences.",
+    "Sleep Disruption: Evidence for Homeostatic Rebound.",
+    "Discussion",
+    "Materials and Methods",
+    "Spider Husbandry.",
+    "Infrared Video Recordings.",
+    "Environmental Conditions.",
+    "Ethics Statement and Permits.",
+    "Experimental Protocols.",
+    "Circadian activity tracking.",
+    "Sleep architecture recording.",
+    "Arousal threshold.",
+    "Sleep homeostasis.",
+    "Video scoring and statistical analyses.",
+    "AI Disclosure Statement.",
+    "Inclusion and Diversity Statement.",
+    "Acknowledgment of Country.",
+    "Supplementary Material"
+  ],
+  "supplement_links": [
+    {
+      "position": "float",
+      "content-type": "local-data",
+      "orientation": "portrait"
+    },
+    {
+      "position": "float",
+      "content-type": "local-data",
+      "orientation": "portrait"
+    },
+    {
+      "position": "float",
+      "content-type": "local-data",
+      "orientation": "portrait"
+    },
+    {
+      "position": "float",
+      "content-type": "local-data",
+      "orientation": "portrait"
+    }
+  ],
+  "scientific_review_complete": false,
+  "required_before_selection": [
+    "Read original study and necessary supplements",
+    "Check current correction, retraction and expression-of-concern records",
+    "Confirm peer review, study design, claims and limitations",
+    "Check each proposed visual asset licence separately"
+  ],
+  "cache_scope": "Article XML and text only; no PDF, figure or supplementary asset download. Cached access is not editorial approval.",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/api/oai/v1/mh/?verb=GetRecord&identifier=oai%3Apubmedcentral.nih.gov%3A13752372&metadataPrefix=pmc",
+  "retrieved_at": "2026-11-21T17:37:00.394596+00:00",
+  "xml_sha256": "d27378b10eabacd43c55f01fa7f05406704b1e4729685c93c5a3bd9cb54347eb",
+  "text_sha256": "5cafed61f6070847f65fa9cb327c7fd00403c90963f8e7dd2c7f766b6a47f7ab"
+}

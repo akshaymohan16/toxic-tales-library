@@ -1,0 +1,4 @@
+# Keep the historical requirements byte-identical for existing releases.
+-r requirements.txt
+# faster-whisper 1.2.1 uses av.open(metadata_errors=...), removed by PyAV 19.
+av==16.0.1

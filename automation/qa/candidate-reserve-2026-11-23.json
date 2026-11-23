@@ -1,0 +1,173 @@
+{
+  "kind": "toxic-tales-unpublished-primary-study-screen",
+  "week_start": "2026-11-23",
+  "screened_at": "2026-11-21",
+  "status": "screened_by_title_abstract_and_metadata_only_no_release_or_quality_approval",
+  "primary_source_policy": "Read complete cached JATS or original full text and required supplements. Check corrections, disputes, licenses and final media independently before release.",
+  "request_id": "reserve-animals-2026-11-21",
+  "candidate_count": 8,
+  "candidate_rank_is_not_publication_authorization": true,
+  "candidates": [
+    {
+      "pmcid": "PMC13752372",
+      "doi": "10.1073/pnas.2618030123",
+      "organism": "Portia fimbriata jumping spider",
+      "idea": "A spider's sleep shows arousal thresholds and rebounds after disturbance",
+      "abstract_support": "PNAS 2026 original experiment measured circadian timing, reduced arousal during REM-like bouts and a homeostatic rebound following fly-induced nocturnal disturbance",
+      "critical_limit": "Distinct species from 2022 Evarcha arcuata observations; study supports behavioral sleep and REM-like states, not evidence that spiders dream",
+      "interest": "high",
+      "state": "full_main_article_cached_but_not_independently_reviewed",
+      "retrieval": {
+        "status": "full_main_article_cached_CC_BY_4_0",
+        "cached_text": "research/fulltext/PMC13752372/article.txt",
+        "license": "CC BY 4.0",
+        "issues": [
+          "Read all 47k characters of main body; inspect supplements for any specific claim",
+          "Verify contemporaneous corrections or notices",
+          "Science and independent final-media, rights, narration review required",
+          "Do not infer visual rights for supplementary movies from general article licence without checking"
+        ]
+      }
+    },
+    {
+      "pmcid": "PMC3966847",
+      "doi": "10.1371/journal.pone.0092895",
+      "organism": "New Caledonian crow",
+      "idea": "A crow can raise a floating reward by choosing what to drop into water",
+      "abstract_support": "Experiment reports preferences for water over sand, sinking over floating and solid over hollow objects",
+      "critical_limit": "The birds failed two harder tasks; avoid claims of complete causal understanding or human-equivalent intelligence",
+      "interest": "high",
+      "state": "await full-text, correction, supplementary and visual-rights review",
+      "retrieval": {
+        "status": "full_main_article_cached_CC_BY_4_0",
+        "cached_text": "research/fulltext/PMC3966847/article.txt",
+        "license": "CC BY 4.0",
+        "issues": [
+          "Verify current correction/retraction notices",
+          "Check individual experimental video supplements and rights",
+          "Independent claim-by-claim and narration/visual review"
+        ],
+        "source_notes": "Six captive wild-caught crows (only 4 completed all six experiments); 20 trials per condition. Preferences: water vs sand 76.3%, sinking vs floating 88%, solid vs hollow 89%, high vs low water 86.8%. No first-choice preference for narrower tube (56%, p=0.27), and U-tube chance performance (48.9%, p=0.79). Fixed task order and extensive prior stone-drop training. Do not claim spontaneous discovery or complete causal reasoning."
+      }
+    },
+    {
+      "pmcid": "PMC9388130",
+      "doi": "10.1073/pnas.2204754119",
+      "organism": "jumping spider",
+      "idea": "Retinal movements in a resting spider point toward an REM-like state",
+      "abstract_support": "Authors report recurring retinal movements during sleep-like inactivity",
+      "critical_limit": "REM-like does not prove dreams or mammalian REM; interpret behavior cautiously",
+      "interest": "high",
+      "state": "await full-text, correction, supplementary and visual-rights review",
+      "retrieval": {
+        "status": "full_main_article_cached_CC_BY_4_0",
+        "cached_text": "research/fulltext/PMC9388130/article.txt",
+        "license": "CC BY 4.0",
+        "issues": [
+          "Inspect necessary supplementary movement movies and licenses",
+          "Check follow-up 2026 PNAS paper DOI 10.1073/pnas.2618030123 and whether original story needs revision",
+          "Independent scientific, media, narration and release review"
+        ],
+        "source_notes": "Evarcha arcuata n=34 spiderlings (age 1-9 days), plus n=3 adults; 77.13-second median retinal movement bouts (nobs=330,nsubj=29) with limb twitches. Study reports REM-like behavior, not proof of dreaming or experimentally validated sleep."
+      }
+    },
+    {
+      "pmcid": "PMC3565511",
+      "doi": "10.1098/rsbl.2012.0931",
+      "organism": "urban birds",
+      "idea": "Cigarette filters in nests are associated with fewer ectoparasites",
+      "abstract_support": "Nest-material association and a separate heat-trap comparison",
+      "critical_limit": "Does not prove birds deliberately medicate themselves or improve fitness; avoid encouraging litter or claiming nicotine is harmless",
+      "interest": "high",
+      "state": "await full-text, correction, supplementary and visual-rights review",
+      "retrieval": {
+        "status": "not_cached",
+        "reason": "503/400"
+      }
+    },
+    {
+      "pmcid": "PMC8101055",
+      "doi": "10.1016/j.isci.2021.102223",
+      "organism": "octopus",
+      "idea": "Octopuses cycle between quiet and active sleep-like states",
+      "abstract_support": "Four adult Octopus insularis were observed with behavioral state measurements",
+      "critical_limit": "Small group, behavioral definition, and no demonstration that octopuses dream",
+      "interest": "high",
+      "state": "await full-text, supplementary, corrections and visual-rights review",
+      "retrieval": {
+        "status": "not_cached",
+        "reason": "503/license ambiguity"
+      }
+    },
+    {
+      "pmcid": "PMC6366756",
+      "doi": "10.1371/journal.pbio.3000021",
+      "organism": "cleaner wrasse",
+      "idea": "A reef fish changes behavior toward a mirror and visible marks",
+      "abstract_support": "Fish displayed mark-test behaviors under particular conditions",
+      "critical_limit": "Mirror-test interpretation is contested; not direct proof of consciousness/self-awareness",
+      "interest": "high",
+      "state": "await full-text, follow-up and competing-explanation review",
+      "retrieval": {
+        "status": "not_cached",
+        "reason": "503/title unavailable"
+      }
+    },
+    {
+      "pmcid": "PMC3093451",
+      "doi": "10.1073/pnas.1016658108",
+      "organism": "red imported fire ant",
+      "idea": "Groups of ants interlock and float in a waterproof raft",
+      "abstract_support": "Time-lapse experiments examined raft assembly and hydrophobicity",
+      "critical_limit": "Do not claim individual ants float effortlessly or consciously coordinate every movement; current episode TT-009 already features ants",
+      "interest": "reserve",
+      "state": "await full-text, rights and correction review",
+      "retrieval": {
+        "status": "not_cached",
+        "reason": "connection/400"
+      }
+    },
+    {
+      "pmcid": "PMC9290741",
+      "doi": "10.1111/nyas.14600",
+      "organism": "fruit bat",
+      "idea": "Sickness-like immune challenge alters group contact",
+      "abstract_support": "Authors report reduced social contacts following immunological challenge",
+      "critical_limit": "Immune challenge is not an infection, reduced encounters do not establish deliberate altruistic distancing",
+      "interest": "reserve",
+      "state": "await full-text, rights and correction review",
+      "retrieval": {
+        "status": "not_cached",
+        "reason": "oversized XML/license ambiguity"
+      }
+    }
+  ],
+  "recommended_first_full_text_comparisons": [
+    "PMC3966847",
+    "PMC9388130"
+  ],
+  "technical_note": "No media or Metricool changes authorized by this shortlist. Seven candidates are requested through official open-text retrieval, which enforces manuscript DOI, PMCID, body and CC BY/CC0 cache requirements.",
+  "retrieval_update": {
+    "checked": "2026-11-21",
+    "workflow_run_id": 44930526923,
+    "request_id": "reserve-animals-2026-11-21",
+    "cached_complete_main_articles": 3,
+    "skipped": 5,
+    "scientific_review_complete": false,
+    "rights_and_supplements_review_complete": false,
+    "provider_scheduled_destinations_for_week": 0,
+    "expected_destinations": 4,
+    "owner_action_blocker": false,
+    "newer_spider_paper": {
+      "pmcid": "PMC13752372",
+      "doi": "10.1073/pnas.2618030123",
+      "publication_date": "2026-11-10",
+      "note": "Related 2026 Portia fimbriata two-stage sleep / arousal thresholds / sleep rebound publication. New official full-text retrieval requested separately; treat as separate species and experimental confirmation, not proof of dreams or a correction to old paper.",
+      "request_id": "sleep-2026-followup-20261121",
+      "status": "cached_complete_main_text_CC_BY_4_0",
+      "cache_path": "research/fulltext/PMC13752372",
+      "retrieval_run_id": 44930966526
+    },
+    "next_step": "Select two distinctive, fully reviewed papers from the three cached sources: crows (PMC3966847), jumping-spider 2022 (PMC9388130), newer Portia spider 2026 (PMC13752372). Treat last two as a linked research tradition rather than two independent story slots. Check supplements/rights/contrary literature, render distinct videos, independently review, then schedule exactly four paired destinations subject to quota/claims."
+  }
+}

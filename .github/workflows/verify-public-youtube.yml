@@ -1,0 +1,82 @@
+name: Verify one public Toxic Tales YouTube Short
+on:
+  push:
+    paths:
+      - '.github/workflows/verify-public-youtube.yml'
+      - 'automation/youtube-public-verification-request.json'
+permissions:
+  contents: read
+jobs:
+  public-metadata:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install free public metadata reader
+        run: python -m pip install --disable-pip-version-check yt-dlp
+      - name: Check public video title and pinned channel identity
+        run: |
+          python - <<'PY'
+          import json, datetime, urllib.request, urllib.parse, traceback
+          from pathlib import Path
+          import yt_dlp
+          r=json.loads(Path('automation/youtube-public-verification-request.json').read_text())
+          assert r['repository']=='akshaymohan16/toxic-tales-library'
+          assert r['channel_id']=='UCDvftxMMdtGSntm-ezcPfCg'
+          video=r['video_id']
+          assert len(video)==11 and all(c.isalnum() or c in '_-' for c in video)
+          url='https://www.youtube.com/shorts/'+video
+          assert url==r['public_url']
+          title=r['title']; doi=r['doi']
+          o={'request':r,'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+             'verified_by':'independent public GitHub Actions metadata check','decision':'unverified'}
+          success=False
+          try:
+              with yt_dlp.YoutubeDL({'quiet':True,'no_warnings':True,'skip_download':True,
+                                    'noplaylist':True,'socket_timeout':18,'retries':1,
+                                    'extractor_retries':1}) as client:
+                  info=client.extract_info(url,download=False)
+              o['yt_dlp']={k:info.get(k) for k in
+                  ('id','title','channel_id','channel','uploader','uploader_id','availability','duration')}
+              o['yt_dlp']['doi_in_description']=doi in str(info.get('description',''))
+              success=(info.get('id')==video and info.get('title')==title and
+                       info.get('channel_id')==r['channel_id'] and
+                       info.get('availability') not in ('private','needs_auth') and
+                       doi in str(info.get('description','')))
+              if success:o['decision']='pass'
+          except Exception as exc:
+              o['yt_dlp_error']=type(exc).__name__+': '+str(exc)[:700]
+          if not success:
+              try:
+                  endpoint='https://www.youtube.com/oembed?url='+urllib.parse.quote(url,safe='')+'&format=json'
+                  h={'User-Agent':'Mozilla/5.0 (compatible; ToxicTalesQA/1.0)'}
+                  with urllib.request.urlopen(urllib.request.Request(endpoint,headers=h),timeout=15) as resp:
+                      meta=json.load(resp)
+                  author_url=str(meta.get('author_url',''))
+                  channel_ok=r['channel_id'] in author_url
+                  if not channel_ok and author_url.startswith('https://www.youtube.com/'):
+                      with urllib.request.urlopen(urllib.request.Request(author_url,headers=h),timeout=15) as resp:
+                          page=resp.read(1500000).decode('utf-8','replace')
+                      channel_ok=r['channel_id'] in page
+                  o['oembed']={k:meta.get(k) for k in ('title','author_name','author_url','type')}
+                  o['oembed']['channel_id_in_public_channel_page']=channel_ok
+                  success=(meta.get('title')==title and meta.get('type')=='video' and channel_ok)
+                  if success:o['decision']='pass'
+              except Exception as exc:
+                  o['oembed_error']=type(exc).__name__+': '+str(exc)[:700]
+          o['success']=success
+          Path('youtube-public-verification.json').write_text(json.dumps(o,indent=2)+'\n')
+          print(json.dumps(o,indent=2))
+          if not success:raise SystemExit(1)
+          PY
+      - name: Retain public verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: toxic-tales-public-youtube-verification
+          path: youtube-public-verification.json
+          retention-days: 7

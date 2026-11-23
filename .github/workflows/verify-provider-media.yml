@@ -1,0 +1,43 @@
+name: Verify Toxic Tales public and provider media bytes
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'automation/media-verification-request.json'
+      - 'scripts/verify_provider_media.py'
+      - 'scripts/test_verify_provider_media.py'
+      - '.github/workflows/verify-provider-media.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: toxic-tales-public-media-verification
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test boundaries, redirects, streaming and bounded retries
+        run: python -m unittest discover -s scripts -p 'test_verify_provider_media.py' -v
+      - name: Hash public media without provider credentials or writes
+        run: python scripts/verify_provider_media.py
+      - name: Retain compact byte-verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: provider-media-verification-${{ github.run_id }}
+          path: work/provider-media-verification.json
+          if-no-files-found: ignore
+          retention-days: 7

@@ -1,0 +1,39 @@
+{
+  "repository": "akshaymohan16/toxic-tales-library",
+  "brand_id": "7937614",
+  "episode_id": "TT-009",
+  "release_fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
+  "source_commit": "ef1cfbf56d1c85dc95efa8cf1d3c67d2fbfcd3b7",
+  "files": [
+    {
+      "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-009-ants-bite-the-restraint-b89b5c741890.mp4",
+      "role": "source_video",
+      "expected_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b"
+    },
+    {
+      "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-009-ants-bite-the-restraint-b89b5c741890_cover.jpg",
+      "role": "source_cover",
+      "expected_sha256": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224"
+    },
+    {
+      "url": "https://static.metricool.com/planner/202611/7937614-file-3737416094863891945.mp4",
+      "role": "provider_video",
+      "expected_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b"
+    },
+    {
+      "url": "https://static.metricool.com/planner/202611/7937614-file-15334528450768090167.jpeg",
+      "role": "provider_cover",
+      "expected_sha256": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224"
+    },
+    {
+      "url": "https://static.metricool.com/planner/202611/7937614-file-12147950446845277643.mp4",
+      "role": "provider_video",
+      "expected_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b"
+    },
+    {
+      "url": "https://static.metricool.com/planner/202611/7937614-file-15401831120842934675.jpeg",
+      "role": "provider_cover",
+      "expected_sha256": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224"
+    }
+  ]
+}

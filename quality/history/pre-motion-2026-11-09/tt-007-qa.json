@@ -1,0 +1,560 @@
+{
+  "renderer": "nature-branded-9.0",
+  "declared_renderer": "nature-branded-9",
+  "editorial_style": "science-journalism",
+  "duration": 56.416667,
+  "native_dimensions": [
+    1080,
+    1920
+  ],
+  "shots": [
+    {
+      "kind": "bee_video",
+      "title": "A bee rolls\na wooden ball",
+      "kicker": "ACTUAL LAB FOOTAGE",
+      "start": 0.0,
+      "end": 3.18384,
+      "asset": "bee_study_video",
+      "offset": 0,
+      "segment": 0
+    },
+    {
+      "kind": "bee_video",
+      "title": "No nectar\ninside the ball",
+      "kicker": "ACTUAL LAB FOOTAGE",
+      "start": 3.18384,
+      "end": 5.896,
+      "asset": "bee_study_video",
+      "offset": 9,
+      "segment": 0
+    },
+    {
+      "kind": "bee_path",
+      "title": "A clear route\nto food",
+      "kicker": "THE QUESTION",
+      "start": 5.896,
+      "end": 9.004,
+      "segment": 1
+    },
+    {
+      "kind": "bee_path",
+      "title": "Balls beside\nthe route",
+      "kicker": "THE QUESTION",
+      "start": 9.004,
+      "end": 12.112,
+      "segment": 1
+    },
+    {
+      "kind": "bee_video",
+      "title": "They rolled\nballs anyway",
+      "kicker": "CAUGHT ON CAMERA",
+      "start": 12.112,
+      "end": 18.114666666666665,
+      "asset": "bee_study_video",
+      "offset": 5,
+      "segment": 2
+    },
+    {
+      "kind": "bee_rolling",
+      "title": "No food prize.\nStill rolling.",
+      "kicker": "THE SURPRISE",
+      "start": 18.114666666666665,
+      "end": 24.223999999999997,
+      "segment": 3
+    },
+    {
+      "kind": "bee_age",
+      "title": "Younger bees\nrolled more",
+      "kicker": "A SEPARATE AGE TEST",
+      "start": 24.223999999999997,
+      "end": 27.223359999999996,
+      "segment": 4
+    },
+    {
+      "kind": "bee_age",
+      "title": "A separate\nage comparison",
+      "kicker": "A SEPARATE AGE TEST",
+      "start": 27.223359999999996,
+      "end": 29.991999999999997,
+      "segment": 4
+    },
+    {
+      "kind": "bee_choice",
+      "title": "Colour linked\nto rolling",
+      "kicker": "A REWARDING PATTERN",
+      "start": 29.991999999999997,
+      "end": 33.54602666666666,
+      "segment": 5
+    },
+    {
+      "kind": "bee_choice",
+      "title": "A preference\nafter rolling",
+      "kicker": "A REWARDING PATTERN",
+      "start": 33.54602666666666,
+      "end": 36.82666666666666,
+      "segment": 5
+    },
+    {
+      "kind": "bee_rolling",
+      "title": "The activity\nwas the reward?",
+      "kicker": "THE INTERPRETATION",
+      "start": 36.82666666666666,
+      "end": 41.71999999999999,
+      "segment": 6
+    },
+    {
+      "kind": "bee_scope",
+      "title": "No direct measure\nof bee feelings",
+      "kicker": "THE LIMIT",
+      "start": 41.71999999999999,
+      "end": 46.19333333333333,
+      "segment": 7
+    },
+    {
+      "kind": "bee_scope",
+      "title": "Wild bee play\nnot yet tested",
+      "kicker": "THE LIMIT",
+      "start": 46.19333333333333,
+      "end": 50.66666666666666,
+      "segment": 7
+    },
+    {
+      "kind": "closing",
+      "title": "A different\nkind of play?",
+      "kicker": "THE ECOLOGICAL QUESTION",
+      "start": 50.66666666666666,
+      "end": 56.41333333333333,
+      "asset": "bee_flower",
+      "focus": [
+        0.53,
+        0.53
+      ],
+      "segment": 8
+    }
+  ],
+  "captions": [
+    {
+      "start": 0,
+      "end": 1.74,
+      "text": "This bumblebee is rolling a wooden"
+    },
+    {
+      "start": 1.74,
+      "end": 4.0,
+      "text": "ball. There is no nectar inside."
+    },
+    {
+      "start": 4.260000000000001,
+      "end": 5.6000000000000005,
+      "text": "So why does it keep rolling?"
+    },
+    {
+      "start": 5.896,
+      "end": 7.816,
+      "text": "In a laboratory, researchers gave"
+    },
+    {
+      "start": 7.816,
+      "end": 9.596,
+      "text": "bees a clear route to food,"
+    },
+    {
+      "start": 9.736,
+      "end": 11.196000000000002,
+      "text": "with wooden balls placed off to"
+    },
+    {
+      "start": 11.196000000000002,
+      "end": 11.796,
+      "text": "the sides."
+    },
+    {
+      "start": 12.112,
+      "end": 13.792,
+      "text": "The bees could walk straight past."
+    },
+    {
+      "start": 14.172,
+      "end": 15.952,
+      "text": "But many stopped, climbed onto"
+    },
+    {
+      "start": 16.172,
+      "end": 17.292,
+      "text": "movable balls, and rolled them"
+    },
+    {
+      "start": 17.292,
+      "end": 17.772,
+      "text": "anyway."
+    },
+    {
+      "start": 18.114666666666665,
+      "end": 19.914666666666665,
+      "text": "Some rolled again and again, even"
+    },
+    {
+      "start": 19.914666666666665,
+      "end": 22.194666666666663,
+      "text": "after feeding. The balls offered no"
+    },
+    {
+      "start": 22.194666666666663,
+      "end": 23.914666666666665,
+      "text": "sugar or pollen reward."
+    },
+    {
+      "start": 24.223999999999997,
+      "end": 26.063999999999997,
+      "text": "In a separate test, young bees"
+    },
+    {
+      "start": 26.063999999999997,
+      "end": 27.983999999999995,
+      "text": "rolled more often than older bees"
+    },
+    {
+      "start": 27.983999999999995,
+      "end": 29.223999999999997,
+      "text": "that were equally new to the"
+    },
+    {
+      "start": 29.223999999999997,
+      "end": 29.683999999999997,
+      "text": "balls."
+    },
+    {
+      "start": 29.991999999999997,
+      "end": 31.731999999999996,
+      "text": "Another test offered different"
+    },
+    {
+      "start": 31.752,
+      "end": 33.812,
+      "text": "coloured chambers. Bees later chose"
+    },
+    {
+      "start": 33.812,
+      "end": 35.471999999999994,
+      "text": "more often the colour linked to"
+    },
+    {
+      "start": 35.471999999999994,
+      "end": 36.552,
+      "text": "earlier ball rolling."
+    },
+    {
+      "start": 36.82666666666666,
+      "end": 38.42666666666666,
+      "text": "That suggests the activity itself"
+    },
+    {
+      "start": 38.42666666666666,
+      "end": 40.44666666666666,
+      "text": "was rewarding, even without an"
+    },
+    {
+      "start": 40.44666666666666,
+      "end": 41.36666666666666,
+      "text": "edible prize."
+    },
+    {
+      "start": 41.71999999999999,
+      "end": 43.57999999999999,
+      "text": "The researchers called it play-like"
+    },
+    {
+      "start": 44.55999999999999,
+      "end": 45.75999999999999,
+      "text": "behaviour. Yet a laboratory test"
+    },
+    {
+      "start": 45.75999999999999,
+      "end": 47.57999999999999,
+      "text": "cannot directly reveal how bees"
+    },
+    {
+      "start": 47.57999999999999,
+      "end": 49.77999999999999,
+      "text": "feel, or how often wild bees"
+    },
+    {
+      "start": 49.77999999999999,
+      "end": 50.459999999999994,
+      "text": "do this."
+    },
+    {
+      "start": 50.66666666666666,
+      "end": 52.426666666666655,
+      "text": "An insect rolling a ball may"
+    },
+    {
+      "start": 52.426666666666655,
+      "end": 53.80666666666666,
+      "text": "be showing us that play has"
+    },
+    {
+      "start": 53.80666666666666,
+      "end": 56.106666666666655,
+      "text": "more forms than we usually notice."
+    }
+  ],
+  "segment_audio": [
+    {
+      "segment": 0,
+      "script": "This bumblebee is rolling a wooden ball. There is no nectar inside. So why does it keep rolling?",
+      "transcript": " This  bumblebee  is  rolling  a  wooden  ball.  There  is  no  nectar  inside.  So  why  does  it  keep  rolling?",
+      "token_similarity": 1.0,
+      "duration": 5.896
+    },
+    {
+      "segment": 1,
+      "script": "In a laboratory, researchers gave bees a clear route to food, with wooden balls placed off to the sides.",
+      "transcript": " In  a  laboratory,  researchers  gave  bees  a  clear  route  to  food,  with  wooden  balls  placed  off  to  the  sides.",
+      "token_similarity": 1.0,
+      "duration": 6.216
+    },
+    {
+      "segment": 2,
+      "script": "The bees could walk straight past. But many stopped, climbed onto movable balls, and rolled them anyway.",
+      "transcript": " The  bees  could  walk  straight  past,  but  many  stopped,  climbed  onto  moveable  balls,  and  rolled  them  anyway.",
+      "token_similarity": 0.9412,
+      "duration": 6.003
+    },
+    {
+      "segment": 3,
+      "script": "Some rolled again and again, even after feeding. The balls offered no sugar or pollen reward.",
+      "transcript": " Some  rolled  again  and  again,  even  after  feeding.  The  balls  offered  no  sugar  or  pollen  reward.",
+      "token_similarity": 1.0,
+      "duration": 6.109
+    },
+    {
+      "segment": 4,
+      "script": "In a separate test, young bees rolled more often than older bees that were equally new to the balls.",
+      "transcript": " In  a  separate  test,  young  bees  rolled  more  often  than  older  bees  that  were  equally  new  to  the  balls.",
+      "token_similarity": 1.0,
+      "duration": 5.768
+    },
+    {
+      "segment": 5,
+      "script": "Another test offered different coloured chambers. Bees later chose more often the colour linked to earlier ball rolling.",
+      "transcript": " Another  test  offered  different  colored  chambers.  Bees  later  chose  more  often  the  color  linked  to  earlier  ball  rolling.",
+      "token_similarity": 0.8889,
+      "duration": 6.835
+    },
+    {
+      "segment": 6,
+      "script": "That suggests the activity itself was rewarding, even without an edible prize.",
+      "transcript": " That  suggests  the  activity  itself  was  rewarding,  even  without  an  edible  prize.",
+      "token_similarity": 1.0,
+      "duration": 4.893
+    },
+    {
+      "segment": 7,
+      "script": "The researchers called it play-like behaviour. Yet a laboratory test cannot directly reveal how bees feel, or how often wild bees do this.",
+      "transcript": " The  researchers  called  it  play -like  behavior.  Yet  a  laboratory  test  cannot  directly  reveal  how  bees  feel  or  how  often  wild  bees  do  this.",
+      "token_similarity": 0.9583,
+      "duration": 8.947
+    },
+    {
+      "segment": 8,
+      "script": "An insect rolling a ball may be showing us that play has more forms than we usually notice.",
+      "transcript": " An  insect  rolling,  a  ball  may  be  showing  us  that  play  has  more  forms  than  we  usually  notice.",
+      "token_similarity": 1.0,
+      "duration": 5.747
+    }
+  ],
+  "final_audio_transcript": " This bumblebee is rolling a wooden ball.  There is no nectar inside.  So why does it keep rolling?  In a laboratory, researchers gave bees a clear route  to food, with wooden balls placed off to the sides.  The bees could walk straight past,  but many stopped, climbed onto movable balls,  and rolled them anyway.  Some rolled again and again, even after feeding.  The balls offered no sugar or pollen reward.  In a separate test, young bees rolled more often  than older bees that were equally new to the balls.  Another test offered different colored chambers.  Bees later chose more often the color linked  to earlier ball rolling.  That suggests the activity itself was rewarding,  even without an edible prize.  The researchers called it play-like behavior.  Yet a laboratory test cannot directly reveal  how bees feel or how often wild bees do this.  An insect rolling, a ball may be showing us  that play has more forms than we usually notice.",
+  "final_script_similarity": 0.9813664596273292,
+  "loudness": {
+    "input_i": "-16.75",
+    "input_tp": "-5.32",
+    "input_lra": "1.70",
+    "input_thresh": "-26.94",
+    "output_i": "-16.15",
+    "output_tp": "-4.77",
+    "output_lra": "1.70",
+    "output_thresh": "-26.35",
+    "normalization_type": "dynamic",
+    "target_offset": "0.15"
+  },
+  "technical_passed": true,
+  "editorial_review_required": true,
+  "listening_review_claimed": false,
+  "contact_sheet": "qa/tt-007-contact.jpg",
+  "boundary_frame_checks": [
+    "qa/tt-007-boundary-01-before.jpg",
+    "qa/tt-007-boundary-01-after.jpg",
+    "qa/tt-007-boundary-02-before.jpg",
+    "qa/tt-007-boundary-02-after.jpg",
+    "qa/tt-007-boundary-03-before.jpg",
+    "qa/tt-007-boundary-03-after.jpg",
+    "qa/tt-007-boundary-04-before.jpg",
+    "qa/tt-007-boundary-04-after.jpg",
+    "qa/tt-007-boundary-05-before.jpg",
+    "qa/tt-007-boundary-05-after.jpg",
+    "qa/tt-007-boundary-06-before.jpg",
+    "qa/tt-007-boundary-06-after.jpg",
+    "qa/tt-007-boundary-07-before.jpg",
+    "qa/tt-007-boundary-07-after.jpg",
+    "qa/tt-007-boundary-08-before.jpg",
+    "qa/tt-007-boundary-08-after.jpg",
+    "qa/tt-007-boundary-09-before.jpg",
+    "qa/tt-007-boundary-09-after.jpg",
+    "qa/tt-007-boundary-10-before.jpg",
+    "qa/tt-007-boundary-10-after.jpg",
+    "qa/tt-007-boundary-11-before.jpg",
+    "qa/tt-007-boundary-11-after.jpg",
+    "qa/tt-007-boundary-12-before.jpg",
+    "qa/tt-007-boundary-12-after.jpg",
+    "qa/tt-007-boundary-13-before.jpg",
+    "qa/tt-007-boundary-13-after.jpg",
+    "qa/tt-007-opening-0s.jpg",
+    "qa/tt-007-opening-1s.jpg",
+    "qa/tt-007-final-frame.jpg"
+  ],
+  "font_receipts": [
+    {
+      "id": "sans",
+      "family": "Manrope",
+      "url": "https://raw.githubusercontent.com/google/fonts/4024282d9b0cffcdb8e3024560862746178d741f/ofl/manrope/Manrope%5Bwght%5D.ttf",
+      "filename": "4024282-Manrope-wght.ttf",
+      "license": "SIL Open Font License 1.1",
+      "license_url": "https://raw.githubusercontent.com/google/fonts/4024282d9b0cffcdb8e3024560862746178d741f/ofl/manrope/OFL.txt",
+      "download_sha256": "d0639be45d0af36e798172419d7bd173c4bd4f29e2b76cbb69db1d11bf8b0a40",
+      "license_sha256": "e01b637272e0cbdfb240184dd98ea5cc671556d9894dae2668d92ab2c906787c",
+      "archived_license": "licenses/Manrope-OFL.txt",
+      "upstream_commit": "4024282d9b0cffcdb8e3024560862746178d741f"
+    },
+    {
+      "id": "display",
+      "family": "Fraunces",
+      "url": "https://raw.githubusercontent.com/google/fonts/4024282d9b0cffcdb8e3024560862746178d741f/ofl/fraunces/Fraunces%5BSOFT%2CWONK%2Copsz%2Cwght%5D.ttf",
+      "filename": "4024282-Fraunces-variable.ttf",
+      "license": "SIL Open Font License 1.1",
+      "license_url": "https://raw.githubusercontent.com/google/fonts/4024282d9b0cffcdb8e3024560862746178d741f/ofl/fraunces/OFL.txt",
+      "download_sha256": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb",
+      "license_sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b",
+      "archived_license": "licenses/Fraunces-OFL.txt",
+      "upstream_commit": "4024282d9b0cffcdb8e3024560862746178d741f"
+    }
+  ],
+  "asset_receipts": [
+    {
+      "id": "bee_study_video",
+      "filename": "bombus-terrestris-ball.webm",
+      "media_type": "video/webm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Bombus_terrestris_rolling_ball.webm",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bombus_terrestris_rolling_ball.webm",
+      "creator": "H. S. Galpayage Dona, C. Solvi, A. Kowalewska, K. Mäkelä, H. MaBouDi & L. Chittka",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "changes": "21-second original published supplementary video S1, extracted study frames at 8fps for truthful short laboratory sequences, resized and cropped into explanatory portrait layout; credited as actual controlled experiment footage.",
+      "source_dimensions": [
+        1280,
+        720
+      ],
+      "source_duration_seconds": 20.687,
+      "download_sha256": "feeac2c143cfbf5b9d77034980881892dfad328f88dbc5c8e4e541c3992c0949"
+    },
+    {
+      "id": "bee_head_photo",
+      "filename": "bombus-terrestris-head.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Bombus_terrestris_head_in_detail.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bombus_terrestris_head_in_detail.jpg",
+      "creator": "Marco Almbauer",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "High-resolution real Bombus terrestris head reference photograph; portrait crop, colour grade and short camera movement; not the bees used in the ball rolling study.",
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "source_dimensions": [
+        3548,
+        2474
+      ],
+      "download_sha256": "30be7891f1df9d6833d0b2ccbd3ba8a0b22031180dbb3a580d9bc297d05aa2b2"
+    },
+    {
+      "id": "bee_flower",
+      "filename": "bombus-terrestris-flower-2026.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Bombus_terrestris_-_5_June_2026.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bombus_terrestris_-_5_June_2026.jpg",
+      "creator": "Aethonatic",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "changes": "Wild Bombus terrestris foraging on a shrub reference photograph; cropped/graded for ending; explicitly not the laboratory study animals or a ball-rolling scene.",
+      "focus": [
+        0.53,
+        0.5
+      ],
+      "source_dimensions": [
+        2683,
+        1791
+      ],
+      "download_sha256": "d244492e53eb58bbade416c326cdb36372075745a47e5d24719aec713e1c3f0a"
+    }
+  ],
+  "representation": "Actual credited CC BY 4.0 supplementary laboratory study footage in accurately framed horizontal inserts; CC0 species-reference stills, and new source-specific explanatory diagrams. No invented experimental footage or quantitative data are implied.",
+  "reference_photo_seconds": 5.747,
+  "reference_photo_share": 0.1019,
+  "voice": {
+    "model": "Kokoro v1.0",
+    "voice": "af_heart",
+    "speed": 1.04
+  },
+  "branding_standard": "toxic-tales-branding-v1",
+  "brand_asset": {
+    "schema_version": 1,
+    "asset_id": "toxic-tales-official-logo",
+    "title": "Toxic Tales green flask logo",
+    "owner": "Toxic Tales / Akshay Mohan",
+    "source_url": "https://www.instagram.com/toxic_tales_eco/",
+    "retrieval_method": "Metricool getbrandsettings, brand 7937614: account image URL downloaded directly through the browser. Matches the owner-supplied logo screenshot.",
+    "retrieved_at": "2026-11-07",
+    "permission": "Owner instructed on 7 November 2026 to add this existing Toxic Tales logo to future Reels. Account-brand use only; no general third-party redistribution licence asserted.",
+    "media_type": "image/jpeg",
+    "filename": "495902931_17847382194466712_7346362461362934702_n.jpg",
+    "dimensions": [
+      240,
+      240
+    ],
+    "sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+    "encoding": "base64",
+    "archived_asset": "assets/branding/toxic-tales-logo.json",
+    "download_sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+    "display_box_xywh": [
+      82,
+      72,
+      140,
+      140
+    ],
+    "changes": "Uniform resize and circular display mask on the dark background; original logo identity and archived image bytes retained."
+  },
+  "branding_layout": {
+    "logo_visible_from_opening": true,
+    "logo_box_xywh": [
+      82,
+      72,
+      140,
+      140
+    ],
+    "production_footer": false,
+    "progress_bar": false,
+    "field_notes_or_episode_code": false,
+    "scientific_labels_and_speech_captions": true
+  },
+  "branding_review_required": true,
+  "branding_review_claimed": false,
+  "fingerprint": "828b394d335136f3f97f68f62e0ddf55ebad6ce3d161c7c67fbb96698cb873db",
+  "evidence_sha256": "7853e9a54b1b1e006b0c43178d12a84dbced821c7112d30b396f8f7da4f05fa2",
+  "files": {
+    "media/tt-007-bumblebees-play-with-balls-828b394d3351.mp4": "3f8245a5dec4bec9b30e6f514ba46e8657bf91835a7036d19bfe989f7604a495",
+    "media/tt-007-bumblebees-play-with-balls-828b394d3351_cover.jpg": "38d68de52a9711a5979df7baac1dff23698f1762fad2d2d342b7bc577c8d9f9c"
+  },
+  "editorial_standard": "story-first-v1",
+  "editorial_source_sha256": "185ddd66c4c57284aabfe712f28116c234c867c60dd955c899b64f71c65df6a9",
+  "pre_render_reviewer": "TT007 evidence and cold-viewer editorial pass",
+  "script_author": "TT007 narrative desk"
+}

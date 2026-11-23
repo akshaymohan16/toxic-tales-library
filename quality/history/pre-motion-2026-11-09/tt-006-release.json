@@ -1,0 +1,133 @@
+{
+  "episode_id": "TT-006",
+  "decision": "release",
+  "publication_enabled": true,
+  "reviewer": "TT-006 separate final encoded-export QA desk",
+  "reviewed_at": "2026-11-08T12:25:41.310Z",
+  "fingerprint": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
+  "evidence_sha256": "1c5b5cca782a1f7586a3103c15009f525e4e3126869636447b620a052793c8ea",
+  "files": {
+    "media/tt-006-diving-bell-spider-oxygen-d34a246d6540.mp4": "be7ccc16374b8e1951669da564f8c65de9a495550549e4b56c08aaf7ddaccb60",
+    "media/tt-006-diving-bell-spider-oxygen-d34a246d6540_cover.jpg": "332ae3063461fe2c684764ca9e051e0b7b48b2332d12facef50f99fe50a50404"
+  },
+  "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-006-contact.jpg?review=97e61989",
+  "source_commit": "c354fcfb634f74cf6c46beb49aacf8004ce63993",
+  "verification_run": 42479311271,
+  "duration_seconds": 53.875,
+  "scientific_review": "The original Seymour and Hetz (2011) original article was read across pp.2175–2181; measured warm-water bell gas conductance and respirometry support a resting, not indefinite active, physical-gill interpretation. Nitrogen escape limits duration. Full provenance and source locations in evidence/tt-006.md.",
+  "visual_review": "Real licensed spider bubble portraits and nine labelled diagrams at full portrait size; relative to the earlier grey/slide pipeline the new 1080 composition and small logo preserve subject visibility; figure arrows, optode and active-limit slides inspect well at 360px.",
+  "audio_review": "Final H.264 1080×1920 53.875s with AAC Kokoro af_heart, integrated loudness -16.69 LUFS and -5.48 dBTP; ASR 99.67% normalized similarity. One ASR omission around 'resting spiders' is not scientific reversal because later matched 'resting spider' evidence and negation persist. Listening not performed.",
+  "narrative_review": "Sequence runs from bell building and finite trapped air to dissolved oxygen diffusion, instrument measurements, resting demand, nitrogen leakage and limits, finishing with a conditional answer.",
+  "final_editorial_review": {
+    "standard": "story-first-v1",
+    "reviewer": "TT-006 separate final encoded-export QA desk",
+    "reviewed_at": "2026-11-08T12:25:41.310Z",
+    "decision": "pass",
+    "independent_from_script_author": true,
+    "reviewed_encoded_frames": true,
+    "source_sha256": "6dec916122c8a936e896d7777ddb13f584553f6f144fba189d6d24301ba470bb",
+    "fingerprint": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
+    "files": {
+      "media/tt-006-diving-bell-spider-oxygen-d34a246d6540.mp4": "be7ccc16374b8e1951669da564f8c65de9a495550549e4b56c08aaf7ddaccb60",
+      "media/tt-006-diving-bell-spider-oxygen-d34a246d6540_cover.jpg": "332ae3063461fe2c684764ca9e051e0b7b48b2332d12facef50f99fe50a50404"
+    },
+    "evidence_sha256": "1c5b5cca782a1f7586a3103c15009f525e4e3126869636447b620a052793c8ea",
+    "inspection_scope": "Actual final MP4/cover SHA-256 checked byte for byte in 42479311271 downloaded public-preview artifact, plus actual 9-shot contact, 0/1-second opening, 16 before/after boundaries and last frame. Final files identical in bytes to the independently inspected high-contrast 424789 export; only episode caption was normalized to plain Instagram punctuation. Final ASR token similarity 99.67%, no silent or narration absence. Full continuous audio listening unavailable; no listening or creator-video parity claimed.",
+    "listening_review_claimed": false,
+    "continuous_playback_review_claimed": false,
+    "checks": {
+      "cold_viewer": {
+        "decision": "pass",
+        "finding": "At 0 and 1 s, identifiable diving bell spider and silver air chamber clearly align with the immediate underwater breathing question.",
+        "basis": "Actual opening 0s/1s and first shot midpoint; source reference photograph; narration starts with named spider."
+      },
+      "story": {
+        "decision": "pass",
+        "finding": "Sequence runs from bell building and finite trapped air to dissolved oxygen diffusion, instrument measurements, resting demand, nitrogen leakage and limits, finishing with a conditional answer.",
+        "basis": "Real 9-shot contact; transcript and nine actual shot timings compared to paper pp.2175–2181."
+      },
+      "visuals": {
+        "decision": "pass",
+        "finding": "Two reference spider photographs and original bell, oxygen-entry, optode and gas-loss diagrams remain distinguishable; full source diagram arrows indicate direction qualitatively, not manufactured measurements. Printed captions fit at 360px.",
+        "basis": "Actual last-build contact and 16 boundary pairs, cover and phone-scale 360px views."
+      },
+      "payoff": {
+        "decision": "pass",
+        "finding": "Closing answers how the air chamber stays breathable longer: oxygen comes from the water across the air bell while nitrogen loss still requires replenishment.",
+        "basis": "Shot 4 oxygen transfer, shot 7 gas depletion, final 9th source still and last spoken sentence."
+      },
+      "scope": {
+        "decision": "pass",
+        "finding": "Spoken water temperature context is warm laboratory aquaria; results apply to resting needs, not universal active or wild demand. The spoken caveat has not been displaced into a footer.",
+        "basis": "Paper Methods/Results/Discussion plus actual final transcript and 'what this cannot prove' frame."
+      },
+      "retelling": {
+        "decision": "pass",
+        "finding": "A freshwater spider builds an underwater bubble; dissolved oxygen from surrounding water helps support a resting spider, but the air chamber needs occasional replacement.",
+        "basis": "Summary supported by every encoded beat, and bounded by spoken nitrogen/active/wild limitations."
+      }
+    }
+  },
+  "branding_review": {
+    "standard": "toxic-tales-branding-v1",
+    "reviewer": "TT-006 separate branded-export QA desk",
+    "reviewed_at": "2026-11-08T12:25:41.310Z",
+    "decision": "pass",
+    "independent_from_script_author": true,
+    "logo_sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+    "fingerprint": "d34a246d6540a3aea25644c46a449ddbdc2816486b1cf6f67034f3f3b11ee4c6",
+    "files": {
+      "media/tt-006-diving-bell-spider-oxygen-d34a246d6540.mp4": "be7ccc16374b8e1951669da564f8c65de9a495550549e4b56c08aaf7ddaccb60",
+      "media/tt-006-diving-bell-spider-oxygen-d34a246d6540_cover.jpg": "332ae3063461fe2c684764ca9e051e0b7b48b2332d12facef50f99fe50a50404"
+    },
+    "evidence_sha256": "1c5b5cca782a1f7586a3103c15009f525e4e3126869636447b620a052793c8ea",
+    "reviewed_encoded_frames": true,
+    "reviewed_opening_frames": true,
+    "reviewed_every_shot_and_transition": true,
+    "reviewed_final_frame": true,
+    "reviewed_cover": true,
+    "reviewed_phone_scale": true,
+    "checks": {
+      "actual_logo": {
+        "decision": "pass",
+        "finding": "Real green flask/plant/Asellus logo appears top left in 0/1s opening, every midpoint/boundary and exact cover; matches 240px pinned brand master.",
+        "basis": "Inspect actual opening frames, every shot and 1080px cover; pinned brand master SHA256."
+      },
+      "placement": {
+        "decision": "pass",
+        "finding": "Small logo is readable against dark background and does not cover spider eye, visual arrows, scientific labels or spoken subtitles.",
+        "basis": "Upper-left asset box 82,72,140,140 verified against 360px and 1080px actual frames."
+      },
+      "clean_frames": {
+        "decision": "pass",
+        "finding": "No permanent bottom production fine-print, source/method footer, progress bar, Field notes or episode code in final source-specific frames.",
+        "basis": "All source-derived encoded shots and 26/16 before-after boundary frames, final shot."
+      },
+      "captions_and_labels": {
+        "decision": "pass",
+        "finding": "Manrope speech captions are phone-readable with no two-line overflow. Oxygen flow, optode and gas loss labels are scientific explanation rather than microtext.",
+        "basis": "Actual 360px contact thumbnails, boundary frames, ASR and phone-scale visual inspection."
+      },
+      "scientific_limits": {
+        "decision": "pass",
+        "finding": "Resting demand, nitrogen escape, eventual replenishment and caveat about active spiders remain spoken with clear corresponding panels.",
+        "basis": "Original full-text evidence, actual voice transcript, material limits in final shots."
+      },
+      "provenance": {
+        "decision": "pass",
+        "finding": "Final plain-text Instagram caption includes stable TT-006, paper DOI, research archive, CC BY authors, changes, reference-versus-experiment and synthetic narration disclosures.",
+        "basis": "Complete plain Instagram post text, evidence/<episode>.md, generated sources/<episode>.html; research/full licence links."
+      },
+      "reference_imagery": {
+        "decision": "pass",
+        "finding": "Wild spider stills never masquerade as research micro-optode footage; the stylised instruments and gas bubbles are self-evidently conceptual, and archival source details disambiguate.",
+        "basis": "Original assets' source pages, study classification, actual encoded footage and diagrams."
+      }
+    }
+  },
+  "release_note": "Exact exported bytes and source hashes after cleaned caption were independently assessed in a separate final editorial/branding QA pass. Must pass current published Pages byte verification, duplicate, rights, account, quota and provider readback before scheduling. No listening claim.",
+  "publication_eligible": true,
+  "media_commit": "97e6198957e3a14a793b39dfdeb0b542e44cc7dc",
+  "listening_review_claimed": false,
+  "source_sha256": "6dec916122c8a936e896d7777ddb13f584553f6f144fba189d6d24301ba470bb"
+}

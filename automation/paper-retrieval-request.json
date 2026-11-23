@@ -1,0 +1,14 @@
+{
+  "repository": "akshaymohan16/toxic-tales-library",
+  "request_id": "sleep-2026-followup-20261121",
+  "papers": [
+    {
+      "pmcid": "PMC9388130",
+      "expected_doi": "10.1073/pnas.2204754119"
+    },
+    {
+      "pmcid": "PMC13752372",
+      "expected_doi": "10.1073/pnas.2618030123"
+    }
+  ]
+}

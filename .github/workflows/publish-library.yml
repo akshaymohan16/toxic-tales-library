@@ -1,0 +1,139 @@
+name: Build and deploy Toxic Tales
+on:
+  push:
+    branches: [main]
+    paths: ['episodes/**', 'evidence/**', 'quality/**', 'assets/**', 'MEMORY.md', 'OPERATIONS.md', 'automation/config.json', 'automation/published.json', 'automation/enforce_reels_only.py', 'automation/test_enforce_reels_only.py', 'scripts/**', 'site/**', '.github/workflows/publish-library.yml', 'requirements.txt', 'requirements-motion.txt']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: toxic-tales-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/cache@v4
+        with:
+          path: |
+            render-cache
+            site/media
+            site/qa
+          key: toxic-tales-v4-${{ runner.os }}-${{ hashFiles('scripts/**', 'episodes/**', 'requirements.txt', 'requirements-motion.txt') }}
+          restore-keys: toxic-tales-v4-${{ runner.os }}-
+      - name: Install free offline tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng fonts-dejavu-core
+          python -m pip install -r requirements-motion.txt
+      - name: Test exact-file releases and caption safeguards
+        run: python -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Test and enforce Reels-only source policy
+        run: |
+          python -m unittest discover -s automation -p 'test_enforce_reels_only.py' -v
+          python automation/enforce_reels_only.py
+      - name: Restore exact approved exports before rendering
+        run: python scripts/preserve_current_releases.py
+      - name: Build reviewed stories and media
+        env:
+          OMP_NUM_THREADS: '2'
+        run: python scripts/build_next.py
+      - name: Package exact encoded frames for current film reviews
+        run: python scripts/package_review_next.py --current
+      - name: Save compact encoded review packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: toxic-tales-review-packages
+          path: site/qa/*-review.zip
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Exclude retired posts and carousels from publication queue
+        run: python automation/enforce_reels_only.py --sanitize-queue
+      - name: Add confirmed social links and accurate visual provenance
+        run: python scripts/enhance_archive.py
+      - name: Create exact-byte site hash manifest without copying large videos
+        run: |
+          python - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          root = Path('site')
+          files = {
+              p.relative_to(root).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+              for p in sorted(root.rglob('*'))
+              if p.is_file() and p.name != 'site-hashes.json'
+          }
+          manifest = {
+              'repository': os.environ['GITHUB_REPOSITORY'],
+              'commit': os.environ['GITHUB_SHA'],
+              'files': files,
+          }
+          (root / 'site-hashes.json').write_text(
+              json.dumps(manifest, indent=2, sort_keys=True) + chr(10),
+              encoding='utf-8')
+          print('Recorded', len(files), 'public files with SHA256; no duplicate MP4 artifacts')
+          PY
+      - name: Save only compact expected deployed file hashes
+        uses: actions/upload-artifact@v4
+        with:
+          name: toxic-tales-site-manifest
+          path: site/site-hashes.json
+          retention-days: 7
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+  deploy:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check Pages is enabled
+        uses: actions/configure-pages@v5
+      - name: Deploy public source library
+        id: deployment
+        uses: actions/deploy-pages@v4
+  verify-public-media:
+    if: github.repository == 'akshaymohan16/toxic-tales-library'
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/download-artifact@v4
+        with:
+          name: toxic-tales-site-manifest
+          path: expected-site
+      - name: Install free validation tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          python -m pip install Pillow==11.3.0
+      - name: Verify anonymous downloads and exact media
+        run: python scripts/verify_live.py
+      - name: Save only QA findings and phone-size contact sheets
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: toxic-tales-live-verification
+          path: |
+            verification/report.json
+            verification/*_video_contact.jpg
+            verification/*_carousel_contact.jpg
+          if-no-files-found: error
+          retention-days: 7
