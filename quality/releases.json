@@ -1287,5 +1287,274 @@
       "media/tt-009-ants-bite-the-restraint-b89b5c741890_cover.jpg"
     ],
     "release_note": "Separate 16 November review of export produced by previous TT-009 author. Exact public video, cover, manifest and review-index hashes independently checked. Release does not itself create a platform reservation; publication still needs provider CAS, intent, full-month quota, media-byte and readback checks. No perceptual audio listening or uninterrupted playback claimed."
+  },
+  "TT-011": {
+    "fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+    "files": {
+      "media/tt-011-spider-sleep-f156a514cc51.mp4": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+      "media/tt-011-spider-sleep-f156a514cc51_cover.jpg": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14"
+    },
+    "evidence_sha256": "47ccc7fdf2398c712fa423ef6ca817bc06403c4bf703dc9819702da244833d7c",
+    "episode_id": "TT-011",
+    "decision": "release",
+    "publication_enabled": true,
+    "publication_eligible": true,
+    "reviewer": "Independent 24 November evening publisher review, separate run from storyboard and renderer authors",
+    "reviewed_at": "2026-11-24T20:18:34.396Z",
+    "source_commit": "3f1c9ac6096814ea6e672d68838cfb2358c5018a",
+    "media_commit": "3f1c9ac6096814ea6e672d68838cfb2358c5018a",
+    "verification_run": 45442959490,
+    "duration_seconds": 51.833008,
+    "source_sha256": "de08aea63de460b947589e0e5a045d752604cbd93f8cd2cd1d697ca8eaa751a7",
+    "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/qa/tt-011-contact.jpg",
+    "scientific_review": "Existing full PMC OAI JATS reading documented in evidence/tt-011.md; rechecked cached article, matching sleep-2026-followup-20261121 report hash 636c51b83a8075c23e0e37385c83be8c5e2f0c3527f1a0bcbb94dba8e0b74496, main results and claim locations. 30 adult spiders in distinct arousal groups of 10; estimates 1.69 and 4.27 seconds among responders, four of ten REM-like spiders nonresponding within 10s, retest awake; 13 usable paired recordings after fly disturbance, group means 9.4 and 16.9 minutes. No uninspected supplementary measurements used. Fly disturbance not complete deprivation, quiet wakefulness possible, no neural or dream inference. Fresh 24 Nov DOI/title correction/retraction searches and PubMed 42932628/PMC13752372 found no specific linked notice; absence not guaranteed. Commons Donald Hobern Portia fimbriata image CC BY 2.0 freshly confirmed; exact pinned asset receipt, source and modifications documented.",
+    "visual_review": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed.",
+    "audio_review": "Exact H264/AAC file decoded without errors, 1080x1920 24fps, 51.833008s. Read eight segment ASRs, final encoded ASR and timed captions; similarity 0.966292, final apostrophe in spider's is an ASR transcription spelling, not a changed spoken claim; 4/10, 10 seconds, 13, retinal, fruit flies, brain and negations preserved. Manifest normalization output -15.96 LUFS, -4.69 dBTP, LRA 1.40. No perceptual listening or pronunciation certification claimed.",
+    "narrative_review": "A real jumping spider opens the distinction between waiting and sleep; posture, eye motion, sound response and paired disturbance rebound resolve the question without claiming dreams. Diagram repetition is limited to the resting posture and sound retest; quantitative cards are distinct.",
+    "final_editorial_review": {
+      "fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "files": {
+        "media/tt-011-spider-sleep-f156a514cc51.mp4": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+        "media/tt-011-spider-sleep-f156a514cc51_cover.jpg": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14"
+      },
+      "evidence_sha256": "47ccc7fdf2398c712fa423ef6ca817bc06403c4bf703dc9819702da244833d7c",
+      "reviewer": "Independent 24 November evening publisher review, separate run from storyboard and renderer authors",
+      "reviewed_at": "2026-11-24T20:18:34.396Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "reviewed_encoded_frames": true,
+      "standard": "story-first-v1",
+      "source_sha256": "de08aea63de460b947589e0e5a045d752604cbd93f8cd2cd1d697ca8eaa751a7",
+      "checks": {
+        "cold_viewer": {
+          "decision": "pass",
+          "finding": "Species reference spider immediately identifies the animal while the spoken question distinguishes sleep from waiting.",
+          "basis": "Encoded opening 0/1s and shots 1–2; cover."
+        },
+        "story": {
+          "decision": "pass",
+          "finding": "Rest posture and twitching motivate a sound test; retest and night disturbance give complementary evidence for regulated sleep.",
+          "basis": "Encoded shots 3–15 and final ASR."
+        },
+        "visuals": {
+          "decision": "pass",
+          "finding": "Silk platform, retinal diagram, sound stimulus, ten count icons and paired-group minutes explain the tests; reference photograph labelled.",
+          "basis": "Encoded shots 3–14; original main article."
+        },
+        "payoff": {
+          "decision": "pass",
+          "finding": "The final spider returns to the opening question with behavioral support rather than proof of dreaming.",
+          "basis": "Encoded shots 15–16, final captions and ASR."
+        },
+        "scope": {
+          "decision": "pass",
+          "finding": "Responders-only latency, four of ten, thirteen paired spiders, incomplete deprivation and no brain recording are explicitly bounded.",
+          "basis": "Encoded shots 8–16 and main methods/results."
+        },
+        "retelling": {
+          "decision": "pass",
+          "finding": "A spider's sleep is supported by weaker response to sound and more REM-like activity after disruption, not by a demonstration of dreaming.",
+          "basis": "Entire encoded sequence and original study."
+        }
+      }
+    },
+    "branding_review": {
+      "fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "files": {
+        "media/tt-011-spider-sleep-f156a514cc51.mp4": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+        "media/tt-011-spider-sleep-f156a514cc51_cover.jpg": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14"
+      },
+      "evidence_sha256": "47ccc7fdf2398c712fa423ef6ca817bc06403c4bf703dc9819702da244833d7c",
+      "reviewer": "Independent 24 November evening publisher review, separate run from storyboard and renderer authors",
+      "reviewed_at": "2026-11-24T20:18:34.396Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "reviewed_encoded_frames": true,
+      "standard": "toxic-tales-branding-v1",
+      "logo_sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+      "reviewed_opening_frames": true,
+      "reviewed_every_shot_and_transition": true,
+      "reviewed_final_frame": true,
+      "reviewed_cover": true,
+      "reviewed_phone_scale": true,
+      "checks": {
+        "actual_logo": {
+          "decision": "pass",
+          "finding": "Actual green flask mark remains upper left from first to final frame and cover.",
+          "basis": "Opening, midpoint and boundary samples; manifest asset hash."
+        },
+        "placement": {
+          "decision": "pass",
+          "finding": "Logo separate from titles and main caption; secondary photo credit touches border but top provenance label is clear.",
+          "basis": "Opening/closing/cover and 16 midpoint images."
+        },
+        "clean_frames": {
+          "decision": "pass",
+          "finding": "No progress bar or generic production footer; only scene-specific explanatory labels.",
+          "basis": "All sampled encoded shots."
+        },
+        "captions_and_labels": {
+          "decision": "pass",
+          "finding": "Main captions remain readable on distinct dark band and quantitative values do not clip.",
+          "basis": "All 32 early samples and 30 boundary frames."
+        },
+        "scientific_limits": {
+          "decision": "pass",
+          "finding": "No neural data and no dream proof; disturbance not total; results are group summaries.",
+          "basis": "Shots 8–16 and final ASR."
+        },
+        "provenance": {
+          "decision": "pass",
+          "finding": "Hobern species photo distinguished from study footage, schematic scenes identified.",
+          "basis": "Opening and ending, Commons CC BY 2.0 and evidence record."
+        },
+        "reference_imagery": {
+          "decision": "pass",
+          "finding": "Photo shows a recognisable whole Portia, not a purported recording of sleep.",
+          "basis": "Cover and opening/closing frames."
+        }
+      }
+    },
+    "motion_review": {
+      "fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "files": {
+        "media/tt-011-spider-sleep-f156a514cc51.mp4": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+        "media/tt-011-spider-sleep-f156a514cc51_cover.jpg": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14"
+      },
+      "evidence_sha256": "47ccc7fdf2398c712fa423ef6ca817bc06403c4bf703dc9819702da244833d7c",
+      "reviewer": "Independent 24 November evening publisher review, separate run from storyboard and renderer authors",
+      "reviewed_at": "2026-11-24T20:18:34.396Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "reviewed_encoded_frames": true,
+      "standard": "toxic-tales-motion-v1",
+      "source_sha256": "de08aea63de460b947589e0e5a045d752604cbd93f8cd2cd1d697ca8eaa751a7",
+      "motion_spec_sha256": "85052b5a56219501c38a1503bfb650cd32096bc0c93c8577b2ab7e82433327e4",
+      "reviewed_every_shot_and_transition": true,
+      "reviewed_phone_scale": true,
+      "moving_playback_review_claimed": false,
+      "review_method": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed.",
+      "checks": {
+        "kinetic_text": {
+          "decision": "pass",
+          "finding": "Titles settle without clipped glyphs; speech captions separate.",
+          "basis": "0.18 and 0.70-second samples for all 16 shots."
+        },
+        "transitions": {
+          "decision": "pass",
+          "finding": "Whole-art fades separate old and new numbers, correcting the earlier incomplete 4 OF 1; no previous figures remain in early count or rebound scenes.",
+          "basis": "Boundary 7–9, 12–15 before/after and all early sample pairs."
+        },
+        "ecological_motion": {
+          "decision": "pass",
+          "finding": "Retinal tube positions and fly positions change conceptually; no recorded trajectories asserted.",
+          "basis": "Shots 5–6 and 11 early and settled samples."
+        },
+        "camera_motion": {
+          "decision": "pass",
+          "finding": "Species reference pan keeps complete animal visible; no simulated animal movement implied.",
+          "basis": "Opening, closing and cover samples."
+        },
+        "evidence_bound_data": {
+          "decision": "pass",
+          "finding": "Fixed ten count icons (four gold), 13 paired icons and 9.4/16.9 min remain intact; latency estimates scoped to responders.",
+          "basis": "Shots 8,9,13,14 and original Results."
+        },
+        "caption_sync": {
+          "decision": "pass",
+          "finding": "Timed captions preserve critical count and scope words; final ASR 0.966292 and duration 51.833s.",
+          "basis": "Actual final manifest transcripts and caption timings."
+        }
+      }
+    },
+    "listening_review_claimed": false,
+    "moving_playback_review_claimed": false,
+    "original_audio_comparison_claimed": false,
+    "encoded_review_index_sha256": "237ad6800ff7580e73cef30ac72b0fdb1fc2d18bdcd4a879459c4a4dbb680bca",
+    "inspected_frame_paths": [
+      "qa/tt-011-opening-0s.jpg",
+      "qa/tt-011-opening-1s.jpg",
+      "qa/tt-011-final-frame.jpg",
+      "qa/tt-011-shot-01.jpg",
+      "qa/tt-011-shot-02.jpg",
+      "qa/tt-011-shot-03.jpg",
+      "qa/tt-011-shot-04.jpg",
+      "qa/tt-011-shot-05.jpg",
+      "qa/tt-011-shot-06.jpg",
+      "qa/tt-011-shot-07.jpg",
+      "qa/tt-011-shot-08.jpg",
+      "qa/tt-011-shot-09.jpg",
+      "qa/tt-011-shot-10.jpg",
+      "qa/tt-011-shot-11.jpg",
+      "qa/tt-011-shot-12.jpg",
+      "qa/tt-011-shot-13.jpg",
+      "qa/tt-011-shot-14.jpg",
+      "qa/tt-011-shot-15.jpg",
+      "qa/tt-011-shot-16.jpg",
+      "qa/tt-011-boundary-01-before.jpg",
+      "qa/tt-011-boundary-01-after.jpg",
+      "qa/tt-011-boundary-02-before.jpg",
+      "qa/tt-011-boundary-02-after.jpg",
+      "qa/tt-011-boundary-03-before.jpg",
+      "qa/tt-011-boundary-03-after.jpg",
+      "qa/tt-011-boundary-04-before.jpg",
+      "qa/tt-011-boundary-04-after.jpg",
+      "qa/tt-011-boundary-05-before.jpg",
+      "qa/tt-011-boundary-05-after.jpg",
+      "qa/tt-011-boundary-06-before.jpg",
+      "qa/tt-011-boundary-06-after.jpg",
+      "qa/tt-011-boundary-07-before.jpg",
+      "qa/tt-011-boundary-07-after.jpg",
+      "qa/tt-011-boundary-08-before.jpg",
+      "qa/tt-011-boundary-08-after.jpg",
+      "qa/tt-011-boundary-09-before.jpg",
+      "qa/tt-011-boundary-09-after.jpg",
+      "qa/tt-011-boundary-10-before.jpg",
+      "qa/tt-011-boundary-10-after.jpg",
+      "qa/tt-011-boundary-11-before.jpg",
+      "qa/tt-011-boundary-11-after.jpg",
+      "qa/tt-011-boundary-12-before.jpg",
+      "qa/tt-011-boundary-12-after.jpg",
+      "qa/tt-011-boundary-13-before.jpg",
+      "qa/tt-011-boundary-13-after.jpg",
+      "qa/tt-011-boundary-14-before.jpg",
+      "qa/tt-011-boundary-14-after.jpg",
+      "qa/tt-011-boundary-15-before.jpg",
+      "qa/tt-011-boundary-15-after.jpg",
+      "qa/tt-011-review-shot-01-plus-018.jpg",
+      "qa/tt-011-review-shot-01-plus-070.jpg",
+      "qa/tt-011-review-shot-02-plus-018.jpg",
+      "qa/tt-011-review-shot-02-plus-070.jpg",
+      "qa/tt-011-review-shot-03-plus-018.jpg",
+      "qa/tt-011-review-shot-03-plus-070.jpg",
+      "qa/tt-011-review-shot-04-plus-018.jpg",
+      "qa/tt-011-review-shot-04-plus-070.jpg",
+      "qa/tt-011-review-shot-05-plus-018.jpg",
+      "qa/tt-011-review-shot-05-plus-070.jpg",
+      "qa/tt-011-review-shot-06-plus-018.jpg",
+      "qa/tt-011-review-shot-06-plus-070.jpg",
+      "qa/tt-011-review-shot-07-plus-018.jpg",
+      "qa/tt-011-review-shot-07-plus-070.jpg",
+      "qa/tt-011-review-shot-08-plus-018.jpg",
+      "qa/tt-011-review-shot-08-plus-070.jpg",
+      "qa/tt-011-review-shot-09-plus-018.jpg",
+      "qa/tt-011-review-shot-09-plus-070.jpg",
+      "qa/tt-011-review-shot-10-plus-018.jpg",
+      "qa/tt-011-review-shot-10-plus-070.jpg",
+      "qa/tt-011-review-shot-11-plus-018.jpg",
+      "qa/tt-011-review-shot-11-plus-070.jpg",
+      "qa/tt-011-review-shot-12-plus-018.jpg",
+      "qa/tt-011-review-shot-12-plus-070.jpg",
+      "qa/tt-011-review-shot-13-plus-018.jpg",
+      "qa/tt-011-review-shot-13-plus-070.jpg",
+      "qa/tt-011-review-shot-14-plus-018.jpg",
+      "qa/tt-011-review-shot-14-plus-070.jpg",
+      "qa/tt-011-review-shot-15-plus-018.jpg",
+      "qa/tt-011-review-shot-15-plus-070.jpg",
+      "qa/tt-011-review-shot-16-plus-018.jpg",
+      "qa/tt-011-review-shot-16-plus-070.jpg",
+      "media/tt-011-spider-sleep-f156a514cc51_cover.jpg"
+    ],
+    "release_note": "Independent separate run exact-export pass after source-specific transition repair. Actual compact artifact 14945356483 and Pages artifact 14945980220 inspected; source/cover/MP4 and manifest verified. Build/deploy/public media run 45442959490 verified 63 files. Release requires post-commit queue/build/deploy verification before scheduling; no provider write made."
   }
 }

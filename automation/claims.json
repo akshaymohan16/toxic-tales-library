@@ -221,7 +221,7 @@
     },
     "production:2026-11-27": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",
-      "phase": "independent_encoded_review",
+      "phase": "release_written_pending_exact_release_deploy",
       "claimed_at": "2026-11-24T20:15:43.896Z",
       "expires_at": "2026-11-25T00:15:43.896Z",
       "status": "released",
@@ -236,7 +236,7 @@
       "recovery_checked_at": "2026-11-24T16:52:41Z",
       "last_live_calendar_count": 14,
       "recovery_note": "Full November live calendar and intent directories inspected; no TT011 reservations or intents. Tuesday elapsed; focus Friday.",
-      "released_at": "2026-11-24T16:56:33.962Z",
+      "released_at": "2026-11-24T20:18:34.396Z",
       "preproduction_research_note": "automation/qa/2026-11-23-science-preproduction.json",
       "unreleased_storyboards": "automation/qa/2026-11-23-unreleased-storyboards.json",
       "submission_intent_written": false,
@@ -257,7 +257,7 @@
         "source_sha256": "de08aea63de460b947589e0e5a045d752604cbd93f8cd2cd1d697ca8eaa751a7"
       },
       "render_entrypoint": "scripts/build_portia.py",
-      "release_status": "not_released_pending_new_independent_review",
+      "release_status": "approved_exact_export_pending_post_release_deploy",
       "release_reason": "No provider intent or writes. Allow next independent reviewer to acquire after fresh reconciliation.",
       "render_attempt": {
         "workflow_run_id": 45442959490,
@@ -265,8 +265,10 @@
         "artifact_id": 14945356483
       },
       "last_render_failure": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved.",
-      "next_action": "Review exact repaired TT-011 package and MP4 before release",
-      "reconciled_calendar_at": "2026-11-24T20:15:43.896Z"
+      "next_action": "Verify release commit's actual archive build/deploy/public media and queue, then acquire fresh destination claims and schedule Friday only. Do not rerender approved bytes.",
+      "reconciled_calendar_at": "2026-11-24T20:15:43.896Z",
+      "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "encoded_review_index_sha256": "237ad6800ff7580e73cef30ac72b0fdb1fc2d18bdcd4a879459c4a4dbb680bca"
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."

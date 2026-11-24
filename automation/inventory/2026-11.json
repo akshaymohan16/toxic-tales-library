@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-24T16:56:33.962Z",
+  "observed_at": "2026-11-24T20:18:34.396Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -48,7 +48,7 @@
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [],
-  "calendar_reconciled_on": "2026-11-24T16:56:33.962Z",
+  "calendar_reconciled_on": "2026-11-24",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -61,7 +61,7 @@
   "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
   "provider_confirmed_publications": 11,
   "known_usage_lower_bound": 11,
-  "last_calendar_readback": "2026-11-24T16:56:33.962Z",
+  "last_calendar_readback": "2026-11-24T20:18:34.396Z",
   "pending_release_ids": [
     "TT-010",
     "TT-011"
@@ -70,8 +70,8 @@
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-24T16:56:33.962Z",
-    "calendar_checked_at": "2026-11-24T16:56:33.962Z",
+    "observed_at": "2026-11-24T20:18:34.396Z",
+    "calendar_checked_at": "2026-11-24T20:18:34.396Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -124,50 +124,16 @@
     "conservative_accounting_note": "11 confirmed PUBLISHED plus preserved TT009 YouTube warning plus two remaining Friday destinations; Tuesday 24 missed, no backfill. 16 if both missed Tuesday reservations are also conservatively retained for whole-week watchdog accounting."
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-24T16:56:33.962Z",
-    "published_destinations": 11,
-    "scheduled_active_destinations": 0,
-    "held_retired_drafts": 2,
-    "first_week_future_monday_complete": true,
-    "no_new_writes": true,
-    "owner_authorized_tt008_published_both": true,
-    "retired_tt002_and_rejected_tt003_untouched": true,
-    "friday_20_november_status": "Instagram PUBLISHED, YouTube public and channel/title independently verified but Metricool ERROR thumbnail warning; no strict YouTube publication notification.",
-    "observed_provider_uuid_count": 14,
-    "latest_build_run": 45442959490,
-    "latest_build_conclusion": "pending",
-    "latest_watchdog_run": 45442959516,
-    "latest_watchdog_conclusion": "failure_missing_reservations",
-    "today_tuesday_status": "missed; no backfill",
-    "archive_deployment_verified": true,
-    "public_files_verified": 63,
-    "open_readiness_issues": 1,
-    "provider_errors_with_public_urls": 1,
-    "youtube_public_verification_requested": true,
-    "public_youtube_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
-    "youtube_public_metadata_verified": true,
-    "youtube_public_metadata_verification_run": 45442959516,
-    "youtube_public_metadata_verification_method": "Public oEmbed title and author channel identity matched; independent GitHub Actions pass",
-    "next_week_2026_11_23_receipts": 0,
-    "next_week_2026_11_23_required": 4,
-    "next_week_producer_due": "2026-11-22T10:00:00+01:00",
-    "active_production_claims": [],
-    "latest_asset_pin_run": 45005820057,
-    "latest_asset_pin_conclusion": "success",
-    "expired_production_claims": [],
-    "reconciled_handoff_claims": [
-      "production:2026-11-24",
-      "production:2026-11-27"
-    ],
-    "latest_watchdog_reason": "4 missing upcoming destination receipts; TT-009 YouTube thumbnail ERROR retained as warning",
+    "checked_at": "2026-11-24T20:18:34.396Z",
+    "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
       "instagram": "toxic_tales_eco",
       "youtube": "UCDvftxMMdtGSntm-ezcPfCg"
     },
     "timezone": "Europe/Vienna",
-    "month": "2026-11",
     "calendar_entries": 14,
+    "published_destinations": 11,
     "scheduled_destinations": 0,
     "inactive_drafts": 2,
     "tt007_published_both": true,
@@ -179,8 +145,8 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": true,
-      "independent_public_verification_job": 138618853128,
-      "independent_public_verification_basis": "24 Nov 16:56:53 UTC actual post-repair readiness log positively verified existing public Short exact title/channel. Metricool remains ERROR; no retry.",
+      "independent_public_verification_job": 138724922231,
+      "independent_public_verification_basis": "Inspected actual latest watchdog 24 Nov 19:41 UTC, independent public Short verification positive; live provider still ERROR.",
       "retry_allowed": false
     },
     "weekly_slots": [
@@ -212,28 +178,11 @@
     "weekly_receipts": 0,
     "missing_destinations": 4,
     "provider_writes": 0,
-    "new_releases": 0,
+    "new_releases": 1,
     "new_confirmed_published_keys": [],
     "history_preserved": true,
     "owner_action_blockers": [],
-    "production_claims_previous_run_released": true,
-    "repository_sha_inspected": "c34d5b1886cbf90d317e80c2c9032626e692dd84",
-    "latest_readiness_workflow": {
-      "id": 45360107295,
-      "conclusion": "failure",
-      "cause": "four missing receipts; policy and 121 tests pass"
-    },
-    "latest_archive_workflow": {
-      "id": 45360107258,
-      "conclusion": "success",
-      "public_files_verified": 63
-    },
-    "secondary_legacy_asset_workflow": {
-      "id": 45141692418,
-      "conclusion": "failure",
-      "cause": "Wikimedia HTTP 429, unrelated to current approved reference-image pin"
-    },
-    "current_reference_pin_success_run": 45141692028,
+    "active_production_claims": [],
     "active_production_owner": null,
     "production_claim_expires_at": null,
     "tt010_render_failure": {
@@ -244,6 +193,16 @@
       "status": "source_repaired_exact_token_new_build_queued",
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
+    "latest_readiness_workflow": {
+      "id": 45472787414,
+      "conclusion": "failure",
+      "cause": "Real missing-slot incident; 121 tests and policy passed"
+    },
+    "latest_archive_workflow": {
+      "id": 45442959490,
+      "conclusion": "success",
+      "public_files_verified": 63
+    },
     "last_pre_change_successful_archive_workflow": {
       "id": 45221358609,
       "conclusion": "success",
@@ -252,7 +211,6 @@
     "complete_month_metricool_reconciliation": true,
     "provider_uuids_count": 14,
     "source": "Metricool brand 7937614 getScheduledPosts full 2026-11 month; returned historical published and draft entries",
-    "last_successful_build_run": 45221358609,
     "provider_ids": [
       "419869962",
       "420045577",
@@ -269,15 +227,17 @@
       "429844048",
       "429844729"
     ],
-    "calendar_repeat_attempt": "Fresh complete November calendar read after claim acquisition; 14 entries unchanged.",
+    "calendar_repeat_attempt": "Fresh full November and December calendar reads: 14 November entries, 0 December entries.",
     "missed_destinations": 2,
     "future_missing_destinations": 2,
     "tt011_encoded_review": {
-      "decision": "fail_repair_required",
-      "workflow_run": 45360107258,
-      "fingerprint": "c13525a46dd578677151f72204f348599a0bfa2775acff1587ca8851f1795cdb",
-      "review_index_sha256": "0e8eb61ea55fb2e2e6d5cb482763516ad24543c2f5b109f56a2fd293e33a2a53",
-      "finding": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved."
+      "decision": "pass",
+      "workflow_run": 45442959490,
+      "artifact_id": 14945356483,
+      "pages_artifact_id": 14945980220,
+      "fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "review_index_sha256": "237ad6800ff7580e73cef30ac72b0fdb1fc2d18bdcd4a879459c4a4dbb680bca",
+      "finding": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed."
     }
   },
   "provider_warning_ids": [

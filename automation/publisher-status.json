@@ -1,17 +1,17 @@
 {
   "checked_on": "2026-11-24",
-  "updated_at": "2026-11-24T16:57:25.924Z",
+  "updated_at": "2026-11-24T20:18:34.396Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_connection_verified": true,
-  "decision": "NOT_READY_TUESDAY_MISSED_FRIDAY_ENCODED_REVIEW_FAILED_REPAIR",
+  "decision": "NOT_READY_TUESDAY_MISSED_FRIDAY_RELEASE_PENDING_DEPLOY",
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-24T16:56:33.962Z",
-    "calendar_checked_at": "2026-11-24T16:56:33.962Z",
+    "observed_at": "2026-11-24T20:18:34.396Z",
+    "calendar_checked_at": "2026-11-24T20:18:34.396Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -90,7 +90,7 @@
     "verified_destination_receipts": 0,
     "producer_due": "2026-11-22T10:00:00+01:00",
     "hard_readiness_due": "2026-11-23T23:59:59+01:00",
-    "status": "NOT_READY 0/4; Tuesday missed; Friday transition QA failed and repaired",
+    "status": "0/4; Tuesday missed; Friday exact export released, deployment verification pending",
     "existing_videos_count": 0,
     "expired_claims_need_reconciliation": [],
     "owned_production_claims": [],
@@ -130,22 +130,22 @@
       "last_run_time": "2026-11-16T17:52:10.734012+00:00"
     }
   ],
-  "deployment_and_media": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved.",
+  "deployment_and_media": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed.",
   "review_limit": "Reviewed actual decoded export and all 32 early shot samples, 30 boundary frames, opening, final, cover and ASR; no perceptual listening or uninterrupted viewing claimed. Failed visual transition review.",
-  "automatic_next_step": "Inspect exact repair run 45442959490 build/deploy/verify-public-media jobs first. Download its compact review package and exact Pages artifact; independently verify all 16 shots, 15 transitions incl. +0.18/+0.7 samples and exact audio/ASR. If pass, complete fresh paper correction/rights checks, SHA release, verified deployment and paired Friday receipts. Do not use failed c13525a46dd5 media or backfill Tuesday.",
+  "automatic_next_step": "TT-011 exact encoded export passed. Verify this release commit's queue/build/deploy/public-media before provider submission. Friday 27 Nov 10:00 only; Tuesday missed, no backfill. Then review existing TT-010 from same artifact for December 1.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
   "scheduled_posts_returned": 0,
   "published_provider_receipts": 11,
   "scheduled_post_ids": [],
-  "last_successful_deployment_run": 45360107258,
+  "last_successful_deployment_run": 45442959490,
   "validation": {
     "script_tests": 165,
     "automation_tests": 121,
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
     "provider_byte_verification_run": 43847978272,
-    "latest_watchdog_run": 45442959516,
-    "latest_watchdog_conclusion": "failure",
+    "latest_watchdog_run": 45472787414,
+    "latest_watchdog_conclusion": "failure_missing_slots",
     "latest_build_run": 45442959490,
     "latest_build_verified_steps": [
       "Test exact-file releases and caption safeguards",
@@ -154,12 +154,12 @@
     ],
     "latest_paper_retrieval_run": 43439354279,
     "latest_paper_retrieval_conclusion": "success",
-    "fresh_live_metricool_reconciliation_at": "2026-11-24T08:53:06.468Z",
-    "latest_build_conclusion": "pending",
+    "fresh_live_metricool_reconciliation_at": "2026-11-24T20:18:34.396Z",
+    "latest_build_conclusion": "success",
     "latest_build_failure_step": "prior run Build reviewed stories and media",
     "latest_build_failure_cause": "exact ASR token narrow absent; narration source repaired",
     "claim_ownership_verified": true,
-    "latest_verified_build_run": 45360107258,
+    "latest_verified_build_run": 45442959490,
     "latest_verified_build_conclusion": "success",
     "later_same_source_deployment_run": 43848353452,
     "later_same_source_deployment_status": "completed_success",
@@ -167,8 +167,8 @@
     "public_youtube_verification_conclusion": "success",
     "latest_archive_confirmed_social_links": 10,
     "public_files_verified": 63,
-    "last_public_media_verification_checked_at": "2026-11-24T09:02:26.684553Z",
-    "last_successful_deployment_run": 45360107258,
+    "last_public_media_verification_checked_at": "2026-11-24T17:01:28.763791Z",
+    "last_successful_deployment_run": 45442959490,
     "youtube_public_verification_requested_at": "2026-11-20T09:40:02.763Z",
     "youtube_public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
     "latest_new_workflow_result": "Build/deploy/public-media verification run 44890175684 success; readiness 44890175620 expected failure. Diagnostic fix pending post-commit verification.",
@@ -183,13 +183,13 @@
     "upcoming_week_expected": 4,
     "latest_asset_pin_run": 45005820057,
     "latest_asset_pin_conclusion": "success",
-    "last_inspected_watchdog_run": 45442959516,
-    "last_inspected_watchdog_conclusion": "failure_missing_four",
+    "last_inspected_watchdog_run": 45472787414,
+    "last_inspected_watchdog_conclusion": "failure_missing_slots",
     "latest_archive_build_run": 45442959490,
-    "latest_archive_verification": "pending",
+    "latest_archive_verification": "completed_success",
     "last_test_count_from_workflow": 121,
     "tests_run_again_after_this_commit": true,
-    "latest_archive_build_conclusion": "pending"
+    "latest_archive_build_conclusion": "success"
   },
   "current_one_off": {
     "episode_id": "TT-008",
@@ -200,7 +200,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-24T16:56:33.962Z",
+    "checked_at": "2026-11-24T20:18:34.396Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -221,8 +221,8 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": true,
-      "independent_public_verification_job": 138618853128,
-      "independent_public_verification_basis": "24 Nov 16:56:53 UTC actual post-repair readiness log positively verified existing public Short exact title/channel. Metricool remains ERROR; no retry.",
+      "independent_public_verification_job": 138724922231,
+      "independent_public_verification_basis": "Inspected actual latest watchdog 24 Nov 19:41 UTC, independent public Short verification positive; live provider still ERROR.",
       "retry_allowed": false
     },
     "weekly_slots": [
@@ -254,7 +254,7 @@
     "weekly_receipts": 0,
     "missing_destinations": 4,
     "provider_writes": 0,
-    "new_releases": 0,
+    "new_releases": 1,
     "new_confirmed_published_keys": [],
     "history_preserved": true,
     "owner_action_blockers": [],
@@ -270,14 +270,14 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45442959516,
+      "id": 45472787414,
       "conclusion": "failure",
-      "cause": "Four missing receipts; Tuesday missed, Friday remains open. 121 tests and policy passed; public TT-009 verified; projected November 14."
+      "cause": "Real missing-slot incident; 121 tests and policy passed"
     },
     "latest_archive_workflow": {
       "id": 45442959490,
-      "conclusion": "in_progress",
-      "build_job_id": 138618852601
+      "conclusion": "success",
+      "public_files_verified": 63
     },
     "last_pre_change_successful_archive_workflow": {
       "id": 45221358609,
@@ -303,20 +303,22 @@
       "429844048",
       "429844729"
     ],
-    "calendar_repeat_attempt": "Fresh complete November calendar read after claim acquisition; 14 entries unchanged.",
+    "calendar_repeat_attempt": "Fresh full November and December calendar reads: 14 November entries, 0 December entries.",
     "missed_destinations": 2,
     "future_missing_destinations": 2,
     "tt011_encoded_review": {
-      "decision": "fail_repair_required",
-      "workflow_run": 45360107258,
-      "fingerprint": "c13525a46dd578677151f72204f348599a0bfa2775acff1587ca8851f1795cdb",
-      "review_index_sha256": "0e8eb61ea55fb2e2e6d5cb482763516ad24543c2f5b109f56a2fd293e33a2a53",
-      "finding": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved."
+      "decision": "pass",
+      "workflow_run": 45442959490,
+      "artifact_id": 14945356483,
+      "pages_artifact_id": 14945980220,
+      "fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "review_index_sha256": "237ad6800ff7580e73cef30ac72b0fdb1fc2d18bdcd4a879459c4a4dbb680bca",
+      "finding": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed."
     }
   },
   "claim_coordination": {
-    "checked_at": "2026-11-24T16:56:33.962Z",
-    "status": "Friday claim acquired and reread, repaired unreleased renderer, released for independent next review; Tuesday elapsed, no submission",
+    "checked_at": "2026-11-24T20:18:34.396Z",
+    "status": "Friday CAS acquired and read back; exact export review passed; released for post-release verification",
     "active_competing_claims": 0,
     "active_claim_keys": []
   },
@@ -324,9 +326,9 @@
     "week_start": "2026-11-30",
     "required_destination_receipts": 4,
     "verified_destination_receipts": 0,
-    "status": "No verified December 1/4 pair; reserve TT-010 after independent review",
+    "status": "December calendar empty; TT-010 built, awaits independent review",
     "complete": false,
-    "calendar_checked_at": "2026-11-24T16:56:33.962Z",
+    "calendar_checked_at": "2026-11-24T20:18:34.396Z",
     "calendar_entries": 0
   },
   "automation_tasks_verified_at": "2026-11-18T17:09:08.853Z",
@@ -341,11 +343,11 @@
     "confirmed_metricool_reservations": 0,
     "missing_destinations": 4,
     "deadline": "Monday 23 November evening check",
-    "status": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved."
+    "status": "TT-011 exact encoded export passed. Verify this release commit's queue/build/deploy/public-media before provider submission. Friday 27 Nov 10:00 only; Tuesday missed, no backfill. Then review existing TT-010 from same artifact for December 1."
   },
   "next_week_completeness": {
     "week_start": "2026-11-23",
-    "date_checked": "2026-11-24T16:56:33.962Z",
+    "date_checked": "2026-11-24T20:18:34.396Z",
     "slots": [
       {
         "platform": "instagram",
@@ -393,6 +395,6 @@
     "handoff_at": "2026-11-24T08:53:36.972Z",
     "release_reason": "Both unapproved; no submission intent; allow independent reviewer to acquire after fresh live reconciliation."
   },
-  "last_run_at": "2026-11-24T16:57:25.924Z",
+  "last_run_at": "2026-11-24T20:18:34.396Z",
   "last_checked_at": "2026-11-24T16:56:33.962Z"
 }
