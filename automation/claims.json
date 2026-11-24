@@ -173,7 +173,7 @@
     },
     "production:2026-11-24": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T08:45:26Z",
-      "phase": "caption_reflow_fixed_source_pending_cloud_build",
+      "phase": "caption_passed_exact_ASR_term_source_repaired",
       "claimed_at": "2026-11-24T08:45:26Z",
       "expires_at": "2026-11-24T12:45:26Z",
       "status": "active",
@@ -203,8 +203,8 @@
       "episode_file": "episodes/tt-010.json",
       "pre_render_editorial_review": {
         "reviewer": "24 November publisher source-layout reviewer of preserved narration",
-        "reviewed_at": "2026-11-24T08:47:27.008Z",
-        "source_sha256": "9e459ce501ae01cf9d9e5666e3541b06ae4f3594ec617f3457dcf53fbe671cb1"
+        "reviewed_at": "2026-11-24T08:51:14.865Z",
+        "source_sha256": "94d28295b1f66c1ff280d6fde8ad5e427bfad2d014a04adf38fe76763438aed9"
       },
       "asset_pin_sha256": "3807578f3a93cdaa7bd009921f58b522907871235d7d711ce2bdd9c18aa2ecb9",
       "asset_pin_action_run": 45141692028,
@@ -213,9 +213,10 @@
       "render_attempt": {
         "source_commit": "6adb70a8c3f8f85875e86a511f5cfa389c9b96b3",
         "workflow_run_id": 45359215067,
-        "status": "in_progress",
+        "status": "failure_exact_critical_term",
         "provider_receipts": 0
-      }
+      },
+      "last_render_failure": "45359215067 final transcript exact token narrow absent; narration used narrower; changed source spoken word and matching caption, unchanged ASR gate"
     },
     "production:2026-11-27": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T08:45:26Z",

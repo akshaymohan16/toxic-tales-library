@@ -210,11 +210,11 @@
         ]
       },
       {
-        "speech": "But two tests changed the picture. They showed no reliable preference for the narrower tube, even though each stone should raise its water faster.",
+        "speech": "But two tests changed the picture. They showed no reliable preference for the narrow tube, even though each stone should raise its water faster.",
         "captions": [
           "But two tests changed the picture.",
           "They showed no reliable preference",
-          "for the narrower tube,",
+          "for the narrow tube,",
           "even though each stone should",
           "raise its water faster."
         ],
@@ -430,7 +430,7 @@
   "editorial_review": {
     "standard": "story-first-v1",
     "reviewer": "24 November publisher source-layout reviewer of preserved narration",
-    "reviewed_at": "2026-11-24T08:47:27.008Z",
+    "reviewed_at": "2026-11-24T08:51:14.865Z",
     "decision": "pass",
     "checks": {
       "cold_viewer": {
@@ -445,7 +445,7 @@
       },
       "visuals": {
         "decision": "pass",
-        "finding": "Source-specific tube/stone diagrams illustrate the water-level mechanism, sand comparison, object density/solidity, starting level and concealed U-tube. The opening and ending species photo is visibly framed as a reference; none of the drawings claim to reproduce laboratory recording or measured time series. Frame/crop/phone-scale compliance remains for independent encoded QA. Caption phrases have been split at natural clause boundaries without changing any spoken words; cover now correctly says six tasks, not six trials. Encoded layout still requires independent review.",
+        "finding": "Source-specific tube/stone diagrams illustrate the water-level mechanism, sand comparison, object density/solidity, starting level and concealed U-tube. The opening and ending species photo is visibly framed as a reference; none of the drawings claim to reproduce laboratory recording or measured time series. Frame/crop/phone-scale compliance remains for independent encoded QA. Caption phrases have been split at natural clause boundaries without changing any spoken words; cover now correctly says six tasks, not six trials. Encoded layout still requires independent review. Second render passed source layout but failed the final exact critical term 'narrow' because narration used 'narrower'. Revised the spoken phrase to 'the narrow tube' and matched captions; the exact ASR gate remains unchanged, as does the scientific result.",
         "basis": "Planned nine new corvus scene families, fixed captions, CC0 benkeen image hash and no reused frog/bee/spider diagrams; pre-render plan only, not video playback. Verified exact concatenation of each caption segment against unchanged speech and diagnosed the actual cloud overflow log."
       },
       "payoff": {
@@ -464,6 +464,6 @@
         "basis": "Original eight narration beats, n=6 declining to n=4 and contrasted experiment statistics in main peer-reviewed paper."
       }
     },
-    "source_sha256": "9e459ce501ae01cf9d9e5666e3541b06ae4f3594ec617f3457dcf53fbe671cb1"
+    "source_sha256": "94d28295b1f66c1ff280d6fde8ad5e427bfad2d014a04adf38fe76763438aed9"
   }
 }
