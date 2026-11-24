@@ -260,12 +260,16 @@
       "release_status": "not_released_pending_new_independent_review",
       "release_reason": "No provider intent or writes. Allow next independent reviewer to acquire after fresh reconciliation.",
       "render_attempt": {
-        "source_commit": "dcf6e411dca2be78990e296cee2e93c77697e023",
-        "workflow_run_id": 45360107258,
-        "status": "completed_success",
+        "source_commit": "3f1c9ac6096814ea6e672d68838cfb2358c5018a",
+        "workflow_run_id": 45442959490,
+        "status": "in_progress",
+        "last_inspected_at": "2026-11-24T16:57:25.924Z",
+        "build_job_id": 138618852601,
+        "step": "Install free offline tools",
         "provider_receipts": 0
       },
-      "last_render_failure": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved."
+      "last_render_failure": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved.",
+      "next_action": "Inspect exact repair run 45442959490 build/deploy/verify-public-media jobs first. Download its compact review package and exact Pages artifact; independently verify all 16 shots, 15 transitions incl. +0.18/+0.7 samples and exact audio/ASR. If pass, complete fresh paper correction/rights checks, SHA release, verified deployment and paired Friday receipts. Do not use failed c13525a46dd5 media or backfill Tuesday."
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."

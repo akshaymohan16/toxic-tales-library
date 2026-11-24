@@ -134,9 +134,9 @@
     "retired_tt002_and_rejected_tt003_untouched": true,
     "friday_20_november_status": "Instagram PUBLISHED, YouTube public and channel/title independently verified but Metricool ERROR thumbnail warning; no strict YouTube publication notification.",
     "observed_provider_uuid_count": 14,
-    "latest_build_run": 45360107258,
-    "latest_build_conclusion": "success",
-    "latest_watchdog_run": 45359984564,
+    "latest_build_run": 45442959490,
+    "latest_build_conclusion": "pending",
+    "latest_watchdog_run": 45442959516,
     "latest_watchdog_conclusion": "failure_missing_reservations",
     "today_tuesday_status": "missed; no backfill",
     "archive_deployment_verified": true,
@@ -146,7 +146,7 @@
     "youtube_public_verification_requested": true,
     "public_youtube_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
     "youtube_public_metadata_verified": true,
-    "youtube_public_metadata_verification_run": 45359984564,
+    "youtube_public_metadata_verification_run": 45442959516,
     "youtube_public_metadata_verification_method": "Public oEmbed title and author channel identity matched; independent GitHub Actions pass",
     "next_week_2026_11_23_receipts": 0,
     "next_week_2026_11_23_required": 4,
@@ -178,9 +178,9 @@
       "provider_status": "ERROR",
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
-      "public_title_channel_independently_rechecked_this_run": false,
-      "independent_public_verification_job": 138327704965,
-      "independent_public_verification_basis": "Inspected successful public title/channel check in actual 24 Nov 08:53 UTC readiness log; fresh calendar still ERROR with same live URL; new post-commit watchdog recheck required.",
+      "public_title_channel_independently_rechecked_this_run": true,
+      "independent_public_verification_job": 138618853128,
+      "independent_public_verification_basis": "24 Nov 16:56:53 UTC actual post-repair readiness log positively verified existing public Short exact title/channel. Metricool remains ERROR; no retry.",
       "retry_allowed": false
     },
     "weekly_slots": [
@@ -298,8 +298,8 @@
       "retry_permitted": false,
       "public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
       "public_metadata_verified": true,
-      "public_metadata_verification_run": 44712245363,
-      "last_checked_at": "2026-11-23T08:53:39.153Z"
+      "public_metadata_verification_run": 45442959516,
+      "last_checked_at": "2026-11-24T16:56:33.962Z"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-24T16:56:33.962Z",
+  "updated_at": "2026-11-24T16:57:25.924Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
@@ -68,9 +68,9 @@
       "provider_status": "ERROR",
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
-      "public_title_channel_independently_rechecked_this_run": false,
-      "independent_public_verification_job": 138327704965,
-      "independent_public_verification_basis": "Inspected successful public title/channel check in actual 24 Nov 08:53 UTC readiness log; fresh calendar still ERROR with same live URL; new post-commit watchdog recheck required.",
+      "public_title_channel_independently_rechecked_this_run": true,
+      "independent_public_verification_job": 138618853128,
+      "independent_public_verification_basis": "24 Nov 16:56:53 UTC actual post-repair readiness log positively verified existing public Short exact title/channel. Metricool remains ERROR; no retry.",
       "retry_allowed": false
     },
     "quota_conservative": 14,
@@ -125,14 +125,14 @@
     "production_claims_previous_run_released": true,
     "repository_sha_inspected": "c34d5b1886cbf90d317e80c2c9032626e692dd84",
     "latest_readiness_workflow": {
-      "id": 45360107295,
+      "id": 45442959516,
       "conclusion": "failure",
-      "cause": "four missing receipts; policy and 121 tests pass"
+      "cause": "Four missing receipts; Tuesday missed, Friday remains open. 121 tests and policy passed; public TT-009 verified; projected November 14."
     },
     "latest_archive_workflow": {
-      "id": 45360107258,
-      "conclusion": "success",
-      "public_files_verified": 63
+      "id": 45442959490,
+      "conclusion": "in_progress",
+      "build_job_id": 138618852601
     },
     "secondary_legacy_asset_workflow": {
       "id": 45141692418,
@@ -187,7 +187,7 @@
     }
   },
   "owner_action_blocker": false,
-  "next_step": "Inspect new TT-011 build and public verification jobs; independently review the new exact encoded MP4 and all transitions; reserve both Friday destinations only if all gates pass. Preserve Tuesday missed with no backfill; TT-010 successful unreleased render is reserve candidate for next eligible date after independent review.",
+  "next_step": "Inspect exact repair run 45442959490 build/deploy/verify-public-media jobs first. Download its compact review package and exact Pages artifact; independently verify all 16 shots, 15 transitions incl. +0.18/+0.7 samples and exact audio/ASR. If pass, complete fresh paper correction/rights checks, SHA release, verified deployment and paired Friday receipts. Do not use failed c13525a46dd5 media or backfill Tuesday.",
   "owned_production_claims": [],
   "research_readiness_note": "automation/qa/2026-11-23-evening-qa.json",
   "reconciled_handoff_claims": [
