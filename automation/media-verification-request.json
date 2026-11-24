@@ -1,39 +1,34 @@
 {
   "repository": "akshaymohan16/toxic-tales-library",
   "brand_id": "7937614",
-  "episode_id": "TT-009",
-  "release_fingerprint": "b89b5c7418900e5bcf8dd899495bbe400be284688852e5f257fab3e1c94f7ddb",
-  "source_commit": "ef1cfbf56d1c85dc95efa8cf1d3c67d2fbfcd3b7",
+  "episode_id": "TT-011",
+  "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+  "source_commit": "3f1c9ac6096814ea6e672d68838cfb2358c5018a",
   "files": [
     {
-      "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-009-ants-bite-the-restraint-b89b5c741890.mp4",
+      "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4",
       "role": "source_video",
-      "expected_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b"
+      "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c"
     },
     {
-      "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-009-ants-bite-the-restraint-b89b5c741890_cover.jpg",
+      "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg",
       "role": "source_cover",
-      "expected_sha256": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224"
+      "expected_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14"
     },
     {
-      "url": "https://static.metricool.com/planner/202611/7937614-file-3737416094863891945.mp4",
+      "url": "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4",
       "role": "provider_video",
-      "expected_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b"
+      "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c"
     },
     {
-      "url": "https://static.metricool.com/planner/202611/7937614-file-15334528450768090167.jpeg",
+      "url": "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg",
       "role": "provider_cover",
-      "expected_sha256": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224"
+      "expected_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14"
     },
     {
-      "url": "https://static.metricool.com/planner/202611/7937614-file-12147950446845277643.mp4",
+      "url": "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4",
       "role": "provider_video",
-      "expected_sha256": "36875faccf0b8e13de00c291fc1b8130f99f8409d774cf7fc52d0ca788b6248b"
-    },
-    {
-      "url": "https://static.metricool.com/planner/202611/7937614-file-15401831120842934675.jpeg",
-      "role": "provider_cover",
-      "expected_sha256": "2c7a5d8a8384fbc8f5dd2026b7a7b0308962adfa5e8f3086a0c32de9c682e224"
+      "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c"
     }
   ]
 }

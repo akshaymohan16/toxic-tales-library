@@ -1,17 +1,17 @@
 {
   "checked_on": "2026-11-24",
-  "updated_at": "2026-11-24T20:20:07.143Z",
+  "updated_at": "2026-11-24T20:22:51.794Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_connection_verified": true,
-  "decision": "NOT_READY_TUESDAY_MISSED_FRIDAY_RELEASE_PENDING_DEPLOY",
+  "decision": "TUESDAY_MISSED_FRIDAY_BOTH_RESERVED_PENDING_PROVIDER_BYTES",
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-24T20:18:34.396Z",
-    "calendar_checked_at": "2026-11-24T20:18:34.396Z",
+    "observed_at": "2026-11-24T20:22:51.794Z",
+    "calendar_checked_at": "2026-11-24T20:22:51.794Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -53,15 +53,15 @@
     ],
     "cap": 20,
     "projected_month_destinations": 14,
-    "remaining_planned_destination_slots": 3,
+    "remaining_planned_destination_slots": 0,
     "verified_in_this_run": true,
-    "remaining_regular_destination_slots": 2,
+    "remaining_regular_destination_slots": 0,
     "owner_authorized_one_off_destination_slots": 2,
     "uncertain_provider_publication_keys": [
       "youtube:3828607998694999530"
     ],
     "conservative_committed_destination_count": 14,
-    "conservative_accounting_note": "11 confirmed PUBLISHED plus preserved TT009 YouTube warning plus two remaining Friday destinations; Tuesday 24 missed, no backfill. 16 if both missed Tuesday reservations are also conservatively retained for whole-week watchdog accounting."
+    "conservative_accounting_note": "11 confirmed PUBLISHED + 1 TT009 warning + 2 actual Friday reservations =14; no Tuesday backfill."
   },
   "routine_user_approval_required": false,
   "publication_notifications": {
@@ -90,8 +90,8 @@
     "verified_destination_receipts": 0,
     "producer_due": "2026-11-22T10:00:00+01:00",
     "hard_readiness_due": "2026-11-23T23:59:59+01:00",
-    "status": "0/4; Tuesday missed; Friday exact export released, deployment verification pending",
-    "existing_videos_count": 0,
+    "status": "Tuesday missed; Friday two live readbacks pending provider byte verification",
+    "existing_videos_count": 1,
     "expired_claims_need_reconciliation": [],
     "owned_production_claims": [],
     "research_readiness_note": "automation/qa/2026-11-23-evening-qa.json",
@@ -102,7 +102,8 @@
     "current_render_failure_run": null,
     "current_render_run": 45442959490,
     "missed_destinations": 2,
-    "future_missing_destinations": 2
+    "future_missing_destinations": 0,
+    "reserved_destination_receipts": 2
   },
   "recurring_tasks": [
     {
@@ -132,12 +133,15 @@
   ],
   "deployment_and_media": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed.",
   "review_limit": "Actual encoded export frame samples, SHA and ASR verified; repaired transition review passed. No perceptual listening or uninterrupted moving playback claimed.",
-  "automatic_next_step": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1.",
+  "automatic_next_step": "Inspect provider-byte verification workflow for TT-011 request and exact source/provider SHA results; persist ledger and finish Friday claims, notify once, then review TT-010 for December 1.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
-  "scheduled_posts_returned": 0,
+  "scheduled_posts_returned": 2,
   "published_provider_receipts": 11,
-  "scheduled_post_ids": [],
-  "last_successful_deployment_run": 45442959490,
+  "scheduled_post_ids": [
+    "440852560",
+    "440852965"
+  ],
+  "last_successful_deployment_run": 45479451775,
   "validation": {
     "script_tests": 165,
     "automation_tests": 121,
@@ -155,7 +159,7 @@
     "latest_paper_retrieval_run": 43439354279,
     "latest_paper_retrieval_conclusion": "success",
     "fresh_live_metricool_reconciliation_at": "2026-11-24T20:18:34.396Z",
-    "latest_build_conclusion": "in_progress",
+    "latest_build_conclusion": "success",
     "latest_build_failure_step": "prior run Build reviewed stories and media",
     "latest_build_failure_cause": "exact ASR token narrow absent; narration source repaired",
     "claim_ownership_verified": true,
@@ -167,8 +171,8 @@
     "public_youtube_verification_conclusion": "success",
     "latest_archive_confirmed_social_links": 10,
     "public_files_verified": 63,
-    "last_public_media_verification_checked_at": "2026-11-24T17:01:28.763791Z",
-    "last_successful_deployment_run": 45442959490,
+    "last_public_media_verification_checked_at": "2026-11-24T20:20:55.711297+00:00",
+    "last_successful_deployment_run": 45479451775,
     "youtube_public_verification_requested_at": "2026-11-20T09:40:02.763Z",
     "youtube_public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
     "latest_new_workflow_result": "Build/deploy/public-media verification run 44890175684 success; readiness 44890175620 expected failure. Diagnostic fix pending post-commit verification.",
@@ -200,7 +204,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-24T20:18:34.396Z",
+    "checked_at": "2026-11-24T20:22:51.794Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -208,9 +212,9 @@
       "youtube": "UCDvftxMMdtGSntm-ezcPfCg"
     },
     "timezone": "Europe/Vienna",
-    "calendar_entries": 14,
+    "calendar_entries": 16,
     "published_destinations": 11,
-    "scheduled_destinations": 0,
+    "scheduled_destinations": 2,
     "inactive_drafts": 2,
     "tt007_published_both": true,
     "tt008_published_both_at_exact_14_10": true,
@@ -241,19 +245,21 @@
       {
         "date": "2026-11-27T10:00:00+01:00",
         "network": "instagram",
-        "found": false,
-        "status": "not_reserved"
+        "found": true,
+        "status": "reserved_readback_pending_provider_bytes",
+        "metricool_uuid": "9000973347991669964"
       },
       {
         "date": "2026-11-27T10:00:00+01:00",
         "network": "youtube",
-        "found": false,
-        "status": "not_reserved"
+        "found": true,
+        "status": "reserved_readback_pending_provider_bytes",
+        "metricool_uuid": "8728566144872038894"
       }
     ],
     "weekly_receipts": 0,
-    "missing_destinations": 4,
-    "provider_writes": 0,
+    "missing_destinations": 2,
+    "provider_writes": 2,
     "new_releases": 1,
     "new_confirmed_published_keys": [],
     "history_preserved": true,
@@ -285,7 +291,7 @@
       "date": "2026-11-23"
     },
     "complete_month_metricool_reconciliation": true,
-    "provider_uuids_count": 14,
+    "provider_uuids_count": 16,
     "source": "Metricool brand 7937614 getScheduledPosts full 2026-11 month; returned historical published and draft entries",
     "provider_ids": [
       "419869962",
@@ -301,11 +307,13 @@
       "426945585",
       "426946098",
       "429844048",
-      "429844729"
+      "429844729",
+      "440852560",
+      "440852965"
     ],
     "calendar_repeat_attempt": "Fresh full November and December calendar reads: 14 November entries, 0 December entries.",
     "missed_destinations": 2,
-    "future_missing_destinations": 2,
+    "future_missing_destinations": 0,
     "tt011_encoded_review": {
       "decision": "pass",
       "workflow_run": 45442959490,
@@ -336,7 +344,27 @@
         }
       ],
       "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
-    }
+    },
+    "friday_receipts": [
+      {
+        "platform": "instagram",
+        "metricool_id": "440852560",
+        "metricool_uuid": "9000973347991669964",
+        "provider_status": "PENDING",
+        "publication_date": "2026-11-27T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": false
+      },
+      {
+        "platform": "youtube",
+        "metricool_id": "440852965",
+        "metricool_uuid": "8728566144872038894",
+        "provider_status": "PENDING",
+        "publication_date": "2026-11-27T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": false
+      }
+    ]
   },
   "claim_coordination": {
     "checked_at": "2026-11-24T20:18:34.396Z",
@@ -362,10 +390,10 @@
       "2026-11-27T10:00:00+01:00"
     ],
     "required_destinations": 4,
-    "confirmed_metricool_reservations": 0,
-    "missing_destinations": 4,
+    "confirmed_metricool_reservations": 2,
+    "missing_destinations": 2,
     "deadline": "Monday 23 November evening check",
-    "status": "TT-011 exact encoded export passed. Verify this release commit's queue/build/deploy/public-media before provider submission. Friday 27 Nov 10:00 only; Tuesday missed, no backfill. Then review existing TT-010 from same artifact for December 1."
+    "status": "Tuesday missed; Friday two live readbacks pending provider byte verification"
   },
   "next_week_completeness": {
     "week_start": "2026-11-23",
@@ -386,14 +414,16 @@
       {
         "platform": "instagram",
         "date": "2026-11-27T10:00:00+01:00",
-        "provider_receipt_found": false,
-        "status": "not_reserved"
+        "provider_receipt_found": true,
+        "status": "reserved_readback_pending_provider_bytes",
+        "metricool_uuid": "9000973347991669964"
       },
       {
         "platform": "youtube",
         "date": "2026-11-27T10:00:00+01:00",
-        "provider_receipt_found": false,
-        "status": "not_reserved"
+        "provider_receipt_found": true,
+        "status": "reserved_readback_pending_provider_bytes",
+        "metricool_uuid": "8728566144872038894"
       }
     ],
     "receipts_confirmed": 0,
@@ -417,8 +447,8 @@
     "handoff_at": "2026-11-24T08:53:36.972Z",
     "release_reason": "Both unapproved; no submission intent; allow independent reviewer to acquire after fresh live reconciliation."
   },
-  "last_run_at": "2026-11-24T20:20:07.143Z",
-  "last_checked_at": "2026-11-24T20:20:07.143Z",
+  "last_run_at": "2026-11-24T20:22:51.794Z",
+  "last_checked_at": "2026-11-24T20:22:51.794Z",
   "pending_release_deployment": {
     "run_id": 45479451775,
     "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
@@ -439,6 +469,68 @@
         "current_steps": []
       }
     ],
-    "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
+    "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1.",
+    "status": "success",
+    "public_verification_job": 138749499734,
+    "public_files_verified": 63
+  },
+  "pending_provider_byte_verification": {
+    "episode_id": "TT-011",
+    "requested_at": "2026-11-24T20:22:51.794Z",
+    "request_path": "automation/media-verification-request.json",
+    "receipts": [
+      {
+        "platform": "instagram",
+        "metricool_id": "440852560",
+        "metricool_uuid": "9000973347991669964",
+        "provider_status": "PENDING",
+        "publication_date": "2026-11-27T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": false
+      },
+      {
+        "platform": "youtube",
+        "metricool_id": "440852965",
+        "metricool_uuid": "8728566144872038894",
+        "provider_status": "PENDING",
+        "publication_date": "2026-11-27T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": false
+      }
+    ],
+    "request": {
+      "repository": "akshaymohan16/toxic-tales-library",
+      "brand_id": "7937614",
+      "episode_id": "TT-011",
+      "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "source_commit": "3f1c9ac6096814ea6e672d68838cfb2358c5018a",
+      "files": [
+        {
+          "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4",
+          "role": "source_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c"
+        },
+        {
+          "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg",
+          "role": "source_cover",
+          "expected_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14"
+        },
+        {
+          "url": "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4",
+          "role": "provider_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c"
+        },
+        {
+          "url": "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg",
+          "role": "provider_cover",
+          "expected_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14"
+        },
+        {
+          "url": "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4",
+          "role": "provider_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c"
+        }
+      ]
+    }
   }
 }

@@ -221,7 +221,7 @@
     },
     "production:2026-11-27": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",
-      "phase": "exact_release_deployed_submission_claims_acquired",
+      "phase": "both_reserved_readback_pending_provider_bytes",
       "claimed_at": "2026-11-24T20:15:43.896Z",
       "expires_at": "2026-11-25T00:15:43.896Z",
       "status": "released",
@@ -240,12 +240,31 @@
       "preproduction_research_note": "automation/qa/2026-11-23-science-preproduction.json",
       "unreleased_storyboards": "automation/qa/2026-11-23-unreleased-storyboards.json",
       "submission_intent_written": true,
-      "provider_writes": 0,
+      "provider_writes": 2,
       "episode_id": "TT-011",
       "doi": "10.1073/pnas.2618030123",
       "prior_release_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T16:52:41Z",
       "prior_reconciled_calendar_at": "2026-11-23T16:52:07.177Z",
-      "provider_receipts": [],
+      "provider_receipts": [
+        {
+          "platform": "instagram",
+          "metricool_id": "440852560",
+          "metricool_uuid": "9000973347991669964",
+          "provider_status": "PENDING",
+          "publication_date": "2026-11-27T10:00:00+01:00",
+          "verified_readback": true,
+          "provider_bytes_verified": false
+        },
+        {
+          "platform": "youtube",
+          "metricool_id": "440852965",
+          "metricool_uuid": "8728566144872038894",
+          "provider_status": "PENDING",
+          "publication_date": "2026-11-27T10:00:00+01:00",
+          "verified_readback": true,
+          "provider_bytes_verified": false
+        }
+      ],
       "evidence_file": "evidence/tt-011.md",
       "episode_file": "episodes/tt-011.json",
       "science_source": "PMC13752372",
@@ -265,7 +284,7 @@
         "artifact_id": 14945356483
       },
       "last_render_failure": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved.",
-      "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1.",
+      "next_action": "Inspect provider-byte verification workflow for TT-011 request and exact source/provider SHA results; persist ledger and finish Friday claims, notify once, then review TT-010 for December 1.",
       "reconciled_calendar_at": "2026-11-24T20:15:43.896Z",
       "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
       "encoded_review_index_sha256": "237ad6800ff7580e73cef30ac72b0fdb1fc2d18bdcd4a879459c4a4dbb680bca",

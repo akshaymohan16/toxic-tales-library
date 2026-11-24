@@ -1,11 +1,11 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-24T20:20:07.143Z",
+  "updated_at": "2026-11-24T20:22:51.794Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
-  "status": "NOT_READY_TUESDAY_MISSED_FRIDAY_RELEASE_PENDING_DEPLOY",
+  "status": "TUESDAY_MISSED_FRIDAY_BOTH_RESERVED_PENDING_PROVIDER_BYTES",
   "required_success": {
     "distinct_papers": 2,
     "instagram_reels": 2,
@@ -31,26 +31,28 @@
       "date": "2026-11-27T10:00:00+01:00",
       "platform": "instagram",
       "format": "REEL",
-      "status": "release_pending_deployment_not_reserved",
-      "metricool_uuid": null,
+      "status": "reserved_readback_pending_provider_bytes",
+      "metricool_uuid": "9000973347991669964",
       "episode_id": "TT-011",
-      "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d"
+      "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "metricool_id": "440852560"
     },
     {
       "date": "2026-11-27T10:00:00+01:00",
       "platform": "youtube",
       "format": "SHORT",
-      "status": "release_pending_deployment_not_reserved",
-      "metricool_uuid": null,
+      "status": "reserved_readback_pending_provider_bytes",
+      "metricool_uuid": "8728566144872038894",
       "episode_id": "TT-011",
-      "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d"
+      "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "metricool_id": "440852965"
     }
   ],
   "source_candidates": "automation/qa/candidate-reserve-2026-11-23.json",
   "science_rights_release_status": "TT-011 exact encoded review passed; release written, deployment pending",
   "expired_claims": [],
   "provider_reconciliation": {
-    "checked_at": "2026-11-24T20:18:34.396Z",
+    "checked_at": "2026-11-24T20:22:51.794Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -58,9 +60,9 @@
       "youtube": "UCDvftxMMdtGSntm-ezcPfCg"
     },
     "timezone": "Europe/Vienna",
-    "calendar_entries": 14,
+    "calendar_entries": 16,
     "published_destinations": 11,
-    "scheduled_destinations": 0,
+    "scheduled_destinations": 2,
     "inactive_drafts": 2,
     "tt007_published_both": true,
     "tt008_published_both_at_exact_14_10": true,
@@ -91,19 +93,21 @@
       {
         "date": "2026-11-27T10:00:00+01:00",
         "network": "instagram",
-        "found": false,
-        "status": "not_reserved"
+        "found": true,
+        "status": "reserved_readback_pending_provider_bytes",
+        "metricool_uuid": "9000973347991669964"
       },
       {
         "date": "2026-11-27T10:00:00+01:00",
         "network": "youtube",
-        "found": false,
-        "status": "not_reserved"
+        "found": true,
+        "status": "reserved_readback_pending_provider_bytes",
+        "metricool_uuid": "8728566144872038894"
       }
     ],
     "weekly_receipts": 0,
-    "missing_destinations": 4,
-    "provider_writes": 0,
+    "missing_destinations": 2,
+    "provider_writes": 2,
     "new_releases": 1,
     "new_confirmed_published_keys": [],
     "history_preserved": true,
@@ -135,7 +139,7 @@
       "date": "2026-11-23"
     },
     "complete_month_metricool_reconciliation": true,
-    "provider_uuids_count": 14,
+    "provider_uuids_count": 16,
     "source": "Metricool brand 7937614 getScheduledPosts full 2026-11 month; returned historical published and draft entries",
     "provider_ids": [
       "419869962",
@@ -151,11 +155,13 @@
       "426945585",
       "426946098",
       "429844048",
-      "429844729"
+      "429844729",
+      "440852560",
+      "440852965"
     ],
     "calendar_repeat_attempt": "Fresh full November and December calendar reads: 14 November entries, 0 December entries.",
     "missed_destinations": 2,
-    "future_missing_destinations": 2,
+    "future_missing_destinations": 0,
     "tt011_encoded_review": {
       "decision": "pass",
       "workflow_run": 45442959490,
@@ -186,10 +192,30 @@
         }
       ],
       "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
-    }
+    },
+    "friday_receipts": [
+      {
+        "platform": "instagram",
+        "metricool_id": "440852560",
+        "metricool_uuid": "9000973347991669964",
+        "provider_status": "PENDING",
+        "publication_date": "2026-11-27T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": false
+      },
+      {
+        "platform": "youtube",
+        "metricool_id": "440852965",
+        "metricool_uuid": "8728566144872038894",
+        "provider_status": "PENDING",
+        "publication_date": "2026-11-27T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": false
+      }
+    ]
   },
   "owner_action_blocker": false,
-  "next_step": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1.",
+  "next_step": "Inspect provider-byte verification workflow for TT-011 request and exact source/provider SHA results; persist ledger and finish Friday claims, notify once, then review TT-010 for December 1.",
   "owned_production_claims": [],
   "research_readiness_note": "automation/qa/2026-11-23-evening-qa.json",
   "reconciled_handoff_claims": [
