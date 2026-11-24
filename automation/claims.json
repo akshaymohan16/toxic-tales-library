@@ -350,6 +350,27 @@
           "metricool_uuid": "8728566144872038894"
         }
       ]
+    },
+    "production:2026-12-01": {
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",
+      "phase": "independent_encoded_reserve_review",
+      "status": "active",
+      "claimed_at": "2026-11-24T20:24:19.174Z",
+      "expires_at": "2026-11-25T00:24:19.174Z",
+      "publication_date": "2026-12-01T10:00:00+01:00",
+      "required_destinations": [
+        "instagram",
+        "youtube"
+      ],
+      "episode_id": "TT-010",
+      "doi": "10.1371/journal.pone.0092895",
+      "render_attempt": {
+        "workflow_run_id": 45442959490,
+        "status": "completed_success",
+        "artifact_id": 14945356483,
+        "pages_artifact_id": 14945980220
+      },
+      "note": "Friday TT-011 exact pair verified; December complete live calendar zero items; 9 regular dates x2=18 projected, no historical backfill. TT010 distinct unreleased reserve, no provider writes. Independent review needed before release."
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
