@@ -220,11 +220,11 @@
       "release_reason": "Current run ends with no external write or submission intent; allow next run to reconcile and independently review/repair without waiting for stale lease."
     },
     "production:2026-11-27": {
-      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T08:45:26Z",
-      "phase": "handoff_unreleased_source_pending_independent_export_review",
-      "claimed_at": "2026-11-24T08:45:26Z",
-      "expires_at": "2026-11-24T12:45:26Z",
-      "status": "released",
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T16:52:41Z",
+      "phase": "independent_encoded_export_review",
+      "claimed_at": "2026-11-24T16:52:41Z",
+      "expires_at": "2026-11-24T20:52:41Z",
+      "status": "active",
       "publication_date": "2026-11-27T10:00:00+01:00",
       "required_destinations": [
         "instagram",
@@ -233,9 +233,9 @@
       "candidate_reserve": "automation/qa/candidate-reserve-2026-11-23.json",
       "note": "No Tuesday 24 / Friday 27 provider receipts in full-month Metricool read at start; selection pending full review. Preserve 2026-11-20 YouTube warning UUID.",
       "recovery_from_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T16:56:production-recovery",
-      "recovery_checked_at": "2026-11-24T08:45:26Z",
+      "recovery_checked_at": "2026-11-24T16:52:41Z",
       "last_live_calendar_count": 14,
-      "recovery_note": "Full live November calendar 14 items, no 24/27 receipts; intent directories contain only TT006–009; no TT010/011 releases. Expired claims safely reconciled; no provider write or retry.",
+      "recovery_note": "Full November live calendar and intent directories inspected; no TT011 reservations or intents. Tuesday elapsed; focus Friday.",
       "released_at": "2026-11-24T08:53:36.972Z",
       "preproduction_research_note": "automation/qa/2026-11-23-science-preproduction.json",
       "unreleased_storyboards": "automation/qa/2026-11-23-unreleased-storyboards.json",
@@ -243,7 +243,7 @@
       "provider_writes": 0,
       "episode_id": "TT-011",
       "doi": "10.1073/pnas.2618030123",
-      "prior_release_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T08:48:14.077Z",
+      "prior_release_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T08:45:26Z",
       "prior_reconciled_calendar_at": "2026-11-23T16:52:07.177Z",
       "provider_receipts": [],
       "evidence_file": "evidence/tt-011.md",
@@ -260,9 +260,9 @@
       "release_status": "not_released_pending_encoded_independent_QA",
       "release_reason": "Current run ends with no external write or submission intent; allow next run to reconcile and independently review/repair without waiting for stale lease.",
       "render_attempt": {
-        "source_commit": "a8557a8e736092ed50d526d0512dddb83f230226",
-        "workflow_run_id": 45359984811,
-        "status": "pending_at_last_inspection",
+        "source_commit": "dcf6e411dca2be78990e296cee2e93c77697e023",
+        "workflow_run_id": 45360107258,
+        "status": "completed_success",
         "provider_receipts": 0
       }
     }
