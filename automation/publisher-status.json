@@ -1,6 +1,6 @@
 {
   "checked_on": "2026-11-24",
-  "updated_at": "2026-11-24T20:23:47.970Z",
+  "updated_at": "2026-11-24T20:25:38.826Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
@@ -133,7 +133,7 @@
   ],
   "deployment_and_media": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed.",
   "review_limit": "Actual encoded export frame samples, SHA and ASR verified; repaired transition review passed. No perceptual listening or uninterrupted moving playback claimed.",
-  "automatic_next_step": "TT-011 complete; inspect actual ledger readiness and archive deployment; review exact already-built TT-010 for December 1, then distinct paper for December 4. December full-month calendar had zero entries.",
+  "automatic_next_step": "Inspect new actual build/deploy/verify jobs then exact TT010 compact and encoded MP4; independent final scientific/rights/correction/frames/ASR review before release and reservations; December 4 distinct eligible paper.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
   "scheduled_posts_returned": 2,
   "published_provider_receipts": 11,
@@ -148,9 +148,9 @@
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
     "provider_byte_verification_run": 45480222208,
-    "latest_watchdog_run": 45479451730,
-    "latest_watchdog_conclusion": "failure_missing_slots",
-    "latest_build_run": 45479451775,
+    "latest_watchdog_run": 45480391448,
+    "latest_watchdog_conclusion": "failure_elapsed_tuesday_only",
+    "latest_build_run": 45480391676,
     "latest_build_verified_steps": [
       "Test exact-file releases and caption safeguards",
       "Test and enforce Reels-only source policy",
@@ -159,7 +159,7 @@
     "latest_paper_retrieval_run": 43439354279,
     "latest_paper_retrieval_conclusion": "success",
     "fresh_live_metricool_reconciliation_at": "2026-11-24T20:18:34.396Z",
-    "latest_build_conclusion": "success",
+    "latest_build_conclusion": "in_progress",
     "latest_build_failure_step": "prior run Build reviewed stories and media",
     "latest_build_failure_cause": "exact ASR token narrow absent; narration source repaired",
     "claim_ownership_verified": true,
@@ -179,7 +179,7 @@
     "youtube_public_verification_run": 45442959516,
     "youtube_public_verification_conclusion": "success",
     "youtube_public_verification_basis": "Public oEmbed exact title and channel identity; yt-dlp blocked by bot check",
-    "latest_watchdog_reason": "Actual job 138748351168: 121 tests and enforcer passed; four absent destinations (Tuesday elapsed, Friday still recoverable); public TT009 warning confirmed; quota projected 14.",
+    "latest_watchdog_reason": "Actual job 138751626775: Friday exact pair accepted; only historical Tuesday missing and TT009 thumbnail warning.",
     "latest_public_verification_status": "completed_success",
     "last_verified_archive_build_run": 45360107258,
     "last_verified_archive_build_conclusion": "success",
@@ -187,8 +187,8 @@
     "upcoming_week_expected": 4,
     "latest_asset_pin_run": 45005820057,
     "latest_asset_pin_conclusion": "success",
-    "last_inspected_watchdog_run": 45479451730,
-    "last_inspected_watchdog_conclusion": "failure_missing_slots",
+    "last_inspected_watchdog_run": 45480391448,
+    "last_inspected_watchdog_conclusion": "failure_elapsed_tuesday_only",
     "latest_archive_build_run": 45479451775,
     "latest_archive_verification": "completed_success",
     "last_test_count_from_workflow": 121,
@@ -445,10 +445,30 @@
     "week_start": "2026-11-30",
     "required_destination_receipts": 4,
     "verified_destination_receipts": 0,
-    "status": "December calendar empty; TT-010 built, awaits independent review",
     "complete": false,
-    "calendar_checked_at": "2026-11-24T20:18:34.396Z",
-    "calendar_entries": 0
+    "calendar_checked_at": "2026-11-24T20:24:19.174Z",
+    "calendar_entries": 0,
+    "month_budget": {
+      "month": "2026-12",
+      "published": 0,
+      "existing_commitments": 0,
+      "remaining_regular_destinations": 18,
+      "projected": 18,
+      "cap": 20
+    },
+    "status": "Previous actual TT-010 encoded review FAIL: literal escaped titles and spatial wipes mix incompatible labels; source-specific repair applied, fresh independent review required",
+    "earliest_slot": "2026-12-01T10:00:00+01:00",
+    "candidate": "TT-010",
+    "prior_failed_review": {
+      "fingerprint": "2723b28cbdbc9609f568abe0f3004e65402689d9fd043cfa029e26ffa8617ac7",
+      "artifact_id": 14945356483,
+      "review_index_sha256": "7009445efade9b00326320aad1e8f7a6b74c558d2c195bf748021492bf149d2f",
+      "package_hashes_verified": 79,
+      "findings": [
+        "All 15 shot midpoint images inspected; literal backslash-n visible in twelve titles",
+        "Early samples 1–8 inspected; previous art wipes cause misleading WATER/SAND, SINKING/FLOATING, SOLID/FLOATING and NARROW/TOO LOW mixed pairs. Fail early; remaining samples and exact MP4 audio not reviewed."
+      ]
+    }
   },
   "automation_tasks_verified_at": "2026-11-18T17:09:08.853Z",
   "next_week": {
@@ -516,8 +536,8 @@
     "handoff_at": "2026-11-24T08:53:36.972Z",
     "release_reason": "Both unapproved; no submission intent; allow independent reviewer to acquire after fresh live reconciliation."
   },
-  "last_run_at": "2026-11-24T20:23:47.970Z",
-  "last_checked_at": "2026-11-24T20:23:47.970Z",
+  "last_run_at": "2026-11-24T20:25:38.826Z",
+  "last_checked_at": "2026-11-24T20:25:38.826Z",
   "pending_release_deployment": {
     "run_id": 45479451775,
     "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
@@ -671,5 +691,10 @@
       "passed": true,
       "decision": "pass"
     }
+  },
+  "post_receipt_archive_deployment": {
+    "run_id": 45480391676,
+    "status": "in_progress",
+    "commit": "ca1b3cfad5dd6794ea5689d2758dc9c475d66ad9"
   }
 }

@@ -1,0 +1,58 @@
+{
+  "month": "2026-12",
+  "timezone": "Europe/Vienna",
+  "observed_at": "2026-11-24T20:24:19.174Z",
+  "connected_networks": [
+    "instagram",
+    "youtube"
+  ],
+  "monthly_cap": 20,
+  "provider_confirmed_publications": 0,
+  "published_ids": [],
+  "scheduled_ids": [],
+  "draft_ids": [],
+  "unresolved_submissions": [],
+  "planned_usage_with_current_candidates": 18,
+  "quota": {
+    "month": "2026-12",
+    "observed_used": 0,
+    "observation_basis": "Complete future December calendar read, zero entries; no December published history yet",
+    "full_month_calendar_verified": true,
+    "calendar_checked_at": "2026-11-24T20:24:19.174Z",
+    "observed_at": "2026-11-24T20:24:19.174Z",
+    "published_destination_keys": [],
+    "conservative_committed_destination_count": 18,
+    "projected_month_destinations": 18,
+    "remaining_regular_destination_slots": 18,
+    "cap": 20
+  },
+  "latest_live_reconciliation": {
+    "week_start": "2026-11-30",
+    "required_destination_receipts": 4,
+    "verified_destination_receipts": 0,
+    "complete": false,
+    "calendar_checked_at": "2026-11-24T20:24:19.174Z",
+    "calendar_entries": 0,
+    "month_budget": {
+      "month": "2026-12",
+      "published": 0,
+      "existing_commitments": 0,
+      "remaining_regular_destinations": 18,
+      "projected": 18,
+      "cap": 20
+    },
+    "status": "Previous actual TT-010 encoded review FAIL: literal escaped titles and spatial wipes mix incompatible labels; source-specific repair applied, fresh independent review required",
+    "earliest_slot": "2026-12-01T10:00:00+01:00",
+    "candidate": "TT-010",
+    "prior_failed_review": {
+      "fingerprint": "2723b28cbdbc9609f568abe0f3004e65402689d9fd043cfa029e26ffa8617ac7",
+      "artifact_id": 14945356483,
+      "review_index_sha256": "7009445efade9b00326320aad1e8f7a6b74c558d2c195bf748021492bf149d2f",
+      "package_hashes_verified": 79,
+      "findings": [
+        "All 15 shot midpoint images inspected; literal backslash-n visible in twelve titles",
+        "Early samples 1–8 inspected; previous art wipes cause misleading WATER/SAND, SINKING/FLOATING, SOLID/FLOATING and NARROW/TOO LOW mixed pairs. Fail early; remaining samples and exact MP4 audio not reviewed."
+      ]
+    }
+  }
+}

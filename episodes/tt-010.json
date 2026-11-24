@@ -19,7 +19,7 @@
   "review_status": "full_primary_main_text_checked",
   "publication_enabled": true,
   "is_ai_generated": true,
-  "batch_id": "2026-11-23",
+  "batch_id": "2026-11-30",
   "slides": [],
   "evidence_file": "evidence/tt-010.md",
   "checks": {
@@ -82,7 +82,7 @@
       0.5
     ],
     "cover_kicker": "NEW CALEDONIAN CROW · WILD REFERENCE PHOTO",
-    "cover_title": "The crow\\nand the water",
+    "cover_title": "The crow\nand the water",
     "cover_subtitle": "Six tasks reveal skill and limits",
     "takeaway": "In tests, trained crows selected several useful water-displacement properties, but not a narrower efficient tube or a concealed U-tube connection.",
     "critical_terms": [
@@ -124,7 +124,7 @@
         "shots": [
           {
             "kind": "portrait",
-            "title": "A crow with\\na problem",
+            "title": "A crow with\na problem",
             "kicker": "WILD REFERENCE PHOTO",
             "start": 0,
             "end": 0.44,
@@ -132,7 +132,7 @@
           },
           {
             "kind": "crow_stone",
-            "title": "Can stones\\nlift food?",
+            "title": "Can stones\nlift food?",
             "kicker": "WATER DISPLACEMENT",
             "start": 0.44,
             "end": 1
@@ -159,7 +159,7 @@
           },
           {
             "kind": "crow_stone",
-            "title": "Water lifts\\nthe food",
+            "title": "Water lifts\nthe food",
             "kicker": "FUNCTIONAL PHYSICS",
             "start": 0.52,
             "end": 1
@@ -202,7 +202,7 @@
         "shots": [
           {
             "kind": "crow_high",
-            "title": "A head start\\nin the water",
+            "title": "A head start\nin the water",
             "kicker": "HIGH VS LOW LEVEL",
             "start": 0,
             "end": 1
@@ -222,14 +222,14 @@
         "shots": [
           {
             "kind": "crow_narrow",
-            "title": "Narrow needs\\nfewer stones",
+            "title": "Narrow needs\nfewer stones",
             "kicker": "EFFICIENT BUT NOT FAVOURED",
             "start": 0,
             "end": 0.58
           },
           {
             "kind": "crow_narrow",
-            "title": "No reliable\\nfirst choice",
+            "title": "No reliable\nfirst choice",
             "kicker": "THE FIRST LIMIT",
             "start": 0.58,
             "end": 1
@@ -247,14 +247,14 @@
         "shots": [
           {
             "kind": "crow_u",
-            "title": "The hidden\\nconnection",
+            "title": "The hidden\nconnection",
             "kicker": "CONCEALED U-TUBE",
             "start": 0,
             "end": 0.55
           },
           {
             "kind": "crow_result",
-            "title": "About half\\nand half",
+            "title": "About half\nand half",
             "kicker": "U-TUBE CHOICES",
             "start": 0.55,
             "end": 1
@@ -273,14 +273,14 @@
         "shots": [
           {
             "kind": "crow_recap",
-            "title": "Some properties\\nwere noticed",
+            "title": "Some properties\nwere noticed",
             "kicker": "WHAT WORKED",
             "start": 0,
             "end": 0.52
           },
           {
             "kind": "crow_limits",
-            "title": "Six trained\\ncrows began",
+            "title": "Six trained\ncrows began",
             "kicker": "SMALL LAB SAMPLE",
             "start": 0.52,
             "end": 1
@@ -298,14 +298,14 @@
         "shots": [
           {
             "kind": "crow_limits",
-            "title": "Four completed\\nevery task",
+            "title": "Four completed\nevery task",
             "kicker": "WHAT REMAINS UNKNOWN",
             "start": 0,
             "end": 0.65
           },
           {
             "kind": "closing",
-            "title": "Choices reveal\\nboth strengths and limits",
+            "title": "Choices reveal\nboth strengths and limits",
             "kicker": "WILD REFERENCE PHOTO",
             "start": 0.65,
             "end": 1,
@@ -423,14 +423,14 @@
     {
       "id": "TT-010-REEL",
       "format": "REEL",
-      "publication_date": "2026-11-24T10:00:00+01:00",
+      "publication_date": "2026-12-01T10:00:00+01:00",
       "caption": "Could a trained crow raise a floating reward with stones? Six New Caledonian crows made choices between materials and water-filled tubes. They more often used water than sand, sinking rather than floating objects, and solid rather than hollow ones. They favoured higher starting water—but did not reliably prefer the more efficient narrow tube or identify a concealed functional U-tube connection. Only four birds completed every test. These controlled tasks show selectivity, not a proof of complete causal understanding or of wild stone-dropping.\\n\\nJelbert et al. (2014), PLOS ONE. DOI: 10.1371/journal.pone.0092895\\nFull open-access paper: https://pmc.ncbi.nlm.nih.gov/articles/PMC3966847/\\nEvidence, limitations and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-010.html\\n\\nWild crow reference photo: benkeen / iNaturalist, CC0 1.0 (NOT experiment footage). Original water/tube animations are conceptual schematics, not recorded experiments or measured trajectories. Synthetic neural narration, captions and real Toxic Tales logo.\\n\\n#ToxicTales #Crows #AnimalBehaviour #Ecology #Science"
     }
   ],
   "editorial_review": {
     "standard": "story-first-v1",
-    "reviewer": "24 November publisher source-layout reviewer of preserved narration",
-    "reviewed_at": "2026-11-24T08:51:14.865Z",
+    "reviewer": "24 November independent publisher source repair after exact export visual failure",
+    "reviewed_at": "2026-11-24T20:25:38.826Z",
     "decision": "pass",
     "checks": {
       "cold_viewer": {
@@ -445,8 +445,8 @@
       },
       "visuals": {
         "decision": "pass",
-        "finding": "Source-specific tube/stone diagrams illustrate the water-level mechanism, sand comparison, object density/solidity, starting level and concealed U-tube. The opening and ending species photo is visibly framed as a reference; none of the drawings claim to reproduce laboratory recording or measured time series. Frame/crop/phone-scale compliance remains for independent encoded QA. Caption phrases have been split at natural clause boundaries without changing any spoken words; cover now correctly says six tasks, not six trials. Encoded layout still requires independent review. Second render passed source layout but failed the final exact critical term 'narrow' because narration used 'narrower'. Revised the spoken phrase to 'the narrow tube' and matched captions; the exact ASR gate remains unchanged, as does the scientific result.",
-        "basis": "Planned nine new corvus scene families, fixed captions, CC0 benkeen image hash and no reused frog/bee/spider diagrams; pre-render plan only, not video playback. Verified exact concatenation of each caption segment against unchanged speech and diagnosed the actual cloud overflow log."
+        "finding": "Source-specific tube/stone diagrams illustrate the water-level mechanism, sand comparison, object density/solidity, starting level and concealed U-tube. The opening and ending species photo is visibly framed as a reference; none of the drawings claim to reproduce laboratory recording or measured time series. Frame/crop/phone-scale compliance remains for independent encoded QA. Caption phrases have been split at natural clause boundaries without changing any spoken words; cover now correctly says six tasks, not six trials. Encoded layout still requires independent review. Second render passed source layout but failed the final exact critical term 'narrow' because narration used 'narrower'. Revised the spoken phrase to 'the narrow tube' and matched captions; the exact ASR gate remains unchanged, as does the scientific result. The independent prior export frame review showed literal backslash-n in title text, and cross-scene wipes combining contradictory labels. Corrected source line breaks and restricted crow renderer transitions to whole-art nonoverlapping fades, with reference label raised. New export must be independently reviewed; no pass claimed.",
+        "basis": "Planned nine new corvus scene families, fixed captions, CC0 benkeen image hash and no reused frog/bee/spider diagrams; pre-render plan only, not video playback. Verified exact concatenation of each caption segment against unchanged speech and diagnosed the actual cloud overflow log. Exact compact artifact 14945356483, TT010 fingerprint 2723b28cbdbc9609f568abe0f3004e65402689d9fd043cfa029e26ffa8617ac7; all 79 package hashes matched. Midpoints 1,2,4,7–15 show literal escape; 0.18s samples 2–8 show mixed diagram labels. Tuesday December 1 source date replaces missed November 24 only for unreleased reserve, not backfill."
       },
       "payoff": {
         "decision": "pass",
@@ -464,6 +464,6 @@
         "basis": "Original eight narration beats, n=6 declining to n=4 and contrasted experiment statistics in main peer-reviewed paper."
       }
     },
-    "source_sha256": "94d28295b1f66c1ff280d6fde8ad5e427bfad2d014a04adf38fe76763438aed9"
+    "source_sha256": "1ec923a799d788cfcd5954f02a7bd40660081023c2e3cd3a4f0db8acb0245631"
   }
 }

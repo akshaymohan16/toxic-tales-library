@@ -1,0 +1,76 @@
+{
+  "batch_id": "2026-11-30",
+  "created_on": "2026-11-24",
+  "updated_at": "2026-11-24T20:25:38.826Z",
+  "timezone": "Europe/Vienna",
+  "status": "NOT_READY_NEXT_WEEK_SOURCE_REPAIR_STARTED",
+  "required_success": {
+    "distinct_papers": 2,
+    "instagram_reels": 2,
+    "youtube_shorts": 2,
+    "total_destinations": 4
+  },
+  "slots": [
+    {
+      "date": "2026-12-01T10:00:00+01:00",
+      "platform": "instagram",
+      "format": "REEL",
+      "status": "candidate_render_pending",
+      "metricool_uuid": null,
+      "episode_id": "TT-010"
+    },
+    {
+      "date": "2026-12-01T10:00:00+01:00",
+      "platform": "youtube",
+      "format": "SHORT",
+      "status": "candidate_render_pending",
+      "metricool_uuid": null,
+      "episode_id": "TT-010"
+    },
+    {
+      "date": "2026-12-04T10:00:00+01:00",
+      "platform": "instagram",
+      "format": "REEL",
+      "status": "not_reserved",
+      "metricool_uuid": null
+    },
+    {
+      "date": "2026-12-04T10:00:00+01:00",
+      "platform": "youtube",
+      "format": "SHORT",
+      "status": "not_reserved",
+      "metricool_uuid": null
+    }
+  ],
+  "provider_reconciliation": {
+    "week_start": "2026-11-30",
+    "required_destination_receipts": 4,
+    "verified_destination_receipts": 0,
+    "complete": false,
+    "calendar_checked_at": "2026-11-24T20:24:19.174Z",
+    "calendar_entries": 0,
+    "month_budget": {
+      "month": "2026-12",
+      "published": 0,
+      "existing_commitments": 0,
+      "remaining_regular_destinations": 18,
+      "projected": 18,
+      "cap": 20
+    },
+    "status": "Previous actual TT-010 encoded review FAIL: literal escaped titles and spatial wipes mix incompatible labels; source-specific repair applied, fresh independent review required",
+    "earliest_slot": "2026-12-01T10:00:00+01:00",
+    "candidate": "TT-010",
+    "prior_failed_review": {
+      "fingerprint": "2723b28cbdbc9609f568abe0f3004e65402689d9fd043cfa029e26ffa8617ac7",
+      "artifact_id": 14945356483,
+      "review_index_sha256": "7009445efade9b00326320aad1e8f7a6b74c558d2c195bf748021492bf149d2f",
+      "package_hashes_verified": 79,
+      "findings": [
+        "All 15 shot midpoint images inspected; literal backslash-n visible in twelve titles",
+        "Early samples 1–8 inspected; previous art wipes cause misleading WATER/SAND, SINKING/FLOATING, SOLID/FLOATING and NARROW/TOO LOW mixed pairs. Fail early; remaining samples and exact MP4 audio not reviewed."
+      ]
+    }
+  },
+  "owner_action_blocker": false,
+  "next_step": "Inspect new actual build/deploy/verify jobs then exact TT010 compact and encoded MP4; independent final scientific/rights/correction/frames/ASR review before release and reservations; December 4 distinct eligible paper."
+}
