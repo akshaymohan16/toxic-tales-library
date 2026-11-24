@@ -13,7 +13,7 @@ Use only the existing Sunday producer 6aeefcb926708191b092554230783da1 and daily
 
 Sunday 10:00: create and schedule the upcoming week's missing videos.
 Monday: check and recover missing destinations; report first-run readiness after the Monday 18:15 check.
-Daily 10:15 and 18:15: reconcile live provider state, recover routine failures, record a fresh heartbeat, issue deduplicated result notifications.
+Daily 07:15, 10:15, 13:15, 16:15, 18:15 and 21:15 Europe/Vienna: the same existing publisher reconciles live provider state, resumes the earliest outstanding still-future slot from the most recent actual build result, recovers routine failures, records a fresh heartbeat and issues deduplicated result notifications. When the current and following weeks are fully reserved and verified, perform only necessary reconciliation; never create extra posts. Use the additional checkpoints to finish review and scheduling across cloud-build handoffs and maintain a one-week forward buffer. Publication remains Tuesday/Friday 10:00; no extra posting tasks or paid services.
 
 ## Autonomous paper access
 
