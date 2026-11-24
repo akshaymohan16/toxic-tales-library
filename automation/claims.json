@@ -221,10 +221,10 @@
     },
     "production:2026-11-27": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",
-      "phase": "both_reserved_readback_pending_provider_bytes",
+      "phase": "both_destination_receipts_verified",
       "claimed_at": "2026-11-24T20:15:43.896Z",
       "expires_at": "2026-11-25T00:15:43.896Z",
-      "status": "released",
+      "status": "completed",
       "publication_date": "2026-11-27T10:00:00+01:00",
       "required_destinations": [
         "instagram",
@@ -253,7 +253,7 @@
           "provider_status": "PENDING",
           "publication_date": "2026-11-27T10:00:00+01:00",
           "verified_readback": true,
-          "provider_bytes_verified": false
+          "provider_bytes_verified": true
         },
         {
           "platform": "youtube",
@@ -262,7 +262,7 @@
           "provider_status": "PENDING",
           "publication_date": "2026-11-27T10:00:00+01:00",
           "verified_readback": true,
-          "provider_bytes_verified": false
+          "provider_bytes_verified": true
         }
       ],
       "evidence_file": "evidence/tt-011.md",
@@ -284,7 +284,7 @@
         "artifact_id": 14945356483
       },
       "last_render_failure": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved.",
-      "next_action": "Inspect provider-byte verification workflow for TT-011 request and exact source/provider SHA results; persist ledger and finish Friday claims, notify once, then review TT-010 for December 1.",
+      "next_action": "Review TT-010 exact built reserve for December 1; prepare distinct December 4 candidate",
       "reconciled_calendar_at": "2026-11-24T20:15:43.896Z",
       "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
       "encoded_review_index_sha256": "237ad6800ff7580e73cef30ac72b0fdb1fc2d18bdcd4a879459c4a4dbb680bca",
@@ -295,11 +295,13 @@
         "public_verification_job": 138749499734,
         "site_manifest_artifact_id": 14959938192,
         "pages_artifact_id": 14959793328
-      }
+      },
+      "completed_at": "2026-11-24T20:23:47.970Z",
+      "provider_byte_verification_run": 45480222208
     },
     "submission:instagram:2026-11-27T10:00:Europe/Vienna": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",
-      "phase": "reserved_readback_pending_byte_verification",
+      "phase": "both_destination_receipts_verified",
       "claimed_at": "2026-11-24T20:21:53.064Z",
       "expires_at": "2026-11-24T20:51:53.064Z",
       "episode_id": "TT-011",
@@ -308,15 +310,24 @@
       "publication_date": "2026-11-27T10:00:00+01:00",
       "doi": "10.1073/pnas.2618030123",
       "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
-      "status": "active",
+      "status": "completed",
       "intent": "automation/instagram/TT-011-intent.json",
       "metricool_uuid": "9000973347991669964",
       "metricool_id": "440852560",
-      "readback_at": "2026-11-24T20:22:12.497Z"
+      "readback_at": "2026-11-24T20:22:12.497Z",
+      "completed_at": "2026-11-24T20:23:47.970Z",
+      "provider_byte_verification_run": 45480222208,
+      "provider_receipts": [
+        {
+          "platform": "instagram",
+          "metricool_id": "440852560",
+          "metricool_uuid": "9000973347991669964"
+        }
+      ]
     },
     "submission:youtube:2026-11-27T10:00:Europe/Vienna": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",
-      "phase": "reserved_readback_pending_byte_verification",
+      "phase": "both_destination_receipts_verified",
       "claimed_at": "2026-11-24T20:21:53.064Z",
       "expires_at": "2026-11-24T20:51:53.064Z",
       "episode_id": "TT-011",
@@ -325,11 +336,20 @@
       "publication_date": "2026-11-27T10:00:00+01:00",
       "doi": "10.1073/pnas.2618030123",
       "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
-      "status": "active",
+      "status": "completed",
       "intent": "automation/youtube/TT-011-intent.json",
       "metricool_uuid": "8728566144872038894",
       "metricool_id": "440852965",
-      "readback_at": "2026-11-24T20:22:31.146Z"
+      "readback_at": "2026-11-24T20:22:31.146Z",
+      "completed_at": "2026-11-24T20:23:47.970Z",
+      "provider_byte_verification_run": 45480222208,
+      "provider_receipts": [
+        {
+          "platform": "youtube",
+          "metricool_id": "440852965",
+          "metricool_uuid": "8728566144872038894"
+        }
+      ]
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."

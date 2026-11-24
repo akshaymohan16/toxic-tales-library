@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-11-24T20:23:08.943313+00:00",
+  "repository": "akshaymohan16/toxic-tales-library",
+  "brand_id": "7937614",
+  "episode_id": "TT-011",
+  "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+  "source_commit": "3f1c9ac6096814ea6e672d68838cfb2358c5018a",
+  "files": {
+    "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4": {
+      "role": "source_video",
+      "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+      "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+      "http_status": 200,
+      "bytes": 4253313,
+      "decision": "pass",
+      "attempts": 1,
+      "checked_at": "2026-11-24T20:23:05.076808+00:00",
+      "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4"
+    },
+    "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg": {
+      "role": "source_cover",
+      "expected_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+      "sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+      "http_status": 200,
+      "bytes": 562307,
+      "decision": "pass",
+      "attempts": 1,
+      "checked_at": "2026-11-24T20:23:05.215494+00:00",
+      "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg"
+    },
+    "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4": {
+      "role": "provider_video",
+      "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+      "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+      "http_status": 200,
+      "bytes": 4253313,
+      "decision": "pass",
+      "attempts": 1,
+      "checked_at": "2026-11-24T20:23:06.688146+00:00",
+      "final_url": "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4"
+    },
+    "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg": {
+      "role": "provider_cover",
+      "expected_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+      "sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+      "http_status": 200,
+      "bytes": 562307,
+      "decision": "pass",
+      "attempts": 1,
+      "checked_at": "2026-11-24T20:23:07.611660+00:00",
+      "final_url": "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg"
+    },
+    "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4": {
+      "role": "provider_video",
+      "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+      "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+      "http_status": 200,
+      "bytes": 4253313,
+      "decision": "pass",
+      "attempts": 1,
+      "checked_at": "2026-11-24T20:23:08.943274+00:00",
+      "final_url": "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4"
+    }
+  },
+  "passed": true,
+  "decision": "pass"
+}

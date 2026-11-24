@@ -1,17 +1,17 @@
 {
   "checked_on": "2026-11-24",
-  "updated_at": "2026-11-24T20:22:51.794Z",
+  "updated_at": "2026-11-24T20:23:47.970Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_connection_verified": true,
-  "decision": "TUESDAY_MISSED_FRIDAY_BOTH_RESERVED_PENDING_PROVIDER_BYTES",
+  "decision": "FRIDAY_PAIR_VERIFIED_TUESDAY_MISSED_NO_BACKFILL",
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-24T20:22:51.794Z",
-    "calendar_checked_at": "2026-11-24T20:22:51.794Z",
+    "observed_at": "2026-11-24T20:23:47.970Z",
+    "calendar_checked_at": "2026-11-24T20:23:47.970Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -87,10 +87,10 @@
       "2026-11-27T10:00:00+01:00"
     ],
     "required_destination_receipts": 4,
-    "verified_destination_receipts": 0,
+    "verified_destination_receipts": 2,
     "producer_due": "2026-11-22T10:00:00+01:00",
     "hard_readiness_due": "2026-11-23T23:59:59+01:00",
-    "status": "Tuesday missed; Friday two live readbacks pending provider byte verification",
+    "status": "2/4; Friday pair exact verified, Tuesday missed",
     "existing_videos_count": 1,
     "expired_claims_need_reconciliation": [],
     "owned_production_claims": [],
@@ -133,7 +133,7 @@
   ],
   "deployment_and_media": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed.",
   "review_limit": "Actual encoded export frame samples, SHA and ASR verified; repaired transition review passed. No perceptual listening or uninterrupted moving playback claimed.",
-  "automatic_next_step": "Inspect provider-byte verification workflow for TT-011 request and exact source/provider SHA results; persist ledger and finish Friday claims, notify once, then review TT-010 for December 1.",
+  "automatic_next_step": "TT-011 complete; inspect actual ledger readiness and archive deployment; review exact already-built TT-010 for December 1, then distinct paper for December 4. December full-month calendar had zero entries.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
   "scheduled_posts_returned": 2,
   "published_provider_receipts": 11,
@@ -147,7 +147,7 @@
     "automation_tests": 121,
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
-    "provider_byte_verification_run": 43847978272,
+    "provider_byte_verification_run": 45480222208,
     "latest_watchdog_run": 45479451730,
     "latest_watchdog_conclusion": "failure_missing_slots",
     "latest_build_run": 45479451775,
@@ -163,7 +163,7 @@
     "latest_build_failure_step": "prior run Build reviewed stories and media",
     "latest_build_failure_cause": "exact ASR token narrow absent; narration source repaired",
     "claim_ownership_verified": true,
-    "latest_verified_build_run": 45442959490,
+    "latest_verified_build_run": 45479451775,
     "latest_verified_build_conclusion": "success",
     "later_same_source_deployment_run": 43848353452,
     "later_same_source_deployment_status": "completed_success",
@@ -189,11 +189,12 @@
     "latest_asset_pin_conclusion": "success",
     "last_inspected_watchdog_run": 45479451730,
     "last_inspected_watchdog_conclusion": "failure_missing_slots",
-    "latest_archive_build_run": 45442959490,
+    "latest_archive_build_run": 45479451775,
     "latest_archive_verification": "completed_success",
     "last_test_count_from_workflow": 121,
     "tests_run_again_after_this_commit": true,
-    "latest_archive_build_conclusion": "success"
+    "latest_archive_build_conclusion": "success",
+    "latest_provider_byte_verification_conclusion": "success"
   },
   "current_one_off": {
     "episode_id": "TT-008",
@@ -204,7 +205,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-24T20:22:51.794Z",
+    "checked_at": "2026-11-24T20:23:47.970Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -246,18 +247,18 @@
         "date": "2026-11-27T10:00:00+01:00",
         "network": "instagram",
         "found": true,
-        "status": "reserved_readback_pending_provider_bytes",
+        "status": "scheduled_verified",
         "metricool_uuid": "9000973347991669964"
       },
       {
         "date": "2026-11-27T10:00:00+01:00",
         "network": "youtube",
         "found": true,
-        "status": "reserved_readback_pending_provider_bytes",
+        "status": "scheduled_verified",
         "metricool_uuid": "8728566144872038894"
       }
     ],
-    "weekly_receipts": 0,
+    "weekly_receipts": 2,
     "missing_destinations": 2,
     "provider_writes": 2,
     "new_releases": 1,
@@ -353,7 +354,7 @@
         "provider_status": "PENDING",
         "publication_date": "2026-11-27T10:00:00+01:00",
         "verified_readback": true,
-        "provider_bytes_verified": false
+        "provider_bytes_verified": true
       },
       {
         "platform": "youtube",
@@ -362,13 +363,81 @@
         "provider_status": "PENDING",
         "publication_date": "2026-11-27T10:00:00+01:00",
         "verified_readback": true,
-        "provider_bytes_verified": false
+        "provider_bytes_verified": true
       }
-    ]
+    ],
+    "provider_byte_verification_run": 45480222208,
+    "provider_byte_verification_report": {
+      "checked_at": "2026-11-24T20:23:08.943313+00:00",
+      "repository": "akshaymohan16/toxic-tales-library",
+      "brand_id": "7937614",
+      "episode_id": "TT-011",
+      "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "source_commit": "3f1c9ac6096814ea6e672d68838cfb2358c5018a",
+      "files": {
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4": {
+          "role": "source_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "http_status": 200,
+          "bytes": 4253313,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:05.076808+00:00",
+          "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4"
+        },
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg": {
+          "role": "source_cover",
+          "expected_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "http_status": 200,
+          "bytes": 562307,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:05.215494+00:00",
+          "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg"
+        },
+        "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4": {
+          "role": "provider_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "http_status": 200,
+          "bytes": 4253313,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:06.688146+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4"
+        },
+        "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg": {
+          "role": "provider_cover",
+          "expected_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "http_status": 200,
+          "bytes": 562307,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:07.611660+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg"
+        },
+        "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4": {
+          "role": "provider_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "http_status": 200,
+          "bytes": 4253313,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:08.943274+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4"
+        }
+      },
+      "passed": true,
+      "decision": "pass"
+    }
   },
   "claim_coordination": {
-    "checked_at": "2026-11-24T20:18:34.396Z",
-    "status": "Friday CAS acquired and read back; exact export review passed; released for post-release verification",
+    "checked_at": "2026-11-24T20:23:47.970Z",
+    "status": "Both Friday submission claims completed with independent provider readback and byte proof",
     "active_competing_claims": 0,
     "active_claim_keys": []
   },
@@ -393,11 +462,11 @@
     "confirmed_metricool_reservations": 2,
     "missing_destinations": 2,
     "deadline": "Monday 23 November evening check",
-    "status": "Tuesday missed; Friday two live readbacks pending provider byte verification"
+    "status": "2/4; Friday pair exact verified, Tuesday missed"
   },
   "next_week_completeness": {
     "week_start": "2026-11-23",
-    "date_checked": "2026-11-24T20:18:34.396Z",
+    "date_checked": "2026-11-24T20:23:47.970Z",
     "slots": [
       {
         "platform": "instagram",
@@ -415,18 +484,18 @@
         "platform": "instagram",
         "date": "2026-11-27T10:00:00+01:00",
         "provider_receipt_found": true,
-        "status": "reserved_readback_pending_provider_bytes",
+        "status": "scheduled_verified",
         "metricool_uuid": "9000973347991669964"
       },
       {
         "platform": "youtube",
         "date": "2026-11-27T10:00:00+01:00",
         "provider_receipt_found": true,
-        "status": "reserved_readback_pending_provider_bytes",
+        "status": "scheduled_verified",
         "metricool_uuid": "8728566144872038894"
       }
     ],
-    "receipts_confirmed": 0,
+    "receipts_confirmed": 2,
     "receipts_required": 4,
     "production_window_not_yet_due": false,
     "production_window_in_progress": false,
@@ -447,8 +516,8 @@
     "handoff_at": "2026-11-24T08:53:36.972Z",
     "release_reason": "Both unapproved; no submission intent; allow independent reviewer to acquire after fresh live reconciliation."
   },
-  "last_run_at": "2026-11-24T20:22:51.794Z",
-  "last_checked_at": "2026-11-24T20:22:51.794Z",
+  "last_run_at": "2026-11-24T20:23:47.970Z",
+  "last_checked_at": "2026-11-24T20:23:47.970Z",
   "pending_release_deployment": {
     "run_id": 45479451775,
     "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
@@ -531,6 +600,76 @@
           "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c"
         }
       ]
+    },
+    "status": "success",
+    "run_id": 45480222208,
+    "artifact_id": 14961841578,
+    "report": {
+      "checked_at": "2026-11-24T20:23:08.943313+00:00",
+      "repository": "akshaymohan16/toxic-tales-library",
+      "brand_id": "7937614",
+      "episode_id": "TT-011",
+      "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "source_commit": "3f1c9ac6096814ea6e672d68838cfb2358c5018a",
+      "files": {
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4": {
+          "role": "source_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "http_status": 200,
+          "bytes": 4253313,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:05.076808+00:00",
+          "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4"
+        },
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg": {
+          "role": "source_cover",
+          "expected_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "http_status": 200,
+          "bytes": 562307,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:05.215494+00:00",
+          "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg"
+        },
+        "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4": {
+          "role": "provider_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "http_status": 200,
+          "bytes": 4253313,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:06.688146+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4"
+        },
+        "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg": {
+          "role": "provider_cover",
+          "expected_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "http_status": 200,
+          "bytes": 562307,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:07.611660+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg"
+        },
+        "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4": {
+          "role": "provider_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "http_status": 200,
+          "bytes": 4253313,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:08.943274+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4"
+        }
+      },
+      "passed": true,
+      "decision": "pass"
     }
   }
 }

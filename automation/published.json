@@ -1334,6 +1334,211 @@
       "last_provider_reconciled_at": "2026-11-20T17:13:59.915Z",
       "last_checked_at": "2026-11-23T16:52:07.177Z",
       "retry_permitted": false
+    },
+    {
+      "post_id": "TT-011-REEL",
+      "episode_id": "TT-011",
+      "format": "REEL",
+      "platform": "instagram",
+      "doi": "10.1073/pnas.2618030123",
+      "metricool_id": "440852560",
+      "metricool_uuid": "9000973347991669964",
+      "publication_date": "2026-11-27T10:00:00+01:00",
+      "timezone": "Europe/Vienna",
+      "status": "scheduled",
+      "provider_status": "PENDING",
+      "auto_publish": true,
+      "draft": false,
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=9000973347991669964",
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4"
+      ],
+      "source_files_sha256": {
+        "media/tt-011-spider-sleep-f156a514cc51.mp4": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+        "media/tt-011-spider-sleep-f156a514cc51_cover.jpg": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14"
+      },
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4"
+      ],
+      "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
+      "source_commit": "3f1c9ac6096814ea6e672d68838cfb2358c5018a",
+      "public_verification_run": 45479451775,
+      "provider_byte_verification_run": 45480222208,
+      "receipt_saved_on": "2026-11-24T20:23:47.970Z",
+      "schedule_readback_verified": true,
+      "publication_eligible": true,
+      "metricool_media_sha256": {
+        "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c"
+      },
+      "metricool_hosted_bytes_verified": true,
+      "provider_readback_checked_at": "2026-11-24T20:23:47.970Z",
+      "provider_readback": {
+        "id": 440852560,
+        "publicationDate": {
+          "dateTime": "2026-11-27T10:00:00",
+          "timezone": "Europe/Vienna"
+        },
+        "creationDate": {
+          "dateTime": "2026-11-24T21:22:00",
+          "timezone": "Europe/Vienna"
+        },
+        "text": "A motionless spider might just be waiting. In laboratory Portia fimbriata, researchers looked at rest posture, twitching, retinal movements, responses to sound and rebound after a disturbed night. Four of ten spiders tested during REM-like bouts did not react within ten seconds, but reacted when awake. Thirteen paired recordings showed mean REM-like time rising from 9.4 to 16.9 minutes after fly disturbance. Behavioral evidence supports sleep with REM-like periods, not proof of dreaming or direct neural equivalence.\n\nGeiger et al. (2026), PNAS. DOI: 10.1073/pnas.2618030123\nFull text: https://pmc.ncbi.nlm.nih.gov/articles/PMC13752372/\nEvidence and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-011.html\nPhoto: Donald Hobern, CC BY 2.0, species reference only. Original conceptual animations; synthetic neural narration.\n#ToxicTales #JumpingSpider #AnimalBehaviour #Sleep #Ecology",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg",
+        "imageVariants": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "REEL",
+          "showReelOnFeed": true,
+          "isAiGenerated": true,
+          "isPaidPartnership": false
+        },
+        "hasNotReadNotes": false,
+        "uuid": "9000973347991669964",
+        "creatorUserMail": "akshaymohank21@gmail.com",
+        "creatorUserId": 6223629,
+        "brandTags": []
+      },
+      "publication_confirmation": "PENDING future scheduled reservation; confirm positive PUBLISHED and live URL after due time",
+      "duplicate_guard": "Original verified TT-011 reservation; never duplicate or retime",
+      "last_provider_reconciled_at": "2026-11-24T20:23:47.970Z",
+      "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg",
+      "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg",
+      "metricool_cover_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14"
+    },
+    {
+      "post_id": "TT-011-YOUTUBE-SHORT",
+      "episode_id": "TT-011",
+      "format": "SHORT",
+      "platform": "youtube",
+      "doi": "10.1073/pnas.2618030123",
+      "metricool_id": "440852965",
+      "metricool_uuid": "8728566144872038894",
+      "publication_date": "2026-11-27T10:00:00+01:00",
+      "timezone": "Europe/Vienna",
+      "status": "scheduled",
+      "provider_status": "PENDING",
+      "auto_publish": true,
+      "draft": false,
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=8728566144872038894",
+      "source_media_urls": [
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4"
+      ],
+      "source_files_sha256": {
+        "media/tt-011-spider-sleep-f156a514cc51.mp4": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+        "media/tt-011-spider-sleep-f156a514cc51_cover.jpg": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14"
+      },
+      "metricool_media_urls": [
+        "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4"
+      ],
+      "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
+      "source_commit": "3f1c9ac6096814ea6e672d68838cfb2358c5018a",
+      "public_verification_run": 45479451775,
+      "provider_byte_verification_run": 45480222208,
+      "receipt_saved_on": "2026-11-24T20:23:47.970Z",
+      "schedule_readback_verified": true,
+      "publication_eligible": true,
+      "metricool_media_sha256": {
+        "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c"
+      },
+      "metricool_hosted_bytes_verified": true,
+      "provider_readback_checked_at": "2026-11-24T20:23:47.970Z",
+      "provider_readback": {
+        "id": 440852965,
+        "publicationDate": {
+          "dateTime": "2026-11-27T10:00:00",
+          "timezone": "Europe/Vienna"
+        },
+        "creationDate": {
+          "dateTime": "2026-11-24T21:22:00",
+          "timezone": "Europe/Vienna"
+        },
+        "text": "How do you know a jumping spider is asleep, rather than just still?\n\nIn laboratory Portia fimbriata, researchers combined resting posture, twitching and retinal-tube movements with sound-response tests and a disrupted night. Thirty adults were tested in separate groups of ten per state. Four of ten in REM-like bouts did not react within ten seconds; all four later responded awake. Among responding spiders, estimated latencies were 4.27 seconds in REM-like bouts versus 1.69 seconds awake. Thirteen usable paired recordings showed mean total REM-like duration increasing from 9.4 to 16.9 minutes after fly disturbance. The disruption was not demonstrated complete deprivation; the results are group summaries, not individual trajectories. This is behavioral evidence, not proof of dreaming or neural equivalence to vertebrate REM sleep.\n\nGeiger et al. (2026), PNAS 123(45):e2618030123. DOI: 10.1073/pnas.2618030123\nOpen full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC13752372/\nResearch evidence, limitations and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-011.html\n\nSpecies reference photograph: Donald Hobern, Portia fimbriata, CC BY 2.0, cropped/contained and panned; not footage of the experiment. https://commons.wikimedia.org/wiki/File:Portia_fimbriata_(15235249464).jpg\nLicence: https://creativecommons.org/licenses/by/2.0/\nOriginal conceptual diagrams, authorized Toxic Tales logo, synthetic neural narration and captions.\n\n#ToxicTales #JumpingSpider #AnimalBehavior #Sleep #Ecology #Shorts",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "imageVariants": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "isAiGenerated": false,
+          "isPaidPartnership": false
+        },
+        "youtubeData": {
+          "title": "How Do You Know a Spider Is Asleep? | Toxic Tales",
+          "type": "short",
+          "privacy": "public",
+          "madeForKids": false,
+          "isAiGeneratedContent": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "8728566144872038894",
+        "creatorUserMail": "akshaymohank21@gmail.com",
+        "creatorUserId": 6223629,
+        "brandTags": []
+      },
+      "publication_confirmation": "PENDING future scheduled reservation; confirm positive PUBLISHED and live URL after due time",
+      "duplicate_guard": "Original verified TT-011 reservation; never duplicate or retime",
+      "last_provider_reconciled_at": "2026-11-24T20:23:47.970Z",
+      "source_post_id": "TT-011-REEL",
+      "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+      "youtube": {
+        "title": "How Do You Know a Spider Is Asleep? | Toxic Tales",
+        "description": "How do you know a jumping spider is asleep, rather than just still?\n\nIn laboratory Portia fimbriata, researchers combined resting posture, twitching and retinal-tube movements with sound-response tests and a disrupted night. Thirty adults were tested in separate groups of ten per state. Four of ten in REM-like bouts did not react within ten seconds; all four later responded awake. Among responding spiders, estimated latencies were 4.27 seconds in REM-like bouts versus 1.69 seconds awake. Thirteen usable paired recordings showed mean total REM-like duration increasing from 9.4 to 16.9 minutes after fly disturbance. The disruption was not demonstrated complete deprivation; the results are group summaries, not individual trajectories. This is behavioral evidence, not proof of dreaming or neural equivalence to vertebrate REM sleep.\n\nGeiger et al. (2026), PNAS 123(45):e2618030123. DOI: 10.1073/pnas.2618030123\nOpen full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC13752372/\nResearch evidence, limitations and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-011.html\n\nSpecies reference photograph: Donald Hobern, Portia fimbriata, CC BY 2.0, cropped/contained and panned; not footage of the experiment. https://commons.wikimedia.org/wiki/File:Portia_fimbriata_(15235249464).jpg\nLicence: https://creativecommons.org/licenses/by/2.0/\nOriginal conceptual diagrams, authorized Toxic Tales logo, synthetic neural narration and captions.\n\n#ToxicTales #JumpingSpider #AnimalBehavior #Sleep #Ecology #Shorts",
+        "made_for_kids": false,
+        "privacy": "PUBLIC",
+        "is_ai_generated": true,
+        "review_decision": "pass",
+        "rights_review_decision": "pass",
+        "reviewed_release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+        "source_video_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+        "audience_review": "General science outreach for adult/general audience, not specifically directed at children. Synthetic narration disclosed.",
+        "review_basis": "Exact TT-011 release, original main paper and source image rights independently checked; description preserves arousal groups and responding-only latency, paired means, disturbance caveat and lack of evidence for dreams; CC BY 2.0 attribution with source and license links. No custom thumbnail; branded opening frames reviewed.",
+        "reviewed_at": "2026-11-24T20:21:53.064Z",
+        "reviewer": "Independent encoded export and platform metadata reviewer",
+        "listening_review_claimed": false,
+        "moving_playback_review_claimed": false,
+        "metadata_sha256": "c522a249f38be62c0bf5a6ffccc65e633e3b5374adcf3f7632684f4c067edb0b"
+      }
     }
   ],
   "notified_post_ids": [
@@ -1357,9 +1562,9 @@
     "TT-009-REEL",
     "instagram:TT-009-REEL"
   ],
-  "last_provider_reconciled_at": "2026-11-24T20:18:34.396Z",
+  "last_provider_reconciled_at": "2026-11-24T20:23:47.970Z",
   "last_provider_reconciliation": {
-    "checked_at": "2026-11-24T20:18:34.396Z",
+    "checked_at": "2026-11-24T20:23:47.970Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -1367,9 +1572,9 @@
       "youtube": "UCDvftxMMdtGSntm-ezcPfCg"
     },
     "timezone": "Europe/Vienna",
-    "calendar_entries": 14,
+    "calendar_entries": 16,
     "published_destinations": 11,
-    "scheduled_destinations": 0,
+    "scheduled_destinations": 2,
     "inactive_drafts": 2,
     "tt007_published_both": true,
     "tt008_published_both_at_exact_14_10": true,
@@ -1380,8 +1585,8 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": true,
-      "independent_public_verification_job": 138724922231,
-      "independent_public_verification_basis": "Inspected actual latest watchdog 24 Nov 19:41 UTC, independent public Short verification positive; live provider still ERROR.",
+      "independent_public_verification_job": 138748351168,
+      "independent_public_verification_basis": "Actual 20:18 UTC watchdog log positively verifies public Short; Metricool remains ERROR.",
       "retry_allowed": false
     },
     "weekly_slots": [
@@ -1400,19 +1605,21 @@
       {
         "date": "2026-11-27T10:00:00+01:00",
         "network": "instagram",
-        "found": false,
-        "status": "not_reserved"
+        "found": true,
+        "status": "scheduled_verified",
+        "metricool_uuid": "9000973347991669964"
       },
       {
         "date": "2026-11-27T10:00:00+01:00",
         "network": "youtube",
-        "found": false,
-        "status": "not_reserved"
+        "found": true,
+        "status": "scheduled_verified",
+        "metricool_uuid": "8728566144872038894"
       }
     ],
-    "weekly_receipts": 0,
-    "missing_destinations": 4,
-    "provider_writes": 0,
+    "weekly_receipts": 2,
+    "missing_destinations": 2,
+    "provider_writes": 2,
     "new_releases": 1,
     "new_confirmed_published_keys": [],
     "history_preserved": true,
@@ -1429,9 +1636,9 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45472787414,
+      "id": 45479451730,
       "conclusion": "failure",
-      "cause": "Real missing-slot incident; 121 tests and policy passed"
+      "cause": "Actual job 138748351168: 121 tests and enforcer passed; four absent destinations (Tuesday elapsed, Friday still recoverable); public TT009 warning confirmed; quota projected 14."
     },
     "latest_archive_workflow": {
       "id": 45442959490,
@@ -1444,7 +1651,7 @@
       "date": "2026-11-23"
     },
     "complete_month_metricool_reconciliation": true,
-    "provider_uuids_count": 14,
+    "provider_uuids_count": 16,
     "source": "Metricool brand 7937614 getScheduledPosts full 2026-11 month; returned historical published and draft entries",
     "provider_ids": [
       "419869962",
@@ -1460,11 +1667,13 @@
       "426945585",
       "426946098",
       "429844048",
-      "429844729"
+      "429844729",
+      "440852560",
+      "440852965"
     ],
     "calendar_repeat_attempt": "Fresh full November and December calendar reads: 14 November entries, 0 December entries.",
     "missed_destinations": 2,
-    "future_missing_destinations": 2,
+    "future_missing_destinations": 0,
     "tt011_encoded_review": {
       "decision": "pass",
       "workflow_run": 45442959490,
@@ -1473,10 +1682,120 @@
       "fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
       "review_index_sha256": "237ad6800ff7580e73cef30ac72b0fdb1fc2d18bdcd4a879459c4a4dbb680bca",
       "finding": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed."
+    },
+    "pending_release_deployment": {
+      "run_id": 45479451775,
+      "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
+      "observed_at": "2026-11-24T20:20:07.143Z",
+      "jobs": [
+        {
+          "id": 138748350246,
+          "name": "build",
+          "status": "completed",
+          "conclusion": "success",
+          "current_steps": []
+        },
+        {
+          "id": 138749200885,
+          "name": "deploy",
+          "status": "waiting",
+          "conclusion": null,
+          "current_steps": []
+        }
+      ],
+      "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
+    },
+    "friday_receipts": [
+      {
+        "platform": "instagram",
+        "metricool_id": "440852560",
+        "metricool_uuid": "9000973347991669964",
+        "provider_status": "PENDING",
+        "publication_date": "2026-11-27T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": true
+      },
+      {
+        "platform": "youtube",
+        "metricool_id": "440852965",
+        "metricool_uuid": "8728566144872038894",
+        "provider_status": "PENDING",
+        "publication_date": "2026-11-27T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": true
+      }
+    ],
+    "provider_byte_verification_run": 45480222208,
+    "provider_byte_verification_report": {
+      "checked_at": "2026-11-24T20:23:08.943313+00:00",
+      "repository": "akshaymohan16/toxic-tales-library",
+      "brand_id": "7937614",
+      "episode_id": "TT-011",
+      "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "source_commit": "3f1c9ac6096814ea6e672d68838cfb2358c5018a",
+      "files": {
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4": {
+          "role": "source_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "http_status": 200,
+          "bytes": 4253313,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:05.076808+00:00",
+          "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4"
+        },
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg": {
+          "role": "source_cover",
+          "expected_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "http_status": 200,
+          "bytes": 562307,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:05.215494+00:00",
+          "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg"
+        },
+        "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4": {
+          "role": "provider_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "http_status": 200,
+          "bytes": 4253313,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:06.688146+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4"
+        },
+        "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg": {
+          "role": "provider_cover",
+          "expected_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "http_status": 200,
+          "bytes": 562307,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:07.611660+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg"
+        },
+        "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4": {
+          "role": "provider_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "http_status": 200,
+          "bytes": 4253313,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:08.943274+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4"
+        }
+      },
+      "passed": true,
+      "decision": "pass"
     }
   },
   "last_live_reconciliation": {
-    "checked_at": "2026-11-24T20:18:34.396Z",
+    "checked_at": "2026-11-24T20:23:47.970Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -1484,9 +1803,9 @@
       "youtube": "UCDvftxMMdtGSntm-ezcPfCg"
     },
     "timezone": "Europe/Vienna",
-    "calendar_entries": 14,
+    "calendar_entries": 16,
     "published_destinations": 11,
-    "scheduled_destinations": 0,
+    "scheduled_destinations": 2,
     "inactive_drafts": 2,
     "tt007_published_both": true,
     "tt008_published_both_at_exact_14_10": true,
@@ -1497,8 +1816,8 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": true,
-      "independent_public_verification_job": 138724922231,
-      "independent_public_verification_basis": "Inspected actual latest watchdog 24 Nov 19:41 UTC, independent public Short verification positive; live provider still ERROR.",
+      "independent_public_verification_job": 138748351168,
+      "independent_public_verification_basis": "Actual 20:18 UTC watchdog log positively verifies public Short; Metricool remains ERROR.",
       "retry_allowed": false
     },
     "weekly_slots": [
@@ -1517,19 +1836,21 @@
       {
         "date": "2026-11-27T10:00:00+01:00",
         "network": "instagram",
-        "found": false,
-        "status": "not_reserved"
+        "found": true,
+        "status": "scheduled_verified",
+        "metricool_uuid": "9000973347991669964"
       },
       {
         "date": "2026-11-27T10:00:00+01:00",
         "network": "youtube",
-        "found": false,
-        "status": "not_reserved"
+        "found": true,
+        "status": "scheduled_verified",
+        "metricool_uuid": "8728566144872038894"
       }
     ],
-    "weekly_receipts": 0,
-    "missing_destinations": 4,
-    "provider_writes": 0,
+    "weekly_receipts": 2,
+    "missing_destinations": 2,
+    "provider_writes": 2,
     "new_releases": 1,
     "new_confirmed_published_keys": [],
     "history_preserved": true,
@@ -1546,9 +1867,9 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45472787414,
+      "id": 45479451730,
       "conclusion": "failure",
-      "cause": "Real missing-slot incident; 121 tests and policy passed"
+      "cause": "Actual job 138748351168: 121 tests and enforcer passed; four absent destinations (Tuesday elapsed, Friday still recoverable); public TT009 warning confirmed; quota projected 14."
     },
     "latest_archive_workflow": {
       "id": 45442959490,
@@ -1561,7 +1882,7 @@
       "date": "2026-11-23"
     },
     "complete_month_metricool_reconciliation": true,
-    "provider_uuids_count": 14,
+    "provider_uuids_count": 16,
     "source": "Metricool brand 7937614 getScheduledPosts full 2026-11 month; returned historical published and draft entries",
     "provider_ids": [
       "419869962",
@@ -1577,11 +1898,13 @@
       "426945585",
       "426946098",
       "429844048",
-      "429844729"
+      "429844729",
+      "440852560",
+      "440852965"
     ],
     "calendar_repeat_attempt": "Fresh full November and December calendar reads: 14 November entries, 0 December entries.",
     "missed_destinations": 2,
-    "future_missing_destinations": 2,
+    "future_missing_destinations": 0,
     "tt011_encoded_review": {
       "decision": "pass",
       "workflow_run": 45442959490,
@@ -1590,6 +1913,116 @@
       "fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
       "review_index_sha256": "237ad6800ff7580e73cef30ac72b0fdb1fc2d18bdcd4a879459c4a4dbb680bca",
       "finding": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed."
+    },
+    "pending_release_deployment": {
+      "run_id": 45479451775,
+      "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
+      "observed_at": "2026-11-24T20:20:07.143Z",
+      "jobs": [
+        {
+          "id": 138748350246,
+          "name": "build",
+          "status": "completed",
+          "conclusion": "success",
+          "current_steps": []
+        },
+        {
+          "id": 138749200885,
+          "name": "deploy",
+          "status": "waiting",
+          "conclusion": null,
+          "current_steps": []
+        }
+      ],
+      "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
+    },
+    "friday_receipts": [
+      {
+        "platform": "instagram",
+        "metricool_id": "440852560",
+        "metricool_uuid": "9000973347991669964",
+        "provider_status": "PENDING",
+        "publication_date": "2026-11-27T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": true
+      },
+      {
+        "platform": "youtube",
+        "metricool_id": "440852965",
+        "metricool_uuid": "8728566144872038894",
+        "provider_status": "PENDING",
+        "publication_date": "2026-11-27T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": true
+      }
+    ],
+    "provider_byte_verification_run": 45480222208,
+    "provider_byte_verification_report": {
+      "checked_at": "2026-11-24T20:23:08.943313+00:00",
+      "repository": "akshaymohan16/toxic-tales-library",
+      "brand_id": "7937614",
+      "episode_id": "TT-011",
+      "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "source_commit": "3f1c9ac6096814ea6e672d68838cfb2358c5018a",
+      "files": {
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4": {
+          "role": "source_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "http_status": 200,
+          "bytes": 4253313,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:05.076808+00:00",
+          "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4"
+        },
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg": {
+          "role": "source_cover",
+          "expected_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "http_status": 200,
+          "bytes": 562307,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:05.215494+00:00",
+          "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg"
+        },
+        "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4": {
+          "role": "provider_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "http_status": 200,
+          "bytes": 4253313,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:06.688146+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4"
+        },
+        "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg": {
+          "role": "provider_cover",
+          "expected_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
+          "http_status": 200,
+          "bytes": 562307,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:07.611660+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg"
+        },
+        "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4": {
+          "role": "provider_video",
+          "expected_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+          "http_status": 200,
+          "bytes": 4253313,
+          "decision": "pass",
+          "attempts": 1,
+          "checked_at": "2026-11-24T20:23:08.943274+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-4755174382419663693.mp4"
+        }
+      },
+      "passed": true,
+      "decision": "pass"
     }
   }
 }
