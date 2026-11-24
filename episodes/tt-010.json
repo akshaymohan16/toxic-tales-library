@@ -83,7 +83,7 @@
     ],
     "cover_kicker": "NEW CALEDONIAN CROW · WILD REFERENCE PHOTO",
     "cover_title": "The crow\\nand the water",
-    "cover_subtitle": "Six trials reveal both skill and limits",
+    "cover_subtitle": "Six tasks reveal skill and limits",
     "takeaway": "In tests, trained crows selected several useful water-displacement properties, but not a narrower efficient tube or a concealed U-tube connection.",
     "critical_terms": [
       "crow",
@@ -114,8 +114,11 @@
       {
         "speech": "How can a crow reach food floating too far down a tube? Researchers trained six New Caledonian crows to drop stones into an apparatus.",
         "captions": [
-          "How can a crow reach food floating too far down a tube? Researchers",
-          "trained six New Caledonian crows to drop stones into an apparatus."
+          "How can a crow reach food",
+          "floating too far down a tube?",
+          "Researchers trained six",
+          "New Caledonian crows",
+          "to drop stones into an apparatus."
         ],
         "pause_after": 0.2,
         "shots": [
@@ -139,9 +142,11 @@
       {
         "speech": "Then the real tests began: would the birds choose things that actually lifted the reward? Most stone drops went into water rather than sand.",
         "captions": [
-          "Then the real tests began: would the birds choose things that",
-          "actually lifted the reward? Most stone drops went into water rather",
-          "than sand."
+          "Then the real tests began:",
+          "would the birds choose things",
+          "that actually lifted the reward?",
+          "Most stone drops went into water",
+          "rather than sand."
         ],
         "pause_after": 0.2,
         "shots": [
@@ -164,8 +169,10 @@
       {
         "speech": "They chose sinking objects more often than floating ones, and solid objects rather than hollow shapes.",
         "captions": [
-          "They chose sinking objects more often than floating ones, and solid",
-          "objects rather than hollow shapes."
+          "They chose sinking objects",
+          "more often than floating ones,",
+          "and solid objects",
+          "rather than hollow shapes."
         ],
         "pause_after": 0.2,
         "shots": [
@@ -188,7 +195,8 @@
       {
         "speech": "In another task, they preferred a tube whose water started higher.",
         "captions": [
-          "In another task, they preferred a tube whose water started higher."
+          "In another task, they preferred",
+          "a tube whose water started higher."
         ],
         "pause_after": 0.2,
         "shots": [
@@ -204,8 +212,10 @@
       {
         "speech": "But two tests changed the picture. They showed no reliable preference for the narrower tube, even though each stone should raise its water faster.",
         "captions": [
-          "But two tests changed the picture. They showed no reliable",
-          "preference for the narrower tube, even though each stone should",
+          "But two tests changed the picture.",
+          "They showed no reliable preference",
+          "for the narrower tube,",
+          "even though each stone should",
           "raise its water faster."
         ],
         "pause_after": 0.2,
@@ -229,7 +239,8 @@
       {
         "speech": "And when the useful tube was secretly connected to the reward, choices were close to fifty-fifty.",
         "captions": [
-          "And when the useful tube was secretly connected to the reward,",
+          "And when the useful tube",
+          "was secretly connected to the reward,",
           "choices were close to fifty-fifty."
         ],
         "pause_after": 0.2,
@@ -253,8 +264,10 @@
       {
         "speech": "These small, trained laboratory samples show sensitivity to several properties of water displacement.",
         "captions": [
-          "These small, trained laboratory samples show sensitivity to several",
-          "properties of water displacement."
+          "These small, trained laboratory",
+          "samples show sensitivity",
+          "to several properties",
+          "of water displacement."
         ],
         "pause_after": 0.2,
         "shots": [
@@ -277,8 +290,9 @@
       {
         "speech": "They do not prove that the birds understand every hidden cause, or that wild crows solve this puzzle.",
         "captions": [
-          "They do not prove that the birds understand every hidden cause, or",
-          "that wild crows solve this puzzle."
+          "They do not prove that the birds",
+          "understand every hidden cause,",
+          "or that wild crows solve this puzzle."
         ],
         "pause_after": 0.2,
         "shots": [
@@ -415,8 +429,8 @@
   ],
   "editorial_review": {
     "standard": "story-first-v1",
-    "reviewer": "Publisher science-and-craft reviewer of prior producer's unchanged narration (distinct 23 Nov run)",
-    "reviewed_at": "2026-11-23T17:02:00.189Z",
+    "reviewer": "24 November publisher source-layout reviewer of preserved narration",
+    "reviewed_at": "2026-11-24T08:47:27.008Z",
     "decision": "pass",
     "checks": {
       "cold_viewer": {
@@ -431,8 +445,8 @@
       },
       "visuals": {
         "decision": "pass",
-        "finding": "Source-specific tube/stone diagrams illustrate the water-level mechanism, sand comparison, object density/solidity, starting level and concealed U-tube. The opening and ending species photo is visibly framed as a reference; none of the drawings claim to reproduce laboratory recording or measured time series. Frame/crop/phone-scale compliance remains for independent encoded QA.",
-        "basis": "Planned nine new corvus scene families, fixed captions, CC0 benkeen image hash and no reused frog/bee/spider diagrams; pre-render plan only, not video playback."
+        "finding": "Source-specific tube/stone diagrams illustrate the water-level mechanism, sand comparison, object density/solidity, starting level and concealed U-tube. The opening and ending species photo is visibly framed as a reference; none of the drawings claim to reproduce laboratory recording or measured time series. Frame/crop/phone-scale compliance remains for independent encoded QA. Caption phrases have been split at natural clause boundaries without changing any spoken words; cover now correctly says six tasks, not six trials. Encoded layout still requires independent review.",
+        "basis": "Planned nine new corvus scene families, fixed captions, CC0 benkeen image hash and no reused frog/bee/spider diagrams; pre-render plan only, not video playback. Verified exact concatenation of each caption segment against unchanged speech and diagnosed the actual cloud overflow log."
       },
       "payoff": {
         "decision": "pass",
@@ -450,6 +464,6 @@
         "basis": "Original eight narration beats, n=6 declining to n=4 and contrasted experiment statistics in main peer-reviewed paper."
       }
     },
-    "source_sha256": "8e866f58122056b29ee39c4b48e8d69fb38d3b3ba88500f68d72d1ef79944ec6"
+    "source_sha256": "9e459ce501ae01cf9d9e5666e3541b06ae4f3594ec617f3457dcf53fbe671cb1"
   }
 }
