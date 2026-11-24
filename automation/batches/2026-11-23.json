@@ -1,11 +1,11 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-23T17:17:37.321Z",
+  "updated_at": "2026-11-24T08:50:21.343Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
-  "status": "NOT_READY_0_OF_4_CLAIMS_ACTIVE_TT010_CAPTION_BUILD_FAILURE",
+  "status": "NOT_READY",
   "required_success": {
     "distinct_papers": 2,
     "instagram_reels": 2,
@@ -43,10 +43,10 @@
     }
   ],
   "source_candidates": "automation/qa/candidate-reserve-2026-11-23.json",
-  "science_rights_release_status": "Main papers cached and claim-level triage reviewed; independent source image licences verified at Commons and pinning verified by Actions; correction search found no specific notices but not a comprehensive clearance; essential supplement decisions, exact visual/editorial QA, render, independent encoded export, SHA-bound release and public deployment NOT complete",
+  "science_rights_release_status": "TT010 caption phrases reflowed without changing narration; corrected six tasks cover, source SHA recomputed and new render running. TT011 main article re-read; separate evidence and source-specific motion work remains. No exact encoded review or release yet; no submissions. No backfill if Tuesday slot passes.",
   "expired_claims": [],
   "provider_reconciliation": {
-    "checked_at": "2026-11-23T17:17:37.321Z",
+    "checked_at": "2026-11-24T08:45:26Z",
     "brand_id": "7937614",
     "accounts": {
       "instagram": "toxic_tales_eco",
@@ -72,8 +72,8 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": false,
-      "independent_public_verification_job": 45223565930,
-      "independent_public_verification_basis": "GitHub readiness job log 2026-11-23T17:04Z states public YouTube Short verified; Metricool remains ERROR",
+      "independent_public_verification_job": 138107422801,
+      "independent_public_verification_basis": "Actual 24 November 00:59 Vienna readiness log independently verified public YouTube; current Metricool status ERROR, no retry.",
       "retry_allowed": false
     },
     "quota_conservative": 16,
@@ -124,14 +124,14 @@
     "production_claims_previous_run_released": true,
     "repository_sha_inspected": "c34d5b1886cbf90d317e80c2c9032626e692dd84",
     "latest_readiness_workflow": {
-      "id": 45223565930,
+      "id": 45293343268,
       "conclusion": "failure",
-      "cause": "four required Tue 24/Fri 27 provider reservations absent; TT009 separate warning"
+      "cause": "missing four provider reservations; 121 tests passed"
     },
     "latest_archive_workflow": {
-      "id": 45223565914,
-      "conclusion": "failure",
-      "cause": "TT010 caption overflow; no deployment or media verification"
+      "id": 45359215067,
+      "conclusion": "in_progress",
+      "cause": "caption repair; tests and exact-release restore succeeded; render in progress"
     },
     "secondary_legacy_asset_workflow": {
       "id": 45141692418,
@@ -143,14 +143,15 @@
       "production:2026-11-24",
       "production:2026-11-27"
     ],
-    "active_production_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T16:56:production-recovery",
-    "production_claim_expires_at": "2026-11-23T20:55:49.297Z",
+    "active_production_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T08:45:26Z",
+    "production_claim_expires_at": "2026-11-24T12:45:26Z",
     "tt010_render_failure": {
-      "workflow_run": 45223565914,
-      "job_id": 137864671271,
+      "workflow_run": 45226104039,
+      "job_id": 137872904366,
       "step": "Build reviewed stories and media",
-      "reason": "ValueError Caption overflow in first TT-010 caption; source nonfrozen; do not edit while another run holds active production claim",
-      "status": "unrepaired_due_active_claim"
+      "reason": "Caption overflow",
+      "status": "source_repaired_new_render_in_progress",
+      "repair_commit": "6adb70a8c3f8f85875e86a511f5cfa389c9b96b3"
     },
     "last_pre_change_successful_archive_workflow": {
       "id": 45221358609,
@@ -159,10 +160,27 @@
     },
     "complete_month_metricool_reconciliation": true,
     "provider_uuids_count": 14,
-    "source": "Metricool brand 7937614 getScheduledPosts full 2026-11 month; returned historical published and draft entries"
+    "source": "Metricool brand 7937614 getScheduledPosts full 2026-11 month; returned historical published and draft entries",
+    "provider_ids": [
+      "419869962",
+      "420123422",
+      "420178205",
+      "420683055",
+      "421493009",
+      "421493849",
+      "426842509",
+      "426850040",
+      "426945585",
+      "426946098",
+      "429844048",
+      "429844729",
+      "420045577",
+      "420062745"
+    ],
+    "calendar_repeat_attempt": "Subsequent read request cancelled; initial complete current-run calendar remains reconciled; refresh before any submission."
   },
   "owner_action_blocker": false,
-  "next_step": "Do not compete with active TT010/TT011 production claims. Owner of claims must repair nonfrozen caption overflow, complete cloud build/encoded independent review and remaining science/rights gates, release/deploy, then reconcile Metricool and acquire per-destination submission claims.",
+  "next_step": "Inspect actual build 45359215067, repair any remaining ordinary render failures, independently review exact encoded video and audio, complete TT011, release/deploy and verify public bytes. Reconcile live calendar before claim takeover or any submission; never backfill a missed slot.",
   "owned_production_claims": [
     "production:2026-11-24",
     "production:2026-11-27"
@@ -173,5 +191,5 @@
     "production:2026-11-27"
   ],
   "claim_handoff_at": "2026-11-23T08:56:03.702Z",
-  "production_readiness": "TT010 nonfrozen source now exists but 45223565914 failed caption overflow before any encoded review; TT011 preproduction only. Neither release/public deployment nor paired provider reservations complete."
+  "production_readiness": "TT010 caption phrases reflowed without changing narration; corrected six tasks cover, source SHA recomputed and new render running. TT011 main article re-read; separate evidence and source-specific motion work remains. No exact encoded review or release yet; no submissions. No backfill if Tuesday slot passes."
 }
