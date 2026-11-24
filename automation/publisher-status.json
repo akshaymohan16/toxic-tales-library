@@ -1,6 +1,6 @@
 {
   "checked_on": "2026-11-24",
-  "updated_at": "2026-11-24T20:25:38.826Z",
+  "updated_at": "2026-11-24T20:25:58.626Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
@@ -133,7 +133,7 @@
   ],
   "deployment_and_media": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed.",
   "review_limit": "Actual encoded export frame samples, SHA and ASR verified; repaired transition review passed. No perceptual listening or uninterrupted moving playback claimed.",
-  "automatic_next_step": "Inspect new actual build/deploy/verify jobs then exact TT010 compact and encoded MP4; independent final scientific/rights/correction/frames/ASR review before release and reservations; December 4 distinct eligible paper.",
+  "automatic_next_step": "Check this run's actual build, deploy and public-media jobs; retrieve matching compact review and exact MP4; independently review after literal-title and nonoverlap fade fix, recheck full source/corrections/rights, release and reserve December 1 pair only after gates. Then December 4 distinct paper. Do not restart an already completed build.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
   "scheduled_posts_returned": 2,
   "published_provider_receipts": 11,
@@ -150,7 +150,7 @@
     "provider_byte_verification_run": 45480222208,
     "latest_watchdog_run": 45480391448,
     "latest_watchdog_conclusion": "failure_elapsed_tuesday_only",
-    "latest_build_run": 45480391676,
+    "latest_build_run": 45480712547,
     "latest_build_verified_steps": [
       "Test exact-file releases and caption safeguards",
       "Test and enforce Reels-only source policy",
@@ -159,7 +159,7 @@
     "latest_paper_retrieval_run": 43439354279,
     "latest_paper_retrieval_conclusion": "success",
     "fresh_live_metricool_reconciliation_at": "2026-11-24T20:18:34.396Z",
-    "latest_build_conclusion": "in_progress",
+    "latest_build_conclusion": "pending",
     "latest_build_failure_step": "prior run Build reviewed stories and media",
     "latest_build_failure_cause": "exact ASR token narrow absent; narration source repaired",
     "claim_ownership_verified": true,
@@ -189,11 +189,11 @@
     "latest_asset_pin_conclusion": "success",
     "last_inspected_watchdog_run": 45480391448,
     "last_inspected_watchdog_conclusion": "failure_elapsed_tuesday_only",
-    "latest_archive_build_run": 45479451775,
+    "latest_archive_build_run": 45480391676,
     "latest_archive_verification": "completed_success",
     "last_test_count_from_workflow": 121,
     "tests_run_again_after_this_commit": true,
-    "latest_archive_build_conclusion": "success",
+    "latest_archive_build_conclusion": "in_progress",
     "latest_provider_byte_verification_conclusion": "success"
   },
   "current_one_off": {
@@ -468,6 +468,14 @@
         "All 15 shot midpoint images inspected; literal backslash-n visible in twelve titles",
         "Early samples 1–8 inspected; previous art wipes cause misleading WATER/SAND, SINKING/FLOATING, SOLID/FLOATING and NARROW/TOO LOW mixed pairs. Fail early; remaining samples and exact MP4 audio not reviewed."
       ]
+    },
+    "pending_build": {
+      "run_id": 45480712547,
+      "source_commit": "af9138b4a4a7e97600d5fe8a4cfa9541a3f3627e",
+      "observed_at": "2026-11-24T20:25:58.626Z",
+      "status": "pending in build concurrency queue",
+      "artifact_id": null,
+      "next_action": "Check this run's actual build, deploy and public-media jobs; retrieve matching compact review and exact MP4; independently review after literal-title and nonoverlap fade fix, recheck full source/corrections/rights, release and reserve December 1 pair only after gates. Then December 4 distinct paper. Do not restart an already completed build."
     }
   },
   "automation_tasks_verified_at": "2026-11-18T17:09:08.853Z",
@@ -536,8 +544,8 @@
     "handoff_at": "2026-11-24T08:53:36.972Z",
     "release_reason": "Both unapproved; no submission intent; allow independent reviewer to acquire after fresh live reconciliation."
   },
-  "last_run_at": "2026-11-24T20:25:38.826Z",
-  "last_checked_at": "2026-11-24T20:25:38.826Z",
+  "last_run_at": "2026-11-24T20:25:58.626Z",
+  "last_checked_at": "2026-11-24T20:25:58.626Z",
   "pending_release_deployment": {
     "run_id": 45479451775,
     "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
@@ -694,7 +702,26 @@
   },
   "post_receipt_archive_deployment": {
     "run_id": 45480391676,
-    "status": "in_progress",
-    "commit": "ca1b3cfad5dd6794ea5689d2758dc9c475d66ad9"
+    "commit": "ca1b3cfad5dd6794ea5689d2758dc9c475d66ad9",
+    "jobs": [
+      {
+        "id": 138751627642,
+        "name": "build",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 138752651295,
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 138752878861,
+        "name": "verify-public-media",
+        "status": "queued",
+        "conclusion": null
+      }
+    ]
   }
 }

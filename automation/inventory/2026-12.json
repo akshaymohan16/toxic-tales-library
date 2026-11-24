@@ -54,5 +54,13 @@
         "Early samples 1–8 inspected; previous art wipes cause misleading WATER/SAND, SINKING/FLOATING, SOLID/FLOATING and NARROW/TOO LOW mixed pairs. Fail early; remaining samples and exact MP4 audio not reviewed."
       ]
     }
+  },
+  "pending_build": {
+    "run_id": 45480712547,
+    "source_commit": "af9138b4a4a7e97600d5fe8a4cfa9541a3f3627e",
+    "observed_at": "2026-11-24T20:25:58.626Z",
+    "status": "pending in build concurrency queue",
+    "artifact_id": null,
+    "next_action": "Check this run's actual build, deploy and public-media jobs; retrieve matching compact review and exact MP4; independently review after literal-title and nonoverlap fade fix, recheck full source/corrections/rights, release and reserve December 1 pair only after gates. Then December 4 distinct paper. Do not restart an already completed build."
   }
 }

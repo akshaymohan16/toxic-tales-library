@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-30",
   "created_on": "2026-11-24",
-  "updated_at": "2026-11-24T20:25:38.826Z",
+  "updated_at": "2026-11-24T20:25:58.626Z",
   "timezone": "Europe/Vienna",
   "status": "NOT_READY_NEXT_WEEK_SOURCE_REPAIR_STARTED",
   "required_success": {
@@ -72,5 +72,13 @@
     }
   },
   "owner_action_blocker": false,
-  "next_step": "Inspect new actual build/deploy/verify jobs then exact TT010 compact and encoded MP4; independent final scientific/rights/correction/frames/ASR review before release and reservations; December 4 distinct eligible paper."
+  "next_step": "Check this run's actual build, deploy and public-media jobs; retrieve matching compact review and exact MP4; independently review after literal-title and nonoverlap fade fix, recheck full source/corrections/rights, release and reserve December 1 pair only after gates. Then December 4 distinct paper. Do not restart an already completed build.",
+  "pending_build": {
+    "run_id": 45480712547,
+    "source_commit": "af9138b4a4a7e97600d5fe8a4cfa9541a3f3627e",
+    "observed_at": "2026-11-24T20:25:58.626Z",
+    "status": "pending in build concurrency queue",
+    "artifact_id": null,
+    "next_action": "Check this run's actual build, deploy and public-media jobs; retrieve matching compact review and exact MP4; independently review after literal-title and nonoverlap fade fix, recheck full source/corrections/rights, release and reserve December 1 pair only after gates. Then December 4 distinct paper. Do not restart an already completed build."
+  }
 }

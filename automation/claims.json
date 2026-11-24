@@ -365,10 +365,12 @@
       "episode_id": "TT-010",
       "doi": "10.1371/journal.pone.0092895",
       "render_attempt": {
-        "workflow_run_id": 45442959490,
-        "status": "completed_success",
-        "artifact_id": 14945356483,
-        "pages_artifact_id": 14945980220
+        "run_id": 45480712547,
+        "source_commit": "af9138b4a4a7e97600d5fe8a4cfa9541a3f3627e",
+        "observed_at": "2026-11-24T20:25:58.626Z",
+        "status": "pending in build concurrency queue",
+        "artifact_id": null,
+        "next_action": "Check this run's actual build, deploy and public-media jobs; retrieve matching compact review and exact MP4; independently review after literal-title and nonoverlap fade fix, recheck full source/corrections/rights, release and reserve December 1 pair only after gates. Then December 4 distinct paper. Do not restart an already completed build."
       },
       "note": "Friday TT-011 exact pair verified; December complete live calendar zero items; 9 regular dates x2=18 projected, no historical backfill. TT010 distinct unreleased reserve, no provider writes. Independent review needed before release.",
       "released_at": "2026-11-24T20:25:38.826Z",
@@ -383,7 +385,7 @@
           "Early samples 1–8 inspected; previous art wipes cause misleading WATER/SAND, SINKING/FLOATING, SOLID/FLOATING and NARROW/TOO LOW mixed pairs. Fail early; remaining samples and exact MP4 audio not reviewed."
         ]
       },
-      "next_action": "Inspect new actual build/deploy/verify jobs then exact TT010 compact and encoded MP4; independent final scientific/rights/correction/frames/ASR review before release and reservations; December 4 distinct eligible paper."
+      "next_action": "Check this run's actual build, deploy and public-media jobs; retrieve matching compact review and exact MP4; independently review after literal-title and nonoverlap fade fix, recheck full source/corrections/rights, release and reserve December 1 pair only after gates. Then December 4 distinct paper. Do not restart an already completed build."
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
