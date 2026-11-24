@@ -1,17 +1,17 @@
 {
   "checked_on": "2026-11-24",
-  "updated_at": "2026-11-24T08:50:21.343Z",
+  "updated_at": "2026-11-24T08:53:36.972Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_connection_verified": true,
-  "decision": "NOT_READY_24_NOV_0_OF_4_CAPTION_REPAIR_RENDER_IN_PROGRESS",
+  "decision": "NOT_READY_24_NOV_0_OF_4_SOURCE_RECOVERY_BOTH_UNRELEASED",
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-24T08:45:26Z",
-    "calendar_checked_at": "2026-11-24T08:45:26Z",
+    "observed_at": "2026-11-24T08:53:06.468Z",
+    "calendar_checked_at": "2026-11-24T08:53:06.468Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -90,20 +90,17 @@
     "verified_destination_receipts": 0,
     "producer_due": "2026-11-22T10:00:00+01:00",
     "hard_readiness_due": "2026-11-23T23:59:59+01:00",
-    "status": "NOT_READY 0/4; repaired TT010 source, render in progress; TT011 unreleased",
+    "status": "NOT_READY 0/4; both source candidates prepared, no approved releases",
     "existing_videos_count": 0,
     "expired_claims_need_reconciliation": [],
-    "owned_production_claims": [
-      "production:2026-11-24",
-      "production:2026-11-27"
-    ],
+    "owned_production_claims": [],
     "research_readiness_note": "automation/qa/2026-11-23-evening-qa.json",
     "reconciled_handoff_claims": [
       "production:2026-11-24",
       "production:2026-11-27"
     ],
-    "current_render_failure_run": 45226104039,
-    "current_render_run": 45359215067
+    "current_render_failure_run": 45359215067,
+    "current_render_run": 45359984811
   },
   "recurring_tasks": [
     {
@@ -131,9 +128,9 @@
       "last_run_time": "2026-11-16T17:52:10.734012+00:00"
     }
   ],
-  "deployment_and_media": "TT010 caption phrases reflowed without changing narration; corrected six tasks cover, source SHA recomputed and new render running. TT011 main article re-read; separate evidence and source-specific motion work remains. No exact encoded review or release yet; no submissions. No backfill if Tuesday slot passes.",
+  "deployment_and_media": "TT010 caption overflow fixed; actual second render got through narration but failed exact critical ASR token narrow. Revised the spoken word and matching caption to narrow, preserving the scientific meaning and mandatory ASR gate. TT011 official primary main text checked, source and evidence authored and additive Portia-specific renderer committed; cloud build pending. No encoded independent review, SHA release, or paired reservations yet.",
   "review_limit": "Separate reviewer inspected 19 actual encoded shots, 18 boundaries, opening and final encoded frame, final audio ASR/caption/loudness and source rights; no perceptual listening or uninterrupted motion playback claimed.",
-  "automatic_next_step": "Inspect actual build 45359215067, repair any remaining ordinary render failures, independently review exact encoded video and audio, complete TT011, release/deploy and verify public bytes. Reconcile live calendar before claim takeover or any submission; never backfill a missed slot.",
+  "automatic_next_step": "Check current main actual Actions jobs for the combined source. Complete/repair build; independent exact encoded review and SHA-bound release/public archive verification required. Only future eligible slots, no backfill if 24 November 10:00 passed. Reconcile live Metricool before any CAS takeover/submission, preserve TT009 warning and published history.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
   "scheduled_posts_returned": 0,
   "published_provider_receipts": 11,
@@ -145,9 +142,9 @@
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
     "provider_byte_verification_run": 43847978272,
-    "latest_watchdog_run": 45293343268,
+    "latest_watchdog_run": 45359984564,
     "latest_watchdog_conclusion": "failure",
-    "latest_build_run": 45359215067,
+    "latest_build_run": 45359984811,
     "latest_build_verified_steps": [
       "Test exact-file releases and caption safeguards",
       "Test and enforce Reels-only source policy",
@@ -155,10 +152,10 @@
     ],
     "latest_paper_retrieval_run": 43439354279,
     "latest_paper_retrieval_conclusion": "success",
-    "fresh_live_metricool_reconciliation_at": "2026-11-24T08:45:26Z",
-    "latest_build_conclusion": "in_progress",
+    "fresh_live_metricool_reconciliation_at": "2026-11-24T08:53:06.468Z",
+    "latest_build_conclusion": "pending",
     "latest_build_failure_step": "prior run Build reviewed stories and media",
-    "latest_build_failure_cause": "TT010 caption overflow; source repaired",
+    "latest_build_failure_cause": "exact ASR token narrow absent; narration source repaired",
     "claim_ownership_verified": true,
     "latest_verified_build_run": 44928858017,
     "latest_verified_build_conclusion": "success",
@@ -173,7 +170,7 @@
     "youtube_public_verification_requested_at": "2026-11-20T09:40:02.763Z",
     "youtube_public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
     "latest_new_workflow_result": "Build/deploy/public-media verification run 44890175684 success; readiness 44890175620 expected failure. Diagnostic fix pending post-commit verification.",
-    "youtube_public_verification_run": 45293343268,
+    "youtube_public_verification_run": 45359984564,
     "youtube_public_verification_conclusion": "success",
     "youtube_public_verification_basis": "Public oEmbed exact title and channel identity; yt-dlp blocked by bot check",
     "latest_watchdog_reason": "Missing four reservations",
@@ -184,13 +181,13 @@
     "upcoming_week_expected": 4,
     "latest_asset_pin_run": 45005820057,
     "latest_asset_pin_conclusion": "success",
-    "last_inspected_watchdog_run": 45293343268,
+    "last_inspected_watchdog_run": 45359984564,
     "last_inspected_watchdog_conclusion": "failure_missing_four",
-    "latest_archive_build_run": 45359215067,
+    "latest_archive_build_run": 45359984811,
     "latest_archive_verification": "pending",
     "last_test_count_from_workflow": 121,
     "tests_run_again_after_this_commit": false,
-    "latest_archive_build_conclusion": "in_progress"
+    "latest_archive_build_conclusion": "pending"
   },
   "current_one_off": {
     "episode_id": "TT-008",
@@ -201,7 +198,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-24T08:45:26Z",
+    "checked_at": "2026-11-24T08:53:06.468Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -221,9 +218,9 @@
       "provider_status": "ERROR",
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
-      "public_title_channel_independently_rechecked_this_run": false,
-      "independent_public_verification_job": 138107422801,
-      "independent_public_verification_basis": "Actual 24 November 00:59 Vienna readiness log independently verified public YouTube; current Metricool status ERROR, no retry.",
+      "public_title_channel_independently_rechecked_this_run": true,
+      "independent_public_verification_job": 138327281059,
+      "independent_public_verification_basis": "24 November 08:53 UTC actual readiness job log verified public YouTube Short and channel/title; Metricool remains ERROR; no retry.",
       "retry_allowed": false
     },
     "weekly_slots": [
@@ -255,29 +252,26 @@
     "new_confirmed_published_keys": [],
     "history_preserved": true,
     "owner_action_blockers": [],
-    "active_production_claims": [
-      "production:2026-11-24",
-      "production:2026-11-27"
-    ],
-    "active_production_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T08:45:26Z",
-    "production_claim_expires_at": "2026-11-24T12:45:26Z",
+    "active_production_claims": [],
+    "active_production_owner": null,
+    "production_claim_expires_at": null,
     "tt010_render_failure": {
-      "workflow_run": 45226104039,
-      "job_id": 137872904366,
+      "workflow_run": 45359215067,
+      "job_id": 138324658456,
       "step": "Build reviewed stories and media",
-      "reason": "Caption overflow",
-      "status": "source_repaired_new_render_in_progress",
-      "repair_commit": "6adb70a8c3f8f85875e86a511f5cfa389c9b96b3"
+      "reason": "After caption repair, final transcript exact critical term narrow absent; spoken source had narrower",
+      "status": "source_repaired_exact_token_new_build_queued",
+      "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45293343268,
+      "id": 45359984564,
       "conclusion": "failure",
-      "cause": "missing four provider reservations; 121 tests passed"
+      "cause": "missing four provider reservations; 121 automation tests and policy enforcer passed"
     },
     "latest_archive_workflow": {
-      "id": 45359215067,
-      "conclusion": "in_progress",
-      "cause": "caption repair; tests and exact-release restore succeeded; render in progress"
+      "id": 45359984811,
+      "conclusion": "pending",
+      "cause": "new combined TT010 ASR repair and TT011 source/renderer; queued behind previous build; no current export approved"
     },
     "last_pre_change_successful_archive_workflow": {
       "id": 45221358609,
@@ -303,17 +297,14 @@
       "420045577",
       "420062745"
     ],
-    "calendar_repeat_attempt": "Subsequent read request cancelled; initial complete current-run calendar remains reconciled; refresh before any submission."
+    "calendar_repeat_attempt": "Full repeat read succeeded at 08:53:06 UTC; 14 entries unchanged."
   },
   "claim_coordination": {
-    "checked_at": "2026-11-24T08:50:21.343Z",
-    "status": "Two expired production claims reconciled against live calendar/intents and acquired CAS; verified ownership",
-    "this_run_action": "Source caption repair and current render",
+    "checked_at": "2026-11-24T08:53:36.972Z",
+    "status": "Two production claims safely acquired, re-read, then released for independent continuation; no submission claim or provider write",
+    "this_run_action": "TT010 two source repairs; TT011 evidence and additive motion renderer",
     "active_competing_claims": 0,
-    "active_claim_keys": [
-      "production:2026-11-24",
-      "production:2026-11-27"
-    ]
+    "active_claim_keys": []
   },
   "following_week_readiness": {
     "week_start": "2026-11-23",
@@ -334,11 +325,11 @@
     "confirmed_metricool_reservations": 0,
     "missing_destinations": 4,
     "deadline": "Monday 23 November evening check",
-    "status": "TT010 caption phrases reflowed without changing narration; corrected six tasks cover, source SHA recomputed and new render running. TT011 main article re-read; separate evidence and source-specific motion work remains. No exact encoded review or release yet; no submissions. No backfill if Tuesday slot passes."
+    "status": "TT010 caption overflow fixed; actual second render got through narration but failed exact critical ASR token narrow. Revised the spoken word and matching caption to narrow, preserving the scientific meaning and mandatory ASR gate. TT011 official primary main text checked, source and evidence authored and additive Portia-specific renderer committed; cloud build pending. No encoded independent review, SHA release, or paired reservations yet."
   },
   "next_week_completeness": {
     "week_start": "2026-11-23",
-    "date_checked": "2026-11-24T08:45:26Z",
+    "date_checked": "2026-11-24T08:53:06.468Z",
     "slots": [
       {
         "platform": "instagram",
@@ -364,11 +355,8 @@
     "receipts_confirmed": 0,
     "receipts_required": 4,
     "production_window_not_yet_due": false,
-    "production_window_in_progress": true,
-    "active_production_claims": [
-      "production:2026-11-24",
-      "production:2026-11-27"
-    ]
+    "production_window_in_progress": false,
+    "active_production_claims": []
   },
   "production_claim_recovery": {
     "at": "2026-11-24T08:45:26Z",
@@ -381,8 +369,10 @@
     "prior_owner_expired": true,
     "live_duplicate_intents_and_receipts_absent": true,
     "production_review_complete": false,
-    "claim_state": "active"
+    "claim_state": "released_unfinished_for_fresh_provider_reconciliation",
+    "handoff_at": "2026-11-24T08:53:36.972Z",
+    "release_reason": "Both unapproved; no submission intent; allow independent reviewer to acquire after fresh live reconciliation."
   },
-  "last_run_at": "2026-11-24T08:50:21.343Z",
-  "last_checked_at": "2026-11-24T08:45:26Z"
+  "last_run_at": "2026-11-24T08:53:36.972Z",
+  "last_checked_at": "2026-11-24T08:53:06.468Z"
 }

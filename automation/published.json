@@ -1357,7 +1357,7 @@
     "TT-009-REEL",
     "instagram:TT-009-REEL"
   ],
-  "last_provider_reconciled_at": "2026-11-24T08:45:26Z",
+  "last_provider_reconciled_at": "2026-11-24T08:53:06.468Z",
   "last_provider_reconciliation": {
     "month": "2026-11",
     "calendar_entries": 14,
@@ -1380,7 +1380,7 @@
     "remaining_regular_destinations": 4,
     "projected_month_destinations": 16,
     "one_off_confirmed_both": true,
-    "checked_at": "2026-11-24T08:45:26Z",
+    "checked_at": "2026-11-24T08:53:06.468Z",
     "full_month_calendar_verified": true,
     "usage_baseline": {
       "month": "2026-11",
@@ -1395,14 +1395,14 @@
     },
     "provider_error_count": 1,
     "uncertain_destination_count": 1,
-    "observed_at": "2026-11-24T08:45:26Z",
+    "observed_at": "2026-11-24T08:53:06.468Z",
     "ambiguous_youtube_uuid": "3828607998694999530",
     "ambiguity_note": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
     "youtube_public_metadata_verified": true,
-    "youtube_public_metadata_verification_run": 45293343268
+    "youtube_public_metadata_verification_run": 45359984564
   },
   "last_live_reconciliation": {
-    "checked_at": "2026-11-24T08:45:26Z",
+    "checked_at": "2026-11-24T08:53:06.468Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "calendar_entries": 14,
@@ -1433,14 +1433,11 @@
     "youtube_warning_status": "ERROR",
     "youtube_reported_public_url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
     "youtube_public_metadata_verified": true,
-    "youtube_public_metadata_verification_run": 45293343268,
+    "youtube_public_metadata_verification_run": 45359984564,
     "weekly_2026_11_23_receipts": 0,
-    "active_production_claims": [
-      "production:2026-11-24",
-      "production:2026-11-27"
-    ],
+    "active_production_claims": [],
     "youtube_warning_uuid": "3828607998694999530",
-    "note": "TT010 caption phrases reflowed without changing narration; corrected six tasks cover, source SHA recomputed and new render running. TT011 main article re-read; separate evidence and source-specific motion work remains. No exact encoded review or release yet; no submissions. No backfill if Tuesday slot passes.",
+    "note": "TT010 caption overflow fixed; actual second render got through narration but failed exact critical ASR token narrow. Revised the spoken word and matching caption to narrow, preserving the scientific meaning and mandatory ASR gate. TT011 official primary main text checked, source and evidence authored and additive Portia-specific renderer committed; cloud build pending. No encoded independent review, SHA release, or paired reservations yet.",
     "expired_production_claims": [],
     "reconciled_handoff_claims": [
       "production:2026-11-24",
@@ -1459,9 +1456,9 @@
       "provider_status": "ERROR",
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
-      "public_title_channel_independently_rechecked_this_run": false,
-      "independent_public_verification_job": 138107422801,
-      "independent_public_verification_basis": "Actual 24 November 00:59 Vienna readiness log independently verified public YouTube; current Metricool status ERROR, no retry.",
+      "public_title_channel_independently_rechecked_this_run": true,
+      "independent_public_verification_job": 138327281059,
+      "independent_public_verification_basis": "24 November 08:53 UTC actual readiness job log verified public YouTube Short and channel/title; Metricool remains ERROR; no retry.",
       "retry_allowed": false
     },
     "weekly_slots": [
@@ -1492,17 +1489,17 @@
     "new_confirmed_published_keys": [],
     "history_preserved": true,
     "owner_action_blockers": [],
-    "production_claims_previous_run_released": false,
-    "repository_sha_inspected": "6adb70a8c3f8f85875e86a511f5cfa389c9b96b3",
+    "production_claims_previous_run_released": true,
+    "repository_sha_inspected": "a8557a8e736092ed50d526d0512dddb83f230226",
     "latest_readiness_workflow": {
-      "id": 45293343268,
+      "id": 45359984564,
       "conclusion": "failure",
-      "cause": "missing four provider reservations; 121 tests passed"
+      "cause": "missing four provider reservations; 121 automation tests and policy enforcer passed"
     },
     "latest_archive_workflow": {
-      "id": 45359215067,
-      "conclusion": "in_progress",
-      "cause": "caption repair; tests and exact-release restore succeeded; render in progress"
+      "id": 45359984811,
+      "conclusion": "pending",
+      "cause": "new combined TT010 ASR repair and TT011 source/renderer; queued behind previous build; no current export approved"
     },
     "secondary_legacy_asset_workflow": {
       "id": 45141692418,
@@ -1510,15 +1507,15 @@
       "cause": "Wikimedia HTTP 429, unrelated to current approved reference-image pin"
     },
     "current_reference_pin_success_run": 45141692028,
-    "active_production_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T08:45:26Z",
-    "production_claim_expires_at": "2026-11-24T12:45:26Z",
+    "active_production_owner": null,
+    "production_claim_expires_at": null,
     "tt010_render_failure": {
-      "workflow_run": 45226104039,
-      "job_id": 137872904366,
+      "workflow_run": 45359215067,
+      "job_id": 138324658456,
       "step": "Build reviewed stories and media",
-      "reason": "Caption overflow",
-      "status": "source_repaired_new_render_in_progress",
-      "repair_commit": "6adb70a8c3f8f85875e86a511f5cfa389c9b96b3"
+      "reason": "After caption repair, final transcript exact critical term narrow absent; spoken source had narrower",
+      "status": "source_repaired_exact_token_new_build_queued",
+      "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "last_pre_change_successful_archive_workflow": {
       "id": 45221358609,
@@ -1544,6 +1541,6 @@
       "420045577",
       "420062745"
     ],
-    "calendar_repeat_attempt": "Subsequent read request cancelled; initial complete current-run calendar remains reconciled; refresh before any submission."
+    "calendar_repeat_attempt": "Full repeat read succeeded at 08:53:06 UTC; 14 entries unchanged."
   }
 }

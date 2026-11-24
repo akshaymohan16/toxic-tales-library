@@ -173,10 +173,10 @@
     },
     "production:2026-11-24": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T08:45:26Z",
-      "phase": "caption_passed_exact_ASR_term_source_repaired",
+      "phase": "handoff_unreleased_source_pending_independent_export_review",
       "claimed_at": "2026-11-24T08:45:26Z",
       "expires_at": "2026-11-24T12:45:26Z",
-      "status": "active",
+      "status": "released",
       "publication_date": "2026-11-24T10:00:00+01:00",
       "required_destinations": [
         "instagram",
@@ -188,7 +188,7 @@
       "recovery_checked_at": "2026-11-24T08:45:26Z",
       "last_live_calendar_count": 14,
       "recovery_note": "Full live November calendar 14 items, no 24/27 receipts; intent directories contain only TT006–009; no TT010/011 releases. Expired claims safely reconciled; no provider write or retry. Reflowed all 8 segments, preserved spoken words; corrected cover six trials to six tasks.",
-      "released_at": "2026-11-23T08:56:03.702Z",
+      "released_at": "2026-11-24T08:53:36.972Z",
       "preproduction_research_note": "automation/qa/2026-11-23-science-preproduction.json",
       "unreleased_storyboards": "automation/qa/2026-11-23-unreleased-storyboards.json",
       "submission_intent_written": false,
@@ -211,19 +211,20 @@
       "render_entrypoint": "scripts/build_crows.py",
       "release_status": "not_released_pending_encoded_independent_QA",
       "render_attempt": {
-        "source_commit": "6adb70a8c3f8f85875e86a511f5cfa389c9b96b3",
-        "workflow_run_id": 45359215067,
-        "status": "failure_exact_critical_term",
+        "source_commit": "a8557a8e736092ed50d526d0512dddb83f230226",
+        "workflow_run_id": 45359984811,
+        "status": "pending_at_last_inspection",
         "provider_receipts": 0
       },
-      "last_render_failure": "45359215067 final transcript exact token narrow absent; narration used narrower; changed source spoken word and matching caption, unchanged ASR gate"
+      "last_render_failure": "45359215067 final transcript exact token narrow absent; narration used narrower; changed source spoken word and matching caption, unchanged ASR gate",
+      "release_reason": "Current run ends with no external write or submission intent; allow next run to reconcile and independently review/repair without waiting for stale lease."
     },
     "production:2026-11-27": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T08:45:26Z",
-      "phase": "source_reviewed_and_new_renderer_pending_cloud_render",
+      "phase": "handoff_unreleased_source_pending_independent_export_review",
       "claimed_at": "2026-11-24T08:45:26Z",
       "expires_at": "2026-11-24T12:45:26Z",
-      "status": "active",
+      "status": "released",
       "publication_date": "2026-11-27T10:00:00+01:00",
       "required_destinations": [
         "instagram",
@@ -235,7 +236,7 @@
       "recovery_checked_at": "2026-11-24T08:45:26Z",
       "last_live_calendar_count": 14,
       "recovery_note": "Full live November calendar 14 items, no 24/27 receipts; intent directories contain only TT006–009; no TT010/011 releases. Expired claims safely reconciled; no provider write or retry.",
-      "released_at": "2026-11-23T08:56:03.702Z",
+      "released_at": "2026-11-24T08:53:36.972Z",
       "preproduction_research_note": "automation/qa/2026-11-23-science-preproduction.json",
       "unreleased_storyboards": "automation/qa/2026-11-23-unreleased-storyboards.json",
       "submission_intent_written": false,
@@ -256,7 +257,14 @@
         "source_sha256": "de08aea63de460b947589e0e5a045d752604cbd93f8cd2cd1d697ca8eaa751a7"
       },
       "render_entrypoint": "scripts/build_portia.py",
-      "release_status": "not_released_pending_encoded_independent_QA"
+      "release_status": "not_released_pending_encoded_independent_QA",
+      "release_reason": "Current run ends with no external write or submission intent; allow next run to reconcile and independently review/repair without waiting for stale lease.",
+      "render_attempt": {
+        "source_commit": "a8557a8e736092ed50d526d0512dddb83f230226",
+        "workflow_run_id": 45359984811,
+        "status": "pending_at_last_inspection",
+        "provider_receipts": 0
+      }
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
