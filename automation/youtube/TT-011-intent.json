@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "episode_id": "TT-011",
+  "brand_id": "7937614",
+  "scheduled_for": "2026-11-27T10:00:00+01:00",
+  "timezone": "Europe/Vienna",
+  "created_at": "2026-11-24T20:21:53.064Z",
+  "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",
+  "status": "intent_persisted_no_provider_write",
+  "source_video_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+  "source_media_urls": [
+    "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4"
+  ],
+  "research_record_url": "https://akshaymohan16.github.io/toxic-tales-library/sources/tt-011.html",
+  "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+  "doi": "10.1073/pnas.2618030123",
+  "source_commit": "3f1c9ac6096814ea6e672d68838cfb2358c5018a",
+  "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
+  "source_verification_run": 45479451775,
+  "current_release_deployment_run": 45479451775,
+  "verified_site_manifest_artifact_id": 14959938192,
+  "verified_pages_artifact_id": 14959793328,
+  "projected_month_destinations": 14,
+  "submission_guard": "Before every write fresh full calendar and brand; reconcile timeout; no duplicate or backfill. Preserve provider receipt immediately.",
+  "public_verification": {
+    "job_id": 138749499734,
+    "checked_at": "2026-11-24T20:20:55.711297+00:00",
+    "public_files_verified": 63,
+    "passed": true,
+    "queue_sha256": "3c68823e982e86e52056dd5e88f5aeb3c4ed4b76253b9f08cafacfd252fe52ea"
+  },
+  "post_id": "TT-011-YOUTUBE-SHORT",
+  "platform": "youtube",
+  "format": "SHORT",
+  "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+  "youtube": {
+    "title": "How Do You Know a Spider Is Asleep? | Toxic Tales",
+    "description": "How do you know a jumping spider is asleep, rather than just still?\n\nIn laboratory Portia fimbriata, researchers combined resting posture, twitching and retinal-tube movements with sound-response tests and a disrupted night. Thirty adults were tested in separate groups of ten per state. Four of ten in REM-like bouts did not react within ten seconds; all four later responded awake. Among responding spiders, estimated latencies were 4.27 seconds in REM-like bouts versus 1.69 seconds awake. Thirteen usable paired recordings showed mean total REM-like duration increasing from 9.4 to 16.9 minutes after fly disturbance. The disruption was not demonstrated complete deprivation; the results are group summaries, not individual trajectories. This is behavioral evidence, not proof of dreaming or neural equivalence to vertebrate REM sleep.\n\nGeiger et al. (2026), PNAS 123(45):e2618030123. DOI: 10.1073/pnas.2618030123\nOpen full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC13752372/\nResearch evidence, limitations and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-011.html\n\nSpecies reference photograph: Donald Hobern, Portia fimbriata, CC BY 2.0, cropped/contained and panned; not footage of the experiment. https://commons.wikimedia.org/wiki/File:Portia_fimbriata_(15235249464).jpg\nLicence: https://creativecommons.org/licenses/by/2.0/\nOriginal conceptual diagrams, authorized Toxic Tales logo, synthetic neural narration and captions.\n\n#ToxicTales #JumpingSpider #AnimalBehavior #Sleep #Ecology #Shorts",
+    "made_for_kids": false,
+    "privacy": "PUBLIC",
+    "is_ai_generated": true,
+    "review_decision": "pass",
+    "rights_review_decision": "pass",
+    "reviewed_release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+    "source_video_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
+    "audience_review": "General science outreach for adult/general audience, not specifically directed at children. Synthetic narration disclosed.",
+    "review_basis": "Exact TT-011 release, original main paper and source image rights independently checked; description preserves arousal groups and responding-only latency, paired means, disturbance caveat and lack of evidence for dreams; CC BY 2.0 attribution with source and license links. No custom thumbnail; branded opening frames reviewed.",
+    "reviewed_at": "2026-11-24T20:21:53.064Z",
+    "reviewer": "Independent encoded export and platform metadata reviewer",
+    "listening_review_claimed": false,
+    "moving_playback_review_claimed": false
+  }
+}

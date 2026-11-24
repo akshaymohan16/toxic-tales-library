@@ -221,7 +221,7 @@
     },
     "production:2026-11-27": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",
-      "phase": "release_written_pending_exact_release_deploy",
+      "phase": "exact_release_deployed_submission_claims_acquired",
       "claimed_at": "2026-11-24T20:15:43.896Z",
       "expires_at": "2026-11-25T00:15:43.896Z",
       "status": "released",
@@ -239,7 +239,7 @@
       "released_at": "2026-11-24T20:18:34.396Z",
       "preproduction_research_note": "automation/qa/2026-11-23-science-preproduction.json",
       "unreleased_storyboards": "automation/qa/2026-11-23-unreleased-storyboards.json",
-      "submission_intent_written": false,
+      "submission_intent_written": true,
       "provider_writes": 0,
       "episode_id": "TT-011",
       "doi": "10.1073/pnas.2618030123",
@@ -257,7 +257,7 @@
         "source_sha256": "de08aea63de460b947589e0e5a045d752604cbd93f8cd2cd1d697ca8eaa751a7"
       },
       "render_entrypoint": "scripts/build_portia.py",
-      "release_status": "approved_exact_export_pending_post_release_deploy",
+      "release_status": "approved_exact_export_public_verified",
       "release_reason": "Independent exact export approved; handoff pending mandatory deployment verification; no provider write or intent.",
       "render_attempt": {
         "workflow_run_id": 45442959490,
@@ -271,26 +271,40 @@
       "encoded_review_index_sha256": "237ad6800ff7580e73cef30ac72b0fdb1fc2d18bdcd4a879459c4a4dbb680bca",
       "pending_release_deployment": {
         "run_id": 45479451775,
-        "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
-        "observed_at": "2026-11-24T20:20:07.143Z",
-        "jobs": [
-          {
-            "id": 138748350246,
-            "name": "build",
-            "status": "completed",
-            "conclusion": "success",
-            "current_steps": []
-          },
-          {
-            "id": 138749200885,
-            "name": "deploy",
-            "status": "waiting",
-            "conclusion": null,
-            "current_steps": []
-          }
-        ],
-        "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
+        "status": "success",
+        "public_files_verified": 63,
+        "public_verification_job": 138749499734,
+        "site_manifest_artifact_id": 14959938192,
+        "pages_artifact_id": 14959793328
       }
+    },
+    "submission:instagram:2026-11-27T10:00:Europe/Vienna": {
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",
+      "phase": "submission_intent_persisted",
+      "claimed_at": "2026-11-24T20:21:53.064Z",
+      "expires_at": "2026-11-24T20:51:53.064Z",
+      "episode_id": "TT-011",
+      "post_id": "TT-011-REEL",
+      "platform": "instagram",
+      "publication_date": "2026-11-27T10:00:00+01:00",
+      "doi": "10.1073/pnas.2618030123",
+      "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "status": "active",
+      "intent": "automation/instagram/TT-011-intent.json"
+    },
+    "submission:youtube:2026-11-27T10:00:Europe/Vienna": {
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",
+      "phase": "submission_intent_persisted",
+      "claimed_at": "2026-11-24T20:21:53.064Z",
+      "expires_at": "2026-11-24T20:51:53.064Z",
+      "episode_id": "TT-011",
+      "post_id": "TT-011-YOUTUBE-SHORT",
+      "platform": "youtube",
+      "publication_date": "2026-11-27T10:00:00+01:00",
+      "doi": "10.1073/pnas.2618030123",
+      "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
+      "status": "active",
+      "intent": "automation/youtube/TT-011-intent.json"
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
