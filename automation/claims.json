@@ -280,7 +280,7 @@
     },
     "submission:instagram:2026-11-27T10:00:Europe/Vienna": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",
-      "phase": "submission_intent_persisted",
+      "phase": "reserved_readback_pending_byte_verification",
       "claimed_at": "2026-11-24T20:21:53.064Z",
       "expires_at": "2026-11-24T20:51:53.064Z",
       "episode_id": "TT-011",
@@ -290,7 +290,10 @@
       "doi": "10.1073/pnas.2618030123",
       "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
       "status": "active",
-      "intent": "automation/instagram/TT-011-intent.json"
+      "intent": "automation/instagram/TT-011-intent.json",
+      "metricool_uuid": "9000973347991669964",
+      "metricool_id": "440852560",
+      "readback_at": "2026-11-24T20:22:12.497Z"
     },
     "submission:youtube:2026-11-27T10:00:Europe/Vienna": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",

@@ -6,7 +6,7 @@
   "timezone": "Europe/Vienna",
   "created_at": "2026-11-24T20:21:53.064Z",
   "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",
-  "status": "intent_persisted_no_provider_write",
+  "status": "reserved_readback_pending_byte_verification",
   "source_video_sha256": "0abc85845e98330054847e67280ad4eb5749cb5cda6a5cbe3f3bf37f8b748e1c",
   "source_media_urls": [
     "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51.mp4"
@@ -34,5 +34,63 @@
   "format": "REEL",
   "source_cover_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
   "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg",
-  "reviewed_caption": "A motionless spider might just be waiting. In laboratory Portia fimbriata, researchers looked at rest posture, twitching, retinal movements, responses to sound and rebound after a disturbed night. Four of ten spiders tested during REM-like bouts did not react within ten seconds, but reacted when awake. Thirteen paired recordings showed mean REM-like time rising from 9.4 to 16.9 minutes after fly disturbance. Behavioral evidence supports sleep with REM-like periods, not proof of dreaming or direct neural equivalence.\n\nGeiger et al. (2026), PNAS. DOI: 10.1073/pnas.2618030123\nFull text: https://pmc.ncbi.nlm.nih.gov/articles/PMC13752372/\nEvidence and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-011.html\nPhoto: Donald Hobern, CC BY 2.0, species reference only. Original conceptual animations; synthetic neural narration.\n#ToxicTales #JumpingSpider #AnimalBehaviour #Sleep #Ecology"
+  "reviewed_caption": "A motionless spider might just be waiting. In laboratory Portia fimbriata, researchers looked at rest posture, twitching, retinal movements, responses to sound and rebound after a disturbed night. Four of ten spiders tested during REM-like bouts did not react within ten seconds, but reacted when awake. Thirteen paired recordings showed mean REM-like time rising from 9.4 to 16.9 minutes after fly disturbance. Behavioral evidence supports sleep with REM-like periods, not proof of dreaming or direct neural equivalence.\n\nGeiger et al. (2026), PNAS. DOI: 10.1073/pnas.2618030123\nFull text: https://pmc.ncbi.nlm.nih.gov/articles/PMC13752372/\nEvidence and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-011.html\nPhoto: Donald Hobern, CC BY 2.0, species reference only. Original conceptual animations; synthetic neural narration.\n#ToxicTales #JumpingSpider #AnimalBehaviour #Sleep #Ecology",
+  "provider_readback": {
+    "id": 440852560,
+    "publicationDate": {
+      "dateTime": "2026-11-27T10:00:00",
+      "timezone": "Europe/Vienna"
+    },
+    "creationDate": {
+      "dateTime": "2026-11-24T21:22:00",
+      "timezone": "Europe/Vienna"
+    },
+    "text": "A motionless spider might just be waiting. In laboratory Portia fimbriata, researchers looked at rest posture, twitching, retinal movements, responses to sound and rebound after a disturbed night. Four of ten spiders tested during REM-like bouts did not react within ten seconds, but reacted when awake. Thirteen paired recordings showed mean REM-like time rising from 9.4 to 16.9 minutes after fly disturbance. Behavioral evidence supports sleep with REM-like periods, not proof of dreaming or direct neural equivalence.\n\nGeiger et al. (2026), PNAS. DOI: 10.1073/pnas.2618030123\nFull text: https://pmc.ncbi.nlm.nih.gov/articles/PMC13752372/\nEvidence and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-011.html\nPhoto: Donald Hobern, CC BY 2.0, species reference only. Original conceptual animations; synthetic neural narration.\n#ToxicTales #JumpingSpider #AnimalBehaviour #Sleep #Ecology",
+    "firstCommentText": "",
+    "providers": [
+      {
+        "network": "instagram",
+        "status": "PENDING",
+        "detailedStatus": "Pending"
+      }
+    ],
+    "media": [
+      "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4"
+    ],
+    "autoPublish": true,
+    "saveExternalMediaFiles": false,
+    "mediaAltText": [
+      null
+    ],
+    "shortener": false,
+    "draft": false,
+    "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg",
+    "imageVariants": false,
+    "twitterData": {
+      "type": "POST"
+    },
+    "instagramData": {
+      "autoPublish": true,
+      "type": "REEL",
+      "showReelOnFeed": true,
+      "isAiGenerated": true,
+      "isPaidPartnership": false
+    },
+    "hasNotReadNotes": false,
+    "uuid": "9000973347991669964",
+    "creatorUserMail": "akshaymohank21@gmail.com",
+    "creatorUserId": 6223629,
+    "brandTags": []
+  },
+  "last_reconciled_at": "2026-11-24T20:22:12.497Z",
+  "schedule_readback_verified": true,
+  "create_result": {
+    "text": "{\"data\":{\"id\":440852560,\"publicationDate\":{\"dateTime\":\"2026-11-27T10:00:00\",\"timezone\":\"Europe/Vienna\"},\"creationDate\":{\"dateTime\":\"2026-11-24T21:22:00\",\"timezone\":\"Europe/Vienna\"},\"text\":\"A motionless spider might just be waiting. In laboratory Portia fimbriata, researchers looked at rest posture, twitching, retinal movements, responses to sound and rebound after a disturbed night. Four of ten spiders tested during REM-like bouts did not react within ten seconds, but reacted when awake. Thirteen paired recordings showed mean REM-like time rising from 9.4 to 16.9 minutes after fly disturbance. Behavioral evidence supports sleep with REM-like periods, not proof of dreaming or direct neural equivalence.\\n\\nGeiger et al. (2026), PNAS. DOI: 10.1073/pnas.2618030123\\nFull text: https://pmc.ncbi.nlm.nih.gov/articles/PMC13752372/\\nEvidence and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-011.html\\nPhoto: Donald Hobern, CC BY 2.0, species reference only. Original conceptual animations; synthetic neural narration.\\n#ToxicTales #JumpingSpider #AnimalBehaviour #Sleep #Ecology\",\"firstCommentText\":\"\",\"providers\":[{\"network\":\"instagram\",\"status\":\"PENDING\",\"detailedStatus\":\"Pending\"}],\"media\":[\"https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4\"],\"autoPublish\":true,\"saveExternalMediaFiles\":false,\"mediaAltText\":[null],\"shortener\":false,\"draft\":false,\"videoThumbnailUrl\":\"https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg\",\"imageVariants\":false,\"twitterData\":{\"type\":\"POST\"},\"instagramData\":{\"autoPublish\":true,\"type\":\"REEL\",\"showReelOnFeed\":true,\"isAiGenerated\":true,\"isPaidPartnership\":false},\"hasNotReadNotes\":false,\"uuid\":\"9000973347991669964\",\"creatorUserMail\":\"akshaymohank21@gmail.com\",\"creatorUserId\":6223629,\"brandTags\":[],\"plannerUrl\":\"https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=9000973347991669964\"}}"
+  },
+  "metricool_id": "440852560",
+  "metricool_uuid": "9000973347991669964",
+  "provider_media_url": "https://static.metricool.com/planner/202611/7937614-file-12873546604193653243.mp4",
+  "provider_cover_url": "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg",
+  "provider_status": "PENDING",
+  "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=9000973347991669964"
 }
