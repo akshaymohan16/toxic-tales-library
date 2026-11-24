@@ -258,17 +258,39 @@
       },
       "render_entrypoint": "scripts/build_portia.py",
       "release_status": "approved_exact_export_pending_post_release_deploy",
-      "release_reason": "No provider intent or writes. Allow next independent reviewer to acquire after fresh reconciliation.",
+      "release_reason": "Independent exact export approved; handoff pending mandatory deployment verification; no provider write or intent.",
       "render_attempt": {
         "workflow_run_id": 45442959490,
         "status": "completed_success",
         "artifact_id": 14945356483
       },
       "last_render_failure": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved.",
-      "next_action": "Verify release commit's actual archive build/deploy/public media and queue, then acquire fresh destination claims and schedule Friday only. Do not rerender approved bytes.",
+      "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1.",
       "reconciled_calendar_at": "2026-11-24T20:15:43.896Z",
       "release_fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
-      "encoded_review_index_sha256": "237ad6800ff7580e73cef30ac72b0fdb1fc2d18bdcd4a879459c4a4dbb680bca"
+      "encoded_review_index_sha256": "237ad6800ff7580e73cef30ac72b0fdb1fc2d18bdcd4a879459c4a4dbb680bca",
+      "pending_release_deployment": {
+        "run_id": 45479451775,
+        "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
+        "observed_at": "2026-11-24T20:20:07.143Z",
+        "jobs": [
+          {
+            "id": 138748350246,
+            "name": "build",
+            "status": "completed",
+            "conclusion": "success",
+            "current_steps": []
+          },
+          {
+            "id": 138749200885,
+            "name": "deploy",
+            "status": "waiting",
+            "conclusion": null,
+            "current_steps": []
+          }
+        ],
+        "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
+      }
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."

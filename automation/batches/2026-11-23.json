@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-24T20:18:34.396Z",
+  "updated_at": "2026-11-24T20:20:07.143Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
@@ -71,8 +71,8 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": true,
-      "independent_public_verification_job": 138724922231,
-      "independent_public_verification_basis": "Inspected actual latest watchdog 24 Nov 19:41 UTC, independent public Short verification positive; live provider still ERROR.",
+      "independent_public_verification_job": 138748351168,
+      "independent_public_verification_basis": "Actual 20:18 UTC watchdog log positively verifies public Short; Metricool remains ERROR.",
       "retry_allowed": false
     },
     "weekly_slots": [
@@ -120,9 +120,9 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45472787414,
+      "id": 45479451730,
       "conclusion": "failure",
-      "cause": "Real missing-slot incident; 121 tests and policy passed"
+      "cause": "Actual job 138748351168: 121 tests and enforcer passed; four absent destinations (Tuesday elapsed, Friday still recoverable); public TT009 warning confirmed; quota projected 14."
     },
     "latest_archive_workflow": {
       "id": 45442959490,
@@ -164,10 +164,32 @@
       "fingerprint": "f156a514cc518e12f08c08bdf0a03ff39ab795f44fe841c6e890dae110b5e63d",
       "review_index_sha256": "237ad6800ff7580e73cef30ac72b0fdb1fc2d18bdcd4a879459c4a4dbb680bca",
       "finding": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed."
+    },
+    "pending_release_deployment": {
+      "run_id": 45479451775,
+      "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
+      "observed_at": "2026-11-24T20:20:07.143Z",
+      "jobs": [
+        {
+          "id": 138748350246,
+          "name": "build",
+          "status": "completed",
+          "conclusion": "success",
+          "current_steps": []
+        },
+        {
+          "id": 138749200885,
+          "name": "deploy",
+          "status": "waiting",
+          "conclusion": null,
+          "current_steps": []
+        }
+      ],
+      "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
     }
   },
   "owner_action_blocker": false,
-  "next_step": "TT-011 exact encoded export passed. Verify this release commit's queue/build/deploy/public-media before provider submission. Friday 27 Nov 10:00 only; Tuesday missed, no backfill. Then review existing TT-010 from same artifact for December 1.",
+  "next_step": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1.",
   "owned_production_claims": [],
   "research_readiness_note": "automation/qa/2026-11-23-evening-qa.json",
   "reconciled_handoff_claims": [
@@ -175,5 +197,27 @@
     "production:2026-11-27"
   ],
   "claim_handoff_at": "2026-11-24T16:56:33.962Z",
-  "production_readiness": "TT-011 exact encoded export passed. Verify this release commit's queue/build/deploy/public-media before provider submission. Friday 27 Nov 10:00 only; Tuesday missed, no backfill. Then review existing TT-010 from same artifact for December 1."
+  "production_readiness": "TT-011 exact encoded export passed. Verify this release commit's queue/build/deploy/public-media before provider submission. Friday 27 Nov 10:00 only; Tuesday missed, no backfill. Then review existing TT-010 from same artifact for December 1.",
+  "pending_release_deployment": {
+    "run_id": 45479451775,
+    "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
+    "observed_at": "2026-11-24T20:20:07.143Z",
+    "jobs": [
+      {
+        "id": 138748350246,
+        "name": "build",
+        "status": "completed",
+        "conclusion": "success",
+        "current_steps": []
+      },
+      {
+        "id": 138749200885,
+        "name": "deploy",
+        "status": "waiting",
+        "conclusion": null,
+        "current_steps": []
+      }
+    ],
+    "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
+  }
 }
