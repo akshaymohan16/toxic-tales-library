@@ -1,0 +1,463 @@
+{
+  "id": "TT-011",
+  "slug": "tt-011-spider-sleep",
+  "title": "How do you know a spider is asleep?",
+  "hook": "A motionless spider might simply be waiting. Two behavioral tests help tell the difference.",
+  "doi": "10.1073/pnas.2618030123",
+  "paper_title": "Behavioral evidence for two-stage sleep in spiders",
+  "citation": "Geiger et al. (2026), PNAS 123(45):e2618030123",
+  "tags": [
+    "spiders",
+    "sleep",
+    "animal behaviour",
+    "ecology"
+  ],
+  "summary": "Laboratory jumping spiders showed characteristic rest, REM-like movements, reduced responses to sound and a rebound in REM-like time after disturbance.",
+  "evidence_note": "Behavioral evidence, not proof of dreaming or direct neural equivalence; distinct arousal groups of 10 and paired rebound sample of 13.",
+  "source_url": "https://doi.org/10.1073/pnas.2618030123",
+  "review_status": "full_primary_main_text_checked",
+  "publication_enabled": true,
+  "is_ai_generated": true,
+  "batch_id": "2026-11-23",
+  "slides": [],
+  "evidence_file": "evidence/tt-011.md",
+  "checks": {
+    "full_text": true,
+    "design": true,
+    "findings": true,
+    "limitations": true,
+    "rights": true
+  },
+  "evidence": {
+    "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13752372/",
+    "checked_at": "2026-11-24",
+    "design": "Distinct laboratory behavioral assays; detailed sleep architecture n=10; arousal n=30 (10 per state, separate animals, single trial); sleep disruption 17 tested and 13 paired analyzable.",
+    "claims": [
+      {
+        "claim": "Rest posture with recurring twitching and retinal movements.",
+        "location": "Main Results sleep behavior, Methods and Figures 2 and 5."
+      },
+      {
+        "claim": "Responders during REM-like bouts responded more slowly than awake responders; four of ten REM-like animals did not respond within 10 seconds, all four later responded awake.",
+        "location": "Main Methods arousal threshold, Results and Figure 3."
+      },
+      {
+        "claim": "Thirteen analyzable paired spiders showed more REM-like bouts and total REM-like minutes after fly disturbance (9.4 to 16.9 minutes).",
+        "location": "Main Methods sleep disruption and Results rebound, Figure 4."
+      }
+    ],
+    "limitations": [
+      "Quiet wakefulness may occur within sleep windows.",
+      "Distinct arousal groups; responding-only latency estimate; REM-like versus quiescent comparison not significant after adjustment.",
+      "Disturbance is not demonstrated complete deprivation; no continuous recording of the disturbance night.",
+      "No direct neural measurement or evidence of dreams.",
+      "All values are main-text group summaries; no supplementary footage or individual traces used."
+    ],
+    "correction_check": "24 November focal DOI/title targeted correction/retraction and PubMed check: no specific correction or retraction found in consulted results. Repeat at release.",
+    "access_note": "Matching official PMC OAI cache report and main article read. No supplemental claim or asset used."
+  },
+  "production": {
+    "renderer": "nature-motion-10",
+    "scene_family": "portia-sleep-2026",
+    "editorial_style": "science-journalism",
+    "editorial_standard": "story-first-v1",
+    "visual_standard": "nature-visuals-v1",
+    "branding_standard": "toxic-tales-branding-v1",
+    "script_author": "Prior Sunday producer storyboard, adapted by 24 November publisher",
+    "voice_speed": 1.04,
+    "cover_asset": "portia_reference",
+    "cover_focus": [
+      0.5,
+      0.5
+    ],
+    "cover_kicker": "JUMPING SPIDER · SPECIES REFERENCE PHOTO",
+    "cover_title": "Is the spider\nasleep?",
+    "cover_subtitle": "A sound test and a disturbed night",
+    "takeaway": "Behavioral evidence supports regulated spider sleep with REM-like bouts, not evidence of dreaming.",
+    "critical_terms": [
+      "spider",
+      "sleep",
+      "retinal",
+      "sound",
+      "fruit flies",
+      "brain"
+    ],
+    "assets": [
+      {
+        "id": "portia_reference",
+        "filename": "portia-fimbriata-hobern-ccby2.jpg",
+        "url": "https://live.staticflickr.com/7538/15235249464_d29102f3bd_o.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Portia_fimbriata_(15235249464).jpg",
+        "creator": "Donald Hobern",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "changes": "Contained editorial species reference photo; not experimental footage; slight pan.",
+        "sha256": "a5cf25c55f840908163ab8e95504f8c6af3fbb78d884156fbb770105e19227d0",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "speech": "At night, a jumping spider stops moving. Is that sleep, or just waiting?",
+        "captions": [
+          "At night, a jumping spider",
+          "stops moving.",
+          "Is that sleep,",
+          "or just waiting?"
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "portrait",
+            "title": "Is the spider\nasleep?",
+            "kicker": "SPECIES REFERENCE PHOTO",
+            "start": 0,
+            "end": 0.55,
+            "asset": "portia_reference"
+          },
+          {
+            "kind": "portia_rest",
+            "title": "Stillness alone\nis not enough",
+            "kicker": "ILLUSTRATED REST POSTURE",
+            "start": 0.55,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Researchers looked for more than stillness. On silk platforms, the spiders adopted a resting posture.",
+        "captions": [
+          "Researchers looked for more",
+          "than stillness.",
+          "On silk platforms,",
+          "the spiders adopted",
+          "a resting posture."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "portia_platform",
+            "title": "A resting posture",
+            "kicker": "SCHEMATIC SIDE VIEW",
+            "start": 0,
+            "end": 0.52
+          },
+          {
+            "kind": "portia_rest",
+            "title": "Rest on silk",
+            "kicker": "SCHEMATIC ONLY",
+            "start": 0.52,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Rest was interrupted by bouts of twitching and movement of their retinal tubes.",
+        "captions": [
+          "Rest was interrupted",
+          "by bouts of twitching",
+          "and movement of their",
+          "retinal tubes."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "portia_twitch",
+            "title": "Little twitches",
+            "kicker": "REM-LIKE BEHAVIOR",
+            "start": 0,
+            "end": 0.5
+          },
+          {
+            "kind": "portia_retina",
+            "title": "Moving retinal tubes",
+            "kicker": "CONCEPTUAL EYE DIAGRAM",
+            "start": 0.5,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Then came a sound test. Among spiders that responded, reactions during REM-like bouts were slower than when awake.",
+        "captions": [
+          "Then came a sound test.",
+          "Among spiders that responded,",
+          "reactions during REM-like bouts",
+          "were slower than when awake."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "portia_tone",
+            "title": "Can sound\nwake a spider?",
+            "kicker": "STANDARDIZED SOUND TEST",
+            "start": 0,
+            "end": 0.48
+          },
+          {
+            "kind": "portia_latency",
+            "title": "Slower responses",
+            "kicker": "RESPONDING SPIDERS ONLY",
+            "start": 0.48,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Four out of ten in those bouts did not react within ten seconds. They reacted when retested awake.",
+        "captions": [
+          "Four out of ten",
+          "in those bouts did not react",
+          "within ten seconds.",
+          "They reacted when retested awake."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "portia_count",
+            "title": "Four did not react",
+            "kicker": "REM-LIKE GROUP",
+            "start": 0,
+            "end": 0.65
+          },
+          {
+            "kind": "portia_tone",
+            "title": "Awake, they reacted",
+            "kicker": "RETEST OF FOUR SPIDERS",
+            "start": 0.65,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Next, researchers disturbed a night with fruit flies. This interrupted sleep, not necessarily all sleep.",
+        "captions": [
+          "Next, researchers disturbed",
+          "a night with fruit flies.",
+          "This interrupted sleep,",
+          "not necessarily all sleep."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "portia_flies",
+            "title": "A disturbed night",
+            "kicker": "CONCEPTUAL EXPERIMENT",
+            "start": 0,
+            "end": 0.65
+          },
+          {
+            "kind": "portia_platform",
+            "title": "Not total deprivation",
+            "kicker": "LAB DISTURBANCE",
+            "start": 0.65,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "Thirteen spiders had usable before and after recordings. They showed more REM-like bouts and more total REM-like time.",
+        "captions": [
+          "Thirteen spiders had usable",
+          "before and after recordings.",
+          "They showed more REM-like bouts",
+          "and more total REM-like time."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "portia_pair",
+            "title": "Before and after",
+            "kicker": "13 PAIRED SPIDERS",
+            "start": 0,
+            "end": 0.45
+          },
+          {
+            "kind": "portia_rebound",
+            "title": "More REM-like time",
+            "kicker": "GROUP SUMMARY · MINUTES",
+            "start": 0.45,
+            "end": 1
+          }
+        ]
+      },
+      {
+        "speech": "That supports regulated sleep with REM-like periods. Brain activity was not measured. This does not show that spiders dream.",
+        "captions": [
+          "That supports regulated sleep",
+          "with REM-like periods.",
+          "Brain activity was not measured.",
+          "This does not show",
+          "that spiders dream."
+        ],
+        "pause_after": 0.2,
+        "shots": [
+          {
+            "kind": "portia_scope",
+            "title": "Behavioral evidence",
+            "kicker": "NO NEURAL RECORDING",
+            "start": 0,
+            "end": 0.58
+          },
+          {
+            "kind": "closing",
+            "title": "Sleep, not proof\nof dreaming",
+            "kicker": "SPECIES REFERENCE PHOTO",
+            "start": 0.58,
+            "end": 1,
+            "asset": "portia_reference"
+          }
+        ]
+      }
+    ],
+    "logo": {
+      "asset": "assets/branding/toxic-tales-logo.json",
+      "sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+      "placement": "Actual owner-verified Toxic Tales flask/plant/Asellus logo upper-left from first frame, phone safe, no collisions",
+      "forbid": [
+        "footer",
+        "progress bar",
+        "field notes"
+      ],
+      "credits_in_caption": true
+    },
+    "motion": {
+      "schema_version": 1,
+      "evidence_sha256": "47ccc7fdf2398c712fa423ef6ca817bc06403c4bf703dc9819702da244833d7c"
+    }
+  },
+  "editorial_story": {
+    "audience": "General nature viewers without sleep-science background.",
+    "subject": "Laboratory Portia fimbriata jumping spiders in behavioral sleep tests.",
+    "setting": "Controlled laboratory observation, standardized sound and fly disturbance assays.",
+    "opening_context": "Species photograph and a schematic resting spider frame the distinction between sleep and waiting.",
+    "normal_expectation": "An animal may stay motionless without sleeping.",
+    "story_selection": "Start with stillness, then posture and motion, test arousal, test rebound, and close with evidence limits.",
+    "decisive_limit": "Behavior alone cannot establish neural equivalence or dreaming.",
+    "question": "How can scientists tell if a motionless spider is asleep?",
+    "why_it_matters": "Independent behavioral tests distinguish regulated sleep from ordinary inactivity.",
+    "narrative_arc": "Resting posture; twitch and eye movement; sound responses; disrupted night; paired rebound; limits.",
+    "closing_payoff": "Several independent observations support sleep and recurring REM-like states without establishing dreams.",
+    "context_sources": [
+      {
+        "citation": "Geiger et al. 2026, PNAS",
+        "url": "https://doi.org/10.1073/pnas.2618030123",
+        "scope": "All claims and experimental limits."
+      },
+      {
+        "citation": "Donald Hobern, CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Portia_fimbriata_(15235249464).jpg",
+        "scope": "Species reference only."
+      }
+    ],
+    "reporting_method": "Read full cached official PMC JATS main article, verified matching request and independent photo licence; main-text aggregate results only.",
+    "visual_plan": [
+      {
+        "segment": 1,
+        "visual": "portrait → portia_rest",
+        "purpose": "Identify the organism and distinguish rest from sleep.",
+        "source_or_concept": "Licensed reference photograph where indicated; original schematic based on main article Methods and Results.",
+        "accuracy_note": "No recorded experiment, invented time series or individual trajectory; group values are explicitly scoped."
+      },
+      {
+        "segment": 2,
+        "visual": "portia_platform → portia_rest",
+        "purpose": "Explain the posture used to identify resting states.",
+        "source_or_concept": "Licensed reference photograph where indicated; original schematic based on main article Methods and Results.",
+        "accuracy_note": "No recorded experiment, invented time series or individual trajectory; group values are explicitly scoped."
+      },
+      {
+        "segment": 3,
+        "visual": "portia_twitch → portia_retina",
+        "purpose": "Illustrate twitching and internal eye movements conceptually.",
+        "source_or_concept": "Licensed reference photograph where indicated; original schematic based on main article Methods and Results.",
+        "accuracy_note": "No recorded experiment, invented time series or individual trajectory; group values are explicitly scoped."
+      },
+      {
+        "segment": 4,
+        "visual": "portia_tone → portia_latency",
+        "purpose": "Explain the sound assay and responding-only result.",
+        "source_or_concept": "Licensed reference photograph where indicated; original schematic based on main article Methods and Results.",
+        "accuracy_note": "No recorded experiment, invented time series or individual trajectory; group values are explicitly scoped."
+      },
+      {
+        "segment": 5,
+        "visual": "portia_count → portia_tone",
+        "purpose": "Show the reported nonresponders with correct denominator and awake retest.",
+        "source_or_concept": "Licensed reference photograph where indicated; original schematic based on main article Methods and Results.",
+        "accuracy_note": "No recorded experiment, invented time series or individual trajectory; group values are explicitly scoped."
+      },
+      {
+        "segment": 6,
+        "visual": "portia_flies → portia_platform",
+        "purpose": "Illustrate the fly disturbance and distinguish it from complete deprivation.",
+        "source_or_concept": "Licensed reference photograph where indicated; original schematic based on main article Methods and Results.",
+        "accuracy_note": "No recorded experiment, invented time series or individual trajectory; group values are explicitly scoped."
+      },
+      {
+        "segment": 7,
+        "visual": "portia_pair → portia_rebound",
+        "purpose": "Show paired sample and exact mean REM-like minutes.",
+        "source_or_concept": "Licensed reference photograph where indicated; original schematic based on main article Methods and Results.",
+        "accuracy_note": "No recorded experiment, invented time series or individual trajectory; group values are explicitly scoped."
+      },
+      {
+        "segment": 8,
+        "visual": "portia_scope → closing",
+        "purpose": "Summarize behavioral inference, not neural or dream evidence.",
+        "source_or_concept": "Licensed reference photograph where indicated; original schematic based on main article Methods and Results.",
+        "accuracy_note": "No recorded experiment, invented time series or individual trajectory; group values are explicitly scoped."
+      }
+    ]
+  },
+  "posts": [
+    {
+      "id": "TT-011-REEL",
+      "format": "REEL",
+      "publication_date": "2026-11-27T10:00:00+01:00",
+      "caption": "A motionless spider might just be waiting. In laboratory Portia fimbriata, researchers looked at rest posture, twitching, retinal movements, responses to sound and rebound after a disturbed night. Four of ten spiders tested during REM-like bouts did not react within ten seconds, but reacted when awake. Thirteen paired recordings showed mean REM-like time rising from 9.4 to 16.9 minutes after fly disturbance. Behavioral evidence supports sleep with REM-like periods, not proof of dreaming or direct neural equivalence.\n\nGeiger et al. (2026), PNAS. DOI: 10.1073/pnas.2618030123\nFull text: https://pmc.ncbi.nlm.nih.gov/articles/PMC13752372/\nEvidence and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-011.html\nPhoto: Donald Hobern, CC BY 2.0, species reference only. Original conceptual animations; synthetic neural narration.\n#ToxicTales #JumpingSpider #AnimalBehaviour #Sleep #Ecology"
+    }
+  ],
+  "editorial_review": {
+    "standard": "story-first-v1",
+    "reviewer": "24 November publisher pre-render source review of prior producer storyboard; not independent export reviewer",
+    "reviewed_at": "2026-11-24T08:52:42.065Z",
+    "decision": "pass",
+    "checks": {
+      "cold_viewer": {
+        "decision": "pass",
+        "finding": "Opening asks an ordinary recognizable question instead of assuming prior knowledge of REM sleep.",
+        "basis": "Species photograph and rest-versus-waiting opening."
+      },
+      "story": {
+        "decision": "pass",
+        "finding": "The sequence advances from descriptive markers to two independent experimental tests, then their bounded inference.",
+        "basis": "Prior storyboard adapted to actual Methods and Results."
+      },
+      "visuals": {
+        "decision": "pass",
+        "finding": "Each assay has a source-specific original schematic and explicit conceptual label; reference photograph is separate. Encoded export remains unreviewed.",
+        "basis": "Planned 16 shots, source licence and aggregate-only data."
+      },
+      "payoff": {
+        "decision": "pass",
+        "finding": "The sound and rebound tests resolve why mere stillness is insufficient.",
+        "basis": "Results arousal threshold and rebound."
+      },
+      "scope": {
+        "decision": "pass",
+        "finding": "The narration avoids claiming dreams, direct neural measurement, total deprivation, or unmeasured individual values.",
+        "basis": "Main Methods, Results and Discussion; n=10 REM group and n=13 paired sample."
+      },
+      "retelling": {
+        "decision": "pass",
+        "finding": "A sleeping spider can be distinguished from an inactive one by converging behavioral tests, but dreams are untested.",
+        "basis": "Final narration and main Discussion."
+      }
+    },
+    "source_sha256": "de08aea63de460b947589e0e5a045d752604cbd93f8cd2cd1d697ca8eaa751a7"
+  }
+}

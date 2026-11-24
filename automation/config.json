@@ -129,7 +129,7 @@
   "branding_supplement": "quality/BRANDING_STANDARD.md",
   "future_reel_renderer": "nature-motion-10",
   "motion_supplement": "quality/MOTION_STANDARD.md",
-  "production_entrypoint": "scripts/build_crows.py",
+  "production_entrypoint": "scripts/build_portia.py",
   "canonical_brand_asset": "assets/branding/toxic-tales-logo.json",
   "future_reel_renderer_required": true,
   "reels_only_effective_at": "2026-11-13T00:00:00+01:00",

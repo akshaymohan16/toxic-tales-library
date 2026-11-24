@@ -220,7 +220,7 @@
     },
     "production:2026-11-27": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T08:45:26Z",
-      "phase": "recover_unreleased_caption_build_and_friday_preproduction",
+      "phase": "source_reviewed_and_new_renderer_pending_cloud_render",
       "claimed_at": "2026-11-24T08:45:26Z",
       "expires_at": "2026-11-24T12:45:26Z",
       "status": "active",
@@ -244,7 +244,19 @@
       "doi": "10.1073/pnas.2618030123",
       "prior_release_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-23T08:48:14.077Z",
       "prior_reconciled_calendar_at": "2026-11-23T16:52:07.177Z",
-      "provider_receipts": []
+      "provider_receipts": [],
+      "evidence_file": "evidence/tt-011.md",
+      "episode_file": "episodes/tt-011.json",
+      "science_source": "PMC13752372",
+      "asset_pin_sha256": "a5cf25c55f840908163ab8e95504f8c6af3fbb78d884156fbb770105e19227d0",
+      "asset_pin_action_run": 45141692028,
+      "pre_render_editorial_review": {
+        "reviewer": "24 November publisher pre-render source review of prior producer storyboard; not independent export reviewer",
+        "reviewed_at": "2026-11-24T08:52:42.065Z",
+        "source_sha256": "de08aea63de460b947589e0e5a045d752604cbd93f8cd2cd1d697ca8eaa751a7"
+      },
+      "render_entrypoint": "scripts/build_portia.py",
+      "release_status": "not_released_pending_encoded_independent_QA"
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
