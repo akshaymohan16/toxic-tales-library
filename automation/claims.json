@@ -220,10 +220,10 @@
       "release_reason": "Tuesday elapsed with no receipts; no catch-up. Preserve successful technical render as reserve only."
     },
     "production:2026-11-27": {
-      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T16:52:41Z",
-      "phase": "encoded_review_failed_source_specific_transition_repaired",
-      "claimed_at": "2026-11-24T16:52:41Z",
-      "expires_at": "2026-11-24T20:52:41Z",
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",
+      "phase": "independent_encoded_review",
+      "claimed_at": "2026-11-24T20:15:43.896Z",
+      "expires_at": "2026-11-25T00:15:43.896Z",
       "status": "released",
       "publication_date": "2026-11-27T10:00:00+01:00",
       "required_destinations": [
@@ -243,7 +243,7 @@
       "provider_writes": 0,
       "episode_id": "TT-011",
       "doi": "10.1073/pnas.2618030123",
-      "prior_release_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T08:45:26Z",
+      "prior_release_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T16:52:41Z",
       "prior_reconciled_calendar_at": "2026-11-23T16:52:07.177Z",
       "provider_receipts": [],
       "evidence_file": "evidence/tt-011.md",
@@ -260,16 +260,13 @@
       "release_status": "not_released_pending_new_independent_review",
       "release_reason": "No provider intent or writes. Allow next independent reviewer to acquire after fresh reconciliation.",
       "render_attempt": {
-        "source_commit": "3f1c9ac6096814ea6e672d68838cfb2358c5018a",
         "workflow_run_id": 45442959490,
-        "status": "in_progress",
-        "last_inspected_at": "2026-11-24T16:57:25.924Z",
-        "build_job_id": 138618852601,
-        "step": "Install free offline tools",
-        "provider_receipts": 0
+        "status": "completed_success",
+        "artifact_id": 14945356483
       },
       "last_render_failure": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved.",
-      "next_action": "Inspect exact repair run 45442959490 build/deploy/verify-public-media jobs first. Download its compact review package and exact Pages artifact; independently verify all 16 shots, 15 transitions incl. +0.18/+0.7 samples and exact audio/ASR. If pass, complete fresh paper correction/rights checks, SHA release, verified deployment and paired Friday receipts. Do not use failed c13525a46dd5 media or backfill Tuesday."
+      "next_action": "Review exact repaired TT-011 package and MP4 before release",
+      "reconciled_calendar_at": "2026-11-24T20:15:43.896Z"
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
