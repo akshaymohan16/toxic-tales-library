@@ -1357,7 +1357,7 @@
     "TT-009-REEL",
     "instagram:TT-009-REEL"
   ],
-  "last_provider_reconciled_at": "2026-11-24T08:53:06.468Z",
+  "last_provider_reconciled_at": "2026-11-24T16:56:33.962Z",
   "last_provider_reconciliation": {
     "month": "2026-11",
     "calendar_entries": 14,
@@ -1377,10 +1377,10 @@
       "youtube:-6895101637645415437",
       "youtube:4422280930322105807"
     ],
-    "remaining_regular_destinations": 4,
-    "projected_month_destinations": 16,
+    "remaining_regular_destinations": 2,
+    "projected_month_destinations": 14,
     "one_off_confirmed_both": true,
-    "checked_at": "2026-11-24T08:53:06.468Z",
+    "checked_at": "2026-11-24T16:56:33.962Z",
     "full_month_calendar_verified": true,
     "usage_baseline": {
       "month": "2026-11",
@@ -1395,14 +1395,14 @@
     },
     "provider_error_count": 1,
     "uncertain_destination_count": 1,
-    "observed_at": "2026-11-24T08:53:06.468Z",
+    "observed_at": "2026-11-24T16:56:33.962Z",
     "ambiguous_youtube_uuid": "3828607998694999530",
     "ambiguity_note": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
     "youtube_public_metadata_verified": true,
     "youtube_public_metadata_verification_run": 45359984564
   },
   "last_live_reconciliation": {
-    "checked_at": "2026-11-24T08:53:06.468Z",
+    "checked_at": "2026-11-24T16:56:33.962Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "calendar_entries": 14,
@@ -1437,7 +1437,7 @@
     "weekly_2026_11_23_receipts": 0,
     "active_production_claims": [],
     "youtube_warning_uuid": "3828607998694999530",
-    "note": "TT010 caption overflow fixed; actual second render got through narration but failed exact critical ASR token narrow. Revised the spoken word and matching caption to narrow, preserving the scientific meaning and mandatory ASR gate. TT011 official primary main text checked, source and evidence authored and additive Portia-specific renderer committed; cloud build pending. No encoded independent review, SHA release, or paired reservations yet.",
+    "note": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved.",
     "expired_production_claims": [],
     "reconciled_handoff_claims": [
       "production:2026-11-24",
@@ -1456,31 +1456,35 @@
       "provider_status": "ERROR",
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
-      "public_title_channel_independently_rechecked_this_run": true,
-      "independent_public_verification_job": 138327281059,
-      "independent_public_verification_basis": "24 November 08:53 UTC actual readiness job log verified public YouTube Short and channel/title; Metricool remains ERROR; no retry.",
+      "public_title_channel_independently_rechecked_this_run": false,
+      "independent_public_verification_job": 138327704965,
+      "independent_public_verification_basis": "Inspected successful public title/channel check in actual 24 Nov 08:53 UTC readiness log; fresh calendar still ERROR with same live URL; new post-commit watchdog recheck required.",
       "retry_allowed": false
     },
     "weekly_slots": [
       {
         "date": "2026-11-24T10:00:00+01:00",
         "network": "instagram",
-        "found": false
+        "found": false,
+        "status": "missed_no_backfill"
       },
       {
         "date": "2026-11-24T10:00:00+01:00",
         "network": "youtube",
-        "found": false
+        "found": false,
+        "status": "missed_no_backfill"
       },
       {
         "date": "2026-11-27T10:00:00+01:00",
         "network": "instagram",
-        "found": false
+        "found": false,
+        "status": "not_reserved"
       },
       {
         "date": "2026-11-27T10:00:00+01:00",
         "network": "youtube",
-        "found": false
+        "found": false,
+        "status": "not_reserved"
       }
     ],
     "weekly_receipts": 0,
@@ -1492,14 +1496,14 @@
     "production_claims_previous_run_released": true,
     "repository_sha_inspected": "a8557a8e736092ed50d526d0512dddb83f230226",
     "latest_readiness_workflow": {
-      "id": 45359984564,
+      "id": 45360107295,
       "conclusion": "failure",
-      "cause": "missing four provider reservations; 121 automation tests and policy enforcer passed"
+      "cause": "four missing receipts; policy and 121 tests pass"
     },
     "latest_archive_workflow": {
-      "id": 45359984811,
-      "conclusion": "pending",
-      "cause": "new combined TT010 ASR repair and TT011 source/renderer; queued behind previous build; no current export approved"
+      "id": 45360107258,
+      "conclusion": "success",
+      "public_files_verified": 63
     },
     "secondary_legacy_asset_workflow": {
       "id": 45141692418,
@@ -1527,6 +1531,8 @@
     "source": "Metricool brand 7937614 getScheduledPosts full 2026-11 month; returned historical published and draft entries",
     "provider_ids": [
       "419869962",
+      "420045577",
+      "420062745",
       "420123422",
       "420178205",
       "420683055",
@@ -1537,10 +1543,17 @@
       "426945585",
       "426946098",
       "429844048",
-      "429844729",
-      "420045577",
-      "420062745"
+      "429844729"
     ],
-    "calendar_repeat_attempt": "Full repeat read succeeded at 08:53:06 UTC; 14 entries unchanged."
+    "calendar_repeat_attempt": "Fresh complete November calendar read after claim acquisition; 14 entries unchanged.",
+    "missed_destinations": 2,
+    "future_missing_destinations": 2,
+    "tt011_encoded_review": {
+      "decision": "fail_repair_required",
+      "workflow_run": 45360107258,
+      "fingerprint": "c13525a46dd578677151f72204f348599a0bfa2775acff1587ca8851f1795cdb",
+      "review_index_sha256": "0e8eb61ea55fb2e2e6d5cb482763516ad24543c2f5b109f56a2fd293e33a2a53",
+      "finding": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved."
+    }
   }
 }

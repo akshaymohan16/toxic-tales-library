@@ -77,8 +77,27 @@ class Visuals(motion.Visuals):
         y = 620 + (738 - sized.height) // 2 + dy
         image.paste(sized, (x, y))
         self.type.text(image, 'SPECIES REFERENCE PHOTO · NOT A RECORDED TRIAL',
-                       540, 1450, 28, nature.MUTED, anchor='mm')
+                       540, 1420, 28, nature.MUTED, anchor='mm')
         return image
+
+    def transition(self, image, shot, t):
+        """Fade the complete current artwork, never mix different claims.
+        
+        Titles/captions are added after this step. Fade out before a real
+        boundary and in after it so no new title overlays previous data.
+        """
+        half = motion.TRANSITION_SECONDS / 2
+        start, end = shot['start'], shot['end']
+        before = any(abs(item['end'] - start) < 1e-5 and item['start'] < start
+                     for item in self.timeline)
+        after = any(abs(item['start'] - end) < 1e-5 and item['end'] > end
+                    for item in self.timeline)
+        alpha = 1.0
+        if before:
+            alpha = min(alpha, motion.ease(max(0.0, min(1.0, (t - start) / half))))
+        if after:
+            alpha = min(alpha, motion.ease(max(0.0, min(1.0, (end - t) / half))))
+        return image if alpha >= 1.0 else Image.blend(self.background, image, alpha)
 
     def _note(self, im, words):
         self.type.block(im, words, 540, 1320, 28, nature.MUTED,
@@ -180,6 +199,7 @@ def render(episode, voice, output, *, media_dir=None, qa_dir=None):
         motion.render.__code__, namespace, 'render_portia_motion',
         motion.render.__defaults__, motion.render.__closure__)
     result = pipeline(episode, voice, output, media_dir=media_dir, qa_dir=qa_dir)
+    result['motion_features']['transitions'] = ('Whole-art 0.18-second fade out before each boundary and 0.18-second fade in after it; no overlapping or sliced claims; captions and logo remain single')
     result['scene_family'] = FAMILY
     result['scene_doi'] = DOI
     return result

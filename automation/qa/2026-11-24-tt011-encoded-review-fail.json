@@ -1,0 +1,21 @@
+{
+  "episode_id": "TT-011",
+  "reviewed_at": "2026-11-24T16:56:33.962Z",
+  "reviewer": "Independent 24 November evening publisher review of prior producer export",
+  "decision": "fail",
+  "fingerprint": "c13525a46dd578677151f72204f348599a0bfa2775acff1587ca8851f1795cdb",
+  "review_index_sha256": "0e8eb61ea55fb2e2e6d5cb482763516ad24543c2f5b109f56a2fd293e33a2a53",
+  "manifest_sha256": "bb612cbafde41fcac4074ada288d6850503d8e51e7f963a068555479da100118",
+  "video_sha256": "f7f7ca2cf7acb50a87d643c92b8dd5af67e69a04b27ab0f05a6a04ac6fdf9b70",
+  "cover_sha256": "3bea6221e90b9fdcb90edeb32365fe2096cef4658102edc152a7267bd5b2b194",
+  "artifact_id": 14904816449,
+  "pages_artifact_id": 14904571915,
+  "workflow_run": 45360107258,
+  "decoded_video_audio": true,
+  "reviewed_shots": 16,
+  "reviewed_boundaries": 15,
+  "perceptual_listening_claimed": false,
+  "continuous_playback_claimed": false,
+  "findings": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved.",
+  "release_allowed": false
+}

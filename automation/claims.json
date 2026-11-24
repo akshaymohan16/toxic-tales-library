@@ -173,7 +173,7 @@
     },
     "production:2026-11-24": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T08:45:26Z",
-      "phase": "handoff_unreleased_source_pending_independent_export_review",
+      "phase": "missed_slot_no_backfill_reserve_candidate",
       "claimed_at": "2026-11-24T08:45:26Z",
       "expires_at": "2026-11-24T12:45:26Z",
       "status": "released",
@@ -188,7 +188,7 @@
       "recovery_checked_at": "2026-11-24T08:45:26Z",
       "last_live_calendar_count": 14,
       "recovery_note": "Full live November calendar 14 items, no 24/27 receipts; intent directories contain only TT006–009; no TT010/011 releases. Expired claims safely reconciled; no provider write or retry. Reflowed all 8 segments, preserved spoken words; corrected cover six trials to six tasks.",
-      "released_at": "2026-11-24T08:53:36.972Z",
+      "released_at": "2026-11-24T16:56:33.962Z",
       "preproduction_research_note": "automation/qa/2026-11-23-science-preproduction.json",
       "unreleased_storyboards": "automation/qa/2026-11-23-unreleased-storyboards.json",
       "submission_intent_written": false,
@@ -209,22 +209,22 @@
       "asset_pin_sha256": "3807578f3a93cdaa7bd009921f58b522907871235d7d711ce2bdd9c18aa2ecb9",
       "asset_pin_action_run": 45141692028,
       "render_entrypoint": "scripts/build_crows.py",
-      "release_status": "not_released_pending_encoded_independent_QA",
+      "release_status": "unreleased_reserve_candidate",
       "render_attempt": {
-        "source_commit": "a8557a8e736092ed50d526d0512dddb83f230226",
-        "workflow_run_id": 45359984811,
-        "status": "pending_at_last_inspection",
+        "source_commit": "dcf6e411dca2be78990e296cee2e93c77697e023",
+        "workflow_run_id": 45360107258,
+        "status": "completed_success",
         "provider_receipts": 0
       },
       "last_render_failure": "45359215067 final transcript exact token narrow absent; narration used narrower; changed source spoken word and matching caption, unchanged ASR gate",
-      "release_reason": "Current run ends with no external write or submission intent; allow next run to reconcile and independently review/repair without waiting for stale lease."
+      "release_reason": "Tuesday elapsed with no receipts; no catch-up. Preserve successful technical render as reserve only."
     },
     "production:2026-11-27": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T16:52:41Z",
-      "phase": "independent_encoded_export_review",
+      "phase": "encoded_review_failed_source_specific_transition_repaired",
       "claimed_at": "2026-11-24T16:52:41Z",
       "expires_at": "2026-11-24T20:52:41Z",
-      "status": "active",
+      "status": "released",
       "publication_date": "2026-11-27T10:00:00+01:00",
       "required_destinations": [
         "instagram",
@@ -236,7 +236,7 @@
       "recovery_checked_at": "2026-11-24T16:52:41Z",
       "last_live_calendar_count": 14,
       "recovery_note": "Full November live calendar and intent directories inspected; no TT011 reservations or intents. Tuesday elapsed; focus Friday.",
-      "released_at": "2026-11-24T08:53:36.972Z",
+      "released_at": "2026-11-24T16:56:33.962Z",
       "preproduction_research_note": "automation/qa/2026-11-23-science-preproduction.json",
       "unreleased_storyboards": "automation/qa/2026-11-23-unreleased-storyboards.json",
       "submission_intent_written": false,
@@ -257,14 +257,15 @@
         "source_sha256": "de08aea63de460b947589e0e5a045d752604cbd93f8cd2cd1d697ca8eaa751a7"
       },
       "render_entrypoint": "scripts/build_portia.py",
-      "release_status": "not_released_pending_encoded_independent_QA",
-      "release_reason": "Current run ends with no external write or submission intent; allow next run to reconcile and independently review/repair without waiting for stale lease.",
+      "release_status": "not_released_pending_new_independent_review",
+      "release_reason": "No provider intent or writes. Allow next independent reviewer to acquire after fresh reconciliation.",
       "render_attempt": {
         "source_commit": "dcf6e411dca2be78990e296cee2e93c77697e023",
         "workflow_run_id": 45360107258,
         "status": "completed_success",
         "provider_receipts": 0
-      }
+      },
+      "last_render_failure": "Independent review of exact TT-011 encoded export c13525a46dd5: verified MP4, manifest and all 84 review-package member hashes; decoded actual H264/AAC export without errors; inspected opening/cover/final and all 16 shots, 15 boundaries and two transition samples per shot; final ASR 0.9663, no perceptual listening claimed. FAIL: during shot 09 +0.18s the inherited spatial wipe produces incomplete '4 OF 1' with old '4.27 s' and mismatched count icons; shot 14 and 15 similarly split/mix quantitative labels. Source-specific repair switches to whole-art fades out before boundary and in after boundary, never blends two claims. Raised photo provenance label away from captions. Fresh independent exact-export review is mandatory; neither unreleased film is approved."
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
