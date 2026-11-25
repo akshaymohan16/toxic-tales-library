@@ -353,8 +353,8 @@
     },
     "production:2026-12-01": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T09:19:09Z",
-      "phase": "exact_export_release_pending_post_release_deployment",
-      "status": "released",
+      "phase": "both_destination_receipts_verified",
+      "status": "completed",
       "claimed_at": "2026-11-25T09:21:50.812Z",
       "expires_at": "2026-11-25T10:21:50.812Z",
       "publication_date": "2026-12-01T10:00:00+01:00",
@@ -384,7 +384,7 @@
           "Early samples 1–8 inspected; previous art wipes cause misleading WATER/SAND, SINKING/FLOATING, SOLID/FLOATING and NARROW/TOO LOW mixed pairs. Fail early; remaining samples and exact MP4 audio not reviewed."
         ]
       },
-      "next_action": "Inspect new release commit's actual build/deploy/public-media jobs and exact publish queue; then fresh December calendar, quota, per-destination CAS claims and intents; schedule both Dec 1 slots and verify provider bytes. No duplicate or rerender.",
+      "next_action": "Prepare distinct verified PMC paper for December 4, no duplicate or backfill.",
       "reconciled_calendar_at": "2026-11-25T09:21:50.812Z",
       "current_review": {
         "decision": "pass",
@@ -405,11 +405,33 @@
       "release_fingerprint": "b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
       "encoded_review_index_sha256": "1acc972615d83eb185c5a750221cd0730d23890927f76d4fe3e45a8b5fd64940",
       "submission_intent_written": false,
-      "provider_writes": 0
+      "provider_writes": 0,
+      "completed_at": "2026-11-25T09:29:12.058Z",
+      "provider_receipts": [
+        {
+          "platform": "instagram",
+          "metricool_id": "441454695",
+          "metricool_uuid": "5350388857459918883",
+          "provider_status": "PENDING",
+          "publication_date": "2026-12-01T10:00:00+01:00",
+          "verified_readback": true,
+          "provider_bytes_verified": true
+        },
+        {
+          "platform": "youtube",
+          "metricool_id": "441455191",
+          "metricool_uuid": "-1947402672798085253",
+          "provider_status": "PENDING",
+          "publication_date": "2026-12-01T10:00:00+01:00",
+          "verified_readback": true,
+          "provider_bytes_verified": true
+        }
+      ],
+      "provider_byte_verification_run": 45585719377
     },
     "submission:instagram:2026-12-01T10:00:Europe/Vienna": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T09:19:09Z",
-      "phase": "provider_readback_pending_byte_verification",
+      "phase": "both_destination_receipts_verified",
       "claimed_at": "2026-11-25T09:27:11.597Z",
       "expires_at": "2026-11-25T09:57:11.597Z",
       "episode_id": "TT-010",
@@ -418,15 +440,24 @@
       "publication_date": "2026-12-01T10:00:00+01:00",
       "doi": "10.1371/journal.pone.0092895",
       "release_fingerprint": "b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
-      "status": "active",
+      "status": "completed",
       "intent": "automation/instagram/TT-010-intent.json",
       "metricool_uuid": "5350388857459918883",
       "metricool_id": "441454695",
-      "readback_at": "2026-11-25T09:27:37.926Z"
+      "readback_at": "2026-11-25T09:27:37.926Z",
+      "completed_at": "2026-11-25T09:29:12.058Z",
+      "provider_byte_verification_run": 45585719377,
+      "provider_receipts": [
+        {
+          "platform": "instagram",
+          "metricool_id": "441454695",
+          "metricool_uuid": "5350388857459918883"
+        }
+      ]
     },
     "submission:youtube:2026-12-01T10:00:Europe/Vienna": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T09:19:09Z",
-      "phase": "provider_readback_pending_byte_verification",
+      "phase": "both_destination_receipts_verified",
       "claimed_at": "2026-11-25T09:27:11.597Z",
       "expires_at": "2026-11-25T09:57:11.597Z",
       "episode_id": "TT-010",
@@ -435,11 +466,20 @@
       "publication_date": "2026-12-01T10:00:00+01:00",
       "doi": "10.1371/journal.pone.0092895",
       "release_fingerprint": "b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
-      "status": "active",
+      "status": "completed",
       "intent": "automation/youtube/TT-010-intent.json",
       "metricool_uuid": "-1947402672798085253",
       "metricool_id": "441455191",
-      "readback_at": "2026-11-25T09:28:12.907Z"
+      "readback_at": "2026-11-25T09:28:12.907Z",
+      "completed_at": "2026-11-25T09:29:12.058Z",
+      "provider_byte_verification_run": 45585719377,
+      "provider_receipts": [
+        {
+          "platform": "youtube",
+          "metricool_id": "441455191",
+          "metricool_uuid": "-1947402672798085253"
+        }
+      ]
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."

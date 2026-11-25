@@ -78,6 +78,32 @@
       },
       "provider_byte_verification_run": 45480222208,
       "delivery_status": "Chat task-result alert only; push/email delivery unverified"
+    },
+    {
+      "key": "TT-010:b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
+      "episode_id": "TT-010",
+      "release_fingerprint": "b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
+      "status": "reported_in_chat",
+      "prepared_at": "2026-11-25T09:29:12.058Z",
+      "notified_at": "2026-11-25T09:29:12.058Z",
+      "title": "The crow and the rising water",
+      "doi": "10.1371/journal.pone.0092895",
+      "message": "Created and independently reviewed The crow and the rising water: trained New Caledonian crows preferred several useful objects and water levels, but did not reliably choose the efficient narrow tube or hidden U-tube. Identical approved MP4 SHA verified on Instagram and YouTube for Tuesday 1 December 2026 10:00 Europe/Vienna. PENDING scheduled, not published.",
+      "preview_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83.mp4",
+      "research_record_url": "https://akshaymohan16.github.io/toxic-tales-library/sources/tt-010.html",
+      "scheduled_dates": [
+        "2026-12-01T10:00:00+01:00"
+      ],
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "provider_uuids": {
+        "instagram": "5350388857459918883",
+        "youtube": "-1947402672798085253"
+      },
+      "provider_byte_verification_run": 45585719377,
+      "delivery_status": "Task-result alert prepared; push/email delivery unverified"
     }
   ],
   "publication_events": [
