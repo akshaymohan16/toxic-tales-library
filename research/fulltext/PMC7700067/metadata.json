@@ -1,0 +1,58 @@
+{
+  "pmcid": "PMC7700067",
+  "doi": "10.1007/s10071-020-01419-7",
+  "title": "Shells as ‘extended architecture’: to escape isolation, social hermit crabs choose shells with the right external architecture",
+  "article_type": "research-article",
+  "license_urls": [
+    "http://creativecommons.org/licenses/by/4.0/"
+  ],
+  "license_statement": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/ .",
+  "body_characters": 49353,
+  "sections": [
+    "Introduction",
+    "Material and methods",
+    "Study site and species",
+    "Novel navigational problem: choosing the correct shell to escape",
+    "Enclosures",
+    "Extended architecture: 3D printed shells",
+    "Experiments 1–4",
+    "Prediction and statistical analyses",
+    "Results",
+    "Discussion",
+    "Electronic supplementary material",
+    "Acknowledgements",
+    "Author contributions",
+    "Data availability",
+    "Compliance with ethical standards",
+    "Conflict of interest",
+    "Ethical approval",
+    "Footnotes",
+    "Contributor Information",
+    "References",
+    "Associated Data",
+    "Supplementary Materials",
+    "Data Availability Statement"
+  ],
+  "supplement_links": [
+    {
+      "id": "MOESM1",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material1_reqid_",
+      "position": "float"
+    }
+  ],
+  "scientific_review_complete": false,
+  "required_before_selection": [
+    "Read original study and necessary supplements",
+    "Check current correction, retraction and expression-of-concern records",
+    "Confirm peer review, study design, claims and limitations",
+    "Check each proposed visual asset licence separately"
+  ],
+  "cache_scope": "Article XML and text only; no PDF, figure or supplementary asset download. Cached access is not editorial approval.",
+  "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7700067/fullTextXML",
+  "retrieved_at": "2026-11-25T09:32:06.727618+00:00",
+  "xml_sha256": "595631b487f44d5fb20823342d00486a8fcbd46a1af862da3b384be8773bbe6e",
+  "text_sha256": "10f46b16088d0bb8ec02c534232fcf21aa087c13462b2792d90d09540a200f8e"
+}

@@ -1,0 +1,127 @@
+{
+  "pmcid": "PMC12507230",
+  "doi": "10.1371/journal.pone.0330262",
+  "title": "Octopus track chemosensory plumes to find food",
+  "article_type": "research-article",
+  "license_urls": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "license_statement": "This is an open access article distributed under the terms of the Creative Commons Attribution License , which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+  "body_characters": 82907,
+  "sections": [
+    "Introduction",
+    "(a) Indirect evidence for long-range chemosensory tracking by octopus.",
+    "Materials and methods",
+    "Ethical animal care",
+    "Flume design and water flow characteristics",
+    "(a, b) Octopus motion tracking - Principal vectors.",
+    "Octopus pose estimation using DeepLabCut",
+    "Octopus preferentially approached the single baited station from within the plume.",
+    "Octopus arm location estimation using a custom image processing method",
+    "(a, b) Estimating direction of octopus motion relative to arm position.",
+    "Three-station discrimination task",
+    "(a) Octopus can discriminate between baited and unbaited stations in the dark.",
+    "Single-station approach task",
+    "Segmenting chemosensory tracking feeding approaches",
+    "Visualizing single-station differences in octopus motion between chemosensory tracking and controls",
+    "The distribution of speed and nearest heading arm offset angles is different when octopus are chemosensory tracking.",
+    "Fast arm-aligned motions",
+    "Octopus did more fast arm aligned motions during chemosensory tracking.",
+    "Results",
+    "Octopuses use chemosensory tracking to locate food: three station discrimination task",
+    "Octopuses employ odor-gated rheotaxis and arm-aligned movement while navigating to food sources: Single station approach task",
+    "Octopus displayed odor-gated rheotaxis behaviors during chemosensory plume-guided search.",
+    "Discussion",
+    "Conclusion",
+    "Supporting information",
+    "Estimating octopus pose with DeepLabCut highlights the challenge of tracking the arms.",
+    "Normalizing octopus speed distributions with z-score.",
+    "Octopus rubescens in captivity showed nocturnal patterns of activity.",
+    "Alert and active octopus in the flume had a strong preference for remaining on the wall.",
+    "Trace of custom image processing algorithm with and without Savitzky-Golay filtering of eye coordinate predictions.",
+    "Schematics of tasks",
+    "Elaspsed time for octopus single station trajectories.",
+    "Acknowledgments",
+    "Data Availability",
+    "Funding Statement",
+    "References"
+  ],
+  "supplement_links": [
+    {
+      "id": "pone.0330262.s001",
+      "position": "float"
+    },
+    {
+      "id": "pone.0330262.s002",
+      "position": "float"
+    },
+    {
+      "id": "pone.0330262.s003",
+      "position": "float"
+    },
+    {
+      "id": "pone.0330262.s004",
+      "position": "float"
+    },
+    {
+      "id": "pone.0330262.s005",
+      "position": "float"
+    },
+    {
+      "id": "pone.0330262.s006",
+      "position": "float"
+    },
+    {
+      "id": "pone.0330262.s007",
+      "position": "float"
+    },
+    {
+      "id": "pone.0330262.s008",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material1_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material2_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material3_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material4_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material5_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material6_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material7_reqid_",
+      "position": "float"
+    },
+    {
+      "id": "db_ds_supplementary-material8_reqid_",
+      "position": "float"
+    }
+  ],
+  "scientific_review_complete": false,
+  "required_before_selection": [
+    "Read original study and necessary supplements",
+    "Check current correction, retraction and expression-of-concern records",
+    "Confirm peer review, study design, claims and limitations",
+    "Check each proposed visual asset licence separately"
+  ],
+  "cache_scope": "Article XML and text only; no PDF, figure or supplementary asset download. Cached access is not editorial approval.",
+  "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12507230/fullTextXML",
+  "retrieved_at": "2026-11-25T09:31:45.585672+00:00",
+  "xml_sha256": "73e20a2294919bb22e6533122a38c8e937853fb00acc5dca5e5391b58b97898e",
+  "text_sha256": "d5955ca9f85e51fbe9d893a8a1d2b8193219b1a46d077f0a9a43d476fcc3ddad"
+}

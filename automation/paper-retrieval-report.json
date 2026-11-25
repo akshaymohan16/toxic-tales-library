@@ -1,23 +1,31 @@
 {
   "repository": "akshaymohan16/toxic-tales-library",
-  "request_id": "sleep-2026-followup-20261121",
-  "request_sha256": "636c51b83a8075c23e0e37385c83be8c5e2f0c3527f1a0bcbb94dba8e0b74496",
-  "checked_at": "2026-11-23T08:49:30.984901+00:00",
+  "request_id": "dec04-reef-and-behaviour-reserve-20261125",
+  "request_sha256": "cc5918e0f3d2a8c709e794930ca4683f8f7d0474612dac0bda00094896761db0",
+  "checked_at": "2026-11-25T09:30:52.847634+00:00",
   "scientific_review_complete": false,
   "papers": [
     {
-      "pmcid": "PMC9388130",
-      "expected_doi": "10.1073/pnas.2204754119",
-      "status": "reused",
-      "xml_sha256": "3c461a37147968e9b55be5cc845bb20ebe595fd732084c8dec8af178afb58d1d",
-      "title": "Regularly occurring bouts of retinal movements suggest an REM sleep–like state in jumping spiders"
+      "pmcid": "PMC1750927",
+      "expected_doi": "10.1371/journal.pbio.0040431",
+      "status": "skipped",
+      "reason": "Public cache requires unambiguous article-level CC BY or CC0 licence; Article title unavailable"
     },
     {
-      "pmcid": "PMC13752372",
-      "expected_doi": "10.1073/pnas.2618030123",
-      "status": "reused",
-      "xml_sha256": "d27378b10eabacd43c55f01fa7f05406704b1e4729685c93c5a3bd9cb54347eb",
-      "title": "Behavioral evidence for two-stage sleep in spiders"
+      "pmcid": "PMC12507230",
+      "expected_doi": "10.1371/journal.pone.0330262",
+      "status": "cached",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12507230/fullTextXML",
+      "xml_sha256": "73e20a2294919bb22e6533122a38c8e937853fb00acc5dca5e5391b58b97898e",
+      "title": "Octopus track chemosensory plumes to find food"
+    },
+    {
+      "pmcid": "PMC7700067",
+      "expected_doi": "10.1007/s10071-020-01419-7",
+      "status": "cached",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7700067/fullTextXML",
+      "xml_sha256": "595631b487f44d5fb20823342d00486a8fcbd46a1af862da3b384be8773bbe6e",
+      "title": "Shells as ‘extended architecture’: to escape isolation, social hermit crabs choose shells with the right external architecture"
     }
   ]
 }
