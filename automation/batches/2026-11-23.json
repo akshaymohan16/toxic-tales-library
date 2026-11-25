@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-24T20:23:47.970Z",
+  "updated_at": "2026-11-25T06:18:03.111Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
@@ -54,7 +54,7 @@
   "science_rights_release_status": "TT-011 released, deployed and exact identical MP4 provider bytes verified",
   "expired_claims": [],
   "provider_reconciliation": {
-    "checked_at": "2026-11-24T20:23:47.970Z",
+    "checked_at": "2026-11-25T06:18:03.111Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -75,8 +75,8 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": true,
-      "independent_public_verification_job": 138748351168,
-      "independent_public_verification_basis": "Actual 20:18 UTC watchdog log positively verifies public Short; Metricool remains ERROR.",
+      "independent_public_verification_job": 138826668279,
+      "independent_public_verification_basis": "Actual latest watchdog log verified public Short; provider ERROR retained.",
       "retry_allowed": false
     },
     "weekly_slots": [
@@ -109,8 +109,8 @@
     ],
     "weekly_receipts": 2,
     "missing_destinations": 2,
-    "provider_writes": 2,
-    "new_releases": 1,
+    "provider_writes": 0,
+    "new_releases": 0,
     "new_confirmed_published_keys": [],
     "history_preserved": true,
     "owner_action_blockers": [],
@@ -126,14 +126,13 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45479451730,
+      "id": 45501785302,
       "conclusion": "failure",
-      "cause": "Actual job 138748351168: 121 tests and enforcer passed; four absent destinations (Tuesday elapsed, Friday still recoverable); public TT009 warning confirmed; quota projected 14."
+      "cause": "Actual audit job 138826668279: 121 tests pass, TT009 public warning verified; missed Tuesday 24 November pair; Friday reserved."
     },
     "latest_archive_workflow": {
-      "id": 45442959490,
-      "conclusion": "success",
-      "public_files_verified": 63
+      "id": 45480712547,
+      "conclusion": "success"
     },
     "last_pre_change_successful_archive_workflow": {
       "id": 45221358609,
@@ -161,7 +160,7 @@
       "440852560",
       "440852965"
     ],
-    "calendar_repeat_attempt": "Fresh full November and December calendar reads: 14 November entries, 0 December entries.",
+    "calendar_repeat_attempt": "Fresh full November calendar: 16; December: 0; Friday UUIDs and actual hosted media unchanged.",
     "missed_destinations": 2,
     "future_missing_destinations": 0,
     "tt011_encoded_review": {
@@ -282,6 +281,24 @@
       },
       "passed": true,
       "decision": "pass"
+    },
+    "tt010_current_review": {
+      "decision": "fail_requires_targeted_physics_repair",
+      "reviewed_at": "2026-11-25T06:18:03.111Z",
+      "run_id": 45480712547,
+      "artifact_id": 14960279571,
+      "pages_artifact_id": 14960753998,
+      "fingerprint": "da818119aa99d82c9d8a6d1ef4d730677ac4f7c322632e430dc32aad1fbb6656",
+      "review_index_sha256": "dffbb01b0da73f4b4a0a7a18129169fc936c5d7928d53786ee5a33841c2a9943",
+      "mp4_sha256": "22484da62724983b3616c468ab0749c083c9e1d0be03376204999b29852dfeb4",
+      "package_hashes_verified": 79,
+      "findings": [
+        "All 15 midpoints, 28 boundary frames, 30 early samples, opening 0/1 seconds, final and cover inspected; literal title and mixed-transition problems corrected.",
+        "Core displacement illustration incorrectly draws the floating reward before raising water, causing the food to disappear under the raised water in actual midpoints 2 and 4. Stone overlaps the label in early samples. Experiment 5 incorrectly illustrates equal-width tubes even though the high water was in the wide tube and low water in the narrow tube. Repair these source-specific errors, not the frozen shared renderer.",
+        "Exact MP4 extracted from Pages artifact and SHA matched; full ffmpeg decode had no errors. Manifest final ASR 0.9863945578, critical terminology present, normalized output -16.09 LUFS, -4.41 dBTP. No listening or moving-playback claim.",
+        "Fresh source Methods recheck, PLOS DOI and PubMed 24671252 notice search; no specific focal correction found. Commons CC0 benkeen image independently confirmed; no uninspected supplement used."
+      ],
+      "repair": "Move floating reward to the raised water surface and draw after the rise; rise starts after contact, shift stone away from labels; depict the actual high-wide vs low-narrow contrast; move photo provenance above border. Only unreleased crow-specific renderer changed."
     }
   },
   "owner_action_blocker": false,

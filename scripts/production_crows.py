@@ -80,7 +80,7 @@ class Visuals(motion.Visuals):
         y = 620 + (738 - sized.height) // 2 + dy
         image.paste(sized, (x, y))
         self.type.text(image, 'WILD REFERENCE PHOTO · NOT A RECORDED TRIAL',
-                       540, 1420, 28, nature.MUTED, anchor='mm')
+                       540, 1390, 28, nature.MUTED, anchor='mm')
         return image
 
     def transition(self, image, shot, t):
@@ -113,24 +113,28 @@ class Visuals(motion.Visuals):
         d.rectangle((left + 9, y, right - 9, bottom - 9),
                     fill=WATER if water else SAND)
         d.line((left + 11, y, right - 11, y), fill='#d3e6df', width=5)
+        if stone:
+            progress = motion.ease(max(0.0, min(1.0, t / 3.0)))
+            # Begin just above the rim, below its label. Water rises only
+            # after the stone contacts it, and the reward stays at the surface.
+            initial_y = y
+            stone_y = top - 32 + int((initial_y + 70 - (top - 32)) * progress)
+            if water:
+                contact = initial_y - 17
+                submerged = max(0.0, min(1.0, (stone_y - contact) / 70.0))
+                raise_by = int(30 * submerged)
+                if raise_by:
+                    d.rectangle((left + 9, initial_y - raise_by, right - 9, initial_y), fill=WATER)
+                    d.line((left + 11, initial_y - raise_by, right - 11, initial_y - raise_by),
+                           fill='#d3e6df', width=5)
+                    y = initial_y - raise_by
+            d.ellipse((cx - 19, stone_y - 17, cx + 19, stone_y + 17),
+                      fill='#8d9395', outline='#d3d8d9', width=3)
         if water and reward:
-            # A small fixed cork-and-food icon, not a measured data point.
+            # Draw AFTER the water rise, preserving floating cork and food.
             d.ellipse((cx - 28, y - 18, cx + 28, y - 1),
                       fill='#e0c59d', outline='#936e4a', width=3)
             d.rectangle((cx - 16, y - 31, cx + 16, y - 17), fill=GOLD)
-        if stone:
-            progress = motion.ease(max(0.0, min(1.0, t / 3.0)))
-            # A schematic action: the arbitrary timing is not experiment data.
-            stone_y = top - 80 + int((y + 70 - (top - 80)) * progress)
-            if water:
-                # The schematic liquid rise is qualitative.
-                raise_by = int(30 * progress)
-                if raise_by:
-                    d.rectangle((left + 9, y - raise_by, right - 9, y), fill=WATER)
-                    d.line((left + 11, y - raise_by, right - 11, y - raise_by),
-                           fill='#d3e6df', width=5)
-            d.ellipse((cx - 19, stone_y - 17, cx + 19, stone_y + 17),
-                      fill='#8d9395', outline='#d3d8d9', width=3)
         return y
 
     @staticmethod
@@ -184,13 +188,13 @@ class Visuals(motion.Visuals):
             self.type.text(im, 'HOLLOW', 784, 677, 46, nature.ICE, anchor='mm')
             self._note(im, 'STUDY OBJECTS WERE SAME SIZE AND WEIGHT')
         elif kind == 'crow_high':
-            self._tube(im, 295, width=224, level=.72, reward=True)
-            self._tube(im, 785, width=224, level=.20, reward=True)
-            self.type.text(im, 'HIGHER START', 295, 673, 39, nature.ICE,
+            self._tube(im, 295, width=310, level=.72, reward=True)
+            self._tube(im, 785, width=145, level=.20, reward=True)
+            self.type.text(im, 'HIGH · WIDE', 295, 673, 39, nature.ICE,
                            anchor='mm')
-            self.type.text(im, 'TOO LOW', 785, 673, 39, nature.ICE,
+            self.type.text(im, 'LOW · NARROW', 785, 673, 39, nature.ICE,
                            anchor='mm')
-            self._note(im, 'THE USEFUL STARTING LEVEL WAS LEARNED OVER TRIALS')
+            self._note(im, 'ONLY THE HIGH-WATER WIDE TUBE WAS FUNCTIONAL')
         elif kind == 'crow_narrow':
             self._tube(im, 298, width=145, level=.43, reward=True)
             self._tube(im, 774, width=310, level=.43, reward=True)

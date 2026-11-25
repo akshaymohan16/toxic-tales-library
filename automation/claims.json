@@ -353,8 +353,8 @@
     },
     "production:2026-12-01": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T06:15:03Z",
-      "phase": "independent_review_found_physics_animation_defect",
-      "status": "active",
+      "phase": "targeted_scientific_motion_repair_pending_cloud_build",
+      "status": "released",
       "claimed_at": "2026-11-25T06:17:24.625Z",
       "expires_at": "2026-11-25T07:17:24.625Z",
       "publication_date": "2026-12-01T10:00:00+01:00",
@@ -365,16 +365,16 @@
       "episode_id": "TT-010",
       "doi": "10.1371/journal.pone.0092895",
       "render_attempt": {
-        "run_id": 45480712547,
-        "source_commit": "af9138b4a4a7e97600d5fe8a4cfa9541a3f3627e",
-        "observed_at": "2026-11-24T20:25:58.626Z",
-        "status": "pending in build concurrency queue",
-        "artifact_id": null,
-        "next_action": "Check this run's actual build, deploy and public-media jobs; retrieve matching compact review and exact MP4; independently review after literal-title and nonoverlap fade fix, recheck full source/corrections/rights, release and reserve December 1 pair only after gates. Then December 4 distinct paper. Do not restart an already completed build."
+        "source_commit": "repair commit containing this record",
+        "observed_at": "2026-11-25T06:18:03.111Z",
+        "status": "targeted_crow_renderer_repair_committed_new_build_required",
+        "prior_completed_run_id": 45480712547,
+        "prior_artifact_id": 14960279571,
+        "next_action": "Inspect actual new build for this repair; retrieve exact new TT-010 compact package and MP4, independently verify that floating reward visibly rises, labels remain clear, high-wide/low-narrow matches Methods, all other gates pass; release/deploy and reserve December 1 pair; then December 4 distinct study. Do not rerun unchanged successful build."
       },
       "note": "Friday TT-011 exact pair verified; December complete live calendar zero items; 9 regular dates x2=18 projected, no historical backfill. TT010 distinct unreleased reserve, no provider writes. Independent review needed before release.",
-      "released_at": "2026-11-24T20:25:38.826Z",
-      "quality_status": "Previous actual TT-010 encoded review FAIL: literal escaped titles and spatial wipes mix incompatible labels; source-specific repair applied, fresh independent review required",
+      "released_at": "2026-11-25T06:18:03.111Z",
+      "quality_status": "fail_requires_targeted_physics_repair",
       "prior_failed_review": {
         "fingerprint": "2723b28cbdbc9609f568abe0f3004e65402689d9fd043cfa029e26ffa8617ac7",
         "artifact_id": 14945356483,
@@ -385,8 +385,26 @@
           "Early samples 1–8 inspected; previous art wipes cause misleading WATER/SAND, SINKING/FLOATING, SOLID/FLOATING and NARROW/TOO LOW mixed pairs. Fail early; remaining samples and exact MP4 audio not reviewed."
         ]
       },
-      "next_action": "Check this run's actual build, deploy and public-media jobs; retrieve matching compact review and exact MP4; independently review after literal-title and nonoverlap fade fix, recheck full source/corrections/rights, release and reserve December 1 pair only after gates. Then December 4 distinct paper. Do not restart an already completed build.",
-      "reconciled_calendar_at": "2026-11-25T06:17:24.625Z"
+      "next_action": "Inspect actual new build for this repair; retrieve exact new TT-010 compact package and MP4, independently verify that floating reward visibly rises, labels remain clear, high-wide/low-narrow matches Methods, all other gates pass; release/deploy and reserve December 1 pair; then December 4 distinct study. Do not rerun unchanged successful build.",
+      "reconciled_calendar_at": "2026-11-25T06:17:24.625Z",
+      "current_review": {
+        "decision": "fail_requires_targeted_physics_repair",
+        "reviewed_at": "2026-11-25T06:18:03.111Z",
+        "run_id": 45480712547,
+        "artifact_id": 14960279571,
+        "pages_artifact_id": 14960753998,
+        "fingerprint": "da818119aa99d82c9d8a6d1ef4d730677ac4f7c322632e430dc32aad1fbb6656",
+        "review_index_sha256": "dffbb01b0da73f4b4a0a7a18129169fc936c5d7928d53786ee5a33841c2a9943",
+        "mp4_sha256": "22484da62724983b3616c468ab0749c083c9e1d0be03376204999b29852dfeb4",
+        "package_hashes_verified": 79,
+        "findings": [
+          "All 15 midpoints, 28 boundary frames, 30 early samples, opening 0/1 seconds, final and cover inspected; literal title and mixed-transition problems corrected.",
+          "Core displacement illustration incorrectly draws the floating reward before raising water, causing the food to disappear under the raised water in actual midpoints 2 and 4. Stone overlaps the label in early samples. Experiment 5 incorrectly illustrates equal-width tubes even though the high water was in the wide tube and low water in the narrow tube. Repair these source-specific errors, not the frozen shared renderer.",
+          "Exact MP4 extracted from Pages artifact and SHA matched; full ffmpeg decode had no errors. Manifest final ASR 0.9863945578, critical terminology present, normalized output -16.09 LUFS, -4.41 dBTP. No listening or moving-playback claim.",
+          "Fresh source Methods recheck, PLOS DOI and PubMed 24671252 notice search; no specific focal correction found. Commons CC0 benkeen image independently confirmed; no uninspected supplement used."
+        ],
+        "repair": "Move floating reward to the raised water surface and draw after the rise; rise starts after contact, shift stone away from labels; depict the actual high-wide vs low-narrow contrast; move photo provenance above border. Only unreleased crow-specific renderer changed."
+      }
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
