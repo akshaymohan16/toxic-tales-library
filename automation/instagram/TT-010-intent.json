@@ -6,7 +6,7 @@
   "timezone": "Europe/Vienna",
   "created_at": "2026-11-25T09:27:11.597Z",
   "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T09:19:09Z",
-  "status": "intent_persisted_before_submission",
+  "status": "scheduled_readback_pending_byte_verification",
   "source_video_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
   "source_media_urls": [
     "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83.mp4"
@@ -34,5 +34,60 @@
   "format": "REEL",
   "source_cover_sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2",
   "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83_cover.jpg",
-  "reviewed_caption": "Could a trained crow raise a floating reward with stones? Six New Caledonian crows made choices between materials and water-filled tubes. They more often used water than sand, sinking rather than floating objects, and solid rather than hollow ones. They favoured higher starting water—but did not reliably prefer the more efficient narrow tube or identify a concealed functional U-tube connection. Only four birds completed every test. These controlled tasks show selectivity, not a proof of complete causal understanding or of wild stone-dropping.\n\nJelbert et al. (2014), PLOS ONE. DOI: 10.1371/journal.pone.0092895\nFull open-access paper: https://pmc.ncbi.nlm.nih.gov/articles/PMC3966847/\nEvidence, limitations and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-010.html\n\nWild crow reference photo: benkeen / iNaturalist, CC0 1.0 (NOT experiment footage). Original water/tube animations are conceptual schematics, not recorded experiments or measured trajectories. Synthetic neural narration, captions and real Toxic Tales logo.\n\n#ToxicTales #Crows #AnimalBehaviour #Ecology #Science"
+  "reviewed_caption": "Could a trained crow raise a floating reward with stones? Six New Caledonian crows made choices between materials and water-filled tubes. They more often used water than sand, sinking rather than floating objects, and solid rather than hollow ones. They favoured higher starting water—but did not reliably prefer the more efficient narrow tube or identify a concealed functional U-tube connection. Only four birds completed every test. These controlled tasks show selectivity, not a proof of complete causal understanding or of wild stone-dropping.\n\nJelbert et al. (2014), PLOS ONE. DOI: 10.1371/journal.pone.0092895\nFull open-access paper: https://pmc.ncbi.nlm.nih.gov/articles/PMC3966847/\nEvidence, limitations and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-010.html\n\nWild crow reference photo: benkeen / iNaturalist, CC0 1.0 (NOT experiment footage). Original water/tube animations are conceptual schematics, not recorded experiments or measured trajectories. Synthetic neural narration, captions and real Toxic Tales logo.\n\n#ToxicTales #Crows #AnimalBehaviour #Ecology #Science",
+  "provider_readback": {
+    "id": 441454695,
+    "publicationDate": {
+      "dateTime": "2026-12-01T10:00:00",
+      "timezone": "Europe/Vienna"
+    },
+    "creationDate": {
+      "dateTime": "2026-11-25T10:27:00",
+      "timezone": "Europe/Vienna"
+    },
+    "text": "Could a trained crow raise a floating reward with stones? Six New Caledonian crows made choices between materials and water-filled tubes. They more often used water than sand, sinking rather than floating objects, and solid rather than hollow ones. They favoured higher starting water—but did not reliably prefer the more efficient narrow tube or identify a concealed functional U-tube connection. Only four birds completed every test. These controlled tasks show selectivity, not a proof of complete causal understanding or of wild stone-dropping.\n\nJelbert et al. (2014), PLOS ONE. DOI: 10.1371/journal.pone.0092895\nFull open-access paper: https://pmc.ncbi.nlm.nih.gov/articles/PMC3966847/\nEvidence, limitations and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-010.html\n\nWild crow reference photo: benkeen / iNaturalist, CC0 1.0 (NOT experiment footage). Original water/tube animations are conceptual schematics, not recorded experiments or measured trajectories. Synthetic neural narration, captions and real Toxic Tales logo.\n\n#ToxicTales #Crows #AnimalBehaviour #Ecology #Science",
+    "firstCommentText": "",
+    "providers": [
+      {
+        "network": "instagram",
+        "status": "PENDING",
+        "detailedStatus": "Pending"
+      }
+    ],
+    "media": [
+      "https://static.metricool.com/planner/202611/7937614-file-6111363760069145111.mp4"
+    ],
+    "autoPublish": true,
+    "saveExternalMediaFiles": false,
+    "mediaAltText": [
+      null
+    ],
+    "shortener": false,
+    "draft": false,
+    "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-7239913519089911630.jpeg",
+    "imageVariants": false,
+    "twitterData": {
+      "type": "POST"
+    },
+    "instagramData": {
+      "autoPublish": true,
+      "type": "REEL",
+      "showReelOnFeed": true,
+      "isAiGenerated": true,
+      "isPaidPartnership": false
+    },
+    "hasNotReadNotes": false,
+    "uuid": "5350388857459918883",
+    "creatorUserMail": "akshaymohank21@gmail.com",
+    "creatorUserId": 6223629,
+    "brandTags": []
+  },
+  "last_reconciled_at": "2026-11-25T09:27:37.926Z",
+  "schedule_readback_verified": true,
+  "metricool_id": "441454695",
+  "metricool_uuid": "5350388857459918883",
+  "provider_media_url": "https://static.metricool.com/planner/202611/7937614-file-6111363760069145111.mp4",
+  "provider_cover_url": "https://static.metricool.com/planner/202611/7937614-file-7239913519089911630.jpeg",
+  "provider_status": "PENDING",
+  "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=5350388857459918883"
 }
