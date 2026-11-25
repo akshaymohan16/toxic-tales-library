@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-30",
   "created_on": "2026-11-24",
-  "updated_at": "2026-11-25T12:18:06.658Z",
+  "updated_at": "2026-11-25T12:20:03.960Z",
   "timezone": "Europe/Vienna",
   "status": "DECEMBER_1_PAIR_VERIFIED_DECEMBER_4_MISSING",
   "required_success": {
@@ -63,7 +63,7 @@
       "projected": 18,
       "cap": 20
     },
-    "status": "2/4 verified; December 4 production underway",
+    "status": "2/4 verified; TT-012 render requested",
     "earliest_slot": "2026-12-04T10:00:00+01:00",
     "candidate": "TT-012",
     "prior_failed_review": {
@@ -77,21 +77,13 @@
       ]
     },
     "pending_build": {
-      "episode_id": "TT-010",
-      "release_commit": "2ef29b8ad4cb1693f4df55520994fca88a221068",
-      "run_id": 45585016473,
-      "status": "success",
-      "manifest_artifact_id": 15007923404,
-      "pages_artifact_id": 15008162740,
-      "public_verification_artifact_id": 15008696673,
-      "public_verification": {
-        "job_id": 139105155953,
-        "checked_at": "2026-11-25T09:25:59.192837+00:00",
-        "public_files_verified": 63,
-        "passed": true,
-        "queue_sha256": "4ce96651021f15d37cf34c67bde36ecb8cbbd123830e15611d4540138fdeba38"
-      },
-      "observed_at": "2026-11-25T09:28:12.907Z"
+      "episode_id": "TT-012",
+      "run_id": 45612653983,
+      "source_commit": "e19c71c82e1d04575488f7dde288a3c7b5f0cf8b",
+      "status": "pending",
+      "conclusion": null,
+      "observed_at": "2026-11-25T12:20:03.960Z",
+      "next_action": "Resume TT-012 exact build run 45612653983; inspect actual jobs/logs and completed compact review artifact, then independently review the exact encoded MP4, all scenes/transitions, cover, audio/ASR, source and rights. Only if pass, release and verify public bytes before December 4 paired reservations. Do not restart a successful build or duplicate existing TT-010/011."
     },
     "current_review": {
       "decision": "pass",
@@ -260,23 +252,15 @@
     }
   },
   "owner_action_blocker": false,
-  "next_step": "TT-012 octopus chemical-trail candidate: full text and reference-photo pin verified. Finish source-specific source and render; independently review exact encoded MP4 before release, then reserve both December 4 destinations. No backfill or duplicates.",
+  "next_step": "Resume TT-012 exact build run 45612653983; inspect actual jobs/logs and completed compact review artifact, then independently review the exact encoded MP4, all scenes/transitions, cover, audio/ASR, source and rights. Only if pass, release and verify public bytes before December 4 paired reservations. Do not restart a successful build or duplicate existing TT-010/011.",
   "pending_build": {
-    "episode_id": "TT-010",
-    "release_commit": "2ef29b8ad4cb1693f4df55520994fca88a221068",
-    "run_id": 45585016473,
-    "status": "success",
-    "manifest_artifact_id": 15007923404,
-    "pages_artifact_id": 15008162740,
-    "public_verification_artifact_id": 15008696673,
-    "public_verification": {
-      "job_id": 139105155953,
-      "checked_at": "2026-11-25T09:25:59.192837+00:00",
-      "public_files_verified": 63,
-      "passed": true,
-      "queue_sha256": "4ce96651021f15d37cf34c67bde36ecb8cbbd123830e15611d4540138fdeba38"
-    },
-    "observed_at": "2026-11-25T09:28:12.907Z"
+    "episode_id": "TT-012",
+    "run_id": 45612653983,
+    "source_commit": "e19c71c82e1d04575488f7dde288a3c7b5f0cf8b",
+    "status": "pending",
+    "conclusion": null,
+    "observed_at": "2026-11-25T12:20:03.960Z",
+    "next_action": "Resume TT-012 exact build run 45612653983; inspect actual jobs/logs and completed compact review artifact, then independently review the exact encoded MP4, all scenes/transitions, cover, audio/ASR, source and rights. Only if pass, release and verify public bytes before December 4 paired reservations. Do not restart a successful build or duplicate existing TT-010/011."
   },
   "pending_provider_byte_verification": {
     "episode_id": "TT-010",

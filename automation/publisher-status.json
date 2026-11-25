@@ -1,12 +1,12 @@
 {
   "checked_on": "2026-11-25",
-  "updated_at": "2026-11-25T12:18:06.658Z",
+  "updated_at": "2026-11-25T12:20:03.960Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_connection_verified": true,
-  "decision": "Friday and next Tuesday scheduled; December 4 TT-012 in production; elapsed November 24 preserved as missed.",
+  "decision": "TT-011 and TT-010 pairs remain scheduled; December 4 TT-012 render queued; no new release or provider submission.",
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
@@ -133,7 +133,7 @@
   ],
   "deployment_and_media": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed.",
   "review_limit": "Actual encoded export frame samples, SHA and ASR verified; repaired transition review passed. No perceptual listening or uninterrupted moving playback claimed.",
-  "automatic_next_step": "TT-012 octopus chemical-trail candidate: full text and reference-photo pin verified. Finish source-specific source and render; independently review exact encoded MP4 before release, then reserve both December 4 destinations. No backfill or duplicates.",
+  "automatic_next_step": "Resume TT-012 exact build run 45612653983; inspect actual jobs/logs and completed compact review artifact, then independently review the exact encoded MP4, all scenes/transitions, cover, audio/ASR, source and rights. Only if pass, release and verify public bytes before December 4 paired reservations. Do not restart a successful build or duplicate existing TT-010/011.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
   "scheduled_posts_returned": 4,
   "published_provider_receipts": 11,
@@ -150,9 +150,9 @@
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
     "provider_byte_verification_run": 45585719377,
-    "latest_watchdog_run": 45586171144,
+    "latest_watchdog_run": 45612653917,
     "latest_watchdog_conclusion": "failure_elapsed_tuesday_only",
-    "latest_build_run": 45585016473,
+    "latest_build_run": 45612653983,
     "latest_build_verified_steps": [
       "Test exact-file releases and caption safeguards",
       "Test and enforce Reels-only source policy",
@@ -161,7 +161,7 @@
     "latest_paper_retrieval_run": 45586075305,
     "latest_paper_retrieval_conclusion": "success",
     "fresh_live_metricool_reconciliation_at": "2026-11-25T12:13:12Z",
-    "latest_build_conclusion": "success",
+    "latest_build_conclusion": null,
     "latest_build_failure_step": "prior run Build reviewed stories and media",
     "latest_build_failure_cause": "exact ASR token narrow absent; narration source repaired",
     "claim_ownership_verified": true,
@@ -181,7 +181,7 @@
     "youtube_public_verification_run": 45442959516,
     "youtube_public_verification_conclusion": "success",
     "youtube_public_verification_basis": "Public oEmbed exact title and channel identity; yt-dlp blocked by bot check",
-    "latest_watchdog_reason": "Post-receipt actual readiness log: test and policy success, historical Nov 24 slots missing only, TT-009 public verified with provider ERROR warning.",
+    "latest_watchdog_reason": "Actual current run 121 automation tests and enforcer pass; Nov 24 Instagram and YouTube missing only; TT009 public verified with provider ERROR warning.",
     "latest_public_verification_status": "completed_success",
     "last_verified_archive_build_run": 45559585742,
     "last_verified_archive_build_conclusion": "success",
@@ -197,11 +197,11 @@
     "tests_run_again_after_this_commit": true,
     "latest_archive_build_conclusion": "success",
     "latest_provider_byte_verification_conclusion": "success",
-    "latest_watchdog_job": 139108216736,
+    "latest_watchdog_job": 139199905299,
     "tests_passed": 121,
     "enforcer": "pass",
-    "readiness": "failure: historical missed 24 November Instagram and YouTube; no backfill; 27 November pair scheduled",
-    "checked_at": "2026-11-25T12:18:06.658Z"
+    "readiness": "failure: elapsed November 24 only; Friday pair scheduled",
+    "checked_at": "2026-11-25T12:20:03.960Z"
   },
   "current_one_off": {
     "episode_id": "TT-008",
@@ -232,13 +232,13 @@
       "provider_status": "ERROR",
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
-      "public_title_channel_independently_rechecked_this_run": false,
+      "public_title_channel_independently_rechecked_this_run": true,
       "independent_public_verification_job": 139104287999,
       "independent_public_verification_basis": "Actual readiness log: public YouTube Short verified; thumbnail-only warning; preserve ERROR and do not duplicate.",
       "retry_allowed": false,
-      "independent_verification_run": 45586171144,
-      "independent_verification_job": 139108216736,
-      "independent_verification_at": "2026-11-25T09:31:20.4012445Z",
+      "independent_verification_run": 45612653917,
+      "independent_verification_job": 139199905299,
+      "independent_verification_at": "2026-11-25T12:19:37.7702285Z",
       "independent_public_verification_run": 45585016514
     },
     "weekly_slots": [
@@ -276,11 +276,9 @@
     "new_confirmed_published_keys": [],
     "history_preserved": true,
     "owner_action_blockers": [],
-    "active_production_claims": [
-      "production:2026-12-04"
-    ],
-    "active_production_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T12:13:12Z",
-    "production_claim_expires_at": "2026-11-25T16:13:12Z",
+    "active_production_claims": [],
+    "active_production_owner": null,
+    "production_claim_expires_at": null,
     "tt010_render_failure": {
       "workflow_run": 45359215067,
       "job_id": 138324658456,
@@ -290,9 +288,10 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45586171144,
+      "id": 45612653917,
+      "job": 139199905299,
       "conclusion": "failure",
-      "cause": "121 tests passed; elapsed Nov 24 slots absent; prior independent TT009 public verification in actual log."
+      "cause": "121 tests and enforcer pass; elapsed November 24 missing destinations only; TT009 public verified."
     },
     "latest_archive_workflow": {
       "id": 45585865969,
@@ -502,18 +501,23 @@
         "licence": "CC BY 4.0",
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Octopus_rubescens_189172764.jpg"
       }
+    },
+    "tt012_pending_build": {
+      "episode_id": "TT-012",
+      "run_id": 45612653983,
+      "source_commit": "e19c71c82e1d04575488f7dde288a3c7b5f0cf8b",
+      "status": "pending",
+      "conclusion": null,
+      "observed_at": "2026-11-25T12:20:03.960Z",
+      "next_action": "Resume TT-012 exact build run 45612653983; inspect actual jobs/logs and completed compact review artifact, then independently review the exact encoded MP4, all scenes/transitions, cover, audio/ASR, source and rights. Only if pass, release and verify public bytes before December 4 paired reservations. Do not restart a successful build or duplicate existing TT-010/011."
     }
   },
   "claim_coordination": {
-    "checked_at": "2026-11-25T12:18:06.658Z",
-    "status": "December 4 CAS production claim held; no provider writes",
+    "checked_at": "2026-11-25T12:20:03.960Z",
+    "status": "Production claim released after source-specific render commit; no provider writes",
     "active_competing_claims": 0,
-    "active_claim_keys": [
-      "production:2026-12-04"
-    ],
-    "active_claims": [
-      "production:2026-12-04"
-    ],
+    "active_claim_keys": [],
+    "active_claims": [],
     "completed_claims": [
       "production:2026-12-01",
       "submission:instagram:2026-12-01T10:00:Europe/Vienna",
@@ -535,7 +539,7 @@
       "projected": 18,
       "cap": 20
     },
-    "status": "2/4 verified; TT-012 production underway",
+    "status": "2/4 verified; December 4 TT-012 exact render requested",
     "earliest_slot": "2026-12-04T10:00:00+01:00",
     "candidate": "TT-012 octopus chemical-trail navigation",
     "prior_failed_review": {
@@ -549,21 +553,13 @@
       ]
     },
     "pending_build": {
-      "episode_id": "TT-010",
-      "release_commit": "2ef29b8ad4cb1693f4df55520994fca88a221068",
-      "run_id": 45585016473,
-      "status": "success",
-      "manifest_artifact_id": 15007923404,
-      "pages_artifact_id": 15008162740,
-      "public_verification_artifact_id": 15008696673,
-      "public_verification": {
-        "job_id": 139105155953,
-        "checked_at": "2026-11-25T09:25:59.192837+00:00",
-        "public_files_verified": 63,
-        "passed": true,
-        "queue_sha256": "4ce96651021f15d37cf34c67bde36ecb8cbbd123830e15611d4540138fdeba38"
-      },
-      "observed_at": "2026-11-25T09:28:12.907Z"
+      "episode_id": "TT-012",
+      "run_id": 45612653983,
+      "source_commit": "e19c71c82e1d04575488f7dde288a3c7b5f0cf8b",
+      "status": "pending",
+      "conclusion": null,
+      "observed_at": "2026-11-25T12:20:03.960Z",
+      "next_action": "Resume TT-012 exact build run 45612653983; inspect actual jobs/logs and completed compact review artifact, then independently review the exact encoded MP4, all scenes/transitions, cover, audio/ASR, source and rights. Only if pass, release and verify public bytes before December 4 paired reservations. Do not restart a successful build or duplicate existing TT-010/011."
     },
     "current_review": {
       "decision": "pass",
@@ -771,7 +767,7 @@
     "handoff_at": "2026-11-24T08:53:36.972Z",
     "release_reason": "Both unapproved; no submission intent; allow independent reviewer to acquire after fresh live reconciliation."
   },
-  "last_run_at": "2026-11-25T12:18:06.658Z",
+  "last_run_at": "2026-11-25T12:20:03.960Z",
   "last_checked_at": "2026-11-25T12:13:12Z",
   "pending_release_deployment": {
     "episode_id": "TT-010",
