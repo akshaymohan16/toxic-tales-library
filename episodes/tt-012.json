@@ -1,0 +1,428 @@
+{
+  "id": "TT-012",
+  "slug": "tt-012-octopus-chemical-trails",
+  "title": "How does an octopus find food in the dark?",
+  "hook": "In flowing water, food leaves an invisible trail. Can an octopus follow it?",
+  "doi": "10.1371/journal.pone.0330262",
+  "paper_title": "Octopus track chemosensory plumes to find food",
+  "citation": "Weertman et al. (2025), PLOS ONE 20:e0330262",
+  "tags": [
+    "octopus",
+    "animal behaviour",
+    "marine ecology",
+    "chemical ecology"
+  ],
+  "summary": "In dark laboratory flumes, red octopuses preferentially approached food upstream and from within an estimated chemical plume. Movement patterns suggest that arms and suckers may help guide search.",
+  "evidence_note": "Repeated successful approaches, small laboratory samples, estimated plume and no isolated sensory-organ manipulation limit the inference.",
+  "source_url": "https://doi.org/10.1371/journal.pone.0330262",
+  "review_status": "full_primary_main_text_checked",
+  "publication_enabled": true,
+  "is_ai_generated": true,
+  "batch_id": "2026-11-30",
+  "slides": [],
+  "evidence_file": "evidence/tt-012.md",
+  "checks": {
+    "full_text": true,
+    "design": true,
+    "findings": true,
+    "limitations": true,
+    "rights": true
+  },
+  "evidence": {
+    "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12507230/",
+    "checked_at": "2026-11-25",
+    "design": "Five O. rubescens in repeated three-station trials; separate one-station task analyzed five males after four exclusions; 41 successful approaches. Blackout tent, near-infrared recording, flowing water; estimated plume from proxy-bead visualization.",
+    "claims": [
+      {
+        "claim": "In dark flowing water, successful upstream approaches favored baited over empty stations.",
+        "location": "Materials and methods, Three-station discrimination task; Results and Figure 4."
+      },
+      {
+        "claim": "Thirty-one of 41 successful feeding approaches arrived from within the approximate plume; ten from outside.",
+        "location": "Results, single-station approach task; Figure 5."
+      },
+      {
+        "claim": "Pauses, turns, upstream surges and more fast arm-aligned movements occurred during tracking than controls.",
+        "location": "Results and Figures 6 and 7; Discussion."
+      }
+    ],
+    "limitations": [
+      "Repeated events are not independent animals; only successful feeding events are counted.",
+      "Five analyzed males in single-station task; four excluded for presumed low appetite.",
+      "Plume geometry was estimated using proxy particles rather than directly measuring the actual cue at each animal.",
+      "Suckers are a plausible sensory guide, not an experimentally isolated mechanism.",
+      "Laboratory conditions do not demonstrate wild foraging distances or a universal search strategy."
+    ],
+    "correction_check": "25 November 2026 PLOS DOI and targeted correction/retraction search: no focal notice found; repeat before release.",
+    "access_note": "Complete official cached PMC12507230 main text and figure captions read; matching request and cached text/XML hashes verified. No supporting binary or external dataset needed for main-text claims; not claimed inspected."
+  },
+  "production": {
+    "renderer": "nature-motion-10",
+    "scene_family": "octopus-plume-2025",
+    "editorial_style": "science-journalism",
+    "editorial_standard": "story-first-v1",
+    "visual_standard": "nature-visuals-v1",
+    "branding_standard": "toxic-tales-branding-v1",
+    "script_author": "25 November 13:15 publisher source editor",
+    "voice_speed": 1.04,
+    "cover_asset": "octopus_reference",
+    "cover_focus": [
+      0.5,
+      0.5
+    ],
+    "cover_kicker": "RED OCTOPUS · SPECIES REFERENCE PHOTO",
+    "cover_title": "Finding food\\nin the dark",
+    "cover_subtitle": "Following a chemical trail",
+    "takeaway": "Red octopuses can use chemical trails to locate food in darkness; the precise sensory mechanism remains open.",
+    "critical_terms": [
+      "octopus",
+      "food",
+      "upstream",
+      "chemical",
+      "plume",
+      "suckers"
+    ],
+    "assets": [
+      {
+        "id": "octopus_reference",
+        "filename": "octopus-rubescens-will-sides-ccby4.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Octopus_rubescens_189172764.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Octopus_rubescens_189172764.jpg",
+        "creator": "Will Sides",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Contained species reference photograph; slight editorial pan; not experimental footage.",
+        "sha256": "2275ff9bdf5c671211d7df892c607306d092921454a0862deb61c43039f6b275",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      }
+    ],
+    "segments": [
+      {
+        "captions": [
+          "How does an octopus find food",
+          "when it cannot see it?"
+        ],
+        "shots": [
+          {
+            "kind": "portrait",
+            "title": "Food in\\nthe dark?",
+            "kicker": "EAST PACIFIC RED OCTOPUS",
+            "start": 0,
+            "end": 0.6,
+            "asset": "octopus_reference"
+          },
+          {
+            "kind": "oct_plume",
+            "title": "Follow the trail",
+            "kicker": "CONCEPTUAL WATER FLOW",
+            "start": 0.6,
+            "end": 1
+          }
+        ],
+        "speech": "How does an octopus find food when it cannot see it?",
+        "pause_after": 0.2
+      },
+      {
+        "captions": [
+          "In a dark tank,",
+          "water carried chemicals",
+          "away from a piece of food."
+        ],
+        "shots": [
+          {
+            "kind": "oct_plume",
+            "title": "A trail in the current",
+            "kicker": "SCHEMATIC · NOT MEASURED",
+            "start": 0,
+            "end": 1
+          }
+        ],
+        "speech": "In a dark tank, water carried chemicals away from a piece of food.",
+        "pause_after": 0.2
+      },
+      {
+        "captions": [
+          "Five red octopuses faced",
+          "three feeding stations.",
+          "Only one held food."
+        ],
+        "shots": [
+          {
+            "kind": "oct_stations",
+            "title": "One baited station",
+            "kicker": "THREE-STATION TASK",
+            "start": 0,
+            "end": 1
+          }
+        ],
+        "speech": "Five red octopuses faced three feeding stations. Only one held food.",
+        "pause_after": 0.2
+      },
+      {
+        "captions": [
+          "On upstream approaches,",
+          "they favored the station with food",
+          "over empty ones."
+        ],
+        "shots": [
+          {
+            "kind": "oct_upstream",
+            "title": "Upstream towards food",
+            "kicker": "SUCCESSFUL FEEDING SESSIONS",
+            "start": 0,
+            "end": 1
+          }
+        ],
+        "speech": "On upstream approaches, they favored the station with food over empty ones.",
+        "pause_after": 0.2
+      },
+      {
+        "captions": [
+          "A separate test recorded",
+          "forty-one successful approaches",
+          "by five males.",
+          "Thirty-one arrived from inside",
+          "the estimated chemical plume."
+        ],
+        "shots": [
+          {
+            "kind": "oct_single",
+            "title": "A separate test",
+            "kicker": "ONE BAITED STATION",
+            "start": 0,
+            "end": 0.46
+          },
+          {
+            "kind": "oct_count",
+            "title": "Successful approaches",
+            "kicker": "REPEATED EVENTS · FIVE MALES",
+            "start": 0.46,
+            "end": 1
+          }
+        ],
+        "speech": "A separate test recorded forty-one successful approaches by five males. Thirty-one arrived from inside the estimated chemical plume.",
+        "pause_after": 0.2
+      },
+      {
+        "captions": [
+          "They paused, zigzagged",
+          "and surged upstream."
+        ],
+        "shots": [
+          {
+            "kind": "oct_search",
+            "title": "Pause, turn, surge",
+            "kicker": "ILLUSTRATED SEARCH MOTION",
+            "start": 0,
+            "end": 1
+          }
+        ],
+        "speech": "They paused, zigzagged and surged upstream.",
+        "pause_after": 0.2
+      },
+      {
+        "captions": [
+          "They sometimes lunged",
+          "along a leading arm.",
+          "Their suckers might help",
+          "guide the search."
+        ],
+        "shots": [
+          {
+            "kind": "oct_arm",
+            "title": "A leading arm",
+            "kicker": "CONCEPTUAL MOTION",
+            "start": 0,
+            "end": 0.55
+          },
+          {
+            "kind": "oct_suckers",
+            "title": "Suckers may guide search",
+            "kicker": "HYPOTHESIS · NOT PROVEN",
+            "start": 0.55,
+            "end": 1
+          }
+        ],
+        "speech": "They sometimes lunged along a leading arm. Their suckers might help guide the search.",
+        "pause_after": 0.2
+      },
+      {
+        "captions": [
+          "The study did not isolate",
+          "the sensory organs.",
+          "But these octopuses used",
+          "chemical trails to find food",
+          "without visible light."
+        ],
+        "shots": [
+          {
+            "kind": "oct_scope",
+            "title": "What remains unknown",
+            "kicker": "SENSORY ORGANS NOT ISOLATED",
+            "start": 0,
+            "end": 0.46
+          },
+          {
+            "kind": "closing",
+            "title": "Food without\\nvisible light",
+            "kicker": "SPECIES REFERENCE PHOTO",
+            "start": 0.46,
+            "end": 1,
+            "asset": "octopus_reference"
+          }
+        ],
+        "speech": "The study did not isolate the sensory organs. But these octopuses used chemical trails to find food without visible light.",
+        "pause_after": 0.2
+      }
+    ],
+    "logo": {
+      "asset": "assets/branding/toxic-tales-logo.json",
+      "sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+      "placement": "Actual owner-verified Toxic Tales flask/plant/Asellus logo upper-left from first frame, phone safe, no collisions",
+      "forbid": [
+        "footer",
+        "progress bar",
+        "field notes"
+      ],
+      "credits_in_caption": true
+    },
+    "motion": {
+      "schema_version": 1,
+      "evidence_sha256": "4ded2e78a9fccdf3ec7771d2d1aba4f4a22177364f1f25212782e7c12527e5a8"
+    }
+  },
+  "editorial_story": {
+    "audience": "General nature viewers without sensory ecology background.",
+    "subject": "East Pacific red octopus, Octopus rubescens.",
+    "setting": "Controlled laboratory flume without visible light, three-station and single-station tasks.",
+    "opening_context": "Recognizable octopus photograph introduces how to find food without seeing it, then conceptual flowing-water trail.",
+    "normal_expectation": "Food is not visible in darkness but dissolved chemicals may travel in water.",
+    "story_selection": "Question, current, discrimination test, separate approach count, search motion, plausible sensory explanation and limits.",
+    "decisive_limit": "Sensory organs were not isolated; small repeated samples and proxy plume, not reconstructed measured tracks.",
+    "question": "How can an octopus find food in the dark?",
+    "why_it_matters": "Chemical cues can guide animal foraging in conditions where vision is unavailable.",
+    "narrative_arc": "Invisible trail; controlled contrast; distinct count; active search; cautious mechanistic inference.",
+    "closing_payoff": "Chemical trails guide food search in tested octopuses, but suckers are a proposed sensory pathway rather than proven exclusive mechanism.",
+    "context_sources": [
+      {
+        "citation": "Weertman et al. (2025), PLOS ONE",
+        "url": "https://doi.org/10.1371/journal.pone.0330262",
+        "scope": "All experiment claims and caveats."
+      },
+      {
+        "citation": "Will Sides, CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Octopus_rubescens_189172764.jpg",
+        "scope": "Species reference only."
+      }
+    ],
+    "reporting_method": "Complete matching official PMC cache main text read, claim audit and corrections search, independent photo licence and exact bytes checked. Main-text aggregate evidence only.",
+    "visual_plan": [
+      {
+        "segment": 1,
+        "visual": "portrait → oct_plume",
+        "purpose": "Establish species and question.",
+        "source_or_concept": "Original schematic based on main-text Methods/Results; licensed species reference where labelled.",
+        "accuracy_note": "No measured paths, timing or experimental footage invented. Counts are reported repeated successful events, not independent animals."
+      },
+      {
+        "segment": 2,
+        "visual": "oct_plume",
+        "purpose": "Show direction of chemical trail in water.",
+        "source_or_concept": "Original schematic based on main-text Methods/Results; licensed species reference where labelled.",
+        "accuracy_note": "No measured paths, timing or experimental footage invented. Counts are reported repeated successful events, not independent animals."
+      },
+      {
+        "segment": 3,
+        "visual": "oct_stations",
+        "purpose": "Distinguish three stations and one bait.",
+        "source_or_concept": "Original schematic based on main-text Methods/Results; licensed species reference where labelled.",
+        "accuracy_note": "No measured paths, timing or experimental footage invented. Counts are reported repeated successful events, not independent animals."
+      },
+      {
+        "segment": 4,
+        "visual": "oct_upstream",
+        "purpose": "Contrast water direction and search direction.",
+        "source_or_concept": "Original schematic based on main-text Methods/Results; licensed species reference where labelled.",
+        "accuracy_note": "No measured paths, timing or experimental footage invented. Counts are reported repeated successful events, not independent animals."
+      },
+      {
+        "segment": 5,
+        "visual": "oct_single → oct_count",
+        "purpose": "Separate single-station task and 31/10 event totals.",
+        "source_or_concept": "Original schematic based on main-text Methods/Results; licensed species reference where labelled.",
+        "accuracy_note": "No measured paths, timing or experimental footage invented. Counts are reported repeated successful events, not independent animals."
+      },
+      {
+        "segment": 6,
+        "visual": "oct_search",
+        "purpose": "Illustrate variable search movement.",
+        "source_or_concept": "Original schematic based on main-text Methods/Results; licensed species reference where labelled.",
+        "accuracy_note": "No measured paths, timing or experimental footage invented. Counts are reported repeated successful events, not independent animals."
+      },
+      {
+        "segment": 7,
+        "visual": "oct_arm → oct_suckers",
+        "purpose": "Show possible arm/sucker role without asserting sensory causation.",
+        "source_or_concept": "Original schematic based on main-text Methods/Results; licensed species reference where labelled.",
+        "accuracy_note": "No measured paths, timing or experimental footage invented. Counts are reported repeated successful events, not independent animals."
+      },
+      {
+        "segment": 8,
+        "visual": "oct_scope → closing",
+        "purpose": "State unknown sensory mechanism and resolve question.",
+        "source_or_concept": "Original schematic based on main-text Methods/Results; licensed species reference where labelled.",
+        "accuracy_note": "No measured paths, timing or experimental footage invented. Counts are reported repeated successful events, not independent animals."
+      }
+    ]
+  },
+  "posts": [
+    {
+      "id": "TT-012-REEL",
+      "format": "REEL",
+      "publication_date": "2026-12-04T10:00:00+01:00",
+      "caption": "How does an octopus find food without visible light? In dark laboratory flumes, East Pacific red octopuses favored baited stations when approaching upstream. In a separate task, 31 of 41 successful approaches by five analyzed males arrived from inside the estimated chemical plume. These are repeated feeding events, not 41 animals. Suckers might help guide the search, but the experiment did not isolate the sensory organs. Small samples, excluded animals and a proxy plume limit generalization.\n\nWeertman et al. (2025), PLOS ONE. DOI: 10.1371/journal.pone.0330262\nFull text: https://pmc.ncbi.nlm.nih.gov/articles/PMC12507230/\nEvidence and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-012.html\nPhoto: Will Sides, CC BY 4.0 (species reference only): https://commons.wikimedia.org/wiki/File:Octopus_rubescens_189172764.jpg\nOriginal conceptual animation; synthetic neural narration.\n#ToxicTales #Octopus #MarineEcology #AnimalBehaviour #ChemicalEcology"
+    }
+  ],
+  "editorial_review": {
+    "standard": "story-first-v1",
+    "reviewer": "25 November publisher pre-render source review (not independent encoded-export reviewer)",
+    "reviewed_at": "2026-11-25T12:19:21.919Z",
+    "decision": "pass",
+    "checks": {
+      "cold_viewer": {
+        "decision": "pass",
+        "finding": "A recognizable octopus and everyday problem make the question accessible without jargon.",
+        "basis": "Opening photo and first spoken question."
+      },
+      "story": {
+        "decision": "pass",
+        "finding": "The script moves from invisible chemical cues through two distinct tests to movement and uncertainty.",
+        "basis": "Main Methods and Results; separate groups and tasks retained."
+      },
+      "visuals": {
+        "decision": "pass",
+        "finding": "The planned diagrams show current and opposite search direction, labelled separate station tests and static 31/10 count, with reference photo kept separate.",
+        "basis": "Planned shots and pinned CC BY image; no encoded inspection claimed."
+      },
+      "payoff": {
+        "decision": "pass",
+        "finding": "The closing returns to finding food without visible light and distinguishes the mechanism hypothesis.",
+        "basis": "Opening question, findings and discussion."
+      },
+      "scope": {
+        "decision": "pass",
+        "finding": "Successful approaches, estimated plume and five males explicitly qualified; no claim of proven sensory organ, actual tracks or independent events.",
+        "basis": "Main methods/results and limitations in evidence record."
+      },
+      "retelling": {
+        "decision": "pass",
+        "finding": "Red octopuses can follow chemical trails in darkness, although which sensory pathway guides them remains uncertain.",
+        "basis": "Main Results and Discussion."
+      }
+    },
+    "source_sha256": "125e186c0783be412285529c3050a4eef9269807a4f5472644d080692bc999c5"
+  }
+}
