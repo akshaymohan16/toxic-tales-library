@@ -2399,6 +2399,16 @@
       "encoded_review_index_sha256": "d9b890f38f131ea18bec53aa1e5de66de2c656a1827eb728ac78ebabc014f351",
       "findings": "All 64 review-package hashes and exact Pages MP4/cover SHA matched. Actual H264/AAC 1080x1920 24fps decoded without errors. Reviewed 12 shot midpoints, 22 boundaries, 24 early samples, opening 0/1s, closing and cover at phone scale. Previous malformed titles fixed; clean whole-art fades, labelled 31/10 event count, correct current and upstream arrows, real logo, reference-photo provenance, no inferred mechanism stated as fact. Final ASR 0.971698; Kokoro af_heart speed 1.04, -15.99 LUFS, -4.19 dBTP, LRA 1.50; no perceptual listening or continuous moving playback claimed. Inspected actual research HTML with DOI/full-text, claims, limits and rights. Cached main text and matching retrieval evidence checked; fresh DOI/PubMed/correction search found no focal notice. HOWEVER exact ffprobe duration 40.400s is below explicit 45-second minimum in both referenced PRODUCTION_STANDARD and SCIENCE_JOURNALISM; renderer permits 35–80s but cannot override written quality gate. No release. Add meaningful spoken explanation of proxy plume and repeated events, not filler; maintain approved typography and frozen renderer."
     },
-    "next_action": "Find new publish-library run for duration-repair source commit; inspect actual jobs, exact compact package and MP4. Check duration 45–95 seconds, all independent science, rights, visual, audio, ASR and archive gates, then exact release and paired Dec 4 scheduling. Do not rerender completed valid result."
+    "next_action": "Inspect actual run 45664372756 jobs; retrieve exact completed compact review package and Pages MP4; ensure 45–95 second duration and repeat independent all-scene, transition, cover, audio/ASR, source, rights, correction review. If pass, exact release, public deployment verification and fresh Dec 4 paired submission. No restart of valid completed build.",
+    "tt012_pending_build": {
+      "episode_id": "TT-012",
+      "run_id": 45664372756,
+      "job_id": 139382404407,
+      "source_commit": "1d0b65a6be9079f873ccfbb119cb0aa9ef359e72",
+      "status": "in_progress",
+      "conclusion": null,
+      "observed_at": "2026-11-25T17:24:42.340Z",
+      "next_action": "Inspect actual run 45664372756 jobs; retrieve exact completed compact review package and Pages MP4; ensure 45–95 second duration and repeat independent all-scene, transition, cover, audio/ASR, source, rights, correction review. If pass, exact release, public deployment verification and fresh Dec 4 paired submission. No restart of valid completed build."
+    }
   }
 }

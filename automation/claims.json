@@ -495,7 +495,7 @@
       "candidate_screen": "automation/qa/candidate-reserve-2026-11-30.json",
       "paper_request_id": "dec04-reef-and-behaviour-reserve-20261125",
       "reconciled_calendar_at": "2026-11-25T17:21:08.213Z",
-      "next_action": "Find new publish-library run for duration-repair source commit; inspect actual jobs, exact compact package and MP4. Check duration 45–95 seconds, all independent science, rights, visual, audio, ASR and archive gates, then exact release and paired Dec 4 scheduling. Do not rerender completed valid result.",
+      "next_action": "Inspect actual run 45664372756 jobs; retrieve exact completed compact review package and Pages MP4; ensure 45–95 second duration and repeat independent all-scene, transition, cover, audio/ASR, source, rights, correction review. If pass, exact release, public deployment verification and fresh Dec 4 paired submission. No restart of valid completed build.",
       "paper_retrieval_run": 45586075305,
       "paper_retrieval_job": 139107970419,
       "recovery_from_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T12:13:12Z",
@@ -528,9 +528,9 @@
         "scripts/production_octopus.py",
         "scripts/build_octopus.py"
       ],
-      "render_run_id": 45643096385,
-      "render_source_commit": "bbe9817d8163beed3cb7666527f6b11dfe7f3fd2",
-      "render_status": "new_source_commit_requested",
+      "render_run_id": 45664372756,
+      "render_source_commit": "1d0b65a6be9079f873ccfbb119cb0aa9ef359e72",
+      "render_status": "in_progress",
       "review_artifact_id": 15034944290,
       "review_index_sha256": "200b2be289b8ab9d0c1b1ea48780cb5d5af33adaac50b31eaa138c9124bfbbaa",
       "failed_export_review": {
