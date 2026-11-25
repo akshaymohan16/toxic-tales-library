@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-30",
   "created_on": "2026-11-24",
-  "updated_at": "2026-11-25T06:18:03.111Z",
+  "updated_at": "2026-11-25T06:18:51.673Z",
   "timezone": "Europe/Vienna",
   "status": "NOT_READY_TARGETED_PHYSICS_REPAIR",
   "required_success": {
@@ -100,11 +100,14 @@
   "owner_action_blocker": false,
   "next_step": "Inspect actual new build for this repair; retrieve exact new TT-010 compact package and MP4, independently verify that floating reward visibly rises, labels remain clear, high-wide/low-narrow matches Methods, all other gates pass; release/deploy and reserve December 1 pair; then December 4 distinct study. Do not rerun unchanged successful build.",
   "pending_build": {
-    "source_commit": "repair commit containing this record",
-    "observed_at": "2026-11-25T06:18:03.111Z",
-    "status": "targeted_crow_renderer_repair_committed_new_build_required",
+    "source_commit": "d625e4ee3a1193e5d94a659150ef758a5dfa0f21",
+    "observed_at": "2026-11-25T06:18:51.673Z",
+    "status": "in_progress",
     "prior_completed_run_id": 45480712547,
     "prior_artifact_id": 14960279571,
-    "next_action": "Inspect actual new build for this repair; retrieve exact new TT-010 compact package and MP4, independently verify that floating reward visibly rises, labels remain clear, high-wide/low-narrow matches Methods, all other gates pass; release/deploy and reserve December 1 pair; then December 4 distinct study. Do not rerun unchanged successful build."
+    "next_action": "Read run 45559585742 actual job conclusions and artifacts. Once successful, retrieve exact TT-010 package and MP4, verify SHA, independently review repaired floating reward and tube widths plus all release gates. If passed release/deploy/reserve December 1 pair, then prepare December 4 distinct paper. No restart of successful build.",
+    "run_id": 45559585742,
+    "job_id": 139019796135,
+    "artifact_id": null
   }
 }
