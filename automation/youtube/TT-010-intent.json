@@ -6,7 +6,7 @@
   "timezone": "Europe/Vienna",
   "created_at": "2026-11-25T09:27:11.597Z",
   "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T09:19:09Z",
-  "status": "intent_persisted_before_submission",
+  "status": "scheduled_readback_pending_byte_verification",
   "source_video_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
   "source_media_urls": [
     "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83.mp4"
@@ -50,5 +50,72 @@
     "listening_review_claimed": false,
     "moving_playback_review_claimed": false,
     "metadata_sha256": "7626e0b867f53d2e2eb93dbd9f3ead0ab91e096d2d60d58ca0c79203672c37ac"
-  }
+  },
+  "provider_readback": {
+    "id": 441455191,
+    "publicationDate": {
+      "dateTime": "2026-12-01T10:00:00",
+      "timezone": "Europe/Vienna"
+    },
+    "creationDate": {
+      "dateTime": "2026-11-25T10:27:00",
+      "timezone": "Europe/Vienna"
+    },
+    "text": "Could a trained crow raise a floating reward with stones? Six New Caledonian crows made choices between materials and water-filled tubes. They more often used water than sand, sinking rather than floating objects, and solid rather than hollow ones. They favoured higher starting water—but did not reliably prefer the more efficient narrow tube or identify a concealed functional U-tube connection. Only four birds completed every test. These controlled tasks show selectivity, not proof of complete causal understanding or of wild stone-dropping.\n\nJelbert et al. (2014), PLOS ONE 9(3):e92895. DOI: 10.1371/journal.pone.0092895\nFull open-access paper: https://pmc.ncbi.nlm.nih.gov/articles/PMC3966847/\nEvidence, limitations and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-010.html\n\nWild New Caledonian crow reference photo: benkeen / iNaturalist, CC0 1.0; cropped/contained and panned, not experiment footage. https://commons.wikimedia.org/wiki/File:Corvus_moneduloides,_Sarramea,_New_Caledonia_1.jpg\nLicence: https://creativecommons.org/publicdomain/zero/1.0/\nOriginal conceptual water/tube animations, not recorded experiments or measured trajectories. Synthetic neural narration, captions and authorized Toxic Tales logo.\n\n#ToxicTales #Crows #AnimalBehaviour #Ecology #Science #Shorts",
+    "firstCommentText": "",
+    "providers": [
+      {
+        "network": "youtube",
+        "status": "PENDING",
+        "detailedStatus": "Pending"
+      }
+    ],
+    "media": [
+      "https://static.metricool.com/planner/202611/7937614-file-1187457565880681032.mp4"
+    ],
+    "autoPublish": true,
+    "saveExternalMediaFiles": false,
+    "mediaAltText": [
+      null
+    ],
+    "shortener": false,
+    "draft": false,
+    "imageVariants": false,
+    "twitterData": {
+      "type": "POST"
+    },
+    "instagramData": {
+      "autoPublish": true,
+      "isAiGenerated": false,
+      "isPaidPartnership": false
+    },
+    "youtubeData": {
+      "title": "Can a Crow Raise Food with Stones? | Toxic Tales",
+      "type": "short",
+      "privacy": "public",
+      "tags": [
+        "crows",
+        "animal cognition",
+        "tool use",
+        "animal behaviour",
+        "ecology",
+        "Toxic Tales"
+      ],
+      "category": "SCIENCE_TECHNOLOGY",
+      "madeForKids": false,
+      "isAiGeneratedContent": true
+    },
+    "hasNotReadNotes": false,
+    "uuid": "-1947402672798085253",
+    "creatorUserMail": "akshaymohank21@gmail.com",
+    "creatorUserId": 6223629,
+    "brandTags": []
+  },
+  "last_reconciled_at": "2026-11-25T09:28:12.907Z",
+  "schedule_readback_verified": true,
+  "metricool_id": "441455191",
+  "metricool_uuid": "-1947402672798085253",
+  "provider_media_url": "https://static.metricool.com/planner/202611/7937614-file-1187457565880681032.mp4",
+  "provider_status": "PENDING",
+  "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-1947402672798085253"
 }

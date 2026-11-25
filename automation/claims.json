@@ -426,7 +426,7 @@
     },
     "submission:youtube:2026-12-01T10:00:Europe/Vienna": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T09:19:09Z",
-      "phase": "intent_persisted_before_submission",
+      "phase": "provider_readback_pending_byte_verification",
       "claimed_at": "2026-11-25T09:27:11.597Z",
       "expires_at": "2026-11-25T09:57:11.597Z",
       "episode_id": "TT-010",
@@ -436,7 +436,10 @@
       "doi": "10.1371/journal.pone.0092895",
       "release_fingerprint": "b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
       "status": "active",
-      "intent": "automation/youtube/TT-010-intent.json"
+      "intent": "automation/youtube/TT-010-intent.json",
+      "metricool_uuid": "-1947402672798085253",
+      "metricool_id": "441455191",
+      "readback_at": "2026-11-25T09:28:12.907Z"
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
