@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-30",
   "created_on": "2026-11-24",
-  "updated_at": "2026-11-25T20:16:20Z",
+  "updated_at": "2026-11-25T20:18:15Z",
   "timezone": "Europe/Vienna",
   "status": "DECEMBER_1_PAIR_VERIFIED_DECEMBER_4_MISSING",
   "required_success": {
@@ -78,13 +78,17 @@
     },
     "pending_build": {
       "episode_id": "TT-012",
-      "status": "source_repaired_build_not_yet_verified",
-      "observed_at": "2026-11-25T20:16:20Z",
+      "status": "in_progress",
+      "observed_at": "2026-11-25T20:18:15Z",
       "previous_failed_run": 45664372756,
       "previous_failed_job": 139382404407,
       "failure": "Shot exceeds 8 seconds; render terminated, deploy and verify skipped, no artifacts",
       "editorial_source_sha256": "e8e0073a6e0e24e48c6a6b8d8dce4a16e6d91df55ab5a82118618fb4fbea91f8",
-      "next_action": "Inspect the actual render triggered by the shot-split source commit (find run by commit); if successful retrieve exact review ZIP and MP4, verify duration 45–95s, maximum shot 8s, all-scene/transition/opening/cover/audio-ASR/rights/correction checks; release and reserve Dec 4 only after exact independent pass and public deployment. No backfill or repeat of valid finished builds."
+      "next_action": "Inspect run 45693639317 job 139485258744, retrieve its exact review artifact and MP4 only on completed successful build/deploy/public-media; check 45–95 seconds and 8-second maximum shot plus full independent review. Never restart successful build; no scheduling before release.",
+      "run_id": 45693639317,
+      "job_id": 139485258744,
+      "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+      "conclusion": null
     },
     "current_review": {
       "decision": "pass",
@@ -254,16 +258,20 @@
     "checked_at": "2026-11-25T17:24:00.065Z"
   },
   "owner_action_blocker": false,
-  "next_step": "Inspect the actual render triggered by the shot-split source commit (find run by commit); if successful retrieve exact review ZIP and MP4, verify duration 45–95s, maximum shot 8s, all-scene/transition/opening/cover/audio-ASR/rights/correction checks; release and reserve Dec 4 only after exact independent pass and public deployment. No backfill or repeat of valid finished builds.",
+  "next_step": "Inspect run 45693639317 job 139485258744, retrieve its exact review artifact and MP4 only on completed successful build/deploy/public-media; check 45–95 seconds and 8-second maximum shot plus full independent review. Never restart successful build; no scheduling before release.",
   "pending_build": {
     "episode_id": "TT-012",
-    "status": "source_repaired_build_not_yet_verified",
-    "observed_at": "2026-11-25T20:16:20Z",
+    "status": "in_progress",
+    "observed_at": "2026-11-25T20:18:15Z",
     "previous_failed_run": 45664372756,
     "previous_failed_job": 139382404407,
     "failure": "Shot exceeds 8 seconds; render terminated, deploy and verify skipped, no artifacts",
     "editorial_source_sha256": "e8e0073a6e0e24e48c6a6b8d8dce4a16e6d91df55ab5a82118618fb4fbea91f8",
-    "next_action": "Inspect the actual render triggered by the shot-split source commit (find run by commit); if successful retrieve exact review ZIP and MP4, verify duration 45–95s, maximum shot 8s, all-scene/transition/opening/cover/audio-ASR/rights/correction checks; release and reserve Dec 4 only after exact independent pass and public deployment. No backfill or repeat of valid finished builds."
+    "next_action": "Inspect run 45693639317 job 139485258744, retrieve its exact review artifact and MP4 only on completed successful build/deploy/public-media; check 45–95 seconds and 8-second maximum shot plus full independent review. Never restart successful build; no scheduling before release.",
+    "run_id": 45693639317,
+    "job_id": 139485258744,
+    "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+    "conclusion": null
   },
   "pending_provider_byte_verification": {
     "episode_id": "TT-010",
