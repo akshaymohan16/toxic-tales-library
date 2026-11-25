@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-30",
   "created_on": "2026-11-24",
-  "updated_at": "2026-11-25T09:30:28.257Z",
+  "updated_at": "2026-11-25T09:31:03.961Z",
   "timezone": "Europe/Vienna",
   "status": "DECEMBER_1_PAIR_VERIFIED_DECEMBER_4_MISSING",
   "required_success": {
@@ -240,7 +240,7 @@
       }
     ],
     "pending_paper_retrieval": {
-      "status": "official_full_text_request_committed",
+      "status": "in_progress",
       "request_id": "dec04-reef-and-behaviour-reserve-20261125",
       "request": {
         "repository": "akshaymohan16/toxic-tales-library",
@@ -261,11 +261,17 @@
         ]
       },
       "requested_at": "2026-11-25T09:30:28.257Z",
-      "next_action": "Read actual retrieval jobs and matching request-hash report; inspect complete eligible cached text and necessary supplements; select one distinct study, fresh correction and asset-rights checks, render and independent exact-export review before reservations."
+      "next_action": "Resume run 45586075305 retrieve job 139107970419, read exact matching request-hash report and complete eligible cached paper, choose distinct Dec 4 study, verify corrections/rights, render and review. Do not restart completed TT-010 build or resubmit its pair.",
+      "run_id": 45586075305,
+      "request_commit": "c38d27f037fb2ced72a6952d045ae2188b9f1c6e",
+      "job_id": 139107970419,
+      "tests_job_id": 139107896922,
+      "tests_conclusion": "success",
+      "observed_at": "2026-11-25T09:31:03.961Z"
     }
   },
   "owner_action_blocker": false,
-  "next_step": "Read actual retrieval jobs and matching request-hash report; inspect complete eligible cached text and necessary supplements; select one distinct study, fresh correction and asset-rights checks, render and independent exact-export review before reservations.",
+  "next_step": "Resume run 45586075305 retrieve job 139107970419, read exact matching request-hash report and complete eligible cached paper, choose distinct Dec 4 study, verify corrections/rights, render and review. Do not restart completed TT-010 build or resubmit its pair.",
   "pending_build": {
     "episode_id": "TT-010",
     "release_commit": "2ef29b8ad4cb1693f4df55520994fca88a221068",
@@ -393,7 +399,7 @@
     }
   },
   "pending_paper_retrieval": {
-    "status": "official_full_text_request_committed",
+    "status": "in_progress",
     "request_id": "dec04-reef-and-behaviour-reserve-20261125",
     "request": {
       "repository": "akshaymohan16/toxic-tales-library",
@@ -414,6 +420,12 @@
       ]
     },
     "requested_at": "2026-11-25T09:30:28.257Z",
-    "next_action": "Read actual retrieval jobs and matching request-hash report; inspect complete eligible cached text and necessary supplements; select one distinct study, fresh correction and asset-rights checks, render and independent exact-export review before reservations."
+    "next_action": "Resume run 45586075305 retrieve job 139107970419, read exact matching request-hash report and complete eligible cached paper, choose distinct Dec 4 study, verify corrections/rights, render and review. Do not restart completed TT-010 build or resubmit its pair.",
+    "run_id": 45586075305,
+    "request_commit": "c38d27f037fb2ced72a6952d045ae2188b9f1c6e",
+    "job_id": 139107970419,
+    "tests_job_id": 139107896922,
+    "tests_conclusion": "success",
+    "observed_at": "2026-11-25T09:31:03.961Z"
   }
 }

@@ -1,6 +1,6 @@
 {
   "checked_on": "2026-11-25",
-  "updated_at": "2026-11-25T09:30:28.257Z",
+  "updated_at": "2026-11-25T09:31:03.961Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
@@ -133,7 +133,7 @@
   ],
   "deployment_and_media": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed.",
   "review_limit": "Actual encoded export frame samples, SHA and ASR verified; repaired transition review passed. No perceptual listening or uninterrupted moving playback claimed.",
-  "automatic_next_step": "Read actual retrieval jobs and matching request-hash report; inspect complete eligible cached text and necessary supplements; select one distinct study, fresh correction and asset-rights checks, render and independent exact-export review before reservations.",
+  "automatic_next_step": "Resume run 45586075305 retrieve job 139107970419, read exact matching request-hash report and complete eligible cached paper, choose distinct Dec 4 study, verify corrections/rights, render and review. Do not restart completed TT-010 build or resubmit its pair.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
   "scheduled_posts_returned": 4,
   "published_provider_receipts": 11,
@@ -150,7 +150,7 @@
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
     "provider_byte_verification_run": 45585719377,
-    "latest_watchdog_run": 45585016514,
+    "latest_watchdog_run": 45585865863,
     "latest_watchdog_conclusion": "failure_elapsed_tuesday_only",
     "latest_build_run": 45585016473,
     "latest_build_verified_steps": [
@@ -158,8 +158,8 @@
       "Test and enforce Reels-only source policy",
       "Restore exact approved exports before rendering"
     ],
-    "latest_paper_retrieval_run": 43439354279,
-    "latest_paper_retrieval_conclusion": "success",
+    "latest_paper_retrieval_run": 45586075305,
+    "latest_paper_retrieval_conclusion": "in_progress",
     "fresh_live_metricool_reconciliation_at": "2026-11-24T20:18:34.396Z",
     "latest_build_conclusion": "success",
     "latest_build_failure_step": "prior run Build reviewed stories and media",
@@ -181,7 +181,7 @@
     "youtube_public_verification_run": 45442959516,
     "youtube_public_verification_conclusion": "success",
     "youtube_public_verification_basis": "Public oEmbed exact title and channel identity; yt-dlp blocked by bot check",
-    "latest_watchdog_reason": "Actual log: 121 tests and enforcer passed, TT-009 independently public verified; only elapsed Nov 24 destinations missing.",
+    "latest_watchdog_reason": "Post-receipt actual readiness log: test and policy success, historical Nov 24 slots missing only, TT-009 public verified with provider ERROR warning.",
     "latest_public_verification_status": "completed_success",
     "last_verified_archive_build_run": 45559585742,
     "last_verified_archive_build_conclusion": "success",
@@ -197,11 +197,11 @@
     "tests_run_again_after_this_commit": true,
     "latest_archive_build_conclusion": "success",
     "latest_provider_byte_verification_conclusion": "success",
-    "latest_watchdog_job": 139104287999,
+    "latest_watchdog_job": 139107189189,
     "tests_passed": 121,
     "enforcer": "pass",
     "readiness": "failure: historical missed 24 November Instagram and YouTube; no backfill; 27 November pair scheduled",
-    "checked_at": "2026-11-25T09:29:12.058Z"
+    "checked_at": "2026-11-25T09:31:03.961Z"
   },
   "current_one_off": {
     "episode_id": "TT-008",
@@ -687,7 +687,7 @@
       }
     ],
     "pending_paper_retrieval": {
-      "status": "official_full_text_request_committed",
+      "status": "in_progress",
       "request_id": "dec04-reef-and-behaviour-reserve-20261125",
       "request": {
         "repository": "akshaymohan16/toxic-tales-library",
@@ -708,7 +708,13 @@
         ]
       },
       "requested_at": "2026-11-25T09:30:28.257Z",
-      "next_action": "Read actual retrieval jobs and matching request-hash report; inspect complete eligible cached text and necessary supplements; select one distinct study, fresh correction and asset-rights checks, render and independent exact-export review before reservations."
+      "next_action": "Resume run 45586075305 retrieve job 139107970419, read exact matching request-hash report and complete eligible cached paper, choose distinct Dec 4 study, verify corrections/rights, render and review. Do not restart completed TT-010 build or resubmit its pair.",
+      "run_id": 45586075305,
+      "request_commit": "c38d27f037fb2ced72a6952d045ae2188b9f1c6e",
+      "job_id": 139107970419,
+      "tests_job_id": 139107896922,
+      "tests_conclusion": "success",
+      "observed_at": "2026-11-25T09:31:03.961Z"
     }
   },
   "automation_tasks_verified_at": "2026-11-18T17:09:08.853Z",
@@ -751,8 +757,8 @@
     "handoff_at": "2026-11-24T08:53:36.972Z",
     "release_reason": "Both unapproved; no submission intent; allow independent reviewer to acquire after fresh live reconciliation."
   },
-  "last_run_at": "2026-11-25T09:29:12.058Z",
-  "last_checked_at": "2026-11-25T09:29:12.058Z",
+  "last_run_at": "2026-11-25T09:31:03.961Z",
+  "last_checked_at": "2026-11-25T09:31:03.961Z",
   "pending_release_deployment": {
     "episode_id": "TT-010",
     "release_commit": "2ef29b8ad4cb1693f4df55520994fca88a221068",
@@ -880,29 +886,21 @@
     }
   },
   "post_receipt_archive_deployment": {
-    "run_id": 45480391676,
-    "commit": "ca1b3cfad5dd6794ea5689d2758dc9c475d66ad9",
+    "run_id": 45585865969,
+    "commit": "4b53ef9177b6577e671d7f6ed886f7dc3d238e03",
+    "status": "in_progress",
     "jobs": [
       {
-        "id": 138751627642,
+        "id": 139107191610,
         "name": "build",
-        "status": "completed",
         "conclusion": "success"
       },
       {
-        "id": 138752651295,
+        "id": 139107858505,
         "name": "deploy",
-        "status": "completed",
-        "conclusion": "success"
-      },
-      {
-        "id": 138752878861,
-        "name": "verify-public-media",
-        "status": "queued",
-        "conclusion": null
+        "status": "in_progress"
       }
     ],
-    "status": "success",
-    "verified_in_run": 45480391676
+    "next_action": "Read actual deploy and verify-public-media conclusions; do not rerun unless actual failure."
   }
 }
