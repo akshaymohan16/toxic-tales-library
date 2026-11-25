@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-25T12:13:12Z",
+  "observed_at": "2026-11-25T15:14:26.033Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -465,6 +465,6 @@
     ],
     "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
   },
-  "updated_at": "2026-11-25T12:18:06.658Z",
-  "last_provider_reconciled_at": "2026-11-25T12:13:12Z"
+  "updated_at": "2026-11-25T15:15:16.536Z",
+  "last_provider_reconciled_at": "2026-11-25T15:14:26.033Z"
 }

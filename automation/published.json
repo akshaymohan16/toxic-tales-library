@@ -1776,7 +1776,7 @@
     "TT-009-REEL",
     "instagram:TT-009-REEL"
   ],
-  "last_provider_reconciled_at": "2026-11-25T12:13:12Z",
+  "last_provider_reconciled_at": "2026-11-25T15:14:26.033Z",
   "last_provider_reconciliation": {
     "checked_at": "2026-11-25T12:13:12Z",
     "month": "2026-11",
@@ -2096,7 +2096,7 @@
     }
   },
   "last_live_reconciliation": {
-    "checked_at": "2026-11-25T12:13:12Z",
+    "checked_at": "2026-11-25T15:14:26.033Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -2386,6 +2386,20 @@
         "licence": "CC BY 4.0",
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Octopus_rubescens_189172764.jpg"
       }
-    }
+    },
+    "tt012_encoded_review": {
+      "decision": "fail",
+      "checked_at": "2026-11-25T15:15:16.536Z",
+      "workflow_run": 45612653983,
+      "artifact_id": 15020108706,
+      "pages_artifact_id": 15019879557,
+      "fingerprint": "fd46e9f3c170d1cd7b5633fef4f25fd14e27a0e1e574edd988d6417d03f7f1e8",
+      "video_sha256": "3b7f6e0ac695c74a1f8af4c315225dd5bf07b18a733957bd434bfeff4665d482",
+      "encoded_review_index_sha256": "200b2be289b8ab9d0c1b1ea48780cb5d5af33adaac50b31eaa138c9124bfbbaa",
+      "findings": "All 64 package member hashes matched; exact Pages artifact MP4 hash matched; 1080x1920 H264/AAC fully decoded without errors. Inspected 12 midpoints, 22 boundary samples, 24 early transition samples, opening 0/1s, cover and final; count 31/10 remains intact and no overlapping measurements. Literal backslash-n is visible in opening, closing and cover title. Failed typography gate. Final encoded ASR similarity 0.971698; reviewed transcript and loudness receipt, no perceptual listening or continuous moving playback claimed. Prior scientific/rights source notes retained, fresh correction/source evidence recheck required before release.",
+      "repair": "Replaced three malformed title strings with short plain text; no shared/frozen renderer or narration changes.",
+      "new_editorial_source_sha256": "d6b370e2e4fdf16fc4155f5a182e0c8f075ca87e5dda2c826bba33f604872a33"
+    },
+    "next_action": "Inspect replacement TT-012 build triggered by this source commit, exact compact artifact and MP4; verify fresh independent review and public deployment before December 4 paired submission. Do not reuse failed fingerprint."
   }
 }

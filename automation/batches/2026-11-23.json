@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-25T12:18:06.658Z",
+  "updated_at": "2026-11-25T15:15:16.536Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
@@ -347,7 +347,7 @@
     }
   },
   "owner_action_blocker": false,
-  "next_step": "Preserve missed Tuesday; Friday TT-011 pair verified. TT-012 octopus chemical-trail candidate: full text and reference-photo pin verified. Finish source-specific source and render; independently review exact encoded MP4 before release, then reserve both December 4 destinations. No backfill or duplicates.",
+  "next_step": "Inspect replacement TT-012 build triggered by this source commit, exact compact artifact and MP4; verify fresh independent review and public deployment before December 4 paired submission. Do not reuse failed fingerprint.",
   "owned_production_claims": [],
   "research_readiness_note": "automation/qa/2026-11-23-evening-qa.json",
   "reconciled_handoff_claims": [

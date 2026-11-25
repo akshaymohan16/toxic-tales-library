@@ -71,7 +71,7 @@
       0.5
     ],
     "cover_kicker": "RED OCTOPUS · SPECIES REFERENCE PHOTO",
-    "cover_title": "Finding food\\nin the dark",
+    "cover_title": "Food in the dark",
     "cover_subtitle": "Following a chemical trail",
     "takeaway": "Red octopuses can use chemical trails to locate food in darkness; the precise sensory mechanism remains open.",
     "critical_terms": [
@@ -108,7 +108,7 @@
         "shots": [
           {
             "kind": "portrait",
-            "title": "Food in\\nthe dark?",
+            "title": "Food in the dark?",
             "kicker": "EAST PACIFIC RED OCTOPUS",
             "start": 0,
             "end": 0.6,
@@ -267,7 +267,7 @@
           },
           {
             "kind": "closing",
-            "title": "Food without\\nvisible light",
+            "title": "Food without light",
             "kicker": "SPECIES REFERENCE PHOTO",
             "start": 0.46,
             "end": 1,
@@ -388,14 +388,14 @@
   ],
   "editorial_review": {
     "standard": "story-first-v1",
-    "reviewer": "25 November publisher pre-render source review (not independent encoded-export reviewer)",
-    "reviewed_at": "2026-11-25T12:19:21.919Z",
+    "reviewer": "25 November publisher typography source repair reviewer",
+    "reviewed_at": "2026-11-25T15:15:16.536Z",
     "decision": "pass",
     "checks": {
       "cold_viewer": {
         "decision": "pass",
-        "finding": "A recognizable octopus and everyday problem make the question accessible without jargon.",
-        "basis": "Opening photo and first spoken question."
+        "finding": "Recognizable reference photo and shorter plain-text opening title establish the question; removed literal backslash-n from the rendered opening.",
+        "basis": "Failed encoded artifact 15020108706 and revised source."
       },
       "story": {
         "decision": "pass",
@@ -404,13 +404,13 @@
       },
       "visuals": {
         "decision": "pass",
-        "finding": "The planned diagrams show current and opposite search direction, labelled separate station tests and static 31/10 count, with reference photo kept separate.",
-        "basis": "Planned shots and pinned CC BY image; no encoded inspection claimed."
+        "finding": "Three plain-text title strings replace escaped newline literals; evidence diagrams, captions and scientific narration unchanged. New exact export required.",
+        "basis": "Inspected the original encoded frames and revised episode source."
       },
       "payoff": {
         "decision": "pass",
-        "finding": "The closing returns to finding food without visible light and distinguishes the mechanism hypothesis.",
-        "basis": "Opening question, findings and discussion."
+        "finding": "Shortened closing title Food without light retains the final spoken distinction between chemical search and unknown mechanism.",
+        "basis": "Revised closing shot and unchanged narration."
       },
       "scope": {
         "decision": "pass",
@@ -423,6 +423,6 @@
         "basis": "Main Results and Discussion."
       }
     },
-    "source_sha256": "125e186c0783be412285529c3050a4eef9269807a4f5472644d080692bc999c5"
+    "source_sha256": "d6b370e2e4fdf16fc4155f5a182e0c8f075ca87e5dda2c826bba33f604872a33"
   }
 }

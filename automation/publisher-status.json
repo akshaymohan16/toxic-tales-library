@@ -1,17 +1,17 @@
 {
   "checked_on": "2026-11-25",
-  "updated_at": "2026-11-25T12:20:03.960Z",
+  "updated_at": "2026-11-25T15:15:16.536Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_connection_verified": true,
-  "decision": "TT-011 and TT-010 pairs remain scheduled; December 4 TT-012 render queued; no new release or provider submission.",
+  "decision": "TT-011 and TT-010 reservations verified unchanged; TT-012 successful technical export failed independent typography review; repaired source; no new provider writes.",
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-25T12:13:12Z",
-    "calendar_checked_at": "2026-11-25T12:13:12Z",
+    "observed_at": "2026-11-25T15:14:26.033Z",
+    "calendar_checked_at": "2026-11-25T15:14:26.033Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -133,7 +133,7 @@
   ],
   "deployment_and_media": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed.",
   "review_limit": "Actual encoded export frame samples, SHA and ASR verified; repaired transition review passed. No perceptual listening or uninterrupted moving playback claimed.",
-  "automatic_next_step": "Resume TT-012 exact build run 45612653983; inspect actual jobs/logs and completed compact review artifact, then independently review the exact encoded MP4, all scenes/transitions, cover, audio/ASR, source and rights. Only if pass, release and verify public bytes before December 4 paired reservations. Do not restart a successful build or duplicate existing TT-010/011.",
+  "automatic_next_step": "Inspect replacement TT-012 build triggered by this source commit, exact compact artifact and MP4; verify fresh independent review and public deployment before December 4 paired submission. Do not reuse failed fingerprint.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
   "scheduled_posts_returned": 4,
   "published_provider_receipts": 11,
@@ -154,16 +154,16 @@
     "latest_watchdog_conclusion": "failure_elapsed_tuesday_only",
     "latest_build_run": 45612653983,
     "latest_build_verified_steps": [
-      "Test exact-file releases and caption safeguards",
-      "Test and enforce Reels-only source policy",
-      "Restore exact approved exports before rendering"
+      "build success",
+      "deploy success",
+      "verify-public-media success; 67 anonymous files verified"
     ],
     "latest_paper_retrieval_run": 45586075305,
     "latest_paper_retrieval_conclusion": "success",
-    "fresh_live_metricool_reconciliation_at": "2026-11-25T12:13:12Z",
-    "latest_build_conclusion": null,
+    "fresh_live_metricool_reconciliation_at": "2026-11-25T15:14:26.033Z",
+    "latest_build_conclusion": "success",
     "latest_build_failure_step": "prior run Build reviewed stories and media",
-    "latest_build_failure_cause": "exact ASR token narrow absent; narration source repaired",
+    "latest_build_failure_cause": "TT-012 literal backslash-n in three titles, independent export failed, not CI failure.",
     "claim_ownership_verified": true,
     "latest_verified_build_run": 45479451775,
     "latest_verified_build_conclusion": "success",
@@ -172,7 +172,7 @@
     "public_youtube_verification_run": 44131070810,
     "public_youtube_verification_conclusion": "success",
     "latest_archive_confirmed_social_links": 10,
-    "public_files_verified": 63,
+    "public_files_verified": 67,
     "last_public_media_verification_checked_at": "2026-11-25T09:25:59.192837+00:00",
     "last_successful_deployment_run": 45585016473,
     "youtube_public_verification_requested_at": "2026-11-20T09:40:02.763Z",
@@ -191,7 +191,7 @@
     "latest_asset_pin_conclusion": "success",
     "last_inspected_watchdog_run": 45480391448,
     "last_inspected_watchdog_conclusion": "failure_elapsed_tuesday_only",
-    "latest_archive_build_run": 45585016473,
+    "latest_archive_build_run": 45612653983,
     "latest_archive_verification": "completed_success",
     "last_test_count_from_workflow": 121,
     "tests_run_again_after_this_commit": true,
@@ -212,7 +212,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-25T12:13:12Z",
+    "checked_at": "2026-11-25T15:14:26.033Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -232,9 +232,9 @@
       "provider_status": "ERROR",
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
-      "public_title_channel_independently_rechecked_this_run": true,
+      "public_title_channel_independently_rechecked_this_run": false,
       "independent_public_verification_job": 139104287999,
-      "independent_public_verification_basis": "Actual readiness log: public YouTube Short verified; thumbnail-only warning; preserve ERROR and do not duplicate.",
+      "independent_public_verification_basis": "Prior actual readiness log on same day; fresh post-commit readiness will recheck.",
       "retry_allowed": false,
       "independent_verification_run": 45612653917,
       "independent_verification_job": 139199905299,
@@ -323,7 +323,7 @@
       "440852560",
       "440852965"
     ],
-    "calendar_repeat_attempt": "Full November 16 entries; full December 2 entries; TT011 and TT010 pairs intact; December 4 absent.",
+    "calendar_repeat_attempt": "Full November 16 entries and full December 2 entries freshly read; TT011/010 unchanged; Dec 4 no provider item.",
     "missed_destinations": 2,
     "future_missing_destinations": 0,
     "tt011_encoded_review": {
@@ -510,6 +510,19 @@
       "conclusion": null,
       "observed_at": "2026-11-25T12:20:03.960Z",
       "next_action": "Resume TT-012 exact build run 45612653983; inspect actual jobs/logs and completed compact review artifact, then independently review the exact encoded MP4, all scenes/transitions, cover, audio/ASR, source and rights. Only if pass, release and verify public bytes before December 4 paired reservations. Do not restart a successful build or duplicate existing TT-010/011."
+    },
+    "tt012_encoded_review": {
+      "decision": "fail",
+      "checked_at": "2026-11-25T15:15:16.536Z",
+      "workflow_run": 45612653983,
+      "artifact_id": 15020108706,
+      "pages_artifact_id": 15019879557,
+      "fingerprint": "fd46e9f3c170d1cd7b5633fef4f25fd14e27a0e1e574edd988d6417d03f7f1e8",
+      "video_sha256": "3b7f6e0ac695c74a1f8af4c315225dd5bf07b18a733957bd434bfeff4665d482",
+      "encoded_review_index_sha256": "200b2be289b8ab9d0c1b1ea48780cb5d5af33adaac50b31eaa138c9124bfbbaa",
+      "findings": "All 64 package member hashes matched; exact Pages artifact MP4 hash matched; 1080x1920 H264/AAC fully decoded without errors. Inspected 12 midpoints, 22 boundary samples, 24 early transition samples, opening 0/1s, cover and final; count 31/10 remains intact and no overlapping measurements. Literal backslash-n is visible in opening, closing and cover title. Failed typography gate. Final encoded ASR similarity 0.971698; reviewed transcript and loudness receipt, no perceptual listening or continuous moving playback claimed. Prior scientific/rights source notes retained, fresh correction/source evidence recheck required before release.",
+      "repair": "Replaced three malformed title strings with short plain text; no shared/frozen renderer or narration changes.",
+      "new_editorial_source_sha256": "d6b370e2e4fdf16fc4155f5a182e0c8f075ca87e5dda2c826bba33f604872a33"
     }
   },
   "claim_coordination": {
@@ -767,8 +780,8 @@
     "handoff_at": "2026-11-24T08:53:36.972Z",
     "release_reason": "Both unapproved; no submission intent; allow independent reviewer to acquire after fresh live reconciliation."
   },
-  "last_run_at": "2026-11-25T12:20:03.960Z",
-  "last_checked_at": "2026-11-25T12:13:12Z",
+  "last_run_at": "2026-11-25T15:15:16.536Z",
+  "last_checked_at": "2026-11-25T15:15:16.536Z",
   "pending_release_deployment": {
     "episode_id": "TT-010",
     "release_commit": "2ef29b8ad4cb1693f4df55520994fca88a221068",
