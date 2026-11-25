@@ -63,7 +63,7 @@
     "editorial_standard": "story-first-v1",
     "visual_standard": "nature-visuals-v1",
     "branding_standard": "toxic-tales-branding-v1",
-    "script_author": "25 November 13:15 publisher source editor",
+    "script_author": "25 November evening publisher duration source editor",
     "voice_speed": 1.04,
     "cover_asset": "octopus_reference",
     "cover_focus": [
@@ -204,6 +204,25 @@
           }
         ],
         "speech": "A separate test recorded forty-one successful approaches by five males. Thirty-one arrived from inside the estimated chemical plume.",
+        "pause_after": 0.2
+      },
+      {
+        "captions": [
+          "Scientists estimated the plume",
+          "using tiny beads in the water.",
+          "These were repeated feeding events,",
+          "not forty-one different octopuses."
+        ],
+        "shots": [
+          {
+            "kind": "oct_count",
+            "title": "What the counts mean",
+            "kicker": "ESTIMATED PLUME · REPEATED EVENTS",
+            "start": 0,
+            "end": 1
+          }
+        ],
+        "speech": "Scientists estimated the plume using tiny beads in the water. These were repeated feeding events, not forty-one different octopuses.",
         "pause_after": 0.2
       },
       {
@@ -357,20 +376,27 @@
       },
       {
         "segment": 6,
+        "visual": "oct_count",
+        "purpose": "Explain the proxy-based boundary and event denominator while the labelled count remains on screen.",
+        "source_or_concept": "Original count illustration based on single-station methods and Figure 5; tracer beads estimated the plume.",
+        "accuracy_note": "Counts refer to repeat feeding events from five males, not individuals. No measured plume concentration or experimental footage depicted."
+      },
+      {
+        "segment": 7,
         "visual": "oct_search",
         "purpose": "Illustrate variable search movement.",
         "source_or_concept": "Original schematic based on main-text Methods/Results; licensed species reference where labelled.",
         "accuracy_note": "No measured paths, timing or experimental footage invented. Counts are reported repeated successful events, not independent animals."
       },
       {
-        "segment": 7,
+        "segment": 8,
         "visual": "oct_arm → oct_suckers",
         "purpose": "Show possible arm/sucker role without asserting sensory causation.",
         "source_or_concept": "Original schematic based on main-text Methods/Results; licensed species reference where labelled.",
         "accuracy_note": "No measured paths, timing or experimental footage invented. Counts are reported repeated successful events, not independent animals."
       },
       {
-        "segment": 8,
+        "segment": 9,
         "visual": "oct_scope → closing",
         "purpose": "State unknown sensory mechanism and resolve question.",
         "source_or_concept": "Original schematic based on main-text Methods/Results; licensed species reference where labelled.",
@@ -388,8 +414,8 @@
   ],
   "editorial_review": {
     "standard": "story-first-v1",
-    "reviewer": "25 November publisher typography source repair reviewer",
-    "reviewed_at": "2026-11-25T15:15:16.536Z",
+    "reviewer": "25 November evening publisher source review",
+    "reviewed_at": "2026-11-25T17:24:00.065Z",
     "decision": "pass",
     "checks": {
       "cold_viewer": {
@@ -399,12 +425,12 @@
       },
       "story": {
         "decision": "pass",
-        "finding": "The script moves from invisible chemical cues through two distinct tests to movement and uncertainty.",
+        "finding": "Retains two distinct tests and now explains why the 31/41 result is based on an estimated plume and repeated events before discussing search behavior.",
         "basis": "Main Methods and Results; separate groups and tasks retained."
       },
       "visuals": {
         "decision": "pass",
-        "finding": "Three plain-text title strings replace escaped newline literals; evidence diagrams, captions and scientific narration unchanged. New exact export required.",
+        "finding": "Reuses the reviewed static count illustration for a separate explanation of its denominator and plume proxy; all titles are plain text. Requires a fresh exact export review.",
         "basis": "Inspected the original encoded frames and revised episode source."
       },
       "payoff": {
@@ -414,7 +440,7 @@
       },
       "scope": {
         "decision": "pass",
-        "finding": "Successful approaches, estimated plume and five males explicitly qualified; no claim of proven sensory organ, actual tracks or independent events.",
+        "finding": "Explicit spoken proxy-bead and repeated-event qualification added; estimated plume and five males retained. No claim of proven sensory organs, independent animals or measured tracks.",
         "basis": "Main methods/results and limitations in evidence record."
       },
       "retelling": {
@@ -423,6 +449,6 @@
         "basis": "Main Results and Discussion."
       }
     },
-    "source_sha256": "d6b370e2e4fdf16fc4155f5a182e0c8f075ca87e5dda2c826bba33f604872a33"
+    "source_sha256": "c6d64a2a9f523ebe36e663b5dc5682ea51545390e5d6754cf15147aeb543b4ed"
   }
 }

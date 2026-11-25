@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-25T15:15:16.536Z",
+  "updated_at": "2026-11-25T17:24:00.065Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
@@ -54,7 +54,7 @@
   "science_rights_release_status": "TT-011 released, deployed and exact identical MP4 provider bytes verified",
   "expired_claims": [],
   "provider_reconciliation": {
-    "checked_at": "2026-11-25T12:13:12Z",
+    "checked_at": "2026-11-25T17:24:00.065Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {

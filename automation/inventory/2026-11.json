@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-25T15:14:26.033Z",
+  "observed_at": "2026-11-25T17:24:00.065Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -129,7 +129,7 @@
     "conservative_accounting_note": "11 confirmed PUBLISHED + 1 TT009 warning + 2 actual Friday reservations =14; no Tuesday backfill."
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-25T12:13:12Z",
+    "checked_at": "2026-11-25T17:24:00.065Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -465,6 +465,6 @@
     ],
     "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
   },
-  "updated_at": "2026-11-25T15:15:16.536Z",
-  "last_provider_reconciled_at": "2026-11-25T15:14:26.033Z"
+  "updated_at": "2026-11-25T17:24:00.065Z",
+  "last_provider_reconciled_at": "2026-11-25T17:24:00.065Z"
 }

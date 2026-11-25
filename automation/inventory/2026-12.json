@@ -1,7 +1,7 @@
 {
   "month": "2026-12",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-25T15:14:26.033Z",
+  "observed_at": "2026-11-25T17:24:00.065Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -31,7 +31,7 @@
     "verified_in_this_run": true
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-25T12:13:12Z",
+    "checked_at": "2026-11-25T17:24:00.065Z",
     "calendar_entries": 2,
     "published": 0,
     "scheduled": 2,
@@ -61,30 +61,29 @@
   },
   "pending_build": {
     "episode_id": "TT-012",
-    "run_id": 45643096385,
-    "source_commit": "bbe9817d8163beed3cb7666527f6b11dfe7f3fd2",
-    "status": "in_progress",
-    "conclusion": null,
-    "observed_at": "2026-11-25T15:16:40.297Z",
-    "next_action": "Resume replacement build 45643096385 (source bbe9817d8163beed3cb7666527f6b11dfe7f3fd2); inspect actual jobs and exact new compact artifact/MP4, independently review all gates and verify public deployment before Dec 4 paired submission. Never reuse failed fingerprint.",
-    "artifact_id": null,
+    "status": "new_source_commit_requested",
+    "observed_at": "2026-11-25T17:24:00.065Z",
+    "previous_render_run": 45643096385,
+    "previous_artifact_id": 15034944290,
+    "previous_pages_artifact_id": 15037625523,
     "failed_review": {
       "decision": "fail",
-      "checked_at": "2026-11-25T15:15:16.536Z",
-      "workflow_run": 45612653983,
-      "artifact_id": 15020108706,
-      "pages_artifact_id": 15019879557,
-      "fingerprint": "fd46e9f3c170d1cd7b5633fef4f25fd14e27a0e1e574edd988d6417d03f7f1e8",
-      "video_sha256": "3b7f6e0ac695c74a1f8af4c315225dd5bf07b18a733957bd434bfeff4665d482",
-      "encoded_review_index_sha256": "200b2be289b8ab9d0c1b1ea48780cb5d5af33adaac50b31eaa138c9124bfbbaa",
-      "findings": "All 64 package member hashes matched; exact Pages artifact MP4 hash matched; 1080x1920 H264/AAC fully decoded without errors. Inspected 12 midpoints, 22 boundary samples, 24 early transition samples, opening 0/1s, cover and final; count 31/10 remains intact and no overlapping measurements. Literal backslash-n is visible in opening, closing and cover title. Failed typography gate. Final encoded ASR similarity 0.971698; reviewed transcript and loudness receipt, no perceptual listening or continuous moving playback claimed. Prior scientific/rights source notes retained, fresh correction/source evidence recheck required before release.",
-      "repair": "Replaced three malformed title strings with short plain text; no shared/frozen renderer or narration changes.",
-      "new_editorial_source_sha256": "d6b370e2e4fdf16fc4155f5a182e0c8f075ca87e5dda2c826bba33f604872a33"
-    }
+      "checked_at": "2026-11-25T17:24:00.065Z",
+      "workflow_run": 45643096385,
+      "artifact_id": 15034944290,
+      "pages_artifact_id": 15037625523,
+      "fingerprint": "8279e97c62406692f37191c175a81157adb23a50731984951e5f05d09c45728a",
+      "video_sha256": "ce0d40aa74e31de794132c6790f9f25848035f5de98d5475301a6fd495622898",
+      "cover_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+      "encoded_review_index_sha256": "d9b890f38f131ea18bec53aa1e5de66de2c656a1827eb728ac78ebabc014f351",
+      "findings": "All 64 review-package hashes and exact Pages MP4/cover SHA matched. Actual H264/AAC 1080x1920 24fps decoded without errors. Reviewed 12 shot midpoints, 22 boundaries, 24 early samples, opening 0/1s, closing and cover at phone scale. Previous malformed titles fixed; clean whole-art fades, labelled 31/10 event count, correct current and upstream arrows, real logo, reference-photo provenance, no inferred mechanism stated as fact. Final ASR 0.971698; Kokoro af_heart speed 1.04, -15.99 LUFS, -4.19 dBTP, LRA 1.50; no perceptual listening or continuous moving playback claimed. Inspected actual research HTML with DOI/full-text, claims, limits and rights. Cached main text and matching retrieval evidence checked; fresh DOI/PubMed/correction search found no focal notice. HOWEVER exact ffprobe duration 40.400s is below explicit 45-second minimum in both referenced PRODUCTION_STANDARD and SCIENCE_JOURNALISM; renderer permits 35–80s but cannot override written quality gate. No release. Add meaningful spoken explanation of proxy plume and repeated events, not filler; maintain approved typography and frozen renderer."
+    },
+    "editorial_source_sha256": "c6d64a2a9f523ebe36e663b5dc5682ea51545390e5d6754cf15147aeb543b4ed",
+    "next_action": "Find new publish-library run for duration-repair source commit; inspect actual jobs, exact compact package and MP4. Check duration 45–95 seconds, all independent science, rights, visual, audio, ASR and archive gates, then exact release and paired Dec 4 scheduling. Do not rerender completed valid result."
   },
-  "updated_at": "2026-11-25T15:16:40.297Z",
-  "last_provider_reconciled_at": "2026-11-25T15:14:26.033Z",
-  "next_action": "Resume replacement build 45643096385 (source bbe9817d8163beed3cb7666527f6b11dfe7f3fd2); inspect actual jobs and exact new compact artifact/MP4, independently review all gates and verify public deployment before Dec 4 paired submission. Never reuse failed fingerprint.",
+  "updated_at": "2026-11-25T17:24:00.065Z",
+  "last_provider_reconciled_at": "2026-11-25T17:24:00.065Z",
+  "next_action": "Find new publish-library run for duration-repair source commit; inspect actual jobs, exact compact package and MP4. Check duration 45–95 seconds, all independent science, rights, visual, audio, ASR and archive gates, then exact release and paired Dec 4 scheduling. Do not rerender completed valid result.",
   "tt010_release_review": {
     "decision": "pass",
     "reviewed_at": "2026-11-25T09:23:51.957Z",
