@@ -483,7 +483,7 @@
     },
     "production:2026-12-04": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T12:13:12Z",
-      "phase": "preproduction_scientific_review",
+      "phase": "awaiting_reference_asset_hash",
       "status": "active",
       "claimed_at": "2026-11-25T12:13:12Z",
       "expires_at": "2026-11-25T16:13:12Z",
@@ -495,13 +495,20 @@
       "candidate_screen": "automation/qa/candidate-reserve-2026-11-30.json",
       "paper_request_id": "dec04-reef-and-behaviour-reserve-20261125",
       "reconciled_calendar_at": "2026-11-25T12:13:12Z",
-      "next_action": "Resume run 45586075305 retrieve job 139107970419, read exact matching request-hash report and complete eligible cached paper, choose distinct Dec 4 study, verify corrections/rights, render and review. Do not restart completed TT-010 build or resubmit its pair.",
+      "next_action": "Resume completed TT-012 asset pin run/log, verify request/hash and actual photo; finalize source and source-specific animated renderer using additive entrypoint, render and independently review exact export before any December 4 submission. Prior TT-010/011 receipts remain untouched.",
       "paper_retrieval_run": 45586075305,
       "paper_retrieval_job": 139107970419,
       "recovery_from_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T09:19:09Z",
       "doi": "10.1371/journal.pone.0330262",
       "paper_retrieval_conclusion": "success",
-      "note": "Both complete months read, December 1 pair intact, December 4 absent. No prior Dec 4 submission intent in claim. Retrieved PMC12507230; no provider writes."
+      "note": "Both complete months read, December 1 pair intact, December 4 absent. No prior Dec 4 submission intent in claim. Retrieved PMC12507230; no provider writes.",
+      "episode_id": "TT-012",
+      "paper_retrieval_status": "completed_success",
+      "paper_request_sha256": "cc5918e0f3d2a8c709e794930ca4683f8f7d0474612dac0bda00094896761db0",
+      "science_note": "automation/qa/tt-012-preproduction.md",
+      "asset_request": "automation/qa/tt-012-asset-request.json",
+      "submission_intent_written": false,
+      "provider_writes": 0
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
