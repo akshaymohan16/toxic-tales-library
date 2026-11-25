@@ -406,6 +406,34 @@
       "encoded_review_index_sha256": "1acc972615d83eb185c5a750221cd0730d23890927f76d4fe3e45a8b5fd64940",
       "submission_intent_written": false,
       "provider_writes": 0
+    },
+    "submission:instagram:2026-12-01T10:00:Europe/Vienna": {
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T09:19:09Z",
+      "phase": "intent_persisted_before_submission",
+      "claimed_at": "2026-11-25T09:27:11.597Z",
+      "expires_at": "2026-11-25T09:57:11.597Z",
+      "episode_id": "TT-010",
+      "post_id": "TT-010-REEL",
+      "platform": "instagram",
+      "publication_date": "2026-12-01T10:00:00+01:00",
+      "doi": "10.1371/journal.pone.0092895",
+      "release_fingerprint": "b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
+      "status": "active",
+      "intent": "automation/instagram/TT-010-intent.json"
+    },
+    "submission:youtube:2026-12-01T10:00:Europe/Vienna": {
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T09:19:09Z",
+      "phase": "intent_persisted_before_submission",
+      "claimed_at": "2026-11-25T09:27:11.597Z",
+      "expires_at": "2026-11-25T09:57:11.597Z",
+      "episode_id": "TT-010",
+      "post_id": "TT-010-YOUTUBE-SHORT",
+      "platform": "youtube",
+      "publication_date": "2026-12-01T10:00:00+01:00",
+      "doi": "10.1371/journal.pone.0092895",
+      "release_fingerprint": "b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
+      "status": "active",
+      "intent": "automation/youtube/TT-010-intent.json"
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
