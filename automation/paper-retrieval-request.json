@@ -1,14 +1,18 @@
 {
   "repository": "akshaymohan16/toxic-tales-library",
-  "request_id": "sleep-2026-followup-20261121",
+  "request_id": "dec04-reef-and-behaviour-reserve-20261125",
   "papers": [
     {
-      "pmcid": "PMC9388130",
-      "expected_doi": "10.1073/pnas.2204754119"
+      "pmcid": "PMC1750927",
+      "expected_doi": "10.1371/journal.pbio.0040431"
     },
     {
-      "pmcid": "PMC13752372",
-      "expected_doi": "10.1073/pnas.2618030123"
+      "pmcid": "PMC12507230",
+      "expected_doi": "10.1371/journal.pone.0330262"
+    },
+    {
+      "pmcid": "PMC7700067",
+      "expected_doi": "10.1007/s10071-020-01419-7"
     }
   ]
 }

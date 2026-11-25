@@ -1,0 +1,50 @@
+{
+  "kind": "unpublished-primary-study-screen",
+  "week_start": "2026-11-30",
+  "screened_at": "2026-11-25T09:30:28.257Z",
+  "status": "abstract_and_metadata_screen_only_not_full_text_review",
+  "request_id": "dec04-reef-and-behaviour-reserve-20261125",
+  "candidates": [
+    {
+      "pmcid": "PMC1750927",
+      "doi": "10.1371/journal.pbio.0040431",
+      "topic": "Grouper and giant moray eel coordinated hunting",
+      "reason": "Distinct reef predator collaboration story; complementary habitat access, observed signalling and limited observational causal inference. First access candidate; no claim that both species have experimental causal benefit.",
+      "state": "requested_official_full_text"
+    },
+    {
+      "pmcid": "PMC12507230",
+      "doi": "10.1371/journal.pone.0330262",
+      "topic": "Octopus chemosensory plume tracking in darkness",
+      "reason": "Distinct sensory ecology with tractable conceptual plume scene; need full methods, sample, flow, limits and licensed species image.",
+      "state": "requested_official_full_text"
+    },
+    {
+      "pmcid": "PMC7700067",
+      "doi": "10.1007/s10071-020-01419-7",
+      "topic": "Hermit crab shell choices to escape confinement",
+      "reason": "Strong ecological architecture experiment, but overlaps this week's problem-solving story and essential supplement/licence not established.",
+      "state": "requested_as_reserve"
+    },
+    {
+      "pmcid": "PMC3140497",
+      "topic": "Dolphin sponge tool use and buried prey",
+      "reason": "Good ecology mechanism but tool-use story overlaps crow and DOI must be separately verified before access request.",
+      "state": "park"
+    },
+    {
+      "pmcid": "PMC4043097",
+      "doi": "10.1098/rspb.2014.0374",
+      "topic": "Dolphin sponge use and fatty-acid diet signatures",
+      "reason": "Rights not established and same tool-use theme; reserve only.",
+      "state": "park"
+    },
+    {
+      "pmcid": "PMC3558420",
+      "topic": "Foot-flagging frogs multimodal communication",
+      "reason": "Interesting field model experiment; DOI/rights and species images still need verification; alternate reserve.",
+      "state": "park"
+    }
+  ],
+  "next_action": "Read actual retrieval jobs and matching request-hash report; inspect complete eligible cached text and necessary supplements; select one distinct study, fresh correction and asset-rights checks, render and independent exact-export review before reservations."
+}

@@ -1,6 +1,6 @@
 {
   "checked_on": "2026-11-25",
-  "updated_at": "2026-11-25T09:29:12.058Z",
+  "updated_at": "2026-11-25T09:30:28.257Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
@@ -133,7 +133,7 @@
   ],
   "deployment_and_media": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed.",
   "review_limit": "Actual encoded export frame samples, SHA and ASR verified; repaired transition review passed. No perceptual listening or uninterrupted moving playback claimed.",
-  "automatic_next_step": "December 1 pair complete; acquire earliest still-future December 4 production claim after fresh live reconciliation. Select distinct primary study with verified complete PMC/Europe PMC text, corrections, rights and independent encoded review; reserve both platforms after deploy. Never recreate TT-010/TT-011.",
+  "automatic_next_step": "Read actual retrieval jobs and matching request-hash report; inspect complete eligible cached text and necessary supplements; select one distinct study, fresh correction and asset-rights checks, render and independent exact-export review before reservations.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
   "scheduled_posts_returned": 4,
   "published_provider_receipts": 11,
@@ -486,7 +486,9 @@
     "status": "December 1 CAS claim acquired and released after independent review/release; no provider writes",
     "active_competing_claims": 0,
     "active_claim_keys": [],
-    "active_claims": [],
+    "active_claims": [
+      "production:2026-12-04"
+    ],
     "completed_claims": [
       "production:2026-12-01",
       "submission:instagram:2026-12-01T10:00:Europe/Vienna",
@@ -508,9 +510,9 @@
       "projected": 18,
       "cap": 20
     },
-    "status": "2/4 verified; December 1 pair complete, December 4 pair not reserved",
+    "status": "2/4 verified; December 4 distinct-paper retrieval requested",
     "earliest_slot": "2026-12-04T10:00:00+01:00",
-    "candidate": null,
+    "candidate": "unselected reef/behaviour reserve; access request",
     "prior_failed_review": {
       "fingerprint": "2723b28cbdbc9609f568abe0f3004e65402689d9fd043cfa029e26ffa8617ac7",
       "artifact_id": 14945356483,
@@ -683,7 +685,31 @@
         "verified_readback": true,
         "provider_bytes_verified": true
       }
-    ]
+    ],
+    "pending_paper_retrieval": {
+      "status": "official_full_text_request_committed",
+      "request_id": "dec04-reef-and-behaviour-reserve-20261125",
+      "request": {
+        "repository": "akshaymohan16/toxic-tales-library",
+        "request_id": "dec04-reef-and-behaviour-reserve-20261125",
+        "papers": [
+          {
+            "pmcid": "PMC1750927",
+            "expected_doi": "10.1371/journal.pbio.0040431"
+          },
+          {
+            "pmcid": "PMC12507230",
+            "expected_doi": "10.1371/journal.pone.0330262"
+          },
+          {
+            "pmcid": "PMC7700067",
+            "expected_doi": "10.1007/s10071-020-01419-7"
+          }
+        ]
+      },
+      "requested_at": "2026-11-25T09:30:28.257Z",
+      "next_action": "Read actual retrieval jobs and matching request-hash report; inspect complete eligible cached text and necessary supplements; select one distinct study, fresh correction and asset-rights checks, render and independent exact-export review before reservations."
+    }
   },
   "automation_tasks_verified_at": "2026-11-18T17:09:08.853Z",
   "next_week": {

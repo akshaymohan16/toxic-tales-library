@@ -76,9 +76,9 @@
     },
     "observed_at": "2026-11-25T09:28:12.907Z"
   },
-  "updated_at": "2026-11-25T09:29:12.058Z",
+  "updated_at": "2026-11-25T09:30:28.257Z",
   "last_provider_reconciled_at": "2026-11-25T09:29:12.058Z",
-  "next_action": "December 1 pair complete; acquire earliest still-future December 4 production claim after fresh live reconciliation. Select distinct primary study with verified complete PMC/Europe PMC text, corrections, rights and independent encoded review; reserve both platforms after deploy. Never recreate TT-010/TT-011.",
+  "next_action": "Read actual retrieval jobs and matching request-hash report; inspect complete eligible cached text and necessary supplements; select one distinct study, fresh correction and asset-rights checks, render and independent exact-export review before reservations.",
   "tt010_release_review": {
     "decision": "pass",
     "reviewed_at": "2026-11-25T09:23:51.957Z",
@@ -203,5 +203,29 @@
       "passed": true,
       "decision": "pass"
     }
+  },
+  "pending_paper_retrieval": {
+    "status": "official_full_text_request_committed",
+    "request_id": "dec04-reef-and-behaviour-reserve-20261125",
+    "request": {
+      "repository": "akshaymohan16/toxic-tales-library",
+      "request_id": "dec04-reef-and-behaviour-reserve-20261125",
+      "papers": [
+        {
+          "pmcid": "PMC1750927",
+          "expected_doi": "10.1371/journal.pbio.0040431"
+        },
+        {
+          "pmcid": "PMC12507230",
+          "expected_doi": "10.1371/journal.pone.0330262"
+        },
+        {
+          "pmcid": "PMC7700067",
+          "expected_doi": "10.1007/s10071-020-01419-7"
+        }
+      ]
+    },
+    "requested_at": "2026-11-25T09:30:28.257Z",
+    "next_action": "Read actual retrieval jobs and matching request-hash report; inspect complete eligible cached text and necessary supplements; select one distinct study, fresh correction and asset-rights checks, render and independent exact-export review before reservations."
   }
 }
