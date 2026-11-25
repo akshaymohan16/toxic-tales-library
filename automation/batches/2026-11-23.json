@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-25T06:18:03.111Z",
+  "updated_at": "2026-11-25T09:23:51.957Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
@@ -54,7 +54,7 @@
   "science_rights_release_status": "TT-011 released, deployed and exact identical MP4 provider bytes verified",
   "expired_claims": [],
   "provider_reconciliation": {
-    "checked_at": "2026-11-25T06:18:03.111Z",
+    "checked_at": "2026-11-25T09:23:51.957Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -74,10 +74,13 @@
       "provider_status": "ERROR",
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
-      "public_title_channel_independently_rechecked_this_run": true,
+      "public_title_channel_independently_rechecked_this_run": false,
       "independent_public_verification_job": 138826668279,
-      "independent_public_verification_basis": "Actual latest watchdog log verified public Short; provider ERROR retained.",
-      "retry_allowed": false
+      "independent_public_verification_basis": "Previous watchdog verified; live provider warning retained; fresh readiness workflow needed.",
+      "retry_allowed": false,
+      "independent_verification_run": 45559585661,
+      "independent_verification_job": 139019795368,
+      "independent_verification_at": "2026-11-25T06:18:19Z"
     },
     "weekly_slots": [
       {
@@ -110,7 +113,7 @@
     "weekly_receipts": 2,
     "missing_destinations": 2,
     "provider_writes": 0,
-    "new_releases": 0,
+    "new_releases": 1,
     "new_confirmed_published_keys": [],
     "history_preserved": true,
     "owner_action_blockers": [],
@@ -131,7 +134,7 @@
       "cause": "Actual audit job 138826668279: 121 tests pass, TT009 public warning verified; missed Tuesday 24 November pair; Friday reserved."
     },
     "latest_archive_workflow": {
-      "id": 45480712547,
+      "id": 45559585742,
       "conclusion": "success"
     },
     "last_pre_change_successful_archive_workflow": {
@@ -283,22 +286,20 @@
       "decision": "pass"
     },
     "tt010_current_review": {
-      "decision": "fail_requires_targeted_physics_repair",
-      "reviewed_at": "2026-11-25T06:18:03.111Z",
-      "run_id": 45480712547,
-      "artifact_id": 14960279571,
-      "pages_artifact_id": 14960753998,
-      "fingerprint": "da818119aa99d82c9d8a6d1ef4d730677ac4f7c322632e430dc32aad1fbb6656",
-      "review_index_sha256": "dffbb01b0da73f4b4a0a7a18129169fc936c5d7928d53786ee5a33841c2a9943",
-      "mp4_sha256": "22484da62724983b3616c468ab0749c083c9e1d0be03376204999b29852dfeb4",
+      "decision": "pass",
+      "reviewed_at": "2026-11-25T09:23:51.957Z",
+      "run_id": 45559585742,
+      "artifact_id": 14996559413,
+      "pages_artifact_id": 14996723933,
+      "fingerprint": "b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
+      "review_index_sha256": "1acc972615d83eb185c5a750221cd0730d23890927f76d4fe3e45a8b5fd64940",
+      "mp4_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
       "package_hashes_verified": 79,
       "findings": [
-        "All 15 midpoints, 28 boundary frames, 30 early samples, opening 0/1 seconds, final and cover inspected; literal title and mixed-transition problems corrected.",
-        "Core displacement illustration incorrectly draws the floating reward before raising water, causing the food to disappear under the raised water in actual midpoints 2 and 4. Stone overlaps the label in early samples. Experiment 5 incorrectly illustrates equal-width tubes even though the high water was in the wide tube and low water in the narrow tube. Repair these source-specific errors, not the frozen shared renderer.",
-        "Exact MP4 extracted from Pages artifact and SHA matched; full ffmpeg decode had no errors. Manifest final ASR 0.9863945578, critical terminology present, normalized output -16.09 LUFS, -4.41 dBTP. No listening or moving-playback claim.",
-        "Fresh source Methods recheck, PLOS DOI and PubMed 24671252 notice search; no specific focal correction found. Commons CC0 benkeen image independently confirmed; no uninspected supplement used."
-      ],
-      "repair": "Move floating reward to the raised water surface and draw after the rise; rise starts after contact, shift stone away from labels; depict the actual high-wide vs low-narrow contrast; move photo provenance above border. Only unreleased crow-specific renderer changed."
+        "Verified 79 compact-package member hashes and exact review index; actual Pages artifact MP4 SHA matched and decoded without errors. Inspected all 15 midpoint frames, 28 before/after boundary frames, 30 early 0.18/0.70s samples, opening 0/1s, closing and cover, at phone scale. Independently extracted 13 more exact MP4 frames during both stone sequences: the floating reward remains at surface as water rises after stone contact; high-wide and low-narrow comparison correctly shown. Initial stone approaches small label closely but does not obscure meaning. Whole-art fades avoid overlapping claims; logo, captions, photograph provenance visible. No uninterrupted moving playback claimed.",
+        "Actual 52.000s H264/AAC 1080x1920 24fps file fully decoded with ffmpeg without errors; manifest eight segment transcripts and final encoded ASR reviewed, final similarity 0.9863945578231292, exact narrow and other critical words/negations preserved, 50-50 transcription equivalent to fifty-fifty. Kokoro af_heart speed 1.04, output -16.09 LUFS, -4.41 dBTP, LRA 1.70. No perceptual listening, pronunciation certification or original-audio comparison claimed.",
+        "Re-read cached PMC3966847 main text and exact Methods/Results lines 60–104; successful official retrieval run 44930526923 retrieve job 136925976750 contains matching request SHA 10f4c16474a6aed371a9c98bc59538d97f79bcaf27433d036ca5d7b75414fddb. Metadata XML SHA 474963b983846ed67d8e0dcc88185aac92ebf091f88912fbdc6a32c204219be3. Six trained birds, 6/5/4 by tasks, 20 trials/task, water 76.3%, sinking 88%, solid 89%, high-wide 86.8%; narrow first choice 56% p=.27, connected U-tube 48.9% p=.79. Both narrow/wide rewards obtainable in task 4; only high-wide functional in task 5. Fixed order, motivation loss, perceptual layout and alternative learning explanations limit generalization. No supplementary individual data or footage used; main text sufficient for claims. Fresh PLOS DOI, PubMed and targeted correction/retraction search found no focal notice. Commons Corvus moneduloides, Sarramea, New Caledonia 1.jpg identifies benkeen iNaturalist photo 586262751 CC0 1.0; manifest exact creator-file download hash 3807578f3a93cdaa7bd009921f58b522907871235d7d711ce2bdd9c18aa2ecb9 matches pinned asset. Inspected archived research HTML with DOI, full-text, limits and credit links."
+      ]
     }
   },
   "owner_action_blocker": false,
