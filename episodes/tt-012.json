@@ -63,7 +63,7 @@
     "editorial_standard": "story-first-v1",
     "visual_standard": "nature-visuals-v1",
     "branding_standard": "toxic-tales-branding-v1",
-    "script_author": "25 November evening publisher duration source editor",
+    "script_author": "25 November night publisher shot-duration source editor",
     "voice_speed": 1.04,
     "cover_asset": "octopus_reference",
     "cover_focus": [
@@ -215,10 +215,17 @@
         ],
         "shots": [
           {
+            "kind": "oct_plume",
+            "title": "Estimated plume",
+            "kicker": "PROXY · NOT MEASURED",
+            "start": 0,
+            "end": 0.5
+          },
+          {
             "kind": "oct_count",
             "title": "What the counts mean",
-            "kicker": "ESTIMATED PLUME · REPEATED EVENTS",
-            "start": 0,
+            "kicker": "REPEATED EVENTS · FIVE MALES",
+            "start": 0.5,
             "end": 1
           }
         ],
@@ -376,10 +383,10 @@
       },
       {
         "segment": 6,
-        "visual": "oct_count",
-        "purpose": "Explain the proxy-based boundary and event denominator while the labelled count remains on screen.",
+        "visual": "oct_plume → oct_count",
+        "purpose": "Explain the proxy-based plume boundary first, then the repeated-event denominator with the complete 31/10 count.",
         "source_or_concept": "Original count illustration based on single-station methods and Figure 5; tracer beads estimated the plume.",
-        "accuracy_note": "Counts refer to repeat feeding events from five males, not individuals. No measured plume concentration or experimental footage depicted."
+        "accuracy_note": "Conceptual plume only, not a measured concentration map; count refers to repeated successful feeding events from five males. Whole-art transition keeps numerical claims intact."
       },
       {
         "segment": 7,
@@ -414,8 +421,8 @@
   ],
   "editorial_review": {
     "standard": "story-first-v1",
-    "reviewer": "25 November evening publisher source review",
-    "reviewed_at": "2026-11-25T17:24:00.065Z",
+    "reviewer": "25 November night publisher pre-render source review",
+    "reviewed_at": "2026-11-25T20:16:20Z",
     "decision": "pass",
     "checks": {
       "cold_viewer": {
@@ -430,8 +437,8 @@
       },
       "visuals": {
         "decision": "pass",
-        "finding": "Reuses the reviewed static count illustration for a separate explanation of its denominator and plume proxy; all titles are plain text. Requires a fresh exact export review.",
-        "basis": "Inspected the original encoded frames and revised episode source."
+        "finding": "Split the added explanation into a conceptual estimated-plume scene and a separate intact count scene, to keep each within the 8-second shot ceiling. No speech/caption changes. Final encoded scene timing and transitions require independent review.",
+        "basis": "Failed build job 139382404407; existing episode-specific oct_plume and oct_count artwork and main-text proxy/denominator evidence."
       },
       "payoff": {
         "decision": "pass",
@@ -449,6 +456,6 @@
         "basis": "Main Results and Discussion."
       }
     },
-    "source_sha256": "c6d64a2a9f523ebe36e663b5dc5682ea51545390e5d6754cf15147aeb543b4ed"
+    "source_sha256": "e8e0073a6e0e24e48c6a6b8d8dce4a16e6d91df55ab5a82118618fb4fbea91f8"
   }
 }

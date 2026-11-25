@@ -483,8 +483,8 @@
     },
     "production:2026-12-04": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T20:16:20Z",
-      "phase": "repair_failed_shot_duration",
-      "status": "active",
+      "phase": "shot_duration_repair_committed_awaiting_build",
+      "status": "released_unfinished",
       "claimed_at": "2026-11-25T20:16:20Z",
       "expires_at": "2026-11-25T20:46:20Z",
       "publication_date": "2026-12-04T10:00:00+01:00",
@@ -495,7 +495,7 @@
       "candidate_screen": "automation/qa/candidate-reserve-2026-11-30.json",
       "paper_request_id": "dec04-reef-and-behaviour-reserve-20261125",
       "reconciled_calendar_at": "2026-11-25T20:16:20Z",
-      "next_action": "Inspect actual run 45664372756 jobs; retrieve exact completed compact review package and Pages MP4; ensure 45–95 second duration and repeat independent all-scene, transition, cover, audio/ASR, source, rights, correction review. If pass, exact release, public deployment verification and fresh Dec 4 paired submission. No restart of valid completed build.",
+      "next_action": "Inspect the actual render triggered by the shot-split source commit (find run by commit); if successful retrieve exact review ZIP and MP4, verify duration 45–95s, maximum shot 8s, all-scene/transition/opening/cover/audio-ASR/rights/correction checks; release and reserve Dec 4 only after exact independent pass and public deployment. No backfill or repeat of valid finished builds.",
       "paper_retrieval_run": 45586075305,
       "paper_retrieval_job": 139107970419,
       "recovery_from_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T17:17:50Z",
@@ -519,8 +519,8 @@
         "licence": "CC BY 4.0",
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Octopus_rubescens_189172764.jpg"
       },
-      "released_at": "2026-11-25T17:24:00.065Z",
-      "source_sha256": "c6d64a2a9f523ebe36e663b5dc5682ea51545390e5d6754cf15147aeb543b4ed",
+      "released_at": "2026-11-25T20:16:20Z",
+      "source_sha256": "e8e0073a6e0e24e48c6a6b8d8dce4a16e6d91df55ab5a82118618fb4fbea91f8",
       "evidence_sha256": "4ded2e78a9fccdf3ec7771d2d1aba4f4a22177364f1f25212782e7c12527e5a8",
       "source_files": [
         "episodes/tt-012.json",
@@ -528,9 +528,7 @@
         "scripts/production_octopus.py",
         "scripts/build_octopus.py"
       ],
-      "render_run_id": 45664372756,
-      "render_source_commit": "1d0b65a6be9079f873ccfbb119cb0aa9ef359e72",
-      "render_status": "completed_failure",
+      "render_status": "source_repaired_build_not_yet_verified",
       "review_artifact_id": 15034944290,
       "review_index_sha256": "200b2be289b8ab9d0c1b1ea48780cb5d5af33adaac50b31eaa138c9124bfbbaa",
       "failed_export_review": {
@@ -559,7 +557,9 @@
         "cover_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
         "encoded_review_index_sha256": "d9b890f38f131ea18bec53aa1e5de66de2c656a1827eb728ac78ebabc014f351",
         "findings": "All 64 review-package hashes and exact Pages MP4/cover SHA matched. Actual H264/AAC 1080x1920 24fps decoded without errors. Reviewed 12 shot midpoints, 22 boundaries, 24 early samples, opening 0/1s, closing and cover at phone scale. Previous malformed titles fixed; clean whole-art fades, labelled 31/10 event count, correct current and upstream arrows, real logo, reference-photo provenance, no inferred mechanism stated as fact. Final ASR 0.971698; Kokoro af_heart speed 1.04, -15.99 LUFS, -4.19 dBTP, LRA 1.50; no perceptual listening or continuous moving playback claimed. Inspected actual research HTML with DOI/full-text, claims, limits and rights. Cached main text and matching retrieval evidence checked; fresh DOI/PubMed/correction search found no focal notice. HOWEVER exact ffprobe duration 40.400s is below explicit 45-second minimum in both referenced PRODUCTION_STANDARD and SCIENCE_JOURNALISM; renderer permits 35–80s but cannot override written quality gate. No release. Add meaningful spoken explanation of proxy plume and repeated events, not filler; maintain approved typography and frozen renderer."
-      }
+      },
+      "previous_failed_render_run": 45664372756,
+      "previous_failed_render_job": 139382404407
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
