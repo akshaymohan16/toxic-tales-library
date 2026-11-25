@@ -352,11 +352,11 @@
       ]
     },
     "production:2026-12-01": {
-      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-24T20:15:02Z",
-      "phase": "source_repaired_new_render_pending",
-      "status": "released",
-      "claimed_at": "2026-11-24T20:24:19.174Z",
-      "expires_at": "2026-11-25T00:24:19.174Z",
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T06:15:03Z",
+      "phase": "independent_review_found_physics_animation_defect",
+      "status": "active",
+      "claimed_at": "2026-11-25T06:17:24.625Z",
+      "expires_at": "2026-11-25T07:17:24.625Z",
       "publication_date": "2026-12-01T10:00:00+01:00",
       "required_destinations": [
         "instagram",
@@ -385,7 +385,8 @@
           "Early samples 1–8 inspected; previous art wipes cause misleading WATER/SAND, SINKING/FLOATING, SOLID/FLOATING and NARROW/TOO LOW mixed pairs. Fail early; remaining samples and exact MP4 audio not reviewed."
         ]
       },
-      "next_action": "Check this run's actual build, deploy and public-media jobs; retrieve matching compact review and exact MP4; independently review after literal-title and nonoverlap fade fix, recheck full source/corrections/rights, release and reserve December 1 pair only after gates. Then December 4 distinct paper. Do not restart an already completed build."
+      "next_action": "Check this run's actual build, deploy and public-media jobs; retrieve matching compact review and exact MP4; independently review after literal-title and nonoverlap fade fix, recheck full source/corrections/rights, release and reserve December 1 pair only after gates. Then December 4 distinct paper. Do not restart an already completed build.",
+      "reconciled_calendar_at": "2026-11-25T06:17:24.625Z"
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
