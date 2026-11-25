@@ -483,7 +483,7 @@
     },
     "production:2026-12-04": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T12:13:12Z",
-      "phase": "awaiting_reference_asset_hash",
+      "phase": "source_finalization",
       "status": "active",
       "claimed_at": "2026-11-25T12:13:12Z",
       "expires_at": "2026-11-25T16:13:12Z",
@@ -495,7 +495,7 @@
       "candidate_screen": "automation/qa/candidate-reserve-2026-11-30.json",
       "paper_request_id": "dec04-reef-and-behaviour-reserve-20261125",
       "reconciled_calendar_at": "2026-11-25T12:13:12Z",
-      "next_action": "Resume completed TT-012 asset pin run/log, verify request/hash and actual photo; finalize source and source-specific animated renderer using additive entrypoint, render and independently review exact export before any December 4 submission. Prior TT-010/011 receipts remain untouched.",
+      "next_action": "TT-012 octopus chemical-trail candidate: full text and reference-photo pin verified. Finish source-specific source and render; independently review exact encoded MP4 before release, then reserve both December 4 destinations. No backfill or duplicates.",
       "paper_retrieval_run": 45586075305,
       "paper_retrieval_job": 139107970419,
       "recovery_from_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T09:19:09Z",
@@ -508,7 +508,17 @@
       "science_note": "automation/qa/tt-012-preproduction.md",
       "asset_request": "automation/qa/tt-012-asset-request.json",
       "submission_intent_written": false,
-      "provider_writes": 0
+      "provider_writes": 0,
+      "reference_asset_pin": {
+        "run": 45612112717,
+        "job": 139198028238,
+        "conclusion": "success",
+        "request_sha256": "c9c9cc31589e78d8646d43c9558192654116e941001be2f72ae26df1535e716f",
+        "sha256": "2275ff9bdf5c671211d7df892c607306d092921454a0862deb61c43039f6b275",
+        "bytes": 671495,
+        "licence": "CC BY 4.0",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Octopus_rubescens_189172764.jpg"
+      }
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."

@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-30",
   "created_on": "2026-11-24",
-  "updated_at": "2026-11-25T09:31:03.961Z",
+  "updated_at": "2026-11-25T12:18:06.658Z",
   "timezone": "Europe/Vienna",
   "status": "DECEMBER_1_PAIR_VERIFIED_DECEMBER_4_MISSING",
   "required_success": {
@@ -53,7 +53,7 @@
     "required_destination_receipts": 4,
     "verified_destination_receipts": 2,
     "complete": false,
-    "calendar_checked_at": "2026-11-25T09:29:12.058Z",
+    "calendar_checked_at": "2026-11-25T12:13:12Z",
     "calendar_entries": 2,
     "month_budget": {
       "month": "2026-12",
@@ -63,9 +63,9 @@
       "projected": 18,
       "cap": 20
     },
-    "status": "2/4 verified; December 4 distinct-paper retrieval requested",
+    "status": "2/4 verified; December 4 production underway",
     "earliest_slot": "2026-12-04T10:00:00+01:00",
-    "candidate": "unselected reef/behaviour reserve; access request",
+    "candidate": "TT-012",
     "prior_failed_review": {
       "fingerprint": "2723b28cbdbc9609f568abe0f3004e65402689d9fd043cfa029e26ffa8617ac7",
       "artifact_id": 14945356483,
@@ -240,38 +240,27 @@
       }
     ],
     "pending_paper_retrieval": {
-      "status": "in_progress",
-      "request_id": "dec04-reef-and-behaviour-reserve-20261125",
-      "request": {
-        "repository": "akshaymohan16/toxic-tales-library",
-        "request_id": "dec04-reef-and-behaviour-reserve-20261125",
-        "papers": [
-          {
-            "pmcid": "PMC1750927",
-            "expected_doi": "10.1371/journal.pbio.0040431"
-          },
-          {
-            "pmcid": "PMC12507230",
-            "expected_doi": "10.1371/journal.pone.0330262"
-          },
-          {
-            "pmcid": "PMC7700067",
-            "expected_doi": "10.1007/s10071-020-01419-7"
-          }
-        ]
-      },
-      "requested_at": "2026-11-25T09:30:28.257Z",
-      "next_action": "Resume run 45586075305 retrieve job 139107970419, read exact matching request-hash report and complete eligible cached paper, choose distinct Dec 4 study, verify corrections/rights, render and review. Do not restart completed TT-010 build or resubmit its pair.",
-      "run_id": 45586075305,
-      "request_commit": "c38d27f037fb2ced72a6952d045ae2188b9f1c6e",
-      "job_id": 139107970419,
-      "tests_job_id": 139107896922,
-      "tests_conclusion": "success",
-      "observed_at": "2026-11-25T09:31:03.961Z"
+      "run": 45586075305,
+      "job": 139107970419,
+      "status": "completed_success",
+      "request_sha256": "cc5918e0f3d2a8c709e794930ca4683f8f7d0474612dac0bda00094896761db0",
+      "selected_pmcid": "PMC12507230",
+      "doi": "10.1371/journal.pone.0330262",
+      "source_note": "automation/qa/tt-012-preproduction.md"
+    },
+    "reference_asset_pin": {
+      "run": 45612112717,
+      "job": 139198028238,
+      "conclusion": "success",
+      "request_sha256": "c9c9cc31589e78d8646d43c9558192654116e941001be2f72ae26df1535e716f",
+      "sha256": "2275ff9bdf5c671211d7df892c607306d092921454a0862deb61c43039f6b275",
+      "bytes": 671495,
+      "licence": "CC BY 4.0",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Octopus_rubescens_189172764.jpg"
     }
   },
   "owner_action_blocker": false,
-  "next_step": "Resume run 45586075305 retrieve job 139107970419, read exact matching request-hash report and complete eligible cached paper, choose distinct Dec 4 study, verify corrections/rights, render and review. Do not restart completed TT-010 build or resubmit its pair.",
+  "next_step": "TT-012 octopus chemical-trail candidate: full text and reference-photo pin verified. Finish source-specific source and render; independently review exact encoded MP4 before release, then reserve both December 4 destinations. No backfill or duplicates.",
   "pending_build": {
     "episode_id": "TT-010",
     "release_commit": "2ef29b8ad4cb1693f4df55520994fca88a221068",
@@ -399,33 +388,22 @@
     }
   },
   "pending_paper_retrieval": {
-    "status": "in_progress",
-    "request_id": "dec04-reef-and-behaviour-reserve-20261125",
-    "request": {
-      "repository": "akshaymohan16/toxic-tales-library",
-      "request_id": "dec04-reef-and-behaviour-reserve-20261125",
-      "papers": [
-        {
-          "pmcid": "PMC1750927",
-          "expected_doi": "10.1371/journal.pbio.0040431"
-        },
-        {
-          "pmcid": "PMC12507230",
-          "expected_doi": "10.1371/journal.pone.0330262"
-        },
-        {
-          "pmcid": "PMC7700067",
-          "expected_doi": "10.1007/s10071-020-01419-7"
-        }
-      ]
-    },
-    "requested_at": "2026-11-25T09:30:28.257Z",
-    "next_action": "Resume run 45586075305 retrieve job 139107970419, read exact matching request-hash report and complete eligible cached paper, choose distinct Dec 4 study, verify corrections/rights, render and review. Do not restart completed TT-010 build or resubmit its pair.",
-    "run_id": 45586075305,
-    "request_commit": "c38d27f037fb2ced72a6952d045ae2188b9f1c6e",
-    "job_id": 139107970419,
-    "tests_job_id": 139107896922,
-    "tests_conclusion": "success",
-    "observed_at": "2026-11-25T09:31:03.961Z"
+    "run": 45586075305,
+    "job": 139107970419,
+    "status": "completed_success",
+    "request_sha256": "cc5918e0f3d2a8c709e794930ca4683f8f7d0474612dac0bda00094896761db0",
+    "selected_pmcid": "PMC12507230",
+    "doi": "10.1371/journal.pone.0330262",
+    "source_note": "automation/qa/tt-012-preproduction.md"
+  },
+  "reference_asset_pin": {
+    "run": 45612112717,
+    "job": 139198028238,
+    "conclusion": "success",
+    "request_sha256": "c9c9cc31589e78d8646d43c9558192654116e941001be2f72ae26df1535e716f",
+    "sha256": "2275ff9bdf5c671211d7df892c607306d092921454a0862deb61c43039f6b275",
+    "bytes": 671495,
+    "licence": "CC BY 4.0",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Octopus_rubescens_189172764.jpg"
   }
 }

@@ -1776,9 +1776,9 @@
     "TT-009-REEL",
     "instagram:TT-009-REEL"
   ],
-  "last_provider_reconciled_at": "2026-11-25T09:29:12.058Z",
+  "last_provider_reconciled_at": "2026-11-25T12:13:12Z",
   "last_provider_reconciliation": {
-    "checked_at": "2026-11-25T09:29:12.058Z",
+    "checked_at": "2026-11-25T12:13:12Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -1833,7 +1833,7 @@
     ],
     "weekly_receipts": 2,
     "missing_destinations": 2,
-    "provider_writes": 2,
+    "provider_writes": 0,
     "new_releases": 1,
     "new_confirmed_published_keys": [],
     "history_preserved": true,
@@ -2096,7 +2096,7 @@
     }
   },
   "last_live_reconciliation": {
-    "checked_at": "2026-11-25T09:23:51.957Z",
+    "checked_at": "2026-11-25T12:13:12Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -2116,13 +2116,13 @@
       "provider_status": "ERROR",
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
-      "public_title_channel_independently_rechecked_this_run": true,
+      "public_title_channel_independently_rechecked_this_run": false,
       "independent_public_verification_job": 139104287999,
       "independent_public_verification_basis": "Actual readiness log: public YouTube Short verified; thumbnail-only warning; preserve ERROR and do not duplicate.",
       "retry_allowed": false,
-      "independent_verification_run": 45585016514,
-      "independent_verification_job": 139104287999,
-      "independent_verification_at": "2026-11-25T09:24:07.1163133Z",
+      "independent_verification_run": 45586171144,
+      "independent_verification_job": 139108216736,
+      "independent_verification_at": "2026-11-25T09:31:20.4012445Z",
       "independent_public_verification_run": 45585016514
     },
     "weekly_slots": [
@@ -2155,14 +2155,16 @@
     ],
     "weekly_receipts": 2,
     "missing_destinations": 2,
-    "provider_writes": 2,
-    "new_releases": 1,
+    "provider_writes": 0,
+    "new_releases": 0,
     "new_confirmed_published_keys": [],
     "history_preserved": true,
     "owner_action_blockers": [],
-    "active_production_claims": [],
-    "active_production_owner": null,
-    "production_claim_expires_at": null,
+    "active_production_claims": [
+      "production:2026-12-04"
+    ],
+    "active_production_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T12:13:12Z",
+    "production_claim_expires_at": "2026-11-25T16:13:12Z",
     "tt010_render_failure": {
       "workflow_run": 45359215067,
       "job_id": 138324658456,
@@ -2172,12 +2174,12 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45585016514,
+      "id": 45586171144,
       "conclusion": "failure",
-      "cause": "121 tests and enforcer pass; elapsed November 24 missing destinations only; TT009 public verified."
+      "cause": "121 tests passed; elapsed Nov 24 slots absent; prior independent TT009 public verification in actual log."
     },
     "latest_archive_workflow": {
-      "id": 45559585742,
+      "id": 45585865969,
       "conclusion": "success"
     },
     "last_pre_change_successful_archive_workflow": {
@@ -2206,7 +2208,7 @@
       "440852560",
       "440852965"
     ],
-    "calendar_repeat_attempt": "Full November calendar 16; December now 2 exact verified TT-010 reservations. TT-011 Friday pair unchanged.",
+    "calendar_repeat_attempt": "Full November 16 entries; full December 2 entries; TT011 and TT010 pairs intact; December 4 absent.",
     "missed_destinations": 2,
     "future_missing_destinations": 0,
     "tt011_encoded_review": {
@@ -2363,6 +2365,27 @@
         "verified_readback": true,
         "provider_bytes_verified": true
       }
-    ]
+    ],
+    "tt012_preproduction": {
+      "paper": {
+        "run": 45586075305,
+        "job": 139107970419,
+        "status": "completed_success",
+        "request_sha256": "cc5918e0f3d2a8c709e794930ca4683f8f7d0474612dac0bda00094896761db0",
+        "selected_pmcid": "PMC12507230",
+        "doi": "10.1371/journal.pone.0330262",
+        "source_note": "automation/qa/tt-012-preproduction.md"
+      },
+      "asset": {
+        "run": 45612112717,
+        "job": 139198028238,
+        "conclusion": "success",
+        "request_sha256": "c9c9cc31589e78d8646d43c9558192654116e941001be2f72ae26df1535e716f",
+        "sha256": "2275ff9bdf5c671211d7df892c607306d092921454a0862deb61c43039f6b275",
+        "bytes": 671495,
+        "licence": "CC BY 4.0",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Octopus_rubescens_189172764.jpg"
+      }
+    }
   }
 }

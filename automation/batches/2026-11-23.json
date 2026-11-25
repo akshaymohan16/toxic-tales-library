@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-25T09:23:51.957Z",
+  "updated_at": "2026-11-25T12:18:06.658Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
@@ -54,7 +54,7 @@
   "science_rights_release_status": "TT-011 released, deployed and exact identical MP4 provider bytes verified",
   "expired_claims": [],
   "provider_reconciliation": {
-    "checked_at": "2026-11-25T09:23:51.957Z",
+    "checked_at": "2026-11-25T12:13:12Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -75,12 +75,13 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": false,
-      "independent_public_verification_job": 138826668279,
-      "independent_public_verification_basis": "Previous watchdog verified; live provider warning retained; fresh readiness workflow needed.",
+      "independent_public_verification_job": 139104287999,
+      "independent_public_verification_basis": "Actual readiness log: public YouTube Short verified; thumbnail-only warning; preserve ERROR and do not duplicate.",
       "retry_allowed": false,
-      "independent_verification_run": 45559585661,
-      "independent_verification_job": 139019795368,
-      "independent_verification_at": "2026-11-25T06:18:19Z"
+      "independent_verification_run": 45586171144,
+      "independent_verification_job": 139108216736,
+      "independent_verification_at": "2026-11-25T09:31:20.4012445Z",
+      "independent_public_verification_run": 45585016514
     },
     "weekly_slots": [
       {
@@ -113,13 +114,15 @@
     "weekly_receipts": 2,
     "missing_destinations": 2,
     "provider_writes": 0,
-    "new_releases": 1,
+    "new_releases": 0,
     "new_confirmed_published_keys": [],
     "history_preserved": true,
     "owner_action_blockers": [],
-    "active_production_claims": [],
-    "active_production_owner": null,
-    "production_claim_expires_at": null,
+    "active_production_claims": [
+      "production:2026-12-04"
+    ],
+    "active_production_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T12:13:12Z",
+    "production_claim_expires_at": "2026-11-25T16:13:12Z",
     "tt010_render_failure": {
       "workflow_run": 45359215067,
       "job_id": 138324658456,
@@ -129,12 +132,12 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45501785302,
+      "id": 45586171144,
       "conclusion": "failure",
-      "cause": "Actual audit job 138826668279: 121 tests pass, TT009 public warning verified; missed Tuesday 24 November pair; Friday reserved."
+      "cause": "121 tests passed; elapsed Nov 24 slots absent; prior independent TT009 public verification in actual log."
     },
     "latest_archive_workflow": {
-      "id": 45559585742,
+      "id": 45585865969,
       "conclusion": "success"
     },
     "last_pre_change_successful_archive_workflow": {
@@ -163,7 +166,7 @@
       "440852560",
       "440852965"
     ],
-    "calendar_repeat_attempt": "Fresh full November calendar: 16; December: 0; Friday UUIDs and actual hosted media unchanged.",
+    "calendar_repeat_attempt": "Full November 16 entries; full December 2 entries; TT011 and TT010 pairs intact; December 4 absent.",
     "missed_destinations": 2,
     "future_missing_destinations": 0,
     "tt011_encoded_review": {
@@ -300,10 +303,51 @@
         "Actual 52.000s H264/AAC 1080x1920 24fps file fully decoded with ffmpeg without errors; manifest eight segment transcripts and final encoded ASR reviewed, final similarity 0.9863945578231292, exact narrow and other critical words/negations preserved, 50-50 transcription equivalent to fifty-fifty. Kokoro af_heart speed 1.04, output -16.09 LUFS, -4.41 dBTP, LRA 1.70. No perceptual listening, pronunciation certification or original-audio comparison claimed.",
         "Re-read cached PMC3966847 main text and exact Methods/Results lines 60–104; successful official retrieval run 44930526923 retrieve job 136925976750 contains matching request SHA 10f4c16474a6aed371a9c98bc59538d97f79bcaf27433d036ca5d7b75414fddb. Metadata XML SHA 474963b983846ed67d8e0dcc88185aac92ebf091f88912fbdc6a32c204219be3. Six trained birds, 6/5/4 by tasks, 20 trials/task, water 76.3%, sinking 88%, solid 89%, high-wide 86.8%; narrow first choice 56% p=.27, connected U-tube 48.9% p=.79. Both narrow/wide rewards obtainable in task 4; only high-wide functional in task 5. Fixed order, motivation loss, perceptual layout and alternative learning explanations limit generalization. No supplementary individual data or footage used; main text sufficient for claims. Fresh PLOS DOI, PubMed and targeted correction/retraction search found no focal notice. Commons Corvus moneduloides, Sarramea, New Caledonia 1.jpg identifies benkeen iNaturalist photo 586262751 CC0 1.0; manifest exact creator-file download hash 3807578f3a93cdaa7bd009921f58b522907871235d7d711ce2bdd9c18aa2ecb9 matches pinned asset. Inspected archived research HTML with DOI, full-text, limits and credit links."
       ]
+    },
+    "next_week_receipts": [
+      {
+        "platform": "instagram",
+        "metricool_id": "441454695",
+        "metricool_uuid": "5350388857459918883",
+        "provider_status": "PENDING",
+        "publication_date": "2026-12-01T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": true
+      },
+      {
+        "platform": "youtube",
+        "metricool_id": "441455191",
+        "metricool_uuid": "-1947402672798085253",
+        "provider_status": "PENDING",
+        "publication_date": "2026-12-01T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": true
+      }
+    ],
+    "tt012_preproduction": {
+      "paper": {
+        "run": 45586075305,
+        "job": 139107970419,
+        "status": "completed_success",
+        "request_sha256": "cc5918e0f3d2a8c709e794930ca4683f8f7d0474612dac0bda00094896761db0",
+        "selected_pmcid": "PMC12507230",
+        "doi": "10.1371/journal.pone.0330262",
+        "source_note": "automation/qa/tt-012-preproduction.md"
+      },
+      "asset": {
+        "run": 45612112717,
+        "job": 139198028238,
+        "conclusion": "success",
+        "request_sha256": "c9c9cc31589e78d8646d43c9558192654116e941001be2f72ae26df1535e716f",
+        "sha256": "2275ff9bdf5c671211d7df892c607306d092921454a0862deb61c43039f6b275",
+        "bytes": 671495,
+        "licence": "CC BY 4.0",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Octopus_rubescens_189172764.jpg"
+      }
     }
   },
   "owner_action_blocker": false,
-  "next_step": "TT-011 complete; inspect actual ledger readiness and archive deployment; review exact already-built TT-010 for December 1, then distinct paper for December 4. December full-month calendar had zero entries.",
+  "next_step": "Preserve missed Tuesday; Friday TT-011 pair verified. TT-012 octopus chemical-trail candidate: full text and reference-photo pin verified. Finish source-specific source and render; independently review exact encoded MP4 before release, then reserve both December 4 destinations. No backfill or duplicates.",
   "owned_production_claims": [],
   "research_readiness_note": "automation/qa/2026-11-23-evening-qa.json",
   "reconciled_handoff_claims": [
