@@ -61,13 +61,13 @@
   },
   "pending_build": {
     "episode_id": "TT-012",
-    "run_id": 45612653983,
-    "source_commit": "e19c71c82e1d04575488f7dde288a3c7b5f0cf8b",
-    "status": "completed_success_independent_review_failed_replacement_requested",
+    "run_id": 45643096385,
+    "source_commit": "bbe9817d8163beed3cb7666527f6b11dfe7f3fd2",
+    "status": "in_progress",
     "conclusion": null,
-    "observed_at": "2026-11-25T12:20:03.960Z",
-    "next_action": "Inspect replacement TT-012 build triggered by this source commit, exact compact artifact and MP4; verify fresh independent review and public deployment before December 4 paired submission. Do not reuse failed fingerprint.",
-    "artifact_id": 15020108706,
+    "observed_at": "2026-11-25T15:16:40.297Z",
+    "next_action": "Resume replacement build 45643096385 (source bbe9817d8163beed3cb7666527f6b11dfe7f3fd2); inspect actual jobs and exact new compact artifact/MP4, independently review all gates and verify public deployment before Dec 4 paired submission. Never reuse failed fingerprint.",
+    "artifact_id": null,
     "failed_review": {
       "decision": "fail",
       "checked_at": "2026-11-25T15:15:16.536Z",
@@ -82,9 +82,9 @@
       "new_editorial_source_sha256": "d6b370e2e4fdf16fc4155f5a182e0c8f075ca87e5dda2c826bba33f604872a33"
     }
   },
-  "updated_at": "2026-11-25T15:15:16.536Z",
+  "updated_at": "2026-11-25T15:16:40.297Z",
   "last_provider_reconciled_at": "2026-11-25T15:14:26.033Z",
-  "next_action": "Inspect replacement TT-012 build triggered by this source commit, exact compact artifact and MP4; verify fresh independent review and public deployment before December 4 paired submission. Do not reuse failed fingerprint.",
+  "next_action": "Resume replacement build 45643096385 (source bbe9817d8163beed3cb7666527f6b11dfe7f3fd2); inspect actual jobs and exact new compact artifact/MP4, independently review all gates and verify public deployment before Dec 4 paired submission. Never reuse failed fingerprint.",
   "tt010_release_review": {
     "decision": "pass",
     "reviewed_at": "2026-11-25T09:23:51.957Z",
