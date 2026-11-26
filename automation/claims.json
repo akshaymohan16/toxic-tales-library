@@ -482,11 +482,11 @@
       ]
     },
     "production:2026-12-04": {
-      "owner_run_id": "publisher:2026-11-26T09:14:35Z",
-      "phase": "release_committed_deployment_required",
-      "status": "released",
-      "claimed_at": "2026-11-26T09:17:14.914Z",
-      "expires_at": "2026-11-26T09:47:14.914Z",
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",
+      "phase": "post_release_deploy_verified_claimed",
+      "status": "claimed",
+      "claimed_at": "2026-11-26T12:19:46.823Z",
+      "expires_at": "2026-11-26T12:49:46.823Z",
       "publication_date": "2026-12-04T10:00:00+01:00",
       "required_destinations": [
         "instagram",
@@ -495,7 +495,7 @@
       "candidate_screen": "automation/qa/candidate-reserve-2026-11-30.json",
       "paper_request_id": "dec04-reef-and-behaviour-reserve-20261125",
       "reconciled_calendar_at": "2026-11-26T09:17:14.914Z",
-      "next_action": "Find exact release commit publish-library workflow; verify actual build/deploy/public-media, queue and exact archive. Then fresh account/month/claim/intent checks and reserve Dec 4 both platforms; no YouTube thumbnail. Do not rebuild source.",
+      "next_action": "Persist both reviewed intents, then independently submit each missing destination under fresh live calendars; verify exact provider bytes.",
       "paper_retrieval_run": 45586075305,
       "paper_retrieval_job": 139107970419,
       "recovery_from_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T17:17:50Z",
@@ -577,7 +577,38 @@
           "Exact 48.900-second H264 1080x1920 24fps AAC file decoded with ffmpeg without errors. Max shot 4.90032s. Nine segment transcripts and final encoded ASR checked: similarity 0.9641434262948207; critical words and negations retained. Kokoro af_heart speed 1.04; -15.98 LUFS, -4.19 dBTP, LRA 1.60. No perceptual listening, pronunciation certification or original-audio comparison claimed.",
           "Official retrieval run 45586075305 job 139107970419, matching request cc5918e0f3d2a8c709e794930ca4683f8f7d0474612dac0bda00094896761db0. Cached PMC12507230 full main text and prior complete reading record reviewed; Methods and Results/Discussion rechecked. Five octopuses in three-station discrimination; separate single-station 5 males analyzed, 9 tested, 4 excluded. 31 inside and 10 outside of 41 successful feeding approaches; repeated events not individuals. Proxy beads estimate plume rather than directly measuring dissolved cue. Arms/suckers plausible, sensory organs not isolated, wild generalization not tested. Fresh PLOS and PubMed correction/retraction search found no focal notice. No supplementary binary used or needed for these main text claims. Will Sides species reference photo verified Commons CC BY 4.0, pinned asset SHA 2275ff9bdf5c671211d7df892c607306d092921454a0862deb61c43039f6b275; source archive HTML DOI/full text/limits/credit inspected."
         ]
-      }
+      },
+      "post_release_deployment_run": 45791031167
+    },
+    "submission:instagram:2026-12-04T10:00:Europe/Vienna": {
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",
+      "phase": "acquired_before_intent",
+      "status": "claimed",
+      "claimed_at": "2026-11-26T12:19:46.823Z",
+      "expires_at": "2026-11-26T12:49:46.823Z",
+      "episode_id": "TT-012",
+      "post_id": "TT-012-REEL",
+      "platform": "instagram",
+      "publication_date": "2026-12-04T10:00:00+01:00",
+      "doi": "10.1371/journal.pone.0330262",
+      "release_fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+      "intent": "automation/instagram/TT-012-intent.json",
+      "reconciled_calendar_at": "2026-11-26T12:18:48.504Z"
+    },
+    "submission:youtube:2026-12-04T10:00:Europe/Vienna": {
+      "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",
+      "phase": "acquired_before_intent",
+      "status": "claimed",
+      "claimed_at": "2026-11-26T12:19:46.823Z",
+      "expires_at": "2026-11-26T12:49:46.823Z",
+      "episode_id": "TT-012",
+      "post_id": "TT-012-YOUTUBE-SHORT",
+      "platform": "youtube",
+      "publication_date": "2026-12-04T10:00:00+01:00",
+      "doi": "10.1371/journal.pone.0330262",
+      "release_fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+      "intent": "automation/youtube/TT-012-intent.json",
+      "reconciled_calendar_at": "2026-11-26T12:18:48.504Z"
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
