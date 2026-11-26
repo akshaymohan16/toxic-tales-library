@@ -6,7 +6,7 @@
   "timezone": "Europe/Vienna",
   "created_at": "2026-11-26T12:20:07.231Z",
   "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",
-  "status": "intent_persisted_before_provider_write",
+  "status": "scheduled_readback_verified_bytes_pending",
   "source_video_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
   "source_media_urls": [
     "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4"
@@ -50,5 +50,71 @@
     "listening_review_claimed": false,
     "moving_playback_review_claimed": false,
     "metadata_sha256": "be5b4177f8403cf748c9d0b4fc76613d798ab2eef2c5697a666c539af2f342ea"
+  },
+  "last_reconciled_at": "2026-11-26T12:21:03.868Z",
+  "schedule_readback_verified": true,
+  "metricool_id": "443041366",
+  "metricool_uuid": "2876102014332980537",
+  "provider_media_url": "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4",
+  "provider_status": "PENDING",
+  "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=2876102014332980537",
+  "provider_readback": {
+    "id": 443041366,
+    "publicationDate": {
+      "dateTime": "2026-12-04T10:00:00",
+      "timezone": "Europe/Vienna"
+    },
+    "creationDate": {
+      "dateTime": "2026-11-26T13:20:00",
+      "timezone": "Europe/Vienna"
+    },
+    "text": "How does an octopus find food without visible light? In dark laboratory flumes, East Pacific red octopuses favored baited stations when approaching upstream. In a separate task, 31 of 41 successful approaches by five analyzed males arrived from inside the estimated chemical plume. These are repeated feeding events, not 41 animals. Suckers might help guide the search, but the experiment did not isolate the sensory organs. Small samples, excluded animals and a proxy plume limit generalization.\n\nWeertman et al. (2025), PLOS ONE. DOI: 10.1371/journal.pone.0330262\nFull text: https://pmc.ncbi.nlm.nih.gov/articles/PMC12507230/\nEvidence and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-012.html\nPhoto: Will Sides, CC BY 4.0 (species reference only): https://commons.wikimedia.org/wiki/File:Octopus_rubescens_189172764.jpg\nLicence: https://creativecommons.org/licenses/by/4.0/\nOriginal conceptual animation, not recorded experiment footage; synthetic neural narration and captions.\n#ToxicTales #Octopus #MarineEcology #AnimalBehaviour #ChemicalEcology #Shorts",
+    "firstCommentText": "",
+    "providers": [
+      {
+        "network": "youtube",
+        "status": "PENDING",
+        "detailedStatus": "Pending"
+      }
+    ],
+    "media": [
+      "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4"
+    ],
+    "autoPublish": true,
+    "saveExternalMediaFiles": false,
+    "mediaAltText": [
+      null
+    ],
+    "shortener": false,
+    "draft": false,
+    "imageVariants": false,
+    "twitterData": {
+      "type": "POST"
+    },
+    "instagramData": {
+      "autoPublish": true,
+      "isAiGenerated": false,
+      "isPaidPartnership": false
+    },
+    "youtubeData": {
+      "title": "How Do Octopuses Find Food in the Dark? | Toxic Tales",
+      "type": "short",
+      "privacy": "public",
+      "tags": [
+        "octopus",
+        "marine ecology",
+        "chemical ecology",
+        "animal behaviour",
+        "Toxic Tales"
+      ],
+      "category": "SCIENCE_TECHNOLOGY",
+      "madeForKids": false,
+      "isAiGeneratedContent": true
+    },
+    "hasNotReadNotes": false,
+    "uuid": "2876102014332980537",
+    "creatorUserMail": "akshaymohank21@gmail.com",
+    "creatorUserId": 6223629,
+    "brandTags": []
   }
 }

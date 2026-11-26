@@ -1,34 +1,34 @@
 {
   "repository": "akshaymohan16/toxic-tales-library",
   "brand_id": "7937614",
-  "episode_id": "TT-010",
-  "release_fingerprint": "b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
-  "source_commit": "d625e4ee3a1193e5d94a659150ef758a5dfa0f21",
+  "episode_id": "TT-012",
+  "release_fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+  "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
   "files": [
     {
-      "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83.mp4",
+      "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4",
       "role": "source_video",
-      "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933"
+      "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
     },
     {
-      "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83_cover.jpg",
+      "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg",
       "role": "source_cover",
-      "expected_sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2"
+      "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
     },
     {
-      "url": "https://static.metricool.com/planner/202611/7937614-file-6111363760069145111.mp4",
+      "url": "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4",
       "role": "provider_video",
-      "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933"
+      "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
     },
     {
-      "url": "https://static.metricool.com/planner/202611/7937614-file-7239913519089911630.jpeg",
+      "url": "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg",
       "role": "provider_cover",
-      "expected_sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2"
+      "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
     },
     {
-      "url": "https://static.metricool.com/planner/202611/7937614-file-1187457565880681032.mp4",
+      "url": "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4",
       "role": "provider_video",
-      "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933"
+      "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
     }
   ]
 }

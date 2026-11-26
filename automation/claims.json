@@ -483,7 +483,7 @@
     },
     "production:2026-12-04": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",
-      "phase": "submission_intents_persisted",
+      "phase": "both_receipts_readback_verified_bytes_pending",
       "status": "claimed",
       "claimed_at": "2026-11-26T12:19:46.823Z",
       "expires_at": "2026-11-26T12:49:46.823Z",
@@ -495,7 +495,7 @@
       "candidate_screen": "automation/qa/candidate-reserve-2026-11-30.json",
       "paper_request_id": "dec04-reef-and-behaviour-reserve-20261125",
       "reconciled_calendar_at": "2026-11-26T09:17:14.914Z",
-      "next_action": "Persist both reviewed intents, then independently submit each missing destination under fresh live calendars; verify exact provider bytes.",
+      "next_action": "Inspect exact provider-media verification run and report, never duplicate either reservation.",
       "paper_retrieval_run": 45586075305,
       "paper_retrieval_job": 139107970419,
       "recovery_from_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T17:17:50Z",
@@ -508,7 +508,7 @@
       "science_note": "automation/qa/tt-012-preproduction.md",
       "asset_request": "automation/qa/tt-012-asset-request.json",
       "submission_intent_written": true,
-      "provider_writes": 1,
+      "provider_writes": 2,
       "reference_asset_pin": {
         "run": 45612112717,
         "job": 139198028238,
@@ -600,8 +600,8 @@
     },
     "submission:youtube:2026-12-04T10:00:Europe/Vienna": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",
-      "phase": "submission_intent_persisted",
-      "status": "claimed",
+      "phase": "provider_receipt_readback_verified_bytes_pending",
+      "status": "receipt_pending_byte_verification",
       "claimed_at": "2026-11-26T12:19:46.823Z",
       "expires_at": "2026-11-26T12:49:46.823Z",
       "episode_id": "TT-012",
@@ -611,7 +611,10 @@
       "doi": "10.1371/journal.pone.0330262",
       "release_fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
       "intent": "automation/youtube/TT-012-intent.json",
-      "reconciled_calendar_at": "2026-11-26T12:18:48.504Z"
+      "reconciled_calendar_at": "2026-11-26T12:18:48.504Z",
+      "metricool_uuid": "2876102014332980537",
+      "metricool_id": "443041366",
+      "readback_at": "2026-11-26T12:21:03.868Z"
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."
