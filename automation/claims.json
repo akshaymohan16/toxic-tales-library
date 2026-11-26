@@ -483,8 +483,8 @@
     },
     "production:2026-12-04": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",
-      "phase": "both_receipts_readback_verified_bytes_pending",
-      "status": "claimed",
+      "phase": "both_destination_receipts_verified",
+      "status": "completed",
       "claimed_at": "2026-11-26T12:19:46.823Z",
       "expires_at": "2026-11-26T12:49:46.823Z",
       "publication_date": "2026-12-04T10:00:00+01:00",
@@ -495,7 +495,7 @@
       "candidate_screen": "automation/qa/candidate-reserve-2026-11-30.json",
       "paper_request_id": "dec04-reef-and-behaviour-reserve-20261125",
       "reconciled_calendar_at": "2026-11-26T09:17:14.914Z",
-      "next_action": "Inspect exact provider-media verification run and report, never duplicate either reservation.",
+      "next_action": "Both reservations and exact bytes verified; no duplicate. Confirm live publication after due time.",
       "paper_retrieval_run": 45586075305,
       "paper_retrieval_job": 139107970419,
       "recovery_from_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T17:17:50Z",
@@ -578,12 +578,26 @@
           "Official retrieval run 45586075305 job 139107970419, matching request cc5918e0f3d2a8c709e794930ca4683f8f7d0474612dac0bda00094896761db0. Cached PMC12507230 full main text and prior complete reading record reviewed; Methods and Results/Discussion rechecked. Five octopuses in three-station discrimination; separate single-station 5 males analyzed, 9 tested, 4 excluded. 31 inside and 10 outside of 41 successful feeding approaches; repeated events not individuals. Proxy beads estimate plume rather than directly measuring dissolved cue. Arms/suckers plausible, sensory organs not isolated, wild generalization not tested. Fresh PLOS and PubMed correction/retraction search found no focal notice. No supplementary binary used or needed for these main text claims. Will Sides species reference photo verified Commons CC BY 4.0, pinned asset SHA 2275ff9bdf5c671211d7df892c607306d092921454a0862deb61c43039f6b275; source archive HTML DOI/full text/limits/credit inspected."
         ]
       },
-      "post_release_deployment_run": 45791031167
+      "post_release_deployment_run": 45791031167,
+      "completed_at": "2026-11-26T12:21:56.268Z",
+      "provider_byte_verification_run": 45818843362,
+      "provider_receipts": [
+        {
+          "platform": "instagram",
+          "metricool_id": "443040774",
+          "metricool_uuid": "-3457936756704131454"
+        },
+        {
+          "platform": "youtube",
+          "metricool_id": "443041366",
+          "metricool_uuid": "2876102014332980537"
+        }
+      ]
     },
     "submission:instagram:2026-12-04T10:00:Europe/Vienna": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",
-      "phase": "provider_receipt_readback_verified_bytes_pending",
-      "status": "receipt_pending_byte_verification",
+      "phase": "both_destination_receipts_verified",
+      "status": "completed",
       "claimed_at": "2026-11-26T12:19:46.823Z",
       "expires_at": "2026-11-26T12:49:46.823Z",
       "episode_id": "TT-012",
@@ -596,12 +610,21 @@
       "reconciled_calendar_at": "2026-11-26T12:18:48.504Z",
       "metricool_uuid": "-3457936756704131454",
       "metricool_id": "443040774",
-      "readback_at": "2026-11-26T12:20:36.678Z"
+      "readback_at": "2026-11-26T12:20:36.678Z",
+      "completed_at": "2026-11-26T12:21:56.268Z",
+      "provider_byte_verification_run": 45818843362,
+      "provider_receipts": [
+        {
+          "platform": "instagram",
+          "metricool_id": "443040774",
+          "metricool_uuid": "-3457936756704131454"
+        }
+      ]
     },
     "submission:youtube:2026-12-04T10:00:Europe/Vienna": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",
-      "phase": "provider_receipt_readback_verified_bytes_pending",
-      "status": "receipt_pending_byte_verification",
+      "phase": "both_destination_receipts_verified",
+      "status": "completed",
       "claimed_at": "2026-11-26T12:19:46.823Z",
       "expires_at": "2026-11-26T12:49:46.823Z",
       "episode_id": "TT-012",
@@ -614,7 +637,16 @@
       "reconciled_calendar_at": "2026-11-26T12:18:48.504Z",
       "metricool_uuid": "2876102014332980537",
       "metricool_id": "443041366",
-      "readback_at": "2026-11-26T12:21:03.868Z"
+      "readback_at": "2026-11-26T12:21:03.868Z",
+      "completed_at": "2026-11-26T12:21:56.268Z",
+      "provider_byte_verification_run": 45818843362,
+      "provider_receipts": [
+        {
+          "platform": "youtube",
+          "metricool_id": "443041366",
+          "metricool_uuid": "2876102014332980537"
+        }
+      ]
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."

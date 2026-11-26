@@ -104,6 +104,32 @@
       },
       "provider_byte_verification_run": 45585719377,
       "delivery_status": "Task-result alert prepared; push/email delivery unverified"
+    },
+    {
+      "key": "TT-012:f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+      "episode_id": "TT-012",
+      "release_fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+      "status": "reported_in_chat",
+      "prepared_at": "2026-11-26T12:21:56.268Z",
+      "notified_at": "2026-11-26T12:21:56.268Z",
+      "title": "How does an octopus find food in the dark?",
+      "doi": "10.1371/journal.pone.0330262",
+      "message": "Red octopuses followed chemical trails in dark laboratory flumes; 31 of 41 successful feeding approaches came from inside an estimated plume, repeated events from five males, not 41 animals. Suckers may guide search; sensory mechanism not isolated. Exact approved MP4 verified on both networks for Friday 4 December 2026 10:00 Europe/Vienna. Scheduled, not published.",
+      "preview_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4",
+      "research_record_url": "https://akshaymohan16.github.io/toxic-tales-library/sources/tt-012.html",
+      "scheduled_dates": [
+        "2026-12-04T10:00:00+01:00"
+      ],
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "provider_uuids": {
+        "instagram": "-3457936756704131454",
+        "youtube": "2876102014332980537"
+      },
+      "provider_byte_verification_run": 45818843362,
+      "delivery_status": "Task-result alert prepared; push/email delivery unverified"
     }
   ],
   "publication_events": [
