@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-26T09:19:08.716Z",
+  "observed_at": "2026-11-26T12:20:53.470Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -54,7 +54,7 @@
     "TT-011-REEL",
     "TT-011-YOUTUBE-SHORT"
   ],
-  "calendar_reconciled_on": "2026-11-25T12:13:12Z",
+  "calendar_reconciled_on": "2026-11-26T12:20:53.470Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -67,7 +67,7 @@
   "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
   "provider_confirmed_publications": 11,
   "known_usage_lower_bound": 11,
-  "last_calendar_readback": "2026-11-24T20:23:47.970Z",
+  "last_calendar_readback": "2026-11-26T12:20:53.470Z",
   "pending_release_ids": [
     "TT-010"
   ],
@@ -75,8 +75,8 @@
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-26T09:19:08.716Z",
-    "calendar_checked_at": "2026-11-26T09:19:08.716Z",
+    "observed_at": "2026-11-26T12:20:53.470Z",
+    "calendar_checked_at": "2026-11-26T12:20:53.470Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -129,7 +129,7 @@
     "conservative_accounting_note": "11 confirmed PUBLISHED + 1 TT009 warning + 2 actual Friday reservations =14; no Tuesday backfill."
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-26T09:19:08.716Z",
+    "checked_at": "2026-11-26T12:20:53.470Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -509,6 +509,6 @@
     ],
     "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
   },
-  "updated_at": "2026-11-26T09:20:13.601Z",
-  "last_provider_reconciled_at": "2026-11-26T09:19:08.716Z"
+  "updated_at": "2026-11-26T12:22:25.265Z",
+  "last_provider_reconciled_at": "2026-11-26T12:20:53.470Z"
 }

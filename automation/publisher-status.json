@@ -1,17 +1,17 @@
 {
   "checked_on": "2026-11-26",
-  "updated_at": "2026-11-26T09:20:13.601Z",
+  "updated_at": "2026-11-26T12:22:25.265Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_connection_verified": true,
-  "decision": "TT-012 exact export independently passed and released; post-release deployment pending, Dec 4 pair not reserved yet. Nov 27 and Dec 1 pairs unchanged, Nov 24 missed no backfill.",
+  "decision": "TT-012 post-release public deployment and both exact provider bytes verified; December 1 and December 4 pairs fully reserved (4/4). November 27 unchanged; November 24 missed, no backfill.",
   "quota": {
     "month": "2026-11",
     "observed_used": 11,
-    "observed_at": "2026-11-26T09:19:08.716Z",
-    "calendar_checked_at": "2026-11-26T09:19:08.716Z",
+    "observed_at": "2026-11-26T12:20:53.470Z",
+    "calendar_checked_at": "2026-11-26T12:20:53.470Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -133,35 +133,37 @@
   ],
   "deployment_and_media": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed.",
   "review_limit": "Actual encoded export frame samples, SHA and ASR verified; repaired transition review passed. No perceptual listening or uninterrupted moving playback claimed.",
-  "automatic_next_step": "Inspect actual run 45790953759 build/deploy/public-media and exact queue/media. No new rendering. Once successful, acquire claims, reconcile accounts and December full calendar/quota, persist each intent and submit Dec 4 pair; verify both provider-hosted exact bytes; notify creation only then.",
+  "automatic_next_step": "Current and next week future reservations complete. Preserve 24 November missed slots; confirm November 27 only after due time; no extra production or duplicate submissions.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
-  "scheduled_posts_returned": 4,
+  "scheduled_posts_returned": 6,
   "published_provider_receipts": 11,
   "scheduled_post_ids": [
     "440852560",
     "440852965",
     "441454695",
-    "441455191"
+    "441455191",
+    "443040774",
+    "443041366"
   ],
-  "last_successful_deployment_run": 45693639317,
+  "last_successful_deployment_run": 45791031167,
   "validation": {
     "script_tests": 165,
     "automation_tests": 121,
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
-    "provider_byte_verification_run": 45585719377,
-    "latest_watchdog_run": 45790864796,
+    "provider_byte_verification_run": 45818843362,
+    "latest_watchdog_run": 45791031216,
     "latest_watchdog_conclusion": "failure_elapsed_tuesday_only",
-    "latest_build_run": 45790953759,
+    "latest_build_run": 45791031167,
     "latest_build_verified_steps": [],
     "latest_paper_retrieval_run": 45586075305,
     "latest_paper_retrieval_conclusion": "success",
-    "fresh_live_metricool_reconciliation_at": "2026-11-26T09:19:08.716Z",
-    "latest_build_conclusion": null,
+    "fresh_live_metricool_reconciliation_at": "2026-11-26T12:20:53.470Z",
+    "latest_build_conclusion": "success",
     "latest_build_failure_step": null,
     "latest_build_failure_cause": null,
     "claim_ownership_verified": true,
-    "latest_verified_build_run": 45693639317,
+    "latest_verified_build_run": 45791031167,
     "latest_verified_build_conclusion": "success",
     "later_same_source_deployment_run": 43848353452,
     "later_same_source_deployment_status": "completed_success",
@@ -169,8 +171,8 @@
     "public_youtube_verification_conclusion": "success",
     "latest_archive_confirmed_social_links": 10,
     "public_files_verified": 67,
-    "last_public_media_verification_checked_at": "2026-11-25T09:25:59.192837+00:00",
-    "last_successful_deployment_run": 45693639317,
+    "last_public_media_verification_checked_at": "2026-11-26T09:35:47.198593+00:00",
+    "last_successful_deployment_run": 45791031167,
     "youtube_public_verification_requested_at": "2026-11-20T09:40:02.763Z",
     "youtube_public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
     "latest_new_workflow_result": "Build/deploy/public-media verification run 44890175684 success; readiness 44890175620 expected failure. Diagnostic fix pending post-commit verification.",
@@ -181,7 +183,7 @@
     "latest_public_verification_status": "completed_success",
     "last_verified_archive_build_run": 45559585742,
     "last_verified_archive_build_conclusion": "success",
-    "upcoming_week_receipts": 2,
+    "upcoming_week_receipts": 4,
     "upcoming_week_expected": 4,
     "latest_asset_pin_run": 45612112717,
     "latest_asset_pin_conclusion": "success",
@@ -193,11 +195,11 @@
     "tests_run_again_after_this_commit": true,
     "latest_archive_build_conclusion": "success",
     "latest_provider_byte_verification_conclusion": "success",
-    "latest_watchdog_job": 139809247234,
+    "latest_watchdog_job": 139809804046,
     "tests_passed": 121,
     "enforcer": "pass",
     "readiness": "failure_elapsed_tuesday_only",
-    "checked_at": "2026-11-26T09:20:13.601Z",
+    "checked_at": "2026-11-26T12:22:25.265Z",
     "policy_enforcer": "pass",
     "public_youtube_verification_basis": "Actual job 139809247234 warning confirms public TT-009"
   },
@@ -210,7 +212,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-26T09:19:08.716Z",
+    "checked_at": "2026-11-26T12:20:53.470Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -234,11 +236,11 @@
       "independent_public_verification_job": 139104287999,
       "independent_public_verification_basis": "Actual readiness audit log: public YouTube Short independently verified; provider thumbnail warning remains ERROR.",
       "retry_allowed": false,
-      "independent_verification_run": 45790864796,
-      "independent_verification_job": 139809247234,
-      "independent_verification_at": "2026-11-26T09:19:24.0592214Z",
+      "independent_verification_run": 45791031216,
+      "independent_verification_job": 139809804046,
+      "independent_verification_at": "2026-11-26T09:20:34.8327212Z",
       "independent_public_verification_run": 45585016514,
-      "current_public_check_note": "Actual current watchdog job logs confirm public Short and unchanged provider thumbnail ERROR; do not retry."
+      "current_public_check_note": "Actual current-day watchdog job log independently confirmed public Short; thumbnail warning remains ERROR. Do not duplicate."
     },
     "weekly_slots": [
       {
@@ -270,10 +272,8 @@
     ],
     "weekly_receipts": 2,
     "missing_destinations": 2,
-    "provider_writes": 0,
-    "new_releases": [
-      "TT-012"
-    ],
+    "provider_writes": 2,
+    "new_releases": [],
     "new_confirmed_published_keys": [],
     "history_preserved": true,
     "owner_action_blockers": [],
@@ -544,37 +544,170 @@
       "job_id": null,
       "prior_release_run": 45790864756,
       "prior_release_commit": "c9ddc8e0f0631abb4c0358c456df5f26bfb50f87"
+    },
+    "tt012_provider_receipts": [
+      {
+        "platform": "instagram",
+        "metricool_id": "443040774",
+        "metricool_uuid": "-3457936756704131454",
+        "provider_status": "PENDING",
+        "publication_date": "2026-12-04T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": true
+      },
+      {
+        "platform": "youtube",
+        "metricool_id": "443041366",
+        "metricool_uuid": "2876102014332980537",
+        "provider_status": "PENDING",
+        "publication_date": "2026-12-04T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": true
+      }
+    ],
+    "tt012_provider_byte_verification": {
+      "episode_id": "TT-012",
+      "status": "success",
+      "request": {
+        "repository": "akshaymohan16/toxic-tales-library",
+        "brand_id": "7937614",
+        "episode_id": "TT-012",
+        "release_fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+        "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+        "files": [
+          {
+            "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4",
+            "role": "source_video",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
+          },
+          {
+            "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg",
+            "role": "source_cover",
+            "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
+          },
+          {
+            "url": "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4",
+            "role": "provider_video",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
+          },
+          {
+            "url": "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg",
+            "role": "provider_cover",
+            "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
+          },
+          {
+            "url": "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4",
+            "role": "provider_video",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
+          }
+        ]
+      },
+      "run_id": 45818843362,
+      "job_id": 139905502163,
+      "artifact_id": 15116801061,
+      "report": {
+        "checked_at": "2026-11-26T12:21:22.682653+00:00",
+        "repository": "akshaymohan16/toxic-tales-library",
+        "brand_id": "7937614",
+        "episode_id": "TT-012",
+        "release_fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+        "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+        "files": {
+          "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4": {
+            "role": "source_video",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "http_status": 200,
+            "bytes": 4363454,
+            "decision": "pass",
+            "attempts": 1,
+            "checked_at": "2026-11-26T12:21:18.237072+00:00",
+            "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4"
+          },
+          "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg": {
+            "role": "source_cover",
+            "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+            "sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+            "http_status": 200,
+            "bytes": 574209,
+            "decision": "pass",
+            "attempts": 1,
+            "checked_at": "2026-11-26T12:21:18.696763+00:00",
+            "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg"
+          },
+          "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4": {
+            "role": "provider_video",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "http_status": 200,
+            "bytes": 4363454,
+            "decision": "pass",
+            "attempts": 1,
+            "checked_at": "2026-11-26T12:21:20.182849+00:00",
+            "final_url": "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4"
+          },
+          "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg": {
+            "role": "provider_cover",
+            "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+            "sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+            "http_status": 200,
+            "bytes": 574209,
+            "decision": "pass",
+            "attempts": 1,
+            "checked_at": "2026-11-26T12:21:21.259464+00:00",
+            "final_url": "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg"
+          },
+          "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4": {
+            "role": "provider_video",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "http_status": 200,
+            "bytes": 4363454,
+            "decision": "pass",
+            "attempts": 1,
+            "checked_at": "2026-11-26T12:21:22.682615+00:00",
+            "final_url": "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4"
+          }
+        },
+        "passed": true,
+        "decision": "pass"
+      },
+      "requested_at": "2026-11-26T12:21:03.868Z",
+      "next_action": "Both reservations and provider bytes verified; preserve and confirm actual publication after due time."
     }
   },
   "claim_coordination": {
-    "checked_at": "2026-11-26T09:20:13.601Z",
-    "status": "TT-012 review/release completed via owned CAS; claim released; no submission intent or provider writes",
+    "checked_at": "2026-11-26T12:22:25.265Z",
+    "status": "TT-012 both claims completed via CAS, exact provider bytes verified",
     "active_competing_claims": 0,
     "active_claim_keys": [],
     "active_claims": [],
     "completed_claims": [
       "production:2026-12-01",
       "submission:instagram:2026-12-01T10:00:Europe/Vienna",
-      "submission:youtube:2026-12-01T10:00:Europe/Vienna"
+      "submission:youtube:2026-12-01T10:00:Europe/Vienna",
+      "production:2026-12-04",
+      "submission:instagram:2026-12-04T10:00:Europe/Vienna",
+      "submission:youtube:2026-12-04T10:00:Europe/Vienna"
     ]
   },
   "following_week_readiness": {
     "week_start": "2026-11-30",
     "required_destination_receipts": 4,
-    "verified_destination_receipts": 2,
-    "complete": false,
-    "calendar_checked_at": "2026-11-26T09:19:08.716Z",
-    "calendar_entries": 2,
+    "verified_destination_receipts": 4,
+    "complete": true,
+    "calendar_checked_at": "2026-11-26T12:21:03.868Z",
+    "calendar_entries": 4,
     "month_budget": {
       "month": "2026-12",
       "published": 0,
-      "existing_commitments": 2,
-      "remaining_regular_destinations": 16,
+      "existing_commitments": 4,
+      "remaining_regular_destinations": 14,
       "projected": 18,
       "cap": 20
     },
-    "status": "DECEMBER_1_PAIR_VERIFIED_DECEMBER_4_RELEASE_DEPLOY_PENDING",
-    "earliest_slot": "2026-12-04T10:00:00+01:00",
+    "status": "READY_4_OF_4",
+    "earliest_slot": null,
     "candidate": "TT-012 octopus chemical-trail navigation",
     "prior_failed_review": {
       "fingerprint": "2723b28cbdbc9609f568abe0f3004e65402689d9fd043cfa029e26ffa8617ac7",
@@ -616,113 +749,114 @@
     },
     "provider_receipts_pending_hash": 0,
     "pending_provider_byte_verification": {
-      "episode_id": "TT-010",
+      "episode_id": "TT-012",
       "status": "success",
       "request": {
         "repository": "akshaymohan16/toxic-tales-library",
         "brand_id": "7937614",
-        "episode_id": "TT-010",
-        "release_fingerprint": "b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
-        "source_commit": "d625e4ee3a1193e5d94a659150ef758a5dfa0f21",
+        "episode_id": "TT-012",
+        "release_fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+        "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
         "files": [
           {
-            "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83.mp4",
+            "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4",
             "role": "source_video",
-            "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933"
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
           },
           {
-            "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83_cover.jpg",
+            "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg",
             "role": "source_cover",
-            "expected_sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2"
+            "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
           },
           {
-            "url": "https://static.metricool.com/planner/202611/7937614-file-6111363760069145111.mp4",
+            "url": "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4",
             "role": "provider_video",
-            "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933"
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
           },
           {
-            "url": "https://static.metricool.com/planner/202611/7937614-file-7239913519089911630.jpeg",
+            "url": "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg",
             "role": "provider_cover",
-            "expected_sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2"
+            "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
           },
           {
-            "url": "https://static.metricool.com/planner/202611/7937614-file-1187457565880681032.mp4",
+            "url": "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4",
             "role": "provider_video",
-            "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933"
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
           }
         ]
       },
-      "requested_at": "2026-11-25T09:28:12.907Z",
-      "next_action": "Read actual provider-byte verification workflow and report; reconcile both UUIDs, finalize ledger/metadata and deduplicated creation alert only on exact hash success; never resubmit.",
-      "run_id": 45585719377,
-      "artifact_id": 15008093405,
+      "run_id": 45818843362,
+      "job_id": 139905502163,
+      "artifact_id": 15116801061,
       "report": {
-        "checked_at": "2026-11-25T09:28:34.120876+00:00",
+        "checked_at": "2026-11-26T12:21:22.682653+00:00",
         "repository": "akshaymohan16/toxic-tales-library",
         "brand_id": "7937614",
-        "episode_id": "TT-010",
-        "release_fingerprint": "b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
-        "source_commit": "d625e4ee3a1193e5d94a659150ef758a5dfa0f21",
+        "episode_id": "TT-012",
+        "release_fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+        "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
         "files": {
-          "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83.mp4": {
+          "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4": {
             "role": "source_video",
-            "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
-            "sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
             "http_status": 200,
-            "bytes": 3682368,
+            "bytes": 4363454,
             "decision": "pass",
             "attempts": 1,
-            "checked_at": "2026-11-25T09:28:30.195870+00:00",
-            "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83.mp4"
+            "checked_at": "2026-11-26T12:21:18.237072+00:00",
+            "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4"
           },
-          "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83_cover.jpg": {
+          "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg": {
             "role": "source_cover",
-            "expected_sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2",
-            "sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2",
+            "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+            "sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
             "http_status": 200,
-            "bytes": 415763,
+            "bytes": 574209,
             "decision": "pass",
             "attempts": 1,
-            "checked_at": "2026-11-25T09:28:30.426482+00:00",
-            "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83_cover.jpg"
+            "checked_at": "2026-11-26T12:21:18.696763+00:00",
+            "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg"
           },
-          "https://static.metricool.com/planner/202611/7937614-file-6111363760069145111.mp4": {
+          "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4": {
             "role": "provider_video",
-            "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
-            "sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
             "http_status": 200,
-            "bytes": 3682368,
+            "bytes": 4363454,
             "decision": "pass",
             "attempts": 1,
-            "checked_at": "2026-11-25T09:28:31.836446+00:00",
-            "final_url": "https://static.metricool.com/planner/202611/7937614-file-6111363760069145111.mp4"
+            "checked_at": "2026-11-26T12:21:20.182849+00:00",
+            "final_url": "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4"
           },
-          "https://static.metricool.com/planner/202611/7937614-file-7239913519089911630.jpeg": {
+          "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg": {
             "role": "provider_cover",
-            "expected_sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2",
-            "sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2",
+            "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+            "sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
             "http_status": 200,
-            "bytes": 415763,
+            "bytes": 574209,
             "decision": "pass",
             "attempts": 1,
-            "checked_at": "2026-11-25T09:28:32.785294+00:00",
-            "final_url": "https://static.metricool.com/planner/202611/7937614-file-7239913519089911630.jpeg"
+            "checked_at": "2026-11-26T12:21:21.259464+00:00",
+            "final_url": "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg"
           },
-          "https://static.metricool.com/planner/202611/7937614-file-1187457565880681032.mp4": {
+          "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4": {
             "role": "provider_video",
-            "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
-            "sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
             "http_status": 200,
-            "bytes": 3682368,
+            "bytes": 4363454,
             "decision": "pass",
             "attempts": 1,
-            "checked_at": "2026-11-25T09:28:34.120846+00:00",
-            "final_url": "https://static.metricool.com/planner/202611/7937614-file-1187457565880681032.mp4"
+            "checked_at": "2026-11-26T12:21:22.682615+00:00",
+            "final_url": "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4"
           }
         },
         "passed": true,
         "decision": "pass"
-      }
+      },
+      "requested_at": "2026-11-26T12:21:03.868Z",
+      "next_action": "Both reservations and provider bytes verified; preserve and confirm actual publication after due time."
     },
     "december_1_receipts": [
       {
@@ -765,18 +899,52 @@
     },
     "pending_release_deployment": {
       "episode_id": "TT-012",
-      "status": "pending",
-      "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
-      "review_artifact_id": 15059991687,
-      "render_run_id": 45693639317,
-      "observed_at": "2026-11-26T09:20:13.601Z",
-      "next_action": "Inspect actual run 45790953759 build/deploy/public-media and exact queue/media. No new rendering. Once successful, acquire claims, reconcile accounts and December full calendar/quota, persist each intent and submit Dec 4 pair; verify both provider-hosted exact bytes; notify creation only then.",
-      "release_commit": "14d79315d4c69c1f736dd4bfb3fd52cee5e0699a",
-      "run_id": 45790953759,
-      "job_id": null,
-      "prior_release_run": 45790864756,
-      "prior_release_commit": "c9ddc8e0f0631abb4c0358c456df5f26bfb50f87"
-    }
+      "status": "completed_success",
+      "run_id": 45791031167,
+      "release_commit": "6b23beff5b4030f4438d4bc24789405685906392",
+      "verification_job": 139816198669,
+      "report_artifact_id": 15103812323,
+      "manifest_artifact_id": 15102838530,
+      "cancelled_superseded_run": 45790953759
+    },
+    "provider_receipts": [
+      {
+        "platform": "instagram",
+        "metricool_id": "441454695",
+        "metricool_uuid": "5350388857459918883",
+        "provider_status": "PENDING",
+        "publication_date": "2026-12-01T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": true
+      },
+      {
+        "platform": "youtube",
+        "metricool_id": "441455191",
+        "metricool_uuid": "-1947402672798085253",
+        "provider_status": "PENDING",
+        "publication_date": "2026-12-01T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": true
+      },
+      {
+        "platform": "instagram",
+        "metricool_id": "443040774",
+        "metricool_uuid": "-3457936756704131454",
+        "provider_status": "PENDING",
+        "publication_date": "2026-12-04T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": true
+      },
+      {
+        "platform": "youtube",
+        "metricool_id": "443041366",
+        "metricool_uuid": "2876102014332980537",
+        "provider_status": "PENDING",
+        "publication_date": "2026-12-04T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": true
+      }
+    ]
   },
   "automation_tasks_verified_at": "2026-11-18T17:09:08.853Z",
   "next_week": {
@@ -787,21 +955,21 @@
       "2026-12-04T10:00:00+01:00"
     ],
     "required_destinations": 4,
-    "confirmed_metricool_reservations": 2,
-    "missing_destinations": 2,
+    "confirmed_metricool_reservations": 4,
+    "missing_destinations": 0,
     "deadline": "Monday 30 November evening check",
-    "status": "2/4 verified; TT-012 released, awaiting post-release deployment",
+    "status": "4/4 exact reservations verified",
     "required_destination_receipts": 4,
-    "verified_destination_receipts": 2,
-    "complete": false,
-    "remaining_missing_destinations": 2
+    "verified_destination_receipts": 4,
+    "complete": true,
+    "remaining_missing_destinations": 0
   },
   "next_week_completeness": {
     "week_start": "2026-11-30",
     "required_destination_receipts": 4,
-    "verified_destination_receipts": 2,
-    "complete": false,
-    "remaining_missing_destinations": 2
+    "verified_destination_receipts": 4,
+    "complete": true,
+    "remaining_missing_destinations": 0
   },
   "production_claim_recovery": {
     "at": "2026-11-24T08:45:26Z",
@@ -818,147 +986,131 @@
     "handoff_at": "2026-11-24T08:53:36.972Z",
     "release_reason": "Both unapproved; no submission intent; allow independent reviewer to acquire after fresh live reconciliation."
   },
-  "last_run_at": "2026-11-26T09:20:13.601Z",
-  "last_checked_at": "2026-11-26T09:20:13.601Z",
+  "last_run_at": "2026-11-26T12:22:25.265Z",
+  "last_checked_at": "2026-11-26T12:22:25.265Z",
   "pending_release_deployment": {
     "episode_id": "TT-012",
-    "status": "pending",
-    "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
-    "review_artifact_id": 15059991687,
-    "render_run_id": 45693639317,
-    "observed_at": "2026-11-26T09:20:13.601Z",
-    "next_action": "Inspect actual run 45790953759 build/deploy/public-media and exact queue/media. No new rendering. Once successful, acquire claims, reconcile accounts and December full calendar/quota, persist each intent and submit Dec 4 pair; verify both provider-hosted exact bytes; notify creation only then.",
-    "release_commit": "14d79315d4c69c1f736dd4bfb3fd52cee5e0699a",
-    "run_id": 45790953759,
-    "job_id": null,
-    "prior_release_run": 45790864756,
-    "prior_release_commit": "c9ddc8e0f0631abb4c0358c456df5f26bfb50f87"
+    "status": "completed_success",
+    "run_id": 45791031167,
+    "release_commit": "6b23beff5b4030f4438d4bc24789405685906392",
+    "verification_job": 139816198669,
+    "report_artifact_id": 15103812323,
+    "manifest_artifact_id": 15102838530,
+    "cancelled_superseded_run": 45790953759
   },
   "pending_provider_byte_verification": {
-    "episode_id": "TT-010",
+    "episode_id": "TT-012",
     "status": "success",
     "request": {
       "repository": "akshaymohan16/toxic-tales-library",
       "brand_id": "7937614",
-      "episode_id": "TT-010",
-      "release_fingerprint": "b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
-      "source_commit": "d625e4ee3a1193e5d94a659150ef758a5dfa0f21",
+      "episode_id": "TT-012",
+      "release_fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+      "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
       "files": [
         {
-          "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83.mp4",
+          "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4",
           "role": "source_video",
-          "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933"
+          "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
         },
         {
-          "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83_cover.jpg",
+          "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg",
           "role": "source_cover",
-          "expected_sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2"
+          "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
         },
         {
-          "url": "https://static.metricool.com/planner/202611/7937614-file-6111363760069145111.mp4",
+          "url": "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4",
           "role": "provider_video",
-          "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933"
+          "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
         },
         {
-          "url": "https://static.metricool.com/planner/202611/7937614-file-7239913519089911630.jpeg",
+          "url": "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg",
           "role": "provider_cover",
-          "expected_sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2"
+          "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
         },
         {
-          "url": "https://static.metricool.com/planner/202611/7937614-file-1187457565880681032.mp4",
+          "url": "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4",
           "role": "provider_video",
-          "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933"
+          "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
         }
       ]
     },
-    "requested_at": "2026-11-25T09:28:12.907Z",
-    "next_action": "Read actual provider-byte verification workflow and report; reconcile both UUIDs, finalize ledger/metadata and deduplicated creation alert only on exact hash success; never resubmit.",
-    "run_id": 45585719377,
-    "artifact_id": 15008093405,
+    "run_id": 45818843362,
+    "job_id": 139905502163,
+    "artifact_id": 15116801061,
     "report": {
-      "checked_at": "2026-11-25T09:28:34.120876+00:00",
+      "checked_at": "2026-11-26T12:21:22.682653+00:00",
       "repository": "akshaymohan16/toxic-tales-library",
       "brand_id": "7937614",
-      "episode_id": "TT-010",
-      "release_fingerprint": "b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
-      "source_commit": "d625e4ee3a1193e5d94a659150ef758a5dfa0f21",
+      "episode_id": "TT-012",
+      "release_fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+      "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
       "files": {
-        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83.mp4": {
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4": {
           "role": "source_video",
-          "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
-          "sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
+          "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+          "sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
           "http_status": 200,
-          "bytes": 3682368,
+          "bytes": 4363454,
           "decision": "pass",
           "attempts": 1,
-          "checked_at": "2026-11-25T09:28:30.195870+00:00",
-          "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83.mp4"
+          "checked_at": "2026-11-26T12:21:18.237072+00:00",
+          "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4"
         },
-        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83_cover.jpg": {
+        "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg": {
           "role": "source_cover",
-          "expected_sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2",
-          "sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2",
+          "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+          "sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
           "http_status": 200,
-          "bytes": 415763,
+          "bytes": 574209,
           "decision": "pass",
           "attempts": 1,
-          "checked_at": "2026-11-25T09:28:30.426482+00:00",
-          "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83_cover.jpg"
+          "checked_at": "2026-11-26T12:21:18.696763+00:00",
+          "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg"
         },
-        "https://static.metricool.com/planner/202611/7937614-file-6111363760069145111.mp4": {
+        "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4": {
           "role": "provider_video",
-          "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
-          "sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
+          "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+          "sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
           "http_status": 200,
-          "bytes": 3682368,
+          "bytes": 4363454,
           "decision": "pass",
           "attempts": 1,
-          "checked_at": "2026-11-25T09:28:31.836446+00:00",
-          "final_url": "https://static.metricool.com/planner/202611/7937614-file-6111363760069145111.mp4"
+          "checked_at": "2026-11-26T12:21:20.182849+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4"
         },
-        "https://static.metricool.com/planner/202611/7937614-file-7239913519089911630.jpeg": {
+        "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg": {
           "role": "provider_cover",
-          "expected_sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2",
-          "sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2",
+          "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+          "sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
           "http_status": 200,
-          "bytes": 415763,
+          "bytes": 574209,
           "decision": "pass",
           "attempts": 1,
-          "checked_at": "2026-11-25T09:28:32.785294+00:00",
-          "final_url": "https://static.metricool.com/planner/202611/7937614-file-7239913519089911630.jpeg"
+          "checked_at": "2026-11-26T12:21:21.259464+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg"
         },
-        "https://static.metricool.com/planner/202611/7937614-file-1187457565880681032.mp4": {
+        "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4": {
           "role": "provider_video",
-          "expected_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
-          "sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
+          "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+          "sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
           "http_status": 200,
-          "bytes": 3682368,
+          "bytes": 4363454,
           "decision": "pass",
           "attempts": 1,
-          "checked_at": "2026-11-25T09:28:34.120846+00:00",
-          "final_url": "https://static.metricool.com/planner/202611/7937614-file-1187457565880681032.mp4"
+          "checked_at": "2026-11-26T12:21:22.682615+00:00",
+          "final_url": "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4"
         }
       },
       "passed": true,
       "decision": "pass"
-    }
+    },
+    "requested_at": "2026-11-26T12:21:03.868Z",
+    "next_action": "Both reservations and provider bytes verified; preserve and confirm actual publication after due time."
   },
   "post_receipt_archive_deployment": {
-    "run_id": 45585865969,
-    "commit": "4b53ef9177b6577e671d7f6ed886f7dc3d238e03",
-    "status": "in_progress",
-    "jobs": [
-      {
-        "id": 139107191610,
-        "name": "build",
-        "conclusion": "success"
-      },
-      {
-        "id": 139107858505,
-        "name": "deploy",
-        "status": "in_progress"
-      }
-    ],
-    "next_action": "Read actual deploy and verify-public-media conclusions; do not rerun unless actual failure."
+    "commit": "9a683ed69488be17753d4b3967e12930c5a1e327",
+    "status": "triggered_after_receipt_commit",
+    "next_action": "Inspect actual build/deploy/public-media conclusion; no new rendering or provider writes."
   }
 }
