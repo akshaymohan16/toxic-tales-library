@@ -1,7 +1,7 @@
 {
   "month": "2026-12",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-26T17:13:28.910Z",
+  "observed_at": "2026-11-26T20:12:10.349Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -23,8 +23,8 @@
     "observed_used": 0,
     "observation_basis": "Full December calendar: 4 existing reservations, zero published; 14 remaining regular destinations",
     "full_month_calendar_verified": true,
-    "calendar_checked_at": "2026-11-26T17:13:28.910Z",
-    "observed_at": "2026-11-26T17:13:28.910Z",
+    "calendar_checked_at": "2026-11-26T20:12:10.349Z",
+    "observed_at": "2026-11-26T20:12:10.349Z",
     "published_destination_keys": [],
     "conservative_committed_destination_count": 18,
     "projected_month_destinations": 18,
@@ -39,7 +39,7 @@
     }
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-26T17:13:28.910Z",
+    "checked_at": "2026-11-26T20:12:10.349Z",
     "calendar_entries": 4,
     "published": 0,
     "scheduled": 4,
@@ -229,9 +229,9 @@
     "job_id": 139485258744,
     "conclusion": "success"
   },
-  "updated_at": "2026-11-26T17:13:28.910Z",
-  "last_provider_reconciled_at": "2026-11-26T17:13:28.910Z",
-  "next_action": "Keep existing November 27 and December 1/4 pairs intact. Reconcile actual publication only after due time. Current and next week's future slots complete; no extra production or submissions.",
+  "updated_at": "2026-11-26T20:12:10.349Z",
+  "last_provider_reconciled_at": "2026-11-26T20:12:10.349Z",
+  "next_action": "Preserve the six verified future reservations; verify TT-011 actual publication after 27 November 10:00 Europe/Vienna. No extra production, resubmission or backfill.",
   "tt010_release_review": {
     "decision": "pass",
     "reviewed_at": "2026-11-25T09:23:51.957Z",
