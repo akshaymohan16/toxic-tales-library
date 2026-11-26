@@ -1,7 +1,7 @@
 {
   "month": "2026-12",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-26T15:16:08.816Z",
+  "observed_at": "2026-11-26T17:13:28.910Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -23,8 +23,8 @@
     "observed_used": 0,
     "observation_basis": "Full December calendar: 4 existing reservations, zero published; 14 remaining regular destinations",
     "full_month_calendar_verified": true,
-    "calendar_checked_at": "2026-11-26T15:16:08.816Z",
-    "observed_at": "2026-11-26T15:16:08.816Z",
+    "calendar_checked_at": "2026-11-26T17:13:28.910Z",
+    "observed_at": "2026-11-26T17:13:28.910Z",
     "published_destination_keys": [],
     "conservative_committed_destination_count": 18,
     "projected_month_destinations": 18,
@@ -39,7 +39,7 @@
     }
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-26T15:16:08.816Z",
+    "checked_at": "2026-11-26T17:13:28.910Z",
     "calendar_entries": 4,
     "published": 0,
     "scheduled": 4,
@@ -229,9 +229,9 @@
     "job_id": 139485258744,
     "conclusion": "success"
   },
-  "updated_at": "2026-11-26T15:16:08.816Z",
-  "last_provider_reconciled_at": "2026-11-26T15:16:08.816Z",
-  "next_action": "Current and next week future reservations complete. Preserve 24 November missed slots; confirm November 27 only after due time; no extra production or duplicate submissions.",
+  "updated_at": "2026-11-26T17:13:28.910Z",
+  "last_provider_reconciled_at": "2026-11-26T17:13:28.910Z",
+  "next_action": "Keep existing November 27 and December 1/4 pairs intact. Reconcile actual publication only after due time. Current and next week's future slots complete; no extra production or submissions.",
   "tt010_release_review": {
     "decision": "pass",
     "reviewed_at": "2026-11-25T09:23:51.957Z",
@@ -393,7 +393,7 @@
     "next_action": "No further release deployment required for these receipts.",
     "run_id": 45818978944,
     "job_id": 139905971186,
-    "observed_at": "2026-11-26T15:16:08.816Z",
+    "observed_at": "2026-11-26T17:13:28.910Z",
     "verification_job": 139907828318,
     "public_files_verified": 67,
     "verified_at": "2026-11-26T12:26:02.666005Z"
