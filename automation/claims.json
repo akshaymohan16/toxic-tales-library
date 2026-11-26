@@ -483,7 +483,7 @@
     },
     "production:2026-12-04": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",
-      "phase": "post_release_deploy_verified_claimed",
+      "phase": "submission_intents_persisted",
       "status": "claimed",
       "claimed_at": "2026-11-26T12:19:46.823Z",
       "expires_at": "2026-11-26T12:49:46.823Z",
@@ -507,7 +507,7 @@
       "paper_request_sha256": "cc5918e0f3d2a8c709e794930ca4683f8f7d0474612dac0bda00094896761db0",
       "science_note": "automation/qa/tt-012-preproduction.md",
       "asset_request": "automation/qa/tt-012-asset-request.json",
-      "submission_intent_written": false,
+      "submission_intent_written": true,
       "provider_writes": 0,
       "reference_asset_pin": {
         "run": 45612112717,
@@ -582,7 +582,7 @@
     },
     "submission:instagram:2026-12-04T10:00:Europe/Vienna": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",
-      "phase": "acquired_before_intent",
+      "phase": "submission_intent_persisted",
       "status": "claimed",
       "claimed_at": "2026-11-26T12:19:46.823Z",
       "expires_at": "2026-11-26T12:49:46.823Z",
@@ -597,7 +597,7 @@
     },
     "submission:youtube:2026-12-04T10:00:Europe/Vienna": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",
-      "phase": "acquired_before_intent",
+      "phase": "submission_intent_persisted",
       "status": "claimed",
       "claimed_at": "2026-11-26T12:19:46.823Z",
       "expires_at": "2026-11-26T12:49:46.823Z",
