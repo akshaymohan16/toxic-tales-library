@@ -483,8 +483,8 @@
     },
     "production:2026-12-04": {
       "owner_run_id": "publisher:2026-11-26T09:14:35Z",
-      "phase": "independent_encoded_review",
-      "status": "active",
+      "phase": "release_committed_deployment_required",
+      "status": "released",
       "claimed_at": "2026-11-26T09:17:14.914Z",
       "expires_at": "2026-11-26T09:47:14.914Z",
       "publication_date": "2026-12-04T10:00:00+01:00",
@@ -495,7 +495,7 @@
       "candidate_screen": "automation/qa/candidate-reserve-2026-11-30.json",
       "paper_request_id": "dec04-reef-and-behaviour-reserve-20261125",
       "reconciled_calendar_at": "2026-11-26T09:17:14.914Z",
-      "next_action": "Finish source and rights recheck, release exact encoded video after review; verify post-release deployment before submissions.",
+      "next_action": "Find exact release commit publish-library workflow; verify actual build/deploy/public-media, queue and exact archive. Then fresh account/month/claim/intent checks and reserve Dec 4 both platforms; no YouTube thumbnail. Do not rebuild source.",
       "paper_retrieval_run": 45586075305,
       "paper_retrieval_job": 139107970419,
       "recovery_from_owner": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-25T17:17:50Z",
@@ -519,7 +519,7 @@
         "licence": "CC BY 4.0",
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Octopus_rubescens_189172764.jpg"
       },
-      "released_at": "2026-11-25T20:16:20Z",
+      "released_at": "2026-11-26T09:19:08.716Z",
       "source_sha256": "e8e0073a6e0e24e48c6a6b8d8dce4a16e6d91df55ab5a82118618fb4fbea91f8",
       "evidence_sha256": "4ded2e78a9fccdf3ec7771d2d1aba4f4a22177364f1f25212782e7c12527e5a8",
       "source_files": [
@@ -561,7 +561,23 @@
       "previous_failed_render_run": 45664372756,
       "previous_failed_render_job": 139382404407,
       "render_run_id": 45693639317,
-      "render_source_commit": "f541b89808293577d71f23774ccf64ee34de3a07"
+      "render_source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+      "current_review": {
+        "decision": "pass",
+        "checked_at": "2026-11-26T09:19:08.716Z",
+        "workflow_run": 45693639317,
+        "artifact_id": 15059991687,
+        "pages_artifact_id": 15060080890,
+        "fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+        "video_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+        "cover_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+        "encoded_review_index_sha256": "b3816502ed4a569cafa64dbae820bfcc064c2c364f78560e6e9b8b3dd5ffb004",
+        "findings": [
+          "Verified 74 member hashes and exact review index; Pages MP4 and cover SHA matched. Independently inspected all 14 shot midpoints, 26 before/after boundary images, 28 early transition samples, opening 0/1s, final and cover at phone scale. Previous literal linebreak defect absent. 31 inside/10 outside stays together and fades as a whole, no overlapping claims. Current points downstream, approach upstream; conceptual motion and reference photo distinct. Actual logo and clear captions. No continuous moving playback claimed.",
+          "Exact 48.900-second H264 1080x1920 24fps AAC file decoded with ffmpeg without errors. Max shot 4.90032s. Nine segment transcripts and final encoded ASR checked: similarity 0.9641434262948207; critical words and negations retained. Kokoro af_heart speed 1.04; -15.98 LUFS, -4.19 dBTP, LRA 1.60. No perceptual listening, pronunciation certification or original-audio comparison claimed.",
+          "Official retrieval run 45586075305 job 139107970419, matching request cc5918e0f3d2a8c709e794930ca4683f8f7d0474612dac0bda00094896761db0. Cached PMC12507230 full main text and prior complete reading record reviewed; Methods and Results/Discussion rechecked. Five octopuses in three-station discrimination; separate single-station 5 males analyzed, 9 tested, 4 excluded. 31 inside and 10 outside of 41 successful feeding approaches; repeated events not individuals. Proxy beads estimate plume rather than directly measuring dissolved cue. Arms/suckers plausible, sensory organs not isolated, wild generalization not tested. Fresh PLOS and PubMed correction/retraction search found no focal notice. No supplementary binary used or needed for these main text claims. Will Sides species reference photo verified Commons CC BY 4.0, pinned asset SHA 2275ff9bdf5c671211d7df892c607306d092921454a0862deb61c43039f6b275; source archive HTML DOI/full text/limits/credit inspected."
+        ]
+      }
     }
   },
   "purpose": "Per-slot cross-run ownership; acquisition requires expected-head GitHub compare-and-swap. See HANDS_OFF_RUNBOOK.md. An expired claim never authorizes an unreconciled retry."

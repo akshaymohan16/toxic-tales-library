@@ -1,7 +1,7 @@
 {
   "month": "2026-12",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-25T20:16:20Z",
+  "observed_at": "2026-11-26T09:19:08.716Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -21,8 +21,8 @@
     "observed_used": 0,
     "observation_basis": "Full December calendar: 2 existing reservations, zero published; 16 remaining regular destinations",
     "full_month_calendar_verified": true,
-    "calendar_checked_at": "2026-11-25T20:16:20Z",
-    "observed_at": "2026-11-25T20:16:20Z",
+    "calendar_checked_at": "2026-11-26T09:19:08.716Z",
+    "observed_at": "2026-11-26T09:19:08.716Z",
     "published_destination_keys": [],
     "conservative_committed_destination_count": 18,
     "projected_month_destinations": 18,
@@ -31,7 +31,7 @@
     "verified_in_this_run": true
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-25T20:16:20Z",
+    "checked_at": "2026-11-26T09:19:08.716Z",
     "calendar_entries": 2,
     "published": 0,
     "scheduled": 2,
@@ -60,36 +60,41 @@
     "cap": 20,
     "pending_build": {
       "episode_id": "TT-012",
-      "status": "in_progress",
-      "observed_at": "2026-11-25T20:18:15Z",
-      "previous_failed_run": 45664372756,
-      "previous_failed_job": 139382404407,
-      "failure": "Shot exceeds 8 seconds; render terminated, deploy and verify skipped, no artifacts",
-      "editorial_source_sha256": "e8e0073a6e0e24e48c6a6b8d8dce4a16e6d91df55ab5a82118618fb4fbea91f8",
-      "next_action": "Inspect run 45693639317 job 139485258744, retrieve its exact review artifact and MP4 only on completed successful build/deploy/public-media; check 45–95 seconds and 8-second maximum shot plus full independent review. Never restart successful build; no scheduling before release.",
+      "status": "completed_success",
+      "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+      "review_artifact_id": 15059991687,
+      "render_run_id": 45693639317,
+      "observed_at": "2026-11-26T09:19:08.716Z",
+      "next_action": "Find exact release commit publish-library workflow; verify actual build/deploy/public-media, queue and exact archive. Then fresh account/month/claim/intent checks and reserve Dec 4 both platforms; no YouTube thumbnail. Do not rebuild source.",
       "run_id": 45693639317,
       "job_id": 139485258744,
+      "conclusion": "success"
+    },
+    "pending_release_deployment": {
+      "episode_id": "TT-012",
+      "status": "release_committed_deployment_required",
       "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
-      "conclusion": null
+      "review_artifact_id": 15059991687,
+      "render_run_id": 45693639317,
+      "observed_at": "2026-11-26T09:19:08.716Z",
+      "next_action": "Find exact release commit publish-library workflow; verify actual build/deploy/public-media, queue and exact archive. Then fresh account/month/claim/intent checks and reserve Dec 4 both platforms; no YouTube thumbnail. Do not rebuild source."
     }
   },
   "pending_build": {
     "episode_id": "TT-012",
-    "status": "in_progress",
-    "observed_at": "2026-11-25T20:18:15Z",
-    "previous_failed_run": 45664372756,
-    "previous_failed_job": 139382404407,
-    "failure": "Shot exceeds 8 seconds; render terminated, deploy and verify skipped, no artifacts",
-    "editorial_source_sha256": "e8e0073a6e0e24e48c6a6b8d8dce4a16e6d91df55ab5a82118618fb4fbea91f8",
-    "next_action": "Inspect run 45693639317 job 139485258744, retrieve its exact review artifact and MP4 only on completed successful build/deploy/public-media; check 45–95 seconds and 8-second maximum shot plus full independent review. Never restart successful build; no scheduling before release.",
+    "status": "completed_success",
+    "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+    "review_artifact_id": 15059991687,
+    "render_run_id": 45693639317,
+    "observed_at": "2026-11-26T09:19:08.716Z",
+    "next_action": "Find exact release commit publish-library workflow; verify actual build/deploy/public-media, queue and exact archive. Then fresh account/month/claim/intent checks and reserve Dec 4 both platforms; no YouTube thumbnail. Do not rebuild source.",
     "run_id": 45693639317,
     "job_id": 139485258744,
-    "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
-    "conclusion": null
+    "conclusion": "success"
   },
-  "updated_at": "2026-11-25T20:18:15Z",
-  "last_provider_reconciled_at": "2026-11-25T20:16:20Z",
-  "next_action": "Inspect run 45693639317 job 139485258744, retrieve its exact review artifact and MP4 only on completed successful build/deploy/public-media; check 45–95 seconds and 8-second maximum shot plus full independent review. Never restart successful build; no scheduling before release.",
+  "updated_at": "2026-11-26T09:19:08.716Z",
+  "last_provider_reconciled_at": "2026-11-26T09:19:08.716Z",
+  "next_action": "Find exact release commit publish-library workflow; verify actual build/deploy/public-media, queue and exact archive. Then fresh account/month/claim/intent checks and reserve Dec 4 both platforms; no YouTube thumbnail. Do not rebuild source.",
   "tt010_release_review": {
     "decision": "pass",
     "reviewed_at": "2026-11-25T09:23:51.957Z",
@@ -233,5 +238,14 @@
     "bytes": 671495,
     "licence": "CC BY 4.0",
     "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Octopus_rubescens_189172764.jpg"
+  },
+  "pending_release_deployment": {
+    "episode_id": "TT-012",
+    "status": "release_committed_deployment_required",
+    "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+    "review_artifact_id": 15059991687,
+    "render_run_id": 45693639317,
+    "observed_at": "2026-11-26T09:19:08.716Z",
+    "next_action": "Find exact release commit publish-library workflow; verify actual build/deploy/public-media, queue and exact archive. Then fresh account/month/claim/intent checks and reserve Dec 4 both platforms; no YouTube thumbnail. Do not rebuild source."
   }
 }

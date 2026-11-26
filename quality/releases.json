@@ -1821,5 +1821,266 @@
       "media/tt-010-crows-and-rising-water-b5705f3b4e83_cover.jpg"
     ],
     "release_note": "Exact repaired crow export independently reviewed from compact artifact 14996559413 and Pages artifact 14996723933. Prior failed render not released. Post-release build, deploy, queue and public bytes must be verified before provider submission."
+  },
+  "TT-012": {
+    "fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+    "files": {
+      "media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+      "media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
+    },
+    "evidence_sha256": "4ded2e78a9fccdf3ec7771d2d1aba4f4a22177364f1f25212782e7c12527e5a8",
+    "reviewer": "Independent publisher review 2026-11-26",
+    "reviewed_at": "2026-11-26T09:19:08.716Z",
+    "decision": "release",
+    "independent_from_script_author": true,
+    "reviewed_encoded_frames": true,
+    "source_sha256": "e8e0073a6e0e24e48c6a6b8d8dce4a16e6d91df55ab5a82118618fb4fbea91f8",
+    "episode_id": "TT-012",
+    "publication_enabled": true,
+    "publication_eligible": true,
+    "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+    "media_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+    "verification_run": 45693639317,
+    "duration_seconds": 48.9,
+    "reviewed_contact_sheet": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_contact.jpg",
+    "scientific_review": "Official retrieval run 45586075305 job 139107970419, matching request cc5918e0f3d2a8c709e794930ca4683f8f7d0474612dac0bda00094896761db0. Cached PMC12507230 full main text and prior complete reading record reviewed; Methods and Results/Discussion rechecked. Five octopuses in three-station discrimination; separate single-station 5 males analyzed, 9 tested, 4 excluded. 31 inside and 10 outside of 41 successful feeding approaches; repeated events not individuals. Proxy beads estimate plume rather than directly measuring dissolved cue. Arms/suckers plausible, sensory organs not isolated, wild generalization not tested. Fresh PLOS and PubMed correction/retraction search found no focal notice. No supplementary binary used or needed for these main text claims. Will Sides species reference photo verified Commons CC BY 4.0, pinned asset SHA 2275ff9bdf5c671211d7df892c607306d092921454a0862deb61c43039f6b275; source archive HTML DOI/full text/limits/credit inspected.",
+    "visual_review": "Verified 74 member hashes and exact review index; Pages MP4 and cover SHA matched. Independently inspected all 14 shot midpoints, 26 before/after boundary images, 28 early transition samples, opening 0/1s, final and cover at phone scale. Previous literal linebreak defect absent. 31 inside/10 outside stays together and fades as a whole, no overlapping claims. Current points downstream, approach upstream; conceptual motion and reference photo distinct. Actual logo and clear captions. No continuous moving playback claimed.",
+    "audio_review": "Exact 48.900-second H264 1080x1920 24fps AAC file decoded with ffmpeg without errors. Max shot 4.90032s. Nine segment transcripts and final encoded ASR checked: similarity 0.9641434262948207; critical words and negations retained. Kokoro af_heart speed 1.04; -15.98 LUFS, -4.19 dBTP, LRA 1.60. No perceptual listening, pronunciation certification or original-audio comparison claimed.",
+    "narrative_review": "Cold-viewer question of locating food in darkness resolves through plume-following experiment, quantitative evidence, proxy and repeated-event caveats, and bounded hypothesis about the arms. Distinguishes data from explanation, clear payoff.",
+    "final_editorial_review": {
+      "fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+      "files": {
+        "media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+        "media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
+      },
+      "evidence_sha256": "4ded2e78a9fccdf3ec7771d2d1aba4f4a22177364f1f25212782e7c12527e5a8",
+      "reviewer": "Independent publisher review 2026-11-26",
+      "reviewed_at": "2026-11-26T09:19:08.716Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "reviewed_encoded_frames": true,
+      "source_sha256": "e8e0073a6e0e24e48c6a6b8d8dce4a16e6d91df55ab5a82118618fb4fbea91f8",
+      "standard": "story-first-v1",
+      "checks": {
+        "cold_viewer": {
+          "decision": "pass",
+          "finding": "Darkness and finding food pose a clear question.",
+          "basis": "Opening photo and captions"
+        },
+        "story": {
+          "decision": "pass",
+          "finding": "Upstream food choice leads to separate plume test then possible search mechanism.",
+          "basis": "14 shot midpoints and transcript"
+        },
+        "visuals": {
+          "decision": "pass",
+          "finding": "Flow arrows and paired count graphic explain rather than misrepresent data.",
+          "basis": "Midpoints and early/boundary samples"
+        },
+        "payoff": {
+          "decision": "pass",
+          "finding": "Chemical trails guide search; arm mechanism remains unresolved.",
+          "basis": "Closing captions and ASR"
+        },
+        "scope": {
+          "decision": "pass",
+          "finding": "Repeated successful approaches, five animals and estimated plume are explicit.",
+          "basis": "31/10 card, proxy bead scene and transcript"
+        },
+        "retelling": {
+          "decision": "pass",
+          "finding": "Sequence can be retold without implying wild proof or direct sensory organ isolation.",
+          "basis": "Main text and final transcript"
+        }
+      }
+    },
+    "branding_review": {
+      "fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+      "files": {
+        "media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+        "media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
+      },
+      "evidence_sha256": "4ded2e78a9fccdf3ec7771d2d1aba4f4a22177364f1f25212782e7c12527e5a8",
+      "reviewer": "Independent publisher review 2026-11-26",
+      "reviewed_at": "2026-11-26T09:19:08.716Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "reviewed_encoded_frames": true,
+      "source_sha256": "e8e0073a6e0e24e48c6a6b8d8dce4a16e6d91df55ab5a82118618fb4fbea91f8",
+      "standard": "toxic-tales-branding-v1",
+      "logo_sha256": "1fc9f108600c91831e3ca3524a9f7b36ef5ff33a7a5248b403167cd78cd5b742",
+      "reviewed_opening_frames": true,
+      "reviewed_every_shot_and_transition": true,
+      "reviewed_final_frame": true,
+      "reviewed_cover": true,
+      "reviewed_phone_scale": true,
+      "checks": {
+        "actual_logo": {
+          "decision": "pass",
+          "finding": "Real upper-left brand logo.",
+          "basis": "Opening, midpoints, cover"
+        },
+        "placement": {
+          "decision": "pass",
+          "finding": "Logo separate from central title and count.",
+          "basis": "Opening and every scene"
+        },
+        "clean_frames": {
+          "decision": "pass",
+          "finding": "No malformed linebreaks; fades avoid colliding text.",
+          "basis": "All early/boundary samples"
+        },
+        "captions_and_labels": {
+          "decision": "pass",
+          "finding": "Readable caption and count labels.",
+          "basis": "Phone-scale review"
+        },
+        "scientific_limits": {
+          "decision": "pass",
+          "finding": "Proxy, repeated events and uncertain mechanism explicit.",
+          "basis": "Captioned caveat scenes"
+        },
+        "provenance": {
+          "decision": "pass",
+          "finding": "Reference photo separate from schematic and experiment.",
+          "basis": "Opening and research HTML"
+        },
+        "reference_imagery": {
+          "decision": "pass",
+          "finding": "Correct species reference, no experimental footage assertion.",
+          "basis": "Will Sides licensed source and cover"
+        }
+      }
+    },
+    "motion_review": {
+      "fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+      "files": {
+        "media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+        "media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
+      },
+      "evidence_sha256": "4ded2e78a9fccdf3ec7771d2d1aba4f4a22177364f1f25212782e7c12527e5a8",
+      "reviewer": "Independent publisher review 2026-11-26",
+      "reviewed_at": "2026-11-26T09:19:08.716Z",
+      "decision": "pass",
+      "independent_from_script_author": true,
+      "reviewed_encoded_frames": true,
+      "source_sha256": "e8e0073a6e0e24e48c6a6b8d8dce4a16e6d91df55ab5a82118618fb4fbea91f8",
+      "standard": "toxic-tales-motion-v1",
+      "motion_spec_sha256": "1da71e9eb663b2497130b6d0478356d25918b78753fcf12fc3213f28de57c351",
+      "reviewed_every_shot_and_transition": true,
+      "reviewed_phone_scale": true,
+      "moving_playback_review_claimed": false,
+      "review_method": "Verified 74 member hashes and exact review index; Pages MP4 and cover SHA matched. Independently inspected all 14 shot midpoints, 26 before/after boundary images, 28 early transition samples, opening 0/1s, final and cover at phone scale. Previous literal linebreak defect absent. 31 inside/10 outside stays together and fades as a whole, no overlapping claims. Current points downstream, approach upstream; conceptual motion and reference photo distinct. Actual logo and clear captions. No continuous moving playback claimed.",
+      "checks": {
+        "kinetic_text": {
+          "decision": "pass",
+          "finding": "Short clean titles; no malformed characters.",
+          "basis": "All midpoints and early samples"
+        },
+        "transitions": {
+          "decision": "pass",
+          "finding": "Count labels transition as a whole; no overlapping measurements.",
+          "basis": "All 26 boundary and 28 early samples"
+        },
+        "ecological_motion": {
+          "decision": "pass",
+          "finding": "Downstream flow and upstream approach arrows distinct.",
+          "basis": "Schematic frames"
+        },
+        "camera_motion": {
+          "decision": "pass",
+          "finding": "Reference image legible, clear subject.",
+          "basis": "Opening 0/1s and closing"
+        },
+        "evidence_bound_data": {
+          "decision": "pass",
+          "finding": "31/10 fixed labelled counts; no invented measurements.",
+          "basis": "Count card and transition samples"
+        },
+        "caption_sync": {
+          "decision": "pass",
+          "finding": "Encoded ASR and caption sequence preserve qualifiers.",
+          "basis": "Nine segments and final encoded ASR"
+        }
+      }
+    },
+    "listening_review_claimed": false,
+    "moving_playback_review_claimed": false,
+    "original_audio_comparison_claimed": false,
+    "encoded_review_index_sha256": "b3816502ed4a569cafa64dbae820bfcc064c2c364f78560e6e9b8b3dd5ffb004",
+    "inspected_frame_paths": [
+      "shot-01-midpoint",
+      "shot-02-midpoint",
+      "shot-03-midpoint",
+      "shot-04-midpoint",
+      "shot-05-midpoint",
+      "shot-06-midpoint",
+      "shot-07-midpoint",
+      "shot-08-midpoint",
+      "shot-09-midpoint",
+      "shot-10-midpoint",
+      "shot-11-midpoint",
+      "shot-12-midpoint",
+      "shot-13-midpoint",
+      "shot-14-midpoint",
+      "boundary-01-before",
+      "boundary-01-after",
+      "boundary-02-before",
+      "boundary-02-after",
+      "boundary-03-before",
+      "boundary-03-after",
+      "boundary-04-before",
+      "boundary-04-after",
+      "boundary-05-before",
+      "boundary-05-after",
+      "boundary-06-before",
+      "boundary-06-after",
+      "boundary-07-before",
+      "boundary-07-after",
+      "boundary-08-before",
+      "boundary-08-after",
+      "boundary-09-before",
+      "boundary-09-after",
+      "boundary-10-before",
+      "boundary-10-after",
+      "boundary-11-before",
+      "boundary-11-after",
+      "boundary-12-before",
+      "boundary-12-after",
+      "boundary-13-before",
+      "boundary-13-after",
+      "shot-01-early-018",
+      "shot-01-early-070",
+      "shot-02-early-018",
+      "shot-02-early-070",
+      "shot-03-early-018",
+      "shot-03-early-070",
+      "shot-04-early-018",
+      "shot-04-early-070",
+      "shot-05-early-018",
+      "shot-05-early-070",
+      "shot-06-early-018",
+      "shot-06-early-070",
+      "shot-07-early-018",
+      "shot-07-early-070",
+      "shot-08-early-018",
+      "shot-08-early-070",
+      "shot-09-early-018",
+      "shot-09-early-070",
+      "shot-10-early-018",
+      "shot-10-early-070",
+      "shot-11-early-018",
+      "shot-11-early-070",
+      "shot-12-early-018",
+      "shot-12-early-070",
+      "shot-13-early-018",
+      "shot-13-early-070",
+      "shot-14-early-018",
+      "shot-14-early-070",
+      "opening-0s",
+      "opening-1s",
+      "closing"
+    ],
+    "release_note": "Exact encoded review artifact 15059991687 and Pages artifact 15060080890; pre-release build/deploy/public-media succeeded. Post-release build and live queue/media verification required before any submission."
   }
 }
