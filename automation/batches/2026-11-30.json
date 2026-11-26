@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-30",
   "created_on": "2026-11-24",
-  "updated_at": "2026-11-26T12:22:25.265Z",
+  "updated_at": "2026-11-26T15:16:08.816Z",
   "timezone": "Europe/Vienna",
   "status": "READY_4_OF_4_EXACT_PROVIDER_BYTES_VERIFIED",
   "required_success": {
@@ -61,7 +61,7 @@
     "required_destination_receipts": 4,
     "verified_destination_receipts": 4,
     "complete": true,
-    "calendar_checked_at": "2026-11-26T12:21:03.868Z",
+    "calendar_checked_at": "2026-11-26T15:16:08.816Z",
     "calendar_entries": 4,
     "month_budget": {
       "month": "2026-12",
@@ -71,9 +71,9 @@
       "projected": 18,
       "cap": 20
     },
-    "status": "4/4 verified",
+    "status": "READY_4_OF_4",
     "earliest_slot": null,
-    "candidate": "TT-012",
+    "candidate": "TT-012 octopus chemical-trail navigation",
     "prior_failed_review": {
       "fingerprint": "2723b28cbdbc9609f568abe0f3004e65402689d9fd043cfa029e26ffa8617ac7",
       "artifact_id": 14945356483,
@@ -86,32 +86,30 @@
     },
     "pending_build": {
       "episode_id": "TT-012",
-      "status": "in_progress",
-      "observed_at": "2026-11-25T20:18:15Z",
-      "previous_failed_run": 45664372756,
-      "previous_failed_job": 139382404407,
-      "failure": "Shot exceeds 8 seconds; render terminated, deploy and verify skipped, no artifacts",
-      "editorial_source_sha256": "e8e0073a6e0e24e48c6a6b8d8dce4a16e6d91df55ab5a82118618fb4fbea91f8",
-      "next_action": "Inspect run 45693639317 job 139485258744, retrieve its exact review artifact and MP4 only on completed successful build/deploy/public-media; check 45–95 seconds and 8-second maximum shot plus full independent review. Never restart successful build; no scheduling before release.",
+      "status": "completed_success",
+      "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+      "review_artifact_id": 15059991687,
+      "render_run_id": 45693639317,
+      "observed_at": "2026-11-26T09:19:08.716Z",
+      "next_action": "Released and both reservations verified; no further build needed.",
       "run_id": 45693639317,
       "job_id": 139485258744,
-      "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
-      "conclusion": null
+      "conclusion": "success"
     },
     "current_review": {
       "decision": "pass",
-      "reviewed_at": "2026-11-25T09:23:51.957Z",
-      "run_id": 45559585742,
-      "artifact_id": 14996559413,
-      "pages_artifact_id": 14996723933,
-      "fingerprint": "b5705f3b4e8396feacb16daa5e796eef8a06977d0b5a4976a891ff98e4d01132",
-      "review_index_sha256": "1acc972615d83eb185c5a750221cd0730d23890927f76d4fe3e45a8b5fd64940",
-      "mp4_sha256": "04e29205cbf0dacd4d3fd49b7e393c22ff19a0a4e3a1cfcf9177b98830763933",
-      "package_hashes_verified": 79,
+      "checked_at": "2026-11-26T09:19:08.716Z",
+      "workflow_run": 45693639317,
+      "artifact_id": 15059991687,
+      "pages_artifact_id": 15060080890,
+      "fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+      "video_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+      "cover_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+      "encoded_review_index_sha256": "b3816502ed4a569cafa64dbae820bfcc064c2c364f78560e6e9b8b3dd5ffb004",
       "findings": [
-        "Verified 79 compact-package member hashes and exact review index; actual Pages artifact MP4 SHA matched and decoded without errors. Inspected all 15 midpoint frames, 28 before/after boundary frames, 30 early 0.18/0.70s samples, opening 0/1s, closing and cover, at phone scale. Independently extracted 13 more exact MP4 frames during both stone sequences: the floating reward remains at surface as water rises after stone contact; high-wide and low-narrow comparison correctly shown. Initial stone approaches small label closely but does not obscure meaning. Whole-art fades avoid overlapping claims; logo, captions, photograph provenance visible. No uninterrupted moving playback claimed.",
-        "Actual 52.000s H264/AAC 1080x1920 24fps file fully decoded with ffmpeg without errors; manifest eight segment transcripts and final encoded ASR reviewed, final similarity 0.9863945578231292, exact narrow and other critical words/negations preserved, 50-50 transcription equivalent to fifty-fifty. Kokoro af_heart speed 1.04, output -16.09 LUFS, -4.41 dBTP, LRA 1.70. No perceptual listening, pronunciation certification or original-audio comparison claimed.",
-        "Re-read cached PMC3966847 main text and exact Methods/Results lines 60–104; successful official retrieval run 44930526923 retrieve job 136925976750 contains matching request SHA 10f4c16474a6aed371a9c98bc59538d97f79bcaf27433d036ca5d7b75414fddb. Metadata XML SHA 474963b983846ed67d8e0dcc88185aac92ebf091f88912fbdc6a32c204219be3. Six trained birds, 6/5/4 by tasks, 20 trials/task, water 76.3%, sinking 88%, solid 89%, high-wide 86.8%; narrow first choice 56% p=.27, connected U-tube 48.9% p=.79. Both narrow/wide rewards obtainable in task 4; only high-wide functional in task 5. Fixed order, motivation loss, perceptual layout and alternative learning explanations limit generalization. No supplementary individual data or footage used; main text sufficient for claims. Fresh PLOS DOI, PubMed and targeted correction/retraction search found no focal notice. Commons Corvus moneduloides, Sarramea, New Caledonia 1.jpg identifies benkeen iNaturalist photo 586262751 CC0 1.0; manifest exact creator-file download hash 3807578f3a93cdaa7bd009921f58b522907871235d7d711ce2bdd9c18aa2ecb9 matches pinned asset. Inspected archived research HTML with DOI, full-text, limits and credit links."
+        "Verified 74 member hashes and exact review index; Pages MP4 and cover SHA matched. Independently inspected all 14 shot midpoints, 26 before/after boundary images, 28 early transition samples, opening 0/1s, final and cover at phone scale. Previous literal linebreak defect absent. 31 inside/10 outside stays together and fades as a whole, no overlapping claims. Current points downstream, approach upstream; conceptual motion and reference photo distinct. Actual logo and clear captions. No continuous moving playback claimed.",
+        "Exact 48.900-second H264 1080x1920 24fps AAC file decoded with ffmpeg without errors. Max shot 4.90032s. Nine segment transcripts and final encoded ASR checked: similarity 0.9641434262948207; critical words and negations retained. Kokoro af_heart speed 1.04; -15.98 LUFS, -4.19 dBTP, LRA 1.60. No perceptual listening, pronunciation certification or original-audio comparison claimed.",
+        "Official retrieval run 45586075305 job 139107970419, matching request cc5918e0f3d2a8c709e794930ca4683f8f7d0474612dac0bda00094896761db0. Cached PMC12507230 full main text and prior complete reading record reviewed; Methods and Results/Discussion rechecked. Five octopuses in three-station discrimination; separate single-station 5 males analyzed, 9 tested, 4 excluded. 31 inside and 10 outside of 41 successful feeding approaches; repeated events not individuals. Proxy beads estimate plume rather than directly measuring dissolved cue. Arms/suckers plausible, sensory organs not isolated, wild generalization not tested. Fresh PLOS and PubMed correction/retraction search found no focal notice. No supplementary binary used or needed for these main text claims. Will Sides species reference photo verified Commons CC BY 4.0, pinned asset SHA 2275ff9bdf5c671211d7df892c607306d092921454a0862deb61c43039f6b275; source archive HTML DOI/full text/limits/credit inspected."
       ]
     },
     "provider_receipts_pending_hash": 0,
@@ -264,7 +262,6 @@
       "licence": "CC BY 4.0",
       "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Octopus_rubescens_189172764.jpg"
     },
-    "checked_at": "2026-11-25T17:24:00.065Z",
     "pending_release_deployment": {
       "episode_id": "TT-012",
       "status": "completed_success",
@@ -312,7 +309,18 @@
         "verified_readback": true,
         "provider_bytes_verified": true
       }
-    ]
+    ],
+    "post_receipt_archive_deployment": {
+      "commit": "9a683ed69488be17753d4b3967e12930c5a1e327",
+      "status": "completed_success",
+      "next_action": "No further release deployment required for these receipts.",
+      "run_id": 45818978944,
+      "job_id": 139905971186,
+      "observed_at": "2026-11-26T15:16:08.816Z",
+      "verification_job": 139907828318,
+      "public_files_verified": 67,
+      "verified_at": "2026-11-26T12:26:02.666005Z"
+    }
   },
   "owner_action_blocker": false,
   "next_step": "Current and next week future reservations complete. Preserve 24 November missed slots; confirm November 27 only after due time; no extra production or duplicate submissions.",
@@ -323,7 +331,7 @@
     "review_artifact_id": 15059991687,
     "render_run_id": 45693639317,
     "observed_at": "2026-11-26T09:19:08.716Z",
-    "next_action": "Find exact release commit publish-library workflow; verify actual build/deploy/public-media, queue and exact archive. Then fresh account/month/claim/intent checks and reserve Dec 4 both platforms; no YouTube thumbnail. Do not rebuild source.",
+    "next_action": "Released and both reservations verified; no further build needed.",
     "run_id": 45693639317,
     "job_id": 139485258744,
     "conclusion": "success"
@@ -533,5 +541,16 @@
     },
     "passed": true,
     "decision": "pass"
+  },
+  "post_receipt_archive_deployment": {
+    "commit": "9a683ed69488be17753d4b3967e12930c5a1e327",
+    "status": "completed_success",
+    "next_action": "No further release deployment required for these receipts.",
+    "run_id": 45818978944,
+    "job_id": 139905971186,
+    "observed_at": "2026-11-26T15:16:08.816Z",
+    "verification_job": 139907828318,
+    "public_files_verified": 67,
+    "verified_at": "2026-11-26T12:26:02.666005Z"
   }
 }

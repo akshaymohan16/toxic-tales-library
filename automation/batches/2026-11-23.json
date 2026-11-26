@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-26T12:22:25.265Z",
+  "updated_at": "2026-11-26T15:16:08.816Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
@@ -54,7 +54,7 @@
   "science_rights_release_status": "TT-011 released, deployed and exact identical MP4 provider bytes verified",
   "expired_claims": [],
   "provider_reconciliation": {
-    "checked_at": "2026-11-26T12:20:53.470Z",
+    "checked_at": "2026-11-26T15:16:08.816Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -74,14 +74,15 @@
       "provider_status": "ERROR",
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
-      "public_title_channel_independently_rechecked_this_run": true,
+      "public_title_channel_independently_rechecked_this_run": false,
       "independent_public_verification_job": 139104287999,
-      "independent_public_verification_basis": "Actual readiness log: public YouTube Short verified; thumbnail-only warning; preserve ERROR and do not duplicate.",
+      "independent_public_verification_basis": "Actual readiness audit log: public YouTube Short independently verified; provider thumbnail warning remains ERROR.",
       "retry_allowed": false,
-      "independent_verification_run": 45791031216,
-      "independent_verification_job": 139809804046,
-      "independent_verification_at": "2026-11-26T09:20:34.8327212Z",
-      "independent_public_verification_run": 45585016514
+      "independent_verification_run": 45819231696,
+      "independent_verification_job": 139906840322,
+      "independent_verification_at": "2026-11-26T12:23:49.5198646Z",
+      "independent_public_verification_run": 45585016514,
+      "current_public_check_note": "Inspected actual latest watchdog log, which independently verified public title and channel at 12:23 UTC; fresh Metricool read still ERROR. No retry."
     },
     "weekly_slots": [
       {
@@ -114,7 +115,7 @@
     "weekly_receipts": 2,
     "missing_destinations": 2,
     "provider_writes": 0,
-    "new_releases": 0,
+    "new_releases": [],
     "new_confirmed_published_keys": [],
     "history_preserved": true,
     "owner_action_blockers": [],
@@ -130,12 +131,13 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45586171144,
+      "id": 45819231696,
+      "job": 139906840322,
       "conclusion": "failure",
-      "cause": "121 tests passed; elapsed Nov 24 slots absent; prior independent TT009 public verification in actual log."
+      "cause": "121 tests passed, policy passed; only two elapsed November 24 missing destinations; public TT-009 verified, provider ERROR preserved"
     },
     "latest_archive_workflow": {
-      "id": 45585865969,
+      "id": 45818978944,
       "conclusion": "success"
     },
     "last_pre_change_successful_archive_workflow": {
@@ -164,7 +166,7 @@
       "440852560",
       "440852965"
     ],
-    "calendar_repeat_attempt": "Full November 16 entries; full December 2 entries; TT011 and TT010 pairs intact; December 4 absent.",
+    "calendar_repeat_attempt": "Complete November (16) and December (4) calendars: all six future receipts match existing exact verified media URLs and reviewed metadata; no 24 November backfill.",
     "missed_destinations": 2,
     "future_missing_destinations": 0,
     "tt011_encoded_review": {
@@ -178,25 +180,12 @@
     },
     "pending_release_deployment": {
       "run_id": 45479451775,
-      "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
-      "observed_at": "2026-11-24T20:20:07.143Z",
-      "jobs": [
-        {
-          "id": 138748350246,
-          "name": "build",
-          "status": "completed",
-          "conclusion": "success",
-          "current_steps": []
-        },
-        {
-          "id": 138749200885,
-          "name": "deploy",
-          "status": "waiting",
-          "conclusion": null,
-          "current_steps": []
-        }
-      ],
-      "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
+      "status": "success",
+      "public_files_verified": 63,
+      "public_verification_job": 138749499734,
+      "site_manifest_artifact_id": 14959938192,
+      "pages_artifact_id": 14959793328,
+      "next_action": "Completed; exact reservations remain verified."
     },
     "friday_receipts": [
       {
@@ -342,6 +331,178 @@
         "licence": "CC BY 4.0",
         "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Octopus_rubescens_189172764.jpg"
       }
+    },
+    "tt012_pending_build": {
+      "episode_id": "TT-012",
+      "status": "completed_success",
+      "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+      "review_artifact_id": 15059991687,
+      "render_run_id": 45693639317,
+      "observed_at": "2026-11-26T09:19:08.716Z",
+      "next_action": "Find exact release commit publish-library workflow; verify actual build/deploy/public-media, queue and exact archive. Then fresh account/month/claim/intent checks and reserve Dec 4 both platforms; no YouTube thumbnail. Do not rebuild source.",
+      "run_id": 45693639317,
+      "job_id": 139485258744,
+      "conclusion": "success"
+    },
+    "tt012_encoded_review": {
+      "decision": "pass",
+      "checked_at": "2026-11-26T09:19:08.716Z",
+      "workflow_run": 45693639317,
+      "artifact_id": 15059991687,
+      "pages_artifact_id": 15060080890,
+      "fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+      "video_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+      "cover_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+      "encoded_review_index_sha256": "b3816502ed4a569cafa64dbae820bfcc064c2c364f78560e6e9b8b3dd5ffb004",
+      "findings": [
+        "Verified 74 member hashes and exact review index; Pages MP4 and cover SHA matched. Independently inspected all 14 shot midpoints, 26 before/after boundary images, 28 early transition samples, opening 0/1s, final and cover at phone scale. Previous literal linebreak defect absent. 31 inside/10 outside stays together and fades as a whole, no overlapping claims. Current points downstream, approach upstream; conceptual motion and reference photo distinct. Actual logo and clear captions. No continuous moving playback claimed.",
+        "Exact 48.900-second H264 1080x1920 24fps AAC file decoded with ffmpeg without errors. Max shot 4.90032s. Nine segment transcripts and final encoded ASR checked: similarity 0.9641434262948207; critical words and negations retained. Kokoro af_heart speed 1.04; -15.98 LUFS, -4.19 dBTP, LRA 1.60. No perceptual listening, pronunciation certification or original-audio comparison claimed.",
+        "Official retrieval run 45586075305 job 139107970419, matching request cc5918e0f3d2a8c709e794930ca4683f8f7d0474612dac0bda00094896761db0. Cached PMC12507230 full main text and prior complete reading record reviewed; Methods and Results/Discussion rechecked. Five octopuses in three-station discrimination; separate single-station 5 males analyzed, 9 tested, 4 excluded. 31 inside and 10 outside of 41 successful feeding approaches; repeated events not individuals. Proxy beads estimate plume rather than directly measuring dissolved cue. Arms/suckers plausible, sensory organs not isolated, wild generalization not tested. Fresh PLOS and PubMed correction/retraction search found no focal notice. No supplementary binary used or needed for these main text claims. Will Sides species reference photo verified Commons CC BY 4.0, pinned asset SHA 2275ff9bdf5c671211d7df892c607306d092921454a0862deb61c43039f6b275; source archive HTML DOI/full text/limits/credit inspected."
+      ]
+    },
+    "tt012_pending_release_deployment": {
+      "episode_id": "TT-012",
+      "status": "pending",
+      "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+      "review_artifact_id": 15059991687,
+      "render_run_id": 45693639317,
+      "observed_at": "2026-11-26T09:20:13.601Z",
+      "next_action": "Inspect actual run 45790953759 build/deploy/public-media and exact queue/media. No new rendering. Once successful, acquire claims, reconcile accounts and December full calendar/quota, persist each intent and submit Dec 4 pair; verify both provider-hosted exact bytes; notify creation only then.",
+      "release_commit": "14d79315d4c69c1f736dd4bfb3fd52cee5e0699a",
+      "run_id": 45790953759,
+      "job_id": null,
+      "prior_release_run": 45790864756,
+      "prior_release_commit": "c9ddc8e0f0631abb4c0358c456df5f26bfb50f87"
+    },
+    "tt012_provider_receipts": [
+      {
+        "platform": "instagram",
+        "metricool_id": "443040774",
+        "metricool_uuid": "-3457936756704131454",
+        "provider_status": "PENDING",
+        "publication_date": "2026-12-04T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": true
+      },
+      {
+        "platform": "youtube",
+        "metricool_id": "443041366",
+        "metricool_uuid": "2876102014332980537",
+        "provider_status": "PENDING",
+        "publication_date": "2026-12-04T10:00:00+01:00",
+        "verified_readback": true,
+        "provider_bytes_verified": true
+      }
+    ],
+    "tt012_provider_byte_verification": {
+      "episode_id": "TT-012",
+      "status": "success",
+      "request": {
+        "repository": "akshaymohan16/toxic-tales-library",
+        "brand_id": "7937614",
+        "episode_id": "TT-012",
+        "release_fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+        "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+        "files": [
+          {
+            "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4",
+            "role": "source_video",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
+          },
+          {
+            "url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg",
+            "role": "source_cover",
+            "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
+          },
+          {
+            "url": "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4",
+            "role": "provider_video",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
+          },
+          {
+            "url": "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg",
+            "role": "provider_cover",
+            "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
+          },
+          {
+            "url": "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4",
+            "role": "provider_video",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202"
+          }
+        ]
+      },
+      "run_id": 45818843362,
+      "job_id": 139905502163,
+      "artifact_id": 15116801061,
+      "report": {
+        "checked_at": "2026-11-26T12:21:22.682653+00:00",
+        "repository": "akshaymohan16/toxic-tales-library",
+        "brand_id": "7937614",
+        "episode_id": "TT-012",
+        "release_fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
+        "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
+        "files": {
+          "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4": {
+            "role": "source_video",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "http_status": 200,
+            "bytes": 4363454,
+            "decision": "pass",
+            "attempts": 1,
+            "checked_at": "2026-11-26T12:21:18.237072+00:00",
+            "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4"
+          },
+          "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg": {
+            "role": "source_cover",
+            "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+            "sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+            "http_status": 200,
+            "bytes": 574209,
+            "decision": "pass",
+            "attempts": 1,
+            "checked_at": "2026-11-26T12:21:18.696763+00:00",
+            "final_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg"
+          },
+          "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4": {
+            "role": "provider_video",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "http_status": 200,
+            "bytes": 4363454,
+            "decision": "pass",
+            "attempts": 1,
+            "checked_at": "2026-11-26T12:21:20.182849+00:00",
+            "final_url": "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4"
+          },
+          "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg": {
+            "role": "provider_cover",
+            "expected_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+            "sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
+            "http_status": 200,
+            "bytes": 574209,
+            "decision": "pass",
+            "attempts": 1,
+            "checked_at": "2026-11-26T12:21:21.259464+00:00",
+            "final_url": "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg"
+          },
+          "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4": {
+            "role": "provider_video",
+            "expected_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
+            "http_status": 200,
+            "bytes": 4363454,
+            "decision": "pass",
+            "attempts": 1,
+            "checked_at": "2026-11-26T12:21:22.682615+00:00",
+            "final_url": "https://static.metricool.com/planner/202611/7937614-file-5165761842555020266.mp4"
+          }
+        },
+        "passed": true,
+        "decision": "pass"
+      },
+      "requested_at": "2026-11-26T12:21:03.868Z",
+      "next_action": "Both reservations and provider bytes verified; preserve and confirm actual publication after due time."
     }
   },
   "owner_action_blocker": false,
@@ -353,28 +514,15 @@
     "production:2026-11-27"
   ],
   "claim_handoff_at": "2026-11-24T16:56:33.962Z",
-  "production_readiness": "TT-011 exact encoded export passed. Verify this release commit's queue/build/deploy/public-media before provider submission. Friday 27 Nov 10:00 only; Tuesday missed, no backfill. Then review existing TT-010 from same artifact for December 1.",
+  "production_readiness": "Both Friday destinations confirmed reserved; Tuesday missed, no backfill.",
   "pending_release_deployment": {
     "run_id": 45479451775,
-    "release_commit": "4c1d9294bb76b14dceb22bce7c5fadf221a2b548",
-    "observed_at": "2026-11-24T20:20:07.143Z",
-    "jobs": [
-      {
-        "id": 138748350246,
-        "name": "build",
-        "status": "completed",
-        "conclusion": "success",
-        "current_steps": []
-      },
-      {
-        "id": 138749200885,
-        "name": "deploy",
-        "status": "waiting",
-        "conclusion": null,
-        "current_steps": []
-      }
-    ],
-    "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
+    "status": "success",
+    "public_files_verified": 63,
+    "public_verification_job": 138749499734,
+    "site_manifest_artifact_id": 14959938192,
+    "pages_artifact_id": 14959793328,
+    "next_action": "Completed; exact reservations remain verified."
   },
   "provider_byte_verification_report": {
     "checked_at": "2026-11-24T20:23:08.943313+00:00",
