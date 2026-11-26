@@ -508,7 +508,7 @@
       "science_note": "automation/qa/tt-012-preproduction.md",
       "asset_request": "automation/qa/tt-012-asset-request.json",
       "submission_intent_written": true,
-      "provider_writes": 0,
+      "provider_writes": 1,
       "reference_asset_pin": {
         "run": 45612112717,
         "job": 139198028238,
@@ -582,8 +582,8 @@
     },
     "submission:instagram:2026-12-04T10:00:Europe/Vienna": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",
-      "phase": "submission_intent_persisted",
-      "status": "claimed",
+      "phase": "provider_receipt_readback_verified_bytes_pending",
+      "status": "receipt_pending_byte_verification",
       "claimed_at": "2026-11-26T12:19:46.823Z",
       "expires_at": "2026-11-26T12:49:46.823Z",
       "episode_id": "TT-012",
@@ -593,7 +593,10 @@
       "doi": "10.1371/journal.pone.0330262",
       "release_fingerprint": "f7b58b0f402e2f595aeefffbcc9bfe6f775069d1bf49dfc88260e7dbb25367dd",
       "intent": "automation/instagram/TT-012-intent.json",
-      "reconciled_calendar_at": "2026-11-26T12:18:48.504Z"
+      "reconciled_calendar_at": "2026-11-26T12:18:48.504Z",
+      "metricool_uuid": "-3457936756704131454",
+      "metricool_id": "443040774",
+      "readback_at": "2026-11-26T12:20:36.678Z"
     },
     "submission:youtube:2026-12-04T10:00:Europe/Vienna": {
       "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",

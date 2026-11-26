@@ -6,7 +6,7 @@
   "timezone": "Europe/Vienna",
   "created_at": "2026-11-26T12:20:07.231Z",
   "owner_run_id": "Automation_991690d6af648191ac8037cfa96c92a0:2026-11-26T12:13:08Z",
-  "status": "intent_persisted_before_provider_write",
+  "status": "scheduled_readback_verified_bytes_pending",
   "source_video_sha256": "f687178fcced512e482c15e666cd0b1aa34b19929dfa4fd3cc3ea3a6a6815202",
   "source_media_urls": [
     "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e.mp4"
@@ -34,5 +34,60 @@
   "format": "REEL",
   "source_cover_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1",
   "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg",
-  "reviewed_caption": "How does an octopus find food without visible light? In dark laboratory flumes, East Pacific red octopuses favored baited stations when approaching upstream. In a separate task, 31 of 41 successful approaches by five analyzed males arrived from inside the estimated chemical plume. These are repeated feeding events, not 41 animals. Suckers might help guide the search, but the experiment did not isolate the sensory organs. Small samples, excluded animals and a proxy plume limit generalization.\n\nWeertman et al. (2025), PLOS ONE. DOI: 10.1371/journal.pone.0330262\nFull text: https://pmc.ncbi.nlm.nih.gov/articles/PMC12507230/\nEvidence and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-012.html\nPhoto: Will Sides, CC BY 4.0 (species reference only): https://commons.wikimedia.org/wiki/File:Octopus_rubescens_189172764.jpg\nOriginal conceptual animation; synthetic neural narration.\n#ToxicTales #Octopus #MarineEcology #AnimalBehaviour #ChemicalEcology"
+  "reviewed_caption": "How does an octopus find food without visible light? In dark laboratory flumes, East Pacific red octopuses favored baited stations when approaching upstream. In a separate task, 31 of 41 successful approaches by five analyzed males arrived from inside the estimated chemical plume. These are repeated feeding events, not 41 animals. Suckers might help guide the search, but the experiment did not isolate the sensory organs. Small samples, excluded animals and a proxy plume limit generalization.\n\nWeertman et al. (2025), PLOS ONE. DOI: 10.1371/journal.pone.0330262\nFull text: https://pmc.ncbi.nlm.nih.gov/articles/PMC12507230/\nEvidence and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-012.html\nPhoto: Will Sides, CC BY 4.0 (species reference only): https://commons.wikimedia.org/wiki/File:Octopus_rubescens_189172764.jpg\nOriginal conceptual animation; synthetic neural narration.\n#ToxicTales #Octopus #MarineEcology #AnimalBehaviour #ChemicalEcology",
+  "last_reconciled_at": "2026-11-26T12:20:36.678Z",
+  "schedule_readback_verified": true,
+  "metricool_id": "443040774",
+  "metricool_uuid": "-3457936756704131454",
+  "provider_media_url": "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4",
+  "provider_cover_url": "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg",
+  "provider_status": "PENDING",
+  "planner_url": "https://app.metricool.com/planner/calendar?blogId=7937614&openWithPostUuid=-3457936756704131454",
+  "provider_readback": {
+    "id": 443040774,
+    "publicationDate": {
+      "dateTime": "2026-12-04T10:00:00",
+      "timezone": "Europe/Vienna"
+    },
+    "creationDate": {
+      "dateTime": "2026-11-26T13:20:00",
+      "timezone": "Europe/Vienna"
+    },
+    "text": "How does an octopus find food without visible light? In dark laboratory flumes, East Pacific red octopuses favored baited stations when approaching upstream. In a separate task, 31 of 41 successful approaches by five analyzed males arrived from inside the estimated chemical plume. These are repeated feeding events, not 41 animals. Suckers might help guide the search, but the experiment did not isolate the sensory organs. Small samples, excluded animals and a proxy plume limit generalization.\n\nWeertman et al. (2025), PLOS ONE. DOI: 10.1371/journal.pone.0330262\nFull text: https://pmc.ncbi.nlm.nih.gov/articles/PMC12507230/\nEvidence and credits: https://akshaymohan16.github.io/toxic-tales-library/sources/tt-012.html\nPhoto: Will Sides, CC BY 4.0 (species reference only): https://commons.wikimedia.org/wiki/File:Octopus_rubescens_189172764.jpg\nOriginal conceptual animation; synthetic neural narration.\n#ToxicTales #Octopus #MarineEcology #AnimalBehaviour #ChemicalEcology",
+    "firstCommentText": "",
+    "providers": [
+      {
+        "network": "instagram",
+        "status": "PENDING",
+        "detailedStatus": "Pending"
+      }
+    ],
+    "media": [
+      "https://static.metricool.com/planner/202611/7937614-file-12157122023855230111.mp4"
+    ],
+    "autoPublish": true,
+    "saveExternalMediaFiles": false,
+    "mediaAltText": [
+      null
+    ],
+    "shortener": false,
+    "draft": false,
+    "videoThumbnailUrl": "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg",
+    "imageVariants": false,
+    "twitterData": {
+      "type": "POST"
+    },
+    "instagramData": {
+      "autoPublish": true,
+      "type": "REEL",
+      "showReelOnFeed": true,
+      "isAiGenerated": true,
+      "isPaidPartnership": false
+    },
+    "hasNotReadNotes": false,
+    "uuid": "-3457936756704131454",
+    "creatorUserMail": "akshaymohank21@gmail.com",
+    "creatorUserId": 6223629,
+    "brandTags": []
+  }
 }
