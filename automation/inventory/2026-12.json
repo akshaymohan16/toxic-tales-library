@@ -72,15 +72,17 @@
     },
     "pending_release_deployment": {
       "episode_id": "TT-012",
-      "status": "in_progress",
+      "status": "pending",
       "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
       "review_artifact_id": 15059991687,
       "render_run_id": 45693639317,
-      "observed_at": "2026-11-26T09:19:43.741Z",
-      "next_action": "Verify actual release deployment and exact public queue/media. Review-record path normalization commit follows original release; inspect latest publish-library run for that commit too. Then acquire claims and submit Dec 4 pair once only.",
-      "release_commit": "c9ddc8e0f0631abb4c0358c456df5f26bfb50f87",
-      "run_id": 45790864756,
-      "job_id": 139809246703
+      "observed_at": "2026-11-26T09:20:13.601Z",
+      "next_action": "Inspect actual run 45790953759 build/deploy/public-media and exact queue/media. No new rendering. Once successful, acquire claims, reconcile accounts and December full calendar/quota, persist each intent and submit Dec 4 pair; verify both provider-hosted exact bytes; notify creation only then.",
+      "release_commit": "14d79315d4c69c1f736dd4bfb3fd52cee5e0699a",
+      "run_id": 45790953759,
+      "job_id": null,
+      "prior_release_run": 45790864756,
+      "prior_release_commit": "c9ddc8e0f0631abb4c0358c456df5f26bfb50f87"
     }
   },
   "pending_build": {
@@ -95,9 +97,9 @@
     "job_id": 139485258744,
     "conclusion": "success"
   },
-  "updated_at": "2026-11-26T09:19:43.741Z",
+  "updated_at": "2026-11-26T09:20:13.601Z",
   "last_provider_reconciled_at": "2026-11-26T09:19:08.716Z",
-  "next_action": "Find exact release commit publish-library workflow; verify actual build/deploy/public-media, queue and exact archive. Then fresh account/month/claim/intent checks and reserve Dec 4 both platforms; no YouTube thumbnail. Do not rebuild source.",
+  "next_action": "Inspect actual run 45790953759 build/deploy/public-media and exact queue/media. No new rendering. Once successful, acquire claims, reconcile accounts and December full calendar/quota, persist each intent and submit Dec 4 pair; verify both provider-hosted exact bytes; notify creation only then.",
   "tt010_release_review": {
     "decision": "pass",
     "reviewed_at": "2026-11-25T09:23:51.957Z",
@@ -244,14 +246,16 @@
   },
   "pending_release_deployment": {
     "episode_id": "TT-012",
-    "status": "in_progress",
+    "status": "pending",
     "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
     "review_artifact_id": 15059991687,
     "render_run_id": 45693639317,
-    "observed_at": "2026-11-26T09:19:43.741Z",
-    "next_action": "Verify actual release deployment and exact public queue/media. Review-record path normalization commit follows original release; inspect latest publish-library run for that commit too. Then acquire claims and submit Dec 4 pair once only.",
-    "release_commit": "c9ddc8e0f0631abb4c0358c456df5f26bfb50f87",
-    "run_id": 45790864756,
-    "job_id": 139809246703
+    "observed_at": "2026-11-26T09:20:13.601Z",
+    "next_action": "Inspect actual run 45790953759 build/deploy/public-media and exact queue/media. No new rendering. Once successful, acquire claims, reconcile accounts and December full calendar/quota, persist each intent and submit Dec 4 pair; verify both provider-hosted exact bytes; notify creation only then.",
+    "release_commit": "14d79315d4c69c1f736dd4bfb3fd52cee5e0699a",
+    "run_id": 45790953759,
+    "job_id": null,
+    "prior_release_run": 45790864756,
+    "prior_release_commit": "c9ddc8e0f0631abb4c0358c456df5f26bfb50f87"
   }
 }
