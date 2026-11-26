@@ -153,11 +153,11 @@
       "independent_public_verification_job": 139104287999,
       "independent_public_verification_basis": "Actual readiness audit log: public YouTube Short independently verified; provider thumbnail warning remains ERROR.",
       "retry_allowed": false,
-      "independent_verification_run": 45693639185,
-      "independent_verification_job": 139382405018,
-      "independent_verification_at": "2026-11-25T17:24:18.947Z",
+      "independent_verification_run": 45707464228,
+      "independent_verification_job": 139532989598,
+      "independent_verification_at": "2026-11-25T21:47:08.7171493Z",
       "independent_public_verification_run": 45585016514,
-      "current_public_check_note": "Direct public web retrieval unavailable in this run; preserve last positive independent verification and ERROR; no retry."
+      "current_public_check_note": "Direct public retrieval unavailable; independently checked actual latest watchdog job log (45707464228 / 139532989598) from 25 Nov 21:47Z confirms public Short with thumbnail ERROR. No provider retry."
     },
     "weekly_slots": [
       {
@@ -208,10 +208,10 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45664372773,
-      "job": 139382405018,
+      "id": 45707464228,
+      "job": 139532989598,
       "conclusion": "failure",
-      "cause": "Elapsed Nov 24 missing pair only; tests and enforcer passed; TT009 independently public verified."
+      "cause": "121 automation tests passed; actual readiness audit reports missing elapsed Nov 24 slots and verified TT009 public thumbnail warning; do not backfill."
     },
     "latest_archive_workflow": {
       "id": 45643096385,
@@ -495,6 +495,6 @@
     ],
     "next_action": "Inspect exact release run jobs, deployed queue and public-media SHA verification; only after success, acquire Friday destination CAS claims, fresh brand/full-month calendar/quota, persist intents, submit separate Instagram Reel and YouTube Short (no YouTube thumbnail or offset), reconcile readbacks and provider bytes. Then TT-010 review for December 1."
   },
-  "updated_at": "2026-11-26T09:19:08.716Z",
+  "updated_at": "2026-11-26T09:19:43.741Z",
   "last_provider_reconciled_at": "2026-11-26T09:19:08.716Z"
 }

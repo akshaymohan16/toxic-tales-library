@@ -1,6 +1,6 @@
 {
   "checked_on": "2026-11-25",
-  "updated_at": "2026-11-26T09:19:08.716Z",
+  "updated_at": "2026-11-26T09:19:43.741Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
@@ -133,7 +133,7 @@
   ],
   "deployment_and_media": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed.",
   "review_limit": "Actual encoded export frame samples, SHA and ASR verified; repaired transition review passed. No perceptual listening or uninterrupted moving playback claimed.",
-  "automatic_next_step": "Find exact release commit publish-library workflow; verify actual build/deploy/public-media, queue and exact archive. Then fresh account/month/claim/intent checks and reserve Dec 4 both platforms; no YouTube thumbnail. Do not rebuild source.",
+  "automatic_next_step": "Verify actual release deployment and exact public queue/media. Review-record path normalization commit follows original release; inspect latest publish-library run for that commit too. Then acquire claims and submit Dec 4 pair once only.",
   "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
   "scheduled_posts_returned": 4,
   "published_provider_receipts": 11,
@@ -236,11 +236,11 @@
       "independent_public_verification_job": 139104287999,
       "independent_public_verification_basis": "Actual readiness audit log: public YouTube Short independently verified; provider thumbnail warning remains ERROR.",
       "retry_allowed": false,
-      "independent_verification_run": 45693639185,
-      "independent_verification_job": 139382405018,
-      "independent_verification_at": "2026-11-25T17:24:18.947Z",
+      "independent_verification_run": 45707464228,
+      "independent_verification_job": 139532989598,
+      "independent_verification_at": "2026-11-25T21:47:08.7171493Z",
       "independent_public_verification_run": 45585016514,
-      "current_public_check_note": "Direct public web retrieval unavailable in this run; preserve last positive independent verification and ERROR; no retry."
+      "current_public_check_note": "Direct public retrieval unavailable; independently checked actual latest watchdog job log (45707464228 / 139532989598) from 25 Nov 21:47Z confirms public Short with thumbnail ERROR. No provider retry."
     },
     "weekly_slots": [
       {
@@ -291,10 +291,10 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45664372773,
-      "job": 139382405018,
+      "id": 45707464228,
+      "job": 139532989598,
       "conclusion": "failure",
-      "cause": "Elapsed Nov 24 missing pair only; tests and enforcer passed; TT009 independently public verified."
+      "cause": "121 automation tests passed; actual readiness audit reports missing elapsed Nov 24 slots and verified TT009 public thumbnail warning; do not backfill."
     },
     "latest_archive_workflow": {
       "id": 45643096385,
@@ -753,12 +753,15 @@
     },
     "pending_release_deployment": {
       "episode_id": "TT-012",
-      "status": "release_committed_deployment_required",
+      "status": "in_progress",
       "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
       "review_artifact_id": 15059991687,
       "render_run_id": 45693639317,
-      "observed_at": "2026-11-26T09:19:08.716Z",
-      "next_action": "Find exact release commit publish-library workflow; verify actual build/deploy/public-media, queue and exact archive. Then fresh account/month/claim/intent checks and reserve Dec 4 both platforms; no YouTube thumbnail. Do not rebuild source."
+      "observed_at": "2026-11-26T09:19:43.741Z",
+      "next_action": "Verify actual release deployment and exact public queue/media. Review-record path normalization commit follows original release; inspect latest publish-library run for that commit too. Then acquire claims and submit Dec 4 pair once only.",
+      "release_commit": "c9ddc8e0f0631abb4c0358c456df5f26bfb50f87",
+      "run_id": 45790864756,
+      "job_id": 139809246703
     }
   },
   "automation_tasks_verified_at": "2026-11-18T17:09:08.853Z",
@@ -805,12 +808,15 @@
   "last_checked_at": "2026-11-26T09:19:08.716Z",
   "pending_release_deployment": {
     "episode_id": "TT-012",
-    "status": "release_committed_deployment_required",
+    "status": "in_progress",
     "source_commit": "f541b89808293577d71f23774ccf64ee34de3a07",
     "review_artifact_id": 15059991687,
     "render_run_id": 45693639317,
-    "observed_at": "2026-11-26T09:19:08.716Z",
-    "next_action": "Find exact release commit publish-library workflow; verify actual build/deploy/public-media, queue and exact archive. Then fresh account/month/claim/intent checks and reserve Dec 4 both platforms; no YouTube thumbnail. Do not rebuild source."
+    "observed_at": "2026-11-26T09:19:43.741Z",
+    "next_action": "Verify actual release deployment and exact public queue/media. Review-record path normalization commit follows original release; inspect latest publish-library run for that commit too. Then acquire claims and submit Dec 4 pair once only.",
+    "release_commit": "c9ddc8e0f0631abb4c0358c456df5f26bfb50f87",
+    "run_id": 45790864756,
+    "job_id": 139809246703
   },
   "pending_provider_byte_verification": {
     "episode_id": "TT-010",
