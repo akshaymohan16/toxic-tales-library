@@ -228,6 +228,30 @@
       "public_url": "https://www.instagram.com/reel/Df9S7TAD77J/",
       "verification": "Current Metricool PUBLISHED plus expected Instagram Reel publicUrl; brand account matched",
       "delivery_status": "Task result prepared; push/email delivery not verified"
+    },
+    {
+      "key": "instagram:9000973347991669964",
+      "post_id": "TT-011-REEL",
+      "episode_id": "TT-011",
+      "platform": "instagram",
+      "uuid": "9000973347991669964",
+      "status": "reported_in_chat",
+      "notified_at": "2026-11-27T09:18:39.423Z",
+      "public_url": "https://www.instagram.com/reel/DgPUQkkh_PB/",
+      "verification": "Authorized brand account independently confirmed, fresh Metricool PUBLISHED plus exact public Reel permalink, caption/DOI and previously SHA-matched provider video. Direct anonymous page fetch unavailable; Instagram analytics returned no rows. No independent anonymous playback or public-page inspection claimed.",
+      "delivery_status": "Task-result alert prepared; push/email receipt not verified"
+    },
+    {
+      "key": "youtube:8728566144872038894",
+      "post_id": "TT-011-YOUTUBE-SHORT",
+      "episode_id": "TT-011",
+      "platform": "youtube",
+      "uuid": "8728566144872038894",
+      "status": "reported_in_chat",
+      "notified_at": "2026-11-27T09:18:39.423Z",
+      "public_url": "https://www.youtube.com/shorts/r6OJ_k8AEpI",
+      "verification": "Public YouTube oEmbed exact approved title, @toxic_tales_eco author URL and pinned channel ID in public channel page. yt-dlp bot blocked; no playback claimed.",
+      "delivery_status": "Task-result alert prepared; push/email receipt not verified"
     }
   ],
   "delivery": "ChatGPT task result notifications; device/email delivery unverified"

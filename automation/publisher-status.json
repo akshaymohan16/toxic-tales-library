@@ -1,17 +1,17 @@
 {
   "checked_on": "2026-11-27",
-  "updated_at": "2026-11-27T06:15:49.425Z",
+  "updated_at": "2026-11-27T09:18:39.423Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
   "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
   "youtube_connection_verified": true,
-  "decision": "Complete November and December live calendar reconciliation: all 20 provider records unchanged; TT-011 today at 10:00 and TT-010/TT-012 next week remain exact verified reservations. No new production or submission required; November 24 missed, no backfill.",
+  "decision": "Both TT-011 destinations positively PUBLISHED on exact original UUIDs. YouTube public title and channel independently verified; Instagram provider public permalink confirmed on matched brand, direct anonymous access unavailable. Next week 4/4 exact reservations verified. No new production or submission.",
   "quota": {
     "month": "2026-11",
-    "observed_used": 11,
-    "observed_at": "2026-11-27T06:15:49.425Z",
-    "calendar_checked_at": "2026-11-27T06:15:49.425Z",
+    "observed_used": 13,
+    "observed_at": "2026-11-27T09:18:39.423Z",
+    "calendar_checked_at": "2026-11-27T09:18:39.423Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -34,9 +34,11 @@
       "instagram:2386175407143797944",
       "instagram:3555893508354493617",
       "instagram:8432780738091634663",
+      "instagram:9000973347991669964",
       "youtube:-6561054799073883973",
       "youtube:-6895101637645415437",
-      "youtube:4422280930322105807"
+      "youtube:4422280930322105807",
+      "youtube:8728566144872038894"
     ],
     "observed_published_post_ids": [
       "instagram:TT-002-REEL",
@@ -49,7 +51,9 @@
       "youtube:TT-007-YOUTUBE-SHORT",
       "instagram:TT-008-REEL",
       "youtube:TT-008-YOUTUBE-SHORT",
-      "instagram:TT-009-REEL"
+      "instagram:TT-009-REEL",
+      "instagram:TT-011-REEL",
+      "youtube:TT-011-YOUTUBE-SHORT"
     ],
     "cap": 20,
     "projected_month_destinations": 14,
@@ -61,7 +65,7 @@
       "youtube:3828607998694999530"
     ],
     "conservative_committed_destination_count": 14,
-    "conservative_accounting_note": "11 confirmed PUBLISHED + 1 TT009 warning + 2 actual Friday reservations =14; no Tuesday backfill."
+    "conservative_accounting_note": "13 confirmed PUBLISHED + 1 TT-009 thumbnail-only provider ERROR =14; no remaining regular November slots, no backfill."
   },
   "routine_user_approval_required": false,
   "publication_notifications": {
@@ -75,9 +79,11 @@
       "TT-007-REEL",
       "TT-007-YOUTUBE-SHORT",
       "TT-008-REEL",
-      "TT-008-YOUTUBE-SHORT"
+      "TT-008-YOUTUBE-SHORT",
+      "TT-011-REEL",
+      "TT-011-YOUTUBE-SHORT"
     ],
-    "latest_delivery": "TT-009 Instagram Reel PUBLISHED and notification recorded once; YouTube Short has URL but Metricool ERROR from thumbnail upload, so publication notification withheld pending PUBLISHED/live verification.",
+    "latest_delivery": "TT-011 both positive PUBLISHED; grouped publication alert prepared, no duplicate.",
     "delivery_status": "ChatGPT task push/email settings unknown; owner notification emitted only for positively confirmed PUBLISHED, never merely scheduled."
   },
   "next_batch": {
@@ -90,7 +96,7 @@
     "verified_destination_receipts": 2,
     "producer_due": "2026-11-22T10:00:00+01:00",
     "hard_readiness_due": "2026-11-23T23:59:59+01:00",
-    "status": "2/4; Friday pair exact verified, Tuesday missed",
+    "status": "Friday pair PUBLISHED; Tuesday missed no backfill",
     "existing_videos_count": 1,
     "expired_claims_need_reconciliation": [],
     "owned_production_claims": [],
@@ -103,7 +109,8 @@
     "current_render_run": 45442959490,
     "missed_destinations": 2,
     "future_missing_destinations": 0,
-    "reserved_destination_receipts": 2
+    "reserved_destination_receipts": 0,
+    "published_destination_receipts": 2
   },
   "recurring_tasks": [
     {
@@ -133,13 +140,11 @@
   ],
   "deployment_and_media": "Verified all 84 review-package member hashes, exact index and manifest, Pages MP4 and cover SHA-256; inspected 16 shot midpoints, 30 immediate boundary images, 32 early samples, opening 0/1s, ending and cover at phone scale. The repaired fades keep 4 OF 10, 1.69/4.27 s and 9.4/16.9 min intact and never overlap adjacent measurements. Photo is species reference, not trial; small secondary provenance line touches the border but upper species-reference label remains plainly visible and captions clear. Schematic motion explicitly identified. No continuous moving playback claimed.",
   "review_limit": "Actual encoded export frame samples, SHA and ASR verified; repaired transition review passed. No perceptual listening or uninterrupted moving playback claimed.",
-  "automatic_next_step": "Confirm TT-011 actual publication after 27 November 10:00 Europe/Vienna; preserve next week's four reservations.",
-  "notification_delivery": "TT-009 Instagram publication alert recorded once; no claim of push/email receipt or YouTube PUBLISHED.",
-  "scheduled_posts_returned": 6,
-  "published_provider_receipts": 11,
+  "automatic_next_step": "Inspect post-publication archive deploy and readiness runs from this ledger commit. Keep next week 4/4; no duplicate or backfill.",
+  "notification_delivery": "TT-011 paired publication report prepared; device/email receipt unverified.",
+  "scheduled_posts_returned": 4,
+  "published_provider_receipts": 13,
   "scheduled_post_ids": [
-    "440852560",
-    "440852965",
     "441454695",
     "441455191",
     "443040774",
@@ -152,13 +157,13 @@
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
     "provider_byte_verification_run": 45818843362,
-    "latest_watchdog_run": 45889322099,
+    "latest_watchdog_run": 45950741791,
     "latest_watchdog_conclusion": "failure_elapsed_tuesday_only",
     "latest_build_run": 45791031167,
     "latest_build_verified_steps": [],
     "latest_paper_retrieval_run": 45586075305,
     "latest_paper_retrieval_conclusion": "success",
-    "fresh_live_metricool_reconciliation_at": "2026-11-27T06:15:49.425Z",
+    "fresh_live_metricool_reconciliation_at": "2026-11-27T09:18:39.423Z",
     "latest_build_conclusion": "success",
     "latest_build_failure_step": null,
     "latest_build_failure_cause": null,
@@ -179,7 +184,7 @@
     "youtube_public_verification_run": 45442959516,
     "youtube_public_verification_conclusion": "success",
     "youtube_public_verification_basis": "Public oEmbed exact title and channel identity; yt-dlp blocked by bot check",
-    "latest_watchdog_reason": "121 tests and policy passed; readiness failure only the two elapsed November 24 slots. TT-009 public Short independently verified in actual watchdog log; provider ERROR retained.",
+    "latest_watchdog_reason": "121 tests and policy passed; only elapsed November 24 destinations missing. TT-009 public Short warning preserved.",
     "latest_public_verification_status": "completed_success",
     "last_verified_archive_build_run": 45559585742,
     "last_verified_archive_build_conclusion": "success",
@@ -187,7 +192,7 @@
     "upcoming_week_expected": 4,
     "latest_asset_pin_run": 45612112717,
     "latest_asset_pin_conclusion": "success",
-    "last_inspected_watchdog_run": 45889322099,
+    "last_inspected_watchdog_run": 45950741791,
     "last_inspected_watchdog_conclusion": "failure_elapsed_tuesday_only",
     "latest_archive_build_run": 45818978944,
     "latest_archive_verification": "completed_success",
@@ -195,15 +200,18 @@
     "tests_run_again_after_this_commit": false,
     "latest_archive_build_conclusion": "success",
     "latest_provider_byte_verification_conclusion": "success",
-    "latest_watchdog_job": 140147791796,
+    "latest_watchdog_job": 140345742062,
     "tests_passed": 121,
     "enforcer": "pass",
     "readiness": "failure_elapsed_tuesday_only",
-    "checked_at": "2026-11-27T06:15:49.425Z",
+    "checked_at": "2026-11-27T09:18:39.423Z",
     "policy_enforcer": "pass",
     "public_youtube_verification_basis": "Actual watchdog job 140107672782 independently verified TT-009 at 18:37 UTC; current Metricool retains ERROR.",
     "readiness_rechecked_this_commit": false,
-    "post_heartbeat_verification": "Push-triggered readiness check required; prior actual job inspected."
+    "post_heartbeat_verification": "New ledger commit triggers readiness and archive deploy; inspect actual jobs before declaring complete.",
+    "tt011_public_youtube_verification_run": 45972447095,
+    "tt011_public_youtube_verification_job": 140415902142,
+    "tt011_public_youtube_verification_conclusion": "success"
   },
   "current_one_off": {
     "episode_id": "TT-008",
@@ -214,7 +222,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-27T06:15:49.425Z",
+    "checked_at": "2026-11-27T09:18:39.423Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -223,8 +231,8 @@
     },
     "timezone": "Europe/Vienna",
     "calendar_entries": 16,
-    "published_destinations": 11,
-    "scheduled_destinations": 2,
+    "published_destinations": 13,
+    "scheduled_destinations": 0,
     "inactive_drafts": 2,
     "tt007_published_both": true,
     "tt008_published_both_at_exact_14_10": true,
@@ -238,11 +246,11 @@
       "independent_public_verification_job": 140147791796,
       "independent_public_verification_basis": "Actual readiness audit log: public YouTube Short independently verified; provider thumbnail warning remains ERROR.",
       "retry_allowed": false,
-      "independent_verification_run": 45889322099,
-      "independent_verification_job": 140147791796,
-      "independent_verification_at": "2026-11-26T20:12:35.191276Z",
+      "independent_verification_run": 45950741791,
+      "independent_verification_job": 140345742062,
+      "independent_verification_at": "2026-11-27T06:16:07.5878213Z",
       "independent_public_verification_run": 45889322099,
-      "current_public_check_note": "Inspected actual completed watchdog log independently confirming public Short; live Metricool ERROR unchanged. Never retry."
+      "current_public_check_note": "Actual completed watchdog log reports independently verified public Short; current Metricool ERROR unchanged, no retry."
     },
     "weekly_slots": [
       {
@@ -261,22 +269,27 @@
         "date": "2026-11-27T10:00:00+01:00",
         "network": "instagram",
         "found": true,
-        "status": "scheduled_verified",
-        "metricool_uuid": "9000973347991669964"
+        "status": "published",
+        "metricool_uuid": "9000973347991669964",
+        "public_url": "https://www.instagram.com/reel/DgPUQkkh_PB/"
       },
       {
         "date": "2026-11-27T10:00:00+01:00",
         "network": "youtube",
         "found": true,
-        "status": "scheduled_verified",
-        "metricool_uuid": "8728566144872038894"
+        "status": "published",
+        "metricool_uuid": "8728566144872038894",
+        "public_url": "https://www.youtube.com/shorts/r6OJ_k8AEpI"
       }
     ],
     "weekly_receipts": 2,
     "missing_destinations": 2,
     "provider_writes": 0,
     "new_releases": [],
-    "new_confirmed_published_keys": [],
+    "new_confirmed_published_keys": [
+      "instagram:9000973347991669964",
+      "youtube:8728566144872038894"
+    ],
     "history_preserved": true,
     "owner_action_blockers": [],
     "active_production_claims": [],
@@ -291,10 +304,10 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45889322099,
-      "job": 140147791796,
+      "id": 45950741791,
+      "job": 140345742062,
       "conclusion": "failure",
-      "cause": "121 tests and policy passed; readiness failure only the two elapsed November 24 slots. TT-009 public Short independently verified in actual watchdog log; provider ERROR retained."
+      "cause": "121 tests and policy passed; only elapsed November 24 destinations missing. TT-009 public Short warning preserved."
     },
     "latest_archive_workflow": {
       "id": 45818978944,
@@ -326,7 +339,7 @@
       "440852560",
       "440852965"
     ],
-    "calendar_repeat_attempt": "Live November (16) and December (4) calendars; all 20 UUID/date/status records match ledger, all six future metadata/media/settings match stored exact readbacks and SHA-bound releases.",
+    "calendar_repeat_attempt": "Complete live November 16 and December 4 provider records matched stored UUID, date and account. Six TT-010/011/012 exact approved metadata/media/settings matched. TT-011 both PUBLISHED, four future receipts unchanged.",
     "missed_destinations": 2,
     "future_missing_destinations": 0,
     "tt011_encoded_review": {
@@ -352,19 +365,23 @@
         "platform": "instagram",
         "metricool_id": "440852560",
         "metricool_uuid": "9000973347991669964",
-        "provider_status": "PENDING",
+        "provider_status": "PUBLISHED",
         "publication_date": "2026-11-27T10:00:00+01:00",
         "verified_readback": true,
-        "provider_bytes_verified": true
+        "provider_bytes_verified": true,
+        "public_url": "https://www.instagram.com/reel/DgPUQkkh_PB/",
+        "published_confirmed_at": "2026-11-27T09:18:39.423Z"
       },
       {
         "platform": "youtube",
         "metricool_id": "440852965",
         "metricool_uuid": "8728566144872038894",
-        "provider_status": "PENDING",
+        "provider_status": "PUBLISHED",
         "publication_date": "2026-11-27T10:00:00+01:00",
         "verified_readback": true,
-        "provider_bytes_verified": true
+        "provider_bytes_verified": true,
+        "public_url": "https://www.youtube.com/shorts/r6OJ_k8AEpI",
+        "published_confirmed_at": "2026-11-27T09:18:39.423Z"
       }
     ],
     "provider_byte_verification_run": 45480222208,
@@ -677,6 +694,30 @@
       },
       "requested_at": "2026-11-26T12:21:03.868Z",
       "next_action": "Both reservations and provider bytes verified; preserve and confirm actual publication after due time."
+    },
+    "tt011_publication_verification": {
+      "checked_at": "2026-11-27T09:18:39.423Z",
+      "instagram": {
+        "decision": "provider_public_permalink_confirmed",
+        "url": "https://www.instagram.com/reel/DgPUQkkh_PB/",
+        "checked_at": "2026-11-27T09:18:39.423Z",
+        "verification_basis": "Authorized brand account independently confirmed, fresh Metricool PUBLISHED plus exact public Reel permalink, caption/DOI and previously SHA-matched provider video. Direct anonymous page fetch unavailable; Instagram analytics returned no rows. No independent anonymous playback or public-page inspection claimed."
+      },
+      "youtube": {
+        "decision": "pass",
+        "url": "https://www.youtube.com/shorts/r6OJ_k8AEpI",
+        "video_id": "r6OJ_k8AEpI",
+        "channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
+        "title": "How Do You Know a Spider Is Asleep? | Toxic Tales",
+        "checked_at": "2026-11-27T09:17:27.409693+00:00",
+        "verification_basis": "Public YouTube oEmbed exact approved title, @toxic_tales_eco author URL and pinned channel ID in public channel page. yt-dlp bot blocked; no playback claimed.",
+        "public_oembed_title_match": true,
+        "public_oembed_author_url": "https://www.youtube.com/@toxic_tales_eco",
+        "public_channel_page_id_match": true,
+        "independent_public_metadata_workflow": "https://github.com/akshaymohan16/toxic-tales-library/actions/runs/45972447095",
+        "workflow_job": 140415902142,
+        "artifact_id": 15185901300
+      }
     }
   },
   "claim_coordination": {
@@ -699,7 +740,7 @@
     "required_destination_receipts": 4,
     "verified_destination_receipts": 4,
     "complete": true,
-    "calendar_checked_at": "2026-11-26T20:12:10.349Z",
+    "calendar_checked_at": "2026-11-27T09:18:39.423Z",
     "calendar_entries": 4,
     "month_budget": {
       "month": "2026-12",
@@ -1000,8 +1041,8 @@
     "handoff_at": "2026-11-24T08:53:36.972Z",
     "release_reason": "Both unapproved; no submission intent; allow independent reviewer to acquire after fresh live reconciliation."
   },
-  "last_run_at": "2026-11-27T06:15:49.425Z",
-  "last_checked_at": "2026-11-27T06:15:49.425Z",
+  "last_run_at": "2026-11-27T09:18:39.423Z",
+  "last_checked_at": "2026-11-27T09:18:39.423Z",
   "pending_release_deployment": {
     "episode_id": "TT-012",
     "status": "completed_success",
@@ -1123,22 +1164,17 @@
     "next_action": "Both reservations and provider bytes verified; preserve and confirm actual publication after due time."
   },
   "post_receipt_archive_deployment": {
-    "commit": "9a683ed69488be17753d4b3967e12930c5a1e327",
-    "status": "completed_success",
-    "next_action": "No further release deployment required for these receipts.",
-    "run_id": 45818978944,
-    "job_id": 139905971186,
-    "observed_at": "2026-11-26T20:12:10.349Z",
-    "verification_job": 139907828318,
-    "public_files_verified": 67,
-    "verified_at": "2026-11-26T12:26:02.666005Z"
+    "episode_id": "TT-011",
+    "status": "pending_trigger_from_ledger_commit",
+    "previous_successful_run": 45818978944,
+    "next_action": "Locate this commit's publish-library workflow; verify build, deployment and anonymous public media/source archive containing the new confirmed URLs."
   },
   "ledger_reconciliation": {
-    "checked_at": "2026-11-27T06:15:49.425Z",
-    "ledger_commit": "4c31738fac2b61fb7de0e8b95837dbfb8e70b9dd",
+    "checked_at": "2026-11-27T09:18:39.423Z",
+    "base_ledger_commit": "9b93b09741fe5b567d1cb7eaffadcfa39acfe433",
     "all_twenty_provider_entries_matched": true,
-    "changed_receipts": 0,
-    "ledger_write_required": false,
-    "reason": "Live provider receipts, media and metadata unchanged; ledger remains intact."
+    "changed_receipts": 2,
+    "ledger_write_required": true,
+    "reason": "TT-011 changed PENDING to PUBLISHED on both original provider UUIDs."
   }
 }
