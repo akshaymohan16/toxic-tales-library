@@ -1,7 +1,7 @@
 {
   "month": "2026-12",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-27T15:19:10.766Z",
+  "observed_at": "2026-11-27T17:14:48.385Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -23,8 +23,8 @@
     "observed_used": 0,
     "observation_basis": "Full December calendar: 4 existing reservations, zero published; 14 remaining regular destinations",
     "full_month_calendar_verified": true,
-    "calendar_checked_at": "2026-11-27T15:19:10.766Z",
-    "observed_at": "2026-11-27T15:19:10.766Z",
+    "calendar_checked_at": "2026-11-27T17:14:48.385Z",
+    "observed_at": "2026-11-27T17:14:48.385Z",
     "published_destination_keys": [],
     "conservative_committed_destination_count": 18,
     "projected_month_destinations": 18,
@@ -39,7 +39,7 @@
     }
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-27T15:19:10.766Z",
+    "checked_at": "2026-11-27T17:14:48.385Z",
     "calendar_entries": 4,
     "published": 0,
     "scheduled": 4,
@@ -91,7 +91,7 @@
       "review_artifact_id": 15059991687,
       "render_run_id": 45693639317,
       "observed_at": "2026-11-26T09:19:08.716Z",
-      "next_action": "Find exact release commit publish-library workflow; verify actual build/deploy/public-media, queue and exact archive. Then fresh account/month/claim/intent checks and reserve Dec 4 both platforms; no YouTube thumbnail. Do not rebuild source.",
+      "next_action": "Released and both reservations verified; no further build needed.",
       "run_id": 45693639317,
       "job_id": 139485258744,
       "conclusion": "success"
@@ -229,8 +229,8 @@
     "job_id": 139485258744,
     "conclusion": "success"
   },
-  "updated_at": "2026-11-27T15:19:10.766Z",
-  "last_provider_reconciled_at": "2026-11-27T15:19:10.766Z",
+  "updated_at": "2026-11-27T17:14:48.385Z",
+  "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z",
   "next_action": "All four December 1 and 4 receipts verified; no further production or scheduling required for next week.",
   "tt010_release_review": {
     "decision": "pass",
