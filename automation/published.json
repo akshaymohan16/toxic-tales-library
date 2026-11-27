@@ -28,7 +28,7 @@
       "source_sha256": "219e8ee38a51b4e067b8d4dba0e68d8736a8a4dc523cbda42ca68b5ff2eab1af",
       "submission_note": "User explicitly requested the first finished Reel now. Existing monthly schedule and ledger were empty; published-history queries returned no rows but older-history completeness remains unconfirmed. One live publishing test was submitted without any paid action and has now been confirmed published.",
       "duplicate_guard": "TT-002-REEL is already published and must never be resubmitted. On 7 November the owner renewed the two-Reels-per-week requirement; Tuesday 10 November is now assigned a NEW distinct paper by the Sunday producer. Count this published item only once.",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z"
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z"
     },
     {
       "post_id": "TT-002-CAROUSEL",
@@ -90,7 +90,7 @@
       ],
       "publication_eligible": false,
       "retired_on": "2026-11-13",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z"
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z"
     },
     {
       "post_id": "TT-003-REEL",
@@ -173,7 +173,7 @@
       "superseded_by_pilot": "TT-004",
       "retirement_reason": "Owner rejected the unclear opening and the complete script; TT-004 is the new pilot. Approval of TT-004 must never revive TT-003.",
       "preview_type": "archived_rejected_video",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z"
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z"
     },
     {
       "post_id": "TT-004-REEL",
@@ -237,7 +237,7 @@
       },
       "notified": true,
       "notified_at": "2026-11-07T17:44:33.983826+00:00",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z"
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z"
     },
     {
       "post_id": "TT-005-REEL",
@@ -294,7 +294,7 @@
       },
       "notified": true,
       "notified_at": "2026-11-07T19:07:59.945Z",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z"
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z"
     },
     {
       "post_id": "TT-005-CAROUSEL",
@@ -355,7 +355,7 @@
       },
       "notified": true,
       "notified_at": "2026-11-12T09:13:23.510Z",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z"
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z"
     },
     {
       "post_id": "TT-006-REEL",
@@ -467,7 +467,7 @@
       },
       "notified": true,
       "notified_at": "2026-11-10T09:10:52.163Z",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z"
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z"
     },
     {
       "post_id": "TT-007-REEL",
@@ -607,7 +607,7 @@
         "post_id": "TT-007-REEL",
         "public_url": "https://www.instagram.com/reel/Df1kUbZlb21/"
       },
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z"
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z"
     },
     {
       "episode_id": "TT-006",
@@ -756,7 +756,7 @@
         "public_url": "https://www.youtube.com/shorts/X333C5Dcxxo",
         "doi": "10.1242/jeb.056093"
       },
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z"
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z"
     },
     {
       "episode_id": "TT-007",
@@ -899,7 +899,7 @@
         "post_id": "TT-007-YOUTUBE-SHORT",
         "public_url": "https://www.youtube.com/shorts/Dh6xDjEV1fg"
       },
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z"
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z"
     },
     {
       "post_id": "TT-008-REEL",
@@ -998,7 +998,7 @@
         "verification_basis": "Opened the exact provider public URL in the browser (canonical redirect /reels/DfrtQD-EZiG/). The live Reel shows @toxic_tales_eco, the complete TT-008 archerfish caption and DOI10.1038/srep27523, matching the reviewed post. Metricool exact UUID3555893508354493617 independently reports PUBLISHED."
       },
       "publication_confirmed_at": "2026-11-13T13:13:56.762Z",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z"
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z"
     },
     {
       "post_id": "TT-008-YOUTUBE-SHORT",
@@ -1124,7 +1124,7 @@
         "moving_playback_review_claimed": false,
         "metadata_sha256": "4e33719b2c83eb43c6cb9f14ee1729447910a1672ba793239980322a560dc6b6"
       },
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z"
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z"
     },
     {
       "post_id": "TT-009-REEL",
@@ -1217,7 +1217,7 @@
       "public_url": "https://www.instagram.com/reel/Df9S7TAD77J/",
       "published_confirmed_at": "2026-11-20T09:40:02.763Z",
       "confirmed_source": "Fresh complete Metricool 20 Nov 2026 calendar, exact original UUID, Instagram PUBLISHED and Reel public URL",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z"
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z"
     },
     {
       "post_id": "TT-009-YOUTUBE-SHORT",
@@ -1343,7 +1343,7 @@
       "public_metadata_verification_method": "Independent GitHub Actions yt-dlp attempt blocked by YouTube bot check; public oEmbed returned exact title and creator/channel page resolves expected YouTube channel ID",
       "public_metadata_verification_run": 44712245363,
       "public_metadata_verification_url": "https://github.com/akshaymohan16/toxic-tales-library/actions/runs/44712245363",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z",
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z",
       "last_checked_at": "2026-11-23T16:52:07.177Z",
       "retry_permitted": false
     },
@@ -1436,7 +1436,7 @@
       },
       "publication_confirmation": "Fresh complete Metricool calendar PUBLISHED after scheduled slot; original UUID, reviewed metadata and previously exact-SHA-verified provider media preserved.",
       "duplicate_guard": "Published original UUID; never duplicate or retime.",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z",
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z",
       "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-011-spider-sleep-f156a514cc51_cover.jpg",
       "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-13069895286347312778.jpeg",
       "metricool_cover_sha256": "78fdebf49901f4615bc322a4ac6244f3eb4d9c5933943c2808f3c2bbf2cf8d14",
@@ -1548,7 +1548,7 @@
       },
       "publication_confirmation": "Fresh complete Metricool calendar PUBLISHED after scheduled slot; original UUID, reviewed metadata and previously exact-SHA-verified provider media preserved.",
       "duplicate_guard": "Published original UUID; never duplicate or retime.",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z",
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z",
       "source_post_id": "TT-011-REEL",
       "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
       "youtube": {
@@ -1681,7 +1681,7 @@
       },
       "publication_confirmation": "PENDING future scheduled reservation; confirm positive PUBLISHED and live URL after due time",
       "duplicate_guard": "Original verified TT-010 reservation; never duplicate or retime",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z",
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z",
       "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-010-crows-and-rising-water-b5705f3b4e83_cover.jpg",
       "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-7239913519089911630.jpeg",
       "metricool_cover_sha256": "95ee7399e8809110aad8a8c292ea2840a637dbb85f18c8d617d245539c92aea2"
@@ -1786,7 +1786,7 @@
       },
       "publication_confirmation": "PENDING future scheduled reservation; confirm positive PUBLISHED and live URL after due time",
       "duplicate_guard": "Original verified TT-010 reservation; never duplicate or retime",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z",
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z",
       "source_post_id": "TT-010-REEL",
       "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
       "youtube": {
@@ -1895,7 +1895,7 @@
       },
       "publication_confirmation": "PENDING future scheduled reservation; confirm positive PUBLISHED and live URL after due time",
       "duplicate_guard": "Original verified TT-012 reservation; never duplicate or retime",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z",
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z",
       "source_cover_url": "https://akshaymohan16.github.io/toxic-tales-library/media/tt-012-octopus-chemical-trails-f7b58b0f402e_cover.jpg",
       "metricool_cover_url": "https://static.metricool.com/planner/202611/7937614-file-13209154862061591396.jpeg",
       "metricool_cover_sha256": "37cd7f632d64fbc3493ce55aae36a5a937958e49576909aeaa6e1c2d4509aed1"
@@ -1999,7 +1999,7 @@
       },
       "publication_confirmation": "PENDING future scheduled reservation; confirm positive PUBLISHED and live URL after due time",
       "duplicate_guard": "Original verified TT-012 reservation; never duplicate or retime",
-      "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z",
+      "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z",
       "source_post_id": "TT-012-REEL",
       "youtube_channel_id": "UCDvftxMMdtGSntm-ezcPfCg",
       "youtube": {
@@ -2045,9 +2045,9 @@
     "TT-011-REEL",
     "TT-011-YOUTUBE-SHORT"
   ],
-  "last_provider_reconciled_at": "2026-11-27T17:14:48.385Z",
+  "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z",
   "last_provider_reconciliation": {
-    "checked_at": "2026-11-27T17:14:48.385Z",
+    "checked_at": "2026-11-27T20:19:04.016Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -2068,13 +2068,13 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": true,
-      "independent_public_verification_job": 140590055312,
+      "independent_public_verification_job": 140646218474,
       "independent_public_verification_basis": "Actual readiness audit log: public YouTube Short independently verified; provider thumbnail warning remains ERROR.",
       "retry_allowed": false,
-      "independent_verification_run": 46023852024,
-      "independent_verification_job": 140590055312,
-      "independent_verification_at": "2026-11-27T15:19:24.2605617Z",
-      "independent_public_verification_run": 46023852024,
+      "independent_verification_run": 46040359112,
+      "independent_verification_job": 140646218474,
+      "independent_verification_at": "2026-11-27T17:15:24.0828544Z",
+      "independent_public_verification_run": 46040359112,
       "current_public_check_note": "Inspected actual completed readiness log in this run; public Short verified by that workflow, provider ERROR and URL unchanged."
     },
     "weekly_slots": [
@@ -2126,16 +2126,16 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 46023852024,
-      "job": 140590055312,
+      "id": 46040359112,
+      "job": 140646218474,
       "conclusion": "failure",
       "cause": "Only historical November 24 Instagram and YouTube missing; TT-009 public Short independently verified, provider ERROR preserved."
     },
     "latest_archive_workflow": {
-      "id": 46023851965,
+      "id": 46040359126,
       "conclusion": "success",
       "public_files_verified": 67,
-      "verification_job": 140590975813
+      "verification_job": 140646904889
     },
     "last_pre_change_successful_archive_workflow": {
       "id": 45221358609,
@@ -2163,7 +2163,7 @@
       "440852560",
       "440852965"
     ],
-    "calendar_repeat_attempt": "Complete November 16 and December 4 live records matched ledger UUID, ID, date, provider status, autoPublish, draft, media and cover. Exact TT-010/011/012 text, destination metadata and release fingerprints matched. Brand 7937614 account identifiers reconfirmed. No new receipts.",
+    "calendar_repeat_attempt": "Complete November 16 and December 4 live records matched ledger UUID, ID, date, provider status and stored media/cover; exact TT-010/011/012 captions and destination metadata matched. Brand and channel verified. No new receipts.",
     "missed_destinations": 2,
     "future_missing_destinations": 0,
     "tt011_encoded_review": {
@@ -2545,7 +2545,7 @@
     }
   },
   "last_live_reconciliation": {
-    "checked_at": "2026-11-27T17:14:48.385Z",
+    "checked_at": "2026-11-27T20:19:04.016Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -2566,13 +2566,13 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": true,
-      "independent_public_verification_job": 140590055312,
+      "independent_public_verification_job": 140646218474,
       "independent_public_verification_basis": "Actual readiness audit log: public YouTube Short independently verified; provider thumbnail warning remains ERROR.",
       "retry_allowed": false,
-      "independent_verification_run": 46023852024,
-      "independent_verification_job": 140590055312,
-      "independent_verification_at": "2026-11-27T15:19:24.2605617Z",
-      "independent_public_verification_run": 46023852024,
+      "independent_verification_run": 46040359112,
+      "independent_verification_job": 140646218474,
+      "independent_verification_at": "2026-11-27T17:15:24.0828544Z",
+      "independent_public_verification_run": 46040359112,
       "current_public_check_note": "Inspected actual completed readiness log in this run; public Short verified by that workflow, provider ERROR and URL unchanged."
     },
     "weekly_slots": [
@@ -2624,16 +2624,16 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 46023852024,
-      "job": 140590055312,
+      "id": 46040359112,
+      "job": 140646218474,
       "conclusion": "failure",
       "cause": "Only historical November 24 Instagram and YouTube missing; TT-009 public Short independently verified, provider ERROR preserved."
     },
     "latest_archive_workflow": {
-      "id": 46023851965,
+      "id": 46040359126,
       "conclusion": "success",
       "public_files_verified": 67,
-      "verification_job": 140590975813
+      "verification_job": 140646904889
     },
     "last_pre_change_successful_archive_workflow": {
       "id": 45221358609,
@@ -2661,7 +2661,7 @@
       "440852560",
       "440852965"
     ],
-    "calendar_repeat_attempt": "Complete November 16 and December 4 live records matched ledger UUID, ID, date, provider status, autoPublish, draft, media and cover. Exact TT-010/011/012 text, destination metadata and release fingerprints matched. Brand 7937614 account identifiers reconfirmed. No new receipts.",
+    "calendar_repeat_attempt": "Complete November 16 and December 4 live records matched ledger UUID, ID, date, provider status and stored media/cover; exact TT-010/011/012 captions and destination metadata matched. Brand and channel verified. No new receipts.",
     "missed_destinations": 2,
     "future_missing_destinations": 0,
     "tt011_encoded_review": {
