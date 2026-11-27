@@ -658,5 +658,23 @@
     "next_action": "Completed; exact reservations remain verified."
   },
   "updated_at": "2026-11-27T12:20:13.835Z",
-  "last_provider_reconciled_at": "2026-11-27T12:19:55.451Z"
+  "last_provider_reconciled_at": "2026-11-27T12:19:55.451Z",
+  "latest_post_reconciliation_verification": {
+    "observed_at": "2026-11-27T12:21:00.390Z",
+    "commit": "6c87386dc2fc1070a31f41771908cd0b0e49e546",
+    "watchdog": {
+      "run_id": 45997796220,
+      "job_id": 140501473701,
+      "conclusion": "failure_elapsed_tuesday_only",
+      "tests_passed": 121,
+      "enforcer": "pass",
+      "tt009_independent_public_verified_at": "2026-11-27T12:20:34.7907104Z"
+    },
+    "archive": {
+      "run_id": 45997796165,
+      "job_id": 140501473679,
+      "status": "in_progress",
+      "next_action": "Check actual build, deploy and verify-public-media jobs; reconciliation changed timestamps only, previous archive verified 67 public files and all reservations remain intact."
+    }
+  }
 }
