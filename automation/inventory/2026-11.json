@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-27T09:18:39.423Z",
+  "observed_at": "2026-11-27T12:19:55.451Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -52,7 +52,7 @@
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [],
-  "calendar_reconciled_on": "2026-11-27T09:18:39.423Z",
+  "calendar_reconciled_on": "2026-11-27T12:19:55.451Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -65,14 +65,14 @@
   "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
   "provider_confirmed_publications": 13,
   "known_usage_lower_bound": 13,
-  "last_calendar_readback": "2026-11-27T09:18:39.423Z",
+  "last_calendar_readback": "2026-11-27T12:19:55.451Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
     "observed_used": 13,
-    "observed_at": "2026-11-27T09:18:39.423Z",
-    "calendar_checked_at": "2026-11-27T09:18:39.423Z",
+    "observed_at": "2026-11-27T12:19:55.451Z",
+    "calendar_checked_at": "2026-11-27T12:19:55.451Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -129,7 +129,7 @@
     "conservative_accounting_note": "13 confirmed PUBLISHED + 1 TT-009 thumbnail-only provider ERROR =14; no remaining regular November slots, no backfill."
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-27T09:18:39.423Z",
+    "checked_at": "2026-11-27T12:19:55.451Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -150,14 +150,14 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": true,
-      "independent_public_verification_job": 140147791796,
+      "independent_public_verification_job": 140416577254,
       "independent_public_verification_basis": "Actual readiness audit log: public YouTube Short independently verified; provider thumbnail warning remains ERROR.",
       "retry_allowed": false,
-      "independent_verification_run": 45950741791,
-      "independent_verification_job": 140345742062,
-      "independent_verification_at": "2026-11-27T06:16:07.5878213Z",
-      "independent_public_verification_run": 45889322099,
-      "current_public_check_note": "Actual completed watchdog log reports independently verified public Short; current Metricool ERROR unchanged, no retry."
+      "independent_verification_run": 45972647792,
+      "independent_verification_job": 140416577254,
+      "independent_verification_at": "2026-11-27T09:18:52.6873575Z",
+      "independent_public_verification_run": 45972647792,
+      "current_public_check_note": "Inspected actual completed watchdog log, public title/channel verified at 09:18 UTC; live provider warning unchanged at current reconciliation."
     },
     "weekly_slots": [
       {
@@ -193,10 +193,7 @@
     "missing_destinations": 2,
     "provider_writes": 0,
     "new_releases": [],
-    "new_confirmed_published_keys": [
-      "instagram:9000973347991669964",
-      "youtube:8728566144872038894"
-    ],
+    "new_confirmed_published_keys": [],
     "history_preserved": true,
     "owner_action_blockers": [],
     "active_production_claims": [],
@@ -211,14 +208,16 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45950741791,
-      "job": 140345742062,
+      "id": 45972647792,
+      "job": 140416577254,
       "conclusion": "failure",
-      "cause": "121 tests and policy passed; only elapsed November 24 destinations missing. TT-009 public Short warning preserved."
+      "cause": "121 tests and policy passed; only elapsed November 24 destinations missing. TT-009 public Short independently verified, provider ERROR preserved."
     },
     "latest_archive_workflow": {
-      "id": 45818978944,
-      "conclusion": "success"
+      "id": 45972647940,
+      "conclusion": "success",
+      "public_files_verified": 67,
+      "verification_job": 140417463875
     },
     "last_pre_change_successful_archive_workflow": {
       "id": 45221358609,
@@ -246,7 +245,7 @@
       "440852560",
       "440852965"
     ],
-    "calendar_repeat_attempt": "Complete live November 16 and December 4 provider records matched stored UUID, date and account. Six TT-010/011/012 exact approved metadata/media/settings matched. TT-011 both PUBLISHED, four future receipts unchanged.",
+    "calendar_repeat_attempt": "Complete November 16 and December 4 live records all matched ledger UUID, ID, date, status, autoPublish, draft and media. TT-010/011/012 exact text, destination metadata and cover matched prior readbacks and release fingerprint. No new receipts.",
     "missed_destinations": 2,
     "future_missing_destinations": 0,
     "tt011_encoded_review": {
@@ -645,8 +644,8 @@
       "retry_permitted": false,
       "public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
       "public_metadata_verified": true,
-      "public_metadata_verification_run": 45877348329,
-      "last_checked_at": "2026-11-26T20:12:10.349Z"
+      "public_metadata_verification_run": 45972647792,
+      "last_checked_at": "2026-11-27T12:19:55.451Z"
     }
   ],
   "pending_release_deployment": {
@@ -658,6 +657,6 @@
     "pages_artifact_id": 14959793328,
     "next_action": "Completed; exact reservations remain verified."
   },
-  "updated_at": "2026-11-27T09:18:39.423Z",
-  "last_provider_reconciled_at": "2026-11-27T09:18:39.423Z"
+  "updated_at": "2026-11-27T12:20:13.835Z",
+  "last_provider_reconciled_at": "2026-11-27T12:19:55.451Z"
 }
