@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-26T20:12:10.349Z",
+  "updated_at": "2026-11-27T06:15:49.425Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
@@ -54,7 +54,7 @@
   "science_rights_release_status": "TT-011 released, deployed and exact identical MP4 provider bytes verified",
   "expired_claims": [],
   "provider_reconciliation": {
-    "checked_at": "2026-11-26T20:12:10.349Z",
+    "checked_at": "2026-11-27T06:15:49.425Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -75,14 +75,14 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": true,
-      "independent_public_verification_job": 140107672782,
+      "independent_public_verification_job": 140147791796,
       "independent_public_verification_basis": "Actual readiness audit log: public YouTube Short independently verified; provider thumbnail warning remains ERROR.",
       "retry_allowed": false,
-      "independent_verification_run": 45877348329,
-      "independent_verification_job": 140107672782,
-      "independent_verification_at": "2026-11-26T18:37:13.844832Z",
-      "independent_public_verification_run": 45877348329,
-      "current_public_check_note": "Actual watchdog log independently verified expected public Short title/channel; live Metricool ERROR unchanged. Never retry."
+      "independent_verification_run": 45889322099,
+      "independent_verification_job": 140147791796,
+      "independent_verification_at": "2026-11-26T20:12:35.191276Z",
+      "independent_public_verification_run": 45889322099,
+      "current_public_check_note": "Inspected actual completed watchdog log independently confirming public Short; live Metricool ERROR unchanged. Never retry."
     },
     "weekly_slots": [
       {
@@ -131,10 +131,10 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 45877348329,
-      "job": 140107672782,
+      "id": 45889322099,
+      "job": 140147791796,
       "conclusion": "failure",
-      "cause": "121 tests and policy passed; only two elapsed November 24 missing destinations; TT-009 independently verified public, ERROR retained."
+      "cause": "121 tests and policy passed; readiness failure only the two elapsed November 24 slots. TT-009 public Short independently verified in actual watchdog log; provider ERROR retained."
     },
     "latest_archive_workflow": {
       "id": 45818978944,
@@ -166,7 +166,7 @@
       "440852560",
       "440852965"
     ],
-    "calendar_repeat_attempt": "Full November (16) and December (4) calendars read live; all 20 UUIDs/statuses/dates match ledger and all six future exact metadata/media URLs match release and byte-verification evidence.",
+    "calendar_repeat_attempt": "Live November (16) and December (4) calendars; all 20 UUID/date/status records match ledger, all six future metadata/media/settings match stored exact readbacks and SHA-bound releases.",
     "missed_destinations": 2,
     "future_missing_destinations": 0,
     "tt011_encoded_review": {
@@ -520,7 +520,7 @@
     }
   },
   "owner_action_blocker": false,
-  "next_step": "Preserve the six verified future reservations; verify TT-011 actual publication after 27 November 10:00 Europe/Vienna. No extra production, resubmission or backfill.",
+  "next_step": "Verify actual TT-011 publication on both platforms after today's 10:00 due time; no November 24 backfill.",
   "owned_production_claims": [],
   "research_readiness_note": "automation/qa/2026-11-23-evening-qa.json",
   "reconciled_handoff_claims": [

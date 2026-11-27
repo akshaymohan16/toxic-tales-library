@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-30",
   "created_on": "2026-11-24",
-  "updated_at": "2026-11-26T20:12:10.349Z",
+  "updated_at": "2026-11-27T06:15:49.425Z",
   "timezone": "Europe/Vienna",
   "status": "READY_4_OF_4_EXACT_PROVIDER_BYTES_VERIFIED",
   "required_success": {
@@ -61,7 +61,7 @@
     "required_destination_receipts": 4,
     "verified_destination_receipts": 4,
     "complete": true,
-    "calendar_checked_at": "2026-11-26T20:12:10.349Z",
+    "calendar_checked_at": "2026-11-27T06:15:49.425Z",
     "calendar_entries": 4,
     "month_budget": {
       "month": "2026-12",
@@ -323,7 +323,7 @@
     }
   },
   "owner_action_blocker": false,
-  "next_step": "Preserve the six verified future reservations; verify TT-011 actual publication after 27 November 10:00 Europe/Vienna. No extra production, resubmission or backfill.",
+  "next_step": "Preserve all four verified receipts; verify actual publication after each due time.",
   "pending_build": {
     "episode_id": "TT-012",
     "status": "completed_success",
