@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-30",
   "created_on": "2026-11-24",
-  "updated_at": "2026-11-28T09:15:26.702Z",
+  "updated_at": "2026-11-28T12:11:52.828Z",
   "timezone": "Europe/Vienna",
   "status": "READY_4_OF_4_EXACT_PROVIDER_BYTES_VERIFIED",
   "required_success": {
@@ -61,7 +61,7 @@
     "required_destination_receipts": 4,
     "verified_destination_receipts": 4,
     "complete": true,
-    "calendar_checked_at": "2026-11-28T09:15:26.702Z",
+    "calendar_checked_at": "2026-11-28T12:11:52.828Z",
     "calendar_entries": 4,
     "month_budget": {
       "month": "2026-12",
@@ -321,7 +321,7 @@
       "public_files_verified": 67,
       "verified_at": "2026-11-26T12:26:02.666005Z"
     },
-    "checked_at": "2026-11-28T09:15:26.702Z"
+    "checked_at": "2026-11-28T12:11:52.828Z"
   },
   "owner_action_blocker": false,
   "next_step": "Preserve all four verified receipts; verify actual publication after each due time.",

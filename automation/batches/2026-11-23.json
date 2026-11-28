@@ -1,7 +1,7 @@
 {
   "batch_id": "2026-11-23",
   "created_on": "2026-11-22",
-  "updated_at": "2026-11-28T09:15:26.702Z",
+  "updated_at": "2026-11-28T12:11:52.828Z",
   "timezone": "Europe/Vienna",
   "production_day": "2026-11-22T10:00:00+01:00",
   "monday_hard_readiness_date": "2026-11-23",
@@ -58,7 +58,7 @@
   "science_rights_release_status": "TT-011 released, deployed and exact identical MP4 provider bytes verified",
   "expired_claims": [],
   "provider_reconciliation": {
-    "checked_at": "2026-11-28T09:15:26.702Z",
+    "checked_at": "2026-11-28T12:11:52.828Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -79,14 +79,14 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": true,
-      "independent_public_verification_job": 140888478505,
-      "independent_public_verification_basis": "Actual readiness audit log: public YouTube Short independently verified; provider thumbnail warning remains ERROR.",
+      "independent_public_verification_job": 140931690139,
+      "independent_public_verification_basis": "Actual watchdog 46129618687 log confirms public YouTube Short; thumbnail-only provider ERROR unchanged.",
       "retry_allowed": false,
-      "independent_verification_run": 46115558699,
-      "independent_verification_job": 140888478505,
-      "independent_verification_at": "2026-11-28T06:12:56.7131567Z",
-      "independent_public_verification_run": 46115558699,
-      "current_public_check_note": "Inspected actual completed watchdog log; public Short verified by that workflow, provider ERROR and URL unchanged."
+      "independent_verification_run": 46129618687,
+      "independent_verification_job": 140931690139,
+      "independent_verification_at": "2026-11-28T09:15:40.5498909Z",
+      "independent_public_verification_run": 46129618687,
+      "current_public_check_note": "Verified actual completed job logs and fresh provider ERROR/URL."
     },
     "weekly_slots": [
       {
@@ -121,7 +121,7 @@
     "weekly_receipts": 2,
     "missing_destinations": 2,
     "provider_writes": 0,
-    "new_releases": [],
+    "new_releases": 0,
     "new_confirmed_published_keys": [],
     "history_preserved": true,
     "owner_action_blockers": [],
@@ -137,21 +137,22 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 46115558699,
-      "job": 140888478505,
+      "id": 46129618687,
+      "job": 140931690139,
       "conclusion": "failure",
       "cause": "Only historical November 24 Instagram and YouTube missing; TT-009 public Short independently verified, provider ERROR preserved."
     },
     "latest_archive_workflow": {
-      "id": 46115558658,
+      "id": 46129618780,
       "conclusion": "success",
       "public_files_verified": 67,
-      "verification_job": 140888882295
+      "verification_job": 140932035837
     },
     "last_pre_change_successful_archive_workflow": {
-      "id": 45221358609,
+      "id": 46129618780,
       "conclusion": "success",
-      "date": "2026-11-23"
+      "public_files_verified": 67,
+      "verification_job": 140932035837
     },
     "complete_month_metricool_reconciliation": true,
     "provider_uuids_count": 16,
