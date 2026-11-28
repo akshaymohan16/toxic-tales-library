@@ -1,7 +1,7 @@
 {
   "month": "2026-12",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-27T20:19:04.016Z",
+  "observed_at": "2026-11-28T06:12:43.131Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -23,8 +23,8 @@
     "observed_used": 0,
     "observation_basis": "Full December calendar: 4 existing reservations, zero published; 14 remaining regular destinations",
     "full_month_calendar_verified": true,
-    "calendar_checked_at": "2026-11-27T20:19:04.016Z",
-    "observed_at": "2026-11-27T20:19:04.016Z",
+    "calendar_checked_at": "2026-11-28T06:12:43.131Z",
+    "observed_at": "2026-11-28T06:12:43.131Z",
     "published_destination_keys": [],
     "conservative_committed_destination_count": 18,
     "projected_month_destinations": 18,
@@ -39,7 +39,7 @@
     }
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-27T20:19:04.016Z",
+    "checked_at": "2026-11-28T06:12:43.131Z",
     "calendar_entries": 4,
     "published": 0,
     "scheduled": 4,
@@ -229,8 +229,8 @@
     "job_id": 139485258744,
     "conclusion": "success"
   },
-  "updated_at": "2026-11-27T20:19:04.016Z",
-  "last_provider_reconciled_at": "2026-11-27T20:19:04.016Z",
+  "updated_at": "2026-11-28T06:12:43.131Z",
+  "last_provider_reconciled_at": "2026-11-28T06:12:43.131Z",
   "next_action": "All four December 1 and 4 receipts verified; no further production or scheduling required for next week.",
   "tt010_release_review": {
     "decision": "pass",
