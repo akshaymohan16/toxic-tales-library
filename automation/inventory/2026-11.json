@@ -1,7 +1,7 @@
 {
   "month": "2026-11",
   "timezone": "Europe/Vienna",
-  "observed_at": "2026-11-28T06:12:43.131Z",
+  "observed_at": "2026-11-28T09:15:26.702Z",
   "connected_networks": [
     "instagram",
     "youtube"
@@ -52,7 +52,7 @@
   "analytics_note": "Reel analytics still returned empty rows despite a positively confirmed published Reel. Use provider receipt and planner counter; do not misclassify this as zero publications.",
   "checked_policy_url": "https://help.metricool.com/main-differences-between-free-and-paid-plans-bl0v9",
   "scheduled_post_ids": [],
-  "calendar_reconciled_on": "2026-11-28T06:12:43.131Z",
+  "calendar_reconciled_on": "2026-11-28T09:15:26.702Z",
   "draft_ids": [
     "420045577",
     "420062745"
@@ -65,14 +65,14 @@
   "new_scheduling_conditions": "Further work remains subject to per-slot CAS claim, full-month quota and exact release/rights/byte/readback checks",
   "provider_confirmed_publications": 13,
   "known_usage_lower_bound": 13,
-  "last_calendar_readback": "2026-11-28T06:12:43.131Z",
+  "last_calendar_readback": "2026-11-28T09:15:26.702Z",
   "pending_release_ids": [],
   "quota_refresh_blocked_since": null,
   "quota": {
     "month": "2026-11",
     "observed_used": 13,
-    "observed_at": "2026-11-28T06:12:43.131Z",
-    "calendar_checked_at": "2026-11-28T06:12:43.131Z",
+    "observed_at": "2026-11-28T09:15:26.702Z",
+    "calendar_checked_at": "2026-11-28T09:15:26.702Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -129,7 +129,7 @@
     "conservative_accounting_note": "13 confirmed PUBLISHED + 1 TT-009 thumbnail-only provider ERROR =14; no remaining regular November slots, no backfill."
   },
   "latest_live_reconciliation": {
-    "checked_at": "2026-11-28T06:12:43.131Z",
+    "checked_at": "2026-11-28T09:15:26.702Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -150,13 +150,13 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": true,
-      "independent_public_verification_job": 140744923162,
+      "independent_public_verification_job": 140888478505,
       "independent_public_verification_basis": "Actual readiness audit log: public YouTube Short independently verified; provider thumbnail warning remains ERROR.",
       "retry_allowed": false,
-      "independent_verification_run": 46070165589,
-      "independent_verification_job": 140744923162,
-      "independent_verification_at": "2026-11-27T21:25:08.7336771Z",
-      "independent_public_verification_run": 46070165589,
+      "independent_verification_run": 46115558699,
+      "independent_verification_job": 140888478505,
+      "independent_verification_at": "2026-11-28T06:12:56.7131567Z",
+      "independent_public_verification_run": 46115558699,
       "current_public_check_note": "Inspected actual completed watchdog log; public Short verified by that workflow, provider ERROR and URL unchanged."
     },
     "weekly_slots": [
@@ -208,16 +208,16 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 46070165589,
-      "job": 140744923162,
+      "id": 46115558699,
+      "job": 140888478505,
       "conclusion": "failure",
       "cause": "Only historical November 24 Instagram and YouTube missing; TT-009 public Short independently verified, provider ERROR preserved."
     },
     "latest_archive_workflow": {
-      "id": 46062829604,
+      "id": 46115558658,
       "conclusion": "success",
       "public_files_verified": 67,
-      "verification_job": 140721534997
+      "verification_job": 140888882295
     },
     "last_pre_change_successful_archive_workflow": {
       "id": 45221358609,
@@ -245,7 +245,7 @@
       "440852560",
       "440852965"
     ],
-    "calendar_repeat_attempt": "Complete November 16 and December 4 live records matched ledger UUID, ID, date, provider status, stored media and cover; stored TT-010/011/012 captions and destination metadata matched. Historical default isPaidPartnership=false is a readback normalization. Brand/channel verified. No new receipts.",
+    "calendar_repeat_attempt": "Complete November 16 and December 4 live records matched ledger UUID, ID, date, provider status, stored media and cover; stored TT-010/011/012 captions and destination metadata matched. Historical TT-006 stored readback omitted the cover and default Instagram block; current ledger cover matches. Brand/channel verified. No new receipts.",
     "missed_destinations": 2,
     "future_missing_destinations": 0,
     "tt011_encoded_review": {

@@ -1,6 +1,6 @@
 {
   "checked_on": "2026-11-28",
-  "updated_at": "2026-11-28T06:12:43.131Z",
+  "updated_at": "2026-11-28T09:15:26.702Z",
   "target": "toxic_tales_eco",
   "brand_confirmed": true,
   "timezone_confirmed": true,
@@ -10,8 +10,8 @@
   "quota": {
     "month": "2026-11",
     "observed_used": 13,
-    "observed_at": "2026-11-28T06:12:43.131Z",
-    "calendar_checked_at": "2026-11-28T06:12:43.131Z",
+    "observed_at": "2026-11-28T09:15:26.702Z",
+    "calendar_checked_at": "2026-11-28T09:15:26.702Z",
     "full_month_calendar_verified": true,
     "observation_basis": "Metricool calendar reconciled to persisted usage baseline",
     "usage_baseline": {
@@ -150,20 +150,20 @@
     "443040774",
     "443041366"
   ],
-  "last_successful_deployment_run": 46062829604,
+  "last_successful_deployment_run": 46115558658,
   "validation": {
     "script_tests": 165,
     "automation_tests": 121,
     "local_font_checks_skipped": 2,
     "live_pages_checked": true,
     "provider_byte_verification_run": 45818843362,
-    "latest_watchdog_run": 46070165589,
+    "latest_watchdog_run": 46115558699,
     "latest_watchdog_conclusion": "failure",
     "latest_build_run": 45791031167,
     "latest_build_verified_steps": [],
     "latest_paper_retrieval_run": 45586075305,
     "latest_paper_retrieval_conclusion": "success",
-    "fresh_live_metricool_reconciliation_at": "2026-11-28T06:12:43.131Z",
+    "fresh_live_metricool_reconciliation_at": "2026-11-28T09:15:26.702Z",
     "latest_build_conclusion": "success",
     "latest_build_failure_step": null,
     "latest_build_failure_cause": null,
@@ -176,8 +176,8 @@
     "public_youtube_verification_conclusion": "success",
     "latest_archive_confirmed_social_links": 10,
     "public_files_verified": 67,
-    "last_public_media_verification_checked_at": "2026-11-27T20:21:16.591622+00:00",
-    "last_successful_deployment_run": 46062829604,
+    "last_public_media_verification_checked_at": "2026-11-28T06:15:25.215178+00:00",
+    "last_successful_deployment_run": 46115558658,
     "youtube_public_verification_requested_at": "2026-11-20T09:40:02.763Z",
     "youtube_public_verification_request_commit": "2b8367cc26ed98dddf1bb08515c78da2d3d0677d",
     "latest_new_workflow_result": "Build/deploy/public-media verification run 44890175684 success; readiness 44890175620 expected failure. Diagnostic fix pending post-commit verification.",
@@ -186,37 +186,37 @@
     "youtube_public_verification_basis": "Public oEmbed exact title and channel identity; yt-dlp blocked by bot check",
     "latest_watchdog_reason": "Only historical November 24 Instagram and YouTube missing; TT-009 public Short independently verified, provider ERROR preserved.",
     "latest_public_verification_status": "completed_success",
-    "last_verified_archive_build_run": 46062829604,
+    "last_verified_archive_build_run": 46115558658,
     "last_verified_archive_build_conclusion": "success",
     "upcoming_week_receipts": 4,
     "upcoming_week_expected": 4,
     "latest_asset_pin_run": 45612112717,
     "latest_asset_pin_conclusion": "success",
-    "last_inspected_watchdog_run": 46070165589,
+    "last_inspected_watchdog_run": 46115558699,
     "last_inspected_watchdog_conclusion": "failure",
-    "latest_archive_build_run": 46062829604,
+    "latest_archive_build_run": 46115558658,
     "latest_archive_verification": "completed_success",
     "last_test_count_from_workflow": 121,
     "tests_run_again_after_this_commit": false,
     "latest_archive_build_conclusion": "success",
     "latest_provider_byte_verification_conclusion": "success",
-    "latest_watchdog_job": 140744923162,
+    "latest_watchdog_job": 140888478505,
     "tests_passed": 121,
     "enforcer": "pass",
     "readiness": "failure_elapsed_tuesday_only",
-    "checked_at": "2026-11-28T06:12:43.131Z",
+    "checked_at": "2026-11-28T09:15:26.702Z",
     "policy_enforcer": "pass",
-    "public_youtube_verification_basis": "Actual watchdog 46070165589 job 140744923162 verified TT-009 at 21:25 UTC; current Metricool ERROR unchanged.",
+    "public_youtube_verification_basis": "Actual watchdog 46115558699 job 140888478505 verified TT-009 at 06:12 UTC; current Metricool ERROR unchanged.",
     "readiness_rechecked_this_commit": false,
     "post_heartbeat_verification": "New state commit triggers readiness; inspect actual job result.",
     "tt011_public_youtube_verification_run": 45972447095,
     "tt011_public_youtube_verification_job": 140415902142,
     "tt011_public_youtube_verification_conclusion": "success",
     "latest_archive_workflow": {
-      "id": 46062829604,
+      "id": 46115558658,
       "conclusion": "success",
       "public_files_verified": 67,
-      "verification_job": 140721534997
+      "verification_job": 140888882295
     }
   },
   "current_one_off": {
@@ -228,7 +228,7 @@
     "verified_destination_receipts": 2
   },
   "latest_live_provider_audit": {
-    "checked_at": "2026-11-28T06:12:43.131Z",
+    "checked_at": "2026-11-28T09:15:26.702Z",
     "month": "2026-11",
     "brand_id": "7937614",
     "accounts": {
@@ -249,13 +249,13 @@
       "url": "https://www.youtube.com/shorts/Y0CF32fpJC4",
       "provider_warning": "The YouTube post was published with some warnings: Could not upload video thumbnail.",
       "public_title_channel_independently_rechecked_this_run": true,
-      "independent_public_verification_job": 140744923162,
+      "independent_public_verification_job": 140888478505,
       "independent_public_verification_basis": "Actual readiness audit log: public YouTube Short independently verified; provider thumbnail warning remains ERROR.",
       "retry_allowed": false,
-      "independent_verification_run": 46070165589,
-      "independent_verification_job": 140744923162,
-      "independent_verification_at": "2026-11-27T21:25:08.7336771Z",
-      "independent_public_verification_run": 46070165589,
+      "independent_verification_run": 46115558699,
+      "independent_verification_job": 140888478505,
+      "independent_verification_at": "2026-11-28T06:12:56.7131567Z",
+      "independent_public_verification_run": 46115558699,
       "current_public_check_note": "Inspected actual completed watchdog log; public Short verified by that workflow, provider ERROR and URL unchanged."
     },
     "weekly_slots": [
@@ -307,16 +307,16 @@
       "repair_commit": "e00032f75b0a498a07cc144d96d8cbc6ff375034"
     },
     "latest_readiness_workflow": {
-      "id": 46070165589,
-      "job": 140744923162,
+      "id": 46115558699,
+      "job": 140888478505,
       "conclusion": "failure",
       "cause": "Only historical November 24 Instagram and YouTube missing; TT-009 public Short independently verified, provider ERROR preserved."
     },
     "latest_archive_workflow": {
-      "id": 46062829604,
+      "id": 46115558658,
       "conclusion": "success",
       "public_files_verified": 67,
-      "verification_job": 140721534997
+      "verification_job": 140888882295
     },
     "last_pre_change_successful_archive_workflow": {
       "id": 45221358609,
@@ -344,7 +344,7 @@
       "440852560",
       "440852965"
     ],
-    "calendar_repeat_attempt": "Complete November 16 and December 4 live records matched ledger UUID, ID, date, provider status, stored media and cover; stored TT-010/011/012 captions and destination metadata matched. Historical default isPaidPartnership=false is a readback normalization. Brand/channel verified. No new receipts.",
+    "calendar_repeat_attempt": "Complete November 16 and December 4 live records matched ledger UUID, ID, date, provider status, stored media and cover; stored TT-010/011/012 captions and destination metadata matched. Historical TT-006 stored readback omitted the cover and default Instagram block; current ledger cover matches. Brand/channel verified. No new receipts.",
     "missed_destinations": 2,
     "future_missing_destinations": 0,
     "tt011_encoded_review": {
@@ -726,7 +726,7 @@
     }
   },
   "claim_coordination": {
-    "checked_at": "2026-11-27T15:19:10.766Z",
+    "checked_at": "2026-11-28T09:15:26.702Z",
     "status": "TT-012 both claims completed via CAS, exact provider bytes verified",
     "active_competing_claims": 0,
     "active_claim_keys": [],
@@ -745,7 +745,7 @@
     "required_destination_receipts": 4,
     "verified_destination_receipts": 4,
     "complete": true,
-    "calendar_checked_at": "2026-11-28T06:12:43.131Z",
+    "calendar_checked_at": "2026-11-28T09:15:26.702Z",
     "calendar_entries": 4,
     "month_budget": {
       "month": "2026-12",
@@ -1046,8 +1046,8 @@
     "handoff_at": "2026-11-24T08:53:36.972Z",
     "release_reason": "Both unapproved; no submission intent; allow independent reviewer to acquire after fresh live reconciliation."
   },
-  "last_run_at": "2026-11-28T06:12:43.131Z",
-  "last_checked_at": "2026-11-28T06:12:43.131Z",
+  "last_run_at": "2026-11-28T09:15:26.702Z",
+  "last_checked_at": "2026-11-28T09:15:26.702Z",
   "pending_release_deployment": {
     "episode_id": "TT-012",
     "status": "completed_success",
@@ -1183,8 +1183,8 @@
     "report_artifact_id": 15185493689
   },
   "ledger_reconciliation": {
-    "checked_at": "2026-11-28T06:12:43.131Z",
-    "base_ledger_commit": "269a37eb319d76bca1d94f76d3bb1011ea0fb965",
+    "checked_at": "2026-11-28T09:15:26.702Z",
+    "base_ledger_commit": "d86913e486b69bec00ef0c0ef248f092ec20de94",
     "all_twenty_provider_entries_matched": true,
     "changed_receipts": 0,
     "ledger_write_required": false,
